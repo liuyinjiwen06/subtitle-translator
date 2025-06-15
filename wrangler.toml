@@ -1,0 +1,13 @@
+name = "subtitle-translator"
+compatibility_date = "2024-12-15"
+
+[build]
+command = "npm run build"
+cwd = "."
+watch_dir = "src"
+
+[build.environment_variables]
+NODE_VERSION = "18"
+
+[pages_build_output_dir]
+value = ".next" 
