@@ -1,13 +1,26 @@
 {
   "title": "Online Subtitle Translator",
   "description": "Upload SRT files, select target language, translate subtitles online and download.",
+  "pageConfigNotFound": "Page configuration not found",
   "seo": {
-    "title": "Free Online Subtitle Translator - SRT Translation Tool for 8 Languages",
-    "description": "Professional online subtitle translation tool supporting Chinese, English, Japanese and 8 languages. Upload SRT files, one-click translation, high-quality AI translation, completely free to use.",
+    "title": "Free Online Subtitle Translator - SRT Translation Tool for 30 Languages",
+    "description": "Professional online subtitle translation tool supporting Chinese, English, Japanese and 30 languages. Upload SRT files, one-click translation, high-quality AI translation, completely free to use.",
     "keywords": "subtitle translation,SRT translation,online translation,subtitle file translation,multilingual subtitles,free translation tool,AI translation,video subtitles"
   },
   "upload": "Upload SRT File",
   "select_language": "Select Target Language",
+  "click_to_select_language": "Click to select target language",
+  "file_selected_click_to_reselect": "File selected, click to reselect",
+  "click_or_drag_to_upload": "Click or drag to upload SRT subtitle file",
+  "search_languages": "Search languages...",
+  "no_matching_languages": "No matching languages found",
+  "please_select_srt_file": "Please select an .srt subtitle file",
+  "please_upload_file_first": "Please upload a subtitle file first",
+  "cannot_read_response": "Cannot read response stream",
+  "translation_error_occurred": "An error occurred during translation",
+  "select_interface_language": "Select Interface Language",
+  "multilingual_interface_support": "Multilingual Interface Support",
+  "translation_failed": "Translation Failed",
   "select_translation_service": "Select Translation Service",
   "translate": "Translate",
   "translating": "Translating...",
@@ -196,5 +209,213 @@
     "et": "Estonian",
     "lv": "Latvian",
     "lt": "Lithuanian"
+  },
+  "pages": {
+    "englishSubtitle": {
+      "title": "Translate Subtitles to English - Online English Subtitle Translator",
+      "description": "Professional subtitle to English translation tool. Upload SRT files, AI-powered translation, high-quality English subtitle output.",
+      "seo": {
+        "title": "Translate Subtitles to English - Free Online English Subtitle Translator | High-Quality SRT English Translation",
+        "description": "Professional subtitle to English translation tool supporting Chinese, Japanese, French and more languages to English subtitles. AI-powered translation, accurate and fluent, completely free. Upload SRT files and start translating now!",
+        "keywords": "translate subtitles to english,english subtitle translation,SRT english translation,chinese subtitles to english,online english subtitle tool,free english translation"
+      },
+      "heroTitle": "Translate Subtitles to English",
+      "heroSubtitle": "Quickly and accurately translate your subtitles to English, making your content accessible to global English audiences",
+      "targetLanguage": "English",
+      "benefits": {
+        "title": "Why Choose Our English Subtitle Translation?",
+        "subtitle": "Professional English translation technology ensuring subtitle quality and viewing experience",
+        "items": {
+          "native": {
+            "icon": "🇺🇸",
+            "title": "Native English Expression",
+            "description": "AI intelligently recognizes context, providing native English expressions that match native speaker language habits"
+          },
+          "context": {
+            "icon": "🎯",
+            "title": "Context Understanding",
+            "description": "Deep understanding of subtitle content context, ensuring translation coherence and accuracy"
+          },
+          "timing": {
+            "icon": "⏱️",
+            "title": "Timing Preservation",
+            "description": "Perfectly maintains original subtitle timing, ready to use after translation without adjustment"
+          }
+        }
+      },
+      "useCases": {
+        "title": "English Subtitle Translation Use Cases",
+        "items": {
+          "global": {
+            "icon": "🌍",
+            "title": "Global Content",
+            "description": "English subtitles for corporate promotions and product introduction videos to expand international markets"
+          },
+          "education": {
+            "icon": "📚",
+            "title": "Educational Courses",
+            "description": "English subtitles for online courses and training videos to serve global learners"
+          },
+          "entertainment": {
+            "icon": "🎬",
+            "title": "Entertainment Content",
+            "description": "English subtitles for movies, documentaries, and short videos to expand audience reach"
+          }
+        }
+      }
+    },
+    "chineseSubtitle": {
+      "title": "Translate Subtitles to Chinese - Online Chinese Subtitle Translator",
+      "description": "Professional subtitle to Chinese translation tool. Upload SRT files, AI-powered translation, high-quality Chinese subtitle output.",
+      "seo": {
+        "title": "Translate Subtitles to Chinese - Free Online Chinese Subtitle Translator | High-Quality SRT Chinese Translation",
+        "description": "Professional subtitle to Chinese translation tool supporting English, Japanese, French and more languages to Chinese subtitles. AI-powered translation, accurate and fluent, completely free. Upload SRT files and start translating now!",
+        "keywords": "translate subtitles to chinese,chinese subtitle translation,SRT chinese translation,english subtitles to chinese,online chinese subtitle tool,free chinese translation"
+      },
+      "heroTitle": "Translate Subtitles to Chinese",
+      "heroSubtitle": "Quickly and accurately translate your subtitles to Chinese, making your content accessible to Chinese audiences",
+      "targetLanguage": "Chinese",
+      "benefits": {
+        "title": "Why Choose Our Chinese Subtitle Translation?",
+        "subtitle": "Professional Chinese translation technology ensuring subtitle quality and viewing experience",
+        "items": {
+          "native": {
+            "icon": "🇨🇳",
+            "title": "Native Chinese Expression",
+            "description": "AI intelligently recognizes context, providing native Chinese expressions that match Chinese language habits"
+          },
+          "context": {
+            "icon": "🎯",
+            "title": "Context Understanding",
+            "description": "Deep understanding of subtitle content context, ensuring translation coherence and accuracy"
+          },
+          "timing": {
+            "icon": "⏱️",
+            "title": "Timing Preservation",
+            "description": "Perfectly maintains original subtitle timing, ready to use after translation without adjustment"
+          }
+        }
+      },
+      "useCases": {
+        "title": "Chinese Subtitle Translation Use Cases",
+        "items": {
+          "localization": {
+            "icon": "🏠",
+            "title": "Content Localization",
+            "description": "Chinese subtitles for foreign films and educational content to serve Chinese audiences"
+          },
+          "business": {
+            "icon": "💼",
+            "title": "Business Applications",
+            "description": "Chinese subtitles for international conferences and product introductions to facilitate business communication"
+          },
+          "learning": {
+            "icon": "📖",
+            "title": "Learning Materials",
+            "description": "Chinese subtitles for foreign language learning videos and online courses"
+          }
+        }
+      }
+    }
+  },
+  "englishSubtitle": {
+    "seo": {
+      "title": "English Subtitle Translator - Free Online Translate Subtitles to English | SRT English Translation",
+      "description": "Professional English subtitle translation service, supporting 30 languages to English translation. Upload SRT subtitle files, AI smart translation to English subtitles, high-quality results, completely free.",
+      "keywords": "English subtitle translation,translate to English,SRT English translation,subtitle English translation,online English translation,free English subtitles,AI English translation,video English subtitles"
+    },
+    "title": "English Subtitle Translator",
+    "description": "Translate subtitles from any language to English, supporting 30 source languages with professional AI translation technology",
+    "benefits": {
+      "title": "English Subtitle Translation Advantages",
+      "subtitle": "Why choose our English subtitle translation service? Professional, accurate, and efficient",
+      "items": {
+        "native": {
+          "icon": "🎯",
+          "title": "Native English Expression",
+          "description": "AI intelligently recognizes context to generate natural English subtitles that conform to English expression habits"
+        },
+        "global": {
+          "icon": "🌍",
+          "title": "Global Universal Language",
+          "description": "English as an international lingua franca allows your content to reach the widest global audience"
+        },
+        "business": {
+          "icon": "💼",
+          "title": "Business-Grade Quality",
+          "description": "Professional English translation quality suitable for business promotion, education and training, and other formal occasions"
+        }
+      }
+    },
+    "useCases": {
+      "title": "English Subtitle Use Cases",
+      "items": {
+        "international": {
+          "icon": "🌐",
+          "title": "International Promotion",
+          "description": "English subtitle creation for corporate promotional videos and product introduction videos to expand overseas markets"
+        },
+        "education": {
+          "icon": "📚",
+          "title": "Educational Outreach",
+          "description": "English subtitles for online courses and academic lectures targeting international student groups"
+        },
+        "entertainment": {
+          "icon": "🎬",
+          "title": "Film & Media",
+          "description": "English subtitles for movies, documentaries, and short videos to expand international influence"
+        }
+      }
+    }
+  },
+  "chineseSubtitle": {
+    "seo": {
+      "title": "Chinese Subtitle Translator - Free Online Translate Subtitles to Chinese | SRT Chinese Translation",
+      "description": "Professional Chinese subtitle translation service, supporting 30 languages to Chinese translation. Upload SRT subtitle files, AI smart translation to Chinese subtitles, accurate context understanding, completely free.",
+      "keywords": "Chinese subtitle translation,translate to Chinese,SRT Chinese translation,subtitle Chinese translation,online Chinese translation,free Chinese subtitles,AI Chinese translation,video Chinese subtitles"
+    },
+    "title": "Chinese Subtitle Translator",
+    "description": "Translate subtitles from any language to Chinese, supporting 30 source languages with intelligent context understanding",
+    "benefits": {
+      "title": "Chinese Subtitle Translation Advantages",
+      "subtitle": "Why choose our Chinese subtitle translation service? Accurate, fluent, and localized",
+      "items": {
+        "context": {
+          "icon": "🧠",
+          "title": "Intelligent Context Understanding",
+          "description": "AI deeply understands original context to generate natural translations that conform to Chinese expression habits"
+        },
+        "localization": {
+          "icon": "🏮",
+          "title": "Localized Expression",
+          "description": "Not only translates language but also focuses on cultural localization for better understanding by Chinese audiences"
+        },
+        "accuracy": {
+          "icon": "✨",
+          "title": "Professional Terminology Accuracy",
+          "description": "Accurately translates professional terms and industry vocabulary while maintaining original meaning and Chinese conventions"
+        }
+      }
+    },
+    "useCases": {
+      "title": "Chinese Subtitle Use Cases",
+      "items": {
+        "foreign": {
+          "icon": "🎭",
+          "title": "Foreign Content Localization",
+          "description": "Chinese subtitle creation for overseas films, documentaries, and educational videos"
+        },
+        "learning": {
+          "icon": "📖",
+          "title": "Language Learning Aid",
+          "description": "Chinese subtitles for foreign language learning videos and online courses to aid comprehension"
+        },
+        "business": {
+          "icon": "🏢",
+          "title": "Business Communication",
+          "description": "Chinese subtitle translation for international conferences, business training, and product introductions"
+        }
+      }
+    }
   }
 }

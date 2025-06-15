@@ -1,9 +1,10 @@
 {
   "title": "Outil de traduction de sous-titres en ligne",
   "description": "Téléchargez un fichier SRT, choisissez la langue cible, traduisez et téléchargez les sous-titres en ligne.",
+  "pageConfigNotFound": "Configuration de page non trouvée",
   "seo": {
-    "title": "Traducteur de Sous-titres Gratuit - Outil de Traduction SRT pour 8 Langues",
-    "description": "Outil professionnel de traduction de sous-titres en ligne supportant le chinois, l'anglais, le japonais et 8 langues. Téléchargez des fichiers SRT, traduction en un clic, traduction IA de haute qualité, entièrement gratuit.",
+    "title": "Traducteur de Sous-titres Gratuit en Ligne - Outil de Traduction SRT pour 30 Langues",
+    "description": "Outil professionnel de traduction de sous-titres en ligne supportant le chinois, l'anglais, le japonais et 30 langues. Téléchargez des fichiers SRT, traduction en un clic, traduction IA de haute qualité, entièrement gratuit.",
     "keywords": "traduction sous-titres,traduction SRT,traduction en ligne,traduction fichier sous-titres,sous-titres multilingues,outil traduction gratuit,traduction IA,sous-titres vidéo"
   },
   "upload": "Télécharger un fichier SRT",
@@ -12,6 +13,17 @@
   "translate": "Traduire",
   "translating": "Traduction...",
   "download": "Télécharger le fichier traduit",
+  "click_to_select_language": "Cliquez pour sélectionner la langue cible",
+  "file_selected_click_to_reselect": "Fichier sélectionné, cliquez pour resélectionner",
+  "click_or_drag_to_upload": "Cliquez ou faites glisser pour télécharger le fichier de sous-titres SRT",
+  "search_languages": "Rechercher des langues...",
+  "no_matching_languages": "Aucune langue correspondante trouvée",
+  "please_select_srt_file": "Veuillez sélectionner un fichier de sous-titres .srt",
+  "please_upload_file_first": "Veuillez d'abord télécharger un fichier de sous-titres",
+  "cannot_read_response": "Impossible de lire le flux de réponse",
+  "translation_error_occurred": "Une erreur s'est produite pendant la traduction",
+  "select_interface_language": "Sélectionner la langue de l'interface",
+  "multilingual_interface_support": "Support d'interface multilingue",
   "translation_failed": "La traduction a échoué",
   "translation_services": {
     "google": "Traduction de Haute Qualité",
@@ -97,5 +109,78 @@
     "et": "Estonien",
     "lv": "Letton",
     "lt": "Lituanien"
+  },
+  "englishSubtitle": {
+    "seo": {
+      "title": "Traducteur de Sous-titres Anglais - Traduction Gratuite de Sous-titres vers l'Anglais | Traduction SRT Anglais",
+      "description": "Service professionnel de traduction de sous-titres anglais, supportant la traduction de 30 langues vers l'anglais. Téléchargez des fichiers de sous-titres SRT, traduction IA intelligente vers des sous-titres anglais, résultats de haute qualité, entièrement gratuit.",
+      "keywords": "traduction sous-titres anglais,traduire vers anglais,traduction SRT anglais,traduction sous-titres anglais,traduction anglais en ligne,sous-titres anglais gratuits,traduction IA anglais,sous-titres vidéo anglais"
+    },
+    "title": "Traducteur de Sous-titres Anglais",
+    "description": "Traduisez les sous-titres de n'importe quelle langue vers l'anglais, supportant 30 langues sources avec une technologie de traduction IA professionnelle"
+  },
+  "chineseSubtitle": {
+    "seo": {
+      "title": "Traducteur de Sous-titres Chinois - Traduction Gratuite de Sous-titres vers le Chinois | Traduction SRT Chinois",
+      "description": "Service professionnel de traduction de sous-titres chinois, supportant la traduction de 30 langues vers le chinois. Téléchargez des fichiers de sous-titres SRT, traduction IA intelligente vers des sous-titres chinois, compréhension précise du contexte, entièrement gratuit.",
+      "keywords": "traduction sous-titres chinois,traduire vers chinois,traduction SRT chinois,traduction sous-titres chinois,traduction chinois en ligne,sous-titres chinois gratuits,traduction IA chinois,sous-titres vidéo chinois"
+    },
+    "title": "Traducteur de Sous-titres Chinois",
+    "description": "Traduisez les sous-titres de n'importe quelle langue vers le chinois, supportant 30 langues sources avec une compréhension intelligente du contexte"
+  },
+  "pages": {
+    "englishSubtitle": {
+      "title": "Traduire les Sous-titres en Anglais - Traducteur de Sous-titres Anglais en Ligne",
+      "heroTitle": "Traduire les Sous-titres en Anglais",
+      "heroSubtitle": "Traduisez vos sous-titres en anglais rapidement et précisément, rendant votre contenu accessible aux audiences anglophones mondiales",
+      "targetLanguage": "Anglais",
+      "benefits": {
+        "title": "Pourquoi Choisir Notre Traduction de Sous-titres Anglais ?",
+        "subtitle": "Technologie de traduction anglaise professionnelle, garantissant la qualité des sous-titres et l'expérience de visionnage",
+        "items": {
+          "native": {
+            "icon": "🇺🇸",
+            "title": "Expression Anglaise Native",
+            "description": "L'IA reconnaît intelligemment le contexte, fournissant des expressions anglaises natives conformes aux habitudes linguistiques des locuteurs natifs anglais"
+          },
+          "context": {
+            "icon": "🎯",
+            "title": "Compréhension du Contexte",
+            "description": "Compréhension approfondie du contexte du contenu des sous-titres, garantissant la cohérence et la précision de la traduction"
+          },
+          "timing": {
+            "icon": "⏱️",
+            "title": "Préservation du Timing",
+            "description": "Préserve parfaitement le timing des sous-titres originaux, prêt à utiliser après traduction sans ajustement"
+          }
+        }
+      },
+      "useCases": {
+        "title": "Cas d'Usage de Traduction de Sous-titres Anglais",
+        "items": {
+          "global": {
+            "icon": "🌍",
+            "title": "Contenu Global",
+            "description": "Sous-titres anglais pour les promotions d'entreprise et vidéos de présentation de produits pour étendre les marchés internationaux"
+          },
+          "education": {
+            "icon": "📚",
+            "title": "Cours Éducatifs",
+            "description": "Sous-titres anglais pour cours en ligne et vidéos de formation pour servir les apprenants mondiaux"
+          },
+          "entertainment": {
+            "icon": "🎬",
+            "title": "Contenu de Divertissement",
+            "description": "Sous-titres anglais pour films, documentaires et vidéos courtes pour étendre la portée de l'audience"
+          }
+        }
+      }
+    },
+    "chineseSubtitle": {
+      "title": "Traduire les Sous-titres en Chinois - Traducteur de Sous-titres Chinois en Ligne",
+      "heroTitle": "Traduire les Sous-titres en Chinois",
+      "heroSubtitle": "Traduisez vos sous-titres en chinois rapidement et précisément, rendant votre contenu accessible aux audiences chinoises",
+      "targetLanguage": "Chinois"
+    }
   }
 } 

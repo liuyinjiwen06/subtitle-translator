@@ -1,6 +1,7 @@
 {
   "title": "Traduttore di sottotitoli online",
   "description": "Carica un file SRT, scegli la lingua di destinazione, traduci e scarica i sottotitoli online.",
+  "pageConfigNotFound": "Configurazione pagina non trovata",
   "seo": {
     "title": "Traduttore di Sottotitoli Gratuito - Strumento di Traduzione SRT per 8 Lingue",
     "description": "Strumento professionale di traduzione sottotitoli online che supporta cinese, inglese, giapponese e 8 lingue. Carica file SRT, traduzione con un clic, traduzione AI di alta qualità, completamente gratuito.",
@@ -12,6 +13,17 @@
   "translate": "Traduci",
   "translating": "Traduzione...",
   "download": "Scarica file tradotto",
+  "click_to_select_language": "Clicca per selezionare la lingua di destinazione",
+  "file_selected_click_to_reselect": "File selezionato, clicca per riselezionare",
+  "click_or_drag_to_upload": "Clicca o trascina per caricare file sottotitoli SRT",
+  "search_languages": "Cerca lingue...",
+  "no_matching_languages": "Nessuna lingua corrispondente trovata",
+  "please_select_srt_file": "Per favore seleziona un file sottotitoli .srt",
+  "please_upload_file_first": "Per favore carica prima un file sottotitoli",
+  "cannot_read_response": "Impossibile leggere il flusso di risposta",
+  "translation_error_occurred": "Si è verificato un errore durante la traduzione",
+  "select_interface_language": "Seleziona lingua interfaccia",
+  "multilingual_interface_support": "Supporto interfaccia multilingue",
   "translation_failed": "Traduzione fallita",
   "translation_services": {
     "mymemory": "Gratuito e veloce",
@@ -64,5 +76,78 @@
       "speed": "Velocità di traduzione",
       "speedValue": "Secondi"
     }
+  },
+  "englishSubtitle": {
+    "seo": {
+      "title": "Traduttore di Sottotitoli in Inglese - Traduzione Gratuita di Sottotitoli in Inglese Online | Traduzione SRT in Inglese",
+      "description": "Servizio professionale di traduzione sottotitoli in inglese con supporto per tradurre 30 lingue in inglese. Carica file sottotitoli SRT, traduzione intelligente AI in sottotitoli inglesi, risultati di alta qualità, completamente gratuito.",
+      "keywords": "traduzione sottotitoli inglese,tradurre in inglese,traduzione SRT inglese,traduzione sottotitoli inglese,traduzione inglese online,sottotitoli inglesi gratuiti,traduzione AI inglese,sottotitoli video inglesi"
+    },
+    "title": "Traduttore di Sottotitoli in Inglese",
+    "description": "Traduci sottotitoli da qualsiasi lingua all'inglese, supporta 30 lingue di origine con tecnologia di traduzione AI professionale"
+  },
+  "chineseSubtitle": {
+    "seo": {
+      "title": "Traduttore di Sottotitoli in Cinese - Traduzione Gratuita di Sottotitoli in Cinese Online | Traduzione SRT in Cinese",
+      "description": "Servizio professionale di traduzione sottotitoli in cinese con supporto per tradurre 30 lingue in cinese. Carica file sottotitoli SRT, traduzione intelligente AI in sottotitoli cinesi, comprensione precisa del contesto, completamente gratuito.",
+      "keywords": "traduzione sottotitoli cinese,tradurre in cinese,traduzione SRT cinese,traduzione sottotitoli cinese,traduzione cinese online,sottotitoli cinesi gratuiti,traduzione AI cinese,sottotitoli video cinesi"
+    },
+    "title": "Traduttore di Sottotitoli in Cinese",
+    "description": "Traduci sottotitoli da qualsiasi lingua al cinese, supporta 30 lingue di origine con comprensione intelligente del contesto"
+  },
+  "pages": {
+    "englishSubtitle": {
+      "title": "Traduci Sottotitoli in Inglese - Traduttore di Sottotitoli in Inglese Online",
+      "heroTitle": "Traduci Sottotitoli in Inglese",
+      "heroSubtitle": "Traduci i tuoi sottotitoli in inglese in modo rapido e preciso, rendendo il tuo contenuto accessibile a un pubblico globale di lingua inglese",
+      "targetLanguage": "Inglese",
+      "benefits": {
+        "title": "Perché scegliere la nostra traduzione di sottotitoli in inglese?",
+        "subtitle": "Tecnologia di traduzione in inglese professionale che garantisce qualità dei sottotitoli ed esperienza di visione",
+        "items": {
+          "native": {
+            "icon": "🇺🇸",
+            "title": "Espressione inglese naturale",
+            "description": "L'AI riconosce intelligentemente il contesto e fornisce espressioni inglesi naturali che si adattano alle abitudini linguistiche dei madrelingua"
+          },
+          "context": {
+            "icon": "🎯",
+            "title": "Comprensione del contesto",
+            "description": "Comprensione profonda del contesto del contenuto dei sottotitoli, garantendo coerenza e accuratezza della traduzione"
+          },
+          "timing": {
+            "icon": "⏱️",
+            "title": "Conservazione dei tempi",
+            "description": "Mantiene perfettamente i tempi dei sottotitoli originali, pronto per l'uso immediatamente dopo la traduzione senza regolazioni"
+          }
+        }
+      },
+      "useCases": {
+        "title": "Casi d'uso per la traduzione di sottotitoli in inglese",
+        "items": {
+          "global": {
+            "icon": "🌍",
+            "title": "Contenuto globale",
+            "description": "Sottotitoli inglesi per pubblicità aziendale e video di presentazione prodotti per espandersi nei mercati internazionali"
+          },
+          "education": {
+            "icon": "📚",
+            "title": "Corsi educativi",
+            "description": "Sottotitoli inglesi per corsi online e video di formazione per servire studenti globali"
+          },
+          "entertainment": {
+            "icon": "🎬",
+            "title": "Contenuto di intrattenimento",
+            "description": "Sottotitoli inglesi per film, documentari e video brevi per espandere la base di spettatori"
+          }
+        }
+      }
+    },
+    "chineseSubtitle": {
+      "title": "Traduci Sottotitoli in Cinese - Traduttore di Sottotitoli in Cinese Online",
+      "heroTitle": "Traduci Sottotitoli in Cinese",
+      "heroSubtitle": "Traduci i tuoi sottotitoli in cinese in modo rapido e preciso, rendendo il tuo contenuto accessibile al pubblico cinese",
+      "targetLanguage": "Cinese"
+    }
   }
-} 
+}

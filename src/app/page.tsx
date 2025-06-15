@@ -146,7 +146,7 @@ function TranslationServiceSelector({
   );
 }
 
-// 语言选择器组件
+// 界面语言选择器组件 - 美观版本
 function LanguageSelector({ currentLang, onLanguageChange, t }: { currentLang: string, onLanguageChange: (lang: string) => void, t: (key: string) => string }) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -170,12 +170,16 @@ function LanguageSelector({ currentLang, onLanguageChange, t }: { currentLang: s
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl px-4 py-2.5 text-sm font-medium text-gray-700 hover:bg-white hover:border-blue-300 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 min-w-[140px]"
+        className="group flex items-center space-x-3 bg-gradient-to-r from-white via-gray-50 to-white border-2 border-gray-200 rounded-2xl px-5 py-3 text-sm font-semibold text-gray-700 hover:border-blue-300 hover:shadow-xl hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-100 focus:border-blue-400 transition-all duration-300 min-w-[160px] backdrop-blur-sm"
       >
-        <span className="text-lg">{currentLanguage.flag}</span>
-        <span className="flex-1 text-left">{currentLanguage.label}</span>
+        <div className="flex items-center space-x-2">
+          <span className="text-xl drop-shadow-sm">{currentLanguage.flag}</span>
+          <span className="text-gray-800 group-hover:text-blue-700 transition-colors duration-200">
+            {t(`languages.${currentLanguage.code}`)}
+          </span>
+        </div>
         <svg 
-          className={`w-4 h-4 text-gray-400 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} 
+          className={`w-4 h-4 text-gray-400 group-hover:text-blue-500 transition-all duration-300 ${isOpen ? 'rotate-180 text-blue-500' : ''}`} 
           fill="none" 
           stroke="currentColor" 
           viewBox="0 0 24 24"
@@ -185,27 +189,45 @@ function LanguageSelector({ currentLang, onLanguageChange, t }: { currentLang: s
       </button>
 
       {isOpen && (
-        <div className="absolute top-full right-0 mt-2 w-48 bg-white border border-gray-200 rounded-xl shadow-xl z-50 py-2 animate-in fade-in slide-in-from-top-2 duration-200">
-          {languages.map((lang) => (
-            <button
-              key={lang.code}
-              onClick={() => {
-                onLanguageChange(lang.code);
-                setIsOpen(false);
-              }}
-              className={`w-full flex items-center space-x-3 px-4 py-2.5 text-sm hover:bg-blue-50 transition-colors ${
-                lang.code === currentLang ? 'bg-blue-50 text-blue-700 font-medium' : 'text-gray-700'
-              }`}
-            >
-              <span className="text-lg">{lang.flag}</span>
-              <span className="flex-1 text-left">{lang.label}</span>
-              {lang.code === currentLang && (
-                <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                </svg>
-              )}
-            </button>
-          ))}
+        <div className="absolute top-full right-0 mt-3 w-56 bg-white/95 backdrop-blur-md border border-gray-200 rounded-2xl shadow-2xl z-50 py-2 animate-in fade-in slide-in-from-top-2 duration-300">
+          <div className="px-3 py-2 border-b border-gray-100">
+            <p className="text-xs font-medium text-gray-500 uppercase tracking-wider">{t('select_interface_language') || 'Select Interface Language'}</p>
+          </div>
+          <div className="py-1">
+            {languages.map((lang) => (
+              <button
+                key={lang.code}
+                onClick={() => {
+                  onLanguageChange(lang.code);
+                  setIsOpen(false);
+                }}
+                className={`w-full flex items-center space-x-4 px-4 py-3 text-sm hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 transition-all duration-200 group ${
+                  lang.code === currentLang 
+                    ? 'bg-gradient-to-r from-blue-50 to-indigo-50 text-blue-700 border-r-4 border-blue-400' 
+                    : 'text-gray-700'
+                }`}
+              >
+                <span className="text-lg drop-shadow-sm group-hover:scale-110 transition-transform duration-200">
+                  {lang.flag}
+                </span>
+                <div className="flex-1 text-left">
+                  <span className={`font-medium ${lang.code === currentLang ? 'text-blue-700' : 'text-gray-800 group-hover:text-blue-700'} transition-colors duration-200`}>
+                    {t(`languages.${lang.code}`)}
+                  </span>
+                </div>
+                {lang.code === currentLang && (
+                  <div className="flex items-center justify-center w-6 h-6 bg-blue-500 rounded-full">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                )}
+              </button>
+            ))}
+          </div>
+          <div className="px-3 py-2 border-t border-gray-100">
+            <p className="text-xs text-gray-400 text-center">✨ {t('multilingual_interface_support') || 'Multilingual Interface Support'}</p>
+          </div>
         </div>
       )}
     </div>
@@ -284,7 +306,7 @@ function TargetLanguageSelector({ currentLang, onLanguageChange, t }: { currentL
               </svg>
               <input
                 type="text"
-                placeholder="搜索语言..."
+                placeholder={t('search_languages') || 'Search languages...'}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -319,7 +341,7 @@ function TargetLanguageSelector({ currentLang, onLanguageChange, t }: { currentL
               ))
             ) : (
               <div className="px-4 py-3 text-center text-gray-500 text-sm">
-                未找到匹配的语言
+                {t('no_matching_languages') || 'No matching languages found'}
               </div>
             )}
           </div>
@@ -564,6 +586,7 @@ export default function HomePage() {
           <LanguageSelector 
             currentLang={i18n.language || 'zh'} 
             onLanguageChange={changeLanguage}
+            t={t}
           />
         </div>
 
@@ -759,7 +782,7 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {['accuracy', 'speed', 'security', 'support', 'cost', 'ease'].map((benefit, index) => (
+                {['accuracy', 'speed', 'security', 'support', 'cost', 'ease'].map((benefit) => (
                   <div key={benefit} className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-6 hover:shadow-lg transition-shadow">
                     <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex items-center justify-center mb-4">
                       <span className="text-2xl">{t(`benefits.items.${benefit}.icon`)}</span>

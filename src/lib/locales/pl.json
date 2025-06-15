@@ -1,0 +1,42 @@
+{
+  "upload_file": "Prześlij plik",
+  "select_language": "Wybierz język docelowy",
+  "translate": "Tłumacz",
+  "translation_services": {
+    "google": "Google Cloud Translation",
+    "openai": "OpenAI GPT Translation"
+  },
+  "languages": {
+    "en": "Angielski",
+    "zh": "Chiński",
+    "ja": "Japoński",
+    "fr": "Francuski",
+    "de": "Niemiecki",
+    "es": "Hiszpański",
+    "ru": "Rosyjski",
+    "it": "Włoski",
+    "pt": "Portugalski",
+    "ar": "Arabski",
+    "hi": "Hindi",
+    "ko": "Koreański",
+    "th": "Tajski",
+    "vi": "Wietnamski",
+    "tr": "Turecki",
+    "pl": "Polski",
+    "nl": "Holenderski",
+    "sv": "Szwedzki",
+    "da": "Duński",
+    "no": "Norweski",
+    "fi": "Fiński",
+    "cs": "Czeski",
+    "hu": "Węgierski",
+    "ro": "Rumuński",
+    "bg": "Bułgarski",
+    "hr": "Chorwacki",
+    "sk": "Słowacki",
+    "sl": "Słoweński",
+    "et": "Estoński",
+    "lv": "Łotewski",
+    "lt": "Litewski"
+  }
+} 

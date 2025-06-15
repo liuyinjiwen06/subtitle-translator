@@ -26,25 +26,7 @@ const languageNames: { [key: string]: string } = {
   'it': 'Italian'
 };
 
-// 简单的语言检测函数
-function detectLanguage(text: string): string {
-  // 检测中文字符
-  if (/[\u4e00-\u9fff]/.test(text)) return 'zh';
-  // 检测日文字符
-  if (/[\u3040-\u309f\u30a0-\u30ff]/.test(text)) return 'ja';
-  // 检测俄文字符
-  if (/[\u0400-\u04ff]/.test(text)) return 'ru';
-  // 检测常见法语词汇
-  if (/\b(le|la|les|de|du|des|et|est|une?|dans|pour|avec|sur)\b/i.test(text)) return 'fr';
-  // 检测常见德语词汇
-  if (/\b(der|die|das|und|ist|ein|eine|mit|von|zu|auf|für)\b/i.test(text)) return 'de';
-  // 检测常见西班牙语词汇
-  if (/\b(el|la|los|las|de|del|y|es|una?|en|con|por|para)\b/i.test(text)) return 'es';
-  // 检测常见意大利语词汇
-  if (/\b(il|la|lo|gli|le|di|del|e|è|una?|in|con|per|da)\b/i.test(text)) return 'it';
-  // 默认英语
-  return 'en';
-}
+
 
 // Google Cloud Translation API (官方付费服务)
 async function translateWithGoogle(text: string, targetLang: string): Promise<string> {

@@ -26,7 +26,8 @@ const languageNames: { [key: string]: string } = {
   'it': 'Italian'
 };
 
-// 简单的语言检测函数
+// 简单的语言检测函数  
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function detectLanguage(text: string): string {
   // 检测中文字符
   if (/[\u4e00-\u9fff]/.test(text)) return 'zh';
@@ -46,92 +47,7 @@ function detectLanguage(text: string): string {
   return 'en';
 }
 
-// MyMemory翻译（带备用方案）
-async function translateWithMyMemory(text: string, targetLang: string): Promise<string> {
-  if (!text.trim()) return text;
 
-  // 方案1: 尝试MyMemory API
-  try {
-    const targetLangCode = languageMap[targetLang] || targetLang;
-    const sourceLangCode = detectLanguage(text);
-    
-    // 如果检测到的源语言和目标语言相同，跳过翻译
-    if (sourceLangCode === targetLangCode) {
-      console.log('源语言和目标语言相同，跳过翻译');
-      return text;
-    }
-    
-    const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${sourceLangCode}|${targetLangCode}`;
-    
-    const response = await fetch(url, {
-      method: 'GET',
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (compatible; SubtitleTranslator/1.0)',
-      },
-    });
-
-    if (response.ok) {
-      const data = await response.json();
-      
-      if (data.responseStatus === 200 && data.responseData?.translatedText) {
-        const translatedText = data.responseData.translatedText;
-        // 检查翻译结果是否有效
-        if (!translatedText.includes('INVALID SOURCE LANGUAGE') && 
-            translatedText.trim() !== '' &&
-            translatedText !== text) {
-          console.log(`MyMemory翻译成功: ${sourceLangCode} -> ${targetLangCode}`);
-          return translatedText;
-        }
-      }
-    }
-  } catch (error) {
-    console.log('MyMemory主API失败，尝试备用方案:', error instanceof Error ? error.message : String(error));
-  }
-
-  // 方案2: 尝试LibreTranslate公共实例
-  try {
-    const langMap: { [key: string]: string } = {
-      'zh': 'zh',
-      'en': 'en',
-      'ja': 'ja',
-      'fr': 'fr',
-      'de': 'de',
-      'es': 'es',
-      'ru': 'ru',
-      'it': 'it'
-    };
-    
-    const targetLangCode = langMap[targetLang] || 'en';
-    
-    // 先尝试自动检测语言
-    const response = await fetch('https://libretranslate.de/translate', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        q: text,
-        source: 'auto',
-        target: targetLangCode,
-        format: 'text'
-      }),
-    });
-
-    if (response.ok) {
-      const data = await response.json();
-      if (data.translatedText && data.translatedText !== text) {
-        console.log('使用LibreTranslate备用翻译成功');
-        return data.translatedText;
-      }
-    }
-  } catch (error) {
-    console.log('LibreTranslate备用方案也失败:', error instanceof Error ? error.message : String(error));
-  }
-
-  // 方案3: 简单的词典替换（最后备用）
-  console.log('所有翻译服务都失败，返回原文');
-  return text;
-}
 
 // Google Cloud Translation API (官方付费服务)
 async function translateWithGoogle(text: string, targetLang: string): Promise<string> {

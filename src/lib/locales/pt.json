@@ -1,0 +1,247 @@
+{
+  "title": "Tradutor de Legendas Online",
+  "pageConfigNotFound": "Configuração da página não encontrada",
+  "upload_file": "Enviar arquivo",
+  "select_language": "Selecionar idioma de destino",
+  "translate": "Traduzir",
+  "translating": "Traduzindo...",
+  "translation_failed": "Falha na tradução",
+  "select_interface_language": "Selecionar idioma da interface",
+  "multilingual_interface_support": "Suporte à interface multilíngue",
+  "select_translation_service": "Selecionar serviço de tradução",
+  "translation_services": {
+    "google": "Tradução de Alta Qualidade",
+    "openai": "Tradução Inteligente IA"
+  },
+  "benefits": {
+    "title": "Vantagens Principais",
+    "subtitle": "Por que escolher nossa ferramenta de tradução de legendas? Experiência de tradução profissional, eficiente e segura",
+    "items": {
+      "accuracy": {
+        "icon": "🎯",
+        "title": "Tradução Precisa",
+        "description": "Usando a mais recente tecnologia de tradução IA para garantir precisão e fluência, especialmente otimizada para conteúdo de legendas"
+      },
+      "speed": {
+        "icon": "⚡",
+        "title": "Processamento Ultrarrápido",
+        "description": "Poderosa capacidade de processamento em nuvem, arquivos grandes podem ser traduzidos em minutos com exibição de progresso em tempo real"
+      },
+      "security": {
+        "icon": "🛡️",
+        "title": "Seguro e Confiável",
+        "description": "Padrões de segurança empresarial, transmissão de arquivos criptografada, exclusão automática após tradução, protegendo sua privacidade"
+      },
+      "support": {
+        "icon": "🌐",
+        "title": "Suporte Multilíngue",
+        "description": "Suporta 8 idiomas principais incluindo chinês, inglês, japonês, francês, alemão, espanhol, russo e italiano"
+      },
+      "cost": {
+        "icon": "💰",
+        "title": "Completamente Gratuito",
+        "description": "Sem registro de conta, sem assinatura paga, sem limites de uso, acesso permanentemente gratuito a todos os recursos"
+      },
+      "ease": {
+        "icon": "🎨",
+        "title": "Fácil de Usar",
+        "description": "Interface intuitiva, complete a tradução em três passos: enviar arquivo, selecionar idioma, baixar resultado, sem conhecimento especializado necessário"
+      }
+    }
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Respostas para perguntas que você pode encontrar durante o uso",
+    "items": {
+      "format": {
+        "question": "Quais formatos de arquivo de legenda são suportados?",
+        "answer": "Atualmente suporta arquivos de legenda em formato SRT, que é o formato de legenda mais usado com melhor compatibilidade. Planejamos suportar mais formatos como ASS, VTT em versões futuras."
+      },
+      "languages": {
+        "question": "Entre quais idiomas é possível traduzir?",
+        "answer": "Suporta tradução mútua entre 8 idiomas principais incluindo chinês, inglês, japonês, francês, alemão, espanhol, russo e italiano, atendendo às necessidades da maioria dos usuários."
+      },
+      "quality": {
+        "question": "Como a qualidade da tradução é garantida?",
+        "answer": "Usamos tecnologia avançada de tradução do Google Cloud e OpenAI, especialmente otimizada para conteúdo de legendas para garantir precisão e fluência da tradução. Múltiplos mecanismos de tradução estão disponíveis para sua escolha."
+      },
+      "privacy": {
+        "question": "Meus arquivos estão seguros?",
+        "answer": "Levamos a privacidade do usuário muito a sério. A transmissão de arquivos usa criptografia HTTPS, o processo de tradução ocorre em ambiente de nuvem seguro, arquivos são automaticamente excluídos após a tradução, nenhum dado do usuário é armazenado."
+      },
+      "cost": {
+        "question": "Há custo para usar isso?",
+        "answer": "Completamente gratuito! Sem necessidade de registro de conta, sem assinatura paga, sem limites de uso. Estamos comprometidos em fornecer serviços gratuitos de tradução de legendas para usuários em todo o mundo."
+      },
+      "speed": {
+        "question": "Quanto tempo leva a tradução?",
+        "answer": "A velocidade de tradução depende do tamanho do arquivo e do serviço de tradução selecionado. Geralmente, arquivos de legenda de duração normal (100-500 linhas) podem ser concluídos em 1-3 minutos."
+      }
+    }
+  },
+  "cta": {
+    "title": "Comece a Traduzir Suas Legendas Agora",
+    "subtitle": "Três passos simples para facilmente completar a tradução de legendas multilíngues, fazendo seu conteúdo alcançar audiências globais",
+    "startButton": "Começar Agora",
+    "learnMore": "Saiba Mais"
+  },
+  "languages": {
+    "en": "Inglês",
+    "zh": "Chinês",
+    "ja": "Japonês", 
+    "fr": "Francês",
+    "de": "Alemão",
+    "es": "Espanhol",
+    "ru": "Russo",
+    "it": "Italiano",
+    "pt": "Português",
+    "ar": "Árabe",
+    "hi": "Hindi",
+    "ko": "Coreano",
+    "th": "Tailandês",
+    "vi": "Vietnamita",
+    "tr": "Turco",
+    "pl": "Polonês",
+    "nl": "Holandês",
+    "sv": "Sueco",
+    "da": "Dinamarquês",
+    "no": "Norueguês",
+    "fi": "Finlandês",
+    "cs": "Tcheco",
+    "hu": "Húngaro",
+    "ro": "Romeno",
+    "bg": "Búlgaro",
+    "hr": "Croata",
+    "sk": "Eslovaco",
+    "sl": "Esloveno",
+    "et": "Estoniano",
+    "lv": "Letão",
+    "lt": "Lituano"
+  },
+  "pages": {
+    "englishSubtitle": {
+      "title": "Traduzir Legendas para Inglês - Tradutor Online de Legendas em Inglês",
+      "description": "Ferramenta profissional para tradução de legendas para inglês. Faça upload de arquivos SRT, tradução com IA, saída de legendas em inglês de alta qualidade.",
+      "seo": {
+        "title": "Traduzir Legendas para Inglês - Tradutor Gratuito Online de Legendas em Inglês | Tradução SRT Inglês de Alta Qualidade",
+        "description": "Ferramenta profissional para tradução de legendas para inglês suportando chinês, japonês, francês e mais idiomas para legendas em inglês. Tradução com IA, precisa e fluente, completamente gratuita. Faça upload de arquivos SRT e comece a traduzir agora!",
+        "keywords": "traduzir legendas para inglês,tradução de legendas inglês,tradução SRT inglês,legendas chinesas para inglês,ferramenta online legendas inglês,tradução gratuita inglês"
+      },
+      "heroTitle": "Traduzir Legendas para Inglês",
+      "heroSubtitle": "Traduza suas legendas para inglês de forma rápida e precisa, tornando seu conteúdo acessível para audiências globais de língua inglesa",
+      "targetLanguage": "Inglês",
+      "benefits": {
+        "title": "Por que Escolher Nossa Tradução de Legendas em Inglês?",
+        "subtitle": "Tecnologia profissional de tradução em inglês garantindo qualidade das legendas e experiência de visualização",
+        "items": {
+          "native": {
+            "icon": "🇺🇸",
+            "title": "Expressão Nativa em Inglês",
+            "description": "IA reconhece inteligentemente o contexto, fornecendo expressões nativas em inglês que correspondem aos hábitos linguísticos de falantes nativos"
+          },
+          "context": {
+            "icon": "🎯",
+            "title": "Compreensão de Contexto",
+            "description": "Compreensão profunda do contexto do conteúdo das legendas, garantindo coerência e precisão da tradução"
+          },
+          "timing": {
+            "icon": "⏱️",
+            "title": "Preservação do Tempo",
+            "description": "Mantém perfeitamente o tempo das legendas originais, pronto para usar após a tradução sem ajustes"
+          }
+        }
+      },
+      "useCases": {
+        "title": "Casos de Uso da Tradução de Legendas em Inglês",
+        "items": {
+          "global": {
+            "icon": "🌍",
+            "title": "Conteúdo Global",
+            "description": "Legendas em inglês para promoções corporativas e vídeos de apresentação de produtos para expandir mercados internacionais"
+          },
+          "education": {
+            "icon": "📚",
+            "title": "Cursos Educacionais",
+            "description": "Legendas em inglês para cursos online e vídeos de treinamento para servir estudantes globais"
+          },
+          "entertainment": {
+            "icon": "🎬",
+            "title": "Conteúdo de Entretenimento",
+            "description": "Legendas em inglês para filmes, documentários e vídeos curtos para expandir o alcance da audiência"
+          }
+        }
+      },
+      "faq": {
+        "title": "Perguntas Frequentes",
+        "subtitle": "Respostas para perguntas sobre tradução de legendas em inglês",
+        "items": {
+          "format": {
+            "question": "Quais formatos de legenda são suportados?",
+            "answer": "Suportamos arquivos SRT, o formato mais comum e compatível para legendas."
+          },
+          "quality": {
+            "question": "A qualidade da tradução em inglês é boa?",
+            "answer": "Sim, usamos IA avançada otimizada para traduzir legendas para inglês natural e fluente."
+          },
+          "speed": {
+            "question": "Quanto tempo leva para traduzir para inglês?",
+            "answer": "Normalmente 1-3 minutos para arquivos de tamanho padrão, dependendo do comprimento."
+          }
+        }
+      }
+    },
+    "chineseSubtitle": {
+      "title": "Traduzir Legendas para Chinês - Tradutor Online de Legendas em Chinês",
+      "description": "Ferramenta profissional para tradução de legendas para chinês. Faça upload de arquivos SRT, tradução com IA, saída de legendas em chinês de alta qualidade.",
+      "seo": {
+        "title": "Traduzir Legendas para Chinês - Tradutor Gratuito Online de Legendas em Chinês | Tradução SRT Chinês de Alta Qualidade",
+        "description": "Ferramenta profissional para tradução de legendas para chinês suportando inglês, japonês, francês e mais idiomas para legendas em chinês. Tradução com IA, precisa e fluente, completamente gratuita. Faça upload de arquivos SRT e comece a traduzir agora!",
+        "keywords": "traduzir legendas para chinês,tradução de legendas chinês,tradução SRT chinês,legendas inglesas para chinês,ferramenta online legendas chinês,tradução gratuita chinês"
+      },
+      "heroTitle": "Traduzir Legendas para Chinês",
+      "heroSubtitle": "Traduza suas legendas para chinês de forma rápida e precisa, tornando seu conteúdo acessível para audiências chinesas",
+      "targetLanguage": "Chinês",
+      "benefits": {
+        "title": "Por que Escolher Nossa Tradução de Legendas em Chinês?",
+        "subtitle": "Tecnologia profissional de tradução em chinês garantindo qualidade das legendas e experiência de visualização",
+        "items": {
+          "native": {
+            "icon": "🇨🇳",
+            "title": "Expressão Nativa em Chinês",
+            "description": "IA reconhece inteligentemente o contexto, fornecendo expressões nativas em chinês que correspondem aos hábitos linguísticos chineses"
+          },
+          "context": {
+            "icon": "🎯",
+            "title": "Compreensão de Contexto",
+            "description": "Compreensão profunda do contexto do conteúdo das legendas, garantindo coerência e precisão da tradução"
+          },
+          "timing": {
+            "icon": "⏱️",
+            "title": "Preservação do Tempo",
+            "description": "Mantém perfeitamente o tempo das legendas originais, pronto para usar após a tradução sem ajustes"
+          }
+        }
+      },
+      "useCases": {
+        "title": "Casos de Uso da Tradução de Legendas em Chinês",
+        "items": {
+          "localization": {
+            "icon": "🏠",
+            "title": "Localização de Conteúdo",
+            "description": "Legendas em chinês para filmes estrangeiros e conteúdo educacional para servir audiências chinesas"
+          },
+          "business": {
+            "icon": "💼",
+            "title": "Aplicações Comerciais",
+            "description": "Legendas em chinês para conferências internacionais e apresentações de produtos para facilitar comunicação comercial"
+          },
+          "learning": {
+            "icon": "📖",
+            "title": "Materiais de Aprendizagem",
+            "description": "Legendas em chinês para vídeos de aprendizagem de idiomas estrangeiros e cursos online"
+          }
+        }
+      }
+    }
+  }
+} 

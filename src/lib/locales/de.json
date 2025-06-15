@@ -1,9 +1,10 @@
 {
   "title": "Online Untertitel-Übersetzer",
   "description": "SRT-Datei hochladen, Zielsprache auswählen, Untertitel online übersetzen und herunterladen.",
+  "pageConfigNotFound": "Seitenkonfiguration nicht gefunden",
   "seo": {
-    "title": "Kostenloser Online-Untertitel-Übersetzer - SRT-Übersetzungstool für 8 Sprachen",
-    "description": "Professionelles Online-Untertitel-Übersetzungstool mit Unterstützung für Chinesisch, Englisch, Japanisch und 8 Sprachen. SRT-Dateien hochladen, Ein-Klick-Übersetzung, hochwertige KI-Übersetzung, völlig kostenlos.",
+    "title": "Kostenloser Online-Untertitel-Übersetzer - SRT-Übersetzungstool für 30 Sprachen",
+    "description": "Professionelles Online-Untertitel-Übersetzungstool mit Unterstützung für Chinesisch, Englisch, Japanisch und 30 Sprachen. SRT-Dateien hochladen, Ein-Klick-Übersetzung, hochwertige KI-Übersetzung, völlig kostenlos.",
     "keywords": "Untertitel-Übersetzung,SRT-Übersetzung,Online-Übersetzung,Untertitel-Datei-Übersetzung,mehrsprachige Untertitel,kostenloses Übersetzungstool,KI-Übersetzung,Video-Untertitel"
   },
   "upload": "SRT-Datei hochladen",
@@ -12,6 +13,17 @@
   "translate": "Übersetzen",
   "translating": "Übersetzen...",
   "download": "Übersetzte Datei herunterladen",
+  "click_to_select_language": "Klicken Sie, um die Zielsprache auszuwählen",
+  "file_selected_click_to_reselect": "Datei ausgewählt, klicken Sie zur Neuauswahl",
+  "click_or_drag_to_upload": "Klicken oder ziehen Sie, um SRT-Untertiteldatei hochzuladen",
+  "search_languages": "Sprachen suchen...",
+  "no_matching_languages": "Keine passenden Sprachen gefunden",
+  "please_select_srt_file": "Bitte wählen Sie eine .srt-Untertiteldatei aus",
+  "please_upload_file_first": "Bitte laden Sie zuerst eine Untertiteldatei hoch",
+  "cannot_read_response": "Antwort-Stream kann nicht gelesen werden",
+  "translation_error_occurred": "Ein Fehler ist während der Übersetzung aufgetreten",
+  "select_interface_language": "Oberflächensprache auswählen",
+  "multilingual_interface_support": "Mehrsprachige Oberflächenunterstützung",
   "translation_failed": "Übersetzung fehlgeschlagen",
   "translation_services": {
     "mymemory": "Kostenlos & Schnell",
@@ -63,6 +75,79 @@
       "free": "Kostenlos zu verwenden",
       "speed": "Übersetzungsgeschwindigkeit",
       "speedValue": "Sekunden"
+    }
+  },
+  "englishSubtitle": {
+    "seo": {
+      "title": "Englische Untertitel-Übersetzer - Kostenlose Online-Übersetzung von Untertiteln ins Englische | SRT Englisch-Übersetzung",
+      "description": "Professioneller englischer Untertitel-Übersetzungsservice mit Unterstützung für die Übersetzung von 30 Sprachen ins Englische. SRT-Untertitel-Dateien hochladen, KI-intelligente Übersetzung zu englischen Untertiteln, hochwertige Ergebnisse, völlig kostenlos.",
+      "keywords": "englische Untertitel-Übersetzung,ins Englische übersetzen,SRT Englisch-Übersetzung,Untertitel Englisch-Übersetzung,Online Englisch-Übersetzung,kostenlose englische Untertitel,KI Englisch-Übersetzung,Video englische Untertitel"
+    },
+    "title": "Englische Untertitel-Übersetzer",
+    "description": "Übersetzen Sie Untertitel aus jeder Sprache ins Englische, unterstützt 30 Quellsprachen mit professioneller KI-Übersetzungstechnologie"
+  },
+  "chineseSubtitle": {
+    "seo": {
+      "title": "Chinesische Untertitel-Übersetzer - Kostenlose Online-Übersetzung von Untertiteln ins Chinesische | SRT Chinesisch-Übersetzung",
+      "description": "Professioneller chinesischer Untertitel-Übersetzungsservice mit Unterstützung für die Übersetzung von 30 Sprachen ins Chinesische. SRT-Untertitel-Dateien hochladen, KI-intelligente Übersetzung zu chinesischen Untertiteln, präzises Kontextverständnis, völlig kostenlos.",
+      "keywords": "chinesische Untertitel-Übersetzung,ins Chinesische übersetzen,SRT Chinesisch-Übersetzung,Untertitel Chinesisch-Übersetzung,Online Chinesisch-Übersetzung,kostenlose chinesische Untertitel,KI Chinesisch-Übersetzung,Video chinesische Untertitel"
+    },
+    "title": "Chinesische Untertitel-Übersetzer",
+    "description": "Übersetzen Sie Untertitel aus jeder Sprache ins Chinesische, unterstützt 30 Quellsprachen mit intelligentem Kontextverständnis"
+  },
+  "pages": {
+    "englishSubtitle": {
+      "title": "Untertitel ins Englische übersetzen - Online Englische Untertitel-Übersetzer",
+      "heroTitle": "Untertitel ins Englische übersetzen",
+      "heroSubtitle": "Übersetzen Sie Ihre Untertitel schnell und präzise ins Englische, um Ihre Inhalte für ein globales englischsprachiges Publikum zugänglich zu machen",
+      "targetLanguage": "Englisch",
+      "benefits": {
+        "title": "Warum unsere englische Untertitel-Übersetzung wählen?",
+        "subtitle": "Professionelle englische Übersetzungstechnologie, die Untertitelqualität und Seherlebnis gewährleistet",
+        "items": {
+          "native": {
+            "icon": "🇺🇸",
+            "title": "Natürlicher englischer Ausdruck",
+            "description": "KI erkennt intelligent den Kontext und bietet natürliche englische Ausdrücke, die den Sprachgewohnheiten von Muttersprachlern entsprechen"
+          },
+          "context": {
+            "icon": "🎯",
+            "title": "Kontextverständnis",
+            "description": "Tiefes Verständnis des Untertitelinhalts-Kontexts, gewährleistet Kohärenz und Genauigkeit der Übersetzung"
+          },
+          "timing": {
+            "icon": "⏱️",
+            "title": "Zeitbeibehaltung",
+            "description": "Behält perfekt das Timing der ursprünglichen Untertitel bei, nach der Übersetzung sofort einsatzbereit ohne Anpassung"
+          }
+        }
+      },
+      "useCases": {
+        "title": "Anwendungsfälle für englische Untertitel-Übersetzung",
+        "items": {
+          "global": {
+            "icon": "🌍",
+            "title": "Globale Inhalte",
+            "description": "Englische Untertitel für Unternehmenswerbung und Produktvorstellungsvideos zur Erschließung internationaler Märkte"
+          },
+          "education": {
+            "icon": "📚",
+            "title": "Bildungskurse",
+            "description": "Englische Untertitel für Online-Kurse und Schulungsvideos zur Bedienung globaler Lernender"
+          },
+          "entertainment": {
+            "icon": "🎬",
+            "title": "Unterhaltungsinhalte",
+            "description": "Englische Untertitel für Filme, Dokumentationen und Kurze Videos zur Erweiterung der Zuschauerbasis"
+          }
+        }
+      }
+    },
+    "chineseSubtitle": {
+      "title": "Untertitel ins Chinesische übersetzen - Online Chinesische Untertitel-Übersetzer",
+      "heroTitle": "Untertitel ins Chinesische übersetzen",
+      "heroSubtitle": "Übersetzen Sie Ihre Untertitel schnell und präzise ins Chinesische, um Ihre Inhalte für chinesische Zuschauer zugänglich zu machen",
+      "targetLanguage": "Chinesisch"
     }
   }
 }

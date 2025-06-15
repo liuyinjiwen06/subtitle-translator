@@ -1,6 +1,7 @@
 {
   "title": "Traductor de subtítulos en línea",
   "description": "Sube un archivo SRT, elige el idioma de destino, traduce y descarga los subtítulos en línea.",
+  "pageConfigNotFound": "Configuración de página no encontrada",
   "seo": {
     "title": "Traductor de Subtítulos Gratuito - Herramienta de Traducción SRT para 8 Idiomas",
     "description": "Herramienta profesional de traducción de subtítulos en línea que soporta chino, inglés, japonés y 8 idiomas. Sube archivos SRT, traducción con un clic, traducción IA de alta calidad, completamente gratis.",
@@ -12,6 +13,17 @@
   "translate": "Traducir",
   "translating": "Traduciendo...",
   "download": "Descargar archivo traducido",
+  "click_to_select_language": "Haga clic para seleccionar el idioma de destino",
+  "file_selected_click_to_reselect": "Archivo seleccionado, haga clic para volver a seleccionar",
+  "click_or_drag_to_upload": "Haga clic o arrastre para subir archivo de subtítulos SRT",
+  "search_languages": "Buscar idiomas...",
+  "no_matching_languages": "No se encontraron idiomas coincidentes",
+  "please_select_srt_file": "Por favor seleccione un archivo de subtítulos .srt",
+  "please_upload_file_first": "Por favor suba primero un archivo de subtítulos",
+  "cannot_read_response": "No se puede leer el flujo de respuesta",
+  "translation_error_occurred": "Ocurrió un error durante la traducción",
+  "select_interface_language": "Seleccionar idioma de interfaz",
+  "multilingual_interface_support": "Soporte de interfaz multiidioma",
   "translation_failed": "La traducción falló",
   "translation_services": {
     "mymemory": "Gratis y rápido",
@@ -64,5 +76,78 @@
       "speed": "Velocidad de traducción",
       "speedValue": "Segundos"
     }
+  },
+  "englishSubtitle": {
+    "seo": {
+      "title": "Traductor de Subtítulos al Inglés - Traducción Gratuita de Subtítulos al Inglés en Línea | Traducción SRT al Inglés",
+      "description": "Servicio profesional de traducción de subtítulos al inglés con soporte para traducir 30 idiomas al inglés. Sube archivos de subtítulos SRT, traducción inteligente con IA a subtítulos en inglés, resultados de alta calidad, completamente gratis.",
+      "keywords": "traducción subtítulos inglés,traducir a inglés,traducción SRT inglés,traducción subtítulos inglés,traducción inglés en línea,subtítulos inglés gratis,traducción IA inglés,subtítulos video inglés"
+    },
+    "title": "Traductor de Subtítulos al Inglés",
+    "description": "Traduce subtítulos de cualquier idioma al inglés, soporta 30 idiomas de origen con tecnología de traducción IA profesional"
+  },
+  "chineseSubtitle": {
+    "seo": {
+      "title": "Traductor de Subtítulos al Chino - Traducción Gratuita de Subtítulos al Chino en Línea | Traducción SRT al Chino",
+      "description": "Servicio profesional de traducción de subtítulos al chino con soporte para traducir 30 idiomas al chino. Sube archivos de subtítulos SRT, traducción inteligente con IA a subtítulos en chino, comprensión precisa del contexto, completamente gratis.",
+      "keywords": "traducción subtítulos chino,traducir a chino,traducción SRT chino,traducción subtítulos chino,traducción chino en línea,subtítulos chino gratis,traducción IA chino,subtítulos video chino"
+    },
+    "title": "Traductor de Subtítulos al Chino",
+    "description": "Traduce subtítulos de cualquier idioma al chino, soporta 30 idiomas de origen con comprensión inteligente del contexto"
+  },
+  "pages": {
+    "englishSubtitle": {
+      "title": "Traducir Subtítulos al Inglés - Traductor de Subtítulos al Inglés en Línea",
+      "heroTitle": "Traducir Subtítulos al Inglés",
+      "heroSubtitle": "Traduce tus subtítulos al inglés de manera rápida y precisa, haciendo tu contenido accesible para audiencias de habla inglesa globales",
+      "targetLanguage": "Inglés",
+      "benefits": {
+        "title": "¿Por qué elegir nuestra traducción de subtítulos al inglés?",
+        "subtitle": "Tecnología de traducción al inglés profesional que garantiza la calidad de los subtítulos y la experiencia de visualización",
+        "items": {
+          "native": {
+            "icon": "🇺🇸",
+            "title": "Expresión natural en inglés",
+            "description": "La IA reconoce inteligentemente el contexto y proporciona expresiones naturales en inglés que se ajustan a los hábitos del idioma de los hablantes nativos"
+          },
+          "context": {
+            "icon": "🎯",
+            "title": "Comprensión del contexto",
+            "description": "Comprensión profunda del contexto del contenido de los subtítulos, garantizando coherencia y precisión en la traducción"
+          },
+          "timing": {
+            "icon": "⏱️",
+            "title": "Conservación del tiempo",
+            "description": "Mantiene perfectamente el tiempo de los subtítulos originales, listo para usar inmediatamente después de la traducción sin ajustes"
+          }
+        }
+      },
+      "useCases": {
+        "title": "Casos de uso para traducción de subtítulos al inglés",
+        "items": {
+          "global": {
+            "icon": "🌍",
+            "title": "Contenido global",
+            "description": "Subtítulos en inglés para publicidad corporativa y videos de presentación de productos para expandirse a mercados internacionales"
+          },
+          "education": {
+            "icon": "📚",
+            "title": "Cursos educativos",
+            "description": "Subtítulos en inglés para cursos en línea y videos de entrenamiento para servir a estudiantes globales"
+          },
+          "entertainment": {
+            "icon": "🎬",
+            "title": "Contenido de entretenimiento",
+            "description": "Subtítulos en inglés para películas, documentales y videos cortos para expandir la base de audiencia"
+          }
+        }
+      }
+    },
+    "chineseSubtitle": {
+      "title": "Traducir Subtítulos al Chino - Traductor de Subtítulos al Chino en Línea",
+      "heroTitle": "Traducir Subtítulos al Chino",
+      "heroSubtitle": "Traduce tus subtítulos al chino de manera rápida y precisa, haciendo tu contenido accesible para audiencias chinas",
+      "targetLanguage": "Chino"
+    }
   }
-} 
+}
