@@ -1,0 +1,9 @@
+{
+  "title": "在线字幕翻译工具",
+  "description": "上传 SRT 文件，选择目标语言，在线翻译字幕并下载。",
+  "upload": "上传 SRT 文件",
+  "select_language": "选择目标语言",
+  "translate": "翻译",
+  "download": "下载翻译文件",
+  "switch_language": "切换语言"
+} 

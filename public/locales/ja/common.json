@@ -1,0 +1,9 @@
+{
+  "title": "オンライン字幕翻訳ツール",
+  "description": "SRTファイルをアップロードし、翻訳言語を選択して字幕をオンラインで翻訳・ダウンロードできます。",
+  "upload": "SRTファイルをアップロード",
+  "select_language": "翻訳言語を選択",
+  "translate": "翻訳",
+  "download": "翻訳ファイルをダウンロード",
+  "switch_language": "言語を切り替え"
+} 

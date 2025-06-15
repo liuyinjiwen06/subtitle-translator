@@ -1,0 +1,68 @@
+{
+  "title": "Traduttore di sottotitoli online",
+  "description": "Carica un file SRT, scegli la lingua di destinazione, traduci e scarica i sottotitoli online.",
+  "seo": {
+    "title": "Traduttore di Sottotitoli Gratuito - Strumento di Traduzione SRT per 8 Lingue",
+    "description": "Strumento professionale di traduzione sottotitoli online che supporta cinese, inglese, giapponese e 8 lingue. Carica file SRT, traduzione con un clic, traduzione AI di alta qualità, completamente gratuito.",
+    "keywords": "traduzione sottotitoli,traduzione SRT,traduzione online,traduzione file sottotitoli,sottotitoli multilingue,strumento traduzione gratuito,traduzione AI,sottotitoli video"
+  },
+  "upload": "Carica file SRT",
+  "select_language": "Seleziona lingua di destinazione",
+  "select_translation_service": "Seleziona servizio di traduzione",
+  "translate": "Traduci",
+  "translating": "Traduzione...",
+  "download": "Scarica file tradotto",
+  "translation_failed": "Traduzione fallita",
+  "translation_services": {
+    "mymemory": "Gratuito e veloce",
+    "google": "Alta qualità",
+    "openai": "Alimentato da AI",
+    "mymemory_desc": "Servizio di traduzione gratuito, nessuna chiave API richiesta",
+    "google_desc": "Servizio di traduzione Google, risultati di alta qualità",
+    "openai_desc": "Traduzione alimentata da AI, richiede chiave API OpenAI"
+  },
+  "features": {
+    "title": "Perché sceglierci?",
+    "items": {
+      "fast": {
+        "icon": "⚡",
+        "title": "Traduzione veloce",
+        "description": "La tecnologia AI avanzata completa la traduzione dei sottotitoli in secondi"
+      },
+      "multilang": {
+        "icon": "🌍",
+        "title": "Supporto multilingue",
+        "description": "Supporto per 8 lingue principali per soddisfare le esigenze degli utenti globali"
+      },
+      "privacy": {
+        "icon": "🔒",
+        "title": "Privacy e sicurezza",
+        "description": "Elaborazione file locale, nessun caricamento server, protezione della tua privacy"
+      },
+      "free": {
+        "icon": "💯",
+        "title": "Completamente gratuito",
+        "description": "Nessuna registrazione richiesta, nessun limite di utilizzo, gratuito per sempre"
+      }
+    }
+  },
+  "howToUse": {
+    "title": "Come usare",
+    "steps": {
+      "step1": "Carica il tuo file di sottotitoli SRT",
+      "step2": "Seleziona la lingua di traduzione target",
+      "step3": "Clicca il pulsante traduci per iniziare l'elaborazione",
+      "step4": "Scarica il file di sottotitoli tradotto"
+    }
+  },
+  "footer": {
+    "title": "Inizia a usare il traduttore di sottotitoli online",
+    "description": "Che tu sia un creatore di contenuti, educatore o utente aziendale, il nostro strumento ti aiuta a tradurre rapidamente e accuratamente i sottotitoli per raggiungere un pubblico globale.",
+    "stats": {
+      "languages": "Lingue supportate",
+      "free": "Gratuito da usare",
+      "speed": "Velocità di traduzione",
+      "speedValue": "Secondi"
+    }
+  }
+} 

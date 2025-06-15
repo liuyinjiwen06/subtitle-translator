@@ -1,0 +1,101 @@
+{
+  "title": "Outil de traduction de sous-titres en ligne",
+  "description": "Téléchargez un fichier SRT, choisissez la langue cible, traduisez et téléchargez les sous-titres en ligne.",
+  "seo": {
+    "title": "Traducteur de Sous-titres Gratuit - Outil de Traduction SRT pour 8 Langues",
+    "description": "Outil professionnel de traduction de sous-titres en ligne supportant le chinois, l'anglais, le japonais et 8 langues. Téléchargez des fichiers SRT, traduction en un clic, traduction IA de haute qualité, entièrement gratuit.",
+    "keywords": "traduction sous-titres,traduction SRT,traduction en ligne,traduction fichier sous-titres,sous-titres multilingues,outil traduction gratuit,traduction IA,sous-titres vidéo"
+  },
+  "upload": "Télécharger un fichier SRT",
+  "select_language": "Choisir la langue cible",
+  "select_translation_service": "Choisir le service de traduction",
+  "translate": "Traduire",
+  "translating": "Traduction...",
+  "download": "Télécharger le fichier traduit",
+  "translation_failed": "La traduction a échoué",
+  "translation_services": {
+    "google": "Traduction de Haute Qualité",
+    "openai": "Traduction IA Intelligente"
+  },
+  "translation_progress": "Progression de la Traduction",
+  "translating_please_wait": "Traduction en cours, veuillez patienter...",
+  "translation_complete": "Traduction Terminée !",
+  "current_translating": "Traduction en Cours",
+  "features": {
+    "title": "Pourquoi nous choisir ?",
+    "items": {
+      "fast": {
+        "icon": "⚡",
+        "title": "Traduction rapide",
+        "description": "Technologie IA avancée complète la traduction de sous-titres en quelques secondes"
+      },
+      "multilang": {
+        "icon": "🌍",
+        "title": "Support multilingue",
+        "description": "Support de 8 langues principales pour répondre aux besoins des utilisateurs mondiaux"
+      },
+      "privacy": {
+        "icon": "🔒",
+        "title": "Confidentialité et sécurité",
+        "description": "Traitement de fichiers local, pas de téléchargement sur serveur, protection de votre vie privée"
+      },
+      "free": {
+        "icon": "💯",
+        "title": "Entièrement gratuit",
+        "description": "Aucune inscription requise, aucune limite d'utilisation, gratuit pour toujours"
+      }
+    }
+  },
+  "howToUse": {
+    "title": "Comment utiliser",
+    "steps": {
+      "step1": "Téléchargez votre fichier de sous-titres SRT",
+      "step2": "Sélectionnez la langue de traduction cible",
+      "step3": "Cliquez sur le bouton traduire pour commencer le traitement",
+      "step4": "Téléchargez le fichier de sous-titres traduit"
+    }
+  },
+  "footer": {
+    "title": "Commencer à utiliser le traducteur de sous-titres en ligne",
+    "description": "Que vous soyez créateur de contenu, éducateur ou utilisateur professionnel, notre outil vous aide à traduire rapidement et précisément les sous-titres pour atteindre un public mondial.",
+    "stats": {
+      "languages": "Langues supportées",
+      "free": "Gratuit à utiliser",
+      "speed": "Vitesse de traduction",
+      "speedValue": "Secondes"
+    }
+  },
+  "languages": {
+    "en": "Anglais",
+    "zh": "Chinois",
+    "ja": "Japonais",
+    "fr": "Français",
+    "de": "Allemand",
+    "es": "Espagnol",
+    "ru": "Russe",
+    "it": "Italien",
+    "pt": "Portugais",
+    "ar": "Arabe",
+    "hi": "Hindi",
+    "ko": "Coréen",
+    "th": "Thaï",
+    "vi": "Vietnamien",
+    "tr": "Turc",
+    "pl": "Polonais",
+    "nl": "Néerlandais",
+    "sv": "Suédois",
+    "da": "Danois",
+    "no": "Norvégien",
+    "fi": "Finnois",
+    "cs": "Tchèque",
+    "hu": "Hongrois",
+    "ro": "Roumain",
+    "bg": "Bulgare",
+    "hr": "Croate",
+    "sk": "Slovaque",
+    "sl": "Slovène",
+    "et": "Estonien",
+    "lv": "Letton",
+    "lt": "Lituanien"
+  }
+} 

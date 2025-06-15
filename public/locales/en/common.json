@@ -1,0 +1,9 @@
+{
+  "title": "Online Subtitle Translator",
+  "description": "Upload SRT file, select target language, translate and download subtitles online.",
+  "upload": "Upload SRT File",
+  "select_language": "Select Target Language",
+  "translate": "Translate",
+  "download": "Download Translated File",
+  "switch_language": "Switch Language"
+} 

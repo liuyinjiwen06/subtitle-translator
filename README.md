@@ -1,4 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 在线字幕翻译工具（Next.js 多语言版）
+
+## 简介
+基于 Next.js + Tailwind CSS + next-i18next 的多语言 SRT 字幕翻译工具，支持多语言界面、SEO、SRT 上传与翻译。
+
+## 安装依赖
+```bash
+npm install
+```
+
+## 启动开发环境
+```bash
+npm run dev
+```
+
+## 主要功能
+- SRT 字幕上传与格式校验
+- 多语言界面与路由
+- SEO 友好
+- 翻译进度与下载
+- 现代化 UI
+
+## 目录结构
+- `/src/app` 主要页面与组件
+- `/public/locales` 多语言文案
+- `/pages/api/translate.ts` 字幕翻译 API
 
 ## Getting Started
 

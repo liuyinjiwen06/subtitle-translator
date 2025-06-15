@@ -1,0 +1,9 @@
+{
+  "title": "Online-Untertitel-Übersetzer",
+  "description": "SRT-Datei hochladen, Zielsprache wählen, Untertitel online übersetzen und herunterladen.",
+  "upload": "SRT-Datei hochladen",
+  "select_language": "Zielsprache wählen",
+  "translate": "Übersetzen",
+  "download": "Übersetzte Datei herunterladen",
+  "switch_language": "Sprache wechseln"
+} 

@@ -1,0 +1,200 @@
+{
+  "title": "Online Subtitle Translator",
+  "description": "Upload SRT files, select target language, translate subtitles online and download.",
+  "seo": {
+    "title": "Free Online Subtitle Translator - SRT Translation Tool for 8 Languages",
+    "description": "Professional online subtitle translation tool supporting Chinese, English, Japanese and 8 languages. Upload SRT files, one-click translation, high-quality AI translation, completely free to use.",
+    "keywords": "subtitle translation,SRT translation,online translation,subtitle file translation,multilingual subtitles,free translation tool,AI translation,video subtitles"
+  },
+  "upload": "Upload SRT File",
+  "select_language": "Select Target Language",
+  "select_translation_service": "Select Translation Service",
+  "translate": "Translate",
+  "translating": "Translating...",
+  "download": "Download Translated File",
+  "translation_failed": "Translation Failed",
+  "translation_services": {
+    "google": "High Quality Translation",
+    "openai": "AI Smart Translation"
+  },
+  "translation_progress": "Translation Progress",
+  "translating_please_wait": "Translating, please wait...",
+  "translation_complete": "Translation Complete!",
+  "current_translating": "Currently Translating",
+  "translate_again": "Translate Again",
+  "features": {
+    "title": "Why Choose Us?",
+    "items": {
+      "fast": {
+        "icon": "⚡",
+        "title": "Fast Translation",
+        "description": "Advanced AI technology completes subtitle translation in seconds"
+      },
+      "multilang": {
+        "icon": "🌍",
+        "title": "Multi-language Support",
+        "description": "Supports 8 mainstream languages to meet global user needs"
+      },
+      "privacy": {
+        "icon": "🔒",
+        "title": "Privacy & Security",
+        "description": "Local file processing, no server upload, protecting your privacy"
+      },
+      "free": {
+        "icon": "💯",
+        "title": "Completely Free",
+        "description": "No registration required, no usage limits, permanently free"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Core Advantages",
+    "subtitle": "Why choose our subtitle translation tool? Professional, efficient, and secure translation experience",
+    "items": {
+      "accuracy": {
+        "icon": "🎯",
+        "title": "Accurate Translation",
+        "description": "Using the latest AI translation technology to ensure translation accuracy and language fluency, specially optimized for subtitle content"
+      },
+      "speed": {
+        "icon": "⚡",
+        "title": "Lightning Fast",
+        "description": "Powerful cloud processing capabilities, even large files can be translated in minutes with real-time progress display"
+      },
+      "security": {
+        "icon": "🛡️",
+        "title": "Secure & Reliable",
+        "description": "Enterprise-grade security standards, encrypted file transmission, automatic deletion after translation, protecting your privacy"
+      },
+      "support": {
+        "icon": "🌐",
+        "title": "Multi-language Support",
+        "description": "Supports 8 mainstream languages including Chinese, English, Japanese, French, German, Spanish, Russian, and Italian"
+      },
+      "cost": {
+        "icon": "💰",
+        "title": "Completely Free",
+        "description": "No account registration, no paid subscription, no usage limits, permanently free access to all features"
+      },
+      "ease": {
+        "icon": "🎨",
+        "title": "Easy to Use",
+        "description": "Intuitive user interface, complete translation in three steps: upload file, select language, download result, no expertise required"
+      }
+    }
+  },
+  "useCases": {
+    "title": "Use Cases",
+    "subtitle": "Whether you're an individual user or professional team, we can meet your subtitle translation needs",
+    "items": {
+      "education": {
+        "icon": "🎓",
+        "title": "Education & Training",
+        "description": "Online courses, educational videos, academic lectures multilingual subtitle creation"
+      },
+      "business": {
+        "icon": "💼",
+        "title": "Business Use",
+        "description": "Corporate promotional videos, product introductions, meeting records internationalization translation"
+      },
+      "entertainment": {
+        "icon": "🎬",
+        "title": "Film & Entertainment",
+        "description": "Movies, TV series, documentaries, short videos subtitle localization"
+      },
+      "personal": {
+        "icon": "👤",
+        "title": "Personal Creation",
+        "description": "Vlogs, gaming videos, life recordings multilingual subtitle addition"
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to questions you may encounter during use",
+    "items": {
+      "format": {
+        "question": "What subtitle file formats are supported?",
+        "answer": "Currently supports SRT format subtitle files, which is the most commonly used subtitle format with the best compatibility. We plan to support more formats like ASS, VTT in future versions."
+      },
+      "languages": {
+        "question": "What languages can be translated between?",
+        "answer": "Supports mutual translation between 8 mainstream languages including Chinese, English, Japanese, French, German, Spanish, Russian, and Italian, meeting most users' needs."
+      },
+      "quality": {
+        "question": "How is translation quality guaranteed?",
+        "answer": "We use advanced translation technology from Google Cloud and OpenAI, specially optimized for subtitle content to ensure translation accuracy and fluency. Multiple translation engines are available for your choice."
+      },
+      "privacy": {
+        "question": "Are my files secure?",
+        "answer": "We take user privacy very seriously. File transmission uses HTTPS encryption, translation process occurs in a secure cloud environment, files are automatically deleted after translation, no user data is stored."
+      },
+      "cost": {
+        "question": "Is there a cost to use this?",
+        "answer": "Completely free! No account registration required, no paid subscription, no usage limits. We are committed to providing free subtitle translation services to users worldwide."
+      },
+      "speed": {
+        "question": "How long does translation take?",
+        "answer": "Translation speed depends on file size and selected translation service. Generally, normal length subtitle files (100-500 lines) can be completed within 1-3 minutes."
+      }
+    }
+  },
+  "cta": {
+    "title": "Start Translating Your Subtitles Now",
+    "subtitle": "Three simple steps to easily complete multilingual subtitle translation, making your content reach global audiences",
+    "startButton": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "howToUse": {
+    "title": "How to Use",
+    "steps": {
+      "step1": "Upload your SRT subtitle file",
+      "step2": "Select target translation language",
+      "step3": "Click translate button to start processing",
+      "step4": "Download the translated subtitle file"
+    }
+  },
+  "footer": {
+    "title": "Start Using Online Subtitle Translation Tool",
+    "description": "Whether you're a content creator, educator, or business user, our tool can help you quickly and accurately translate subtitles, making your content reach global audiences.",
+    "stats": {
+      "languages": "Supported Languages",
+      "free": "Free to Use",
+      "speed": "Translation Speed",
+      "speedValue": "Seconds"
+    }
+  },
+  "languages": {
+    "en": "English",
+    "zh": "Chinese",
+    "ja": "Japanese",
+    "fr": "French",
+    "de": "German",
+    "es": "Spanish",
+    "ru": "Russian",
+    "it": "Italian",
+    "pt": "Portuguese",
+    "ar": "Arabic",
+    "hi": "Hindi",
+    "ko": "Korean",
+    "th": "Thai",
+    "vi": "Vietnamese",
+    "tr": "Turkish",
+    "pl": "Polish",
+    "nl": "Dutch",
+    "sv": "Swedish",
+    "da": "Danish",
+    "no": "Norwegian",
+    "fi": "Finnish",
+    "cs": "Czech",
+    "hu": "Hungarian",
+    "ro": "Romanian",
+    "bg": "Bulgarian",
+    "hr": "Croatian",
+    "sk": "Slovak",
+    "sl": "Slovenian",
+    "et": "Estonian",
+    "lv": "Latvian",
+    "lt": "Lithuanian"
+  }
+}

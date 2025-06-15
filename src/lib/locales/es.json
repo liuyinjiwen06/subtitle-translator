@@ -1,0 +1,68 @@
+{
+  "title": "Traductor de subtítulos en línea",
+  "description": "Sube un archivo SRT, elige el idioma de destino, traduce y descarga los subtítulos en línea.",
+  "seo": {
+    "title": "Traductor de Subtítulos Gratuito - Herramienta de Traducción SRT para 8 Idiomas",
+    "description": "Herramienta profesional de traducción de subtítulos en línea que soporta chino, inglés, japonés y 8 idiomas. Sube archivos SRT, traducción con un clic, traducción IA de alta calidad, completamente gratis.",
+    "keywords": "traducción subtítulos,traducción SRT,traducción en línea,traducción archivo subtítulos,subtítulos multiidioma,herramienta traducción gratuita,traducción IA,subtítulos video"
+  },
+  "upload": "Subir archivo SRT",
+  "select_language": "Seleccionar idioma de destino",
+  "select_translation_service": "Seleccionar servicio de traducción",
+  "translate": "Traducir",
+  "translating": "Traduciendo...",
+  "download": "Descargar archivo traducido",
+  "translation_failed": "La traducción falló",
+  "translation_services": {
+    "mymemory": "Gratis y rápido",
+    "google": "Alta calidad",
+    "openai": "Impulsado por IA",
+    "mymemory_desc": "Servicio de traducción gratuito, no requiere clave API",
+    "google_desc": "Servicio de traducción de Google, resultados de alta calidad",
+    "openai_desc": "Traducción impulsada por IA, requiere clave API de OpenAI"
+  },
+  "features": {
+    "title": "¿Por qué elegirnos?",
+    "items": {
+      "fast": {
+        "icon": "⚡",
+        "title": "Traducción rápida",
+        "description": "La tecnología de IA avanzada completa la traducción de subtítulos en segundos"
+      },
+      "multilang": {
+        "icon": "🌍",
+        "title": "Soporte multiidioma",
+        "description": "Soporte para 8 idiomas principales para satisfacer las necesidades de usuarios globales"
+      },
+      "privacy": {
+        "icon": "🔒",
+        "title": "Privacidad y seguridad",
+        "description": "Procesamiento de archivos local, sin carga al servidor, protegiendo su privacidad"
+      },
+      "free": {
+        "icon": "💯",
+        "title": "Completamente gratis",
+        "description": "No se requiere registro, sin límites de uso, gratis para siempre"
+      }
+    }
+  },
+  "howToUse": {
+    "title": "Cómo usar",
+    "steps": {
+      "step1": "Sube tu archivo de subtítulos SRT",
+      "step2": "Selecciona el idioma de traducción objetivo",
+      "step3": "Haz clic en el botón traducir para comenzar el procesamiento",
+      "step4": "Descarga el archivo de subtítulos traducido"
+    }
+  },
+  "footer": {
+    "title": "Comienza a usar el traductor de subtítulos en línea",
+    "description": "Ya seas creador de contenido, educador o usuario empresarial, nuestra herramienta te ayuda a traducir subtítulos de manera rápida y precisa para llegar a audiencias globales.",
+    "stats": {
+      "languages": "Idiomas soportados",
+      "free": "Gratis para usar",
+      "speed": "Velocidad de traducción",
+      "speedValue": "Segundos"
+    }
+  }
+} 

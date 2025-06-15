@@ -1,0 +1,200 @@
+{
+  "title": "在线字幕翻译工具",
+  "description": "上传 SRT 文件，选择目标语言，在线翻译字幕并下载。",
+  "seo": {
+    "title": "免费在线字幕翻译工具 - 支持8种语言的SRT字幕翻译器",
+    "description": "专业的在线字幕翻译工具，支持中文、英文、日语等8种语言。上传SRT文件，一键翻译，高质量AI翻译，完全免费使用。",
+    "keywords": "字幕翻译,SRT翻译,在线翻译,字幕文件翻译,多语言字幕,免费翻译工具,AI翻译,视频字幕"
+  },
+  "upload": "上传 SRT 文件",
+  "select_language": "选择目标语言",
+  "select_translation_service": "选择翻译服务",
+  "translate": "翻译",
+  "translating": "翻译中...",
+  "download": "下载翻译文件",
+  "translation_failed": "翻译失败",
+  "translation_services": {
+    "google": "高质量翻译",
+    "openai": "AI智能翻译"
+  },
+  "translation_progress": "翻译进度",
+  "translating_please_wait": "正在翻译中，请稍候...",
+  "translation_complete": "翻译完成！",
+  "current_translating": "正在翻译",
+  "translate_again": "重新翻译",
+  "features": {
+    "title": "为什么选择我们？",
+    "items": {
+      "fast": {
+        "icon": "⚡",
+        "title": "快速翻译",
+        "description": "采用先进的AI技术，几秒钟内完成字幕翻译"
+      },
+      "multilang": {
+        "icon": "🌍",
+        "title": "多语言支持",
+        "description": "支持8种主流语言，满足全球用户需求"
+      },
+      "privacy": {
+        "icon": "🔒",
+        "title": "隐私安全",
+        "description": "文件本地处理，不上传到服务器，保护您的隐私"
+      },
+      "free": {
+        "icon": "💯",
+        "title": "完全免费",
+        "description": "无需注册，无使用限制，永久免费使用"
+      }
+    }
+  },
+  "benefits": {
+    "title": "核心优势",
+    "subtitle": "为什么选择我们的字幕翻译工具？专业、高效、安全的翻译体验",
+    "items": {
+      "accuracy": {
+        "icon": "🎯",
+        "title": "翻译精准",
+        "description": "采用最新AI翻译技术，确保翻译准确性和语言流畅性，专门针对字幕内容优化"
+      },
+      "speed": {
+        "icon": "⚡",
+        "title": "极速处理",
+        "description": "强大的云端处理能力，大文件也能在几分钟内完成翻译，实时显示翻译进度"
+      },
+      "security": {
+        "icon": "🛡️",
+        "title": "安全可靠",
+        "description": "采用企业级安全标准，文件传输加密，翻译完成后自动删除，保护您的隐私"
+      },
+      "support": {
+        "icon": "🌐",
+        "title": "多语言支持",
+        "description": "支持中文、英文、日语、法语、德语、西班牙语、俄语、意大利语等8种主流语言"
+      },
+      "cost": {
+        "icon": "💰",
+        "title": "完全免费",
+        "description": "无需注册账号，无需付费订阅，无使用次数限制，永久免费使用所有功能"
+      },
+      "ease": {
+        "icon": "🎨",
+        "title": "简单易用",
+        "description": "直观的用户界面，三步完成翻译：上传文件、选择语言、下载结果，无需专业知识"
+      }
+    }
+  },
+  "useCases": {
+    "title": "适用场景",
+    "subtitle": "无论您是个人用户还是专业团队，我们都能满足您的字幕翻译需求",
+    "items": {
+      "education": {
+        "icon": "🎓",
+        "title": "教育培训",
+        "description": "在线课程、教学视频、学术讲座的多语言字幕制作"
+      },
+      "business": {
+        "icon": "💼",
+        "title": "商业用途",
+        "description": "企业宣传片、产品介绍、会议记录的国际化翻译"
+      },
+      "entertainment": {
+        "icon": "🎬",
+        "title": "影视娱乐",
+        "description": "电影、电视剧、纪录片、短视频的字幕本地化"
+      },
+      "personal": {
+        "icon": "👤",
+        "title": "个人创作",
+        "description": "Vlog、游戏视频、生活记录的多语言字幕添加"
+      }
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "解答您在使用过程中可能遇到的问题",
+    "items": {
+      "format": {
+        "question": "支持哪些字幕文件格式？",
+        "answer": "目前支持SRT格式的字幕文件，这是最常用的字幕格式，兼容性最好。我们计划在未来版本中支持更多格式如ASS、VTT等。"
+      },
+      "languages": {
+        "question": "支持哪些语言之间的翻译？",
+        "answer": "支持中文、英文、日语、法语、德语、西班牙语、俄语、意大利语等8种主流语言之间的互相翻译，可以满足大部分用户的需求。"
+      },
+      "quality": {
+        "question": "翻译质量如何保证？",
+        "answer": "我们使用Google Cloud和OpenAI的先进翻译技术，针对字幕内容进行了专门优化，确保翻译的准确性和流畅性。同时支持多种翻译引擎供您选择。"
+      },
+      "privacy": {
+        "question": "我的文件安全吗？",
+        "answer": "我们非常重视用户隐私。文件传输采用HTTPS加密，翻译过程在安全的云环境中进行，翻译完成后文件会自动删除，不会保存任何用户数据。"
+      },
+      "cost": {
+        "question": "使用需要付费吗？",
+        "answer": "完全免费！无需注册账号，无需付费订阅，无使用次数限制。我们致力于为全球用户提供免费的字幕翻译服务。"
+      },
+      "speed": {
+        "question": "翻译需要多长时间？",
+        "answer": "翻译速度取决于文件大小和选择的翻译服务。一般来说，普通长度的字幕文件（100-500行）在1-3分钟内即可完成翻译。"
+      }
+    }
+  },
+  "cta": {
+    "title": "立即开始翻译您的字幕",
+    "subtitle": "简单三步，轻松完成多语言字幕翻译，让您的内容触达全球观众",
+    "startButton": "立即开始",
+    "learnMore": "了解更多"
+  },
+  "howToUse": {
+    "title": "使用方法",
+    "steps": {
+      "step1": "上传您的 SRT 字幕文件",
+      "step2": "选择目标翻译语言",
+      "step3": "点击翻译按钮开始处理",
+      "step4": "下载翻译完成的字幕文件"
+    }
+  },
+  "footer": {
+    "title": "开始使用在线字幕翻译工具",
+    "description": "无论您是内容创作者、教育工作者还是企业用户，我们的工具都能帮助您快速、准确地翻译字幕，让您的内容触达全球观众。",
+    "stats": {
+      "languages": "支持语言",
+      "free": "免费使用",
+      "speed": "翻译速度",
+      "speedValue": "秒级"
+    }
+  },
+  "languages": {
+    "en": "英语",
+    "zh": "中文",
+    "ja": "日语",
+    "fr": "法语",
+    "de": "德语",
+    "es": "西班牙语",
+    "ru": "俄语",
+    "it": "意大利语",
+    "pt": "葡萄牙语",
+    "ar": "阿拉伯语",
+    "hi": "印地语",
+    "ko": "韩语",
+    "th": "泰语",
+    "vi": "越南语",
+    "tr": "土耳其语",
+    "pl": "波兰语",
+    "nl": "荷兰语",
+    "sv": "瑞典语",
+    "da": "丹麦语",
+    "no": "挪威语",
+    "fi": "芬兰语",
+    "cs": "捷克语",
+    "hu": "匈牙利语",
+    "ro": "罗马尼亚语",
+    "bg": "保加利亚语",
+    "hr": "克罗地亚语",
+    "sk": "斯洛伐克语",
+    "sl": "斯洛文尼亚语",
+    "et": "爱沙尼亚语",
+    "lv": "拉脱维亚语",
+    "lt": "立陶宛语"
+  }
+}

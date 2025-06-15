@@ -1,0 +1,68 @@
+{
+  "title": "Online Untertitel-Übersetzer",
+  "description": "SRT-Datei hochladen, Zielsprache auswählen, Untertitel online übersetzen und herunterladen.",
+  "seo": {
+    "title": "Kostenloser Online-Untertitel-Übersetzer - SRT-Übersetzungstool für 8 Sprachen",
+    "description": "Professionelles Online-Untertitel-Übersetzungstool mit Unterstützung für Chinesisch, Englisch, Japanisch und 8 Sprachen. SRT-Dateien hochladen, Ein-Klick-Übersetzung, hochwertige KI-Übersetzung, völlig kostenlos.",
+    "keywords": "Untertitel-Übersetzung,SRT-Übersetzung,Online-Übersetzung,Untertitel-Datei-Übersetzung,mehrsprachige Untertitel,kostenloses Übersetzungstool,KI-Übersetzung,Video-Untertitel"
+  },
+  "upload": "SRT-Datei hochladen",
+  "select_language": "Zielsprache auswählen",
+  "select_translation_service": "Übersetzungsdienst auswählen",
+  "translate": "Übersetzen",
+  "translating": "Übersetzen...",
+  "download": "Übersetzte Datei herunterladen",
+  "translation_failed": "Übersetzung fehlgeschlagen",
+  "translation_services": {
+    "mymemory": "Kostenlos & Schnell",
+    "google": "Hohe Qualität",
+    "openai": "KI-gesteuert",
+    "mymemory_desc": "Kostenloser Übersetzungsdienst, kein API-Schlüssel erforderlich",
+    "google_desc": "Google Übersetzungsdienst, hochwertige Ergebnisse",
+    "openai_desc": "KI-gesteuerte Übersetzung, benötigt OpenAI API-Schlüssel"
+  },
+  "features": {
+    "title": "Warum uns wählen?",
+    "items": {
+      "fast": {
+        "icon": "⚡",
+        "title": "Schnelle Übersetzung",
+        "description": "Fortschrittliche KI-Technologie übersetzt Untertitel in Sekunden"
+      },
+      "multilang": {
+        "icon": "🌍",
+        "title": "Mehrsprachige Unterstützung",
+        "description": "Unterstützung für 8 Hauptsprachen für globale Benutzeranforderungen"
+      },
+      "privacy": {
+        "icon": "🔒",
+        "title": "Datenschutz & Sicherheit",
+        "description": "Lokale Dateiverarbeitung, kein Server-Upload, Schutz Ihrer Privatsphäre"
+      },
+      "free": {
+        "icon": "💯",
+        "title": "Völlig kostenlos",
+        "description": "Keine Registrierung erforderlich, keine Nutzungsbeschränkungen, für immer kostenlos"
+      }
+    }
+  },
+  "howToUse": {
+    "title": "Verwendung",
+    "steps": {
+      "step1": "Laden Sie Ihre SRT-Untertiteldatei hoch",
+      "step2": "Wählen Sie die Zielübersetzungssprache",
+      "step3": "Klicken Sie auf die Schaltfläche Übersetzen, um die Verarbeitung zu starten",
+      "step4": "Laden Sie die übersetzte Untertiteldatei herunter"
+    }
+  },
+  "footer": {
+    "title": "Beginnen Sie mit dem Online-Untertitel-Übersetzer",
+    "description": "Ob Sie Content-Creator, Pädagoge oder Geschäftsbenutzer sind, unser Tool hilft Ihnen dabei, Untertitel schnell und genau zu übersetzen, um ein globales Publikum zu erreichen.",
+    "stats": {
+      "languages": "Unterstützte Sprachen",
+      "free": "Kostenlos zu verwenden",
+      "speed": "Übersetzungsgeschwindigkeit",
+      "speedValue": "Sekunden"
+    }
+  }
+}
