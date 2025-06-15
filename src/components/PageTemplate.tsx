@@ -4,10 +4,39 @@ import { useTranslation } from 'react-i18next';
 import { PageConfig } from '@/lib/pageConfig';
 import SubtitleTranslator from './SubtitleTranslator';
 import { useEffect } from 'react';
+import Link from 'next/link';
 
 interface PageTemplateProps {
   pageConfig: PageConfig;
   className?: string;
+}
+
+interface PageData {
+  title?: string;
+  benefits?: {
+    title?: string;
+    subtitle?: string;
+    items?: Record<string, {
+      icon: string;
+      title: string;
+      description: string;
+    }>;
+  };
+  useCases?: {
+    title?: string;
+    items?: Record<string, {
+      icon: string;
+      title: string;
+      description: string;
+    }>;
+  };
+  [key: string]: unknown;
+}
+
+interface BenefitItem {
+  icon: string;
+  title: string;
+  description: string;
 }
 
 export default function PageTemplate({ pageConfig, className = "" }: PageTemplateProps) {
@@ -16,7 +45,7 @@ export default function PageTemplate({ pageConfig, className = "" }: PageTemplat
   // 动态更新页面标题
   useEffect(() => {
     try {
-      const pageData = t(`pages.${pageConfig.pageKey}`, { returnObjects: true }) as any;
+      const pageData = t(`pages.${pageConfig.pageKey}`, { returnObjects: true }) as PageData;
       if (pageData?.title) {
         document.title = pageData.title;
       }
@@ -27,7 +56,7 @@ export default function PageTemplate({ pageConfig, className = "" }: PageTemplat
 
   const getPageData = (key: string) => {
     try {
-      const pageData = t(`pages.${pageConfig.pageKey}`, { returnObjects: true }) as any;
+      const pageData = t(`pages.${pageConfig.pageKey}`, { returnObjects: true }) as PageData;
       return pageData?.[key] || '';
     } catch {
       return '';
@@ -36,7 +65,7 @@ export default function PageTemplate({ pageConfig, className = "" }: PageTemplat
 
   const getBenefitsData = () => {
     try {
-      const pageData = t(`pages.${pageConfig.pageKey}`, { returnObjects: true }) as any;
+      const pageData = t(`pages.${pageConfig.pageKey}`, { returnObjects: true }) as PageData;
       return pageData?.benefits || {};
     } catch {
       return {};
@@ -45,7 +74,7 @@ export default function PageTemplate({ pageConfig, className = "" }: PageTemplat
 
   const getUseCasesData = () => {
     try {
-      const pageData = t(`pages.${pageConfig.pageKey}`, { returnObjects: true }) as any;
+      const pageData = t(`pages.${pageConfig.pageKey}`, { returnObjects: true }) as PageData;
       return pageData?.useCases || {};
     } catch {
       return {};
@@ -89,9 +118,9 @@ export default function PageTemplate({ pageConfig, className = "" }: PageTemplat
           <nav className="mb-8">
             <ol className="flex items-center space-x-2 text-sm text-gray-500">
               <li>
-                <a href="/" className="hover:text-blue-600 transition-colors">
+                <Link href="/" className="hover:text-blue-600 transition-colors">
                   {t('title')}
-                </a>
+                </Link>
               </li>
               <li className="flex items-center">
                 <svg className="w-4 h-4 mx-2" fill="currentColor" viewBox="0 0 20 20">
@@ -137,7 +166,7 @@ export default function PageTemplate({ pageConfig, className = "" }: PageTemplat
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {benefits?.items && Object.entries(benefits.items).map(([key, item]: [string, any]) => (
+              {benefits?.items && Object.entries(benefits.items).map(([key, item]: [string, BenefitItem]) => (
                 <div key={key} className="text-center p-8 rounded-2xl bg-gradient-to-br from-white to-gray-50 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300">
                   <div className="text-4xl mb-4">{item.icon}</div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -164,7 +193,7 @@ export default function PageTemplate({ pageConfig, className = "" }: PageTemplat
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {useCases?.items && Object.entries(useCases.items).map(([key, item]: [string, any]) => (
+              {useCases?.items && Object.entries(useCases.items).map(([key, item]: [string, BenefitItem]) => (
                 <div key={key} className="p-8 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300">
                   <div className="text-4xl mb-4">{item.icon}</div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -193,7 +222,7 @@ export default function PageTemplate({ pageConfig, className = "" }: PageTemplat
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {Object.entries(t('benefits.items', { returnObjects: true }) as any).map(([key, item]: [string, any]) => (
+            {Object.entries(t('benefits.items', { returnObjects: true }) as Record<string, BenefitItem>).map(([key, item]: [string, BenefitItem]) => (
               <div key={key} className="p-8 rounded-2xl bg-gradient-to-br from-white to-gray-50 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300">
                 <div className="text-4xl mb-4">{item.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -289,6 +318,12 @@ export default function PageTemplate({ pageConfig, className = "" }: PageTemplat
                 <div className="text-3xl font-bold text-yellow-400">AI</div>
                 <div className="text-gray-300">智能翻译</div>
               </div>
+            </div>
+
+            <div className="text-center">
+              <Link href="/" className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium transition-colors">
+                ← {t('back_to_home')}
+              </Link>
             </div>
           </div>
         </div>

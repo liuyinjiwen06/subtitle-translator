@@ -150,13 +150,11 @@ function TranslationServiceSelector({
 function TargetLanguageSelector({ 
   currentLang, 
   onLanguageChange, 
-  t,
-  presetLanguage 
+  t
 }: { 
   currentLang: string, 
   onLanguageChange: (lang: string) => void, 
-  t: (key: string) => string,
-  presetLanguage?: string
+  t: (key: string) => string
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -415,7 +413,6 @@ export default function SubtitleTranslator({ pageConfig, className = "" }: Subti
               currentLang={targetLanguage}
               onLanguageChange={setTargetLanguage}
               t={t}
-              presetLanguage={pageConfig?.targetLanguage}
             />
           </div>
 

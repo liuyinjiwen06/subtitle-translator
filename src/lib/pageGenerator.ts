@@ -144,7 +144,7 @@ export default function ${componentName}() {
 }
 
 // 生成翻译文件内容模板
-export function generateTranslationTemplate(targetLang: string, forLocale: string = 'zh'): any {
+export function generateTranslationTemplate(targetLang: string, forLocale: string = 'zh'): Record<string, unknown> {
   const language = SUPPORTED_LANGUAGES.find(lang => lang.code === targetLang);
   if (!language) return {};
 

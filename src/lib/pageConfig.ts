@@ -72,27 +72,27 @@ export function getPageConfigByPath(path: string): PageConfig | null {
 }
 
 // 生成页面元数据
-export function generatePageMetadata(pageKey: string, t: (key: string, options?: any) => any) {
+export function generatePageMetadata(pageKey: string, t: (key: string, options?: { returnObjects?: boolean }) => string | Record<string, unknown>) {
   const config = getPageConfig(pageKey);
   if (!config) return null;
 
-  const pageData = t(`pages.${pageKey}`, { returnObjects: true });
+  const pageData = t(`pages.${pageKey}`, { returnObjects: true }) as Record<string, unknown>;
   
   return {
-    title: pageData?.seo?.title || pageData?.title,
-    description: pageData?.seo?.description || pageData?.description,
-    keywords: pageData?.seo?.keywords,
+    title: (pageData?.seo as Record<string, unknown>)?.title || pageData?.title,
+    description: (pageData?.seo as Record<string, unknown>)?.description || pageData?.description,
+    keywords: (pageData?.seo as Record<string, unknown>)?.keywords,
     openGraph: {
-      title: pageData?.seo?.title || pageData?.title,
-      description: pageData?.seo?.description || pageData?.description,
+      title: (pageData?.seo as Record<string, unknown>)?.title || pageData?.title,
+      description: (pageData?.seo as Record<string, unknown>)?.description || pageData?.description,
       type: 'website',
       locale: 'zh_CN',
       alternateLocale: ['en_US', 'ja_JP']
     },
     twitter: {
       card: 'summary_large_image',
-      title: pageData?.seo?.title || pageData?.title,
-      description: pageData?.seo?.description || pageData?.description
+      title: (pageData?.seo as Record<string, unknown>)?.title || pageData?.title,
+      description: (pageData?.seo as Record<string, unknown>)?.description || pageData?.description
     },
     robots: {
       index: true,
