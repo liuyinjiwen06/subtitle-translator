@@ -23,24 +23,28 @@ const resources = {
   'it': { translation: it },
 };
 
-// 只在客户端初始化 i18next
+// 统一的初始化配置
+const initConfig = {
+  resources,
+  fallbackLng: 'en',
+  debug: process.env.NODE_ENV === 'development',
+  interpolation: {
+    escapeValue: false, // React 已经处理了 XSS
+  },
+  react: {
+    useSuspense: false, // 关闭Suspense避免SSR问题
+  },
+  initImmediate: false,
+};
+
+// 客户端和服务端分别初始化
 if (typeof window !== 'undefined') {
-  // 清除可能存在的旧语言设置
-  localStorage.removeItem('i18nextLng');
-  
+  // 客户端初始化 - 使用语言检测
   i18n
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
-      resources,
-      fallbackLng: 'en', // 设置英语为fallback语言
-      // 移除强制设置，让浏览器语言检测生效
-      debug: process.env.NODE_ENV === 'development',
-      
-      interpolation: {
-        escapeValue: false, // React 已经处理了 XSS
-      },
-      
+      ...initConfig,
       detection: {
         order: ['localStorage', 'navigator', 'htmlTag'],
         caches: ['localStorage'],
@@ -59,26 +63,15 @@ if (typeof window !== 'undefined') {
           return 'en';
         }
       },
-      
-      // 确保同步初始化
-      initImmediate: false,
     });
 } else {
-  // 服务端简单初始化
+  // 服务端初始化 - 固定英语
   i18n
     .use(initReactI18next)
     .init({
-      resources,
-      fallbackLng: 'en', // 服务端也使用英语作为fallback
-      lng: 'en', // 服务端默认英语
-      debug: false,
-      
-      interpolation: {
-        escapeValue: false,
-      },
-      
-      // 服务端不使用语言检测
-      initImmediate: false,
+      ...initConfig,
+      lng: 'en', // 服务端固定使用英语
+      debug: false, // 服务端关闭调试
     });
 }
 
