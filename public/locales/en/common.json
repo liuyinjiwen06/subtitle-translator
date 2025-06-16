@@ -5,5 +5,32 @@
   "select_language": "Select Target Language",
   "translate": "Translate",
   "download": "Download Translated File",
-  "switch_language": "Switch Language"
+  "switch_language": "Switch Language",
+  "specializedTools": {
+    "title": "Professional Subtitle Translation Tools",
+    "subtitle": "Specialized translation services optimized for different languages, providing more precise translation experience",
+    "note": "Choose specialized language tools for more accurate translation results, each tool is deeply optimized for specific languages.",
+    "english": {
+      "title": "English Subtitle Translator",
+      "tagline": "Professional English Translation",
+      "description": "Specially optimized for English subtitle translation, using advanced AI technology to provide accurate and natural English translation services. Supports globalization content localization.",
+      "button": "Start English Translation",
+      "features": {
+        "ai": "AI Optimized",
+        "global": "Globalization",
+        "professional": "Professional"
+      }
+    },
+    "chinese": {
+      "title": "Chinese Subtitle Translator",
+      "tagline": "Professional Chinese Translation",
+      "description": "Specially optimized for Chinese translation, deeply understanding Chinese context and cultural characteristics, providing authentic and accurate Chinese subtitle translation services.",
+      "button": "Start Chinese Translation",
+      "features": {
+        "cultural": "Cultural Adaptation",
+        "context": "Context Understanding",
+        "native": "Native Expression"
+      }
+    }
+  }
 } 

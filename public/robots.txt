@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# 主要页面
+Allow: /english-subtitle
+Allow: /chinese-subtitle
+
+# 静态资源
+Allow: /icon.png
+Allow: /favicon.ico
+Allow: /_next/static/
+
+# 阻止爬取API端点
+Disallow: /api/
+
+# 站点地图
+Sitemap: https://subtitle-translator2.pages.dev/sitemap.xml
+
+# 爬取延迟（毫秒）
+Crawl-delay: 1 

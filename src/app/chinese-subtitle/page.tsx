@@ -12,104 +12,117 @@ export default function ChineseSubtitlePage() {
 
   // 设置页面元数据
   useEffect(() => {
-    if (pageConfig) {
-      const metadata = generatePageMetadata('chineseSubtitle', t);
-      if (metadata) {
-        // 更新页面标题
-        document.title = metadata.title || '';
-        
-        // 更新meta描述
-        const metaDescription = document.querySelector('meta[name="description"]');
-        if (metaDescription) {
-          metaDescription.setAttribute('content', metadata.description || '');
-        } else {
-          const newMetaDescription = document.createElement('meta');
-          newMetaDescription.name = 'description';
-          newMetaDescription.content = metadata.description || '';
-          document.head.appendChild(newMetaDescription);
-        }
-
-        // 更新关键词
-        const metaKeywords = document.querySelector('meta[name="keywords"]');
-        if (metaKeywords) {
-          metaKeywords.setAttribute('content', metadata.keywords || '');
-        } else if (metadata.keywords) {
-          const newMetaKeywords = document.createElement('meta');
-          newMetaKeywords.name = 'keywords';
-          newMetaKeywords.content = metadata.keywords;
-          document.head.appendChild(newMetaKeywords);
-        }
-
-        // 更新Open Graph标签
-        if (metadata.openGraph) {
-          // OG Title
-          const ogTitle = document.querySelector('meta[property="og:title"]');
-          if (ogTitle) {
-            ogTitle.setAttribute('content', metadata.openGraph.title || '');
-          } else {
-            const newOgTitle = document.createElement('meta');
-            newOgTitle.setAttribute('property', 'og:title');
-            newOgTitle.content = metadata.openGraph.title || '';
-            document.head.appendChild(newOgTitle);
-          }
-
-          // OG Description
-          const ogDescription = document.querySelector('meta[property="og:description"]');
-          if (ogDescription) {
-            ogDescription.setAttribute('content', metadata.openGraph.description || '');
-          } else {
-            const newOgDescription = document.createElement('meta');
-            newOgDescription.setAttribute('property', 'og:description');
-            newOgDescription.content = metadata.openGraph.description || '';
-            document.head.appendChild(newOgDescription);
-          }
-
-          // OG Type
-          const ogType = document.querySelector('meta[property="og:type"]');
-          if (ogType) {
-            ogType.setAttribute('content', metadata.openGraph.type || 'website');
-          } else {
-            const newOgType = document.createElement('meta');
-            newOgType.setAttribute('property', 'og:type');
-            newOgType.content = metadata.openGraph.type || 'website';
-            document.head.appendChild(newOgType);
-          }
-        }
-
-        // 添加结构化数据
-        const structuredData = {
-          "@context": "https://schema.org",
-          "@type": "WebApplication",
-          "name": metadata.title,
-          "description": metadata.description,
-          "applicationCategory": "Utility",
-          "operatingSystem": "Web",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-          },
-          "featureList": [
-            "Subtitle translation to Chinese",
-            "SRT file support", 
-            "AI-powered translation",
-            "Free online tool"
-          ]
-        };
-
-        const structuredDataScript = document.querySelector('#structured-data');
-        if (structuredDataScript) {
-          structuredDataScript.textContent = JSON.stringify(structuredData);
-        } else {
-          const newStructuredDataScript = document.createElement('script');
-          newStructuredDataScript.id = 'structured-data';
-          newStructuredDataScript.type = 'application/ld+json';
-          newStructuredDataScript.textContent = JSON.stringify(structuredData);
-          document.head.appendChild(newStructuredDataScript);
-        }
-      }
+    // 设置专用的页面标题和描述
+    document.title = '中文字幕翻译工具 - 免费在线字幕翻译 | 字幕翻译工具';
+    
+    // 更新meta描述
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', '专业中文字幕翻译服务，AI智能翻译字幕至中文。免费、快速、准确的SRT字幕文件翻译工具。');
+    } else {
+      const newMetaDescription = document.createElement('meta');
+      newMetaDescription.name = 'description';
+      newMetaDescription.content = '专业中文字幕翻译服务，AI智能翻译字幕至中文。免费、快速、准确的SRT字幕文件翻译工具。';
+      document.head.appendChild(newMetaDescription);
     }
-  }, [pageConfig, t]);
+
+    // 更新关键词
+    const metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (metaKeywords) {
+      metaKeywords.setAttribute('content', '中文字幕翻译,字幕翻译中文,SRT翻译,字幕转换,AI翻译,免费字幕翻译');
+    } else {
+      const newMetaKeywords = document.createElement('meta');
+      newMetaKeywords.name = 'keywords';
+      newMetaKeywords.content = '中文字幕翻译,字幕翻译中文,SRT翻译,字幕转换,AI翻译,免费字幕翻译';
+      document.head.appendChild(newMetaKeywords);
+    }
+
+    // 添加canonical链接
+    const canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (canonicalLink) {
+      canonicalLink.setAttribute('href', 'https://subtitle-translator2.pages.dev/chinese-subtitle');
+    } else {
+      const newCanonicalLink = document.createElement('link');
+      newCanonicalLink.rel = 'canonical';
+      newCanonicalLink.href = 'https://subtitle-translator2.pages.dev/chinese-subtitle';
+      document.head.appendChild(newCanonicalLink);
+    }
+
+    // 添加hreflang标签
+    const hreflangLinks = [
+      { hreflang: 'zh-CN', href: 'https://subtitle-translator2.pages.dev/chinese-subtitle' },
+      { hreflang: 'en-US', href: 'https://subtitle-translator2.pages.dev/english-subtitle' },
+      { hreflang: 'x-default', href: 'https://subtitle-translator2.pages.dev' },
+    ];
+
+    hreflangLinks.forEach(({ hreflang, href }) => {
+      const existingLink = document.querySelector(`link[hreflang="${hreflang}"]`);
+      if (existingLink) {
+        existingLink.setAttribute('href', href);
+      } else {
+        const newHreflangLink = document.createElement('link');
+        newHreflangLink.rel = 'alternate';
+        newHreflangLink.setAttribute('hreflang', hreflang);
+        newHreflangLink.href = href;
+        document.head.appendChild(newHreflangLink);
+      }
+    });
+
+    // 更新Open Graph标签
+    const ogData = [
+      { property: 'og:title', content: '中文字幕翻译工具 - 免费在线字幕翻译' },
+      { property: 'og:description', content: '专业中文字幕翻译服务，AI智能翻译字幕至中文。' },
+      { property: 'og:url', content: 'https://subtitle-translator2.pages.dev/chinese-subtitle' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:locale', content: 'zh_CN' },
+    ];
+
+    ogData.forEach(({ property, content }) => {
+      const ogElement = document.querySelector(`meta[property="${property}"]`);
+      if (ogElement) {
+        ogElement.setAttribute('content', content);
+      } else {
+        const newOgElement = document.createElement('meta');
+        newOgElement.setAttribute('property', property);
+        newOgElement.content = content;
+        document.head.appendChild(newOgElement);
+      }
+    });
+
+    // 添加结构化数据
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "中文字幕翻译工具",
+      "description": "专业中文字幕翻译服务，AI智能翻译字幕至中文。",
+      "url": "https://subtitle-translator2.pages.dev/chinese-subtitle",
+      "applicationCategory": "Utility",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "字幕翻译至中文",
+        "SRT文件支持",
+        "AI智能翻译",
+        "免费在线工具"
+      ],
+      "inLanguage": "zh-CN"
+    };
+
+    const structuredDataScript = document.querySelector('#structured-data-chinese');
+    if (structuredDataScript) {
+      structuredDataScript.textContent = JSON.stringify(structuredData);
+    } else {
+      const newStructuredDataScript = document.createElement('script');
+      newStructuredDataScript.id = 'structured-data-chinese';
+      newStructuredDataScript.type = 'application/ld+json';
+      newStructuredDataScript.textContent = JSON.stringify(structuredData);
+      document.head.appendChild(newStructuredDataScript);
+    }
+  }, []);
 
   if (!pageConfig) {
     return <div>{t('pageConfigNotFound', '页面配置未找到')}</div>;
