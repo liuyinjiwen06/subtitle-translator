@@ -33,8 +33,8 @@ if (typeof window !== 'undefined') {
     .use(initReactI18next)
     .init({
       resources,
-      fallbackLng: 'zh',
-      lng: 'zh', // 强制设置默认语言
+      fallbackLng: 'en', // 设置英语为fallback语言
+      // 移除强制设置，让浏览器语言检测生效
       debug: process.env.NODE_ENV === 'development',
       
       interpolation: {
@@ -42,16 +42,21 @@ if (typeof window !== 'undefined') {
       },
       
       detection: {
-        order: ['localStorage', 'navigator'],
+        order: ['localStorage', 'navigator', 'htmlTag'],
         caches: ['localStorage'],
         lookupLocalStorage: 'i18nextLng',
-        lookupFromPathIndex: 0,
-        lookupFromSubdomainIndex: 0,
-        // 语言映射
+        // 增强的语言映射
         convertDetectedLanguage: (lng: string) => {
-          // 将 zh-CN, zh-cn, zh_CN 等都映射到 zh
+          // 中文变种映射
           if (lng.startsWith('zh')) return 'zh';
-          return lng;
+          // 英文变种映射
+          if (lng.startsWith('en')) return 'en';
+          // 日文变种映射
+          if (lng.startsWith('ja')) return 'ja';
+          // 支持的语言直接返回
+          if (['fr', 'de', 'es', 'ru', 'it'].includes(lng)) return lng;
+          // 不支持的语言回退到英文
+          return 'en';
         }
       },
       
@@ -64,8 +69,8 @@ if (typeof window !== 'undefined') {
     .use(initReactI18next)
     .init({
       resources,
-      fallbackLng: 'zh',
-      lng: 'zh',
+      fallbackLng: 'en', // 服务端也使用英语作为fallback
+      lng: 'en', // 服务端默认英语
       debug: false,
       
       interpolation: {
