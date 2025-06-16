@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import '../lib/i18n';
 import './globals.css';
 
 export const metadata: Metadata = {

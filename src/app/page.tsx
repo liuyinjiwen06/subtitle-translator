@@ -772,7 +772,7 @@ export default function HomePage() {
         {/* 专业翻译工具导航 */}
         <section id="specialized-tools" className="py-16 bg-gradient-to-br from-blue-50 via-white to-purple-50">
           <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                   {t('specializedTools.title', '专业字幕翻译工具')}
@@ -782,7 +782,7 @@ export default function HomePage() {
                 </p>
               </div>
               
-              <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div className="grid md:grid-cols-2 gap-8">
                 {/* 英文字幕翻译工具 */}
                 <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-transparent hover:border-blue-200">
                   <div className="p-8">
@@ -805,18 +805,6 @@ export default function HomePage() {
                         '专为英文字幕翻译优化，使用先进的AI技术，提供准确、自然的英文翻译服务。支持全球化内容本地化。'
                       )}
                     </p>
-                    
-                    <div className="flex flex-wrap gap-2 mb-6">
-                      <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
-                        {t('specializedTools.english.features.ai', 'AI优化')}
-                      </span>
-                      <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">
-                        {t('specializedTools.english.features.global', '全球化')}
-                      </span>
-                      <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
-                        {t('specializedTools.english.features.professional', '专业级')}
-                      </span>
-                    </div>
                     
                     <a 
                       href="/english-subtitle"
@@ -854,18 +842,6 @@ export default function HomePage() {
                       )}
                     </p>
                     
-                    <div className="flex flex-wrap gap-2 mb-6">
-                      <span className="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium">
-                        {t('specializedTools.chinese.features.cultural', '文化适配')}
-                      </span>
-                      <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">
-                        {t('specializedTools.chinese.features.context', '语境理解')}
-                      </span>
-                      <span className="px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-sm font-medium">
-                        {t('specializedTools.chinese.features.native', '地道表达')}
-                      </span>
-                    </div>
-                    
                     <a 
                       href="/chinese-subtitle"
                       className="inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-red-500 to-red-600 text-white font-semibold rounded-xl hover:from-red-600 hover:to-red-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
@@ -880,14 +856,14 @@ export default function HomePage() {
                 </div>
               </div>
 
-                             {/* 底部说明文字 */}
-               <div className="text-center mt-12">
-                 <p className="text-gray-600 max-w-2xl mx-auto">
-                   {t('specializedTools.note', 
-                     '选择专门的语言工具可以获得更精准的翻译结果，每个工具都针对特定语言进行了深度优化。'
-                   )}
-                 </p>
-               </div>
+              {/* 底部说明文字 */}
+              <div className="text-center mt-12">
+                <p className="text-gray-600 max-w-2xl mx-auto">
+                  {t('specializedTools.note', 
+                    '选择专门的语言工具可以获得更精准的翻译结果，每个工具都针对特定语言进行了深度优化。'
+                  )}
+                </p>
+              </div>
 
                {/* 专门页面的结构化数据 */}
                <script
