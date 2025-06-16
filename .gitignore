@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# webpack cache
+.next/cache/
+.next/cache/**/*
+cache/
+webpack/
