@@ -39,6 +39,11 @@ interface BenefitItem {
   description: string;
 }
 
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
 export default function PageTemplate({ pageConfig, className = "" }: PageTemplateProps) {
   const { t, i18n } = useTranslation();
 
@@ -250,7 +255,7 @@ export default function PageTemplate({ pageConfig, className = "" }: PageTemplat
           </div>
 
           <div className="space-y-6">
-            {Object.entries(t('faq.items', { returnObjects: true }) as any).map(([key, item]: [string, any]) => (
+            {Object.entries(t('faq.items', { returnObjects: true }) as Record<string, FAQItem>).map(([key, item]: [string, FAQItem]) => (
               <div key={key} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
                   {item.question}
@@ -274,18 +279,18 @@ export default function PageTemplate({ pageConfig, className = "" }: PageTemplat
             {t('cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <Link
               href="#translator"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl hover:bg-gray-100 transition-colors shadow-lg"
             >
               {t('cta.startButton')}
-            </a>
-            <a
+            </Link>
+            <Link
               href="/"
               className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-xl hover:bg-white hover:text-blue-600 transition-colors"
             >
               {t('cta.learnMore')}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
