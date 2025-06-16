@@ -1,6 +1,0 @@
-name = "subtitles"
-compatibility_date = "2025-06-16"
-
-[pages]
-directory = ".next"
-build_command = "npm run build" 

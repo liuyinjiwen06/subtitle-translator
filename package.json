@@ -8,7 +8,6 @@
     "build:cloudflare": "next build && next export",
     "build:static": "NEXT_STATIC_EXPORT=true next build",
     "pages:build": "npx @cloudflare/next-on-pages@1",
-    "deploy": "wrangler pages deploy .next --project-name=subtitle-translator",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix"
