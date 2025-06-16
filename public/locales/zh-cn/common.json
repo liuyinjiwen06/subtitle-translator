@@ -14,7 +14,7 @@
       "title": "English Subtitle Translator",
       "tagline": "Professional English Translation",
       "description": "专为英文字幕翻译优化，使用先进的AI技术，提供准确、自然的英文翻译服务。支持全球化内容本地化。",
-      "button": "开始英文翻译",
+      "button": "翻译成英文",
       "features": {
         "ai": "AI优化",
         "global": "全球化",
@@ -25,7 +25,7 @@
       "title": "中文字幕翻译工具",
       "tagline": "专业中文翻译服务",
       "description": "专门针对中文翻译优化，深度理解中文语境和文化特色，提供地道、准确的中文字幕翻译服务。",
-      "button": "开始中文翻译",
+      "button": "翻译成中文",
       "features": {
         "cultural": "文化适配",
         "context": "语境理解",

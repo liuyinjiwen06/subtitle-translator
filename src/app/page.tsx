@@ -772,8 +772,8 @@ export default function HomePage() {
         {/* 专业翻译工具导航 */}
         <section id="specialized-tools" className="py-16 bg-gradient-to-br from-blue-50 via-white to-purple-50">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                   {t('specializedTools.title', '专业字幕翻译工具')}
                 </h2>
@@ -782,87 +782,30 @@ export default function HomePage() {
                 </p>
               </div>
               
-              <div className="grid md:grid-cols-2 gap-8">
-                {/* 英文字幕翻译工具 */}
-                <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-transparent hover:border-blue-200">
-                  <div className="p-8">
-                    <div className="flex items-center mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-                        <span className="text-2xl font-bold text-white">EN</span>
-                      </div>
-                      <div>
-                        <h3 className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
-                          {t('specializedTools.english.title', 'English Subtitle Translator')}
-                        </h3>
-                        <p className="text-blue-600 font-medium">
-                          {t('specializedTools.english.tagline', 'Professional English Translation')}
-                        </p>
-                      </div>
-                    </div>
-                    
-                    <p className="text-gray-600 mb-6 leading-relaxed">
-                      {t('specializedTools.english.description', 
-                        '专为英文字幕翻译优化，使用先进的AI技术，提供准确、自然的英文翻译服务。支持全球化内容本地化。'
-                      )}
-                    </p>
-                    
-                    <a 
-                      href="/english-subtitle"
-                      className="inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
-                      title="English Subtitle Translation Tool - Professional AI Translation Service"
-                    >
-                      <span className="mr-2">{t('specializedTools.english.button', '开始英文翻译')}</span>
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
+              <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-2xl mx-auto">
+                {/* 英文翻译按钮 */}
+                <a 
+                  href="/english-subtitle"
+                  className="flex-1 inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+                  title="English Subtitle Translation Tool"
+                >
+                  <span className="mr-2">{t('specializedTools.english.button', 'Translate to English')}</span>
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
 
-                {/* 中文字幕翻译工具 */}
-                <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-transparent hover:border-red-200">
-                  <div className="p-8">
-                    <div className="flex items-center mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-                        <span className="text-2xl font-bold text-white">中</span>
-                      </div>
-                      <div>
-                        <h3 className="text-2xl font-bold text-gray-900 group-hover:text-red-600 transition-colors">
-                          {t('specializedTools.chinese.title', '中文字幕翻译工具')}
-                        </h3>
-                        <p className="text-red-600 font-medium">
-                          {t('specializedTools.chinese.tagline', '专业中文翻译服务')}
-                        </p>
-                      </div>
-                    </div>
-                    
-                    <p className="text-gray-600 mb-6 leading-relaxed">
-                      {t('specializedTools.chinese.description', 
-                        '专门针对中文翻译优化，深度理解中文语境和文化特色，提供地道、准确的中文字幕翻译服务。'
-                      )}
-                    </p>
-                    
-                    <a 
-                      href="/chinese-subtitle"
-                      className="inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-red-500 to-red-600 text-white font-semibold rounded-xl hover:from-red-600 hover:to-red-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
-                      title="Chinese Subtitle Translation Tool - Professional AI Translation Service"
-                    >
-                      <span className="mr-2">{t('specializedTools.chinese.button', '开始中文翻译')}</span>
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              {/* 底部说明文字 */}
-              <div className="text-center mt-12">
-                <p className="text-gray-600 max-w-2xl mx-auto">
-                  {t('specializedTools.note', 
-                    '选择专门的语言工具可以获得更精准的翻译结果，每个工具都针对特定语言进行了深度优化。'
-                  )}
-                </p>
+                {/* 中文翻译按钮 */}
+                <a 
+                  href="/chinese-subtitle"
+                  className="flex-1 inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 text-white font-semibold rounded-xl hover:from-red-600 hover:to-red-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+                  title="Chinese Subtitle Translation Tool"
+                >
+                  <span className="mr-2">{t('specializedTools.chinese.button', 'Translate to Chinese')}</span>
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
               </div>
 
                {/* 专门页面的结构化数据 */}
