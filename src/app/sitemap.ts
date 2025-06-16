@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://subtitle-translator2.pages.dev'
+  const baseUrl = 'https://www.subtitleconverter.cc'
   
   return [
     {

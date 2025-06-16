@@ -3,7 +3,7 @@ import '../lib/i18n';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://subtitle-translator2.pages.dev'),
+  metadataBase: new URL('https://www.subtitleconverter.cc'),
   title: {
     default: '字幕翻译工具 - 免费在线SRT字幕翻译',
     template: '%s | 字幕翻译工具'
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'zh_CN',
     alternateLocale: ['en_US', 'ja_JP'],
-    url: 'https://subtitle-translator2.pages.dev',
+    url: 'https://www.subtitleconverter.cc',
     siteName: '字幕翻译工具',
     title: '字幕翻译工具 - 免费在线SRT字幕翻译',
     description: '免费在线字幕翻译工具，支持SRT格式，AI智能翻译，支持多种语言互译。',
@@ -53,11 +53,11 @@ export const metadata: Metadata = {
     images: ['/icon.png'],
   },
   alternates: {
-    canonical: 'https://subtitle-translator2.pages.dev',
+    canonical: 'https://www.subtitleconverter.cc',
     languages: {
-      'zh-CN': 'https://subtitle-translator2.pages.dev',
-      'en-US': 'https://subtitle-translator2.pages.dev',
-      'ja-JP': 'https://subtitle-translator2.pages.dev',
+      'zh-CN': 'https://www.subtitleconverter.cc',
+      'en-US': 'https://www.subtitleconverter.cc/english-subtitle',
+      'ja-JP': 'https://www.subtitleconverter.cc',
     },
   },
   verification: {
@@ -70,13 +70,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="zh-CN">
       <head>
         {/* Canonical URL */}
-        <link rel="canonical" href="https://subtitle-translator2.pages.dev" />
+        <link rel="canonical" href="https://www.subtitleconverter.cc" />
         
         {/* Hreflang标签 - 多语言SEO */}
-        <link rel="alternate" hrefLang="zh-CN" href="https://subtitle-translator2.pages.dev" />
-        <link rel="alternate" hrefLang="en-US" href="https://subtitle-translator2.pages.dev/english-subtitle" />
-        <link rel="alternate" hrefLang="ja-JP" href="https://subtitle-translator2.pages.dev" />
-        <link rel="alternate" hrefLang="x-default" href="https://subtitle-translator2.pages.dev" />
+        <link rel="alternate" hrefLang="zh-CN" href="https://www.subtitleconverter.cc" />
+        <link rel="alternate" hrefLang="en-US" href="https://www.subtitleconverter.cc/english-subtitle" />
+        <link rel="alternate" hrefLang="ja-JP" href="https://www.subtitleconverter.cc" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.subtitleconverter.cc" />
         
         {/* 额外的SEO元标签 */}
         <meta name="theme-color" content="#3b82f6" />
@@ -93,7 +93,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@type": "WebApplication",
               "name": "字幕翻译工具",
               "alternateName": "Subtitle Translator",
-              "url": "https://subtitle-translator2.pages.dev",
+              "url": "https://www.subtitleconverter.cc",
               "description": "免费在线字幕翻译工具，支持SRT格式，AI智能翻译，支持多种语言互译。",
               "applicationCategory": "UtilityApplication",
               "operatingSystem": "Web",

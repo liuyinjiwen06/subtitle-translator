@@ -40,20 +40,20 @@ export default function EnglishSubtitlePage() {
     // 添加canonical链接
     const canonicalLink = document.querySelector('link[rel="canonical"]');
     if (canonicalLink) {
-      canonicalLink.setAttribute('href', 'https://subtitle-translator2.pages.dev/english-subtitle');
+      canonicalLink.setAttribute('href', 'https://www.subtitleconverter.cc/english-subtitle');
     } else {
       const newCanonicalLink = document.createElement('link');
       newCanonicalLink.rel = 'canonical';
-      newCanonicalLink.href = 'https://subtitle-translator2.pages.dev/english-subtitle';
+              newCanonicalLink.href = 'https://www.subtitleconverter.cc/english-subtitle';
       document.head.appendChild(newCanonicalLink);
     }
 
     // 添加hreflang标签
-    const hreflangLinks = [
-      { hreflang: 'en-US', href: 'https://subtitle-translator2.pages.dev/english-subtitle' },
-      { hreflang: 'zh-CN', href: 'https://subtitle-translator2.pages.dev/chinese-subtitle' },
-      { hreflang: 'x-default', href: 'https://subtitle-translator2.pages.dev' },
-    ];
+          const hreflangLinks = [
+        { hreflang: 'en-US', href: 'https://www.subtitleconverter.cc/english-subtitle' },
+        { hreflang: 'zh-CN', href: 'https://www.subtitleconverter.cc/chinese-subtitle' },
+        { hreflang: 'x-default', href: 'https://www.subtitleconverter.cc' },
+      ];
 
     hreflangLinks.forEach(({ hreflang, href }) => {
       const existingLink = document.querySelector(`link[hreflang="${hreflang}"]`);
@@ -72,7 +72,7 @@ export default function EnglishSubtitlePage() {
     const ogData = [
       { property: 'og:title', content: 'English Subtitle Translator - Free Online Translation Tool' },
       { property: 'og:description', content: 'Professional English subtitle translation service. Convert subtitles to English with AI-powered translation.' },
-      { property: 'og:url', content: 'https://subtitle-translator2.pages.dev/english-subtitle' },
+              { property: 'og:url', content: 'https://www.subtitleconverter.cc/english-subtitle' },
       { property: 'og:type', content: 'website' },
       { property: 'og:locale', content: 'en_US' },
     ];
@@ -95,7 +95,7 @@ export default function EnglishSubtitlePage() {
       "@type": "WebApplication",
       "name": "English Subtitle Translator",
       "description": "Professional English subtitle translation service. Convert subtitles to English with AI-powered translation.",
-      "url": "https://subtitle-translator2.pages.dev/english-subtitle",
+              "url": "https://www.subtitleconverter.cc/english-subtitle",
       "applicationCategory": "Utility",
       "operatingSystem": "Web",
       "offers": {

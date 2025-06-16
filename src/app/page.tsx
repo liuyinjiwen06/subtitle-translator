@@ -898,13 +898,13 @@ export default function HomePage() {
                      "@type": "CollectionPage",
                      "name": "专业字幕翻译工具集合",
                      "description": "专业字幕翻译工具，包含英文和中文专门翻译服务",
-                     "url": "https://subtitle-translator2.pages.dev",
+                     "url": "https://www.subtitleconverter.cc",
                      "hasPart": [
                        {
                          "@type": "WebPage",
                          "name": "English Subtitle Translator",
                          "description": "Professional English subtitle translation tool with AI optimization",
-                         "url": "https://subtitle-translator2.pages.dev/english-subtitle",
+                         "url": "https://www.subtitleconverter.cc/english-subtitle",
                          "inLanguage": "en-US",
                          "audience": {
                            "@type": "Audience",
@@ -915,7 +915,7 @@ export default function HomePage() {
                          "@type": "WebPage", 
                          "name": "中文字幕翻译工具",
                          "description": "专业中文字幕翻译工具，文化适配和语境理解",
-                         "url": "https://subtitle-translator2.pages.dev/chinese-subtitle",
+                         "url": "https://www.subtitleconverter.cc/chinese-subtitle",
                          "inLanguage": "zh-CN",
                          "audience": {
                            "@type": "Audience",
@@ -930,13 +930,13 @@ export default function HomePage() {
                            "@type": "ListItem",
                            "position": 1,
                            "name": "首页",
-                           "item": "https://subtitle-translator2.pages.dev"
+                           "item": "https://www.subtitleconverter.cc"
                          },
                          {
                            "@type": "ListItem",
                            "position": 2,
                            "name": "专业翻译工具",
-                           "item": "https://subtitle-translator2.pages.dev#specialized-tools"
+                           "item": "https://www.subtitleconverter.cc#specialized-tools"
                          }
                        ]
                      }

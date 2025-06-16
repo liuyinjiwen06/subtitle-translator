@@ -40,20 +40,20 @@ export default function ChineseSubtitlePage() {
     // 添加canonical链接
     const canonicalLink = document.querySelector('link[rel="canonical"]');
     if (canonicalLink) {
-      canonicalLink.setAttribute('href', 'https://subtitle-translator2.pages.dev/chinese-subtitle');
+      canonicalLink.setAttribute('href', 'https://www.subtitleconverter.cc/chinese-subtitle');
     } else {
       const newCanonicalLink = document.createElement('link');
       newCanonicalLink.rel = 'canonical';
-      newCanonicalLink.href = 'https://subtitle-translator2.pages.dev/chinese-subtitle';
+              newCanonicalLink.href = 'https://www.subtitleconverter.cc/chinese-subtitle';
       document.head.appendChild(newCanonicalLink);
     }
 
     // 添加hreflang标签
-    const hreflangLinks = [
-      { hreflang: 'zh-CN', href: 'https://subtitle-translator2.pages.dev/chinese-subtitle' },
-      { hreflang: 'en-US', href: 'https://subtitle-translator2.pages.dev/english-subtitle' },
-      { hreflang: 'x-default', href: 'https://subtitle-translator2.pages.dev' },
-    ];
+          const hreflangLinks = [
+        { hreflang: 'zh-CN', href: 'https://www.subtitleconverter.cc/chinese-subtitle' },
+        { hreflang: 'en-US', href: 'https://www.subtitleconverter.cc/english-subtitle' },
+        { hreflang: 'x-default', href: 'https://www.subtitleconverter.cc' },
+      ];
 
     hreflangLinks.forEach(({ hreflang, href }) => {
       const existingLink = document.querySelector(`link[hreflang="${hreflang}"]`);
@@ -72,7 +72,7 @@ export default function ChineseSubtitlePage() {
     const ogData = [
       { property: 'og:title', content: '中文字幕翻译工具 - 免费在线字幕翻译' },
       { property: 'og:description', content: '专业中文字幕翻译服务，AI智能翻译字幕至中文。' },
-      { property: 'og:url', content: 'https://subtitle-translator2.pages.dev/chinese-subtitle' },
+              { property: 'og:url', content: 'https://www.subtitleconverter.cc/chinese-subtitle' },
       { property: 'og:type', content: 'website' },
       { property: 'og:locale', content: 'zh_CN' },
     ];
@@ -95,7 +95,7 @@ export default function ChineseSubtitlePage() {
       "@type": "WebApplication",
       "name": "中文字幕翻译工具",
       "description": "专业中文字幕翻译服务，AI智能翻译字幕至中文。",
-      "url": "https://subtitle-translator2.pages.dev/chinese-subtitle",
+              "url": "https://www.subtitleconverter.cc/chinese-subtitle",
       "applicationCategory": "Utility",
       "operatingSystem": "Web",
       "offers": {
