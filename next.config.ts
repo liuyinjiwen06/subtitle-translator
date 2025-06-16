@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Cloudflare Pages with @cloudflare/next-on-pages 配置
+  // Cloudflare Pages 动态部署配置（支持 API 路由）
   eslint: {
     // 在构建时忽略ESLint错误
     ignoreDuringBuilds: true,

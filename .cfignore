@@ -19,4 +19,11 @@ node_modules/
 # Development files
 .env*
 .DS_Store
-*.log 
+*.log
+
+# 排除构建输出目录（我们只需要 out 目录）
+.next/
+# 保留 out 目录用于部署
+
+# Git files
+.git/ 
