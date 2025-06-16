@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useTranslation } from 'react-i18next';
 import { PageConfig } from '@/lib/pageConfig';
+import '../lib/i18n'; // 确保 i18n 被初始化
 
 const languages = [
   { code: "en", flag: "🇺🇸" },
@@ -247,7 +248,12 @@ interface SubtitleTranslatorProps {
 }
 
 export default function SubtitleTranslator({ pageConfig, className = "" }: SubtitleTranslatorProps) {
-  const { t } = useTranslation();
+  const { t, i18n, ready } = useTranslation();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   
   // 状态管理
   const [file, setFile] = useState<File | null>(null);
@@ -290,8 +296,8 @@ export default function SubtitleTranslator({ pageConfig, className = "" }: Subti
 
     const formData = new FormData();
     formData.append('file', file);
-    formData.append('targetLanguage', targetLanguage);
-    formData.append('service', translationService);
+    formData.append('targetLang', targetLanguage);
+    formData.append('translationService', translationService);
 
     try {
       const response = await fetch('/api/translate', {
@@ -309,7 +315,6 @@ export default function SubtitleTranslator({ pageConfig, className = "" }: Subti
       }
 
       const decoder = new TextDecoder();
-      let result = '';
 
       while (true) {
         const { done, value } = await reader.read();
@@ -326,18 +331,17 @@ export default function SubtitleTranslator({ pageConfig, className = "" }: Subti
               
               if (data.type === 'progress') {
                 setTranslationProgress(data.progress);
-              } else if (data.type === 'result') {
-                result += data.text;
               } else if (data.type === 'complete') {
-                setTranslatedContent(result);
+                setTranslatedContent(data.result);
                 setTranslationProgress(100);
                 setIsTranslating(false);
                 return;
               } else if (data.type === 'error') {
                 throw new Error(data.message);
               }
-            } catch {
+            } catch (parseError) {
               // 忽略JSON解析错误，继续处理
+              console.warn('Failed to parse SSE data:', line);
             }
           }
         }
@@ -365,6 +369,18 @@ export default function SubtitleTranslator({ pageConfig, className = "" }: Subti
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
   };
+
+  // 在组件未挂载或i18n未准备好时显示加载状态
+  if (!mounted || !ready || !i18n.isInitialized) {
+    return (
+      <div className={`max-w-4xl mx-auto p-6 bg-white rounded-2xl shadow-lg ${className}`}>
+        <div className="text-center py-12">
+          <div className="w-16 h-16 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <p className="text-gray-600">Loading...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className={`max-w-4xl mx-auto p-6 bg-white rounded-2xl shadow-lg ${className}`}>

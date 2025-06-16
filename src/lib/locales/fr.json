@@ -182,5 +182,66 @@
       "heroSubtitle": "Traduisez vos sous-titres en chinois rapidement et précisément, rendant votre contenu accessible aux audiences chinoises",
       "targetLanguage": "Chinois"
     }
+  },
+  "pageTemplate": {
+    "breadcrumb": {
+      "home": "Outil de Traduction de Sous-titres",
+      "englishSubtitle": "Outil de Sous-titres Anglais",
+      "chineseSubtitle": "Outil de Sous-titres Chinois"
+    },
+    "hero": {
+      "englishSubtitle": {
+        "title": "Traducteur de Sous-titres Anglais",
+        "subtitle": "Service professionnel de traduction de sous-titres anglais. Convertissez les sous-titres en anglais avec la traduction alimentée par l'IA."
+      },
+      "chineseSubtitle": {
+        "title": "Traducteur de Sous-titres Chinois",
+        "subtitle": "Service professionnel de traduction de sous-titres chinois. Traduction alimentée par l'IA vers le chinois. Prend en charge le format SRT, gratuit, rapide et précis."
+      }
+    },
+    "benefits": {
+      "englishSubtitle": {
+        "title": "Pourquoi Choisir Notre Traducteur Anglais ?",
+        "subtitle": "Service de traduction professionnel avec technologie IA avancée",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "Traduction Précise",
+            "description": "La traduction alimentée par l'IA garantit une haute précision et une expression anglaise naturelle."
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "Traitement Rapide",
+            "description": "Traduction rapide de sous-titres avec suivi de progression en temps réel."
+          },
+          "free": {
+            "icon": "🆓",
+            "title": "Entièrement Gratuit",
+            "description": "Aucune inscription requise, utilisation illimitée pour tous les utilisateurs."
+          }
+        }
+      },
+      "chineseSubtitle": {
+        "title": "Pourquoi Choisir Notre Traducteur Chinois ?",
+        "subtitle": "Service de traduction professionnel avec technologie IA avancée",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "Traduction Précise",
+            "description": "La traduction alimentée par l'IA garantit une haute précision et une expression chinoise naturelle."
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "Traitement Rapide",
+            "description": "Traduction rapide de sous-titres avec suivi de progression en temps réel."
+          },
+          "free": {
+            "icon": "🆓",
+            "title": "Entièrement Gratuit",
+            "description": "Aucune inscription requise, utilisation illimitée pour tous les utilisateurs."
+          }
+        }
+      }
+    }
   }
 } 

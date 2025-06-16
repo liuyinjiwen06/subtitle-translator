@@ -149,5 +149,66 @@
       "heroSubtitle": "Traduce tus subtítulos al chino de manera rápida y precisa, haciendo tu contenido accesible para audiencias chinas",
       "targetLanguage": "Chino"
     }
+  },
+  "pageTemplate": {
+    "breadcrumb": {
+      "home": "Herramienta de Traducción de Subtítulos",
+      "englishSubtitle": "Herramienta de Subtítulos en Inglés",
+      "chineseSubtitle": "Herramienta de Subtítulos en Chino"
+    },
+    "hero": {
+      "englishSubtitle": {
+        "title": "Traductor de Subtítulos al Inglés",
+        "subtitle": "Servicio profesional de traducción de subtítulos al inglés. Convierte subtítulos al inglés con traducción impulsada por IA."
+      },
+      "chineseSubtitle": {
+        "title": "Traductor de Subtítulos al Chino",
+        "subtitle": "Servicio profesional de traducción de subtítulos al chino. Traducción impulsada por IA al chino. Soporta formato SRT, gratis, rápido y preciso."
+      }
+    },
+    "benefits": {
+      "englishSubtitle": {
+        "title": "¿Por Qué Elegir Nuestro Traductor al Inglés?",
+        "subtitle": "Servicio de traducción profesional con tecnología IA avanzada",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "Traducción Precisa",
+            "description": "La traducción impulsada por IA garantiza alta precisión y expresión natural en inglés."
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "Procesamiento Rápido",
+            "description": "Traducción rápida de subtítulos con seguimiento de progreso en tiempo real."
+          },
+          "free": {
+            "icon": "🆓",
+            "title": "Completamente Gratis",
+            "description": "No se requiere registro, uso ilimitado para todos los usuarios."
+          }
+        }
+      },
+      "chineseSubtitle": {
+        "title": "¿Por Qué Elegir Nuestro Traductor al Chino?",
+        "subtitle": "Servicio de traducción profesional con tecnología IA avanzada",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "Traducción Precisa",
+            "description": "La traducción impulsada por IA garantiza alta precisión y expresión natural en chino."
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "Procesamiento Rápido",
+            "description": "Traducción rápida de subtítulos con seguimiento de progreso en tiempo real."
+          },
+          "free": {
+            "icon": "🆓",
+            "title": "Completamente Gratis",
+            "description": "No se requiere registro, uso ilimitado para todos los usuarios."
+          }
+        }
+      }
+    }
   }
-}
+} 

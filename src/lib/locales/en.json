@@ -1,6 +1,7 @@
 {
   "title": "Online Subtitle Translator",
   "description": "Upload SRT files, select target language, translate subtitles online and download.",
+  "loading": "Loading...",
   "pageConfigNotFound": "Page configuration not found",
   "seo": {
     "title": "Free Online Subtitle Translator - SRT Translation Tool for 30 Languages",
@@ -150,6 +151,16 @@
         "question": "How long does translation take?",
         "answer": "Translation speed depends on file size and selected translation service. Generally, normal length subtitle files (100-500 lines) can be completed within 1-3 minutes."
       }
+    }
+  },
+  "specializedTools": {
+    "title": "Professional Subtitle Translation Tools",
+    "subtitle": "Specialized translation services optimized for different languages, providing more precise translation experience",
+    "english": {
+      "button": "Translate to English"
+    },
+    "chinese": {
+      "button": "Translate to Chinese"
     }
   },
   "cta": {
@@ -414,6 +425,67 @@
           "icon": "🏢",
           "title": "Business Communication",
           "description": "Chinese subtitle translation for international conferences, business training, and product introductions"
+        }
+      }
+    }
+  },
+  "pageTemplate": {
+    "breadcrumb": {
+      "home": "Subtitle Translation Tool",
+      "englishSubtitle": "English Subtitle Tool",
+      "chineseSubtitle": "Chinese Subtitle Tool"
+    },
+    "hero": {
+      "englishSubtitle": {
+        "title": "English Subtitle Translator",
+        "subtitle": "Professional English subtitle translation service. Convert subtitles to English with AI-powered translation."
+      },
+      "chineseSubtitle": {
+        "title": "Chinese Subtitle Translator",
+        "subtitle": "Professional Chinese subtitle translation service. AI-powered translation to Chinese. Supports SRT format, free, fast, and accurate."
+      }
+    },
+    "benefits": {
+      "englishSubtitle": {
+        "title": "Why Choose Our English Translator?",
+        "subtitle": "Professional translation service with advanced AI technology",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "Accurate Translation",
+            "description": "AI-powered translation ensures high accuracy and natural English expression."
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "Fast Processing",
+            "description": "Quick subtitle translation with real-time progress tracking."
+          },
+          "free": {
+            "icon": "🆓",
+            "title": "Completely Free",
+            "description": "No registration required, unlimited usage for all users."
+          }
+        }
+      },
+      "chineseSubtitle": {
+        "title": "Why Choose Our Chinese Translator?",
+        "subtitle": "Professional translation service with advanced AI technology",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "Accurate Translation",
+            "description": "AI-powered translation ensures high accuracy and natural Chinese expression."
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "Fast Processing",
+            "description": "Quick subtitle translation with real-time progress tracking."
+          },
+          "free": {
+            "icon": "🆓",
+            "title": "Completely Free",
+            "description": "No registration required, unlimited usage for all users."
+          }
         }
       }
     }

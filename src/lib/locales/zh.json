@@ -1,6 +1,7 @@
 {
   "title": "在线字幕翻译工具",
   "description": "上传 SRT 文件，选择目标语言，在线翻译字幕并下载。",
+  "loading": "加载中...",
   "pageConfigNotFound": "页面配置未找到",
   "seo": {
     "title": "免费在线字幕翻译工具 - 支持30种语言的SRT字幕翻译器",
@@ -150,6 +151,16 @@
         "question": "翻译需要多长时间？",
         "answer": "翻译速度取决于文件大小和选择的翻译服务。一般来说，普通长度的字幕文件（100-500行）在1-3分钟内即可完成翻译。"
       }
+    }
+  },
+  "specializedTools": {
+    "title": "专业字幕翻译工具",
+    "subtitle": "针对不同语言优化的专业翻译服务，提供更精准的翻译体验",
+    "english": {
+      "button": "翻译成英文"
+    },
+    "chinese": {
+      "button": "翻译成中文"
     }
   },
   "cta": {
@@ -414,6 +425,67 @@
           "icon": "🏢",
           "title": "商务交流",
           "description": "国际会议、商务培训、产品介绍的中文字幕翻译"
+        }
+      }
+    }
+  },
+  "pageTemplate": {
+    "breadcrumb": {
+      "home": "字幕翻译工具",
+      "englishSubtitle": "英文字幕工具",
+      "chineseSubtitle": "中文字幕工具"
+    },
+    "hero": {
+      "englishSubtitle": {
+        "title": "英文字幕翻译工具",
+        "subtitle": "专业英文字幕翻译服务，AI智能翻译字幕至英文。"
+      },
+      "chineseSubtitle": {
+        "title": "中文字幕翻译工具",
+        "subtitle": "专业中文字幕翻译服务，AI智能翻译字幕至中文。支持SRT格式，免费、快速、准确。"
+      }
+    },
+    "benefits": {
+      "englishSubtitle": {
+        "title": "为什么选择我们的英文翻译？",
+        "subtitle": "专业翻译服务，采用先进AI技术",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "精准翻译",
+            "description": "AI智能翻译，确保高准确度和自然的英文表达。"
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "快速处理",
+            "description": "快速字幕翻译，实时进度跟踪。"
+          },
+          "free": {
+            "icon": "🆓",
+            "title": "完全免费",
+            "description": "无需注册，所有用户无限制使用。"
+          }
+        }
+      },
+      "chineseSubtitle": {
+        "title": "为什么选择我们的中文翻译？",
+        "subtitle": "专业翻译服务，采用先进AI技术",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "精准翻译",
+            "description": "AI智能翻译，确保高准确度和自然的中文表达。"
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "快速处理",
+            "description": "快速字幕翻译，实时进度跟踪。"
+          },
+          "free": {
+            "icon": "🆓",
+            "title": "完全免费",
+            "description": "无需注册，所有用户无限制使用。"
+          }
         }
       }
     }

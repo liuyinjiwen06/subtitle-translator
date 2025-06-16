@@ -149,5 +149,66 @@
       "heroSubtitle": "Übersetzen Sie Ihre Untertitel schnell und präzise ins Chinesische, um Ihre Inhalte für chinesische Zuschauer zugänglich zu machen",
       "targetLanguage": "Chinesisch"
     }
+  },
+  "pageTemplate": {
+    "breadcrumb": {
+      "home": "Untertitel-Übersetzungstool",
+      "englishSubtitle": "Englisches Untertitel-Tool",
+      "chineseSubtitle": "Chinesisches Untertitel-Tool"
+    },
+    "hero": {
+      "englishSubtitle": {
+        "title": "Englischer Untertitel-Übersetzer",
+        "subtitle": "Professioneller englischer Untertitel-Übersetzungsservice. Konvertieren Sie Untertitel ins Englische mit KI-gestützter Übersetzung."
+      },
+      "chineseSubtitle": {
+        "title": "Chinesischer Untertitel-Übersetzer",
+        "subtitle": "Professioneller chinesischer Untertitel-Übersetzungsservice. KI-gestützte Übersetzung ins Chinesische. Unterstützt SRT-Format, kostenlos, schnell und genau."
+      }
+    },
+    "benefits": {
+      "englishSubtitle": {
+        "title": "Warum Unseren Englischen Übersetzer Wählen?",
+        "subtitle": "Professioneller Übersetzungsservice mit fortschrittlicher KI-Technologie",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "Genaue Übersetzung",
+            "description": "KI-gestützte Übersetzung gewährleistet hohe Genauigkeit und natürlichen englischen Ausdruck."
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "Schnelle Verarbeitung",
+            "description": "Schnelle Untertitel-Übersetzung mit Echtzeit-Fortschrittsverfolgung."
+          },
+          "free": {
+            "icon": "🆓",
+            "title": "Völlig Kostenlos",
+            "description": "Keine Registrierung erforderlich, unbegrenzte Nutzung für alle Benutzer."
+          }
+        }
+      },
+      "chineseSubtitle": {
+        "title": "Warum Unseren Chinesischen Übersetzer Wählen?",
+        "subtitle": "Professioneller Übersetzungsservice mit fortschrittlicher KI-Technologie",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "Genaue Übersetzung",
+            "description": "KI-gestützte Übersetzung gewährleistet hohe Genauigkeit und natürlichen chinesischen Ausdruck."
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "Schnelle Verarbeitung",
+            "description": "Schnelle Untertitel-Übersetzung mit Echtzeit-Fortschrittsverfolgung."
+          },
+          "free": {
+            "icon": "🆓",
+            "title": "Völlig Kostenlos",
+            "description": "Keine Registrierung erforderlich, unbegrenzte Nutzung für alle Benutzer."
+          }
+        }
+      }
+    }
   }
 }

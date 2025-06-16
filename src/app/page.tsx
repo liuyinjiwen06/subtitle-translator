@@ -573,7 +573,7 @@ export default function HomePage() {
       <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center">
         <div className="text-center">
           <div className="w-16 h-16 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="text-gray-600">加载中...</p>
+          <p className="text-gray-600">{t('loading')}</p>
         </div>
       </div>
     );
@@ -815,8 +815,8 @@ export default function HomePage() {
                    __html: JSON.stringify({
                      "@context": "https://schema.org",
                      "@type": "CollectionPage",
-                     "name": "专业字幕翻译工具集合",
-                     "description": "专业字幕翻译工具，包含英文和中文专门翻译服务",
+                     "name": t('specializedTools.title'),
+                     "description": t('specializedTools.subtitle'),
                      "url": "https://subtitletranslator.cc",
                      "hasPart": [
                        {
@@ -848,13 +848,13 @@ export default function HomePage() {
                          {
                            "@type": "ListItem",
                            "position": 1,
-                           "name": "首页",
+                           "name": t('title'),
                            "item": "https://subtitletranslator.cc"
                          },
                          {
                            "@type": "ListItem",
                            "position": 2,
-                           "name": "专业翻译工具",
+                           "name": t('specializedTools.title'),
                            "item": "https://subtitletranslator.cc#specialized-tools"
                          }
                        ]
