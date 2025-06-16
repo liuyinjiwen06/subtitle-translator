@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   description: '专业中文字幕翻译服务，AI智能翻译字幕至中文。支持SRT格式，免费、快速、准确的字幕翻译工具。',
   keywords: '中文字幕翻译, srt翻译中文, 字幕转换器, AI翻译, 免费字幕翻译器',
   alternates: {
-    canonical: 'https://www.subtitleconverter.cc/chinese-subtitle',
+    canonical: 'https://subtitletranslator.cc/chinese-subtitle',
     languages: {
-      'zh-CN': 'https://www.subtitleconverter.cc/chinese-subtitle',
-      'en-US': 'https://www.subtitleconverter.cc/english-subtitle',
+      'zh-CN': 'https://subtitletranslator.cc/chinese-subtitle',
+      'en-US': 'https://subtitletranslator.cc/english-subtitle',
     },
   },
   openGraph: {
     title: '中文字幕翻译工具 - 免费在线字幕翻译',
     description: '专业中文字幕翻译服务，AI智能翻译字幕至中文。',
-    url: 'https://www.subtitleconverter.cc/chinese-subtitle',
+    url: 'https://subtitletranslator.cc/chinese-subtitle',
     type: 'website',
     locale: 'zh_CN',
   },
@@ -39,7 +39,7 @@ export default function ChineseSubtitlePage() {
             "@type": "WebApplication",
             "name": "中文字幕翻译工具",
             "description": "专业中文字幕翻译服务，AI智能翻译字幕至中文。",
-            "url": "https://www.subtitleconverter.cc/chinese-subtitle",
+            "url": "https://subtitletranslator.cc/chinese-subtitle",
             "applicationCategory": "Utility",
             "operatingSystem": "Web",
             "offers": {

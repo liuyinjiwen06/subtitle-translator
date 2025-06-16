@@ -14,7 +14,7 @@ Allow: /_next/static/
 Disallow: /api/
 
 # 站点地图
-Sitemap: https://www.subtitleconverter.cc/sitemap.xml
+Sitemap: https://subtitletranslator.cc/sitemap.xml
 
 # 爬取延迟（毫秒）
 Crawl-delay: 1 

@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   description: 'Professional English subtitle translation service. Convert subtitles to English with AI-powered translation. Free, fast, and accurate SRT file translation.',
   keywords: 'english subtitle translation, srt to english, subtitle converter, ai translation, free subtitle translator',
   alternates: {
-    canonical: 'https://www.subtitleconverter.cc/english-subtitle',
+    canonical: 'https://subtitletranslator.cc/english-subtitle',
     languages: {
-      'en-US': 'https://www.subtitleconverter.cc/english-subtitle',
-      'zh-CN': 'https://www.subtitleconverter.cc/chinese-subtitle',
+      'en-US': 'https://subtitletranslator.cc/english-subtitle',
+      'zh-CN': 'https://subtitletranslator.cc/chinese-subtitle',
     },
   },
   openGraph: {
     title: 'English Subtitle Translator - Free Online Translation Tool',
     description: 'Professional English subtitle translation service. Convert subtitles to English with AI-powered translation.',
-    url: 'https://www.subtitleconverter.cc/english-subtitle',
+    url: 'https://subtitletranslator.cc/english-subtitle',
     type: 'website',
     locale: 'en_US',
   },
@@ -39,7 +39,7 @@ export default function EnglishSubtitlePage() {
             "@type": "WebApplication",
             "name": "English Subtitle Translator",
             "description": "Professional English subtitle translation service. Convert subtitles to English with AI-powered translation.",
-            "url": "https://www.subtitleconverter.cc/english-subtitle",
+            "url": "https://subtitletranslator.cc/english-subtitle",
             "applicationCategory": "Utility",
             "operatingSystem": "Web",
             "offers": {
