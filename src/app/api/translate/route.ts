@@ -139,7 +139,7 @@ async function translateWithOpenAI(text: string, targetLang: string): Promise<st
           }
         ],
         max_tokens: 1000,
-        temperature: 0.2,
+        temperature: 0.3,
       }),
     });
 

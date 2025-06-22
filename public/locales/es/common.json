@@ -1,9 +1,0 @@
-{
-  "title": "Traductor de subtítulos en línea",
-  "description": "Sube un archivo SRT, elige el idioma de destino, traduce y descarga los subtítulos en línea.",
-  "upload": "Subir archivo SRT",
-  "select_language": "Seleccionar idioma de destino",
-  "translate": "Traducir",
-  "download": "Descargar archivo traducido",
-  "switch_language": "Cambiar idioma"
-} 

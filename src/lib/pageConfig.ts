@@ -48,10 +48,45 @@ export const PAGE_CONFIGS: Record<string, PageConfig> = {
       presetTarget: true,
       preferredService: 'google'
     }
+  },
+  frenchSubtitle: {
+    pageKey: 'frenchSubtitle',
+    targetLanguage: 'fr',
+    targetLanguageKey: 'languages.fr',
+    path: '/french-subtitle',
+    showInNav: true,
+    priority: 3,
+    special: {
+      presetTarget: true,
+      preferredService: 'openai'
+    }
+  },
+  spanishSubtitle: {
+    pageKey: 'spanishSubtitle',
+    targetLanguage: 'es',
+    targetLanguageKey: 'languages.es',
+    path: '/spanish-subtitle',
+    showInNav: true,
+    priority: 4,
+    special: {
+      presetTarget: true,
+      preferredService: 'openai'
+    }
+  },
+  portugueseSubtitle: {
+    pageKey: 'portugueseSubtitle',
+    targetLanguage: 'pt',
+    targetLanguageKey: 'languages.pt',
+    path: '/portuguese-subtitle',
+    showInNav: true,
+    priority: 5,
+    special: {
+      presetTarget: true,
+      preferredService: 'google'
+    }
   }
   // 未来可以轻松添加更多页面配置
   // japaneseSubtitle: { ... },
-  // frenchSubtitle: { ... },
   // germanSubtitle: { ... },
   // ... 最多100页配置
 };

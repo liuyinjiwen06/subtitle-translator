@@ -1,9 +1,7 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import { useTranslation } from 'react-i18next';
+import React, { useState, useRef, useEffect } from 'react';
 import { PageConfig } from '@/lib/pageConfig';
-import '../lib/i18n'; // 确保 i18n 被初始化
 
 const languages = [
   { code: "en", flag: "🇺🇸" },
@@ -245,10 +243,28 @@ function TargetLanguageSelector({
 interface SubtitleTranslatorProps {
   pageConfig?: PageConfig;
   className?: string;
+  translations?: any;
 }
 
-export default function SubtitleTranslator({ pageConfig, className = "" }: SubtitleTranslatorProps) {
-  const { t, i18n, ready } = useTranslation();
+export default function SubtitleTranslator({ pageConfig, className = "", translations }: SubtitleTranslatorProps) {
+  // 创建一个简单的翻译函数
+  const t = (key: string): string => {
+    if (!translations) return key;
+    
+    const keys = key.split('.');
+    let value = translations;
+    
+    for (const k of keys) {
+      if (value && typeof value === 'object' && k in value) {
+        value = value[k];
+      } else {
+        return key;
+      }
+    }
+    
+    return typeof value === 'string' ? value : key;
+  };
+
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -271,7 +287,7 @@ export default function SubtitleTranslator({ pageConfig, className = "" }: Subti
       setFile(selectedFile);
       resetTranslationState();
     } else {
-      alert(t('please_select_srt_file') || 'Please select an .srt subtitle file');
+      alert(t('please_select_srt_file'));
     }
   };
 
@@ -286,7 +302,7 @@ export default function SubtitleTranslator({ pageConfig, className = "" }: Subti
   // 翻译处理
   const handleTranslate = async () => {
     if (!file) {
-      alert(t('please_upload_file_first') || "Please upload a subtitle file first");
+      alert(t('please_upload_file_first'));
       return;
     }
 
@@ -311,7 +327,7 @@ export default function SubtitleTranslator({ pageConfig, className = "" }: Subti
 
       const reader = response.body?.getReader();
       if (!reader) {
-        throw new Error(t('cannot_read_response') || 'Cannot read response stream');
+        throw new Error(t('cannot_read_response'));
       }
 
       const decoder = new TextDecoder();
@@ -348,7 +364,7 @@ export default function SubtitleTranslator({ pageConfig, className = "" }: Subti
       }
     } catch (error) {
       console.error('翻译错误:', error);
-      setTranslationError(error instanceof Error ? error.message : t('translation_error_occurred') || 'An error occurred during translation');
+      setTranslationError(error instanceof Error ? error.message : t('translation_error_occurred'));
       setIsTranslating(false);
     }
   };
@@ -370,10 +386,10 @@ export default function SubtitleTranslator({ pageConfig, className = "" }: Subti
     URL.revokeObjectURL(url);
   };
 
-  // 在组件未挂载或i18n未准备好时显示加载状态
-  if (!mounted || !ready || !i18n.isInitialized) {
+  // 在组件未挂载或translations未准备好时显示加载状态
+  if (!mounted || !translations) {
     return (
-      <div className={`max-w-4xl mx-auto p-6 bg-white rounded-2xl shadow-lg ${className}`}>
+      <div className={`w-full p-6 bg-white rounded-2xl shadow-lg ${className}`}>
         <div className="text-center py-12">
           <div className="w-16 h-16 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
           <p className="text-gray-600">Loading...</p>
@@ -383,7 +399,7 @@ export default function SubtitleTranslator({ pageConfig, className = "" }: Subti
   }
 
   return (
-    <div className={`max-w-4xl mx-auto p-6 bg-white rounded-2xl shadow-lg ${className}`}>
+    <div className={`w-full p-6 bg-white rounded-2xl shadow-lg ${className}`}>
       <div className="space-y-8">
         {/* 文件上传区 */}
         <div className="space-y-4">
@@ -409,7 +425,7 @@ export default function SubtitleTranslator({ pageConfig, className = "" }: Subti
                       {file ? file.name : t('upload')}
                     </div>
                     <div className="text-sm text-gray-500 mt-1">
-                      {file ? t('file_selected_click_to_reselect') || '文件已选择，点击可重新选择' : t('click_or_drag_to_upload') || '点击或拖拽上传 SRT 字幕文件'}
+                      {file ? t('file_selected_click_to_reselect') : t('click_or_drag_to_upload')}
                     </div>
                   </div>
                 </div>
@@ -491,7 +507,7 @@ export default function SubtitleTranslator({ pageConfig, className = "" }: Subti
           <div className="p-4 bg-red-50 border border-red-200 rounded-xl">
             <div className="flex items-center space-x-2">
               <span className="text-red-500">❌</span>
-              <span className="text-red-700 font-medium">{t('translation_failed') || '翻译失败'}</span>
+              <span className="text-red-700 font-medium">{t('translation_failed')}</span>
             </div>
             <p className="text-red-600 mt-2">{translationError}</p>
           </div>

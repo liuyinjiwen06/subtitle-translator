@@ -1,0 +1,101 @@
+{
+  "language": "french",
+  "languageName": "French",
+  "title": "French Subtitle Translation Tool",
+  "description": "Professional AI-powered French subtitle translation service",
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "component": "HeroSection",
+      "title": "Hero区域",
+      "order": 1,
+      "required": true,
+      "optional": false
+    },
+    {
+      "id": "translatorSection",
+      "type": "translatorSection",
+      "component": "SubtitleTranslator",
+      "title": "翻译功能区",
+      "order": 1.5,
+      "required": true,
+      "optional": false
+    },
+    {
+      "id": "languageBenefits",
+      "type": "languageBenefits",
+      "component": "LanguageBenefits",
+      "title": "语种优势",
+      "order": 2,
+      "required": true,
+      "optional": false
+    },
+    {
+      "id": "seo",
+      "type": "seo",
+      "component": "SEOMeta",
+      "title": "SEO Meta信息",
+      "order": 13,
+      "required": true,
+      "optional": false
+    },
+    {
+      "id": "faq",
+      "type": "faq",
+      "component": "FAQSection",
+      "title": "FAQ问答",
+      "order": 14,
+      "required": false,
+      "optional": true
+    },
+    {
+      "id": "techIntegration",
+      "type": "techIntegration",
+      "component": "TechSection",
+      "title": "AI技术",
+      "order": 15,
+      "required": false,
+      "optional": true
+    },
+    {
+      "id": "cultureContext",
+      "type": "cultureContext",
+      "component": "CultureSection",
+      "title": "文化本地化",
+      "order": 16,
+      "required": false,
+      "optional": true
+    },
+    {
+      "id": "cta",
+      "type": "cta",
+      "component": "CTASection",
+      "title": "CTA行动号召",
+      "order": 90,
+      "required": true,
+      "optional": false
+    },
+    {
+      "id": "footer",
+      "type": "footer",
+      "component": "Footer",
+      "title": "Footer页脚",
+      "order": 99,
+      "required": true,
+      "optional": false
+    }
+  ],
+  "metadata": {
+    "generatedAt": "2025-06-22T05:01:41.566Z",
+    "totalSections": 9,
+    "requiredSections": 6,
+    "optionalSections": 3,
+    "languageFeatures": {
+      "family": "Romance",
+      "speakers": "280M",
+      "focus": "diplomatic-arts",
+      "flag": "🇫🇷"
+    }
+  }
+}

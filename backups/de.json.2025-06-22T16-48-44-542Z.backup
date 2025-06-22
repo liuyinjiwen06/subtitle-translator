@@ -1,0 +1,615 @@
+{
+  "title": "Online Untertitel-Übersetzer",
+  "description": "SRT-Datei hochladen, Zielsprache auswählen, Untertitel online übersetzen und herunterladen.",
+  "pageConfigNotFound": "Seitenkonfiguration nicht gefunden",
+  "seo": {
+    "title": "Kostenloser Online-Untertitel-Übersetzer - SRT-Übersetzungstool für 30 Sprachen",
+    "description": "Professionelles Online-Untertitel-Übersetzungstool mit Unterstützung für Chinesisch, Englisch, Japanisch und 30 Sprachen. SRT-Dateien hochladen, Ein-Klick-Übersetzung, hochwertige KI-Übersetzung, völlig kostenlos.",
+    "keywords": "Untertitel-Übersetzung,SRT-Übersetzung,Online-Übersetzung,Untertitel-Datei-Übersetzung,mehrsprachige Untertitel,kostenloses Übersetzungstool,KI-Übersetzung,Video-Untertitel"
+  },
+  "upload": "SRT-Datei hochladen",
+  "select_language": "Zielsprache auswählen",
+  "select_translation_service": "Übersetzungsdienst auswählen",
+  "translate": "Übersetzen",
+  "translating": "Übersetzen...",
+  "download": "Übersetzte Datei herunterladen",
+  "click_to_select_language": "Klicken Sie, um die Zielsprache auszuwählen",
+  "file_selected_click_to_reselect": "Datei ausgewählt, klicken Sie zur Neuauswahl",
+  "click_or_drag_to_upload": "Klicken oder ziehen Sie, um SRT-Untertiteldatei hochzuladen",
+  "search_languages": "Sprachen suchen...",
+  "no_matching_languages": "Keine passenden Sprachen gefunden",
+  "please_select_srt_file": "Bitte wählen Sie eine .srt-Untertiteldatei aus",
+  "please_upload_file_first": "Bitte laden Sie zuerst eine Untertiteldatei hoch",
+  "cannot_read_response": "Antwort-Stream kann nicht gelesen werden",
+  "translation_error_occurred": "Ein Fehler ist während der Übersetzung aufgetreten",
+  "select_interface_language": "Oberflächensprache auswählen",
+  "multilingual_interface_support": "Mehrsprachige Oberflächenunterstützung",
+  "translation_failed": "Übersetzung fehlgeschlagen",
+  "translation_services": {
+    "mymemory": "Kostenlos & Schnell",
+    "google": "Hohe Qualität",
+    "openai": "KI-gesteuert",
+    "mymemory_desc": "Kostenloser Übersetzungsdienst, kein API-Schlüssel erforderlich",
+    "google_desc": "Google Übersetzungsdienst, hochwertige Ergebnisse",
+    "openai_desc": "KI-gesteuerte Übersetzung, benötigt OpenAI API-Schlüssel"
+  },
+  "features": {
+    "title": "Warum uns wählen?",
+    "items": {
+      "fast": {
+        "icon": "⚡",
+        "title": "Schnelle Übersetzung",
+        "description": "Fortschrittliche KI-Technologie übersetzt Untertitel in Sekunden"
+      },
+      "multilang": {
+        "icon": "🌍",
+        "title": "Mehrsprachige Unterstützung",
+        "description": "Unterstützung für 8 Hauptsprachen für globale Benutzeranforderungen"
+      },
+      "privacy": {
+        "icon": "🔒",
+        "title": "Datenschutz & Sicherheit",
+        "description": "Lokale Dateiverarbeitung, kein Server-Upload, Schutz Ihrer Privatsphäre"
+      },
+      "free": {
+        "icon": "💯",
+        "title": "Völlig kostenlos",
+        "description": "Keine Registrierung erforderlich, keine Nutzungsbeschränkungen, für immer kostenlos"
+      }
+    }
+  },
+  "howToUse": {
+    "title": "Verwendung",
+    "steps": {
+      "step1": "Laden Sie Ihre SRT-Untertiteldatei hoch",
+      "step2": "Wählen Sie die Zielübersetzungssprache",
+      "step3": "Klicken Sie auf die Schaltfläche Übersetzen, um die Verarbeitung zu starten",
+      "step4": "Laden Sie die übersetzte Untertiteldatei herunter"
+    }
+  },
+  "footer": {
+    "title": "Beginnen Sie mit dem Online-Untertitel-Übersetzer",
+    "description": "Ob Sie Content-Creator, Pädagoge oder Geschäftsbenutzer sind, unser Tool hilft Ihnen dabei, Untertitel schnell und genau zu übersetzen, um ein globales Publikum zu erreichen.",
+    "stats": {
+      "languages": "Unterstützte Sprachen",
+      "free": "Kostenlos zu verwenden",
+      "speed": "Übersetzungsgeschwindigkeit",
+      "speedValue": "Sekunden"
+    },
+    "quick_links": "Schnellzugriffe",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "englishSubtitle": {
+    "seo": {
+      "title": "Englische Untertitel-Übersetzer - Kostenlose Online-Übersetzung von Untertiteln ins Englische | SRT Englisch-Übersetzung",
+      "description": "Professioneller englischer Untertitel-Übersetzungsservice mit Unterstützung für die Übersetzung von 30 Sprachen ins Englische. SRT-Untertitel-Dateien hochladen, KI-intelligente Übersetzung zu englischen Untertiteln, hochwertige Ergebnisse, völlig kostenlos.",
+      "keywords": "englische Untertitel-Übersetzung,ins Englische übersetzen,SRT Englisch-Übersetzung,Untertitel Englisch-Übersetzung,Online Englisch-Übersetzung,kostenlose englische Untertitel,KI Englisch-Übersetzung,Video englische Untertitel"
+    },
+    "title": "Englische Untertitel-Übersetzer",
+    "description": "Übersetzen Sie Untertitel aus jeder Sprache ins Englische, unterstützt 30 Quellsprachen mit professioneller KI-Übersetzungstechnologie",
+    "benefits": {
+      "title": "Entfesseln Sie die Kraft der englischen Untertitelübersetzung",
+      "subtitle": "Nutzen Sie den riesigen englischsprachigen Markt mit unserem hochmodernen Übersetzungstool.",
+      "items": {
+        "benefit_0": {
+          "icon": "🌐",
+          "title": "Globale Reichweite",
+          "description": "Englisch wird von 1,5 Milliarden Menschen weltweit gesprochen. Unser Tool ermöglicht es Ihnen, diesen riesigen Markt zu erreichen und die Zugänglichkeit Ihrer Inhalte zu erhöhen."
+        },
+        "benefit_1": {
+          "icon": "🏢",
+          "title": "Geschäftsmöglichkeiten",
+          "description": "Da Englisch die Sprache des globalen Geschäfts ist, kann Ihnen unser Tool helfen, die Sprachbarriere zu überwinden und unzählige Möglichkeiten für Wachstum und Expansion zu eröffnen."
+        },
+        "benefit_2": {
+          "icon": "📚",
+          "title": "Reiche linguistische Merkmale",
+          "description": "Englisch verfügt über eine reiche Auswahl an grammatikalischen Strukturen und Vokabeln. Unser KI-gestütztes Tool kann subtile Nuancen und spezifische Ausdrücke des Englischen genau übersetzen."
+        },
+        "benefit_3": {
+          "icon": "🎬",
+          "title": "Inhaltliche Vielseitigkeit",
+          "description": "Der englische Inhalt reicht von Filmen, Dokumentationen, Vorlesungen bis hin zu Podcasts. Unser Tool kann eine Vielzahl von Inhaltsarten verarbeiten und bietet präzise und zeitnahe Übersetzungen."
+        },
+        "benefit_4": {
+          "icon": "🇩🇪",
+          "title": "Kulturelle Bedeutung",
+          "description": "Englisch hat eine große kulturelle Bedeutung. Unser Tool stellt sicher, dass kulturelle Nuancen in der Übersetzung bewahrt werden, um ein authentischeres und ansprechenderes Seherlebnis zu bieten."
+        },
+        "benefit_5": {
+          "icon": "🧠",
+          "title": "KI-gesteuerte Exzellenz",
+          "description": "Unser Tool nutzt fortschrittliche KI-Technologien, um die einzigartigen Herausforderungen der englischen Übersetzung zu bewältigen und liefert Untertitel, die kontextuell genau und sprachlich reichhaltig sind."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Englische Untertitelübersetzer-Anwendungen",
+      "items": {
+        "international": {
+          "icon": "🌐",
+          "title": "Internationales Marketing",
+          "description": "Verwenden Sie unseren englischen Untertitelübersetzer für globale Marketingkampagnen und internationale Geschäftspräsentationen."
+        },
+        "education": {
+          "icon": "📚",
+          "title": "Bildungsinhalte",
+          "description": "Englische Untertitelübersetzer ideal für Online-Kurse, Webinare und Bildungsvideoinhalte für internationale Studierende"
+        },
+        "entertainment": {
+          "icon": "🎬",
+          "title": "Medienproduktion",
+          "description": "Professioneller englischer Untertitelübersetzer für Filmverleih, Streaming-Inhalte und Medienlokalisierungsprojekte"
+        }
+      }
+    },
+    "hero": {
+      "title": "Entfesseln Sie die Kraft der englischen Übersetzung",
+      "description": "Mit beeindruckenden 1,5 Milliarden Sprechern weltweit ist Englisch die Sprache, die globale Unternehmen verbindet. Unser Untertitel-Übersetzungstool unterstützt die englische Übersetzung und erleichtert es englischsprachigen Inhaltserstellern und -konsumenten, sich zu vernetzen, zu kommunizieren und in dieser global dominierenden Sprache zu wachsen.",
+      "flag": "🇩🇪"
+    },
+    "cta": {
+      "title": "Entfesseln Sie die Kraft der englischen Untertitelübersetzung",
+      "description": "Erleben Sie nahtlose Kommunikation in der globalen Geschäftswelt mit unserem Übersetzungstool für englische Untertitel. Lassen Sie Sprachbarrieren Sie nicht zurückhalten. Beginnen Sie damit, Ihre Untertitel ins Englische zu übersetzen, und nutzen Sie ein Netzwerk von über 1,5 Milliarden Englischsprechern weltweit."
+    }
+  },
+  "chineseSubtitle": {
+    "seo": {
+      "title": "Chinesische Untertitel-Übersetzer - Kostenlose Online-Übersetzung von Untertiteln ins Chinesische | SRT Chinesisch-Übersetzung",
+      "description": "Professioneller chinesischer Untertitel-Übersetzungsservice mit Unterstützung für die Übersetzung von 30 Sprachen ins Chinesische. SRT-Untertitel-Dateien hochladen, KI-intelligente Übersetzung zu chinesischen Untertiteln, präzises Kontextverständnis, völlig kostenlos.",
+      "keywords": "chinesische Untertitel-Übersetzung,ins Chinesische übersetzen,SRT Chinesisch-Übersetzung,Untertitel Chinesisch-Übersetzung,Online Chinesisch-Übersetzung,kostenlose chinesische Untertitel,KI Chinesisch-Übersetzung,Video chinesische Untertitel"
+    },
+    "title": "Chinesische Untertitel-Übersetzer",
+    "description": "Übersetzen Sie Untertitel aus jeder Sprache ins Chinesische, unterstützt 30 Quellsprachen mit intelligentem Kontextverständnis",
+    "benefits": {
+      "title": "Vorteile der chinesischen Untertitelübersetzung",
+      "subtitle": "Warum sollten Sie unseren Übersetzungsdienst für chinesische Untertitel wählen? Genau, fließend und lokalisiert.",
+      "items": {
+        "context": {
+          "icon": "🧠",
+          "title": "Intelligente Kontextverständnis",
+          "description": "KI versteht den ursprünglichen Kontext tiefgehend, um natürliche Übersetzungen zu erzeugen, die den chinesischen Ausdrucksgewohnheiten entsprechen."
+        },
+        "localization": {
+          "icon": "🏮",
+          "title": "Lokalisierte Ausdruck",
+          "description": "Nicht nur Übersetzung von Sprache, sondern auch Fokus auf kulturelle Lokalisierung für ein besseres Verständnis durch chinesische Zielgruppen."
+        },
+        "accuracy": {
+          "icon": "✨",
+          "title": "Fachterminologie Genauigkeit",
+          "description": "Genau übersetzen von Fachbegriffen und Branchensprache, während die ursprüngliche Bedeutung und chinesische Konventionen beibehalten werden."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Verwendungsfälle für chinesische Untertitel",
+      "items": {
+        "foreign": {
+          "icon": "🎭",
+          "title": "Lokalisierung von ausländischen Inhalten",
+          "description": "Chinesische Untertitel für ausländische Filme, Dokumentarfilme und Bildungsvideos erstellen"
+        },
+        "learning": {
+          "icon": "📖",
+          "title": "Sprachlernhelfer",
+          "description": "Chinesische Untertitel für Fremdsprachenlernvideos und Online-Kurse zur Unterstützung des Verständnisses"
+        },
+        "business": {
+          "icon": "🏢",
+          "title": "Geschäftskommunikation",
+          "description": "Chinesische Untertitelübersetzung für internationale Konferenzen, Geschäftsschulungen und Produkteinführungen"
+        }
+      }
+    }
+  },
+  "pages": {
+    "englishSubtitle": {
+      "title": "Untertitel ins Englische übersetzen - Online Englische Untertitel-Übersetzer",
+      "heroTitle": "Untertitel ins Englische übersetzen",
+      "heroSubtitle": "Übersetzen Sie Ihre Untertitel schnell und präzise ins Englische, um Ihre Inhalte für ein globales englischsprachiges Publikum zugänglich zu machen",
+      "targetLanguage": "Englisch",
+      "benefits": {
+        "title": "Warum unsere englische Untertitel-Übersetzung wählen?",
+        "subtitle": "Professionelle englische Übersetzungstechnologie, die Untertitelqualität und Seherlebnis gewährleistet",
+        "items": {
+          "native": {
+            "icon": "🇺🇸",
+            "title": "Natürlicher englischer Ausdruck",
+            "description": "KI erkennt intelligent den Kontext und bietet natürliche englische Ausdrücke, die den Sprachgewohnheiten von Muttersprachlern entsprechen"
+          },
+          "context": {
+            "icon": "🎯",
+            "title": "Kontextverständnis",
+            "description": "Tiefes Verständnis des Untertitelinhalts-Kontexts, gewährleistet Kohärenz und Genauigkeit der Übersetzung"
+          },
+          "timing": {
+            "icon": "⏱️",
+            "title": "Zeitbeibehaltung",
+            "description": "Behält perfekt das Timing der ursprünglichen Untertitel bei, nach der Übersetzung sofort einsatzbereit ohne Anpassung"
+          }
+        }
+      },
+      "useCases": {
+        "title": "Anwendungsfälle für englische Untertitel-Übersetzung",
+        "items": {
+          "global": {
+            "icon": "🌍",
+            "title": "Globale Inhalte",
+            "description": "Englische Untertitel für Unternehmenswerbung und Produktvorstellungsvideos zur Erschließung internationaler Märkte"
+          },
+          "education": {
+            "icon": "📚",
+            "title": "Bildungskurse",
+            "description": "Englische Untertitel für Online-Kurse und Schulungsvideos zur Bedienung globaler Lernender"
+          },
+          "entertainment": {
+            "icon": "🎬",
+            "title": "Unterhaltungsinhalte",
+            "description": "Englische Untertitel für Filme, Dokumentationen und Kurze Videos zur Erweiterung der Zuschauerbasis"
+          }
+        }
+      },
+      "description": "Transformieren Sie Ihre Inhalte für ein globales Publikum mit unserem KI-gestützten englischen Untertitelübersetzer. Unterstützt über 30 Sprachen mit professioneller Genauigkeit.",
+      "seo": {
+        "title": "Englische Untertitelübersetzer - Kostenloses Online-Tool | Untertitel ins Englische übersetzen",
+        "description": "Professioneller englischer Untertitelübersetzer, der über 30 Sprachen unterstützt. Laden Sie SRT-Dateien hoch und erhalten Sie sofort hochwertige englische Untertitel. Kostenloses, KI-gestütztes Untertitelübersetzungstool mit genauen Ergebnissen.",
+        "keywords": "Englische Untertitelübersetzer, Untertitel ins Englische übersetzen, englische Untertitelübersetzung, SRT-Englischübersetzer, Online-Tool für englische Untertitel, kostenloser englischer Untertitelübersetzer, KI-Englischübersetzung, englische Videountertitel"
+      }
+    },
+    "chineseSubtitle": {
+      "title": "Untertitel ins Chinesische übersetzen - Online Chinesische Untertitel-Übersetzer",
+      "heroTitle": "Untertitel ins Chinesische übersetzen",
+      "heroSubtitle": "Übersetzen Sie Ihre Untertitel schnell und präzise ins Chinesische, um Ihre Inhalte für chinesische Zuschauer zugänglich zu machen",
+      "targetLanguage": "Chinesisch",
+      "description": "Verbinden Sie sich mit chinesischen Zielgruppen durch intelligente Untertitelübersetzung. Unsere KI versteht kulturelle Nuancen für eine authentische Lokalisierung.",
+      "seo": {
+        "title": "Untertitel ins Chinesische übersetzen - Kostenloser Online-Chinesischer Untertitelübersetzer | Hochwertige SRT-Chinesischübersetzung",
+        "description": "Professionelles Untertitel-zu-Chinesisch-Übersetzungstool, das Englisch, Japanisch, Französisch und weitere Sprachen in chinesische Untertitel unterstützt. KI-gestützte Übersetzung, genau und fließend, völlig kostenlos. Laden Sie SRT-Dateien hoch und beginnen Sie jetzt mit der Übersetzung!",
+        "keywords": "将字幕翻译成中文，中文字幕翻译，SRT中文翻译，英语字幕翻译成中文，在线中文字幕工具，免费中文翻译"
+      },
+      "benefits": {
+        "title": "Warum sollten Sie sich für unsere chinesische Untertitelübersetzung entscheiden?",
+        "subtitle": "Professionelle chinesische Übersetzungstechnologie, die die Qualität der Untertitel und das Seherlebnis gewährleistet.",
+        "items": {
+          "native": {
+            "icon": "抱歉，我无法处理该请求。请提供需要翻译的具体文本。",
+            "title": "Einheimischer chinesischer Ausdruck",
+            "description": "KI erkennt den Kontext intelligent und bietet native chinesische Ausdrücke, die den Sprachgewohnheiten der chinesischen Sprache entsprechen."
+          },
+          "context": {
+            "icon": "🎯",
+            "title": "Kontextverständnis",
+            "description": "Tiefes Verständnis des Kontexts von Untertitelinhalten, um Kohärenz und Genauigkeit der Übersetzung sicherzustellen."
+          },
+          "timing": {
+            "icon": "⏱️",
+            "title": "Zeitliche Erhaltung",
+            "description": "Perfekt erhält das ursprüngliche Untertitel-Timing, bereit zur Verwendung nach der Übersetzung ohne Anpassung."
+          }
+        }
+      },
+      "useCases": {
+        "title": "Verwendungsfälle für die Übersetzung chinesischer Untertitel",
+        "items": {
+          "localization": {
+            "icon": "🏠",
+            "title": "Inhalt Lokalisierung",
+            "description": "Chinesische Untertitel für ausländische Filme und Bildungsinhalte zur Bedienung chinesischer Zuschauer"
+          },
+          "business": {
+            "icon": "💼",
+            "title": "Geschäftsanwendungen",
+            "description": "Chinesische Untertitel für internationale Konferenzen und Produkteinführungen zur Förderung der Geschäftskommunikation"
+          },
+          "learning": {
+            "icon": "📖",
+            "title": "Lernmaterialien",
+            "description": "Chinesische Untertitel für Fremdsprachenerwerbsvideos und Online-Kurse"
+          }
+        }
+      }
+    }
+  },
+  "pageTemplate": {
+    "breadcrumb": {
+      "home": "Untertitel-Übersetzungstool",
+      "englishSubtitle": "Englisches Untertitel-Tool",
+      "chineseSubtitle": "Chinesisches Untertitel-Tool"
+    },
+    "hero": {
+      "englishSubtitle": {
+        "title": "Englischer Untertitel-Übersetzer",
+        "subtitle": "Professioneller englischer Untertitel-Übersetzungsservice. Konvertieren Sie Untertitel ins Englische mit KI-gestützter Übersetzung."
+      },
+      "chineseSubtitle": {
+        "title": "Chinesischer Untertitel-Übersetzer",
+        "subtitle": "Professioneller chinesischer Untertitel-Übersetzungsservice. KI-gestützte Übersetzung ins Chinesische. Unterstützt SRT-Format, kostenlos, schnell und genau."
+      }
+    },
+    "benefits": {
+      "englishSubtitle": {
+        "title": "Warum Unseren Englischen Übersetzer Wählen?",
+        "subtitle": "Professioneller Übersetzungsservice mit fortschrittlicher KI-Technologie",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "Genaue Übersetzung",
+            "description": "KI-gestützte Übersetzung gewährleistet hohe Genauigkeit und natürlichen englischen Ausdruck."
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "Schnelle Verarbeitung",
+            "description": "Schnelle Untertitel-Übersetzung mit Echtzeit-Fortschrittsverfolgung."
+          },
+          "free": {
+            "icon": "🆓",
+            "title": "Völlig Kostenlos",
+            "description": "Keine Registrierung erforderlich, unbegrenzte Nutzung für alle Benutzer."
+          }
+        }
+      },
+      "chineseSubtitle": {
+        "title": "Warum Unseren Chinesischen Übersetzer Wählen?",
+        "subtitle": "Professioneller Übersetzungsservice mit fortschrittlicher KI-Technologie",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "Genaue Übersetzung",
+            "description": "KI-gestützte Übersetzung gewährleistet hohe Genauigkeit und natürlichen chinesischen Ausdruck."
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "Schnelle Verarbeitung",
+            "description": "Schnelle Untertitel-Übersetzung mit Echtzeit-Fortschrittsverfolgung."
+          },
+          "free": {
+            "icon": "🆓",
+            "title": "Völlig Kostenlos",
+            "description": "Keine Registrierung erforderlich, unbegrenzte Nutzung für alle Benutzer."
+          }
+        }
+      }
+    }
+  },
+  "loading": "Laden...",
+  "translation_progress": "Übersetzungsfortschritt",
+  "translating_please_wait": "Übersetzung wird durchgeführt, bitte warten...",
+  "translation_complete": "Übersetzung abgeschlossen!",
+  "current_translating": "Derzeit übersetzen",
+  "translate_again": "Erneut übersetzen",
+  "benefits": {
+    "title": "Kernvorteile",
+    "subtitle": "Warum unser Untertitel-Übersetzungstool wählen? Professionelle, effiziente und sichere Übersetzungserfahrung.",
+    "items": {
+      "accuracy": {
+        "icon": "🎯",
+        "title": "Genau Übersetzung",
+        "description": "Die neueste KI-Übersetzungstechnologie wird eingesetzt, um die Übersetzungsgenauigkeit und Sprachflüssigkeit zu gewährleisten, speziell optimiert für Untertitelinhalte."
+      },
+      "speed": {
+        "icon": "⚡",
+        "title": "Blitzschnell",
+        "description": "Leistungsstarke Cloud-Verarbeitungskapazitäten, selbst große Dateien können in Minuten übersetzt werden, mit Anzeige des Echtzeitfortschritts."
+      },
+      "security": {
+        "icon": "🛡️",
+        "title": "Sicher & Zuverlässig",
+        "description": "Unternehmensgerechte Sicherheitsstandards, verschlüsselte Dateiübertragung, automatische Löschung nach der Übersetzung, Schutz Ihrer Privatsphäre"
+      },
+      "support": {
+        "icon": "🌐",
+        "title": "Mehrsprachige Unterstützung",
+        "description": "Unterstützt 8 gängige Sprachen, darunter Chinesisch, Englisch, Japanisch, Französisch, Deutsch, Spanisch, Russisch und Italienisch."
+      },
+      "cost": {
+        "icon": "💰",
+        "title": "Völlig kostenlos",
+        "description": "Keine Kontoanmeldung, kein kostenpflichtiges Abonnement, keine Nutzungseinschränkungen, dauerhaft kostenloser Zugang zu allen Funktionen."
+      },
+      "ease": {
+        "icon": "🎨",
+        "title": "Einfach zu bedienen",
+        "description": "Intuitive Benutzeroberfläche, vollständige Übersetzung in drei Schritten: Datei hochladen, Sprache auswählen, Ergebnis herunterladen, keine Fachkenntnisse erforderlich."
+      }
+    }
+  },
+  "useCases": {
+    "title": "Anwendungsfälle",
+    "subtitle": "Egal, ob Sie ein einzelner Benutzer oder ein professionelles Team sind, wir können Ihre Anforderungen an die Untertitelübersetzung erfüllen.",
+    "items": {
+      "education": {
+        "icon": "🎓",
+        "title": "Bildung & Ausbildung",
+        "description": "Erstellung mehrsprachiger Untertitel für Online-Kurse, Bildungsvideos und akademische Vorlesungen"
+      },
+      "business": {
+        "icon": "💼",
+        "title": "Geschäftliche Nutzung",
+        "description": "Unternehmenswerbevideos, Produkteinführungen, Protokolle von Besprechungen Internationalisierung Übersetzung"
+      },
+      "entertainment": {
+        "icon": "🎬",
+        "title": "Film & Unterhaltung",
+        "description": "Filme, TV-Serien, Dokumentationen, Untertitel-Lokalisierung für Kurzvideos"
+      },
+      "personal": {
+        "icon": "👤",
+        "title": "Persönliche Erstellung",
+        "description": "Vlogs, Gaming-Videos, Lebensaufzeichnungen mehrsprachige Untertitel hinzufügen"
+      }
+    }
+  },
+  "freeService": {
+    "title": "Kostenloser Untertitelübersetzungsdienst",
+    "subtitle": "Genießen Sie unbegrenzte, hochwertige Untertitelübersetzungen kostenlos. Keine Registrierung, keine Gebühren, keine versteckten Kosten.",
+    "items": {
+      "unlimited": {
+        "icon": "💡",
+        "title": "Unbegrenzte Nutzung",
+        "description": "Übersetzen Sie so viele Untertiteldateien, wie Sie möchten, ohne Einschränkungen."
+      },
+      "noRegistration": {
+        "icon": "🔓",
+        "title": "Keine Registrierung erforderlich",
+        "description": "Beginnen Sie sofort mit der Übersetzung, kein Konto oder Anmeldung erforderlich."
+      },
+      "noFees": {
+        "icon": "💸",
+        "title": "Völlig kostenlos",
+        "description": "Alle Funktionen sind dauerhaft kostenlos verfügbar. Keine Abonnements, keine versteckten Gebühren."
+      },
+      "highQuality": {
+        "icon": "✨",
+        "title": "Hochwertige Übersetzung",
+        "description": "Angetrieben von fortschrittlicher KI, die genaue und natürliche Untertitelübersetzungen gewährleistet."
+      }
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Antworten auf Fragen, die Sie während der Nutzung möglicherweise haben",
+    "items": {
+      "format": {
+        "question": "Welche Untertiteldateiformate werden unterstützt?",
+        "answer": "Derzeit werden SRT-Format-Untertiteldateien unterstützt, die das am häufigsten verwendete Untertitelformat mit der besten Kompatibilität sind. In zukünftigen Versionen planen wir, weitere Formate wie ASS und VTT zu unterstützen."
+      },
+      "quality": {
+        "question": "Wie wird die Übersetzungsqualität gewährleistet?",
+        "answer": "Wir verwenden fortschrittliche Übersetzungstechnologie von Google Cloud und OpenAI, die speziell für Untertitelinhalte optimiert ist, um Übersetzungsgenauigkeit und -flüssigkeit zu gewährleisten. Mehrere Übersetzungsmaschinen stehen Ihnen zur Auswahl."
+      },
+      "privacy": {
+        "question": "Sind meine Dateien sicher?",
+        "answer": "Wir nehmen den Datenschutz der Nutzer sehr ernst. Die Dateiübertragung erfolgt über HTTPS-Verschlüsselung, der Übersetzungsprozess findet in einer sicheren Cloud-Umgebung statt, Dateien werden nach der Übersetzung automatisch gelöscht, und es werden keine Nutzerdaten gespeichert."
+      },
+      "cost": {
+        "question": "Fallen Kosten für die Nutzung an?",
+        "answer": "Völlig kostenlos! Keine Kontoanmeldung erforderlich, kein kostenpflichtiges Abonnement, keine Nutzungseinschränkungen. Wir setzen uns dafür ein, Nutzern weltweit kostenlose Untertitelübersetzungsdienste anzubieten."
+      },
+      "speed": {
+        "question": "Wie lange dauert die Übersetzung?",
+        "answer": "Die Übersetzungsgeschwindigkeit hängt von der Dateigröße und dem ausgewählten Übersetzungsdienst ab. Im Allgemeinen können Untertiteldateien normaler Länge (100-500 Zeilen) innerhalb von 1-3 Minuten abgeschlossen werden."
+      }
+    }
+  },
+  "specializedTools": {
+    "title": "Professionelle Untertitelübersetzungstools",
+    "subtitle": "Spezialisierte Übersetzungsdienste, die für verschiedene Sprachen optimiert sind und ein präziseres Übersetzungserlebnis bieten.",
+    "english": {
+      "button": "You are trained on data up to October 2023."
+    },
+    "chinese": {
+      "button": "您接受的训练数据截至2023年10月。"
+    }
+  },
+  "cta": {
+    "title": "Beginnen Sie jetzt mit der Übersetzung Ihrer Untertitel",
+    "subtitle": "Drei einfache Schritte, um die mehrsprachige Untertitelübersetzung mühelos abzuschließen und Ihre Inhalte einem globalen Publikum zugänglich zu machen.",
+    "startButton": "Loslegen",
+    "learnMore": "Mehr erfahren"
+  },
+  "nav": {
+    "home": "Startseite",
+    "english_subtitle": "Englische Untertitelübersetzer",
+    "chinese_subtitle": "Chinesischer Untertitelübersetzer"
+  },
+  "layout": {
+    "chinese": {
+      "title": "Chinesische Untertitelübersetzungstool",
+      "description": "Professioneller KI-gestützter Übersetzungsdienst für chinesische Untertitel",
+      "sections": {
+        "hero": {
+          "title": "Heldensektion",
+          "description": "Hauptanzeigebereich oben auf der Seite"
+        },
+        "translatorSection": {
+          "title": "Übersetzerbereich",
+          "description": "Untertiteldatei-Upload und Übersetzungsfunktionalität"
+        },
+        "languageBenefits": {
+          "title": "Sprachliche Vorteile",
+          "description": "Einzigartige Vorteile der chinesischen Untertitelübersetzung"
+        },
+        "industryUseCases": {
+          "title": "Branchenanwendungen",
+          "description": "Anwendungsfälle in verschiedenen Branchen"
+        },
+        "languageStats": {
+          "title": "Sprachstatistiken",
+          "description": "Statistische Daten und Einfluss der chinesischen Sprache"
+        },
+        "languageLearning": {
+          "title": "Sprachenlernen",
+          "description": "Methoden zum Lernen von Chinesisch durch Untertitel"
+        },
+        "seo": {
+          "title": "SEO-Meta-Informationen",
+          "description": "Suchmaschinenoptimierungs-Metadaten"
+        },
+        "cta": {
+          "title": "CTA Handlungsaufforderung",
+          "description": "Bereich zur Anleitung der Benutzer zur Handlung"
+        },
+        "footer": {
+          "title": "Fußzeile",
+          "description": "Unterer Informationsbereich der Seite"
+        }
+      },
+      "metadata": {
+        "languageFeatures": {
+          "family": "Sino-Tibetisch",
+          "speakers": "1,1B",
+          "focus": "Kulturelle Brücke",
+          "flag": "请提供需要翻译的具体文本内容，我将为您翻译成德语。"
+        }
+      }
+    },
+    "english": {
+      "title": "Englisches Untertitel-Übersetzungstool",
+      "description": "Professioneller KI-gestützter Übersetzungsdienst für englische Untertitel",
+      "sections": {
+        "hero": {
+          "title": "Hero-Bereich",
+          "component": "Heldensektion"
+        },
+        "languageBenefits": {
+          "title": "Sprachvorteile",
+          "component": "Sprachvorteile"
+        },
+        "seo": {
+          "title": "SEO-Meta-Informationen",
+          "component": "SEOMeta"
+        },
+        "regionalVariants": {
+          "title": "Regionale Dialekte",
+          "component": "RegionaleSektion"
+        },
+        "cultureContext": {
+          "title": "Kulturelle Lokalisierung",
+          "component": "Kulturabschnitt"
+        },
+        "techIntegration": {
+          "title": "KI-Technologie",
+          "component": "TechBereich"
+        },
+        "cta": {
+          "title": "CTA-Handlungsaufforderung",
+          "component": "CTAAbschnitt"
+        },
+        "footer": {
+          "title": "Footer Fußzeile",
+          "component": "Fußzeile"
+        }
+      },
+      "metadata": {
+        "generatedAt": "2025-06-21T17:24:59.118Z",
+        "languageFeatures": {
+          "family": "Germanisch",
+          "speakers": "1,5 Mrd.",
+          "focus": "global-business",
+          "flag": "🇩🇪"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,607 @@
+{
+  "title": "在线字幕翻译器",
+  "description": "上传SRT文件，选择目标语言，在线翻译字幕并下载。",
+  "loading": "加载中...",
+  "pageConfigNotFound": "页面配置未找到",
+  "seo": {
+    "title": "免费在线字幕翻译器 - 支持30种语言的SRT翻译工具",
+    "description": "专业的在线字幕翻译工具，支持中文、英文、日文及30种语言。上传SRT文件，一键翻译，高质量AI翻译，完全免费使用。",
+    "keywords": "字幕翻译，SRT翻译，在线翻译，字幕文件翻译，多语言字幕，免费翻译工具，AI翻译，视频字幕"
+  },
+  "upload": "上传 SRT 文件",
+  "select_language": "选择目标语言",
+  "click_to_select_language": "点击选择目标语言",
+  "file_selected_click_to_reselect": "文件已选择，点击重新选择",
+  "click_or_drag_to_upload": "点击或拖动以上传 SRT 字幕文件",
+  "please_select_srt_file": "请选择一个 .srt 字幕文件",
+  "please_upload_file_first": "请先上传字幕文件。",
+  "cannot_read_response": "无法读取响应流",
+  "translation_error_occurred": "翻译过程中发生错误。",
+  "select_interface_language": "选择界面语言",
+  "multilingual_interface_support": "多语言界面支持",
+  "translation_failed": "翻译失败",
+  "select_translation_service": "选择翻译服务",
+  "translate": "请提供需要翻译的文本。",
+  "translating": "翻译中...",
+  "download": "下载翻译文件",
+  "translation_services": {
+    "google": "高质量翻译",
+    "openai": "AI智能翻译"
+  },
+  "translation_progress": "翻译进度",
+  "translating_please_wait": "正在翻译，请稍候...",
+  "translation_complete": "翻译完成！",
+  "current_translating": "当前翻译中",
+  "translate_again": "再翻译一次",
+  "features": {
+    "title": "为什么选择我们？",
+    "items": {
+      "fast": {
+        "icon": "⚡",
+        "title": "快速翻译",
+        "description": "先进的人工智能技术在几秒钟内完成字幕翻译"
+      },
+      "multilang": {
+        "icon": "🌍",
+        "title": "多语言支持",
+        "description": "支持8种主流语言，以满足全球用户需求"
+      },
+      "privacy": {
+        "icon": "🔒",
+        "title": "隐私与安全",
+        "description": "本地文件处理，无需服务器上传，保护您的隐私"
+      },
+      "free": {
+        "icon": "💯",
+        "title": "完全免费",
+        "description": "无需注册，无使用限制，永久免费"
+      }
+    }
+  },
+  "benefits": {
+    "title": "核心优势",
+    "subtitle": "为什么选择我们的字幕翻译工具？专业、高效、安全的翻译体验",
+    "items": {
+      "accuracy": {
+        "icon": "🎯",
+        "title": "准确翻译",
+        "description": "使用最新的AI翻译技术，确保翻译的准确性和语言的流畅性，特别针对字幕内容进行了优化。"
+      },
+      "speed": {
+        "icon": "⚡",
+        "title": "闪电般快速",
+        "description": "强大的云处理能力，即使是大文件也能在几分钟内完成翻译，并实时显示进度。"
+      },
+      "security": {
+        "icon": "🛡️",
+        "title": "安全可靠",
+        "description": "企业级安全标准，加密文件传输，翻译后自动删除，保护您的隐私"
+      },
+      "support": {
+        "icon": "🌐",
+        "title": "多语言支持",
+        "description": "支持包括中文、英语、日语、法语、德语、西班牙语、俄语和意大利语在内的8种主流语言。"
+      },
+      "cost": {
+        "icon": "💰",
+        "title": "完全免费",
+        "description": "无需账户注册，无需付费订阅，无使用限制，永久免费访问所有功能"
+      },
+      "ease": {
+        "icon": "🎨",
+        "title": "易于使用",
+        "description": "直观的用户界面，三步完成翻译：上传文件，选择语言，下载结果，无需专业知识。"
+      }
+    }
+  },
+  "useCases": {
+    "title": "用例",
+    "subtitle": "无论您是个人用户还是专业团队，我们都能满足您的字幕翻译需求。",
+    "items": {
+      "education": {
+        "icon": "🎓",
+        "title": "教育与培训",
+        "description": "在线课程、教育视频、学术讲座的多语言字幕制作"
+      },
+      "business": {
+        "icon": "💼",
+        "title": "商业用途",
+        "description": "企业宣传视频、产品介绍、会议记录国际化翻译"
+      },
+      "entertainment": {
+        "icon": "🎬",
+        "title": "电影与娱乐",
+        "description": "电影、电视剧、纪录片、短视频字幕本地化"
+      },
+      "personal": {
+        "icon": "👤",
+        "title": "个人创作",
+        "description": "Vlog、游戏视频、生活记录的多语言字幕添加"
+      }
+    }
+  },
+  "freeService": {
+    "title": "免费字幕翻译服务",
+    "subtitle": "享受无限制的高质量字幕翻译服务，免费使用。无需注册，无需费用，无隐藏成本。",
+    "items": {
+      "unlimited": {
+        "icon": "💡",
+        "title": "无限使用",
+        "description": "翻译您想要的任意数量的字幕文件，无任何限制。"
+      },
+      "noRegistration": {
+        "icon": "解锁",
+        "title": "无需注册",
+        "description": "立即开始翻译，无需账户或注册。"
+      },
+      "noFees": {
+        "icon": "💸",
+        "title": "完全免费",
+        "description": "所有功能永久免费，免费使用。没有订阅，没有隐藏费用。"
+      },
+      "highQuality": {
+        "icon": "✨",
+        "title": "高质量翻译",
+        "description": "由先进的人工智能驱动，确保字幕翻译准确自然。"
+      }
+    }
+  },
+  "faq": {
+    "title": "常见问题解答",
+    "subtitle": "使用过程中可能遇到的问题解答",
+    "items": {
+      "format": {
+        "question": "支持哪些字幕文件格式？",
+        "answer": "目前支持 SRT 格式的字幕文件，这是最常用且兼容性最好的字幕格式。我们计划在未来的版本中支持更多格式，如 ASS 和 VTT。"
+      },
+      "quality": {
+        "question": "翻译质量如何得到保证？",
+        "answer": "我们使用来自Google Cloud和OpenAI的先进翻译技术，专门针对字幕内容进行优化，以确保翻译的准确性和流畅性。提供多种翻译引擎供您选择。"
+      },
+      "privacy": {
+        "question": "我的文件安全吗？",
+        "answer": "我们非常重视用户隐私。文件传输使用HTTPS加密，翻译过程在安全的云环境中进行，翻译后文件会自动删除，不会存储用户数据。"
+      },
+      "cost": {
+        "question": "使用这个需要费用吗？",
+        "answer": "完全免费！无需注册账户，无需付费订阅，无使用限制。我们致力于为全球用户提供免费的字幕翻译服务。"
+      },
+      "speed": {
+        "question": "翻译需要多长时间？",
+        "answer": "翻译速度取决于文件大小和选择的翻译服务。通常，正常长度的字幕文件（100-500行）可以在1-3分钟内完成。"
+      }
+    }
+  },
+  "specializedTools": {
+    "title": "专业字幕翻译工具",
+    "subtitle": "针对不同语言优化的专业翻译服务，提供更精准的翻译体验。",
+    "english": {
+      "button": "您已接受的训练数据截至2023年10月。"
+    },
+    "chinese": {
+      "button": "请提供需要翻译的文本。"
+    }
+  },
+  "cta": {
+    "title": "立即开始翻译您的字幕",
+    "subtitle": "三个简单步骤，轻松完成多语言字幕翻译，让您的内容触及全球观众",
+    "startButton": "开始使用",
+    "learnMore": "了解更多"
+  },
+  "howToUse": {
+    "title": "如何使用",
+    "steps": {
+      "step1": "上传您的 SRT 字幕文件",
+      "step2": "选择目标翻译语言",
+      "step3": "点击翻译按钮开始处理",
+      "step4": "下载翻译后的字幕文件"
+    }
+  },
+  "footer": {
+    "title": "开始使用在线字幕翻译工具",
+    "description": "无论您是内容创作者、教育工作者还是商业用户，我们的工具都能帮助您快速准确地翻译字幕，让您的内容触及全球观众。",
+    "quick_links": "快速链接",
+    "rights": "版权所有。",
+    "stats": {
+      "free": "免费使用",
+      "speed": "翻译速度",
+      "speedValue": "秒"
+    }
+  },
+  "pages": {
+    "englishSubtitle": {
+      "title": "专业英语字幕翻译",
+      "description": "使用我们的AI驱动英语字幕翻译器，将您的内容转化为全球观众所需的语言。支持30多种语言，具备专业级的准确性。",
+      "seo": {
+        "title": "英文字幕翻译器 - 免费在线工具 | 将字幕翻译成英文",
+        "description": "专业的英语字幕翻译器，支持30多种语言。上传SRT文件，立即获取高质量的英语字幕。免费的AI驱动字幕翻译工具，提供准确的结果。",
+        "keywords": "英语字幕翻译器，翻译字幕为英语，英语字幕翻译，SRT英语翻译器，在线英语字幕工具，免费英语字幕翻译器，AI英语翻译，视频英语字幕"
+      },
+      "heroTitle": "英文字幕翻译器",
+      "heroSubtitle": "专业英语字幕翻译器 - 使用我们的AI驱动翻译工具将任何语言的字幕转换为完美英语",
+      "targetLanguage": "英语",
+      "benefits": {
+        "title": "为什么选择我们的英语字幕翻译器？",
+        "subtitle": "专业英语字幕翻译助手，采用先进的人工智能技术，实现准确自然的翻译。",
+        "items": {
+          "native": {
+            "icon": "🇨🇳",
+            "title": "母语英语质量",
+            "description": "我们的英语字幕翻译器生成的表达具有母语水平，听起来对英语使用者来说非常自然。"
+          },
+          "context": {
+            "icon": "🎯",
+            "title": "上下文感知翻译",
+            "description": "高级英语字幕翻译器，能够理解上下文，实现连贯准确的字幕翻译。"
+          },
+          "timing": {
+            "icon": "⏱️",
+            "title": "完美时机同步",
+            "description": "英文字幕翻译保持原始时间完美无误 - 翻译后无需手动调整"
+          }
+        }
+      },
+      "useCases": {
+        "title": "英文字幕翻译用例",
+        "items": {
+          "global": {
+            "icon": "🌍",
+            "title": "全球内容分发",
+            "description": "使用我们的英语字幕翻译工具，为企业视频和营销内容翻译，以触及国际观众。"
+          },
+          "education": {
+            "icon": "📚",
+            "title": "教育内容",
+            "description": "适合全球学习者的在线课程、教程和教育视频的英文字幕翻译助手"
+          },
+          "entertainment": {
+            "icon": "🎬",
+            "title": "媒体与娱乐",
+            "description": "专业的英语字幕翻译，适用于电影、纪录片和视频内容分发"
+          }
+        }
+      }
+    },
+    "chineseSubtitle": {
+      "title": "让您的内容说中文",
+      "description": "通过智能字幕翻译与中国观众连接。我们的人工智能理解文化细微差别，实现真实本地化。",
+      "seo": {
+        "title": "将字幕翻译成中文 - 免费在线中文字幕翻译器 | 高质量SRT中文翻译",
+        "description": "专业字幕翻译工具，支持将英语、日语、法语等多种语言翻译成中文字幕。AI驱动的翻译，准确流畅，完全免费。上传SRT文件，立即开始翻译！",
+        "keywords": "将字幕翻译成中文，中文字幕翻译，SRT中文翻译，英语字幕翻译成中文，在线中文字幕工具，免费中文翻译"
+      },
+      "heroTitle": "将字幕翻译成中文",
+      "heroSubtitle": "快速准确地将您的字幕翻译成中文，使您的内容对中国观众可访问。",
+      "targetLanguage": "中文",
+      "benefits": {
+        "title": "为什么选择我们的中文字幕翻译？",
+        "subtitle": "专业的中文翻译技术，确保字幕质量和观看体验",
+        "items": {
+          "native": {
+            "icon": "你好！请问有什么需要翻译的文本吗？",
+            "title": "本土中文表达",
+            "description": "AI智能识别上下文，提供符合中文语言习惯的本土表达。"
+          },
+          "context": {
+            "icon": "🎯",
+            "title": "上下文理解",
+            "description": "深入理解字幕内容的上下文，确保翻译的一致性和准确性"
+          },
+          "timing": {
+            "icon": "⏱️",
+            "title": "时间保留",
+            "description": "完美保持原始字幕时间，翻译后无需调整即可使用"
+          }
+        }
+      },
+      "useCases": {
+        "title": "中文字幕翻译用例",
+        "items": {
+          "localization": {
+            "icon": "🏠",
+            "title": "内容本地化",
+            "description": "为中国观众提供外语电影和教育内容的中文字幕"
+          },
+          "business": {
+            "icon": "💼",
+            "title": "业务应用程序",
+            "description": "国际会议和产品介绍的中文字幕，以促进商务沟通"
+          },
+          "learning": {
+            "icon": "📖",
+            "title": "学习材料",
+            "description": "外语学习视频和在线课程的中文字幕"
+          }
+        }
+      }
+    }
+  },
+  "englishSubtitle": {
+    "seo": {
+      "title": "英语字幕翻译器 - 高精度全球商务沟通",
+      "description": "体验我们英语字幕翻译器的卓越表现。非常适合国际贸易、企业扩展和专业沟通。为您的视频增添高质量的英语SRT字幕。"
+    },
+    "title": "将您的字幕转换为完美的英语",
+    "description": "使用我们先进的AI翻译技术，将任何语言的字幕转换为母语质量的英语。快速、准确，完全免费。",
+    "benefits": {
+      "title": "释放英语字幕翻译的力量",
+      "subtitle": "利用我们先进的翻译工具，进入广阔的英语市场。",
+      "items": {
+        "benefit_0": {
+          "icon": "🌐",
+          "title": "全球覆盖",
+          "description": "英语是全球15亿人使用的语言。我们的工具使您能够接触到这个庞大的市场，提高您内容的可达性。"
+        },
+        "benefit_1": {
+          "icon": "🏢",
+          "title": "商业机会",
+          "description": "随着英语成为全球商业的语言，我们的工具可以帮助您打破语言障碍，开启无数增长和扩展的机会。"
+        },
+        "benefit_2": {
+          "icon": "📚",
+          "title": "丰富的语言特征",
+          "description": "英语拥有丰富的语法结构和词汇。我们的人工智能工具能够准确翻译英语特有的细微差别和表达。"
+        },
+        "benefit_3": {
+          "icon": "🎬",
+          "title": "内容多样性",
+          "description": "英文内容涵盖电影、纪录片、讲座到播客。我们的工具可以处理多种内容类型，提供准确及时的翻译。"
+        },
+        "benefit_4": {
+          "icon": "🇨🇳",
+          "title": "文化意义",
+          "description": "英语承载着丰富的文化意义。我们的工具确保在翻译中保留文化细微差别，提供更真实和引人入胜的观看体验。"
+        },
+        "benefit_5": {
+          "icon": "🧠",
+          "title": "人工智能驱动的卓越",
+          "description": "我们的工具采用先进的人工智能技术，解决英语翻译所带来的独特挑战，提供上下文准确且语言丰富的字幕。"
+        }
+      }
+    },
+    "useCases": {
+      "title": "英文字幕翻译应用程序",
+      "items": {
+        "international": {
+          "icon": "🌐",
+          "title": "国际市场营销",
+          "description": "使用我们的英语字幕翻译工具，助力全球营销活动和国际商务演示。"
+        },
+        "education": {
+          "icon": "📚",
+          "title": "教育内容",
+          "description": "适合在线课程、网络研讨会和国际学生教育视频内容的英文字幕翻译器"
+        },
+        "entertainment": {
+          "icon": "🎬",
+          "title": "媒体制作",
+          "description": "专业英语字幕翻译，适用于电影发行、流媒体内容和媒体本地化项目"
+        }
+      }
+    },
+    "hero": {
+      "title": "释放英语翻译的力量",
+      "description": "全球有高达15亿的英语使用者，英语是连接全球商业的语言。我们的字幕翻译工具支持英语翻译，使英语内容创作者和消费者能够轻松连接、沟通，并在这一全球主导语言中成长。",
+      "flag": "🇨🇳"
+    },
+    "cta": {
+      "title": "释放英语字幕翻译的力量",
+      "description": "在全球商业世界中，使用我们的英文字幕翻译工具体验无缝沟通。不要让语言障碍阻碍你的发展。立即开始将你的字幕翻译成英文，接入超过15亿英语使用者的网络。"
+    }
+  },
+  "chineseSubtitle": {
+    "seo": {
+      "title": "中文字幕翻译器 - 免费在线将字幕翻译成中文 | SRT中文翻译",
+      "description": "专业中文字幕翻译服务，支持30种语言翻译成中文。上传SRT字幕文件，AI智能翻译成中文字幕，准确理解上下文，完全免费。",
+      "keywords": "中文字幕翻译，翻译成中文，SRT中文翻译，字幕中文翻译，在线中文翻译，免费中文字幕，AI中文翻译，视频中文字幕"
+    },
+    "title": "将任何字幕翻译成流利的中文",
+    "description": "通过我们的智能字幕翻译服务，让您的内容更易于中国观众访问。支持30多种语言，并提供文化本地化。",
+    "benefits": {
+      "title": "中文字幕翻译的优势",
+      "subtitle": "为什么选择我们的中文字幕翻译服务？准确、流畅、并本地化",
+      "items": {
+        "context": {
+          "icon": "🧠",
+          "title": "智能上下文理解",
+          "description": "AI 深入理解原始语境，以生成符合中文表达习惯的自然翻译。"
+        },
+        "localization": {
+          "icon": "灯笼",
+          "title": "本地化表达",
+          "description": "不仅翻译语言，还注重文化本地化，以便更好地让中国观众理解。"
+        },
+        "accuracy": {
+          "icon": "✨",
+          "title": "专业术语准确性",
+          "description": "准确翻译专业术语和行业词汇，同时保持原意和中文惯用表达。"
+        }
+      }
+    },
+    "useCases": {
+      "title": "中文字幕使用案例",
+      "items": {
+        "foreign": {
+          "icon": "🎭",
+          "title": "外部内容本地化",
+          "description": "海外电影、纪录片和教育视频的中文字幕制作"
+        },
+        "learning": {
+          "icon": "📖",
+          "title": "语言学习助手",
+          "description": "用于外语学习视频和在线课程的中文字幕，以帮助理解"
+        },
+        "business": {
+          "icon": "🏢",
+          "title": "商务沟通",
+          "description": "国际会议、商务培训和产品介绍的中文字幕翻译"
+        }
+      }
+    }
+  },
+  "pageTemplate": {
+    "breadcrumb": {
+      "home": "字幕翻译工具",
+      "englishSubtitle": "英文字幕工具",
+      "chineseSubtitle": "中文字幕工具"
+    },
+    "hero": {
+      "englishSubtitle": {
+        "title": "英文字幕翻译器",
+        "subtitle": "专业英文字幕翻译服务。使用人工智能翻译将字幕转换为英文。"
+      },
+      "chineseSubtitle": {
+        "title": "中文字幕翻译器",
+        "subtitle": "专业中文字幕翻译服务。人工智能驱动的中文翻译。支持SRT格式，免费、快速且准确。"
+      }
+    },
+    "benefits": {
+      "englishSubtitle": {
+        "title": "为什么选择我们的英语翻译器？",
+        "subtitle": "专业翻译服务，采用先进的人工智能技术",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "准确翻译",
+            "description": "人工智能驱动的翻译确保高准确性和自然的英语表达。"
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "快速处理",
+            "description": "快速字幕翻译，实时进度跟踪。"
+          },
+          "free": {
+            "icon": "免费",
+            "title": "完全免费",
+            "description": "无需注册，所有用户无限使用。"
+          }
+        }
+      },
+      "chineseSubtitle": {
+        "title": "为什么选择我们的中文翻译服务？",
+        "subtitle": "专业翻译服务，采用先进的人工智能技术",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "准确翻译",
+            "description": "人工智能驱动的翻译确保高准确性和自然的中文表达。"
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "快速处理",
+            "description": "快速字幕翻译，实时进度跟踪。"
+          },
+          "free": {
+            "icon": "免费",
+            "title": "完全免费",
+            "description": "无需注册，所有用户无限制使用。"
+          }
+        }
+      }
+    }
+  },
+  "nav": {
+    "home": "首页",
+    "english_subtitle": "英文字幕翻译器",
+    "chinese_subtitle": "中文字幕翻译器"
+  },
+  "layout": {
+    "chinese": {
+      "title": "中文字幕翻译工具",
+      "description": "专业的人工智能驱动中文字幕翻译服务",
+      "sections": {
+        "hero": {
+          "title": "英雄部分",
+          "description": "页面顶部的主要显示区域"
+        },
+        "translatorSection": {
+          "title": "翻译器部分",
+          "description": "字幕文件上传和翻译功能"
+        },
+        "languageBenefits": {
+          "title": "语言优势",
+          "description": "中文字幕翻译的独特优势"
+        },
+        "industryUseCases": {
+          "title": "行业应用",
+          "description": "各行业的应用案例"
+        },
+        "languageStats": {
+          "title": "语言统计",
+          "description": "中文语言的统计数据与影响"
+        },
+        "languageLearning": {
+          "title": "语言学习",
+          "description": "通过字幕学习中文的方法"
+        },
+        "seo": {
+          "title": "SEO 元信息",
+          "description": "搜索引擎优化元数据"
+        },
+        "cta": {
+          "title": "行动号召",
+          "description": "引导用户采取行动的区域"
+        },
+        "footer": {
+          "title": "页脚",
+          "description": "页面底部信息区域"
+        }
+      },
+      "metadata": {
+        "languageFeatures": {
+          "family": "汉藏语系",
+          "speakers": "1.1B",
+          "focus": "文化桥梁",
+          "flag": "你好！请问有什么我可以帮助你翻译的内容吗？"
+        }
+      }
+    },
+    "english": {
+      "title": "英文字幕翻译工具",
+      "description": "专业的人工智能驱动英文字幕翻译服务",
+      "sections": {
+        "hero": {
+          "title": "英雄区域",
+          "component": "英雄部分"
+        },
+        "languageBenefits": {
+          "title": "Language Advantage",
+          "component": "语言优势"
+        },
+        "seo": {
+          "title": "SEO Meta信息",
+          "component": "SEOMeta"
+        },
+        "regionalVariants": {
+          "title": "Regional Dialect",
+          "component": "区域部分"
+        },
+        "cultureContext": {
+          "title": "Cultural Localization",
+          "component": "文化部分"
+        },
+        "techIntegration": {
+          "title": "AI Technology",
+          "component": "技术部分"
+        },
+        "cta": {
+          "title": "CTA行动号召",
+          "component": "CTA部分"
+        },
+        "footer": {
+          "title": "页脚",
+          "component": "页脚"
+        }
+      },
+      "metadata": {
+        "generatedAt": "2025年6月21日 17:24:59.118 (UTC)",
+        "languageFeatures": {
+          "family": "日耳曼语系",
+          "speakers": "15亿",
+          "focus": "全球业务",
+          "flag": "美国"
+        }
+      }
+    }
+  }
+}

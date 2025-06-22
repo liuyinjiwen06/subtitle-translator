@@ -38,5 +38,850 @@
     "et": "Estonca",
     "lv": "Letonca",
     "lt": "Litvanca"
+  },
+  "title": "Çevrimiçi Altyazı Çevirmeni",
+  "description": "SRT dosyalarını yükleyin, hedef dili seçin, altyazıları çevrimiçi çevirin ve indirin.",
+  "loading": "Yükleniyor...",
+  "pageConfigNotFound": "Sayfa yapılandırması bulunamadı",
+  "seo": {
+    "title": "Ücretsiz Çevrimiçi Altyazı Çevirmeni - 30 Dil için SRT Çeviri Aracı",
+    "description": "Profesyonel çevrimiçi altyazı çeviri aracı, Çince, İngilizce, Japonca ve 30 dili destekler. SRT dosyalarını yükleyin, tek tıkla çeviri yapın, yüksek kaliteli AI çevirisi, tamamen ücretsiz kullanın.",
+    "keywords": "altyazı çevirisi, SRT çevirisi, çevrimiçi çeviri, altyazı dosyası çevirisi, çok dilli altyazılar, ücretsiz çeviri aracı, AI çevirisi, video altyazıları"
+  },
+  "upload": "SRT Dosyası Yükle",
+  "click_to_select_language": "Hedef dili seçmek için tıklayın",
+  "file_selected_click_to_reselect": "Dosya seçildi, yeniden seçmek için tıklayın",
+  "click_or_drag_to_upload": "SRT altyazı dosyasını yüklemek için tıklayın veya sürükleyin",
+  "please_select_srt_file": "Lütfen bir .srt altyazı dosyası seçin.",
+  "please_upload_file_first": "Lütfen önce bir altyazı dosyası yükleyin.",
+  "cannot_read_response": "Yanıt akışını okuyamıyor.",
+  "translation_error_occurred": "Çeviri sırasında bir hata oluştu.",
+  "select_interface_language": "Arayüz Dili Seçin",
+  "multilingual_interface_support": "Çok Dilli Arayüz Desteği",
+  "translation_failed": "Çeviri Başarısız",
+  "select_translation_service": "Çeviri Hizmeti Seçin",
+  "translating": "Çeviriliyor...",
+  "download": "Çevirilen Dosyayı İndir",
+  "translation_progress": "Çeviri İlerleme Durumu",
+  "translating_please_wait": "Çeviri yapılıyor, lütfen bekleyin...",
+  "translation_complete": "Çeviri Tamamlandı!",
+  "current_translating": "Şu anda Çeviri Yapılıyor",
+  "translate_again": "Yeniden Çevir",
+  "features": {
+    "title": "Neden Bizi Seçmelisiniz?",
+    "items": {
+      "fast": {
+        "icon": "⚡",
+        "title": "Hızlı Çeviri",
+        "description": "Gelişmiş yapay zeka teknolojisi, altyazı çevirisini saniyeler içinde tamamlar."
+      },
+      "multilang": {
+        "icon": "🌍",
+        "title": "Çok Dilli Destek",
+        "description": "Küresel kullanıcı ihtiyaçlarını karşılamak için 8 ana akım dili destekler."
+      },
+      "privacy": {
+        "icon": "🔒",
+        "title": "Gizlilik ve Güvenlik",
+        "description": "Yerel dosya işleme, sunucuya yükleme yok, gizliliğinizi koruyor."
+      },
+      "free": {
+        "icon": "💯",
+        "title": "Tamamen Ücretsiz",
+        "description": "Kayıt gerektirmez, kullanım sınırı yok, kalıcı olarak ücretsiz"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Temel Avantajlar",
+    "subtitle": "Neden altyazı çeviri aracımızı seçmelisiniz? Profesyonel, verimli ve güvenli çeviri deneyimi",
+    "items": {
+      "accuracy": {
+        "icon": "🎯",
+        "title": "Doğru Çeviri",
+        "description": "Son AI çeviri teknolojisini kullanarak çeviri doğruluğunu ve dil akıcılığını sağlamak, özellikle altyazı içeriği için özel olarak optimize edilmiştir."
+      },
+      "speed": {
+        "icon": "⚡",
+        "title": "Şimşek Hızı",
+        "description": "Güçlü bulut işleme yetenekleri, büyük dosyalar bile dakikalar içinde çevrilebilir ve gerçek zamanlı ilerleme görüntülenebilir."
+      },
+      "security": {
+        "icon": "🛡️",
+        "title": "Güvenli ve Güvenilir",
+        "description": "Kurumsal düzeyde güvenlik standartları, şifreli dosya iletimi, çeviriden sonra otomatik silme, gizliliğinizi koruma"
+      },
+      "support": {
+        "icon": "🌐",
+        "title": "Çok Dilli Destek",
+        "description": "Çin, İngilizce, Japonca, Fransızca, Almanca, İspanyolca, Rusça ve İtalyanca dahil olmak üzere 8 ana akım dili destekler."
+      },
+      "cost": {
+        "icon": "💰",
+        "title": "Tamamen Ücretsiz",
+        "description": "Hesap kaydı yok, ücretli abonelik yok, kullanım sınırlaması yok, tüm özelliklere kalıcı olarak ücretsiz erişim"
+      },
+      "ease": {
+        "icon": "🎨",
+        "title": "Kullanımı Kolay",
+        "description": "Sezgisel kullanıcı arayüzü, üç adımda tam çeviri: dosyayı yükle, dili seç, sonucu indir, uzmanlık gerektirmez."
+      }
+    }
+  },
+  "useCases": {
+    "title": "Kullanım Senaryoları",
+    "subtitle": "İster bireysel bir kullanıcı olun, ister profesyonel bir ekip, altyazı çeviri ihtiyaçlarınızı karşılayabiliriz.",
+    "items": {
+      "education": {
+        "icon": "🎓",
+        "title": "Eğitim & Eğitim",
+        "description": "Çevrimiçi kurslar, eğitim videoları, akademik dersler çok dilli altyazı oluşturma"
+      },
+      "business": {
+        "icon": "💼",
+        "title": "İş Kullanımı",
+        "description": "Kurumsal tanıtım videoları, ürün tanıtımları, toplantı kayıtları uluslararasılaştırma çevirisi"
+      },
+      "entertainment": {
+        "icon": "🎬",
+        "title": "Film ve Eğlence",
+        "description": "Filmler, TV dizileri, belgeseller, kısa videolar altyazı yerelleştirme"
+      },
+      "personal": {
+        "icon": "👤",
+        "title": "Kişisel Yaratım",
+        "description": "Vloglar, oyun videoları, yaşam kayıtları çok dilli altyazı ekleme"
+      }
+    }
+  },
+  "freeService": {
+    "title": "Ücretsiz Altyazı Çeviri Hizmeti",
+    "subtitle": "Sınırsız, yüksek kaliteli altyazı çevirisinin tadını çıkarın. Kayıt yok, ücret yok, gizli maliyet yok.",
+    "items": {
+      "unlimited": {
+        "icon": "💡",
+        "title": "Sınırsız Kullanım",
+        "description": "İstediğiniz kadar altyazı dosyasını, herhangi bir kısıtlama olmadan çevirebilirsiniz."
+      },
+      "noRegistration": {
+        "icon": "🔓",
+        "title": "Kayıt Gerekmez",
+        "description": "Hemen çeviriye başlayın, hesap veya kayıt gerekmez."
+      },
+      "noFees": {
+        "icon": "💸",
+        "title": "Tamamen Ücretsiz",
+        "description": "Tüm özellikler ücretsiz, sonsuza dek kullanılabilir. Abonelik yok, gizli ücret yok."
+      },
+      "highQuality": {
+        "icon": "✨",
+        "title": "Yüksek Kalite Çeviri",
+        "description": "Gelişmiş yapay zeka ile desteklenir, doğru ve doğal altyazı çevirileri sağlar."
+      }
+    }
+  },
+  "faq": {
+    "title": "Sıkça Sorulan Sorular",
+    "subtitle": "Kullanım sırasında karşılaşabileceğiniz sorulara yanıtlar",
+    "items": {
+      "format": {
+        "question": "Hangi altyazı dosyası formatları desteklenmektedir?",
+        "answer": "Şu anda en iyi uyumluluğa sahip en yaygın kullanılan altyazı formatı olan SRT formatındaki altyazı dosyalarını destekliyoruz. Gelecek sürümlerde ASS, VTT gibi daha fazla formatı desteklemeyi planlıyoruz."
+      },
+      "quality": {
+        "question": "Çeviri kalitesi nasıl garanti edilir?",
+        "answer": "Google Cloud ve OpenAI'den, altyazı içeriği için özel olarak optimize edilmiş gelişmiş çeviri teknolojisi kullanıyoruz; bu sayede çeviri doğruluğu ve akıcılığı sağlanıyor. Seçiminiz için birden fazla çeviri motoru mevcuttur."
+      },
+      "privacy": {
+        "question": "Dosyalarım güvende mi?",
+        "answer": "Kullanıcı gizliliğine çok önem veriyoruz. Dosya iletimi HTTPS şifrelemesi kullanır, çeviri süreci güvenli bir bulut ortamında gerçekleşir, dosyalar çeviriden sonra otomatik olarak silinir, kullanıcı verileri saklanmaz."
+      },
+      "cost": {
+        "question": "Bunu kullanmanın bir maliyeti var mı?",
+        "answer": "Tamamen ücretsiz! Hesap kaydı gerekmiyor, ücretli abonelik yok, kullanım sınırı yok. Kullanıcılara dünya genelinde ücretsiz altyazı çeviri hizmetleri sunmaya kararlıyız."
+      },
+      "speed": {
+        "question": "Çeviri ne kadar sürer?",
+        "answer": "Çeviri hızı, dosya boyutuna ve seçilen çeviri hizmetine bağlıdır. Genel olarak, normal uzunlukta altyazı dosyaları (100-500 satır) 1-3 dakika içinde tamamlanabilir."
+      }
+    }
+  },
+  "specializedTools": {
+    "title": "Profesyonel Altyazı Çeviri Araçları",
+    "subtitle": "Farklı diller için optimize edilmiş özel çeviri hizmetleri, daha hassas bir çeviri deneyimi sunar.",
+    "english": {
+      "button": "You are trained on data up to October 2023."
+    },
+    "chinese": {
+      "button": "您接受的培训数据截至2023年10月。"
+    }
+  },
+  "cta": {
+    "title": "Altyazılarınızı Şimdi Çevirin",
+    "subtitle": "Üç basit adımda çok dilli altyazı çevirisini kolayca tamamlayın, içeriğinizin küresel izleyicilere ulaşmasını sağlayın.",
+    "startButton": "Başlayın",
+    "learnMore": "Daha Fazla Öğrenin"
+  },
+  "howToUse": {
+    "title": "Nasıl Kullanılır",
+    "steps": {
+      "step1": "SRT altyazı dosyanızı yükleyin",
+      "step2": "Hedef çeviri dilini seçin",
+      "step3": "İşleme başlamak için çeviri butonuna tıklayın.",
+      "step4": "Çevirilmiş altyazı dosyasını indir"
+    }
+  },
+  "footer": {
+    "title": "Çevrimiçi Altyazı Çeviri Aracını Kullanmayı Başlayın",
+    "description": "İster bir içerik üreticisi, eğitimci veya iş kullanıcısı olun, aracımız altyazıları hızlı ve doğru bir şekilde çevirmenize yardımcı olabilir, böylece içeriğiniz küresel izleyicilere ulaşır.",
+    "quick_links": "Hızlı Bağlantılar",
+    "rights": "Tüm hakları saklıdır.",
+    "stats": {
+      "free": "Ücretsiz Kullanım",
+      "speed": "Çeviri Hızı",
+      "speedValue": "Saniye"
+    }
+  },
+  "pages": {
+    "englishSubtitle": {
+      "title": "Profesyonel İngilizce Altyazı Çevirisi",
+      "description": "İçeriğinizi küresel kitleler için dönüştürün, AI destekli İngilizce altyazı çevirmenimizle. 30'dan fazla dili profesyonel düzeyde doğrulukla destekliyoruz.",
+      "seo": {
+        "title": "İngilizce Altyazı Çevirmeni - Ücretsiz Çevrimiçi Araç | Altyazıları İngilizceye Çevir",
+        "description": "30'dan fazla dili destekleyen profesyonel İngilizce altyazı çevirmeni. SRT dosyalarını yükleyin ve yüksek kaliteli İngilizce altyazıları anında alın. Doğru sonuçlar veren ücretsiz AI destekli altyazı çeviri aracı.",
+        "keywords": "İngilizce altyazı çevirmeni, altyazıları İngilizceye çevir, İngilizce altyazı çevirisi, SRT İngilizce çevirmeni, çevrimiçi İngilizce altyazı aracı, ücretsiz İngilizce altyazı çevirmeni, AI İngilizce çevirisi, video İngilizce altyazıları"
+      },
+      "heroTitle": "İngilizce Altyazı Çevirmeni",
+      "heroSubtitle": "Profesyonel İngilizce altyazı çevirmeni - Herhangi bir dildeki altyazıları, AI destekli çeviri aracımızla mükemmel İngilizceye dönüştürün.",
+      "targetLanguage": "Türkçe",
+      "benefits": {
+        "title": "Neden İngilizce Altyazı Çevirmenimizi Seçmelisiniz?",
+        "subtitle": "Gelişmiş AI teknolojisi ile doğru ve doğal çeviriler için profesyonel İngilizce altyazı çevirmeni",
+        "items": {
+          "native": {
+            "icon": "🇹🇷",
+            "title": "Yerel İngilizce Kalitesi",
+            "description": "İngilizce altyazı çevirmenimiz, İngilizce konuşanlar için doğal bir şekilde duyulan yerel kalitede İngilizce ifadeleri üretir."
+          },
+          "context": {
+            "icon": "🎯",
+            "title": "Bağlam Bilgisine Dayalı Çeviri",
+            "description": "Bağlamı anlayan, tutarlı ve doğru altyazı çevirileri için gelişmiş İngilizce altyazı çevirmeni"
+          },
+          "timing": {
+            "icon": "⏱️",
+            "title": "Mükemmel Zamanlama Senkronizasyonu",
+            "description": "İngilizce altyazı çevirmeni, orijinal zamanlamayı mükemmel bir şekilde korur - çeviriden sonra manuel ayarlamalara gerek yoktur."
+          }
+        }
+      },
+      "useCases": {
+        "title": "İngilizce Altyazı Çevirmeni Kullanım Senaryoları",
+        "items": {
+          "global": {
+            "icon": "🌍",
+            "title": "Küresel İçerik Dağıtımı",
+            "description": "Kurumsal videolar ve pazarlama içeriği için uluslararası kitlelere ulaşmak amacıyla İngilizce altyazı çevirmenimizi kullanın."
+          },
+          "education": {
+            "icon": "📚",
+            "title": "Eğitim İçeriği",
+            "description": "Küresel öğreniciler için çevrimiçi kurslar, eğitimler ve eğitim videoları için mükemmel İngilizce altyazı çevirmeni"
+          },
+          "entertainment": {
+            "icon": "🎬",
+            "title": "Medya ve Eğlence",
+            "description": "Filmler, belgeseller ve video içerik dağıtımı için profesyonel İngilizce altyazı çevirmeni"
+          }
+        }
+      }
+    },
+    "chineseSubtitle": {
+      "title": "İçeriğinizi Çince Konuşturun",
+      "description": "Çinli izleyicilerle akıllı altyazı çevirisiyle bağlantı kurun. Yapay zekamız, otantik yerelleştirme için kültürel incelikleri anlar.",
+      "seo": {
+        "title": "Çince Altyazıları Çevir - Ücretsiz Çevrimiçi Çince Altyazı Çevirmeni | Yüksek Kaliteli SRT Çince Çeviri",
+        "description": "Profesyonel altyazıdan Çince'ye çeviri aracı, İngilizce, Japonca, Fransızca ve daha fazla dilden Çince altyazılara destek sunar. AI destekli çeviri, doğru ve akıcı, tamamen ücretsizdir. SRT dosyalarını yükleyin ve şimdi çeviriye başlayın!",
+        "keywords": "将字幕翻译成中文，中文字幕翻译，SRT中文翻译，英语字幕翻译成中文，在线中文字幕工具，免费中文翻译"
+      },
+      "heroTitle": "将字幕翻译成中文",
+      "heroSubtitle": "Altyazılarınızı hızlı ve doğru bir şekilde Çince'ye çevirin, içeriğinizi Çinli izleyicilere erişilebilir hale getirin.",
+      "targetLanguage": "Çince",
+      "benefits": {
+        "title": "Neden Çince Altyazı Çevirimizi Seçmelisiniz?",
+        "subtitle": "Profesyonel Çince çeviri teknolojisi, altyazı kalitesini ve izleme deneyimini garanti eder.",
+        "items": {
+          "native": {
+            "icon": "请提供您需要翻译的具体文本内容。",
+            "title": "Yerel Çince İfadesi",
+            "description": "AI, bağlamı akıllıca tanır ve Çince dil alışkanlıklarına uyan yerel Çince ifadeleri sunar."
+          },
+          "context": {
+            "icon": "🎯",
+            "title": "Bağlam Anlayışı",
+            "description": "Altyazı içeriği bağlamını derinlemesine anlama, çeviri tutarlılığını ve doğruluğunu sağlama"
+          },
+          "timing": {
+            "icon": "⏱️",
+            "title": "Zamanlama Koruma",
+            "description": "Orijinal altyazı zamanlamasını mükemmel bir şekilde korur, çeviriden sonra ayarlama yapmadan kullanıma hazırdır."
+          }
+        }
+      },
+      "useCases": {
+        "title": "Çince Altyazı Çeviri Kullanım Senaryoları",
+        "items": {
+          "localization": {
+            "icon": "🏠",
+            "title": "İçerik Yerelleştirme",
+            "description": "Yabancı filmler ve eğitim içerikleri için Çinli izleyicilere hizmet edecek Çince altyazılar"
+          },
+          "business": {
+            "icon": "💼",
+            "title": "İş Uygulamaları",
+            "description": "Uluslararası konferanslar ve ürün tanıtımları için iş iletişimini kolaylaştıracak Çince altyazılar"
+          },
+          "learning": {
+            "icon": "📖",
+            "title": "Öğrenme Materyalleri",
+            "description": "Yabancı dil öğrenme videoları ve çevrimiçi kurslar için Çince altyazılar"
+          }
+        }
+      }
+    },
+    "spanishSubtitle": {
+      "title": "Profesyonel İspanyolca Altyazı Çevirisi",
+      "description": "Hızla büyüyen İspanyolca konuşan pazarda işinizi genişletmek veya evde İspanyol filmlerinin keyfini çıkarmak için ideal olan aracımızla kesintisiz İspanyolca altyazı çevirisi deneyimleyin.",
+      "seo": {
+        "title": "Ücretsiz İspanyol Altyazı Çevirmeni - SRT'yi Çevrimiçi Çevir",
+        "description": "Hızla büyüyen İspanyolca konuşan pazarda işinizi genişletmek veya evde İspanyolca filmlerin tadını çıkarmak için ideal olan aracımızla kesintisiz İspanyolca altyazı çevirisi deneyimi yaşayın.",
+        "keywords": "İspanyolca altyazı çevirmeni, İngilizce'den İspanyolca çeviri, SRT çevirisi İspanyolca, İspanyolca video yerelleştirme, İspanyolca dil desteği, İspanyolca film altyazıları, İngilizce filmi İspanyolcaya çevir, İş videoları için İspanyolca altyazı, Eğitim için İspanyolca altyazı, AI İspanyolca çeviri"
+      }
+    },
+    "portugueseSubtitle": {
+      "title": "Profesyonel Portekizce Altyazı Çevirisi",
+      "description": "Portekizce içeriğin gücünü doğru altyazı çevirmenimizle açığa çıkarın. Video yerelleştirmesi, kültürel alışveriş ve gelişen pazarlardaki iş iletişimini artırmak için idealdir.",
+      "seo": {
+        "title": "Ücretsiz Portekizce Altyazı Çevirici - SRT'yi Çevrimiçi Çevirin",
+        "description": "Portekizce içeriğin gücünü doğru altyazı çevirmenimizle açığa çıkarın. Video yerelleştirmesi, kültürel değişim ve gelişen pazarlarda iş iletişimini artırmak için idealdir.",
+        "keywords": "Portekizce altyazı çevirmeni, altyazı çeviri aracı, İngilizce'den Portekizce'ye altyazılar, İngilizce filmi Portekizce'ye çevir, SRT çevirmeni Portekizce, Portekizce video yerelleştirme, iş çevirisi Portekizce'ye, eğitim içeriği çevirisi Portekizce."
+      }
+    },
+    "frenchSubtitle": {
+      "title": "Profesyonel Fransızca Altyazı Çevirisi",
+      "description": "Araçlarımızla kesintisiz Fransızca altyazı çevirisi deneyimi yaşayın. İşletmeler, eğitimciler ve eğlence için ideal olan bu araç, dil engellerini aşar ve kültürel anlayışı artırır.",
+      "seo": {
+        "title": "Ücretsiz Fransızca Altyazı Çevirmeni - SRT'yi Çevrimiçi Çevir",
+        "description": "Araçlarımızla kesintisiz Fransızca altyazı çevirisi deneyimi yaşayın. İşletmeler, eğitimciler ve eğlence için ideal olan bu araç, dil engellerini aşar ve kültürel anlayışı artırır. Altyazıları Fransızcaya kolayca ve doğru bir şekilde çevirin.",
+        "keywords": "Fransızca altyazı çevirmeni,Altyazıyı Fransızcaya çevir,Fransızca SRT çevirisi,Altyazı çeviri aracı,Fransızca video yerelleştirme,Eğitim için altyazı çevirmeni,İş altyazı çevirisi,Yapay zeka destekli altyazı çevirisi,Fransızca dil karmaşıklığı,Kültürel değişim için altyazı çevirisi"
+      }
+    }
+  },
+  "englishSubtitle": {
+    "seo": {
+      "title": "İngilizce Altyazı Çevirmeni - Küresel İş İletişimi için Yüksek Doğruluk",
+      "description": "İngilizce altyazı çevirmenimizin mükemmelliğini deneyimleyin. Uluslararası ticaret, kurumsal genişleme ve profesyonel iletişim için idealdir. Videolarınızı yüksek kaliteli İngilizce SRT altyazılarla geliştirin."
+    },
+    "title": "Altyazılarınızı Mükemmel İngilizceye Dönüştürün",
+    "description": "Herhangi bir dilden yerel kalitede İngilizceye altyazı çevirin, gelişmiş AI çeviri teknolojimizle. Hızlı, doğru ve tamamen ücretsiz.",
+    "benefits": {
+      "title": "İngilizce Altyazı Çevirisinin Gücünü Ortaya Çıkarın",
+      "subtitle": "Gelişmiş çeviri aracımızla geniş İngilizce konuşan pazara ulaşın.",
+      "items": {
+        "benefit_0": {
+          "icon": "🌐",
+          "title": "Küresel Erişim",
+          "description": "İngilizce, dünya genelinde 1.5 milyar insan tarafından konuşulmaktadır. Araçlarımız, bu geniş pazara ulaşmanızı sağlayarak içeriğinizin erişilebilirliğini artırır."
+        },
+        "benefit_1": {
+          "icon": "🏢",
+          "title": "İş Fırsatları",
+          "description": "İngilizce, küresel iş dünyasının dili olduğundan, aracımız dil engelini aşmanıza yardımcı olabilir ve büyüme ve genişleme için sayısız fırsat sunar."
+        },
+        "benefit_2": {
+          "icon": "📚",
+          "title": "Zengin Dilsel Özellikler",
+          "description": "İngilizce, zengin bir dilbilgisi yapısı ve kelime dağarcığına sahiptir. AI destekli aracımız, İngilizceye özgü ince nüansları ve ifadeleri doğru bir şekilde çevirebilir."
+        },
+        "benefit_3": {
+          "icon": "🎬",
+          "title": "İçerik Çok Yönlülüğü",
+          "description": "İngilizce içerik, filmler, belgeseller, dersler ve podcast'lerden oluşmaktadır. Araçlarımız, çeşitli içerik türlerini işleyebilir ve doğru ve zamanında çeviriler sunar."
+        },
+        "benefit_4": {
+          "icon": "🇹🇷",
+          "title": "Kültürel Önemi",
+          "description": "İngilizce, geniş kültürel öneme sahiptir. Araçlarımız, kültürel inceliklerin çeviride korunmasını sağlar ve daha otantik ve ilgi çekici bir izleme deneyimi sunar."
+        },
+        "benefit_5": {
+          "icon": "🧠",
+          "title": "AI Destekli Mükemmellik",
+          "description": "Araçlarımız, İngilizce çevirisinin getirdiği benzersiz zorlukları aşmak için gelişmiş yapay zeka teknolojilerini kullanarak, bağlam açısından doğru ve dilsel olarak zengin altyazılar sunar."
+        }
+      }
+    },
+    "useCases": {
+      "title": "İngilizce Altyazı Çeviri Uygulamaları",
+      "items": {
+        "international": {
+          "icon": "🌐",
+          "title": "Uluslararası Pazarlama",
+          "description": "Küresel pazarlama kampanyaları ve uluslararası iş sunumları için İngilizce altyazı çevirmenimizi kullanın."
+        },
+        "education": {
+          "icon": "📚",
+          "title": "Eğitim İçeriği",
+          "description": "Uluslararası öğrenciler için çevrimiçi kurslar, web seminerleri ve eğitim video içerikleri için ideal İngilizce altyazı çevirmeni"
+        },
+        "entertainment": {
+          "icon": "🎬",
+          "title": "Medya Üretimi",
+          "description": "Film dağıtımı, akış içeriği ve medya yerelleştirme projeleri için profesyonel İngilizce altyazı çevirmeni"
+        }
+      }
+    },
+    "hero": {
+      "title": "İngilizce Çevirinin Gücünü Keşfedin",
+      "description": "Dünyada 1.5 milyar konuşmacıyla, İngilizce küresel işletmeleri birleştiren dildir. Altyazı çeviri aracımız İngilizce çeviriyi destekleyerek, İngilizce konuşan içerik üreticileri ve tüketicilerin bu küresel hakim dilde bağlantı kurmasını, iletişim kurmasını ve büyümesini kolaylaştırır.",
+      "flag": "🇹🇷"
+    },
+    "cta": {
+      "title": "İngilizce Altyazı Çevirisinin Gücünü Keşfedin",
+      "description": "Küresel iş dünyasında kesintisiz iletişim deneyimi yaşayın, İngilizce altyazı çeviri aracımızla. Dil engellerinin sizi geri tutmasına izin vermeyin. Altyazılarınızı İngilizceye çevirmeye başlayın ve dünya genelinde 1.5 milyardan fazla İngilizce konuşan kişiyle bağlantı kurun."
+    }
+  },
+  "chineseSubtitle": {
+    "seo": {
+      "title": "Çinçe Altyazı Çevirmeni - Ücretsiz Çevrimiçi Altyazıları Çinçeye Çevir | SRT Çinçe Çevirisi",
+      "description": "Profesyonel Çince altyazı çeviri hizmeti, 30 dilde Çince çeviriyi destekler. SRT altyazı dosyalarını yükleyin, AI akıllı çeviri ile Çince altyazılara dönüştürün, doğru bağlam anlayışı, tamamen ücretsiz.",
+      "keywords": "中文字幕翻译，翻译成中文，SRT中文翻译，字幕中文翻译，在线中文翻译，免费中文字幕，AI中文翻译，视频中文字幕"
+    },
+    "title": "Herhangi Bir Altyazıyı Akıcı Çinceye Çevir",
+    "description": "İçeriğinizi Çinli izleyicilere erişilebilir hale getirin, akıllı altyazı çeviri hizmetimizle. 30'dan fazla dili kültürel yerelleştirme ile destekliyoruz.",
+    "benefits": {
+      "title": "Çin Altyazı Çeviri Avantajları",
+      "subtitle": "Neden Çince altyazı çeviri hizmetimizi seçmelisiniz? Doğru, akıcı ve yerelleştirilmiş",
+      "items": {
+        "context": {
+          "icon": "🧠",
+          "title": "Zeki Bağlam Anlayışı",
+          "description": "Yapay zeka, doğal çeviriler üretmek için orijinal bağlamı derinlemesine anlar ve Çince ifade alışkanlıklarına uyum sağlar."
+        },
+        "localization": {
+          "icon": "🏮",
+          "title": "Yerelleştirilmiş İfade",
+          "description": "Sadece dili çevirmekle kalmaz, aynı zamanda Çinli izleyicilerin daha iyi anlaması için kültürel yerelleştirmeye de odaklanır."
+        },
+        "accuracy": {
+          "icon": "✨",
+          "title": "Profesyonel Terminoloji Doğruluğu",
+          "description": "Profesyonel terimleri ve sektör kelime dağarcığını, orijinal anlamı ve Çince geleneklerini koruyarak doğru bir şekilde çevirir."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Çin Altyazı Kullanım Senaryoları",
+      "items": {
+        "foreign": {
+          "icon": "🎭",
+          "title": "Yabancı İçerik Yerelleştirme",
+          "description": "Yurt dışında filmler, belgeseller ve eğitim videoları için Çince altyazı oluşturma"
+        },
+        "learning": {
+          "icon": "📖",
+          "title": "Dil Öğrenme Yardımı",
+          "description": "Yabancı dil öğrenme videoları ve çevrimiçi kurslar için anlama yardımcı olacak Çince altyazılar"
+        },
+        "business": {
+          "icon": "🏢",
+          "title": "İş İletişimi",
+          "description": "Uluslararası konferanslar, iş eğitimleri ve ürün tanıtımları için Çince altyazı çevirisi"
+        }
+      }
+    }
+  },
+  "pageTemplate": {
+    "breadcrumb": {
+      "home": "Altyazı Çeviri Aracı",
+      "englishSubtitle": "İngilizce Altyazı Aracı",
+      "chineseSubtitle": "Çin Altyazı Aracı"
+    },
+    "hero": {
+      "englishSubtitle": {
+        "title": "İngilizce Altyazı Çevirmeni",
+        "subtitle": "Profesyonel İngilizce altyazı çeviri hizmeti. Altyazıları AI destekli çeviri ile İngilizceye dönüştürün."
+      },
+      "chineseSubtitle": {
+        "title": "Çin Altyazı Çevirmeni",
+        "subtitle": "Profesyonel Çince altyazı çeviri hizmeti. Çince'ye AI destekli çeviri. SRT formatını destekler, ücretsiz, hızlı ve doğru."
+      }
+    },
+    "benefits": {
+      "englishSubtitle": {
+        "title": "Neden İngilizce Çevirmenimizi Seçmelisiniz?",
+        "subtitle": "Gelişmiş yapay zeka teknolojisi ile profesyonel çeviri hizmeti",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "Doğru Çeviri",
+            "description": "AI destekli çeviri, yüksek doğruluk ve doğal İngilizce ifadesi sağlar."
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "Hızlı İşlem",
+            "description": "Gerçek zamanlı ilerleme takibi ile hızlı altyazı çevirisi."
+          },
+          "free": {
+            "icon": "ÜCRETSİZ",
+            "title": "Tamamen Ücretsiz",
+            "description": "Kayıt gerektirmez, tüm kullanıcılar için sınırsız kullanım."
+          }
+        }
+      },
+      "chineseSubtitle": {
+        "title": "Neden Çince Tercümanımızı Seçmelisiniz?",
+        "subtitle": "Gelişmiş AI teknolojisi ile profesyonel çeviri hizmeti",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "Doğru Çeviri",
+            "description": "AI destekli çeviri, yüksek doğruluk ve doğal Çince ifadesi sağlar."
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "Hızlı İşlem",
+            "description": "Gerçek zamanlı ilerleme takibi ile hızlı altyazı çevirisi."
+          },
+          "free": {
+            "icon": "ÜCRETSİZ",
+            "title": "Tamamen Ücretsiz",
+            "description": "Kayıt gerektirmez, tüm kullanıcılar için sınırsız kullanım."
+          }
+        }
+      }
+    }
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "english_subtitle": "İngilizce Altyazı Çevirmeni",
+    "chinese_subtitle": "Çinçe Altyazı Çevirmeni"
+  },
+  "layout": {
+    "chinese": {
+      "title": "Çinçe Altyazı Çeviri Aracı",
+      "description": "Profesyonel AI destekli Çince altyazı çeviri hizmeti",
+      "sections": {
+        "hero": {
+          "title": "Kahraman Bölümü",
+          "description": "Sayfanın üst kısmındaki ana görüntü alanı"
+        },
+        "translatorSection": {
+          "title": "Çevirmen Bölümü",
+          "description": "Altyazı dosyası yükleme ve çeviri işlevselliği"
+        },
+        "languageBenefits": {
+          "title": "Dil Faydaları",
+          "description": "Çince altyazı çevirisinin benzersiz avantajları"
+        },
+        "industryUseCases": {
+          "title": "Sektör Uygulamaları",
+          "description": "Farklı sektörlerdeki kullanım senaryoları"
+        },
+        "languageStats": {
+          "title": "Dil İstatistikleri",
+          "description": "İstatistiksel veriler ve Çince dilinin etkisi"
+        },
+        "languageLearning": {
+          "title": "Dil Öğrenimi",
+          "description": "Altyazılar aracılığıyla Çince öğrenme yöntemleri"
+        },
+        "seo": {
+          "title": "SEO Meta Bilgileri",
+          "description": "Arama motoru optimizasyonu meta verisi"
+        },
+        "cta": {
+          "title": "CTA Eylem Çağrısı",
+          "description": "Kullanıcıları harekete geçmeye yönlendiren alan"
+        },
+        "footer": {
+          "title": "Alt Bilgi",
+          "description": "Sayfanın alt bilgi alanı"
+        }
+      },
+      "metadata": {
+        "languageFeatures": {
+          "family": "Sino-Tibet Dili",
+          "speakers": "1.1B",
+          "focus": "Kültürel Köprü",
+          "flag": "请提供需要翻译的文本内容。"
+        }
+      }
+    },
+    "english": {
+      "title": "İngilizce Altyazı Çeviri Aracı",
+      "description": "Profesyonel AI destekli İngilizce altyazı çeviri hizmeti",
+      "sections": {
+        "hero": {
+          "title": "Hero Alanı",
+          "component": "KahramanBölümü"
+        },
+        "languageBenefits": {
+          "title": "Dil Avantajı",
+          "component": "DilFaydaları"
+        },
+        "seo": {
+          "title": "SEO Meta Bilgileri",
+          "component": "SEOMeta"
+        },
+        "regionalVariants": {
+          "title": "Bölgesel Ağız",
+          "component": "Bölgesel Bölüm"
+        },
+        "cultureContext": {
+          "title": "Kültürel Yerelleştirme",
+          "component": "KültürBölümü"
+        },
+        "techIntegration": {
+          "title": "Yapay Zeka Teknolojisi",
+          "component": "Teknoloji Bölümü"
+        },
+        "cta": {
+          "title": "CTA Eylem Çağrısı",
+          "component": "CTA Bölümü"
+        },
+        "footer": {
+          "title": "Footer - Sayfa Altı",
+          "component": "Alt Bilgi"
+        }
+      },
+      "metadata": {
+        "generatedAt": "2025-06-21T17:24:59.118Z",
+        "languageFeatures": {
+          "family": "Cermenik",
+          "speakers": "1,5B",
+          "focus": "küresel iş",
+          "flag": "🇹🇷"
+        }
+      }
+    }
+  },
+  "spanishSubtitle": {
+    "seo": {
+      "title": "İspanyolca Altyazı Çevirmeni - İspanyolca İçeriğin Gücünü Ortaya Çıkarma",
+      "description": "İspanyolca altyazı çevirisini sorunsuz bir şekilde deneyimleyin; bu araç, hızla büyüyen İspanyolca konuşan pazarda işinizi genişletmek veya evde İspanyolca filmlerin tadını çıkarmak için idealdir."
+    },
+    "title": "Altyazılarınızı Mükemmel İspanyolcaya Dönüştürün",
+    "description": "Herhangi bir dilden yerel kalitede İspanyolcaya altyazıları dönüştürün, gelişmiş AI çeviri teknolojimizle. Hızlı, doğru ve tamamen ücretsiz.",
+    "hero": {
+      "title": "İspanyolca Çevirinin Gücünü Keşfedin",
+      "description": "Dünya genelinde 500 milyondan fazla konuşuru ile İspanyolca, en yaygın konuşulan dillerden biridir. Altyazı çeviri aracımız İspanyolca çeviriyi destekleyerek, İspanyolca konuşan içerik üreticileri ve tüketicilerinin bu canlı dil topluluğunda bağlantı kurmasını, iletişim kurmasını ve büyümesini kolaylaştırır.",
+      "flag": "🇹🇷"
+    },
+    "benefits": {
+      "title": "İspanyolca Altyazı Çevirisinin Gücünü Ortaya Çıkarın",
+      "subtitle": "Gelişmiş çeviri aracımızla geniş İspanyolca konuşan pazara adım atın.",
+      "items": {
+        "benefit_0": {
+          "icon": "🌎",
+          "title": "Küresel İspanyolca Pazar",
+          "description": "İspanyolca, 20'den fazla ülkede 500 milyondan fazla insan tarafından konuşulmaktadır. Araçlarımız, bu geniş ve çeşitli pazara ulaşmanızı sağlayarak içeriğinizin erişilebilirliğini artırır."
+        },
+        "benefit_1": {
+          "icon": "💼",
+          "title": "İş Genişlemesi",
+          "description": "İspanyolca konuşan pazarlar önemli ekonomik fırsatlar sunmaktadır. Araçlarımız, dil engellerini aşmanıza ve Latin Amerika ile İspanya'ya açılmanıza yardımcı olur."
+        },
+        "benefit_2": {
+          "icon": "🎭",
+          "title": "Kültürel Zenginlik",
+          "description": "İspanyolca, zengin bölgesel varyasyonlara ve kültürel nüanslara sahiptir. AI destekli aracımız, bu incelikleri doğru bir şekilde çevirirken kültürel otantikliği korur."
+        },
+        "benefit_3": {
+          "icon": "📺",
+          "title": "Eğlence Endüstrisi",
+          "description": "İspanyolca içerik dünya genelinde patlama yaşıyor. Araçlarımız, filmleri, dizileri, belgeselleri ve eğitim içeriklerini hassasiyet ve kültürel duyarlılıkla yönetiyor."
+        },
+        "benefit_4": {
+          "icon": "🏛️",
+          "title": "Eğitim Değeri",
+          "description": "İspanyolca, dünya genelinde en çok öğrenilen ikinci dildir. Araçlarımız, eğitim içeriği oluşturma ve dil öğrenme materyalleri için destek sağlar."
+        },
+        "benefit_5": {
+          "icon": "Merhaba! Size nasıl yardımcı olabilirim?",
+          "title": "AI Tabanlı Hassasiyet",
+          "description": "Gelişmiş yapay zeka teknolojimiz, İspanyolca dilbilgisi karmaşıklıklarını, bölgesel farklılıkları ve kültürel bağlamı ele alarak üstün çeviri kalitesi sağlar."
+        }
+      }
+    },
+    "useCases": {
+      "title": "İspanyolca Altyazı Çevirmen Uygulamaları",
+      "items": {
+        "international": {
+          "icon": "🌎",
+          "title": "Latin Amerika Genişlemesi",
+          "description": "İşinizi Latin Amerika pazarlarına ve İspanyolca konuşulan bölgelere genişletmek için İspanyolca altyazı çevirmenimizi kullanın."
+        },
+        "education": {
+          "icon": "📚",
+          "title": "Eğitim İçeriği",
+          "description": "İspanyolca altyazı çevirmeni, çevrimiçi kurslar, eğitim videoları ve dil öğrenme materyalleri için mükemmeldir."
+        },
+        "entertainment": {
+          "icon": "🎬",
+          "title": "Medya Yerelleştirme",
+          "description": "Film dağıtımı, akış platformları ve eğlence içeriği için profesyonel İspanyolca altyazı çevirmeni"
+        }
+      }
+    },
+    "cta": {
+      "title": "İspanyolca Altyazı Çeviri Yolculuğunuza Başlayın",
+      "description": "İspanyolca konuşan kitlelerle kesintisiz iletişim deneyimi yaşayın. Dil engellerinin ulaşımınızı sınırlamasına izin vermeyin. Altyazılarınızı İspanyolcaya çevirerek dünya genelinde 500 milyondan fazla İspanyolca konuşanla bağlantı kurmaya başlayın."
+    }
+  },
+  "portugueseSubtitle": {
+    "seo": {
+      "title": "Profesyonel Portekizce Altyazı Çevirmeni - Doğru ve Hızlı Çeviri Aracı",
+      "description": "Portekizce içeriğin gücünü doğru altyazı çevirmenimizle açığa çıkarın. Video yerelleştirmesi, kültürel değişim ve gelişen pazarlarda iş iletişimini artırmak için idealdir."
+    },
+    "title": "Altyazılarınızı Mükemmel Portekizce'ye Dönüştürün",
+    "description": "Herhangi bir dilden yerel kalitede Portekizce'ye altyazı çevirin, gelişmiş AI çeviri teknolojimizle. Hızlı, doğru ve tamamen ücretsiz.",
+    "hero": {
+      "title": "Portekizce Çevirinin Gücünü Açığa Çıkarın",
+      "description": "260 milyondan fazla konuşmacıya sahip Portekizce, Brezilya, Portekiz ve ötesindeki canlı pazarlara kapılar açar. Altyazı çeviri aracımız, Portekizce çeviriyi destekleyerek sizi bu dinamik küresel toplulukla bağlar.",
+      "flag": "🇹🇷"
+    },
+    "benefits": {
+      "title": "Portekizce Altyazı Çevirisinin Gücünü Ortaya Çıkarın",
+      "subtitle": "Dünya genelindeki Portekizce konuşan pazarlara gelişmiş çeviri aracımızla bağlanın.",
+      "items": {
+        "benefit_0": {
+          "icon": "🌍",
+          "title": "Küresel Portekizce Topluluğu",
+          "description": "Portekizce, dünya genelinde 260 milyondan fazla insan tarafından konuşulmaktadır, özellikle de dünyanın 6. en büyük ekonomisi olan Brezilya'da. Bu devasa pazara doğru çevirilerle ulaşın."
+        },
+        "benefit_1": {
+          "icon": "💰",
+          "title": "Ekonomik Fırsatlar",
+          "description": "Brezilya ve Portekizce konuşan ülkeler önemli iş fırsatları sunmaktadır. Araçlarımız, bu gelişen pazarlara etkili bir şekilde ulaşmanıza yardımcı olur."
+        },
+        "benefit_2": {
+          "icon": "🎨",
+          "title": "Kültürel Çeşitlilik",
+          "description": "Portekizce, bölgelere göre farklılık gösterir ve kendine özgü ifadeler ile kültürel bağlamlar içerir. Yapay zekamız, bu nüansları koruyarak otantik bir iletişim sağlar."
+        },
+        "benefit_3": {
+          "icon": "📱",
+          "title": "Dijital İçerik Büyümesi",
+          "description": "Portekizce dijital içerik tüketimi hızla artıyor. Araçlarımız, bu genişleyen kitle için etkileyici altyazılı içerikler oluşturmanıza yardımcı olur."
+        },
+        "benefit_4": {
+          "icon": "🎓",
+          "title": "Eğitimsel Etki",
+          "description": "Portekizce, eğitim ve iş dünyasında giderek daha popüler hale geliyor. Araçlarımız akademik ve profesyonel içerik çevirisini desteklemektedir."
+        },
+        "benefit_5": {
+          "icon": "⚡",
+          "title": "Gelişmiş Yapay Zeka Teknolojisi",
+          "description": "Kesin çeviri doğruluğu için en son teknoloji yapay zekamız, Portekizce dilbilgisi karmaşıklıklarını ve kültürel bağlamı yönetir."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Portekizce Altyazı Çeviri Uygulamaları",
+      "items": {
+        "international": {
+          "icon": "🌎",
+          "title": "Brezilya Pazarına Giriş",
+          "description": "Brezilya ve Portekizce konuşulan pazarlara iş genişlemesi için Portekizce altyazı çevirmenimizi kullanın."
+        },
+        "education": {
+          "icon": "📚",
+          "title": "Eğitim İçeriği",
+          "description": "Çevrimiçi kurslar, eğitim materyalleri ve eğitim video içerikleri için ideal Portekizce altyazı çevirmeni"
+        },
+        "entertainment": {
+          "icon": "🎬",
+          "title": "Medya Üretimi",
+          "description": "Akış içeriği, film dağıtımı ve medya yerelleştirmesi için profesyonel Portekizce altyazı çevirmeni"
+        }
+      }
+    },
+    "cta": {
+      "title": "Portekizce Altyazı Çeviri Yolculuğunuza Başlayın",
+      "description": "Portekizce konuşan kitlelerle bağlantı kurun ve yeni pazar fırsatlarını keşfedin. Altyazılarınızı Portekizce'ye çevirmeye başlayın ve dünya genelinde 260 milyondan fazla konuşucuya ulaşın."
+    }
+  },
+  "frenchSubtitle": {
+    "seo": {
+      "title": "Fransız Altyazı Çevirmeni - Doğru, Hızlı ve Kullanıcı Dostu",
+      "description": "Araçlarımızla kesintisiz Fransızca altyazı çevirisi deneyimi yaşayın. İşletmeler, eğitimciler ve eğlence için ideal olan bu araç, dil engellerini aşar ve kültürel anlayışı artırır. Altyazıları Fransızcaya kolaylıkla ve doğrulukla çevirin."
+    },
+    "title": "Altyazılarınızı Mükemmel Fransızcaya Dönüştürün",
+    "description": "Herhangi bir dilden yerel kalitede Fransızcaya altyazı çevirin, gelişmiş AI çeviri teknolojimizle. Hızlı, doğru ve tamamen ücretsiz.",
+    "hero": {
+      "title": "Fransızca Çevirinin Gücünü Açığa Çıkarın",
+      "description": "280 milyondan fazla konuşmacısıyla beş kıtada, Fransızca diplomasi, kültür ve uluslararası iş dünyasının bir dilidir. Altyazı çeviri aracımız Fransızca çeviriyi destekleyerek sizi bu sofistike küresel toplulukla buluşturuyor.",
+      "flag": "🇹🇷"
+    },
+    "benefits": {
+      "title": "Fransız Altyazı Çevirisinin Gücünü Ortaya Çıkarın",
+      "subtitle": "Fransızca konuşan kitlelerle dünya genelinde bağlantı kurun, sofistike çeviri aracımızla.",
+      "items": {
+        "benefit_0": {
+          "icon": "🌐",
+          "title": "Küresel Frankofon Ağı",
+          "description": "Fransızca, 29 ülkede 280 milyondan fazla insan tarafından konuşulmaktadır. Araçlarımız, bu çeşitli ve etkili küresel topluluğa ulaşmanızı sağlar."
+        },
+        "benefit_1": {
+          "icon": "🏛️",
+          "title": "Uluslararası Diplomasi",
+          "description": "Fransızca, büyük uluslararası kuruluşların resmi dillerinden biridir. Araçlarımız, bu küresel diplomasi ve kültür dilinde iletişim kurmanıza yardımcı olur."
+        },
+        "benefit_2": {
+          "icon": "🎨",
+          "title": "Kültürel Sofistikeleşme",
+          "description": "Fransızca, zengin kültürel mirası ve dilsel zarafeti ile doludur. Yapay zekamız, Fransız ifadesinin incelikli güzelliğini ve sofistike yapısını korur."
+        },
+        "benefit_3": {
+          "icon": "🎬",
+          "title": "Eğlence Mükemmelliği",
+          "description": "Fransız sineması ve medyası dünya çapında kutlanmaktadır. Araçlarımız, uluslararası içerik dağıtımı için yüksek kaliteli Fransızca altyazılar oluşturmanıza yardımcı olur."
+        },
+        "benefit_4": {
+          "icon": "📚",
+          "title": "Akademik Prestij",
+          "description": "Fransızca, prestijli bir akademik dildir. Araçlarımız, Fransızca eğitim içeriği oluşturma ve akademik iletişimi desteklemektedir."
+        },
+        "benefit_5": {
+          "icon": "🧠",
+          "title": "Dilsel Hassasiyet",
+          "description": "Gelişmiş yapay zeka teknolojimiz, Fransızca dilbilgisi inceliklerini, resmi dil kullanımını ve kültürel bağlamı olağanüstü bir doğrulukla yönetir."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Fransız Altyazı Çeviri Uygulamaları",
+      "items": {
+        "international": {
+          "icon": "🌍",
+          "title": "Avrupa Pazar Erişimi",
+          "description": "Fransızca altyazı çevirmenimizi, Fransa, Kanada ve Fransızca konuşan Afrika pazarlarına iş genişletme amacıyla kullanın."
+        },
+        "education": {
+          "icon": "📚",
+          "title": "Eğitimde Mükemmellik",
+          "description": "Akademik içerik, çevrimiçi kurslar ve eğitim video materyalleri için mükemmel Fransızca altyazı çevirmeni"
+        },
+        "entertainment": {
+          "icon": "🎭",
+          "title": "Kültürel İçerik",
+          "description": "Film festivalleri, kültürel değişim ve sanatsal içerik yerelleştirmesi için profesyonel Fransızca altyazı çevirmeni"
+        }
+      }
+    },
+    "cta": {
+      "title": "Fransız Altyazı Çeviri Yolculuğunuza Başlayın",
+      "description": "Fransız iletişimin zarafetini deneyimleyin ve sofistike küresel kitlelerle bağlantı kurun. Altyazılarınızı Fransızcaya çevirmeye başlayın ve prestijli Frankofon topluluğuna katılın."
+    }
   }
-} 
+}

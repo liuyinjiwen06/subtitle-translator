@@ -1,17 +1,26 @@
 import { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 import './globals.css';
+
+const inter = Inter({ subsets: ['latin'] });
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://subtitletranslator.cc'),
   title: {
-    default: '字幕翻译工具 - 免费在线SRT字幕翻译',
-    template: '%s | 字幕翻译工具'
+    default: 'Subtitle Translator - Free Online SRT Subtitle Translation',
+    template: '%s | Subtitle Translator'
   },
-  description: '免费在线字幕翻译工具，支持SRT格式，AI智能翻译，支持多种语言互译。专业的字幕翻译服务，简单易用。',
-  keywords: '字幕翻译,SRT翻译,在线翻译,字幕转换,AI翻译,免费翻译,subtitle translation',
-  authors: [{ name: '字幕翻译工具' }],
-  creator: '字幕翻译工具',
-  publisher: '字幕翻译工具',
+  description: 'Free online subtitle translation tool, supports SRT format, AI intelligent translation, supports multiple languages. Professional subtitle translation service, simple and easy to use.',
+  keywords: 'subtitle translation,SRT translation,online translation,subtitle conversion,AI translation,free translation',
+  authors: [{ name: 'Subtitle Translator' }],
+  creator: 'Subtitle Translator',
+  publisher: 'Subtitle Translator',
   formatDetection: {
     email: false,
     address: false,
@@ -30,91 +39,40 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    locale: 'zh_CN',
-    alternateLocale: ['en_US', 'ja_JP'],
+    locale: 'en_US',
+    alternateLocale: ['zh_CN', 'ja_JP'],
     url: 'https://subtitletranslator.cc',
-    siteName: '字幕翻译工具',
-    title: '字幕翻译工具 - 免费在线SRT字幕翻译',
-    description: '免费在线字幕翻译工具，支持SRT格式，AI智能翻译，支持多种语言互译。',
+    siteName: 'Subtitle Translator',
+    title: 'Subtitle Translator - Free Online SRT Subtitle Translation',
+    description: 'Free online subtitle translation tool, supports SRT format, AI intelligent translation, supports multiple languages.',
     images: [
       {
         url: '/icon.png',
         width: 800,
         height: 600,
-        alt: '字幕翻译工具',
+        alt: 'Subtitle Translator',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: '字幕翻译工具 - 免费在线SRT字幕翻译',
-    description: '免费在线字幕翻译工具，支持SRT格式，AI智能翻译，支持多种语言互译。',
+    title: 'Subtitle Translator - Free Online SRT Subtitle Translation',
+    description: 'Free online subtitle translation tool, supports SRT format, AI intelligent translation, supports multiple languages.',
     images: ['/icon.png'],
   },
-  alternates: {
-    canonical: 'https://subtitletranslator.cc',
-    languages: {
-      'zh-CN': 'https://subtitletranslator.cc',
-      'en-US': 'https://subtitletranslator.cc/english-subtitle',
-      'ja-JP': 'https://subtitletranslator.cc',
-    },
-  },
-  verification: {
-    google: 'your-google-verification-code', // 需要替换为实际的验证码
+  other: {
+    'theme-color': '#2563eb',
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="zh-CN">
-      <head>
-        {/* Canonical URL */}
-        <link rel="canonical" href="https://subtitletranslator.cc" />
-        
-        {/* Hreflang标签 - 多语言SEO */}
-        <link rel="alternate" hrefLang="zh-CN" href="https://subtitletranslator.cc" />
-        <link rel="alternate" hrefLang="en-US" href="https://subtitletranslator.cc/english-subtitle" />
-        <link rel="alternate" hrefLang="ja-JP" href="https://subtitletranslator.cc" />
-        <link rel="alternate" hrefLang="x-default" href="https://subtitletranslator.cc" />
-        
-        {/* 额外的SEO元标签 */}
-        <meta name="theme-color" content="#3b82f6" />
-        <meta name="color-scheme" content="light" />
-        <meta httpEquiv="Content-Language" content="zh-CN" />
-        <meta name="format-detection" content="telephone=no" />
-        
-        {/* 结构化数据 */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebApplication",
-              "name": "字幕翻译工具",
-              "alternateName": "Subtitle Translator",
-              "url": "https://subtitletranslator.cc",
-              "description": "免费在线字幕翻译工具，支持SRT格式，AI智能翻译，支持多种语言互译。",
-              "applicationCategory": "UtilityApplication",
-              "operatingSystem": "Web",
-              "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "USD"
-              },
-              "featureList": [
-                "SRT字幕文件翻译",
-                "多语言支持",
-                "AI智能翻译",
-                "免费在线使用",
-                "实时翻译进度"
-              ],
-              "inLanguage": ["zh-CN", "en-US", "ja-JP"],
-              "availableLanguage": ["Chinese", "English", "Japanese", "French", "German", "Spanish", "Russian", "Italian"]
-            })
-          }}
-        />
-      </head>
-      <body className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <html>
+      <body className={inter.className}>
         {children}
       </body>
     </html>

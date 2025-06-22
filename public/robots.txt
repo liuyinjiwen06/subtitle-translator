@@ -4,6 +4,9 @@ Allow: /
 # 主要页面
 Allow: /english-subtitle
 Allow: /chinese-subtitle
+Allow: /spanish-subtitle
+Allow: /portuguese-subtitle
+Allow: /french-subtitle
 
 # 静态资源
 Allow: /icon.png

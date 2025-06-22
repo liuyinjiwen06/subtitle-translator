@@ -26,7 +26,6 @@
   "translate": "Translate",
   "translating": "Translating...",
   "download": "Download Translated File",
-  "translation_failed": "Translation Failed",
   "translation_services": {
     "google": "High Quality Translation",
     "openai": "AI Smart Translation"
@@ -123,7 +122,33 @@
       }
     }
   },
-  "faq": {
+  "freeService": {
+  "title": "Free Subtitle Translation Service",
+  "subtitle": "Enjoy unlimited, high-quality subtitle translation for free. No registration, no fees, no hidden costs.",
+  "items": {
+    "unlimited": {
+      "icon": "💡",
+      "title": "Unlimited Usage",
+      "description": "Translate as many subtitle files as you want, without any restrictions."
+    },
+    "noRegistration": {
+      "icon": "🔓",
+      "title": "No Registration Required",
+      "description": "Start translating immediately, no account or sign-up needed."
+    },
+    "noFees": {
+      "icon": "💸",
+      "title": "Completely Free",
+      "description": "All features are available for free, forever. No subscription, no hidden charges."
+    },
+    "highQuality": {
+      "icon": "✨",
+      "title": "High-Quality Translation",
+      "description": "Powered by advanced AI, ensuring accurate and natural subtitle translations."
+    }
+  }
+},
+"faq": {
     "title": "Frequently Asked Questions",
     "subtitle": "Answers to questions you may encounter during use",
     "items": {
@@ -181,6 +206,10 @@
   "footer": {
     "title": "Start Using Online Subtitle Translation Tool",
     "description": "Whether you're a content creator, educator, or business user, our tool can help you quickly and accurately translate subtitles, making your content reach global audiences.",
+    "quick_links": "Quick Links",
+    "languages": "Languages",
+    "supported_languages": "Supports 17+ languages for translation",
+    "rights": "All rights reserved.",
     "stats": {
       "languages": "Supported Languages",
       "free": "Free to Use",
@@ -223,61 +252,61 @@
   },
   "pages": {
     "englishSubtitle": {
-      "title": "Translate Subtitles to English - Online English Subtitle Translator",
-      "description": "Professional subtitle to English translation tool. Upload SRT files, AI-powered translation, high-quality English subtitle output.",
+      "title": "Professional English Subtitle Translator",
+      "description": "Transform your content for global audiences with our AI-powered English subtitle translator. Supporting 30+ languages with professional-grade accuracy.",
       "seo": {
-        "title": "Translate Subtitles to English - Free Online English Subtitle Translator | High-Quality SRT English Translation",
-        "description": "Professional subtitle to English translation tool supporting Chinese, Japanese, French and more languages to English subtitles. AI-powered translation, accurate and fluent, completely free. Upload SRT files and start translating now!",
-        "keywords": "translate subtitles to english,english subtitle translation,SRT english translation,chinese subtitles to english,online english subtitle tool,free english translation"
+        "title": "English Subtitle Translator - Free Online Tool | Translate Subtitles to English",
+        "description": "Professional English subtitle translator supporting 30+ languages. Upload SRT files and get high-quality English subtitles instantly. Free AI-powered subtitle translation tool with accurate results.",
+        "keywords": "english subtitle translator,translate subtitles to english,english subtitle translation,SRT english translator,online english subtitle tool,free english subtitle translator,AI english translation,video english subtitles"
       },
-      "heroTitle": "Translate Subtitles to English",
-      "heroSubtitle": "Quickly and accurately translate your subtitles to English, making your content accessible to global English audiences",
+      "heroTitle": "English Subtitle Translator",
+      "heroSubtitle": "Professional English subtitle translator - Convert any language subtitles to perfect English with our AI-powered translation tool",
       "targetLanguage": "English",
       "benefits": {
-        "title": "Why Choose Our English Subtitle Translation?",
-        "subtitle": "Professional English translation technology ensuring subtitle quality and viewing experience",
+        "title": "Why Choose Our English Subtitle Translator?",
+        "subtitle": "Professional English subtitle translator with advanced AI technology for accurate and natural translations",
         "items": {
           "native": {
             "icon": "🇺🇸",
-            "title": "Native English Expression",
-            "description": "AI intelligently recognizes context, providing native English expressions that match native speaker language habits"
+            "title": "Native English Quality",
+            "description": "Our English subtitle translator produces native-quality English expressions that sound natural to English speakers"
           },
           "context": {
             "icon": "🎯",
-            "title": "Context Understanding",
-            "description": "Deep understanding of subtitle content context, ensuring translation coherence and accuracy"
+            "title": "Context-Aware Translation",
+            "description": "Advanced English subtitle translator that understands context for coherent and accurate subtitle translations"
           },
           "timing": {
             "icon": "⏱️",
-            "title": "Timing Preservation",
-            "description": "Perfectly maintains original subtitle timing, ready to use after translation without adjustment"
+            "title": "Perfect Timing Sync",
+            "description": "English subtitle translator maintains original timing perfectly - no manual adjustments needed after translation"
           }
         }
       },
       "useCases": {
-        "title": "English Subtitle Translation Use Cases",
+        "title": "English Subtitle Translator Use Cases",
         "items": {
           "global": {
             "icon": "🌍",
-            "title": "Global Content",
-            "description": "English subtitles for corporate promotions and product introduction videos to expand international markets"
+            "title": "Global Content Distribution",
+            "description": "Use our English subtitle translator for corporate videos and marketing content to reach international audiences"
           },
           "education": {
             "icon": "📚",
-            "title": "Educational Courses",
-            "description": "English subtitles for online courses and training videos to serve global learners"
+            "title": "Educational Content",
+            "description": "English subtitle translator perfect for online courses, tutorials, and educational videos for global learners"
           },
           "entertainment": {
             "icon": "🎬",
-            "title": "Entertainment Content",
-            "description": "English subtitles for movies, documentaries, and short videos to expand audience reach"
+            "title": "Media & Entertainment",
+            "description": "Professional English subtitle translator for movies, documentaries, and video content distribution"
           }
         }
       }
     },
     "chineseSubtitle": {
-      "title": "Translate Subtitles to Chinese - Online Chinese Subtitle Translator",
-      "description": "Professional subtitle to Chinese translation tool. Upload SRT files, AI-powered translation, high-quality Chinese subtitle output.",
+      "title": "Accurate Chinese Subtitle Translator",
+      "description": "Connect with Chinese audiences through intelligent subtitle translation. Our AI understands cultural nuances for authentic localization.",
       "seo": {
         "title": "Translate Subtitles to Chinese - Free Online Chinese Subtitle Translator | High-Quality SRT Chinese Translation",
         "description": "Professional subtitle to Chinese translation tool supporting English, Japanese, French and more languages to Chinese subtitles. AI-powered translation, accurate and fluent, completely free. Upload SRT files and start translating now!",
@@ -327,66 +356,128 @@
           }
         }
       }
+    },
+    "spanishSubtitle": {
+      "title": "Professional Spanish Subtitle Translation",
+      "description": "Experience seamless Spanish subtitle translation with our tool, ideal for expanding your business in the rapidly growing Spanish-speaking market or for enjoying Spanish movies at home.",
+      "seo": {
+        "title": "Free Spanish Subtitle Translator - Translate SRT Online",
+        "description": "Experience seamless Spanish subtitle translation with our tool, ideal for expanding your business in the rapidly growing Spanish-speaking market or for enjoying Spanish movies at home.",
+        "keywords": "Spanish subtitle translator,English to Spanish translation,SRT translation to Spanish,Video localization in Spanish,Spanish language support,Spanish movie subtitles,Translate English movie to Spanish,Spanish subtitle for business videos,Spanish subtitle for education,AI Spanish translation"
+      }
+    },
+    "portugueseSubtitle": {
+      "title": "Professional Portuguese Subtitle Translation",
+      "description": "Unlock the power of Portuguese content with our accurate subtitle translator. Ideal for video localization, cultural exchange, and boosting business communication in emerging markets.",
+      "seo": {
+        "title": "Free Portuguese Subtitle Translator - Translate SRT Online",
+        "description": "Unlock the power of Portuguese content with our accurate subtitle translator. Ideal for video localization, cultural exchange, and boosting business communication in emerging markets.",
+        "keywords": "Portuguese subtitle translator,subtitle translation tool,English to Portuguese subtitles,Translate English movie to Portuguese,SRT translator Portuguese,Portuguese video localization,business translation to Portuguese,educational content translation Portuguese"
+      }
+    },
+    "frenchSubtitle": {
+      "title": "Professional French Subtitle Translation",
+      "description": "Experience seamless French subtitle translation with our tool. Ideal for businesses, educators, and entertainment, it bridges language gaps and boosts cultural understanding.",
+      "seo": {
+        "title": "Free French Subtitle Translator - Translate SRT Online",
+        "description": "Experience seamless French subtitle translation with our tool. Ideal for businesses, educators, and entertainment, it bridges language gaps and boosts cultural understanding. Translate subtitle to French with ease and accuracy.",
+        "keywords": "French subtitle translator,Translate subtitle to French,French SRT translation,Subtitle translation tool,French video localization,Subtitle translator for education,Business subtitle translation,AI-powered subtitle translation,French language complexity,Cultural exchange through subtitle translation"
+      }
     }
   },
   "englishSubtitle": {
     "seo": {
-      "title": "English Subtitle Translator - Free Online Translate Subtitles to English | SRT English Translation",
-      "description": "Professional English subtitle translation service, supporting 30 languages to English translation. Upload SRT subtitle files, AI smart translation to English subtitles, high-quality results, completely free.",
-      "keywords": "English subtitle translation,translate to English,SRT English translation,subtitle English translation,online English translation,free English subtitles,AI English translation,video English subtitles"
+      "title": "Free English Subtitle Translator - Translate SRT Online",
+      "description": "Experience the excellence of our English subtitle translator. Ideal for international trade, corporate expansion, and professional communication. Enhance your videos with high-quality English SRT subtitles.",
+      "keywords": [
+        "English subtitle translator",
+        "Subtitle translation in English",
+        "SRT subtitle translation English",
+        "Video localization English",
+        "English subtitles for international trade",
+        "English subtitles for corporate videos",
+        "Professional English subtitle translation",
+        "AI English subtitle translation",
+        "Translate video to English",
+        "English subtitle generator"
+      ]
     },
-    "title": "English Subtitle Translator",
-    "description": "Translate subtitles from any language to English, supporting 30 source languages with professional AI translation technology",
+    "title": "Transform Your Subtitles into Perfect English",
+    "description": "Convert subtitles from any language to native-quality English with our advanced AI translation technology. Fast, accurate, and completely free.",
     "benefits": {
-      "title": "English Subtitle Translation Advantages",
-      "subtitle": "Why choose our English subtitle translation service? Professional, accurate, and efficient",
+      "title": "Unleash the Power of English Subtitle Translation",
+      "subtitle": "Tap into the vast English-speaking market with our state-of-the-art translation tool",
       "items": {
-        "native": {
-          "icon": "🎯",
-          "title": "Native English Expression",
-          "description": "AI intelligently recognizes context to generate natural English subtitles that conform to English expression habits"
+        "benefit_0": {
+          "icon": "🌐",
+          "title": "Global Reach",
+          "description": "English is spoken by 1.5 billion people worldwide. Our tool enables you to reach this vast market, increasing the accessibility of your content."
         },
-        "global": {
-          "icon": "🌍",
-          "title": "Global Universal Language",
-          "description": "English as an international lingua franca allows your content to reach the widest global audience"
+        "benefit_1": {
+          "icon": "🏢",
+          "title": "Business Opportunities",
+          "description": "With English being the language of global business, our tool can help you break the language barrier, opening up countless opportunities for growth and expansion."
         },
-        "business": {
-          "icon": "💼",
-          "title": "Business-Grade Quality",
-          "description": "Professional English translation quality suitable for business promotion, education and training, and other formal occasions"
+        "benefit_2": {
+          "icon": "📚",
+          "title": "Rich Linguistic Features",
+          "description": "English has a rich set of grammatical structures and vocabularies. Our AI-powered tool can accurately translate subtle nuances and expressions specific to English."
+        },
+        "benefit_3": {
+          "icon": "🎬",
+          "title": "Content Versatility",
+          "description": "English content ranges from movies, documentaries, lectures to podcasts. Our tool can handle a wide variety of content types, providing accurate and timely translations."
+        },
+        "benefit_4": {
+          "icon": "🇺🇸",
+          "title": "Cultural Significance",
+          "description": "English carries vast cultural significance. Our tool ensures that cultural nuances are preserved in translation, providing a more authentic and engaging viewing experience."
+        },
+        "benefit_5": {
+          "icon": "🧠",
+          "title": "AI-Driven Excellence",
+          "description": "Our tool employs advanced AI technologies to tackle the unique challenges posed by English translation, delivering subtitles that are contextually accurate and linguistically rich."
         }
       }
     },
     "useCases": {
-      "title": "English Subtitle Use Cases",
+      "title": "English Subtitle Translator Applications",
       "items": {
         "international": {
           "icon": "🌐",
-          "title": "International Promotion",
-          "description": "English subtitle creation for corporate promotional videos and product introduction videos to expand overseas markets"
+          "title": "International Marketing",
+          "description": "Use our English subtitle translator for global marketing campaigns and international business presentations"
         },
         "education": {
           "icon": "📚",
-          "title": "Educational Outreach",
-          "description": "English subtitles for online courses and academic lectures targeting international student groups"
+          "title": "Educational Content",
+          "description": "English subtitle translator ideal for online courses, webinars, and educational video content for international students"
         },
         "entertainment": {
           "icon": "🎬",
-          "title": "Film & Media",
-          "description": "English subtitles for movies, documentaries, and short videos to expand international influence"
+          "title": "Media Production",
+          "description": "Professional English subtitle translator for film distribution, streaming content, and media localization projects"
         }
       }
+    },
+    "hero": {
+      "title": "Unlock the Power of English Translation",
+      "description": "With a whopping 1.5 billion speakers worldwide, English is the language that connects global businesses. Our subtitle translation tool supports English translation, making it easy for English-speaking content creators and consumers to connect, communicate, and grow in this globally dominant language.",
+      "flag": "🇺🇸"
+    },
+    "cta": {
+      "title": "Unlock the Power of English Subtitle Translation",
+      "description": "Experience seamless communication in the global business world with our English subtitle translation tool. Don't let language barriers hold you back. Start translating your subtitles into English and tap into a network of over 1.5 billion English speakers worldwide."
     }
   },
   "chineseSubtitle": {
     "seo": {
-      "title": "Chinese Subtitle Translator - Free Online Translate Subtitles to Chinese | SRT Chinese Translation",
+      "title": "Free Chinese Subtitle Translator - Translate SRT Online",
       "description": "Professional Chinese subtitle translation service, supporting 30 languages to Chinese translation. Upload SRT subtitle files, AI smart translation to Chinese subtitles, accurate context understanding, completely free.",
       "keywords": "Chinese subtitle translation,translate to Chinese,SRT Chinese translation,subtitle Chinese translation,online Chinese translation,free Chinese subtitles,AI Chinese translation,video Chinese subtitles"
     },
-    "title": "Chinese Subtitle Translator",
-    "description": "Translate subtitles from any language to Chinese, supporting 30 source languages with intelligent context understanding",
+    "title": "Translate Any Subtitle to Fluent Chinese",
+    "description": "Make your content accessible to Chinese audiences with our intelligent subtitle translation service. Supporting 30+ languages with cultural localization.",
     "benefits": {
       "title": "Chinese Subtitle Translation Advantages",
       "subtitle": "Why choose our Chinese subtitle translation service? Accurate, fluent, and localized",
@@ -427,6 +518,259 @@
           "description": "Chinese subtitle translation for international conferences, business training, and product introductions"
         }
       }
+    }
+  },
+  "spanishSubtitle": {
+    "seo": {
+      "title": "Spanish Subtitle Translator - Unleashing the Power of Spanish Content",
+      "description": "Experience seamless Spanish subtitle translation with our tool, ideal for expanding your business in the rapidly growing Spanish-speaking market or for enjoying Spanish movies at home.",
+      "keywords": [
+        "Spanish subtitle translator",
+        "English to Spanish translation",
+        "SRT translation to Spanish",
+        "Video localization in Spanish",
+        "Spanish language support",
+        "Spanish movie subtitles",
+        "Translate English movie to Spanish",
+        "Spanish subtitle for business videos",
+        "Spanish subtitle for education",
+        "AI Spanish translation"
+      ]
+    },
+    "title": "Transform Your Subtitles into Perfect Spanish",
+    "description": "Convert subtitles from any language to native-quality Spanish with our advanced AI translation technology. Fast, accurate, and completely free.",
+    "hero": {
+      "title": "Unlock the Power of Spanish Translation",
+      "description": "With over 500 million speakers worldwide, Spanish is one of the most widely spoken languages globally. Our subtitle translation tool supports Spanish translation, making it easy for Spanish-speaking content creators and consumers to connect, communicate, and grow in this vibrant language community.",
+      "flag": "🇪🇸"
+    },
+    "benefits": {
+      "title": "Unleash the Power of Spanish Subtitle Translation",
+      "subtitle": "Tap into the vast Spanish-speaking market with our state-of-the-art translation tool",
+      "items": {
+        "benefit_0": {
+          "icon": "🌎",
+          "title": "Global Hispanic Market",
+          "description": "Spanish is spoken by over 500 million people across 20+ countries. Our tool enables you to reach this vast and diverse market, increasing the accessibility of your content."
+        },
+        "benefit_1": {
+          "icon": "💼",
+          "title": "Business Expansion",
+          "description": "Spanish-speaking markets represent significant economic opportunities. Our tool helps you break language barriers and expand into Latin America and Spain."
+        },
+        "benefit_2": {
+          "icon": "🎭",
+          "title": "Cultural Richness",
+          "description": "Spanish has rich regional variations and cultural nuances. Our AI-powered tool accurately translates these subtleties while preserving cultural authenticity."
+        },
+        "benefit_3": {
+          "icon": "📺",
+          "title": "Entertainment Industry",
+          "description": "Spanish content is booming globally. Our tool handles movies, series, documentaries, and educational content with precision and cultural sensitivity."
+        },
+        "benefit_4": {
+          "icon": "🏛️",
+          "title": "Educational Value",
+          "description": "Spanish is the second most studied language worldwide. Our tool supports educational content creation and language learning materials."
+        },
+        "benefit_5": {
+          "icon": "🤖",
+          "title": "AI-Driven Precision",
+          "description": "Our advanced AI technology handles Spanish grammar complexities, regional variations, and cultural context for superior translation quality."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Spanish Subtitle Translator Applications",
+      "items": {
+        "international": {
+          "icon": "🌎",
+          "title": "Latin American Expansion",
+          "description": "Use our Spanish subtitle translator for business expansion into Latin American markets and Spanish-speaking regions"
+        },
+        "education": {
+          "icon": "📚",
+          "title": "Educational Content",
+          "description": "Spanish subtitle translator perfect for online courses, educational videos, and language learning materials"
+        },
+        "entertainment": {
+          "icon": "🎬",
+          "title": "Media Localization",
+          "description": "Professional Spanish subtitle translator for film distribution, streaming platforms, and entertainment content"
+        }
+      }
+    },
+    "cta": {
+      "title": "Start Your Spanish Subtitle Translation Journey",
+      "description": "Experience seamless communication with Spanish-speaking audiences worldwide. Don't let language barriers limit your reach. Start translating your subtitles into Spanish and connect with over 500 million Spanish speakers globally."
+    }
+  },
+  "portugueseSubtitle": {
+    "seo": {
+      "title": "Professional Portuguese Subtitle Translator - Accurate & Fast Translation Tool",
+      "description": "Unlock the power of Portuguese content with our accurate subtitle translator. Ideal for video localization, cultural exchange, and boosting business communication in emerging markets.",
+      "keywords": [
+        "Portuguese subtitle translator",
+        "subtitle translation tool",
+        "English to Portuguese subtitles",
+        "Translate English movie to Portuguese",
+        "SRT translator Portuguese",
+        "Portuguese video localization",
+        "business translation to Portuguese",
+        "educational content translation Portuguese"
+      ]
+    },
+    "title": "Transform Your Subtitles into Perfect Portuguese",
+    "description": "Convert subtitles from any language to native-quality Portuguese with our advanced AI translation technology. Fast, accurate, and completely free.",
+    "hero": {
+      "title": "Unlock the Power of Portuguese Translation",
+      "description": "With over 260 million speakers across multiple continents, Portuguese opens doors to vibrant markets in Brazil, Portugal, and beyond. Our subtitle translation tool supports Portuguese translation, connecting you with this dynamic global community.",
+      "flag": "🇵🇹"
+    },
+    "benefits": {
+      "title": "Unleash the Power of Portuguese Subtitle Translation",
+      "subtitle": "Connect with Portuguese-speaking markets worldwide with our advanced translation tool",
+      "items": {
+        "benefit_0": {
+          "icon": "🌍",
+          "title": "Global Portuguese Community",
+          "description": "Portuguese is spoken by over 260 million people worldwide, especially in Brazil - the world's 6th largest economy. Reach this massive market with accurate translations."
+        },
+        "benefit_1": {
+          "icon": "💰",
+          "title": "Economic Opportunities",
+          "description": "Brazil and Portuguese-speaking countries offer significant business opportunities. Our tool helps you tap into these emerging markets effectively."
+        },
+        "benefit_2": {
+          "icon": "🎨",
+          "title": "Cultural Diversity",
+          "description": "Portuguese varies between regions with unique expressions and cultural contexts. Our AI preserves these nuances for authentic communication."
+        },
+        "benefit_3": {
+          "icon": "📱",
+          "title": "Digital Content Growth",
+          "description": "Portuguese digital content consumption is rapidly growing. Our tool helps you create engaging subtitled content for this expanding audience."
+        },
+        "benefit_4": {
+          "icon": "🎓",
+          "title": "Educational Impact",
+          "description": "Portuguese is increasingly popular in education and business. Our tool supports academic and professional content translation."
+        },
+        "benefit_5": {
+          "icon": "⚡",
+          "title": "Advanced AI Technology",
+          "description": "Our cutting-edge AI handles Portuguese grammar complexities and cultural context for superior translation accuracy."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Portuguese Subtitle Translator Applications",
+      "items": {
+        "international": {
+          "icon": "🌎",
+          "title": "Brazilian Market Entry",
+          "description": "Use our Portuguese subtitle translator for business expansion into Brazil and Portuguese-speaking markets"
+        },
+        "education": {
+          "icon": "📚",
+          "title": "Educational Content",
+          "description": "Portuguese subtitle translator ideal for online courses, training materials, and educational video content"
+        },
+        "entertainment": {
+          "icon": "🎬",
+          "title": "Media Production",
+          "description": "Professional Portuguese subtitle translator for streaming content, film distribution, and media localization"
+        }
+      }
+    },
+    "cta": {
+      "title": "Start Your Portuguese Subtitle Translation Journey",
+      "description": "Connect with Portuguese-speaking audiences and unlock new market opportunities. Start translating your subtitles into Portuguese and reach over 260 million speakers worldwide."
+    }
+  },
+  "frenchSubtitle": {
+    "seo": {
+      "title": "French Subtitle Translator - Accurate, Fast, and User-friendly",
+      "description": "Experience seamless French subtitle translation with our tool. Ideal for businesses, educators, and entertainment, it bridges language gaps and boosts cultural understanding. Translate subtitle to French with ease and accuracy.",
+      "keywords": [
+        "French subtitle translator",
+        "Translate subtitle to French",
+        "French SRT translation",
+        "Subtitle translation tool",
+        "French video localization",
+        "Subtitle translator for education",
+        "Business subtitle translation",
+        "AI-powered subtitle translation",
+        "French language complexity",
+        "Cultural exchange through subtitle translation"
+      ]
+    },
+    "title": "Transform Your Subtitles into Perfect French",
+    "description": "Convert subtitles from any language to native-quality French with our advanced AI translation technology. Fast, accurate, and completely free.",
+    "hero": {
+      "title": "Unlock the Power of French Translation",
+      "description": "With over 280 million speakers across five continents, French is a language of diplomacy, culture, and international business. Our subtitle translation tool supports French translation, connecting you with this sophisticated global community.",
+      "flag": "🇫🇷"
+    },
+    "benefits": {
+      "title": "Unleash the Power of French Subtitle Translation",
+      "subtitle": "Connect with French-speaking audiences worldwide with our sophisticated translation tool",
+      "items": {
+        "benefit_0": {
+          "icon": "🌐",
+          "title": "Global Francophone Network",
+          "description": "French is spoken by over 280 million people across 29 countries. Our tool enables you to reach this diverse and influential global community."
+        },
+        "benefit_1": {
+          "icon": "🏛️",
+          "title": "International Diplomacy",
+          "description": "French is an official language of major international organizations. Our tool helps you communicate in this language of global diplomacy and culture."
+        },
+        "benefit_2": {
+          "icon": "🎨",
+          "title": "Cultural Sophistication",
+          "description": "French carries rich cultural heritage and linguistic elegance. Our AI preserves the nuanced beauty and sophistication of French expression."
+        },
+        "benefit_3": {
+          "icon": "🎬",
+          "title": "Entertainment Excellence",
+          "description": "French cinema and media are globally celebrated. Our tool helps you create high-quality French subtitles for international content distribution."
+        },
+        "benefit_4": {
+          "icon": "📚",
+          "title": "Academic Prestige",
+          "description": "French is a prestigious academic language. Our tool supports educational content creation and scholarly communication in French."
+        },
+        "benefit_5": {
+          "icon": "🧠",
+          "title": "Linguistic Precision",
+          "description": "Our advanced AI technology handles French grammar intricacies, formal registers, and cultural context with exceptional accuracy."
+        }
+      }
+    },
+    "useCases": {
+      "title": "French Subtitle Translator Applications",
+      "items": {
+        "international": {
+          "icon": "🌍",
+          "title": "European Market Access",
+          "description": "Use our French subtitle translator for business expansion into France, Canada, and French-speaking African markets"
+        },
+        "education": {
+          "icon": "📚",
+          "title": "Educational Excellence",
+          "description": "French subtitle translator perfect for academic content, online courses, and educational video materials"
+        },
+        "entertainment": {
+          "icon": "🎭",
+          "title": "Cultural Content",
+          "description": "Professional French subtitle translator for film festivals, cultural exchanges, and artistic content localization"
+        }
+      }
+    },
+    "cta": {
+      "title": "Start Your French Subtitle Translation Journey",
+      "description": "Experience the elegance of French communication and connect with sophisticated global audiences. Start translating your subtitles into French and join the prestigious Francophone community."
     }
   },
   "pageTemplate": {
@@ -486,6 +830,137 @@
             "title": "Completely Free",
             "description": "No registration required, unlimited usage for all users."
           }
+        }
+      }
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "english_subtitle": "English Subtitle Translator",
+    "chinese_subtitle": "Chinese Subtitle Translator"
+  },
+  "layout": {
+    "chinese": {
+      "title": "Chinese Subtitle Translation Tool",
+      "description": "Professional AI-powered Chinese subtitle translation service",
+      "sections": {
+        "hero": {
+          "title": "Hero Section",
+          "description": "Main display area at the top of the page"
+        },
+        "translatorSection": {
+          "title": "Translator Section",
+          "description": "Subtitle file upload and translation functionality"
+        },
+        "languageBenefits": {
+          "title": "Language Benefits",
+          "description": "Unique advantages of Chinese subtitle translation"
+        },
+        "industryUseCases": {
+          "title": "Industry Applications",
+          "description": "Use cases across different industries"
+        },
+        "languageStats": {
+          "title": "Language Statistics",
+          "description": "Statistical data and influence of Chinese language"
+        },
+        "languageLearning": {
+          "title": "Language Learning",
+          "description": "Methods for learning Chinese through subtitles"
+        },
+        "seo": {
+          "title": "SEO Meta Information",
+          "description": "Search engine optimization metadata"
+        },
+        "cta": {
+          "title": "CTA Call to Action",
+          "description": "Area to guide users to take action"
+        },
+        "footer": {
+          "title": "Footer",
+          "description": "Bottom information area of the page"
+        }
+      },
+      "metadata": {
+        "languageFeatures": {
+          "family": "Sino-Tibetan",
+          "speakers": "1.1B",
+          "focus": "Cultural Bridge",
+          "flag": "🇨🇳"
+        }
+      }
+    },
+    "english": {
+      "title": "English Subtitle Translation Tool",
+      "description": "Professional AI-powered English subtitle translation service",
+      "sections": {
+        "hero": {
+          "title": "Hero区域",
+          "component": "HeroSection",
+          "order": 1,
+          "required": true,
+          "optional": false
+        },
+        "languageBenefits": {
+          "title": "语种优势",
+          "component": "LanguageBenefits",
+          "order": 2,
+          "required": true,
+          "optional": false
+        },
+        "seo": {
+          "title": "SEO Meta信息",
+          "component": "SEOMeta",
+          "order": 12,
+          "required": true,
+          "optional": false
+        },
+        "regionalVariants": {
+          "title": "地区方言",
+          "component": "RegionalSection",
+          "order": 13,
+          "required": false,
+          "optional": true
+        },
+        "cultureContext": {
+          "title": "文化本地化",
+          "component": "CultureSection",
+          "order": 14,
+          "required": false,
+          "optional": true
+        },
+        "techIntegration": {
+          "title": "AI技术",
+          "component": "TechSection",
+          "order": 15,
+          "required": false,
+          "optional": true
+        },
+        "cta": {
+          "title": "CTA行动号召",
+          "component": "CTASection",
+          "order": 90,
+          "required": true,
+          "optional": false
+        },
+        "footer": {
+          "title": "Footer页脚",
+          "component": "Footer",
+          "order": 99,
+          "required": true,
+          "optional": false
+        }
+      },
+      "metadata": {
+        "generatedAt": "2025-06-21T17:24:59.118Z",
+        "totalSections": 8,
+        "requiredSections": 5,
+        "optionalSections": 3,
+        "languageFeatures": {
+          "family": "Germanic",
+          "speakers": "1.5B",
+          "focus": "global-business",
+          "flag": "🇺🇸"
         }
       }
     }

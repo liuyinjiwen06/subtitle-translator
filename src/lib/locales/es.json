@@ -75,7 +75,9 @@
       "free": "Gratis para usar",
       "speed": "Velocidad de traducción",
       "speedValue": "Segundos"
-    }
+    },
+    "quick_links": "Enlaces Rápidos",
+    "rights": "Todos los derechos reservados."
   },
   "englishSubtitle": {
     "seo": {
@@ -84,7 +86,72 @@
       "keywords": "traducción subtítulos inglés,traducir a inglés,traducción SRT inglés,traducción subtítulos inglés,traducción inglés en línea,subtítulos inglés gratis,traducción IA inglés,subtítulos video inglés"
     },
     "title": "Traductor de Subtítulos al Inglés",
-    "description": "Traduce subtítulos de cualquier idioma al inglés, soporta 30 idiomas de origen con tecnología de traducción IA profesional"
+    "description": "Traduce subtítulos de cualquier idioma al inglés, soporta 30 idiomas de origen con tecnología de traducción IA profesional",
+    "benefits": {
+      "title": "Desata el Poder de la Traducción de Subtítulos en Inglés",
+      "subtitle": "Accede al vasto mercado de habla inglesa con nuestra herramienta de traducción de última generación.",
+      "items": {
+        "benefit_0": {
+          "icon": "🌐",
+          "title": "Alcance Global",
+          "description": "El inglés es hablado por 1.5 mil millones de personas en todo el mundo. Nuestra herramienta te permite alcanzar este vasto mercado, aumentando la accesibilidad de tu contenido."
+        },
+        "benefit_1": {
+          "icon": "🏢",
+          "title": "Oportunidades de Negocio",
+          "description": "Con el inglés como el idioma del negocio global, nuestra herramienta puede ayudarte a romper la barrera del idioma, abriendo innumerables oportunidades para el crecimiento y la expansión."
+        },
+        "benefit_2": {
+          "icon": "📚",
+          "title": "Ricas características lingüísticas",
+          "description": "El inglés tiene un rico conjunto de estructuras gramaticales y vocabulario. Nuestra herramienta impulsada por IA puede traducir con precisión los matices sutiles y las expresiones específicas del inglés."
+        },
+        "benefit_3": {
+          "icon": "🎬",
+          "title": "Versatilidad del Contenido",
+          "description": "El contenido en inglés abarca desde películas, documentales, conferencias hasta pódcast. Nuestra herramienta puede manejar una amplia variedad de tipos de contenido, proporcionando traducciones precisas y oportunas."
+        },
+        "benefit_4": {
+          "icon": "🇪🇸",
+          "title": "Significado Cultural",
+          "description": "El inglés tiene una gran importancia cultural. Nuestra herramienta garantiza que se conserven las sutilezas culturales en la traducción, ofreciendo una experiencia de visualización más auténtica y atractiva."
+        },
+        "benefit_5": {
+          "icon": "🧠",
+          "title": "Excelencia Impulsada por IA",
+          "description": "Nuestra herramienta emplea tecnologías avanzadas de IA para abordar los desafíos únicos que presenta la traducción al inglés, ofreciendo subtítulos que son contextualmente precisos y lingüísticamente ricos."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Aplicaciones de Traducción de Subtítulos en Inglés",
+      "items": {
+        "international": {
+          "icon": "🌐",
+          "title": "Marketing Internacional",
+          "description": "Utiliza nuestro traductor de subtítulos en inglés para campañas de marketing global y presentaciones de negocios internacionales."
+        },
+        "education": {
+          "icon": "📚",
+          "title": "Contenido Educativo",
+          "description": "Traductor de subtítulos en inglés ideal para cursos en línea, seminarios web y contenido de video educativo para estudiantes internacionales."
+        },
+        "entertainment": {
+          "icon": "🎬",
+          "title": "Producción de Medios",
+          "description": "Traductor profesional de subtítulos en inglés para distribución de películas, contenido de streaming y proyectos de localización de medios."
+        }
+      }
+    },
+    "hero": {
+      "title": "Desbloquea el Poder de la Traducción al Inglés",
+      "description": "Con un impresionante total de 1.5 mil millones de hablantes en todo el mundo, el inglés es el idioma que conecta a los negocios globales. Nuestra herramienta de traducción de subtítulos admite la traducción al inglés, facilitando la conexión, comunicación y crecimiento de los creadores y consumidores de contenido de habla inglesa en este idioma dominante a nivel mundial.",
+      "flag": "🇪🇸"
+    },
+    "cta": {
+      "title": "Desbloquea el Poder de la Traducción de Subtítulos en Inglés",
+      "description": "Experimente una comunicación fluida en el mundo empresarial global con nuestra herramienta de traducción de subtítulos al inglés. No deje que las barreras del idioma lo detengan. Comience a traducir sus subtítulos al inglés y acceda a una red de más de 1.5 mil millones de hablantes de inglés en todo el mundo."
+    }
   },
   "chineseSubtitle": {
     "seo": {
@@ -93,7 +160,48 @@
       "keywords": "traducción subtítulos chino,traducir a chino,traducción SRT chino,traducción subtítulos chino,traducción chino en línea,subtítulos chino gratis,traducción IA chino,subtítulos video chino"
     },
     "title": "Traductor de Subtítulos al Chino",
-    "description": "Traduce subtítulos de cualquier idioma al chino, soporta 30 idiomas de origen con comprensión inteligente del contexto"
+    "description": "Traduce subtítulos de cualquier idioma al chino, soporta 30 idiomas de origen con comprensión inteligente del contexto",
+    "benefits": {
+      "title": "Ventajas de la Traducción de Subtítulos en Chino",
+      "subtitle": "¿Por qué elegir nuestro servicio de traducción de subtítulos al chino? Preciso, fluido y localizado.",
+      "items": {
+        "context": {
+          "icon": "🧠",
+          "title": "Comprensión Inteligente del Contexto",
+          "description": "La IA comprende profundamente el contexto original para generar traducciones naturales que se ajustan a los hábitos de expresión en chino."
+        },
+        "localization": {
+          "icon": "🏮",
+          "title": "Expresión Localizada",
+          "description": "No solo traduce el idioma, sino que también se centra en la localización cultural para una mejor comprensión por parte del público chino."
+        },
+        "accuracy": {
+          "icon": "✨",
+          "title": "Precisión en Terminología Profesional",
+          "description": "Traduce con precisión términos profesionales y vocabulario de la industria, manteniendo el significado original y las convenciones chinas."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Casos de Uso de Subtítulos en Chino",
+      "items": {
+        "foreign": {
+          "icon": "🎭",
+          "title": "Localización de Contenido Extranjero",
+          "description": "Creación de subtítulos en chino para películas extranjeras, documentales y videos educativos."
+        },
+        "learning": {
+          "icon": "Lo siento, no hay texto para traducir. ¿Hay algo específico que te gustaría que traduzca?",
+          "title": "Ayuda para el Aprendizaje de Idiomas",
+          "description": "Subtítulos en chino para videos de aprendizaje de idiomas extranjeros y cursos en línea para ayudar a la comprensión."
+        },
+        "business": {
+          "icon": "🏢",
+          "title": "Comunicación Empresarial",
+          "description": "Traducción de subtítulos en chino para conferencias internacionales, capacitación empresarial y presentaciones de productos."
+        }
+      }
+    }
   },
   "pages": {
     "englishSubtitle": {
@@ -141,13 +249,93 @@
             "description": "Subtítulos en inglés para películas, documentales y videos cortos para expandir la base de audiencia"
           }
         }
+      },
+      "description": "Transforma tu contenido para audiencias globales con nuestro traductor de subtítulos en inglés impulsado por IA. Soporta más de 30 idiomas con precisión de nivel profesional.",
+      "seo": {
+        "title": "Traductor de Subtítulos en Inglés - Herramienta en Línea Gratuita | Traducir Subtítulos al Inglés",
+        "description": "Traductor profesional de subtítulos en inglés que admite más de 30 idiomas. Carga archivos SRT y obtén subtítulos en inglés de alta calidad al instante. Herramienta de traducción de subtítulos impulsada por IA gratuita con resultados precisos.",
+        "keywords": "traductor de subtítulos en inglés, traducir subtítulos al inglés, traducción de subtítulos en inglés, traductor SRT al inglés, herramienta de subtítulos en inglés en línea, traductor de subtítulos en inglés gratuito, traducción de inglés por IA, subtítulos en inglés para video"
       }
     },
     "chineseSubtitle": {
       "title": "Traducir Subtítulos al Chino - Traductor de Subtítulos al Chino en Línea",
       "heroTitle": "Traducir Subtítulos al Chino",
       "heroSubtitle": "Traduce tus subtítulos al chino de manera rápida y precisa, haciendo tu contenido accesible para audiencias chinas",
-      "targetLanguage": "Chino"
+      "targetLanguage": "Chino",
+      "description": "Conéctate con audiencias chinas a través de una traducción de subtítulos inteligente. Nuestra IA comprende las sutilezas culturales para una localización auténtica.",
+      "seo": {
+        "title": "Traducir subtítulos al chino - Traductor de subtítulos chino en línea gratuito | Traducción SRT de alta calidad al chino",
+        "description": "Herramienta profesional de traducción de subtítulos al chino que admite inglés, japonés, francés y más idiomas a subtítulos en chino. Traducción impulsada por IA, precisa y fluida, completamente gratuita. ¡Sube archivos SRT y comienza a traducir ahora!",
+        "keywords": "翻译字幕为中文，中文字幕翻译，SRT中文翻译，英文字幕翻译成中文，在线中文字幕工具，免费中文翻译"
+      },
+      "benefits": {
+        "title": "¿Por qué elegir nuestra traducción de subtítulos al chino?",
+        "subtitle": "Tecnología de traducción profesional al chino que garantiza la calidad de los subtítulos y la experiencia de visualización.",
+        "items": {
+          "native": {
+            "icon": "请提供需要翻译的具体文本内容。",
+            "title": "Expresión nativa china",
+            "description": "La IA reconoce inteligentemente el contexto, proporcionando expresiones chinas nativas que se ajustan a los hábitos del idioma chino."
+          },
+          "context": {
+            "icon": "🎯",
+            "title": "Comprensión del Contexto",
+            "description": "Comprensión profunda del contexto del contenido de los subtítulos, asegurando la coherencia y precisión de la traducción."
+          },
+          "timing": {
+            "icon": "⏱️",
+            "title": "Preservación del Tiempo",
+            "description": "Mantiene perfectamente el tiempo original de los subtítulos, listo para usar después de la traducción sin ajustes."
+          }
+        }
+      },
+      "useCases": {
+        "title": "Casos de Uso de Traducción de Subtítulos en Chino",
+        "items": {
+          "localization": {
+            "icon": "🏠",
+            "title": "Localización de Contenidos",
+            "description": "Subtítulos en chino para películas extranjeras y contenido educativo para servir a audiencias chinas."
+          },
+          "business": {
+            "icon": "💼",
+            "title": "Aplicaciones Empresariales",
+            "description": "Subtítulos en chino para conferencias internacionales y presentaciones de productos para facilitar la comunicación empresarial."
+          },
+          "learning": {
+            "icon": "Lo siento, no hay texto para traducir. Por favor, proporciona el texto que deseas traducir al español.",
+            "title": "Materiales de Aprendizaje",
+            "description": "Subtítulos en chino para videos de aprendizaje de idiomas extranjeros y cursos en línea."
+          }
+        }
+      }
+    },
+    "spanishSubtitle": {
+      "title": "Traducción Profesional de Subtítulos en Español",
+      "description": "Experimenta una traducción de subtítulos en español sin interrupciones con nuestra herramienta, ideal para expandir tu negocio en el creciente mercado de habla hispana o para disfrutar de películas en español en casa.",
+      "seo": {
+        "title": "Traductor de Subtítulos en Español Gratis - Traduce SRT en Línea",
+        "description": "Experimenta una traducción de subtítulos en español sin interrupciones con nuestra herramienta, ideal para expandir tu negocio en el creciente mercado de habla hispana o para disfrutar de películas en español en casa.",
+        "keywords": "Traductor de subtítulos en español, traducción de inglés a español, traducción SRT al español, localización de videos en español, soporte en español, subtítulos de películas en español, traducir películas en inglés al español, subtítulos en español para videos empresariales, subtítulos en español para educación, traducción al español con IA."
+      }
+    },
+    "portugueseSubtitle": {
+      "title": "Traducción Profesional de Subtítulos al Portugués",
+      "description": "Desbloquea el poder del contenido en portugués con nuestro traductor de subtítulos preciso. Ideal para la localización de videos, el intercambio cultural y la mejora de la comunicación empresarial en mercados emergentes.",
+      "seo": {
+        "title": "Traductor de Subtítulos Portugués Gratuito - Traduce SRT en Línea",
+        "description": "Desbloquea el poder del contenido en portugués con nuestro traductor de subtítulos preciso. Ideal para la localización de videos, el intercambio cultural y el impulso de la comunicación empresarial en mercados emergentes.",
+        "keywords": "Traductor de subtítulos en portugués, herramienta de traducción de subtítulos, subtítulos de inglés a portugués, traducir películas en inglés al portugués, traductor SRT al portugués, localización de videos en portugués, traducción de negocios al portugués, traducción de contenido educativo al portugués."
+      }
+    },
+    "frenchSubtitle": {
+      "title": "Traducción profesional de subtítulos al francés",
+      "description": "Experimente una traducción de subtítulos en francés sin interrupciones con nuestra herramienta. Ideal para empresas, educadores y entretenimiento, cierra las brechas lingüísticas y fomenta la comprensión cultural.",
+      "seo": {
+        "title": "Traductor de Subtítulos en Francés Gratis - Traduce SRT en Línea",
+        "description": "Experimente una traducción fluida de subtítulos en francés con nuestra herramienta. Ideal para empresas, educadores y entretenimiento, cierra las brechas lingüísticas y fomenta la comprensión cultural. Traduce subtítulos al francés con facilidad y precisión.",
+        "keywords": "Traductor de subtítulos en francés, Traducir subtítulos al francés, Traducción de SRT al francés, Herramienta de traducción de subtítulos, Localización de videos en francés, Traductor de subtítulos para educación, Traducción de subtítulos para negocios, Traducción de subtítulos impulsada por IA, Complejidad del idioma francés, Intercambio cultural a través de la traducción de subtítulos."
+      }
     }
   },
   "pageTemplate": {
@@ -210,5 +398,576 @@
         }
       }
     }
+  },
+  "spanishSubtitle": {
+    "seo": {
+      "title": "Spanish Subtitle Translator - Unleashing the Power of Spanish Content",
+      "description": "Experience seamless Spanish subtitle translation with our tool, ideal for expanding your business in the rapidly growing Spanish-speaking market or for enjoying Spanish movies at home.",
+      "keywords": [
+        "Spanish subtitle translator",
+        "English to Spanish translation",
+        "SRT translation to Spanish",
+        "Video localization in Spanish",
+        "Spanish language support",
+        "Spanish movie subtitles",
+        "Translate English movie to Spanish",
+        "Spanish subtitle for business videos",
+        "Spanish subtitle for education",
+        "AI Spanish translation"
+      ]
+    },
+    "hero": {
+      "title": "Unlock the Richness of Spanish with Our Subtitle Translation Tool",
+      "description": "Used by over 500 million people worldwide, Spanish is a rapidly growing language. With our subtitle translation tool, you can seamlessly tap into the cultural depth of Spanish, opening up a new world of content from telenovelas to world-class football commentary. Navigate the unique nuances of this Romance language and connect with Spanish speakers on a deeper level.",
+      "flag": "🇪🇸"
+    },
+    "benefits": {
+      "title": "Unleash the Power of Spanish Subtitles Translation",
+      "subtitle": "Harnessing AI technology to overcome the linguistic nuances of the world's second-most spoken language",
+      "items": {
+        "benefit_0": {
+          "icon": "🎯",
+          "title": "Cultural Authenticity",
+          "description": "Our tool respects the rich history and cultural nuances of Spanish language, translating not just words, but also preserving the essence of its vibrant expressions and idioms."
+        },
+        "benefit_1": {
+          "icon": "🚀",
+          "title": "Tap into Rapid Growth",
+          "description": "With over 500 million Spanish speakers worldwide, our tool lets you tap into this rapidly expanding market, ensuring your content reaches a broad audience."
+        },
+        "benefit_2": {
+          "icon": "🌐",
+          "title": "Romance Linguistic Mastery",
+          "description": "By understanding the complexities of the Romance language group, our tool ensures high-quality translation of Spanish subtitles, catering to its specific grammar and syntax."
+        },
+        "benefit_3": {
+          "icon": "💼",
+          "title": "Professional Opportunities",
+          "description": "From business negotiations in Spain to global conferences in Latin America, our tool aids in professional communication by providing accurate and timely Spanish subtitle translations."
+        },
+        "benefit_4": {
+          "icon": "📚",
+          "title": "Educational Value",
+          "description": "Whether you're a student learning Spanish or a teacher providing a multilingual experience, our tool enhances the educational process with high-quality subtitle translations."
+        },
+        "benefit_5": {
+          "icon": "👩‍💻",
+          "title": "Technical Excellence",
+          "description": "Our AI-driven tool navigates the specific technical challenges of Spanish translation, including sentence structure, verb conjugation, and gender agreement, ensuring accurate subtitles every time."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Unlock the Spanish-speaking market with our Subtitle Translation Tool",
+      "subtitle": "Navigate the vast and diverse world of Spanish content with confidence.",
+      "items": {
+        "case_0": {
+          "icon": "🎬",
+          "title": "Binge-worthy Spanish TV Shows and Movies",
+          "description": "From gripping telenovelas to critically acclaimed films, Spanish media content is adored globally. Translate subtitles and don't miss out on the rich storytelling that Spanish cinema has to offer."
+        },
+        "case_1": {
+          "icon": "🌐",
+          "title": "Emerging Markets",
+          "description": "With rapid economic growth in Spain and Latin America, translating English content into Spanish can unlock new business opportunities. Break language barriers and expand your business."
+        },
+        "case_2": {
+          "icon": "📚",
+          "title": "Educational Content",
+          "description": "Spanish is the second most commonly spoken language in the world, making it a popular choice for language learners. Enhance your e-learning platform by providing Spanish subtitles for English lectures."
+        },
+        "case_3": {
+          "icon": "🎭",
+          "title": "Cross-Cultural Exchange",
+          "description": "Spanish culture is vibrant and diverse. Translate and subtitle cultural documentaries, folk tales, music, and more to promote cross-cultural understanding and appreciation."
+        },
+        "case_4": {
+          "icon": "🎮",
+          "title": "Gaming Industry",
+          "description": "From video games to e-sports, the Spanish-speaking audience is vast and passionate. Provide Spanish subtitles to engage more players and fans, enhancing their gaming experience."
+        },
+        "international": {
+          "icon": "🌎",
+          "title": "Expansión en América Latina",
+          "description": "Utiliza nuestro traductor de subtítulos en español para la expansión empresarial en mercados de América Latina y regiones de habla hispana."
+        },
+        "education": {
+          "icon": "¡Claro! Estoy aquí para ayudarte. Por favor, proporciona el texto que deseas traducir al español.",
+          "title": "Contenido Educativo",
+          "description": "Traductor de subtítulos en español perfecto para cursos en línea, videos educativos y materiales de aprendizaje de idiomas."
+        },
+        "entertainment": {
+          "icon": "🎬",
+          "title": "Localización de Medios",
+          "description": "Traductor profesional de subtítulos en español para distribución de películas, plataformas de streaming y contenido de entretenimiento."
+        }
+      }
+    },
+    "cta": {
+      "title": "Experience Seamless Spanish Subtitle Translation",
+      "description": "With over 500 million Spanish speakers worldwide, Spanish is a rapidly growing language in global communication. Don't let language barriers hinder your experience - use our top-notch translation tool to effortlessly translate subtitles to or from Spanish. Understand and be understood in this Romance language and open doors to an expanded audience, culture and market. This is your key to unlocking new opportunities in the realm of Spanish content."
+    },
+    "title": "Transforma tus subtítulos en un español perfecto",
+    "description": "Convierte subtítulos de cualquier idioma a un español de calidad nativa con nuestra avanzada tecnología de traducción AI. Rápido, preciso y completamente gratis."
+  },
+  "layout": {
+    "spanish": {
+      "title": "Spanish Subtitle Translation Tool",
+      "description": "Professional AI-powered Spanish subtitle translation service",
+      "sections": {
+        "hero": {
+          "title": "Hero区域",
+          "component": "HeroSection",
+          "order": 1,
+          "required": true,
+          "optional": false
+        },
+        "languageBenefits": {
+          "title": "语种优势",
+          "component": "LanguageBenefits",
+          "order": 2,
+          "required": true,
+          "optional": false
+        },
+        "seo": {
+          "title": "SEO Meta信息",
+          "component": "SEOMeta",
+          "order": 12,
+          "required": true,
+          "optional": false
+        },
+        "industryUseCases": {
+          "title": "行业应用",
+          "component": "IndustrySection",
+          "order": 13,
+          "required": false,
+          "optional": true
+        },
+        "techIntegration": {
+          "title": "AI技术",
+          "component": "TechSection",
+          "order": 14,
+          "required": false,
+          "optional": true
+        },
+        "contentTypes": {
+          "title": "内容类型",
+          "component": "ContentSection",
+          "order": 15,
+          "required": false,
+          "optional": true
+        },
+        "cta": {
+          "title": "CTA行动号召",
+          "component": "CTASection",
+          "order": 90,
+          "required": true,
+          "optional": false
+        },
+        "footer": {
+          "title": "Footer页脚",
+          "component": "Footer",
+          "order": 99,
+          "required": true,
+          "optional": false
+        }
+      },
+      "metadata": {
+        "generatedAt": "2025-06-21T17:32:47.009Z",
+        "totalSections": 8,
+        "requiredSections": 5,
+        "optionalSections": 3,
+        "languageFeatures": {
+          "family": "Romance",
+          "speakers": "500M",
+          "focus": "rapid-growth",
+          "flag": "🇪🇸"
+        }
+      }
+    },
+    "chinese": {
+      "title": "Herramienta de Traducción de Subtítulos en Chino",
+      "description": "Servicio profesional de traducción de subtítulos en chino impulsado por IA",
+      "sections": {
+        "hero": {
+          "title": "Sección Hero",
+          "description": "Área principal de visualización en la parte superior de la página"
+        },
+        "translatorSection": {
+          "title": "Sección de Traductor",
+          "description": "Funcionalidad de carga y traducción de archivos de subtítulos"
+        },
+        "languageBenefits": {
+          "title": "Beneficios del idioma",
+          "description": "Ventajas únicas de la traducción de subtítulos en chino"
+        },
+        "industryUseCases": {
+          "title": "Aplicaciones Industriales",
+          "description": "Casos de uso en diferentes industrias"
+        },
+        "languageStats": {
+          "title": "Estadísticas de Idiomas",
+          "description": "Datos estadísticos e influencia del idioma chino"
+        },
+        "languageLearning": {
+          "title": "Aprendizaje de Idiomas",
+          "description": "Métodos para aprender chino a través de subtítulos"
+        },
+        "seo": {
+          "title": "Información Meta SEO",
+          "description": "Metadatos de optimización para motores de búsqueda"
+        },
+        "cta": {
+          "title": "CTA Llamada a la Acción",
+          "description": "Área para guiar a los usuarios a tomar acción"
+        },
+        "footer": {
+          "title": "Pie de página",
+          "description": "Área de información inferior de la página"
+        }
+      },
+      "metadata": {
+        "languageFeatures": {
+          "family": "Sino-tibetano",
+          "speakers": "1.1B",
+          "focus": "Puente Cultural",
+          "flag": "你好！请提供您需要翻译的文本，我会帮您翻译成西班牙语。"
+        }
+      }
+    },
+    "english": {
+      "title": "Herramienta de Traducción de Subtítulos en Inglés",
+      "description": "Servicio profesional de traducción de subtítulos en inglés impulsado por IA",
+      "sections": {
+        "hero": {
+          "title": "Área de héroe",
+          "component": "SecciónHero"
+        },
+        "languageBenefits": {
+          "title": "Ventajas del idioma",
+          "component": "Beneficios del idioma"
+        },
+        "seo": {
+          "title": "Información Meta SEO",
+          "component": "SEOMeta"
+        },
+        "regionalVariants": {
+          "title": "Dialectos regionales",
+          "component": "SecciónRegional"
+        },
+        "cultureContext": {
+          "title": "Localización cultural",
+          "component": "SecciónCultura"
+        },
+        "techIntegration": {
+          "title": "Tecnología de IA",
+          "component": "SecciónTecnológica"
+        },
+        "cta": {
+          "title": "CTA Llamada a la acción",
+          "component": "SecciónCTA"
+        },
+        "footer": {
+          "title": "Footer - Pie de página",
+          "component": "Pie de página"
+        }
+      },
+      "metadata": {
+        "generatedAt": "2025-06-21T17:24:59.118Z",
+        "languageFeatures": {
+          "family": "Germánico",
+          "speakers": "1.5B",
+          "focus": "negocios-globales",
+          "flag": "🇪🇸"
+        }
+      }
+    }
+  },
+  "loading": "Cargando...",
+  "translation_progress": "Progreso de Traducción",
+  "translating_please_wait": "Traduciendo, por favor espere...",
+  "translation_complete": "¡Traducción completa!",
+  "current_translating": "Actualmente Traduciendo",
+  "translate_again": "Traducir de nuevo",
+  "benefits": {
+    "title": "Ventajas Clave",
+    "subtitle": "¿Por qué elegir nuestra herramienta de traducción de subtítulos? Experiencia de traducción profesional, eficiente y segura.",
+    "items": {
+      "accuracy": {
+        "icon": "🎯",
+        "title": "Traducción precisa",
+        "description": "Utilizando la última tecnología de traducción de IA para garantizar la precisión de la traducción y la fluidez del lenguaje, especialmente optimizada para contenido de subtítulos."
+      },
+      "speed": {
+        "icon": "⚡",
+        "title": "Rápido como un rayo",
+        "description": "Potentes capacidades de procesamiento en la nube, incluso archivos grandes pueden ser traducidos en minutos con una visualización del progreso en tiempo real."
+      },
+      "security": {
+        "icon": "🛡️",
+        "title": "Seguro y Confiable",
+        "description": "Estándares de seguridad de nivel empresarial, transmisión de archivos encriptada, eliminación automática después de la traducción, protegiendo su privacidad."
+      },
+      "support": {
+        "icon": "🌐",
+        "title": "Soporte multilingüe",
+        "description": "Soporta 8 idiomas principales, incluyendo chino, inglés, japonés, francés, alemán, español, ruso e italiano."
+      },
+      "cost": {
+        "icon": "💰",
+        "title": "Completamente Gratis",
+        "description": "Sin registro de cuenta, sin suscripción de pago, sin límites de uso, acceso gratuito permanente a todas las funciones."
+      },
+      "ease": {
+        "icon": "🎨",
+        "title": "Fácil de Usar",
+        "description": "Interfaz de usuario intuitiva, traducción completa en tres pasos: subir archivo, seleccionar idioma, descargar resultado, no se requiere experiencia."
+      }
+    }
+  },
+  "useCases": {
+    "title": "Casos de Uso",
+    "subtitle": "Ya sea que seas un usuario individual o un equipo profesional, podemos satisfacer tus necesidades de traducción de subtítulos.",
+    "items": {
+      "education": {
+        "icon": "🎓",
+        "title": "Educación y Capacitación",
+        "description": "Creación de subtítulos multilingües para cursos en línea, videos educativos y conferencias académicas."
+      },
+      "business": {
+        "icon": "💼",
+        "title": "Uso Comercial",
+        "description": "Videos promocionales corporativos, introducciones de productos, traducción de registros de reuniones para internacionalización."
+      },
+      "entertainment": {
+        "icon": "🎬",
+        "title": "Cine y Entretenimiento",
+        "description": "Localización de subtítulos para películas, series de televisión, documentales y videos cortos"
+      },
+      "personal": {
+        "icon": "👤",
+        "title": "Creación Personal",
+        "description": "Vlogs, videos de juegos, grabaciones de vida, adición de subtítulos multilingües"
+      }
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Respuestas a preguntas que puede encontrar durante el uso",
+    "items": {
+      "format": {
+        "question": "¿Qué formatos de archivo de subtítulos son compatibles?",
+        "answer": "Actualmente se admiten archivos de subtítulos en formato SRT, que es el formato de subtítulos más utilizado y con mejor compatibilidad. Planeamos admitir más formatos como ASS y VTT en versiones futuras."
+      },
+      "quality": {
+        "question": "¿Cómo se garantiza la calidad de la traducción?",
+        "answer": "Utilizamos tecnología de traducción avanzada de Google Cloud y OpenAI, especialmente optimizada para contenido de subtítulos, para garantizar la precisión y fluidez de la traducción. Hay múltiples motores de traducción disponibles para su elección."
+      },
+      "privacy": {
+        "question": "¿Están seguros mis archivos?",
+        "answer": "Tomamos la privacidad del usuario muy en serio. La transmisión de archivos utiliza cifrado HTTPS, el proceso de traducción se realiza en un entorno seguro en la nube, los archivos se eliminan automáticamente después de la traducción y no se almacena ningún dato del usuario."
+      },
+      "cost": {
+        "question": "¿Hay un costo para usar esto?",
+        "answer": "¡Completamente gratis! No se requiere registro de cuenta, no hay suscripción de pago, ni límites de uso. Estamos comprometidos a ofrecer servicios de traducción de subtítulos gratuitos a usuarios de todo el mundo."
+      },
+      "speed": {
+        "question": "¿Cuánto tiempo tarda la traducción?",
+        "answer": "La velocidad de traducción depende del tamaño del archivo y del servicio de traducción seleccionado. En general, los archivos de subtítulos de longitud normal (100-500 líneas) se pueden completar en 1-3 minutos."
+      }
+    }
+  },
+  "specializedTools": {
+    "title": "Herramientas Profesionales de Traducción de Subtítulos",
+    "subtitle": "Servicios de traducción especializados optimizados para diferentes idiomas, proporcionando una experiencia de traducción más precisa.",
+    "english": {
+      "button": "You are trained on data up to October 2023."
+    },
+    "chinese": {
+      "button": "您已接受截至2023年10月的数据培训。"
+    }
+  },
+  "cta": {
+    "title": "Comienza a traducir tus subtítulos ahora",
+    "subtitle": "Tres pasos simples para completar fácilmente la traducción de subtítulos multilingües, haciendo que tu contenido llegue a audiencias globales.",
+    "startButton": "Comenzar",
+    "learnMore": "Aprender más"
+  },
+  "nav": {
+    "home": "Inicio",
+    "english_subtitle": "Traductor de Subtítulos en Inglés",
+    "chinese_subtitle": "Traductor de Subtítulos Chinos"
+  },
+  "freeService": {
+    "title": "Servicio de Traducción de Subtítulos Gratuito",
+    "subtitle": "Disfruta de traducción de subtítulos ilimitada y de alta calidad de forma gratuita. Sin registro, sin tarifas, sin costos ocultos.",
+    "items": {
+      "unlimited": {
+        "icon": "💡",
+        "title": "Uso Ilimitado",
+        "description": "Traduce tantos archivos de subtítulos como desees, sin ninguna restricción."
+      },
+      "noRegistration": {
+        "icon": "🔓",
+        "title": "No se requiere registro",
+        "description": "Comienza a traducir de inmediato, no se necesita cuenta ni registro."
+      },
+      "noFees": {
+        "icon": "💸",
+        "title": "Totalmente Gratis",
+        "description": "Todas las funciones están disponibles de forma gratuita, para siempre. Sin suscripción, sin cargos ocultos."
+      },
+      "highQuality": {
+        "icon": "¡Claro! Si necesitas ayuda con algún texto específico para traducir, no dudes en compartirlo. Estoy aquí para ayudarte.",
+        "title": "Traducción de Alta Calidad",
+        "description": "Impulsado por una IA avanzada, garantizando traducciones de subtítulos precisas y naturales."
+      }
+    }
+  },
+  "portugueseSubtitle": {
+    "seo": {
+      "title": "Traductor Profesional de Subtítulos en Portugués - Herramienta de Traducción Rápida y Precisa",
+      "description": "Desbloquea el poder del contenido en portugués con nuestro traductor de subtítulos preciso. Ideal para la localización de videos, el intercambio cultural y para potenciar la comunicación empresarial en mercados emergentes."
+    },
+    "title": "Transforma tus subtítulos en un portugués perfecto",
+    "description": "Convierte subtítulos de cualquier idioma a un portugués de calidad nativa con nuestra avanzada tecnología de traducción AI. Rápido, preciso y completamente gratis.",
+    "hero": {
+      "title": "Desbloquea el Poder de la Traducción al Portugués",
+      "description": "Con más de 260 millones de hablantes en múltiples continentes, el portugués abre puertas a mercados vibrantes en Brasil, Portugal y más allá. Nuestra herramienta de traducción de subtítulos admite traducción al portugués, conectándote con esta dinámica comunidad global.",
+      "flag": "🇵🇹"
+    },
+    "benefits": {
+      "title": "Desata el Poder de la Traducción de Subtítulos en Portugués",
+      "subtitle": "Conéctate con mercados de habla portuguesa en todo el mundo con nuestra avanzada herramienta de traducción.",
+      "items": {
+        "benefit_0": {
+          "icon": "🌍",
+          "title": "Comunidad Portuguesa Global",
+          "description": "El portugués es hablado por más de 260 millones de personas en todo el mundo, especialmente en Brasil, la sexta economía más grande del mundo. Llega a este enorme mercado con traducciones precisas."
+        },
+        "benefit_1": {
+          "icon": "💰",
+          "title": "Oportunidades Económicas",
+          "description": "Brasil y los países de habla portuguesa ofrecen oportunidades de negocio significativas. Nuestra herramienta te ayuda a aprovechar estos mercados emergentes de manera efectiva."
+        },
+        "benefit_2": {
+          "icon": "🎨",
+          "title": "Diversidad Cultural",
+          "description": "El portugués varía entre regiones con expresiones y contextos culturales únicos. Nuestra IA preserva estas matices para una comunicación auténtica."
+        },
+        "benefit_3": {
+          "icon": "📱",
+          "title": "Crecimiento de Contenido Digital",
+          "description": "El consumo de contenido digital en portugués está creciendo rápidamente. Nuestra herramienta te ayuda a crear contenido subtitulado atractivo para esta audiencia en expansión."
+        },
+        "benefit_4": {
+          "icon": "🎓",
+          "title": "Impacto Educativo",
+          "description": "El portugués es cada vez más popular en la educación y los negocios. Nuestra herramienta admite la traducción de contenido académico y profesional."
+        },
+        "benefit_5": {
+          "icon": "⚡",
+          "title": "Tecnología Avanzada de IA",
+          "description": "Nuestra avanzada IA maneja las complejidades gramaticales del portugués y el contexto cultural para una precisión de traducción superior."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Aplicaciones de Traducción de Subtítulos en Portugués",
+      "items": {
+        "international": {
+          "icon": "🌎",
+          "title": "Entrada en el Mercado Brasileño",
+          "description": "Utilice nuestro traductor de subtítulos en portugués para la expansión empresarial en Brasil y mercados de habla portuguesa."
+        },
+        "education": {
+          "icon": "📚",
+          "title": "Contenido Educativo",
+          "description": "Traductor de subtítulos en portugués ideal para cursos en línea, materiales de capacitación y contenido de video educativo."
+        },
+        "entertainment": {
+          "icon": "🎬",
+          "title": "Producción de Medios",
+          "description": "Traductor profesional de subtítulos en portugués para contenido de streaming, distribución de películas y localización de medios."
+        }
+      }
+    },
+    "cta": {
+      "title": "Comienza tu viaje de traducción de subtítulos al portugués",
+      "description": "Conéctate con audiencias de habla portuguesa y desbloquea nuevas oportunidades de mercado. Comienza a traducir tus subtítulos al portugués y llega a más de 260 millones de hablantes en todo el mundo."
+    }
+  },
+  "frenchSubtitle": {
+    "seo": {
+      "title": "Traductor de subtítulos en francés - Preciso, Rápido y Fácil de usar",
+      "description": "Experimente una traducción de subtítulos en francés sin interrupciones con nuestra herramienta. Ideal para empresas, educadores y entretenimiento, cierra las brechas lingüísticas y mejora la comprensión cultural. Traduce subtítulos al francés con facilidad y precisión."
+    },
+    "title": "Transforma tus subtítulos en perfecto francés",
+    "description": "Convierte subtítulos de cualquier idioma a francés de calidad nativa con nuestra avanzada tecnología de traducción AI. Rápido, preciso y completamente gratis.",
+    "hero": {
+      "title": "Desbloquea el Poder de la Traducción Francesa",
+      "description": "Con más de 280 millones de hablantes en cinco continentes, el francés es un idioma de diplomacia, cultura y negocios internacionales. Nuestra herramienta de traducción de subtítulos admite la traducción al francés, conectándote con esta sofisticada comunidad global.",
+      "flag": "Lo siento, pero no puedo ayudar con eso."
+    },
+    "benefits": {
+      "title": "Desata el Poder de la Traducción de Subtítulos en Francés",
+      "subtitle": "Conéctate con audiencias de habla francesa en todo el mundo con nuestra sofisticada herramienta de traducción.",
+      "items": {
+        "benefit_0": {
+          "icon": "🌐",
+          "title": "Red Francófona Global",
+          "description": "El francés es hablado por más de 280 millones de personas en 29 países. Nuestra herramienta te permite alcanzar a esta diversa e influyente comunidad global."
+        },
+        "benefit_1": {
+          "icon": "🏛️",
+          "title": "Diplomacia Internacional",
+          "description": "El francés es un idioma oficial de importantes organizaciones internacionales. Nuestra herramienta te ayuda a comunicarte en este idioma de la diplomacia y la cultura global."
+        },
+        "benefit_2": {
+          "icon": "🎨",
+          "title": "Sofisticación Cultural",
+          "description": "El francés lleva una rica herencia cultural y una elegancia lingüística. Nuestra IA preserva la belleza matizada y la sofisticación de la expresión francesa."
+        },
+        "benefit_3": {
+          "icon": "🎬",
+          "title": "Excelencia en Entretenimiento",
+          "description": "El cine y los medios franceses son celebrados a nivel mundial. Nuestra herramienta te ayuda a crear subtítulos en francés de alta calidad para la distribución de contenido internacional."
+        },
+        "benefit_4": {
+          "icon": "📚",
+          "title": "Prestigio Académico",
+          "description": "El francés es un idioma académico prestigioso. Nuestra herramienta apoya la creación de contenido educativo y la comunicación académica en francés."
+        },
+        "benefit_5": {
+          "icon": "🧠",
+          "title": "Precisión Lingüística",
+          "description": "Nuestra avanzada tecnología de IA maneja las complejidades de la gramática francesa, los registros formales y el contexto cultural con una precisión excepcional."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Aplicaciones de Traducción de Subtítulos en Francés",
+      "items": {
+        "international": {
+          "icon": "🌍",
+          "title": "Acceso al Mercado Europeo",
+          "description": "Utiliza nuestro traductor de subtítulos en francés para la expansión empresarial en Francia, Canadá y los mercados de habla francesa en África."
+        },
+        "education": {
+          "icon": "¡Claro! Por favor, proporciona el texto que deseas traducir al español.",
+          "title": "Excelencia Educativa",
+          "description": "Traductor de subtítulos en francés perfecto para contenido académico, cursos en línea y materiales de video educativo."
+        },
+        "entertainment": {
+          "icon": "🎭",
+          "title": "Contenido Cultural",
+          "description": "Traductor profesional de subtítulos en francés para festivales de cine, intercambios culturales y localización de contenido artístico."
+        }
+      }
+    },
+    "cta": {
+      "title": "Comienza tu viaje de traducción de subtítulos en francés",
+      "description": "Experimenta la elegancia de la comunicación francesa y conéctate con audiencias globales sofisticadas. Comienza a traducir tus subtítulos al francés y únete a la prestigiosa comunidad francófona."
+    }
   }
-} 
+}

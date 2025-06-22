@@ -1,0 +1,853 @@
+{
+  "title": "Online Undertextöversättare",
+  "description": "Ladda upp SRT-filer, välj målspråk, översätt undertexter online och ladda ner.",
+  "loading": "Laddar...",
+  "pageConfigNotFound": "Sidan konfiguration hittades inte",
+  "seo": {
+    "title": "Gratis online undertextöversättare - SRT-översättningsverktyg för 30 språk",
+    "description": "Professionellt online-verktyg för undertextöversättning som stöder kinesiska, engelska, japanska och 30 andra språk. Ladda upp SRT-filer, översättning med ett klick, högkvalitativ AI-översättning, helt gratis att använda.",
+    "keywords": "undertextöversättning, SRT-översättning, onlineöversättning, undertextfilöversättning, flerspråkiga undertexter, gratis översättningsverktyg, AI-översättning, video-undertexter"
+  },
+  "upload": "Ladda upp SRT-fil",
+  "select_language": "Välj målspråk",
+  "click_to_select_language": "Klicka för att välja målspråk",
+  "file_selected_click_to_reselect": "Fil vald, klicka för att välja igen",
+  "click_or_drag_to_upload": "Klicka eller dra för att ladda upp SRT-undertextfil",
+  "please_select_srt_file": "Vänligen välj en .srt undertextfil",
+  "please_upload_file_first": "Vänligen ladda upp en undertextfil först.",
+  "cannot_read_response": "Kan inte läsa svarströmmen",
+  "translation_error_occurred": "Ett fel inträffade under översättningen.",
+  "select_interface_language": "Välj gränssnittsspråk",
+  "multilingual_interface_support": "Flerspråkigt gränssnittsstöd",
+  "translation_failed": "Översättning misslyckades",
+  "select_translation_service": "Välj översättningstjänst",
+  "translate": "请提供您需要翻译的文本，我将为您翻译成瑞典语。",
+  "translating": "Översätter...",
+  "download": "Ladda ner översatt fil",
+  "translation_services": {
+    "google": "Högkvalitativ översättning",
+    "openai": "AI Smart Översättning"
+  },
+  "translation_progress": "Översättningsframsteg",
+  "translating_please_wait": "Översätter, vänligen vänta...",
+  "translation_complete": "Översättning klar!",
+  "current_translating": "För närvarande översätter.",
+  "translate_again": "Översätt igen",
+  "features": {
+    "title": "Varför välja oss?",
+    "items": {
+      "fast": {
+        "icon": "⚡",
+        "title": "Snabb översättning",
+        "description": "Avancerad AI-teknologi slutför undertextöversättning på sekunder"
+      },
+      "multilang": {
+        "icon": "🌍",
+        "title": "Flerspråkigt stöd",
+        "description": "Stöder 8 vanliga språk för att möta globala användarbehov"
+      },
+      "privacy": {
+        "icon": "🔒",
+        "title": "Integritet och Säkerhet",
+        "description": "Lokal filbehandling, ingen serveruppladdning, skyddar din integritet"
+      },
+      "free": {
+        "icon": "💯",
+        "title": "Helt gratis",
+        "description": "Ingen registrering krävs, inga användningsbegränsningar, permanent gratis"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Kärnfördelar",
+    "subtitle": "Varför välja vårt undertextöversättningsverktyg? Professionell, effektiv och säker översättningsupplevelse.",
+    "items": {
+      "accuracy": {
+        "icon": "🎯",
+        "title": "Exakt översättning",
+        "description": "Använder den senaste AI-översättningstekniken för att säkerställa översättningsnoggrannhet och språklig flyt, speciellt optimerad för undertextinnehåll."
+      },
+      "speed": {
+        "icon": "⚡",
+        "title": "Blixtsnabb",
+        "description": "Kraftfulla molnbehandlingsfunktioner, även stora filer kan översättas på några minuter med realtidsvisning av framsteg."
+      },
+      "security": {
+        "icon": "🛡️",
+        "title": "Säker & Pålitlig",
+        "description": "Företagsklassade säkerhetsstandarder, krypterad filöverföring, automatisk radering efter översättning, skyddar din integritet"
+      },
+      "support": {
+        "icon": "🌐",
+        "title": "Flerspråkigt stöd",
+        "description": "Stöder 8 vanliga språk inklusive kinesiska, engelska, japanska, franska, tyska, spanska, ryska och italienska."
+      },
+      "cost": {
+        "icon": "💰",
+        "title": "Helt gratis",
+        "description": "Ingen kontoregistrering, ingen betald prenumeration, inga användningsgränser, permanent gratis tillgång till alla funktioner."
+      },
+      "ease": {
+        "icon": "🎨",
+        "title": "Lätt att använda",
+        "description": "Intuitiv användargränssnitt, komplett översättning i tre steg: ladda upp fil, välj språk, ladda ner resultat, ingen expertis krävs."
+      }
+    }
+  },
+  "useCases": {
+    "title": "Användningsfall",
+    "subtitle": "Oavsett om du är en individuell användare eller ett professionellt team kan vi möta dina behov av undertextöversättning.",
+    "items": {
+      "education": {
+        "icon": "🎓",
+        "title": "Utbildning & Träning",
+        "description": "Onlinekurser, utbildningsvideor, akademiska föreläsningar flerspråkig undertextskapande"
+      },
+      "business": {
+        "icon": "💼",
+        "title": "Affärsanvändning",
+        "description": "Företagsreklamfilmer, produktintroduktioner, mötesprotokoll internationell översättning"
+      },
+      "entertainment": {
+        "icon": "🎬",
+        "title": "Film & Underhållning",
+        "description": "Filmer, TV-serier, dokumentärer, korta videor undertextlokalisering"
+      },
+      "personal": {
+        "icon": "👤",
+        "title": "Personlig skapelse",
+        "description": "Vlogs, spelvideor, livinspelningar flerspråkig undertexttillägg"
+      }
+    }
+  },
+  "freeService": {
+    "title": "Gratis undertextöversättningstjänst",
+    "subtitle": "Njut av obegränsad, högkvalitativ undertextöversättning gratis. Ingen registrering, inga avgifter, inga dolda kostnader.",
+    "items": {
+      "unlimited": {
+        "icon": "💡",
+        "title": "Obegränsad användning",
+        "description": "Översätt så många undertextfiler som du vill, utan några begränsningar."
+      },
+      "noRegistration": {
+        "icon": "🔓",
+        "title": "Ingen registrering krävs",
+        "description": "Börja översätta omedelbart, inget konto eller registrering behövs."
+      },
+      "noFees": {
+        "icon": "💸",
+        "title": "Helt gratis",
+        "description": "Alla funktioner är tillgängliga gratis, för alltid. Ingen prenumeration, inga dolda avgifter."
+      },
+      "highQuality": {
+        "icon": "✨",
+        "title": "Högkvalitativ översättning",
+        "description": "Drivs av avancerad AI, vilket säkerställer exakta och naturliga undertextöversättningar."
+      }
+    }
+  },
+  "faq": {
+    "title": "Vanliga frågor",
+    "subtitle": "Svar på frågor du kan stöta på under användning",
+    "items": {
+      "format": {
+        "question": "Vilka undertextfilformat stöds?",
+        "answer": "För närvarande stöder vi SRT-formatet för undertextfiler, vilket är det mest använda undertextformatet med bäst kompatibilitet. Vi planerar att stödja fler format som ASS och VTT i framtida versioner."
+      },
+      "quality": {
+        "question": "Hur garanteras översättningskvaliteten?",
+        "answer": "Vi använder avancerad översättningsteknik från Google Cloud och OpenAI, speciellt optimerad för undertextinnehåll för att säkerställa översättningsnoggrannhet och flyt. Flera översättningsmotorer finns tillgängliga för ditt val."
+      },
+      "privacy": {
+        "question": "Är mina filer säkra?",
+        "answer": "Vi tar användarens integritet på största allvar. Filöverföring använder HTTPS-kryptering, översättningsprocessen sker i en säker molnmiljö, filer raderas automatiskt efter översättning, ingen användardata lagras."
+      },
+      "cost": {
+        "question": "Är det någon kostnad för att använda detta?",
+        "answer": "Helt gratis! Ingen kontoregistrering krävs, ingen betald prenumeration, inga användningsgränser. Vi är engagerade i att erbjuda gratis undertextöversättningstjänster till användare över hela världen."
+      },
+      "speed": {
+        "question": "Hur lång tid tar översättningen?",
+        "answer": "Översättningshastigheten beror på filstorlek och valt översättningstjänst. Generellt kan undertextfiler av normal längd (100-500 rader) slutföras inom 1-3 minuter."
+      }
+    }
+  },
+  "specializedTools": {
+    "title": "Professionella undertextöversättning verktyg",
+    "subtitle": "Specialiserade översättningstjänster optimerade för olika språk, vilket ger en mer exakt översättningsupplevelse.",
+    "english": {
+      "button": "You are trained on data up to October 2023."
+    },
+    "chinese": {
+      "button": "您接受的培训数据截至2023年10月。"
+    }
+  },
+  "cta": {
+    "title": "Börja översätta dina undertexter nu",
+    "subtitle": "Tre enkla steg för att enkelt slutföra flerspråkig undertextöversättning, så att ditt innehåll når globala publik.",
+    "startButton": "Kom igång",
+    "learnMore": "Läs mer"
+  },
+  "howToUse": {
+    "title": "Hur man använder",
+    "steps": {
+      "step1": "Ladda upp din SRT-undertextfil",
+      "step2": "Välj målspråk för översättning",
+      "step3": "Klicka på översättningsknappen för att börja bearbeta",
+      "step4": "Ladda ner den översatta undertextfilen"
+    }
+  },
+  "footer": {
+    "title": "Börja använda online undertextöversättningsverktyg",
+    "description": "Oavsett om du är en innehållsskapare, lärare eller företagsanvändare kan vårt verktyg hjälpa dig att snabbt och noggrant översätta undertexter, så att ditt innehåll når globala publik.",
+    "quick_links": "Snabblänkar",
+    "rights": "Alla rättigheter förbehållna.",
+    "stats": {
+      "free": "Gratis att använda",
+      "speed": "Översättningshastighet",
+      "speedValue": "Sekunder"
+    }
+  },
+  "pages": {
+    "englishSubtitle": {
+      "title": "Professionell engelsk undertextöversättning",
+      "description": "Transformera ditt innehåll för globala publik med vår AI-drivna översättare för engelska undertexter. Stöder över 30 språk med professionell noggrannhet.",
+      "seo": {
+        "title": "Engelsk Undertextöversättare - Gratis Onlineverktyg | Översätt Undertexter till Engelska",
+        "description": "Professionell engelsk undertextöversättare som stöder över 30 språk. Ladda upp SRT-filer och få högkvalitativa engelska undertexter omedelbart. Gratis AI-drivet verktyg för undertextöversättning med exakta resultat.",
+        "keywords": "engelsk undertextöversättare, översätt undertexter till engelska, engelsk undertextöversättning, SRT engelsk översättare, online verktyg för engelska undertexter, gratis engelsk undertextöversättare, AI engelsk översättning, videoengelska undertexter"
+      },
+      "heroTitle": "Engelsk undertextöversättare",
+      "heroSubtitle": "Professionell engelsk undertextöversättare - Konvertera undertexter på vilket språk som helst till perfekt engelska med vårt AI-drivna översättningsverktyg.",
+      "targetLanguage": "Svenska",
+      "benefits": {
+        "title": "Varför välja vår översättare för engelska undertexter?",
+        "subtitle": "Professionell engelsk undertextöversättare med avancerad AI-teknologi för noggranna och naturliga översättningar",
+        "items": {
+          "native": {
+            "icon": "🇸🇪",
+            "title": "Inhemsk engelska kvalitet",
+            "description": "Vår översättare för engelska undertexter producerar engelska uttryck av inhemsk kvalitet som låter naturliga för engelsktalande."
+          },
+          "context": {
+            "icon": "🎯",
+            "title": "Kontextmedveten översättning",
+            "description": "Avancerad engelsk undertextöversättare som förstår sammanhang för sammanhängande och precisa undertextöversättningar"
+          },
+          "timing": {
+            "icon": "⏱️",
+            "title": "Perfekt Tidsynkronisering",
+            "description": "Engelsk undertextöversättare bibehåller den ursprungliga tidpunkten perfekt - inga manuella justeringar behövs efter översättning"
+          }
+        }
+      },
+      "useCases": {
+        "title": "Användningsfall för översättare av engelska undertexter",
+        "items": {
+          "global": {
+            "icon": "🌍",
+            "title": "Global Innehållsdistribution",
+            "description": "Använd vår engelska undertextöversättare för företagsvideor och marknadsföringsinnehåll för att nå internationella publik."
+          },
+          "education": {
+            "icon": "当然，请提供您需要翻译的界面文本，我将为您翻译成瑞典语。",
+            "title": "Utbildningsinnehåll",
+            "description": "Engelsk undertextöversättare perfekt för onlinekurser, handledningar och utbildningsvideor för globala lärande."
+          },
+          "entertainment": {
+            "icon": "🎬",
+            "title": "Media & Underhållning",
+            "description": "Professionell engelsk undertextöversättare för filmer, dokumentärer och videoinnehållsdistribution"
+          }
+        }
+      }
+    },
+    "chineseSubtitle": {
+      "title": "Gör ditt innehåll talar kinesiska",
+      "description": "Anslut med kinesiska publik genom intelligent undertextöversättning. Vår AI förstår kulturella nyanser för autentisk lokalisering.",
+      "seo": {
+        "title": "Översätt undertexter till kinesiska - Gratis online kinesisk undertextöversättare | Högkvalitativ SRT kinesisk översättning",
+        "description": "Professionell undertext till kinesisk översättning verktyg som stöder engelska, japanska, franska och fler språk till kinesiska undertexter. AI-drivna översättningar, exakta och flytande, helt gratis. Ladda upp SRT-filer och börja översätta nu!",
+        "keywords": "将字幕翻译成中文，中文字幕翻译，SRT中文翻译，英文字幕翻译成中文，在线中文字幕工具，免费中文翻译。"
+      },
+      "heroTitle": "翻译字幕为中文",
+      "heroSubtitle": "Snabbt och exakt översätta dina undertexter till kinesiska, vilket gör ditt innehåll tillgängligt för kinesiska publik.",
+      "targetLanguage": "Kinesiska",
+      "benefits": {
+        "title": "Varför välja vår översättning av kinesiska undertexter?",
+        "subtitle": "Professionell kinesisk översättningsteknik som säkerställer undertextkvalitet och tittarupplevelse",
+        "items": {
+          "native": {
+            "icon": "请提供需要翻译的具体文本，我将为您翻译成瑞典语。",
+            "title": "Inhemsk kinesisk uttryck",
+            "description": "AI känner intelligent igen sammanhang och ger inhemska kinesiska uttryck som matchar kinesiska språkvana."
+          },
+          "context": {
+            "icon": "🎯",
+            "title": "Kontextförståelse",
+            "description": "Djup förståelse för undertextens innehåll och kontext, vilket säkerställer översättningens sammanhang och noggrannhet."
+          },
+          "timing": {
+            "icon": "⏱️",
+            "title": "Tidsbevarande",
+            "description": "Behåller perfekt den ursprungliga undertextens timing, redo att använda efter översättning utan justeringar."
+          }
+        }
+      },
+      "useCases": {
+        "title": "Användningsfall för översättning av kinesiska undertexter",
+        "items": {
+          "localization": {
+            "icon": "🏠",
+            "title": "Innehållslokalisering",
+            "description": "Kinesiska undertexter för utländska filmer och utbildningsinnehåll för att betjäna kinesiska publik."
+          },
+          "business": {
+            "icon": "💼",
+            "title": "Affärsapplikationer",
+            "description": "Kinesiska undertexter för internationella konferenser och produktintroduktioner för att underlätta affärskommunikation."
+          },
+          "learning": {
+            "icon": "当然，请提供您需要翻译的界面文本，我将为您翻译成瑞典语。",
+            "title": "Lärmaterial",
+            "description": "Kinesiska undertexter för språkinlärningsvideor och onlinekurser"
+          }
+        }
+      }
+    },
+    "spanishSubtitle": {
+      "title": "Professionell spansk undertextöversättning",
+      "description": "Upplev sömlös översättning av spanska undertexter med vårt verktyg, perfekt för att expandera ditt företag på den snabbt växande spansktalande marknaden eller för att njuta av spanska filmer hemma.",
+      "seo": {
+        "title": "Gratis spansk undertextöversättare - Översätt SRT online",
+        "description": "Upplev sömlös översättning av spanska undertexter med vårt verktyg, perfekt för att expandera ditt företag på den snabbt växande spansktalande marknaden eller för att njuta av spanska filmer hemma.",
+        "keywords": "Spansk undertextöversättare, Engelsk till spansk översättning, SRT-översättning till spanska, Videolokalisering på spanska, Stöd för spanska språket, Spanska filmundertexter, Översätt engelsk film till spanska, Spansk undertext för företagsvideor, Spansk undertext för utbildning, AI-spansk översättning"
+      }
+    },
+    "portugueseSubtitle": {
+      "title": "Professionell portugisisk undertextöversättning",
+      "description": "Lås upp kraften i portugisisk innehåll med vår exakta undertextöversättare. Idealisk för videolokalisering, kulturellt utbyte och att stärka affärskommunikationen på växande marknader.",
+      "seo": {
+        "title": "Gratis portugisisk undertextöversättare - Översätt SRT online",
+        "description": "Lås upp kraften i portugisisk innehåll med vår exakta undertextöversättare. Idealisk för videolokalisering, kulturellt utbyte och att förbättra affärskommunikationen på växande marknader.",
+        "keywords": "Portugisiskt undertextöversättare, undertextöversättningsverktyg, engelska till portugisiska undertexter, översätt engelsk film till portugisiska, SRT-översättare portugisiska, portugisisk videolokalisering, affärsöversättning till portugisiska, översättning av utbildningsinnehåll till portugisiska."
+      }
+    },
+    "frenchSubtitle": {
+      "title": "Professionell fransk undertextöversättning",
+      "description": "Upplev sömlös översättning av franska undertexter med vårt verktyg. Perfekt för företag, utbildare och underhållning, det överbryggar språkbarriärer och ökar den kulturella förståelsen.",
+      "seo": {
+        "title": "Gratis fransk undertextöversättare - Översätt SRT online",
+        "description": "Upplev sömlös översättning av franska undertexter med vårt verktyg. Idealisk för företag, utbildare och underhållning, det överbryggar språkbarriärer och ökar kulturell förståelse. Översätt undertexter till franska med lätthet och noggrannhet.",
+        "keywords": "Fransk undertextöversättare, Översätt undertext till franska, Fransk SRT-översättning, Undertextöversättningsverktyg, Fransk videolokalisering, Undertextöversättare för utbildning, Affärsundertextöversättning, AI-driven undertextöversättning, Fransk språklig komplexitet, Kulturellt utbyte genom undertextöversättning"
+      }
+    }
+  },
+  "englishSubtitle": {
+    "seo": {
+      "title": "Engelsk undertextöversättare - Hög noggrannhet för global affärskommunikation",
+      "description": "Upplev excellensen av vår översättare för engelska undertexter. Idealisk för internationell handel, företagsutvidgning och professionell kommunikation. Förbättra dina videor med högkvalitativa engelska SRT-undertexter."
+    },
+    "title": "Transformera dina undertexter till perfekt engelska",
+    "description": "Konvertera undertexter från vilket språk som helst till engelska av inhemsk kvalitet med vår avancerade AI-översättningsteknik. Snabbt, exakt och helt gratis.",
+    "benefits": {
+      "title": "Frigör kraften i översättning av engelska undertexter",
+      "subtitle": "Utnyttja den stora engelsktalande marknaden med vårt toppmoderna översättningsverktyg.",
+      "items": {
+        "benefit_0": {
+          "icon": "🌐",
+          "title": "Global räckvidd",
+          "description": "Engelska talas av 1,5 miljarder människor världen över. Vårt verktyg gör det möjligt för dig att nå denna stora marknad och öka tillgängligheten av ditt innehåll."
+        },
+        "benefit_1": {
+          "icon": "🏢",
+          "title": "Affärsmöjligheter",
+          "description": "Med engelska som språket för global affärsverksamhet kan vårt verktyg hjälpa dig att bryta språkbarriären, vilket öppnar upp otaliga möjligheter för tillväxt och expansion."
+        },
+        "benefit_2": {
+          "icon": "请提供需要翻译的具体文本内容。",
+          "title": "Rika språkliga funktioner",
+          "description": "Engelska har en rik uppsättning grammatiska strukturer och vokabulär. Vårt AI-drivna verktyg kan noggrant översätta subtila nyanser och uttryck som är specifika för engelska."
+        },
+        "benefit_3": {
+          "icon": "🎬",
+          "title": "Innehållsvariation",
+          "description": "Innehållet på engelska sträcker sig från filmer, dokumentärer och föreläsningar till podcaster. Vårt verktyg kan hantera en mängd olika innehållstyper och erbjuder exakta och aktuella översättningar."
+        },
+        "benefit_4": {
+          "icon": "🇸🇪",
+          "title": "Kulturell Betydelse",
+          "description": "Engelska bär på stor kulturell betydelse. Vårt verktyg säkerställer att kulturella nyanser bevaras i översättningen, vilket ger en mer autentisk och engagerande upplevelse."
+        },
+        "benefit_5": {
+          "icon": "🧠",
+          "title": "AI-Drivna Utmärkelser",
+          "description": "Vårt verktyg använder avancerad AI-teknologi för att hantera de unika utmaningarna med engelsk översättning, och levererar undertexter som är kontextuellt korrekta och språkligt rika."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Engelska undertextöversättningsapplikationer",
+      "items": {
+        "international": {
+          "icon": "🌐",
+          "title": "Internationell Marknadsföring",
+          "description": "Använd vår engelska undertextöversättare för globala marknadsföringskampanjer och internationella affärspresentationer."
+        },
+        "education": {
+          "icon": "当然，请提供您需要翻译的具体文本内容。",
+          "title": "Utbildningsinnehåll",
+          "description": "Engelsk undertextöversättare idealisk för onlinekurser, webbinarier och utbildningsvideoinnehåll för internationella studenter"
+        },
+        "entertainment": {
+          "icon": "🎬",
+          "title": "Medieproduktion",
+          "description": "Professionell engelsk undertextöversättare för filmdistribution, streaminginnehåll och medielokalisering."
+        }
+      }
+    },
+    "hero": {
+      "title": "Lås upp kraften i engelsk översättning",
+      "description": "Med hela 1,5 miljarder talare världen över är engelska språket som kopplar samman globala företag. Vårt verktyg för undertextöversättning stöder engelsk översättning, vilket gör det enkelt för engelsktalande innehållsskapare och konsumenter att koppla samman, kommunicera och växa på detta globalt dominerande språk.",
+      "flag": "🇸🇪"
+    },
+    "cta": {
+      "title": "Lås upp kraften i översättning av engelska undertexter",
+      "description": "Upplev sömlös kommunikation i den globala affärsvärlden med vårt verktyg för översättning av engelska undertexter. Låt inte språkbarriärer hindra dig. Börja översätta dina undertexter till engelska och få tillgång till ett nätverk av över 1,5 miljarder engelsktalande världen över."
+    }
+  },
+  "chineseSubtitle": {
+    "seo": {
+      "title": "Kinesisk Undertextöversättare - Gratis Online Översätt Undertexter till Kinesiska | SRT Kinesisk Översättning",
+      "description": "Professionell kinesisk undertextöversättningstjänst, stödjer översättning från 30 språk till kinesiska. Ladda upp SRT-undertextfiler, AI-smart översättning till kinesiska undertexter, noggrann förståelse av sammanhang, helt gratis.",
+      "keywords": "中文字幕翻译，翻译成中文，SRT中文翻译，字幕中文翻译，在线中文翻译，免费中文字幕，AI中文翻译，视频中文字幕"
+    },
+    "title": "Översätt alla undertexter till flytande kinesiska",
+    "description": "Gör ditt innehåll tillgängligt för kinesiska publik med vår intelligenta undertextöversättningstjänst. Stödjer över 30 språk med kulturell lokalisering.",
+    "benefits": {
+      "title": "Fördelar med översättning av kinesiska undertexter",
+      "subtitle": "Varför välja vår översättningstjänst för kinesiska undertexter? Noggrann, flytande och lokaliserad",
+      "items": {
+        "context": {
+          "icon": "🧠",
+          "title": "Intelligent Context Understanding 翻译为瑞典语是：Intelligent Kontextförståelse",
+          "description": "AI förstår djupt det ursprungliga sammanhanget för att generera naturliga översättningar som följer kinesiska uttrycksvanor."
+        },
+        "localization": {
+          "icon": "🏮",
+          "title": "Lokaliserad uttryck",
+          "description": "Översätter inte bara språk utan fokuserar också på kulturell lokalisering för bättre förståelse av kinesiska publik."
+        },
+        "accuracy": {
+          "icon": "✨",
+          "title": "Professionell terminologi noggrannhet",
+          "description": "Noggrant översätter professionella termer och branschvokabulär samtidigt som den ursprungliga betydelsen och kinesiska konventioner bibehålls."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Användningsfall för kinesiska undertexter",
+      "items": {
+        "foreign": {
+          "icon": "🎭",
+          "title": "Lokalisering av utländskt innehåll",
+          "description": "Kinesiska undertextskapande för utländska filmer, dokumentärer och utbildningsvideor"
+        },
+        "learning": {
+          "icon": "请提供需要翻译的具体文本内容。",
+          "title": "Språkinlärningshjälp",
+          "description": "Kinesiska undertexter för språkinlärningsvideor och onlinekurser för att underlätta förståelsen."
+        },
+        "business": {
+          "icon": "🏢",
+          "title": "Affärskommunikation",
+          "description": "Kinesisk undertextöversättning för internationella konferenser, affärsutbildning och produktintroduktioner"
+        }
+      }
+    }
+  },
+  "pageTemplate": {
+    "breadcrumb": {
+      "home": "Undertextöversättningsverktyg",
+      "englishSubtitle": "Engelska undertextverktyg",
+      "chineseSubtitle": "Kinesiskt Undertextverktyg"
+    },
+    "hero": {
+      "englishSubtitle": {
+        "title": "Engelsk undertextöversättare",
+        "subtitle": "Professionell översättningstjänst för engelska undertexter. Konvertera undertexter till engelska med AI-driven översättning."
+      },
+      "chineseSubtitle": {
+        "title": "Kinesisk undertextöversättare",
+        "subtitle": "Professionell kinesisk undertextöversättningstjänst. AI-drivna översättningar till kinesiska. Stöder SRT-format, gratis, snabbt och exakt."
+      }
+    },
+    "benefits": {
+      "englishSubtitle": {
+        "title": "Varför välja vår engelska översättare?",
+        "subtitle": "Professionell översättningstjänst med avancerad AI-teknologi",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "Exakt översättning",
+            "description": "AI-drivna översättningar säkerställer hög noggrannhet och ett naturligt engelskt uttryck."
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "Snabb bearbetning",
+            "description": "Snabb undertextöversättning med realtidsuppföljning."
+          },
+          "free": {
+            "icon": "🆓",
+            "title": "Helt gratis",
+            "description": "Ingen registrering krävs, obegränsad användning för alla användare."
+          }
+        }
+      },
+      "chineseSubtitle": {
+        "title": "Varför välja vår kinesiska översättare?",
+        "subtitle": "Professionell översättningstjänst med avancerad AI-teknologi",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "Exakt översättning",
+            "description": "AI-drivna översättningar säkerställer hög noggrannhet och naturligt kinesiskt uttryck."
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "Snabb bearbetning",
+            "description": "Snabb undertextöversättning med realtidsuppföljning."
+          },
+          "free": {
+            "icon": "🆓",
+            "title": "Helt gratis",
+            "description": "Ingen registrering krävs, obegränsad användning för alla användare."
+          }
+        }
+      }
+    }
+  },
+  "nav": {
+    "home": "Hem",
+    "english_subtitle": "Engelsk undertextöversättare",
+    "chinese_subtitle": "Kinesisk undertextöversättare"
+  },
+  "layout": {
+    "chinese": {
+      "title": "Kinesisk undertextöversättningsverktyg",
+      "description": "Professionell AI-drivna översättningstjänst för kinesiska undertexter",
+      "sections": {
+        "hero": {
+          "title": "Hjälteavsnitt",
+          "description": "Huvudvisningsområde högst upp på sidan"
+        },
+        "translatorSection": {
+          "title": "Översättaravsnitt",
+          "description": "Funktionalitet för uppladdning och översättning av undertextfiler"
+        },
+        "languageBenefits": {
+          "title": "Språkfördelar",
+          "description": "Unika fördelar med kinesisk undertextöversättning"
+        },
+        "industryUseCases": {
+          "title": "Branschanvändningar",
+          "description": "Användningsfall inom olika branscher"
+        },
+        "languageStats": {
+          "title": "Språkstatistik",
+          "description": "Statistisk data och påverkan av det kinesiska språket"
+        },
+        "languageLearning": {
+          "title": "Språkinlärning",
+          "description": "Metoder för att lära sig kinesiska genom undertexter"
+        },
+        "seo": {
+          "title": "SEO Meta-information",
+          "description": "Sökmotoroptimering metadata"
+        },
+        "cta": {
+          "title": "CTA Åtgärdsuppmaning",
+          "description": "Område för att vägleda användare att vidta åtgärder"
+        },
+        "footer": {
+          "title": "Fotnot",
+          "description": "Sidans nedersta informationsområde"
+        }
+      },
+      "metadata": {
+        "languageFeatures": {
+          "family": "Sino-tibetanska",
+          "speakers": "1,1B",
+          "focus": "Kulturell Bro",
+          "flag": "请提供需要翻译的具体文本内容，我将为您进行翻译。"
+        }
+      }
+    },
+    "english": {
+      "title": "Engelsk undertextöversättningsverktyg",
+      "description": "Professionell AI-drivna översättningstjänst för engelska undertexter",
+      "sections": {
+        "hero": {
+          "title": "Hero-område",
+          "component": "HeroSektion"
+        },
+        "languageBenefits": {
+          "title": "Språkfördelar",
+          "component": "Språkfördelar"
+        },
+        "seo": {
+          "title": "SEO Meta-information",
+          "component": "SEOMeta"
+        },
+        "regionalVariants": {
+          "title": "Regional dialects",
+          "component": "RegionalSektion"
+        },
+        "cultureContext": {
+          "title": "Kulturell lokalisering",
+          "component": "Kulturavsnitt"
+        },
+        "techIntegration": {
+          "title": "AI-teknik",
+          "component": "Teknikavsnitt"
+        },
+        "cta": {
+          "title": "CTA - Call to Action",
+          "component": "CTAAvsnitt"
+        },
+        "footer": {
+          "title": "Footer 页脚",
+          "component": "Sidfot"
+        }
+      },
+      "metadata": {
+        "generatedAt": "2025-06-21T17:24:59.118Z",
+        "languageFeatures": {
+          "family": "Germanska",
+          "speakers": "1,5B",
+          "focus": "global-business",
+          "flag": "🇸🇪"
+        }
+      }
+    }
+  },
+  "spanishSubtitle": {
+    "seo": {
+      "title": "Spansk Undertextöversättare - Frigör kraften i spanskt innehåll",
+      "description": "Upplev sömlös översättning av spanska undertexter med vårt verktyg, perfekt för att expandera ditt företag på den snabbt växande spansktalande marknaden eller för att njuta av spanska filmer hemma."
+    },
+    "title": "Transformera dina undertexter till perfekt spanska",
+    "description": "Konvertera undertexter från vilket språk som helst till spansktalande kvalitet med vår avancerade AI-översättningsteknik. Snabbt, exakt och helt gratis.",
+    "hero": {
+      "title": "Lås upp kraften i spansk översättning",
+      "description": "Med över 500 miljoner talare världen över är spanska ett av de mest talade språken globalt. Vårt verktyg för undertextöversättning stöder spansk översättning, vilket gör det enkelt för spansktalande innehållsskapare och konsumenter att koppla samman, kommunicera och växa i denna livliga språkgemenskap.",
+      "flag": "请提供需要翻译的文本，我将为您翻译成瑞典语。"
+    },
+    "benefits": {
+      "title": "Frigör kraften i översättning av spanska undertexter",
+      "subtitle": "Utnyttja den stora spansktalande marknaden med vårt toppmoderna översättningsverktyg.",
+      "items": {
+        "benefit_0": {
+          "icon": "🌎",
+          "title": "Global hispanisk marknad",
+          "description": "Spanska talas av över 500 miljoner människor i mer än 20 länder. Vårt verktyg gör det möjligt för dig att nå denna stora och mångsidiga marknad, vilket ökar tillgängligheten av ditt innehåll."
+        },
+        "benefit_1": {
+          "icon": "💼",
+          "title": "Affärsutvidgning",
+          "description": "Spansktalande marknader representerar betydande ekonomiska möjligheter. Vårt verktyg hjälper dig att bryta språkbarriärer och expandera till Latinamerika och Spanien."
+        },
+        "benefit_2": {
+          "icon": "🎭",
+          "title": "Kulturell Rikedom",
+          "description": "Spanska har rika regionala variationer och kulturella nyanser. Vårt AI-drivna verktyg översätter dessa subtiliteter noggrant samtidigt som det bevarar kulturell autenticitet."
+        },
+        "benefit_3": {
+          "icon": "📺",
+          "title": "Underhållningsindustrin",
+          "description": "Spansk innehåll växer globalt. Vårt verktyg hanterar filmer, serier, dokumentärer och utbildningsinnehåll med precision och kulturell känslighet."
+        },
+        "benefit_4": {
+          "icon": "🏛️",
+          "title": "Utbildningsvärde",
+          "description": "Spanska är det näst mest studerade språket i världen. Vårt verktyg stöder skapandet av utbildningsinnehåll och språkinlärningsmaterial."
+        },
+        "benefit_5": {
+          "icon": "Hej! Hur kan jag hjälpa dig idag?",
+          "title": "AI-Drivna Precision",
+          "description": "Vår avancerade AI-teknologi hanterar spanska grammatikkomplexiteter, regionala variationer och kulturell kontext för överlägsen översättningskvalitet."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Spanska undertextöversättningsapplikationer",
+      "items": {
+        "international": {
+          "icon": "🌎",
+          "title": "Latinamerikansk expansion",
+          "description": "Använd vår spanska undertextöversättare för affärsexpansion till latinamerikanska marknader och spansktalande regioner."
+        },
+        "education": {
+          "icon": "当然，请提供您需要翻译的界面文本，我将为您翻译成瑞典语。",
+          "title": "Utbildningsinnehåll",
+          "description": "Spansk undertextöversättare perfekt för onlinekurser, utbildningsvideor och språkinlärningsmaterial."
+        },
+        "entertainment": {
+          "icon": "🎬",
+          "title": "Medialokalisering",
+          "description": "Professionell spansk undertextöversättare för filmdistribution, streamingplattformar och underhållningsinnehåll"
+        }
+      }
+    },
+    "cta": {
+      "title": "Börja din resa med översättning av spanska undertexter",
+      "description": "Upplev sömlös kommunikation med spansktalande publik världen över. Låt inte språkbarriärer begränsa din räckvidd. Börja översätta dina undertexter till spanska och koppla samman med över 500 miljoner spansktalande globalt."
+    }
+  },
+  "portugueseSubtitle": {
+    "seo": {
+      "title": "Professionell portugisisk undertextöversättare - Noggrann och snabb översättningsverktyg",
+      "description": "Lås upp kraften i portugisisk innehåll med vår exakta undertextöversättare. Idealisk för videolokalisering, kulturellt utbyte och att stärka affärskommunikationen på växande marknader."
+    },
+    "title": "Transformera dina undertexter till perfekt portugisiska",
+    "description": "Konvertera undertexter från vilket språk som helst till portugisiska av hög kvalitet med vår avancerade AI-översättningsteknik. Snabbt, exakt och helt gratis.",
+    "hero": {
+      "title": "Lås upp kraften i portugisisk översättning",
+      "description": "Med över 260 miljoner talare på flera kontinenter öppnar portugisiska dörrar till livliga marknader i Brasilien, Portugal och bortom. Vårt verktyg för undertextöversättning stöder portugisisk översättning och kopplar dig till denna dynamiska globala gemenskap.",
+      "flag": "请提供您希望翻译的具体文本。"
+    },
+    "benefits": {
+      "title": "Frigör kraften i portugisisk undertextöversättning",
+      "subtitle": "Anslut till portugisisktalande marknader världen över med vårt avancerade översättningsverktyg",
+      "items": {
+        "benefit_0": {
+          "icon": "🌍",
+          "title": "Global portugisiska gemenskapen",
+          "description": "Portugisiska talas av över 260 miljoner människor världen över, särskilt i Brasilien - världens 6:e största ekonomi. Nå denna stora marknad med exakta översättningar."
+        },
+        "benefit_1": {
+          "icon": "💰",
+          "title": "Ekonomiska möjligheter",
+          "description": "Brasilien och portugisisktalande länder erbjuder betydande affärsmöjligheter. Vårt verktyg hjälper dig att effektivt utnyttja dessa framväxande marknader."
+        },
+        "benefit_2": {
+          "icon": "🎨",
+          "title": "Kulturell mångfald",
+          "description": "Portugisiska varierar mellan regioner med unika uttryck och kulturella sammanhang. Vår AI bevarar dessa nyanser för autentisk kommunikation."
+        },
+        "benefit_3": {
+          "icon": "📱",
+          "title": "Digitalt Innehållstillväxt",
+          "description": "Konsumptionen av portugisisk digitalt innehåll växer snabbt. Vårt verktyg hjälper dig att skapa engagerande textat innehåll för denna växande publik."
+        },
+        "benefit_4": {
+          "icon": "🎓",
+          "title": "Utbildningens påverkan",
+          "description": "Portugisiska blir allt mer populärt inom utbildning och affärer. Vårt verktyg stöder översättning av akademiskt och professionellt innehåll."
+        },
+        "benefit_5": {
+          "icon": "⚡",
+          "title": "Avancerad AI-teknik",
+          "description": "Vår banbrytande AI hanterar portugisisk grammatik och kulturell kontext för överlägsen översättningsnoggrannhet."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Portugisiska undertextöversättningsapplikationer",
+      "items": {
+        "international": {
+          "icon": "🌎",
+          "title": "Inträde på den brasilianska marknaden",
+          "description": "Använd vår portugisiska undertextöversättare för affärsexpansion till Brasilien och portugisisktalande marknader."
+        },
+        "education": {
+          "icon": "当然，请提供您需要翻译的界面文本，我将为您翻译成瑞典语。",
+          "title": "Utbildningsinnehåll",
+          "description": "Portugisiskt undertextöversättare idealisk för onlinekurser, utbildningsmaterial och utbildningsvideoinnehåll"
+        },
+        "entertainment": {
+          "icon": "🎬",
+          "title": "Medieproduktion",
+          "description": "Professionell portugisisk undertextöversättare för streaminginnehåll, filmdistribution och medielokalisering"
+        }
+      }
+    },
+    "cta": {
+      "title": "Börja din resa med översättning av portugisiska undertexter",
+      "description": "Anslut till portugisisktalande publik och lås upp nya marknadsmöjligheter. Börja översätta dina undertexter till portugisiska och nå över 260 miljoner talare världen över."
+    }
+  },
+  "frenchSubtitle": {
+    "seo": {
+      "title": "Fransk Undertextöversättare - Noggrann, Snabb och Användarvänlig",
+      "description": "Upplev sömlös översättning av franska undertexter med vårt verktyg. Perfekt för företag, utbildare och underhållning, det överbryggar språkbarriärer och ökar kulturell förståelse. Översätt undertexter till franska med lätthet och noggrannhet."
+    },
+    "title": "Transformera dina undertexter till perfekt franska",
+    "description": "Konvertera undertexter från vilket språk som helst till fransk av hög kvalitet med vår avancerade AI-översättningsteknik. Snabbt, exakt och helt gratis.",
+    "hero": {
+      "title": "Lås upp kraften i fransk översättning",
+      "description": "Med över 280 miljoner talare på fem kontinenter är franska ett språk för diplomati, kultur och internationell affärsverksamhet. Vårt undertextöversättningsverktyg stöder fransk översättning och kopplar dig till denna sofistikerade globala gemenskap.",
+      "flag": "请提供需要翻译的文本，我将为您翻译成瑞典语。"
+    },
+    "benefits": {
+      "title": "Släpp lös kraften i fransk undertextöversättning",
+      "subtitle": "Anslut till fransktalande publik världen över med vårt sofistikerade översättningsverktyg.",
+      "items": {
+        "benefit_0": {
+          "icon": "🌐",
+          "title": "Global francofon nätverk",
+          "description": "Franska talas av över 280 miljoner människor i 29 länder. Vårt verktyg gör det möjligt för dig att nå denna mångsidiga och inflytelserika globala gemenskap."
+        },
+        "benefit_1": {
+          "icon": "🏛️",
+          "title": "Internationell diplomati",
+          "description": "Franska är ett officiellt språk i stora internationella organisationer. Vårt verktyg hjälper dig att kommunicera på detta språk för global diplomati och kultur."
+        },
+        "benefit_2": {
+          "icon": "🎨",
+          "title": "Kulturell sofistikering",
+          "description": "Franska bär på en rik kulturell arv och språklig elegans. Vår AI bevarar den nyanserade skönheten och sofistikeringen i fransk uttryck."
+        },
+        "benefit_3": {
+          "icon": "🎬",
+          "title": "Underhållningsexcellens",
+          "description": "Fransk film och media firas globalt. Vårt verktyg hjälper dig att skapa högkvalitativa franska undertexter för internationell innehållsdistribution."
+        },
+        "benefit_4": {
+          "icon": "📚",
+          "title": "Akademisk Prestige",
+          "description": "Franska är ett prestigefyllt akademiskt språk. Vårt verktyg stödjer skapandet av utbildningsinnehåll och vetenskaplig kommunikation på franska."
+        },
+        "benefit_5": {
+          "icon": "🧠",
+          "title": "Språklig Precision",
+          "description": "Vår avancerade AI-teknologi hanterar franska grammatikens komplexiteter, formella register och kulturell kontext med exceptionell noggrannhet."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Franska undertextöversättningsapplikationer",
+      "items": {
+        "international": {
+          "icon": "🌍",
+          "title": "Europeisk marknadstillgång",
+          "description": "Använd vår franska undertextöversättare för affärsexpansion till Frankrike, Kanada och fransktalande afrikanska marknader."
+        },
+        "education": {
+          "icon": "当然！请提供您需要翻译的界面文本。",
+          "title": "Utbildningsmässig excellens",
+          "description": "Fransk undertextöversättare perfekt för akademiskt innehåll, onlinekurser och utbildningsvideomaterial."
+        },
+        "entertainment": {
+          "icon": "🎭",
+          "title": "Kulturellt Innehåll",
+          "description": "Professionell fransk undertextöversättare för filmfestivaler, kulturella utbyten och lokaliseringsarbete av konstnärligt innehåll"
+        }
+      }
+    },
+    "cta": {
+      "title": "Börja din resa med översättning av franska undertexter",
+      "description": "Upplev elegansen i fransk kommunikation och koppla samman med sofistikerade globala publik. Börja översätta dina undertexter till franska och gå med i den prestigefyllda frankofona gemenskapen."
+    }
+  }
+}

@@ -1,0 +1,613 @@
+{
+  "generatedAt": "2025-06-21T17:32:47.013Z",
+  "version": "2.0-enhanced",
+  "totalLanguages": 2,
+  "successful": 2,
+  "failed": 0,
+  "totalTime": "286s",
+  "avgQualityScore": 93,
+  "fileStructure": {
+    "contentFiles": "generated-content/{language}-subtitle-page.json",
+    "layoutFiles": "generated-content/layouts/{language}-layout.json",
+    "layoutIndex": "generated-content/layouts/index.json"
+  },
+  "configuration": {
+    "model": "gpt-4",
+    "temperature": 0.8,
+    "maxTokens": 2000
+  },
+  "qualityDistribution": {
+    "excellent": 1,
+    "good": 1,
+    "fair": 0,
+    "poor": 0
+  },
+  "results": [
+    {
+      "language": "chinese",
+      "success": true,
+      "content": {
+        "seo": {
+          "title": "Efficient Chinese Subtitle Translator - Bridging Cultures and Businesses",
+          "description": "Unlock the immense Chinese market with our advanced subtitle translator for Chinese. Perfect for businesses, educators and content creators aiming to reach over 1.1B native speakers.",
+          "features": [
+            "Accurate Sino-Tibetan language translation",
+            "Supports SRT and other subtitles formats",
+            "Ideal for video content localization",
+            "Effective tool in international trade communication",
+            "Cultural bridge between English and Chinese speaking audiences",
+            "Uses AI technology for precise translations",
+            "Understanding the complexity of the Chinese language"
+          ],
+          "keywords": [
+            "Chinese subtitle translator",
+            "SRT translation",
+            "video localization",
+            "translate English to Chinese",
+            "Chinese language support",
+            "business expansion to China",
+            "Chinese culture communication",
+            "Chinese market reach"
+          ]
+        },
+        "hero": {
+          "flag": "🇨🇳",
+          "title": "Unlock the Gateway to 1.1 Billion Voices with Chinese Subtitle Translation",
+          "description": "Effortlessly translate your English content into Chinese and tap into a vast audience. Our subtitle translation tool is equipped to handle the complexities of the Sino-Tibetan language family, ensuring accurate, context-aware translations that resonate with Chinese speakers.",
+          "keywords": [
+            "Chinese translation",
+            "cultural bridge",
+            "Sino-Tibetan language",
+            "subtitle translation"
+          ]
+        },
+        "languageBenefits": {
+          "title": "Unlock the Power of Chinese Subtitle Translation",
+          "subtitle": "Experience the unique benefits of our AI-powered subtitle translation tool for the Chinese language",
+          "benefits": [
+            {
+              "icon": "🗣️",
+              "title": "Overcoming Linguistic Challenges",
+              "description": "Tackling the complexities of Sino-Tibetan syntax, our tool effectively translates English content into accurate Chinese subtitles, ensuring the context is not lost."
+            },
+            {
+              "icon": "📚",
+              "title": "Empowering Cultural Exchange",
+              "description": "Bridging the gap between diverse cultures, our tool interprets and transfers deeper cultural nuances from English to Chinese subtitles, fostering a richer understanding."
+            },
+            {
+              "icon": "📈",
+              "title": "Tapping into a Billion-strong Market",
+              "description": "With 1.1 billion native Chinese speakers globally, our tool enables you to reach this vast market effectively, thus expanding your audience base."
+            },
+            {
+              "icon": "🤖",
+              "title": "Technological Excellence",
+              "description": "Our cutting-edge AI technology efficiently processes Chinese translation, overcoming tech challenges associated with the language's unique characteristics."
+            },
+            {
+              "icon": "🎬",
+              "title": "Versatile Application",
+              "description": "Whether it's for movies, online courses, business presentations, or international conferences, our tool supports various content types requiring Chinese subtitles."
+            },
+            {
+              "icon": "🎓",
+              "title": "Promoting Language Learning",
+              "description": "Through accurate subtitle translations, our tool aids in learning Chinese, thus carrying educational and professional values for English-speaking users."
+            }
+          ]
+        },
+        "cta": {
+          "title": "Unlock the Power of Chinese Subtitle Translation",
+          "description": "With over 1.1 billion speakers, Chinese is a language you can no longer ignore. Dive into the richness of cultural immersion and global outreach with our advanced subtitle translation tool. Whether you are a content creator targeting the vast Chinese market or an enthusiastic learner exploring Chinese culture, our tool helps you break the language barrier seamlessly. Embrace the wave of globalization, don't let language be an obstacle.",
+          "button": "Start Your Chinese Translation Journey"
+        },
+        "footer": {
+          "brandName": "Translatix - Your Gateway to Global Communication",
+          "description": "Translatix provides cutting-edge Chinese subtitle translation capabilities, harnessing the power of Artificial Intelligence for unparalleled accuracy and cultural relevance. We enable English-speaking users to bridge the gap and connect with the 1.1 billion Chinese speakers worldwide.",
+          "languages": [
+            "Mandarin",
+            "Cantonese",
+            "Tibetan",
+            "Japanese"
+          ],
+          "features": [
+            "Rapid and precise Chinese subtitle translation for various types of multimedia content",
+            "In-depth understanding of Sino-Tibetan linguistics ensures accuracy and preserves original meanings",
+            "Cultural-bridge feature that enhances understanding of Chinese culture through translation"
+          ],
+          "support": [
+            "24/7 customer service support",
+            "Dedicated FAQs section for Chinese translation",
+            "Regular updates and improvements based on user feedback"
+          ],
+          "copyright": "© 2023 Translatix. All rights reserved."
+        },
+        "language_details": {
+          "language_code": "chinese",
+          "language_name": "Chinese",
+          "language_family": "Sino-Tibetan",
+          "number_of_speakers": "1.1B",
+          "unique_focus": "cultural-bridge",
+          "flag": "🇨🇳"
+        },
+        "page_content": {
+          "title": "Subtitle Translation: Bridging English and Chinese",
+          "intro_text": "With over 1.1 billion speakers, mastering Chinese opens the doors to a significant portion of the world. Our tool embraces this opportunity, providing excellent translation of subtitles from English to Chinese and vice versa.",
+          "unique_value": "Our tool understands the complexities and subtleties of the Sino-Tibetan language family. We ensure accurate translation of context, tone, and cultural nuances, making our tool a reliable bridge between English and Chinese cultures.",
+          "use_cases": "Whether you're an English speaker hoping to delve into the rich world of Chinese cinema, a Chinese scholar looking to understand English documentaries, or a content creator wanting to reach a broader audience, our tool has got you covered.",
+          "seo_keywords": "Chinese subtitle translation, English to Chinese translation, Chinese culture, Sino-Tibetan language family"
+        },
+        "common_questions": {
+          "technical_issues": "Q: What if special Chinese characters don't display correctly? A: Our tool is designed to handle the extensive character set used in Chinese. If issues persist, ensure your system supports UTF-8 encoding.",
+          "cultural_localization": "Q: How does the tool handle culturally specific idioms? A: Our tool includes an extensive database of idioms from both languages and understands their context to provide accurate translations.",
+          "user_preferences": "Q: Can I set preferences for Simplified or Traditional Chinese? A: Absolutely! We understand the vast diversity within the Chinese language and allow users to set their preferences.",
+          "translation_differences": "Q: How does translation between English and Chinese differ from other languages? A: The Chinese language's unique structure, character-based script, and tonal nature make it distinct. Our tool is specially equipped to handle these complexities."
+        },
+        "languageStats": {
+          "title": "Translate with Ease: Chinese Subtitle Translation",
+          "subtitle": "Unlock the Power of Chinese - The Language of over a Billion People",
+          "stats": [
+            {
+              "icon": "🌍",
+              "number": "1.1B+",
+              "title": "Native Speakers Worldwide",
+              "description": "With over 1.1 billion native speakers, Chinese is the most spoken language in the world. This represents a massive audience for your content!"
+            },
+            {
+              "icon": "💻",
+              "number": "22%",
+              "title": "Internet Content",
+              "description": "Chinese language content accounts for 22% of global Internet content. It's a major language of the digital world with immense potential for growth."
+            },
+            {
+              "icon": "🎓",
+              "number": "Increasing",
+              "title": "Learning Trend",
+              "description": "Learning Chinese as a second language is on the rise, representing a growing audience that will benefit from subtitle translations."
+            },
+            {
+              "icon": "💼",
+              "number": "2nd",
+              "title": "Economic Impact",
+              "description": "As the world's second largest economy, China’s business and cultural impact is enormous. Seamless Chinese translation is a huge asset in today’s global market."
+            },
+            {
+              "icon": "🎞",
+              "number": "1,000,000+",
+              "title": "Media Output",
+              "description": "China is a giant in media production with over a million minutes of video content produced annually. Our tool helps make this vast resource accessible to you."
+            },
+            {
+              "icon": "🇨🇳",
+              "number": "Cultural Bridge",
+              "title": "Cultural Influence",
+              "description": "From ancient philosophy to modern pop culture, Chinese language is a bridge to a rich cultural heritage. Our subtitle translation tool helps you cross this bridge."
+            }
+          ]
+        },
+        "lang_code": "chinese",
+        "lang_name": "Chinese",
+        "lang_family": "Sino-Tibetan",
+        "speakers": "1.1B",
+        "unique_focus": "cultural-bridge",
+        "flag": "🇨🇳",
+        "content": {
+          "intro": "Stepping into a world of over 1.1 billion speakers, our subtitle translation tool proudly supports the Chinese language – an extraordinary bridge to an unparalleled cultural breadth. 🇨🇳",
+          "unique_value": "The power of Chinese translation rests in its ability to unlock the door to the world's largest language community. By supporting Chinese subtitles, our tool offers an invaluable resource for English-speaking users to engage with Chinese content or to make their content accessible to Chinese audience.",
+          "why_need_translation": "Whether you're exploring Chinese cinema's captivating storytelling, diving into deep-rooted historical documentaries or even attempting to grasp the complexities of Chinese reality shows, the importance of accurate, high-quality Chinese subtitle translation is paramount. Our tool helps you understand and appreciate these contents in all its linguistic and cultural nuances.",
+          "seo_optimized": "By integrating SEO-optimized keywords naturally, we cater to English-speaking users searching for reliable Chinese subtitle translation tools. We also understand the importance of keeping up with Chinese content trends and making continuous updates to serve your translation needs better.",
+          "cultural_insights": "Our deep understanding of the Chinese market extends from knowing popular content types such as dramas, reality shows, and historical epics, to being aware of the unique content trends like the rise of Chinese web novels adapted into shows. This cultural insight is what fuels the constant refinement of our translation tool.",
+          "content_insights": "Content creators often face challenges in translating the rich subtleties and cultural nuances of Chinese. Our tool is designed to address these challenges, ensuring that both the literal meaning and cultural context are captured in the English subtitles.",
+          "market_sensitivity": "We recognize the exponential growth of the Chinese content market and the consequent demand for Chinese subtitle translation. Our tool's support for Chinese translation reflects our commitment to meeting this demand and providing a language service that respects the integrity of the original content."
+        }
+      },
+      "errors": [],
+      "qualityScore": 85,
+      "layoutConfig": {
+        "language": "chinese",
+        "languageName": "Chinese",
+        "title": "Chinese Subtitle Translation Tool",
+        "description": "Professional AI-powered Chinese subtitle translation service",
+        "sections": [
+          {
+            "id": "hero",
+            "type": "hero",
+            "component": "HeroSection",
+            "title": "Hero区域",
+            "order": 1,
+            "required": true,
+            "optional": false
+          },
+          {
+            "id": "languageBenefits",
+            "type": "languageBenefits",
+            "component": "LanguageBenefits",
+            "title": "语种优势",
+            "order": 2,
+            "required": true,
+            "optional": false
+          },
+          {
+            "id": "seo",
+            "type": "seo",
+            "component": "SEOMeta",
+            "title": "SEO Meta信息",
+            "order": 12,
+            "required": true,
+            "optional": false
+          },
+          {
+            "id": "faq",
+            "type": "faq",
+            "component": "FAQSection",
+            "title": "FAQ问答",
+            "order": 13,
+            "required": false,
+            "optional": true
+          },
+          {
+            "id": "languageStats",
+            "type": "languageStats",
+            "component": "StatsSection",
+            "title": "语言统计",
+            "order": 14,
+            "required": false,
+            "optional": true
+          },
+          {
+            "id": "contentTypes",
+            "type": "contentTypes",
+            "component": "ContentSection",
+            "title": "内容类型",
+            "order": 15,
+            "required": false,
+            "optional": true
+          },
+          {
+            "id": "cta",
+            "type": "cta",
+            "component": "CTASection",
+            "title": "CTA行动号召",
+            "order": 90,
+            "required": true,
+            "optional": false
+          },
+          {
+            "id": "footer",
+            "type": "footer",
+            "component": "Footer",
+            "title": "Footer页脚",
+            "order": 99,
+            "required": true,
+            "optional": false
+          }
+        ],
+        "metadata": {
+          "generatedAt": "2025-06-21T17:31:08.721Z",
+          "totalSections": 8,
+          "requiredSections": 5,
+          "optionalSections": 3,
+          "languageFeatures": {
+            "family": "Sino-Tibetan",
+            "speakers": "1.1B",
+            "focus": "cultural-bridge",
+            "flag": "🇨🇳"
+          }
+        }
+      },
+      "files": {
+        "content": "/Users/liuyinjiwen/Documents/coding/i18n-translator/generated-content/chinese-subtitle-page.json",
+        "layout": "/Users/liuyinjiwen/Documents/coding/i18n-translator/generated-content/layouts/chinese-layout.json"
+      }
+    },
+    {
+      "language": "spanish",
+      "success": true,
+      "content": {
+        "seo": {
+          "title": "Spanish Subtitle Translator - Unleashing the Power of Spanish Content",
+          "description": "Experience seamless Spanish subtitle translation with our tool, ideal for expanding your business in the rapidly growing Spanish-speaking market or for enjoying Spanish movies at home.",
+          "features": [
+            "Accurate translation from English to Spanish and vice versa",
+            "Support for SRT and other popular subtitle formats",
+            "Advanced AI technology ensuring context-specific translations",
+            "Ability to handle complex Spanish linguistic structures",
+            "Assistance in localizing video content for Spanish-speaking audience",
+            "Useful for international trade, professional communication, cultural exchange, and entertainment localization"
+          ],
+          "keywords": [
+            "Spanish subtitle translator",
+            "English to Spanish translation",
+            "SRT translation to Spanish",
+            "Video localization in Spanish",
+            "Spanish language support",
+            "Spanish movie subtitles",
+            "Translate English movie to Spanish",
+            "Spanish subtitle for business videos",
+            "Spanish subtitle for education",
+            "AI Spanish translation"
+          ]
+        },
+        "hero": {
+          "flag": "🇪🇸",
+          "title": "Unlock the Richness of Spanish with Our Subtitle Translation Tool",
+          "description": "Used by over 500 million people worldwide, Spanish is a rapidly growing language. With our subtitle translation tool, you can seamlessly tap into the cultural depth of Spanish, opening up a new world of content from telenovelas to world-class football commentary. Navigate the unique nuances of this Romance language and connect with Spanish speakers on a deeper level.",
+          "keywords": [
+            "Spanish subtitle translation",
+            "Spanish language tool",
+            "Spanish language content",
+            "Spanish language market",
+            "Spanish translation challenges"
+          ]
+        },
+        "languageBenefits": {
+          "title": "Unleash the Power of Spanish Subtitles Translation",
+          "subtitle": "Harnessing AI technology to overcome the linguistic nuances of the world's second-most spoken language",
+          "benefits": [
+            {
+              "icon": "🎯",
+              "title": "Cultural Authenticity",
+              "description": "Our tool respects the rich history and cultural nuances of Spanish language, translating not just words, but also preserving the essence of its vibrant expressions and idioms."
+            },
+            {
+              "icon": "🚀",
+              "title": "Tap into Rapid Growth",
+              "description": "With over 500 million Spanish speakers worldwide, our tool lets you tap into this rapidly expanding market, ensuring your content reaches a broad audience."
+            },
+            {
+              "icon": "🌐",
+              "title": "Romance Linguistic Mastery",
+              "description": "By understanding the complexities of the Romance language group, our tool ensures high-quality translation of Spanish subtitles, catering to its specific grammar and syntax."
+            },
+            {
+              "icon": "💼",
+              "title": "Professional Opportunities",
+              "description": "From business negotiations in Spain to global conferences in Latin America, our tool aids in professional communication by providing accurate and timely Spanish subtitle translations."
+            },
+            {
+              "icon": "📚",
+              "title": "Educational Value",
+              "description": "Whether you're a student learning Spanish or a teacher providing a multilingual experience, our tool enhances the educational process with high-quality subtitle translations."
+            },
+            {
+              "icon": "👩‍💻",
+              "title": "Technical Excellence",
+              "description": "Our AI-driven tool navigates the specific technical challenges of Spanish translation, including sentence structure, verb conjugation, and gender agreement, ensuring accurate subtitles every time."
+            }
+          ]
+        },
+        "cta": {
+          "title": "Experience Seamless Spanish Subtitle Translation",
+          "description": "With over 500 million Spanish speakers worldwide, Spanish is a rapidly growing language in global communication. Don't let language barriers hinder your experience - use our top-notch translation tool to effortlessly translate subtitles to or from Spanish. Understand and be understood in this Romance language and open doors to an expanded audience, culture and market. This is your key to unlocking new opportunities in the realm of Spanish content.",
+          "button": "Start Your Spanish Translation Journey Now"
+        },
+        "footer": {
+          "brandName": "SubTransPro",
+          "description": "SubTransPro is your top-tier choice for seamless and accurate Spanish subtitle translations. Our tool is powered by advanced AI technology, guaranteeing accuracy and natural language flow, making your English content widely accessible to the 500M Spanish speakers worldwide. Experience the rapid growth of your content in the Spanish market with SubTransPro.",
+          "languages": [
+            "Portuguese",
+            "Italian",
+            "French",
+            "Romanian"
+          ],
+          "features": [
+            "Highly accurate Spanish translations leveraging cutting-edge AI technology",
+            "User-friendly interface with quick turn-around times, allowing for efficient Spanish subtitle translations",
+            "Deep cultural understanding of the Romance language family, ensuring that your content is culturally sensitive and engaging"
+          ],
+          "support": [
+            "24/7 customer support available in English",
+            "Help center with detailed guides and FAQs",
+            "Email and live chat support for any translation-related queries"
+          ],
+          "copyright": "© 2023 SubTransPro. All rights reserved."
+        },
+        "industryUseCases": {
+          "title": "Unlock the Spanish-speaking market with our Subtitle Translation Tool",
+          "subtitle": "Navigate the vast and diverse world of Spanish content with confidence.",
+          "cases": [
+            {
+              "icon": "🎬",
+              "title": "Binge-worthy Spanish TV Shows and Movies",
+              "description": "From gripping telenovelas to critically acclaimed films, Spanish media content is adored globally. Translate subtitles and don't miss out on the rich storytelling that Spanish cinema has to offer."
+            },
+            {
+              "icon": "🌐",
+              "title": "Emerging Markets",
+              "description": "With rapid economic growth in Spain and Latin America, translating English content into Spanish can unlock new business opportunities. Break language barriers and expand your business."
+            },
+            {
+              "icon": "📚",
+              "title": "Educational Content",
+              "description": "Spanish is the second most commonly spoken language in the world, making it a popular choice for language learners. Enhance your e-learning platform by providing Spanish subtitles for English lectures."
+            },
+            {
+              "icon": "🎭",
+              "title": "Cross-Cultural Exchange",
+              "description": "Spanish culture is vibrant and diverse. Translate and subtitle cultural documentaries, folk tales, music, and more to promote cross-cultural understanding and appreciation."
+            },
+            {
+              "icon": "🎮",
+              "title": "Gaming Industry",
+              "description": "From video games to e-sports, the Spanish-speaking audience is vast and passionate. Provide Spanish subtitles to engage more players and fans, enhancing their gaming experience."
+            }
+          ]
+        },
+        "content": {
+          "title": "Precision Spanish Subtitle Translation Tool",
+          "description": "Experience accurate and seamless Spanish subtitle translation using our advanced AI technology. About 500 million people speak Spanish as it's among the rapidly growing Romance languages worldwide 🇪🇸. Our tool is specially optimized for Spanish, providing you with high-quality translations that capture the unique cultural nuances.",
+          "features": [
+            {
+              "title": "Optimized for Spanish",
+              "description": "Our AI technology has been specifically trained and optimized for Spanish, understanding the language's unique linguistic properties and cultural nuances. This allows us to deliver superior translation quality compared to generic translation tools."
+            },
+            {
+              "title": "Technical Challenges and Solutions",
+              "description": "Spanish translation can be complex due to its diverse dialects and cultural variations. However, our AI tackles these challenges with innovative solutions, accurately translating and syncing Spanish subtitles, even in contextually complex scenarios."
+            },
+            {
+              "title": "Competitive Advantage",
+              "description": "Compared to other tools, our AI's understanding of Spanish language structures, idioms, and cultural references is unparalleled. This deep linguistic understanding enables us to offer superior Spanish translation services."
+            },
+            {
+              "title": "Quantified Quality",
+              "description": "Our Spanish translation tool consistently scores high on accuracy metrics, with positive feedback from our English-speaking users who need Spanish subtitles. We're committed to continually enhancing our tool's performance and user experience."
+            }
+          ],
+          "why-use": {
+            "title": "Why Use Our Spanish Subtitle Translation Tool?",
+            "description": "Whether you're learning Spanish, interacting with Spanish-speaking audiences, or expanding your business into Spanish-speaking markets, our tool equips you with accurate, culturally-sensitive Spanish subtitles. Experience the difference our optimized AI technology brings to Spanish subtitle translation."
+          }
+        },
+        "SEO": {
+          "keywords": [
+            "Spanish subtitle translation",
+            "AI Spanish translation",
+            "optimized Spanish translation",
+            "accuracy in Spanish translation",
+            "Spanish-speaking markets"
+          ],
+          "meta-description": "Tap into the Spanish-speaking world with our AI Spanish subtitle translation tool. Experience superior accuracy and cultural sensitivity, optimized for the rapid-growth Spanish language, spoken by 500 million people globally 🇪🇸."
+        },
+        "PageContent": {
+          "Title": "Superior Spanish Subtitle Translation Tool - Bridging the Language Gap",
+          "MetaDescription": "Experience seamless English to Spanish subtitle translations for your favorite content with our advanced tool. Tap into the world of 500 million Spanish speakers.",
+          "PageBody": [
+            {
+              "Heading": "Embrace the Spanish Speaking World",
+              "Content": "With more than 500 million speakers globally, Spanish is one of the most spoken languages worldwide. Our Spanish subtitle translation tool offers a unique opportunity to connect with this vast audience. Specifically designed for English-speaking users, it breaks down language barriers and opens up a world of rich Spanish content."
+            },
+            {
+              "Heading": "Unlock Rapid Growth",
+              "Content": "Spanish markets are experiencing rapid growth across various content types. By providing high-quality Spanish subtitles, creators and brands can tap into this expanding audience. Our tool ensures accurate translation of your subtitles, making your content accessible and enjoyable for Spanish speakers."
+            },
+            {
+              "Heading": "Why English Users Need Spanish Subtitle Translation",
+              "Content": "From popular Spanish films and TV shows to informative educational content, there is a growing demand for Spanish subtitle translation among English-speaking users. Whether you're a content creator aiming to reach a broader audience or a user wishing to enjoy Spanish content, our tool makes translation easy and accurate."
+            },
+            {
+              "Heading": "Understanding Spanish Content Trends",
+              "Content": "Spanish content trends are diverse and ever-changing. In-depth understanding of these trends is crucial for generating subtitles that hit the mark. Our tool is continuously updated to handle nuances and cultural context, ensuring your messages resonate with Spanish audiences."
+            },
+            {
+              "Heading": "Overcoming Challenges in Content Creation",
+              "Content": "Content creators often face challenges in producing subtitles that accurately convey their message in different languages. Our tool simplifies this process, ensuring your English to Spanish subtitle translation is as accurate and engaging as possible. Experience the difference it makes in bridging the language gap."
+            }
+          ],
+          "LanguagesSupported": "Spanish",
+          "LanguageFamily": "Romance",
+          "NumberOfSpeakers": "500M",
+          "UniqueFocus": "rapid-growth",
+          "Flag": "🇪🇸"
+        },
+        "SEOKeywords": [
+          "Spanish subtitle translation tool",
+          "English to Spanish subtitles",
+          "Spanish content trends",
+          "Subtitle translation",
+          "Content creation in Spanish",
+          "Spanish language translation"
+        ]
+      },
+      "errors": [],
+      "qualityScore": 100,
+      "layoutConfig": {
+        "language": "spanish",
+        "languageName": "Spanish",
+        "title": "Spanish Subtitle Translation Tool",
+        "description": "Professional AI-powered Spanish subtitle translation service",
+        "sections": [
+          {
+            "id": "hero",
+            "type": "hero",
+            "component": "HeroSection",
+            "title": "Hero区域",
+            "order": 1,
+            "required": true,
+            "optional": false
+          },
+          {
+            "id": "languageBenefits",
+            "type": "languageBenefits",
+            "component": "LanguageBenefits",
+            "title": "语种优势",
+            "order": 2,
+            "required": true,
+            "optional": false
+          },
+          {
+            "id": "seo",
+            "type": "seo",
+            "component": "SEOMeta",
+            "title": "SEO Meta信息",
+            "order": 12,
+            "required": true,
+            "optional": false
+          },
+          {
+            "id": "industryUseCases",
+            "type": "industryUseCases",
+            "component": "IndustrySection",
+            "title": "行业应用",
+            "order": 13,
+            "required": false,
+            "optional": true
+          },
+          {
+            "id": "techIntegration",
+            "type": "techIntegration",
+            "component": "TechSection",
+            "title": "AI技术",
+            "order": 14,
+            "required": false,
+            "optional": true
+          },
+          {
+            "id": "contentTypes",
+            "type": "contentTypes",
+            "component": "ContentSection",
+            "title": "内容类型",
+            "order": 15,
+            "required": false,
+            "optional": true
+          },
+          {
+            "id": "cta",
+            "type": "cta",
+            "component": "CTASection",
+            "title": "CTA行动号召",
+            "order": 90,
+            "required": true,
+            "optional": false
+          },
+          {
+            "id": "footer",
+            "type": "footer",
+            "component": "Footer",
+            "title": "Footer页脚",
+            "order": 99,
+            "required": true,
+            "optional": false
+          }
+        ],
+        "metadata": {
+          "generatedAt": "2025-06-21T17:32:47.009Z",
+          "totalSections": 8,
+          "requiredSections": 5,
+          "optionalSections": 3,
+          "languageFeatures": {
+            "family": "Romance",
+            "speakers": "500M",
+            "focus": "rapid-growth",
+            "flag": "🇪🇸"
+          }
+        }
+      },
+      "files": {
+        "content": "/Users/liuyinjiwen/Documents/coding/i18n-translator/generated-content/spanish-subtitle-page.json",
+        "layout": "/Users/liuyinjiwen/Documents/coding/i18n-translator/generated-content/layouts/spanish-layout.json"
+      }
+    }
+  ]
+}

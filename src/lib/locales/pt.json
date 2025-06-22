@@ -88,7 +88,7 @@
   "languages": {
     "en": "Inglês",
     "zh": "Chinês",
-    "ja": "Japonês", 
+    "ja": "Japonês",
     "fr": "Francês",
     "de": "Alemão",
     "es": "Espanhol",
@@ -242,6 +242,800 @@
           }
         }
       }
+    },
+    "spanishSubtitle": {
+      "title": "Tradução Profissional de Legendas em Espanhol",
+      "description": "Experimente uma tradução de legendas em espanhol sem interrupções com nossa ferramenta, ideal para expandir seus negócios no crescente mercado de língua espanhola ou para aproveitar filmes em espanhol em casa.",
+      "seo": {
+        "title": "Tradutor de Legendas em Espanhol Gratuito - Traduza SRT Online",
+        "description": "Experimente uma tradução de legendas em espanhol sem interrupções com nossa ferramenta, ideal para expandir seus negócios no crescente mercado de língua espanhola ou para aproveitar filmes em espanhol em casa.",
+        "keywords": "Tradutor de legendas em espanhol, tradução de inglês para espanhol, tradução SRT para espanhol, localização de vídeos em espanhol, suporte ao idioma espanhol, legendas de filmes em espanhol, traduzir filmes em inglês para espanhol, legendas em espanhol para vídeos empresariais, legendas em espanhol para educação, tradução em espanhol com IA."
+      }
+    },
+    "portugueseSubtitle": {
+      "title": "Tradução Profissional de Legendas em Português",
+      "description": "Desbloqueie o poder do conteúdo em português com nosso tradutor de legendas preciso. Ideal para localização de vídeos, intercâmbio cultural e aprimoramento da comunicação empresarial em mercados emergentes.",
+      "seo": {
+        "title": "Tradutor de Legendas em Português Gratuito - Traduza SRT Online",
+        "description": "Desbloqueie o poder do conteúdo em português com nosso tradutor de legendas preciso. Ideal para localização de vídeos, intercâmbio cultural e impulsionamento da comunicação empresarial em mercados emergentes.",
+        "keywords": "Tradutor de legendas em português, ferramenta de tradução de legendas, legendas de inglês para português, traduzir filme em inglês para português, tradutor SRT para português, localização de vídeo em português, tradução de negócios para português, tradução de conteúdo educacional para português."
+      }
+    },
+    "frenchSubtitle": {
+      "title": "Tradução Profissional de Legendas em Francês",
+      "description": "Experimente a tradução de legendas em francês de forma fluida com nossa ferramenta. Ideal para empresas, educadores e entretenimento, ela preenche lacunas linguísticas e aumenta a compreensão cultural.",
+      "seo": {
+        "title": "Tradutor de Legendas em Francês Gratuito - Traduzir SRT Online",
+        "description": "Experimente uma tradução de legendas em francês sem interrupções com nossa ferramenta. Ideal para empresas, educadores e entretenimento, ela preenche lacunas linguísticas e aumenta a compreensão cultural. Traduza legendas para o francês com facilidade e precisão.",
+        "keywords": "Tradutor de legendas em francês, Traduzir legendas para o francês, Tradução de SRT em francês, Ferramenta de tradução de legendas, Localização de vídeo em francês, Tradutor de legendas para educação, Tradução de legendas para negócios, Tradução de legendas com inteligência artificial, Complexidade da língua francesa, Intercâmbio cultural através da tradução de legendas."
+      }
+    }
+  },
+  "portugueseSubtitle": {
+    "seo": {
+      "title": "Professional Portuguese Subtitle Translator - Accurate & Fast Translation Tool",
+      "description": "Unlock the power of Portuguese content with our accurate subtitle translator. Ideal for video localization, cultural exchange, and boosting business communication in emerging markets.",
+      "keywords": [
+        "Portuguese subtitle translator",
+        "subtitle translation tool",
+        "English to Portuguese subtitles",
+        "Translate English movie to Portuguese",
+        "SRT translator Portuguese",
+        "Portuguese video localization",
+        "business translation to Portuguese",
+        "educational content translation Portuguese"
+      ]
+    },
+    "hero": {
+      "title": "Unlock Portuguese Subtitle Translation with Expert Precision",
+      "description": "Translate subtitles from English to Portuguese with unrivaled accuracy. Our subtitle translator tool harnesses the power of language-specific algorithms to deliver high-quality Portuguese subtitles, enabling you to access the booming Portuguese-speaking markets with ease.",
+      "flag": "🇵🇹"
+    },
+    "benefits": {
+      "title": "Unlock Portuguese Subtitle Translation with Our Tool",
+      "subtitle": "Explore the unique benefits of translating English subtitles to Portuguese",
+      "items": {
+        "benefit_0": {
+          "icon": "🎯",
+          "title": "Reach Emerging Portuguese Markets",
+          "description": "By supporting Portuguese, you can tap into vibrant emerging markets in Portugal, Brazil, and other Portuguese-speaking regions. Our tool ensures you connect effectively with these audiences."
+        },
+        "benefit_1": {
+          "icon": "💼",
+          "title": "Excel in Business Communication",
+          "description": "From business meetings to marketing campaigns, our subtitle translator tool can help you break language barriers and effectively communicate with Portuguese-speaking business partners."
+        },
+        "benefit_2": {
+          "icon": "🎥",
+          "title": "Enhance Media Accessibility",
+          "description": "Whether it's films, documentaries, or online videos, our tool helps you translate subtitles, making your content more accessible to Portuguese-speaking audiences."
+        },
+        "benefit_3": {
+          "icon": "🌐",
+          "title": "Capture the Nuance of the Portuguese Language",
+          "description": "Our AI technology understands the intricacies of the Portuguese language, including its unique grammar and expression habits, to provide accurate and contextually relevant translations."
+        },
+        "benefit_4": {
+          "icon": "🎓",
+          "title": "Educational and Professional Value",
+          "description": "Our tool can be a valuable asset for those learning Portuguese or working in a Portuguese-speaking environment. It aids in understanding and mastering the language more effectively."
+        },
+        "benefit_5": {
+          "icon": "🚀",
+          "title": "Overcome Technical Challenges",
+          "description": "The Romance language family poses unique AI processing requirements. Our technology has been specifically designed to overcome these challenges, providing high-quality Portuguese subtitle translations."
+        }
+      }
+    },
+    "stats": {
+      "title": "Translate Subtitles to Portuguese - Unlock the Lusophone World",
+      "subtitle": "Experience the power of Portuguese, the language of vibrant cultures, fast-growing markets, and rich historical narratives.",
+      "items": {
+        "stat_0": {
+          "icon": "🌍",
+          "number": "220M+",
+          "title": "Native Speakers Globally",
+          "description": "Portuguese is the 6th most spoken native language in the world, opening a massive audience for your content."
+        },
+        "stat_1": {
+          "icon": "🚀",
+          "number": "9",
+          "title": "Countries with Portuguese as Official Language",
+          "description": "Portuguese subtitle translation unlocks access to a diverse group of countries including Portugal, Brazil, and Angola."
+        },
+        "stat_2": {
+          "icon": "💼",
+          "number": "7th",
+          "title": "Global Economy Ranking of Portuguese-Speaking Countries",
+          "description": "Translate your subtitles to Portuguese and tap into the economic potential of these growing markets."
+        },
+        "stat_3": {
+          "icon": "🎬",
+          "number": "10%",
+          "title": "Internet Content in Portuguese",
+          "description": "Portuguese has a significant digital presence, making Portuguese subtitle translation a crucial tool for global content creators."
+        },
+        "stat_4": {
+          "icon": "🎓",
+          "number": "1.3M+",
+          "title": "Students Learning Portuguese Worldwide",
+          "description": "Enhance your educational content's reach by using our subtitle translator to cater to the growing number of Portuguese learners."
+        },
+        "stat_5": {
+          "icon": "🤖",
+          "number": "High",
+          "title": "AI Translation Maturity for Portuguese",
+          "description": "Benefit from sophisticated AI technology in our subtitle translation tool, ensuring accurate and natural Portuguese translations."
+        }
+      }
+    },
+    "cta": {
+      "title": "Break the language barrier with Portuguese subtitle translation",
+      "description": "From business presentations to binge-worthy series, don't let language stand in your way. With our subtitle translation tool, you can accurately translate English subtitles to Portuguese or vice versa with ease and speed. Don't miss out on the opportunity to connect with hundreds of millions of Portuguese speakers worldwide."
+    },
+    "title": "Transforme suas legendas em português perfeito",
+    "description": "Converta legendas de qualquer idioma para o português de qualidade nativa com nossa avançada tecnologia de tradução por IA. Rápido, preciso e completamente gratuito.",
+    "useCases": {
+      "title": "Aplicativos de Tradução de Legendas em Português",
+      "items": {
+        "international": {
+          "icon": "🌎",
+          "title": "Entrada no Mercado Brasileiro",
+          "description": "Use nosso tradutor de legendas em português para expandir seus negócios no Brasil e em mercados de língua portuguesa."
+        },
+        "education": {
+          "icon": "Claro! Por favor, forneça o texto que você gostaria que eu traduzisse para o português.",
+          "title": "Conteúdo Educacional",
+          "description": "Tradutor de legendas em português ideal para cursos online, materiais de treinamento e conteúdo de vídeo educacional."
+        },
+        "entertainment": {
+          "icon": "🎬",
+          "title": "Produção de Mídia",
+          "description": "Tradutor profissional de legendas em português para conteúdo de streaming, distribuição de filmes e localização de mídia."
+        }
+      }
+    }
+  },
+  "layout": {
+    "portuguese": {
+      "title": "Portuguese Subtitle Translation Tool",
+      "description": "Professional AI-powered Portuguese subtitle translation service",
+      "sections": {
+        "hero": {
+          "title": "Hero区域",
+          "component": "HeroSection",
+          "order": 1,
+          "required": true,
+          "optional": false
+        },
+        "translatorSection": {
+          "title": "翻译功能区",
+          "component": "SubtitleTranslator",
+          "order": 1.5,
+          "required": true,
+          "optional": false
+        },
+        "languageBenefits": {
+          "title": "语种优势",
+          "component": "LanguageBenefits",
+          "order": 2,
+          "required": true,
+          "optional": false
+        },
+        "seo": {
+          "title": "SEO Meta信息",
+          "component": "SEOMeta",
+          "order": 13,
+          "required": true,
+          "optional": false
+        },
+        "languageStats": {
+          "title": "语言统计",
+          "component": "StatsSection",
+          "order": 14,
+          "required": false,
+          "optional": true
+        },
+        "faq": {
+          "title": "FAQ问答",
+          "component": "FAQSection",
+          "order": 15,
+          "required": false,
+          "optional": true
+        },
+        "contentTypes": {
+          "title": "内容类型",
+          "component": "ContentSection",
+          "order": 16,
+          "required": false,
+          "optional": true
+        },
+        "cta": {
+          "title": "CTA行动号召",
+          "component": "CTASection",
+          "order": 90,
+          "required": true,
+          "optional": false
+        },
+        "footer": {
+          "title": "Footer页脚",
+          "component": "Footer",
+          "order": 99,
+          "required": true,
+          "optional": false
+        }
+      },
+      "metadata": {
+        "generatedAt": "2025-06-22T05:32:42.054Z",
+        "totalSections": 9,
+        "requiredSections": 6,
+        "optionalSections": 3,
+        "languageFeatures": {
+          "family": "Romance",
+          "focus": "emerging-markets",
+          "flag": "🇵🇹"
+        }
+      }
+    },
+    "chinese": {
+      "title": "Ferramenta de Tradução de Legendas em Chinês",
+      "description": "Serviço profissional de tradução de legendas em chinês com tecnologia de IA",
+      "sections": {
+        "hero": {
+          "title": "Seção Hero",
+          "description": "Área principal de exibição na parte superior da página"
+        },
+        "translatorSection": {
+          "title": "Seção de Tradutor",
+          "description": "Funcionalidade de upload e tradução de arquivos de legenda"
+        },
+        "languageBenefits": {
+          "title": "Benefícios do Idioma",
+          "description": "Vantagens únicas da tradução de legendas em chinês"
+        },
+        "industryUseCases": {
+          "title": "Aplicações Industriais",
+          "description": "Casos de uso em diferentes indústrias"
+        },
+        "languageStats": {
+          "title": "Estatísticas de Idiomas",
+          "description": "Dados estatísticos e influência da língua chinesa"
+        },
+        "languageLearning": {
+          "title": "Aprendizado de Línguas",
+          "description": "Métodos para aprender chinês através de legendas"
+        },
+        "seo": {
+          "title": "Informações Meta de SEO",
+          "description": "Metadados de otimização para motores de busca"
+        },
+        "cta": {
+          "title": "CTA Chamada para Ação",
+          "description": "Área para guiar os usuários a tomar ação"
+        },
+        "footer": {
+          "title": "Rodapé",
+          "description": "Área de informações inferior da página"
+        }
+      },
+      "metadata": {
+        "languageFeatures": {
+          "family": "Sino-Tibetano",
+          "speakers": "1,1B",
+          "focus": "Ponte Cultural",
+          "flag": "请提供需要翻译的文本，我将为您翻译成葡萄牙语。"
+        }
+      }
+    },
+    "english": {
+      "title": "Ferramenta de Tradução de Legendas em Inglês",
+      "description": "Serviço profissional de tradução de legendas em inglês com inteligência artificial",
+      "sections": {
+        "hero": {
+          "title": "Área Hero",
+          "component": "SeçãoHero"
+        },
+        "languageBenefits": {
+          "title": "Vantagens do idioma",
+          "component": "Benefícios da Língua"
+        },
+        "seo": {
+          "title": "SEO Meta informações",
+          "component": "SEOMeta"
+        },
+        "regionalVariants": {
+          "title": "Dialeto regional",
+          "component": "SeçãoRegional"
+        },
+        "cultureContext": {
+          "title": "Localização Cultural",
+          "component": "SeçãoCultural"
+        },
+        "techIntegration": {
+          "title": "Tecnologia de IA",
+          "component": "Seção de Tecnologia"
+        },
+        "cta": {
+          "title": "CTA - Chamada para Ação",
+          "component": "Seção CTA"
+        },
+        "footer": {
+          "title": "Footer Rodapé",
+          "component": "Rodapé"
+        }
+      },
+      "metadata": {
+        "generatedAt": "2025-06-21T17:24:59.118Z",
+        "languageFeatures": {
+          "family": "Germânico",
+          "speakers": "1,5B",
+          "focus": "negócios globais",
+          "flag": "🇧🇷"
+        }
+      }
+    }
+  },
+  "description": "Carregue arquivos SRT, selecione o idioma de destino, traduza as legendas online e baixe.",
+  "loading": "Carregando...",
+  "seo": {
+    "title": "Tradutor de Legendas Online Gratuito - Ferramenta de Tradução SRT para 30 Idiomas",
+    "description": "Ferramenta profissional de tradução de legendas online que suporta chinês, inglês, japonês e 30 outros idiomas. Faça upload de arquivos SRT, tradução com um clique, tradução de alta qualidade com IA, totalmente gratuita para usar.",
+    "keywords": "tradução de legendas, tradução SRT, tradução online, tradução de arquivos de legendas, legendas multilíngues, ferramenta de tradução gratuita, tradução por IA, legendas de vídeo"
+  },
+  "upload": "Enviar arquivo SRT",
+  "click_to_select_language": "Clique para selecionar o idioma de destino",
+  "file_selected_click_to_reselect": "Arquivo selecionado, clique para re-selecionar",
+  "click_or_drag_to_upload": "Clique ou arraste para fazer o upload do arquivo de legenda SRT",
+  "please_select_srt_file": "Por favor, selecione um arquivo de legenda .srt",
+  "please_upload_file_first": "Por favor, faça o upload de um arquivo de legenda primeiro.",
+  "cannot_read_response": "Não é possível ler o fluxo de resposta.",
+  "translation_error_occurred": "Ocorreu um erro durante a tradução.",
+  "download": "Baixar Arquivo Traduzido",
+  "translation_progress": "Progresso da Tradução",
+  "translating_please_wait": "Traduzindo, por favor, aguarde...",
+  "translation_complete": "Tradução Completa!",
+  "current_translating": "Atualmente Traduzindo",
+  "translate_again": "Traduzir Novamente",
+  "features": {
+    "title": "Por que nos escolher?",
+    "items": {
+      "fast": {
+        "icon": "⚡",
+        "title": "Tradução Rápida",
+        "description": "A tecnologia avançada de IA completa a tradução de legendas em segundos."
+      },
+      "multilang": {
+        "icon": "🌍",
+        "title": "Suporte a Múltiplos Idiomas",
+        "description": "Suporta 8 idiomas principais para atender às necessidades globais dos usuários."
+      },
+      "privacy": {
+        "icon": "🔒",
+        "title": "Privacidade e Segurança",
+        "description": "Processamento de arquivos locais, sem upload para o servidor, protegendo sua privacidade."
+      },
+      "free": {
+        "icon": "💯",
+        "title": "Totalmente Grátis",
+        "description": "Nenhum registro necessário, sem limites de uso, permanentemente gratuito"
+      }
+    }
+  },
+  "useCases": {
+    "title": "Casos de Uso",
+    "subtitle": "Seja você um usuário individual ou uma equipe profissional, podemos atender às suas necessidades de tradução de legendas.",
+    "items": {
+      "education": {
+        "icon": "🎓",
+        "title": "Educação e Treinamento",
+        "description": "Criação de legendas multilíngues para cursos online, vídeos educacionais e palestras acadêmicas"
+      },
+      "business": {
+        "icon": "💼",
+        "title": "Uso Comercial",
+        "description": "Vídeos promocionais corporativos, introduções de produtos, tradução de gravações de reuniões para internacionalização."
+      },
+      "entertainment": {
+        "icon": "🎬",
+        "title": "Filmes e Entretenimento",
+        "description": "Localização de legendas para filmes, séries de TV, documentários e vídeos curtos"
+      },
+      "personal": {
+        "icon": "👤",
+        "title": "Criação Pessoal",
+        "description": "Adição de legendas multilíngues para vlogs, vídeos de jogos e gravações da vida"
+      }
+    }
+  },
+  "specializedTools": {
+    "title": "Ferramentas Profissionais de Tradução de Legendas",
+    "subtitle": "Serviços de tradução especializados otimizados para diferentes idiomas, proporcionando uma experiência de tradução mais precisa.",
+    "english": {
+      "button": "You are trained on data up to October 2023."
+    },
+    "chinese": {
+      "button": "您已接受的培训数据截至2023年10月。"
+    }
+  },
+  "howToUse": {
+    "title": "Como Usar",
+    "steps": {
+      "step1": "Carregue seu arquivo de legenda SRT",
+      "step2": "Selecione o idioma de tradução alvo",
+      "step3": "Clique no botão de traduzir para começar o processamento.",
+      "step4": "Baixar o arquivo de legenda traduzido"
+    }
+  },
+  "footer": {
+    "title": "Comece a Usar a Ferramenta de Tradução de Legendas Online",
+    "description": "Seja você um criador de conteúdo, educador ou usuário empresarial, nossa ferramenta pode ajudá-lo a traduzir legendas de forma rápida e precisa, fazendo com que seu conteúdo alcance audiências globais.",
+    "quick_links": "Links Rápidos",
+    "rights": "Todos os direitos reservados.",
+    "stats": {
+      "free": "Gratuito para Usar",
+      "speed": "Velocidade de Tradução",
+      "speedValue": "Segundos"
+    }
+  },
+  "englishSubtitle": {
+    "seo": {
+      "title": "Tradutor de Legendas em Inglês - Alta Precisão para Comunicação Empresarial Global",
+      "description": "Experimente a excelência do nosso tradutor de legendas em inglês. Ideal para comércio internacional, expansão corporativa e comunicação profissional. Melhore seus vídeos com legendas SRT em inglês de alta qualidade."
+    },
+    "title": "Transforme suas Legendas em Inglês Perfeito",
+    "description": "Converta legendas de qualquer idioma para um inglês de qualidade nativa com nossa avançada tecnologia de tradução por IA. Rápido, preciso e completamente grátis.",
+    "benefits": {
+      "title": "Liberte o Poder da Tradução de Legendas em Inglês",
+      "subtitle": "Aproveite o vasto mercado de língua inglesa com nossa ferramenta de tradução de última geração.",
+      "items": {
+        "benefit_0": {
+          "icon": "🌐",
+          "title": "Alcance Global",
+          "description": "O inglês é falado por 1,5 bilhão de pessoas em todo o mundo. Nossa ferramenta permite que você alcance esse vasto mercado, aumentando a acessibilidade do seu conteúdo."
+        },
+        "benefit_1": {
+          "icon": "🏢",
+          "title": "Oportunidades de Negócios",
+          "description": "Com o inglês sendo a língua dos negócios globais, nossa ferramenta pode ajudá-lo a quebrar a barreira do idioma, abrindo inúmeras oportunidades de crescimento e expansão."
+        },
+        "benefit_2": {
+          "icon": "Claro! Por favor, forneça o texto que você gostaria que eu traduzisse para o português.",
+          "title": "Recursos Linguísticos Ricos",
+          "description": "O inglês possui um rico conjunto de estruturas gramaticais e vocabulários. Nossa ferramenta alimentada por IA pode traduzir com precisão as sutilezas e expressões específicas do inglês."
+        },
+        "benefit_3": {
+          "icon": "🎬",
+          "title": "Versatilidade de Conteúdo",
+          "description": "O conteúdo em inglês abrange filmes, documentários, palestras e podcasts. Nossa ferramenta pode lidar com uma ampla variedade de tipos de conteúdo, fornecendo traduções precisas e oportunas."
+        },
+        "benefit_4": {
+          "icon": "🇧🇷",
+          "title": "Significado Cultural",
+          "description": "O inglês possui um vasto significado cultural. Nossa ferramenta garante que as nuances culturais sejam preservadas na tradução, proporcionando uma experiência de visualização mais autêntica e envolvente."
+        },
+        "benefit_5": {
+          "icon": "🧠",
+          "title": "Excelência Impulsionada por IA",
+          "description": "Nossa ferramenta utiliza tecnologias avançadas de IA para enfrentar os desafios únicos da tradução em inglês, oferecendo legendas que são contextualmente precisas e linguisticamente ricas."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Aplicativos de Tradução de Legendas em Inglês",
+      "items": {
+        "international": {
+          "icon": "🌐",
+          "title": "Marketing Internacional",
+          "description": "Use nosso tradutor de legendas em inglês para campanhas de marketing globais e apresentações de negócios internacionais."
+        },
+        "education": {
+          "icon": "Claro! Por favor, forneça o texto que você gostaria que eu traduzisse para o português.",
+          "title": "Conteúdo Educacional",
+          "description": "Tradutor de legendas em inglês ideal para cursos online, webinars e conteúdo de vídeo educacional para estudantes internacionais."
+        },
+        "entertainment": {
+          "icon": "🎬",
+          "title": "Produção de Mídia",
+          "description": "Tradutor profissional de legendas em inglês para distribuição de filmes, conteúdo de streaming e projetos de localização de mídia."
+        }
+      }
+    },
+    "hero": {
+      "title": "Desbloqueie o Poder da Tradução em Inglês",
+      "description": "Com impressionantes 1,5 bilhão de falantes em todo o mundo, o inglês é a língua que conecta os negócios globais. Nossa ferramenta de tradução de legendas suporta a tradução para o inglês, facilitando a conexão, comunicação e crescimento de criadores de conteúdo e consumidores de língua inglesa neste idioma globalmente dominante.",
+      "flag": "🇧🇷"
+    },
+    "cta": {
+      "title": "Desbloqueie o Poder da Tradução de Legendas em Inglês",
+      "description": "Experimente uma comunicação sem barreiras no mundo dos negócios globais com nossa ferramenta de tradução de legendas em inglês. Não deixe que as barreiras linguísticas te impeçam. Comece a traduzir suas legendas para o inglês e conecte-se a uma rede de mais de 1,5 bilhão de falantes de inglês em todo o mundo."
+    }
+  },
+  "chineseSubtitle": {
+    "seo": {
+      "title": "Tradutor de Legendas em Chinês - Traduza Legendas para Chinês Online Grátis | Tradução SRT para Chinês",
+      "description": "Serviço profissional de tradução de legendas em chinês, suportando tradução de 30 idiomas para o chinês. Faça o upload de arquivos de legendas SRT, tradução inteligente por IA para legendas em chinês, compreensão precisa do contexto, completamente gratuito.",
+      "keywords": "中文字幕翻译，翻译成中文，SRT中文翻译，字幕中文翻译，在线中文翻译，免费中文字幕，AI中文翻译，视频中文字幕"
+    },
+    "title": "翻译任何字幕为流利的中文",
+    "description": "Torne seu conteúdo acessível ao público chinês com nosso serviço inteligente de tradução de legendas. Suportando mais de 30 idiomas com localização cultural.",
+    "benefits": {
+      "title": "Vantagens da Tradução de Legendas em Chinês",
+      "subtitle": "Por que escolher nosso serviço de tradução de legendas em chinês? Preciso, fluente e localizado.",
+      "items": {
+        "context": {
+          "icon": "🧠",
+          "title": "Compreensão Inteligente de Contexto",
+          "description": "A IA compreende profundamente o contexto original para gerar traduções naturais que se conformam aos hábitos de expressão chineses."
+        },
+        "localization": {
+          "icon": "🏮",
+          "title": "Expressão Localizada",
+          "description": "Não apenas traduz idiomas, mas também se concentra na localização cultural para uma melhor compreensão pelo público chinês."
+        },
+        "accuracy": {
+          "icon": "✨",
+          "title": "Precisão na Terminologia Profissional",
+          "description": "Traduz com precisão termos profissionais e vocabulário da indústria, mantendo o significado original e as convenções chinesas."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Casos de Uso de Legendas em Chinês",
+      "items": {
+        "foreign": {
+          "icon": "🎭",
+          "title": "Localização de Conteúdo Estrangeiro",
+          "description": "Criação de legendas em chinês para filmes, documentários e vídeos educacionais no exterior"
+        },
+        "learning": {
+          "icon": "Claro! Por favor, forneça o texto que você gostaria que eu traduzisse para o português.",
+          "title": "Auxílio para Aprendizado de Idiomas",
+          "description": "Legendas em chinês para vídeos de aprendizado de idiomas estrangeiros e cursos online para auxiliar na compreensão."
+        },
+        "business": {
+          "icon": "🏢",
+          "title": "Comunicação Empresarial",
+          "description": "Tradução de legendas em chinês para conferências internacionais, treinamentos empresariais e apresentações de produtos."
+        }
+      }
+    }
+  },
+  "pageTemplate": {
+    "breadcrumb": {
+      "home": "Ferramenta de Tradução de Legendas",
+      "englishSubtitle": "Ferramenta de Legendas em Inglês",
+      "chineseSubtitle": "Ferramenta de Legendas em Chinês"
+    },
+    "hero": {
+      "englishSubtitle": {
+        "title": "Tradutor de Legendas em Inglês",
+        "subtitle": "Serviço profissional de tradução de legendas em inglês. Converta legendas para o inglês com tradução baseada em IA."
+      },
+      "chineseSubtitle": {
+        "title": "Tradutor de Legendas em Chinês",
+        "subtitle": "Serviço profissional de tradução de legendas em chinês. Tradução para o chinês com tecnologia de IA. Suporta formato SRT, gratuito, rápido e preciso."
+      }
+    },
+    "benefits": {
+      "englishSubtitle": {
+        "title": "Por que escolher nosso tradutor de inglês?",
+        "subtitle": "Serviço de tradução profissional com tecnologia de IA avançada",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "Tradução Precisa",
+            "description": "A tradução impulsionada por IA garante alta precisão e uma expressão em inglês natural."
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "Processamento Rápido",
+            "description": "Tradução rápida de legendas com acompanhamento de progresso em tempo real."
+          },
+          "free": {
+            "icon": "🆓",
+            "title": "Completamente Grátis",
+            "description": "Nenhum registro necessário, uso ilimitado para todos os usuários."
+          }
+        }
+      },
+      "chineseSubtitle": {
+        "title": "Por que escolher nosso tradutor de chinês?",
+        "subtitle": "Serviço de tradução profissional com tecnologia de IA avançada",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "Tradução Precisa",
+            "description": "A tradução alimentada por IA garante alta precisão e uma expressão chinesa natural."
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "Processamento Rápido",
+            "description": "Tradução rápida de legendas com acompanhamento de progresso em tempo real."
+          },
+          "free": {
+            "icon": "🆓",
+            "title": "Completamente Grátis",
+            "description": "Nenhum registro necessário, uso ilimitado para todos os usuários."
+          }
+        }
+      }
+    }
+  },
+  "nav": {
+    "home": "Início",
+    "english_subtitle": "Tradutor de Legendas em Inglês",
+    "chinese_subtitle": "Tradutor de Legendas em Chinês"
+  },
+  "freeService": {
+    "title": "Serviço de Tradução de Legendas Gratuito",
+    "subtitle": "Aproveite a tradução de legendas ilimitada e de alta qualidade gratuitamente. Sem registro, sem taxas, sem custos ocultos.",
+    "items": {
+      "unlimited": {
+        "icon": "💡",
+        "title": "Uso Ilimitado",
+        "description": "Traduza quantos arquivos de legenda quiser, sem nenhuma restrição."
+      },
+      "noRegistration": {
+        "icon": "🔓",
+        "title": "Nenhum registro necessário",
+        "description": "Comece a traduzir imediatamente, sem necessidade de conta ou cadastro."
+      },
+      "noFees": {
+        "icon": "💸",
+        "title": "Totalmente Grátis",
+        "description": "Todos os recursos estão disponíveis gratuitamente, para sempre. Sem assinatura, sem taxas ocultas."
+      },
+      "highQuality": {
+        "icon": "✨",
+        "title": "Tradução de Alta Qualidade",
+        "description": "Impulsionado por IA avançada, garantindo traduções de legendas precisas e naturais."
+      }
+    }
+  },
+  "spanishSubtitle": {
+    "seo": {
+      "title": "Tradutor de Legendas em Espanhol - Liberando o Poder do Conteúdo em Espanhol",
+      "description": "Experimente uma tradução de legendas em espanhol sem interrupções com nossa ferramenta, ideal para expandir seus negócios no crescente mercado de língua espanhola ou para aproveitar filmes em espanhol em casa."
+    },
+    "title": "Transforme suas legendas em um espanhol perfeito",
+    "description": "Converta legendas de qualquer idioma para espanhol de qualidade nativa com nossa avançada tecnologia de tradução por IA. Rápido, preciso e completamente gratuito.",
+    "hero": {
+      "title": "Desbloqueie o Poder da Tradução em Espanhol",
+      "description": "Com mais de 500 milhões de falantes em todo o mundo, o espanhol é uma das línguas mais faladas globalmente. Nossa ferramenta de tradução de legendas suporta a tradução para o espanhol, facilitando a conexão, comunicação e crescimento de criadores e consumidores de conteúdo que falam espanhol nesta vibrante comunidade linguística.",
+      "flag": "🇧🇷"
+    },
+    "benefits": {
+      "title": "Liberte o Poder da Tradução de Legendas em Espanhol",
+      "subtitle": "Aproveite o vasto mercado de língua espanhola com nossa ferramenta de tradução de última geração.",
+      "items": {
+        "benefit_0": {
+          "icon": "🌎",
+          "title": "Mercado Hispânico Global",
+          "description": "O espanhol é falado por mais de 500 milhões de pessoas em mais de 20 países. Nossa ferramenta permite que você alcance esse vasto e diversificado mercado, aumentando a acessibilidade do seu conteúdo."
+        },
+        "benefit_1": {
+          "icon": "💼",
+          "title": "Expansão de Negócios",
+          "description": "Os mercados de língua espanhola representam oportunidades econômicas significativas. Nossa ferramenta ajuda você a superar barreiras linguísticas e expandir para a América Latina e Espanha."
+        },
+        "benefit_2": {
+          "icon": "🎭",
+          "title": "Riqueza Cultural",
+          "description": "O espanhol possui ricas variações regionais e nuances culturais. Nossa ferramenta alimentada por IA traduz com precisão essas sutilezas, preservando a autenticidade cultural."
+        },
+        "benefit_3": {
+          "icon": "📺",
+          "title": "Indústria do Entretenimento",
+          "description": "O conteúdo em espanhol está em alta globalmente. Nossa ferramenta lida com filmes, séries, documentários e conteúdo educacional com precisão e sensibilidade cultural."
+        },
+        "benefit_4": {
+          "icon": "🏛️",
+          "title": "Valor Educacional",
+          "description": "O espanhol é a segunda língua mais estudada no mundo. Nossa ferramenta suporta a criação de conteúdo educacional e materiais para aprendizado de idiomas."
+        },
+        "benefit_5": {
+          "icon": "Olá! Como posso ajudar você hoje?",
+          "title": "Precisão Impulsionada por IA",
+          "description": "Nossa tecnologia avançada de IA lida com as complexidades da gramática espanhola, variações regionais e contexto cultural para uma qualidade de tradução superior."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Aplicativos de Tradução de Legendas em Espanhol",
+      "items": {
+        "international": {
+          "icon": "🌎",
+          "title": "Expansão na América Latina",
+          "description": "Use nosso tradutor de legendas em espanhol para expansão de negócios em mercados da América Latina e regiões de língua espanhola."
+        },
+        "education": {
+          "icon": "Claro! Por favor, forneça o texto que você gostaria que eu traduzisse para o português.",
+          "title": "Conteúdo Educacional",
+          "description": "Tradutor de legendas em espanhol perfeito para cursos online, vídeos educacionais e materiais de aprendizado de idiomas."
+        },
+        "entertainment": {
+          "icon": "🎬",
+          "title": "Localização de Mídia",
+          "description": "Tradutor profissional de legendas em espanhol para distribuição de filmes, plataformas de streaming e conteúdo de entretenimento."
+        }
+      }
+    },
+    "cta": {
+      "title": "Inicie sua jornada de tradução de legendas em espanhol",
+      "description": "Experimente uma comunicação sem fronteiras com audiências de língua espanhola em todo o mundo. Não deixe que barreiras linguísticas limitem seu alcance. Comece a traduzir suas legendas para o espanhol e conecte-se com mais de 500 milhões de falantes de espanhol globalmente."
+    }
+  },
+  "frenchSubtitle": {
+    "seo": {
+      "title": "Tradutor de Legendas em Francês - Preciso, Rápido e Amigável ao Usuário",
+      "description": "Experimente a tradução de legendas em francês de forma fluida com nossa ferramenta. Ideal para empresas, educadores e entretenimento, ela preenche lacunas linguísticas e aumenta a compreensão cultural. Traduza legendas para o francês com facilidade e precisão."
+    },
+    "title": "Transforme suas Legendas em Francês Perfeito",
+    "description": "Converta legendas de qualquer idioma para francês de qualidade nativa com nossa avançada tecnologia de tradução por IA. Rápido, preciso e completamente gratuito.",
+    "hero": {
+      "title": "Desbloqueie o Poder da Tradução Francesa",
+      "description": "Com mais de 280 milhões de falantes em cinco continentes, o francês é uma língua de diplomacia, cultura e negócios internacionais. Nossa ferramenta de tradução de legendas suporta a tradução para o francês, conectando você a esta sofisticada comunidade global.",
+      "flag": "🇧🇷"
+    },
+    "benefits": {
+      "title": "Liberte o Poder da Tradução de Legendas em Francês",
+      "subtitle": "Conecte-se com audiências francófonas em todo o mundo com nossa sofisticada ferramenta de tradução.",
+      "items": {
+        "benefit_0": {
+          "icon": "🌐",
+          "title": "Rede Francófona Global",
+          "description": "O francês é falado por mais de 280 milhões de pessoas em 29 países. Nossa ferramenta permite que você alcance essa comunidade global diversificada e influente."
+        },
+        "benefit_1": {
+          "icon": "🏛️",
+          "title": "Diplomacia Internacional",
+          "description": "O francês é uma língua oficial de importantes organizações internacionais. Nossa ferramenta ajuda você a se comunicar neste idioma de diplomacia e cultura global."
+        },
+        "benefit_2": {
+          "icon": "🎨",
+          "title": "Sofisticação Cultural",
+          "description": "O francês carrega uma rica herança cultural e uma elegância linguística. Nossa IA preserva a beleza sutil e a sofisticação da expressão francesa."
+        },
+        "benefit_3": {
+          "icon": "🎬",
+          "title": "Excelência em Entretenimento",
+          "description": "O cinema e a mídia franceses são celebrados mundialmente. Nossa ferramenta ajuda você a criar legendas em francês de alta qualidade para distribuição de conteúdo internacional."
+        },
+        "benefit_4": {
+          "icon": "Claro! Por favor, forneça o texto que você gostaria que eu traduzisse para o português.",
+          "title": "Prestígio Acadêmico",
+          "description": "O francês é uma língua acadêmica prestigiosa. Nossa ferramenta suporta a criação de conteúdo educacional e a comunicação acadêmica em francês."
+        },
+        "benefit_5": {
+          "icon": "🧠",
+          "title": "Precisão Linguística",
+          "description": "Nossa avançada tecnologia de IA lida com as complexidades da gramática francesa, registros formais e contexto cultural com precisão excepcional."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Aplicativos de Tradução de Legendas em Francês",
+      "items": {
+        "international": {
+          "icon": "🌍",
+          "title": "Acesso ao Mercado Europeu",
+          "description": "Use nosso tradutor de legendas em francês para expansão de negócios na França, Canadá e mercados africanos de língua francesa."
+        },
+        "education": {
+          "icon": "Claro! Por favor, forneça o texto que você gostaria que eu traduzisse para o português.",
+          "title": "Excelência Educacional",
+          "description": "Tradutor de legendas em francês perfeito para conteúdo acadêmico, cursos online e materiais de vídeo educacionais."
+        },
+        "entertainment": {
+          "icon": "🎭",
+          "title": "Conteúdo Cultural",
+          "description": "Tradutor profissional de legendas em francês para festivais de cinema, intercâmbios culturais e localização de conteúdo artístico."
+        }
+      }
+    },
+    "cta": {
+      "title": "Inicie sua jornada de tradução de legendas em francês",
+      "description": "Experimente a elegância da comunicação francesa e conecte-se com públicos globais sofisticados. Comece a traduzir suas legendas para o francês e junte-se à prestigiosa comunidade francófona."
     }
   }
-} 
+}

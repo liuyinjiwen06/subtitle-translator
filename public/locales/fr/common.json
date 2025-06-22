@@ -1,9 +1,0 @@
-{
-  "title": "Outil de traduction de sous-titres en ligne",
-  "description": "Téléchargez un fichier SRT, choisissez la langue cible, traduisez et téléchargez les sous-titres en ligne.",
-  "upload": "Télécharger un fichier SRT",
-  "select_language": "Choisir la langue cible",
-  "translate": "Traduire",
-  "download": "Télécharger le fichier traduit",
-  "switch_language": "Changer de langue"
-} 
