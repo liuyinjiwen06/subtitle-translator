@@ -2,6 +2,8 @@ import { Locale, i18nConfig } from '../../../../i18nConfig';
 import { getServerTranslations, getPageConfig } from '../../../lib/server-i18n';
 import UniversalLanguagePage from '../../../components/UniversalLanguagePage';
 
+export const runtime = 'edge';
+
 export async function generateStaticParams() {
   return i18nConfig.locales.map((locale) => ({ locale }));
 }

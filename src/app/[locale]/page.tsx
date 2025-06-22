@@ -2,6 +2,8 @@ import { Locale } from '../../../i18nConfig';
 import { getServerTranslations } from '../../lib/server-i18n';
 import HomePageComponent from '../../components/HomePage';
 
+export const runtime = 'edge';
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params;
   const { t } = await getServerTranslations(locale);
