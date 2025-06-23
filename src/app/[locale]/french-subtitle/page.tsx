@@ -4,11 +4,8 @@ import UniversalLanguagePage from "../../../components/UniversalLanguagePage";
 
 export const runtime = 'edge';
 
-export async function generateStaticParams() {
-  return i18nConfig.locales.map((locale) => ({ locale }));
-}
-
-export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
   const { t } = await getServerTranslations(locale);
   
   return {
@@ -27,7 +24,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default async function FrenchSubtitlePage({ params: { locale } }: { params: { locale: Locale } }) {
+export default async function FrenchSubtitlePage({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
   const { t, ...translations } = await getServerTranslations(locale);
   
   return (

@@ -4,10 +4,6 @@ import UniversalLanguagePage from "../../../components/UniversalLanguagePage";
 
 export const runtime = 'edge';
 
-export async function generateStaticParams() {
-  return i18nConfig.locales.map((locale) => ({ locale }));
-}
-
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params;
   const { t } = await getServerTranslations(locale);

@@ -1,9 +1,7 @@
 import { Locale, i18nConfig } from '../../../i18nConfig';
 import { getServerTranslations } from '../../lib/server-i18n';
 
-export async function generateStaticParams() {
-  return i18nConfig.locales.map((locale) => ({ locale }));
-}
+export const runtime = 'edge';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params;
