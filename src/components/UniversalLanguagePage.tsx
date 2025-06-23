@@ -43,15 +43,56 @@ const UniversalLanguagePage: React.FC<UniversalLanguagePageProps> = ({ languageC
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    // 如果有服务器端翻译数据，优先使用它们
+    if (translations && translations.pages && translations.pages[`${languageCode}Subtitle`]) {
+      console.log(`✅ Using server-side translations for ${languageCode}`);
+      const pageData = translations.pages[`${languageCode}Subtitle`];
+      
+      // 构建布局数据
+      const mockLayout: LayoutData = {
+        language: languageCode,
+        languageName: pageData.hero?.title || `${languageCode} Subtitle`,
+        title: pageData.seo?.title || `${languageCode} Subtitle Translator`,
+        description: pageData.seo?.description || `Professional ${languageCode} subtitle translator`,
+        sections: [],
+        metadata: pageData.seo
+      };
+
+      // 构建内容数据
+      const mockContent: ContentData = {
+        language: {
+          code: languageCode,
+          name: pageData.hero?.title || languageCode
+        },
+        seo: pageData.seo,
+        hero: pageData.hero,
+        languageBenefits: pageData.benefits,
+        languageStats: pageData.stats,
+        contentTypes: pageData.contentTypes,
+        faq: pageData.faq,
+        common_questions: pageData.faq,
+        cta: pageData.cta,
+        footer: pageData.footer,
+        industryUseCases: pageData.useCases,
+        languageLearning: pageData.languageLearning
+      };
+
+      setLayout(mockLayout);
+      setContent(mockContent);
+      setLoading(false);
+      return;
+    }
+
+    // 如果没有服务器端数据，尝试加载JSON文件
     loadLanguagePageData(languageCode);
-  }, [languageCode]);
+  }, [languageCode, translations]);
 
   const loadLanguagePageData = async (langCode: string) => {
     try {
       setLoading(true);
       setError(null);
       
-      console.log(`🔄 Loading ${langCode} page data...`);
+      console.log(`🔄 Loading ${langCode} page data from JSON files...`);
       
       const [layoutResponse, contentResponse] = await Promise.all([
         fetch(`/generated-content/layouts/${langCode}-layout.json`),
@@ -69,7 +110,7 @@ const UniversalLanguagePage: React.FC<UniversalLanguagePageProps> = ({ languageC
       const layoutData = await layoutResponse.json();
       const contentData = await contentResponse.json();
 
-      console.log(`✅ Loaded ${langCode} page:`, {
+      console.log(`✅ Loaded ${langCode} page from JSON:`, {
         sections: layoutData.sections.length,
         title: layoutData.title
       });
@@ -80,9 +121,65 @@ const UniversalLanguagePage: React.FC<UniversalLanguagePageProps> = ({ languageC
     } catch (err) {
       console.error(`❌ Failed to load ${langCode} page:`, err);
       setError(err instanceof Error ? err.message : 'Unknown error');
+      
+      // 如果JSON加载失败，使用基础的fallback数据
+      if (translations) {
+        console.log(`🔄 Using fallback data for ${langCode}`);
+        const fallbackLayout: LayoutData = {
+          language: languageCode,
+          languageName: `${languageCode} Subtitle`,
+          title: `${languageCode} Subtitle Translator`,
+          description: `Professional ${languageCode} subtitle translator`,
+          sections: [],
+          metadata: {}
+        };
+
+        const fallbackContent: ContentData = {
+          language: {
+            code: languageCode,
+            name: languageCode.charAt(0).toUpperCase() + languageCode.slice(1)
+          },
+          seo: {},
+          hero: {
+            title: `${languageCode.charAt(0).toUpperCase() + languageCode.slice(1)} Subtitle Translator`,
+            description: `Professional ${languageCode} subtitle translation service`,
+            flag: getLanguageFlag(languageCode)
+          },
+          languageBenefits: {
+            title: "Why Choose Our Translator?",
+            subtitle: "Professional, fast, and accurate translation service",
+            benefits: []
+          },
+          cta: {
+            title: "Start Translating Now",
+            description: "Upload your subtitle file and get started"
+          },
+          footer: {}
+        };
+
+        setLayout(fallbackLayout);
+        setContent(fallbackContent);
+        setError(null);
+      }
     } finally {
       setLoading(false);
     }
+  };
+
+  const getLanguageFlag = (langCode: string): string => {
+    const flags: Record<string, string> = {
+      'english': '🇺🇸',
+      'chinese': '🇨🇳',
+      'spanish': '🇪🇸',
+      'french': '🇫🇷',
+      'portuguese': '🇵🇹',
+      'german': '🇩🇪',
+      'italian': '🇮🇹',
+      'japanese': '🇯🇵',
+      'korean': '🇰🇷',
+      'russian': '🇷🇺'
+    };
+    return flags[langCode] || '🌐';
   };
 
   const getLocalizedPath = (path: string) => {
@@ -101,14 +198,14 @@ const UniversalLanguagePage: React.FC<UniversalLanguagePageProps> = ({ languageC
             <div className="h-24 bg-gray-200 rounded"></div>
           </div>
           <p className="text-center mt-4 text-gray-500">
-            Loading {languageCode} page...
+            {translations?.loading || `Loading ${languageCode} page...`}
           </p>
         </div>
       </div>
     );
   }
 
-  if (error) {
+  if (error && !content) {
     return (
       <div className="page-error-view text-center p-8 min-h-screen flex items-center justify-center">
         <div>
@@ -164,10 +261,8 @@ const UniversalLanguagePage: React.FC<UniversalLanguagePageProps> = ({ languageC
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-8">
               <Link href={`/${locale}`} className="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
-                {translations?.nav?.home || 'Subtitle Translator'}
+                {translations?.title || 'Subtitle Translator'}
               </Link>
-              
-
             </div>
 
             <div className="flex items-center">
@@ -178,17 +273,17 @@ const UniversalLanguagePage: React.FC<UniversalLanguagePageProps> = ({ languageC
       </nav>
       
       {/* Hero Section */}
-      {(translations?.[`${languageCode}Subtitle`]?.hero || content.hero) && (
+      {content.hero && (
         <div className="hero-section bg-gradient-to-r from-blue-600 to-purple-700 text-white py-24">
           <div className="max-w-7xl mx-auto px-4 text-center">
             <div className="text-6xl mb-4">
-              {translations?.[`${languageCode}Subtitle`]?.hero?.flag || content.hero?.flag}
+              {content.hero.flag}
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-relaxed">
-              {translations?.[`${languageCode}Subtitle`]?.hero?.title || content.hero?.title}
+              {content.hero.title}
             </h1>
             <p className="text-sm md:text-sm text-blue-100 max-w-3xl mx-auto">
-              {translations?.[`${languageCode}Subtitle`]?.hero?.description || content.hero?.description}
+              {content.hero.description}
             </p>
           </div>
         </div>
@@ -209,27 +304,27 @@ const UniversalLanguagePage: React.FC<UniversalLanguagePageProps> = ({ languageC
                   priority: 1
                 }}
                 translations={{
-                  title: `${content.language?.name || languageCode} Subtitle Translator`,
-                  upload: "Upload SRT File",
-                  select_language: "Target Language",
-                  translate: `Translate to ${content.language?.name || languageCode}`,
-                  translating: "Translating...",
-                  download: "Download Translated File",
-                  please_select_srt_file: "Please select an .srt subtitle file",
-                  please_upload_file_first: "Please upload a subtitle file first",
-                  translation_failed: "Translation Failed",
-                  cannot_read_response: "Cannot read response stream",
-                  translation_error_occurred: "An error occurred during translation",
-                  file_selected_click_to_reselect: "File selected, click to reselect",
-                  click_or_drag_to_upload: "Click or drag to upload SRT subtitle file",
-                  select_translation_service: "Select Translation Service",
-                  translation_services: {
+                  title: content.hero?.title || `${content.language?.name || languageCode} Subtitle Translator`,
+                  upload: translations?.upload || "Upload SRT File",
+                  select_language: translations?.select_language || "Target Language",
+                  translate: translations?.translate || `Translate to ${content.language?.name || languageCode}`,
+                  translating: translations?.translating || "Translating...",
+                  download: translations?.download || "Download Translated File",
+                  please_select_srt_file: translations?.please_select_srt_file || "Please select an .srt subtitle file",
+                  please_upload_file_first: translations?.please_upload_file_first || "Please upload a subtitle file first",
+                  translation_failed: translations?.translation_failed || "Translation Failed",
+                  cannot_read_response: translations?.cannot_read_response || "Cannot read response stream",
+                  translation_error_occurred: translations?.translation_error_occurred || "An error occurred during translation",
+                  file_selected_click_to_reselect: translations?.file_selected_click_to_reselect || "File selected, click to reselect",
+                  click_or_drag_to_upload: translations?.click_or_drag_to_upload || "Click or drag to upload SRT subtitle file",
+                  select_translation_service: translations?.select_translation_service || "Select Translation Service",
+                  translation_services: translations?.translation_services || {
                     google: "Google Translate",
                     openai: "OpenAI Translation"
                   },
-                  search_languages: "Search languages...",
-                  no_matching_languages: "No matching languages found",
-                  languages: {
+                  search_languages: translations?.search_languages || "Search languages...",
+                  no_matching_languages: translations?.no_matching_languages || "No matching languages found",
+                  languages: translations?.languages || {
                     en: "English",
                     zh: "Chinese",
                     ja: "Japanese",
@@ -251,21 +346,21 @@ const UniversalLanguagePage: React.FC<UniversalLanguagePageProps> = ({ languageC
       </div>
 
       {/* Language Benefits */}
-      {(translations?.[`${languageCode}Subtitle`]?.benefits || content.languageBenefits) && (
+      {content.languageBenefits && (
         <div className="language-benefits py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                {translations?.[`${languageCode}Subtitle`]?.benefits?.title || content.languageBenefits?.title}
+                {content.languageBenefits.title}
               </h2>
               <p className="text-xl text-gray-600">
-                {translations?.[`${languageCode}Subtitle`]?.benefits?.subtitle || content.languageBenefits?.subtitle}
+                {content.languageBenefits.subtitle}
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {(translations?.[`${languageCode}Subtitle`]?.benefits?.items 
-                ? Object.values(translations[`${languageCode}Subtitle`].benefits.items)
-                : content.languageBenefits?.benefits || []
+              {(content.languageBenefits.benefits || content.languageBenefits.items ? 
+                Object.values(content.languageBenefits.items || content.languageBenefits.benefits || {}) :
+                []
               ).map((benefit: any, index: number) => (
                 <div key={index} className="bg-white rounded-lg p-6 shadow-lg">
                   <div className="text-4xl mb-4">{benefit.icon}</div>
@@ -356,10 +451,10 @@ const UniversalLanguagePage: React.FC<UniversalLanguagePageProps> = ({ languageC
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {content.contentTypes.types?.map((type: any, index: number) => (
-                <div key={index} className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
-                  <div className="text-3xl mb-4 text-center">{type.icon}</div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2 text-center">{type.title}</h3>
-                  <p className="text-gray-600 text-sm text-center">{type.description}</p>
+                <div key={index} className="bg-white rounded-lg p-6 shadow-lg text-center hover:shadow-xl transition-shadow">
+                  <div className="text-3xl mb-3">{type.icon}</div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">{type.title}</h3>
+                  <p className="text-gray-600 text-sm">{type.description}</p>
                 </div>
               ))}
             </div>
@@ -373,23 +468,20 @@ const UniversalLanguagePage: React.FC<UniversalLanguagePageProps> = ({ languageC
           <div className="max-w-4xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                {content.faq?.title || "Frequently Asked Questions"}
+                {content.faq?.title || content.common_questions?.title || "Frequently Asked Questions"}
               </h2>
               <p className="text-xl text-gray-600">
-                {content.faq?.subtitle || "Common questions about Chinese subtitle translation"}
+                {content.faq?.subtitle || content.common_questions?.subtitle || ""}
               </p>
             </div>
             <div className="space-y-6">
-              {content.faq?.questions?.map((item: any, index: number) => (
+              {((content.faq?.items || content.common_questions?.items) ? 
+                Object.values(content.faq?.items || content.common_questions?.items || {}) :
+                []
+              ).map((faqItem: any, index: number) => (
                 <div key={index} className="bg-gray-50 rounded-lg p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-3">{item.question}</h3>
-                  <p className="text-gray-600">{item.answer}</p>
-                </div>
-              )) || 
-              // Fallback to common_questions format
-              Object.entries(content.common_questions || {}).map(([key, value], index: number) => (
-                <div key={index} className="bg-gray-50 rounded-lg p-6">
-                  <div className="text-gray-600" dangerouslySetInnerHTML={{ __html: String(value).replace(/Q: (.*?) A: (.*)/, '<h3 class="text-lg font-bold text-gray-900 mb-3">$1</h3><p>$2</p>') }} />
+                  <h3 className="text-lg font-bold text-gray-900 mb-3">{faqItem.question}</h3>
+                  <p className="text-gray-600 leading-relaxed">{faqItem.answer}</p>
                 </div>
               ))}
             </div>
@@ -397,63 +489,19 @@ const UniversalLanguagePage: React.FC<UniversalLanguagePageProps> = ({ languageC
         </div>
       )}
 
-      {/* CTA Section */}
-      {(translations?.[`${languageCode}Subtitle`]?.cta || content.cta) && (
-        <div className="cta-section bg-gradient-to-r from-blue-600 to-purple-700 text-white py-16">
+      {/* Call to Action */}
+      {content.cta && (
+        <div className="cta-section py-16 bg-gradient-to-r from-blue-600 to-purple-700 text-white">
           <div className="max-w-4xl mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">
-              {translations?.[`${languageCode}Subtitle`]?.cta?.title || content.cta?.title}
-            </h2>
-            <p className="text-xl text-blue-100 mb-8">
-              {translations?.[`${languageCode}Subtitle`]?.cta?.description || content.cta?.description}
-            </p>
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
-              {translations?.[`${languageCode}Subtitle`]?.cta?.buttonText || content.cta?.button || "开始翻译"}
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{content.cta.title}</h2>
+            <p className="text-xl text-blue-100 mb-8">{content.cta.description}</p>
+            <button 
+              onClick={() => document.querySelector('.translator-section')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
+            >
+              {content.cta.button || translations?.cta?.startButton || "Start Translating"}
             </button>
           </div>
-        </div>
-      )}
-
-      {/* Footer */}
-      {content.footer && (
-        <footer className="bg-gray-900 text-white py-12">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div>
-                <h3 className="text-lg font-semibold mb-4">{content.footer.brandName}</h3>
-                <p className="text-gray-300 text-sm">{content.footer.description}</p>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-4">Features</h3>
-                <ul className="text-gray-300 space-y-2 text-sm">
-                  {content.footer.features?.map((feature: any, index: number) => (
-                    <li key={index}>{feature}</li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-4">Support</h3>
-                <ul className="text-gray-300 space-y-2 text-sm">
-                  {content.footer.support?.map((item: any, index: number) => (
-                    <li key={index}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
-              <p className="text-sm">{content.footer.copyright}</p>
-            </div>
-          </div>
-        </footer>
-      )}
-
-      {/* Debug Info */}
-      {process.env.NODE_ENV === 'development' && layout && content && (
-        <div className="page-debug-info fixed bottom-4 right-4 bg-black text-white p-2 rounded text-xs max-w-xs z-50">
-          <div>Language: {layout.language}</div>
-          <div>Sections: {layout.sections.length}</div>
-          <div>Quality: {content.generation?.qualityScore}/100</div>
-          <div>Generated: {new Date(content.generatedAt).toLocaleDateString()}</div>
         </div>
       )}
     </div>
