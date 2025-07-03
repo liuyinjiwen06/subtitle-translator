@@ -15,8 +15,19 @@ const nextConfig: NextConfig = {
   },
   // 优化构建输出，排除大文件
   webpack: (config, { isServer }) => {
-    // 禁用webpack缓存以减小输出大小
-    config.cache = false;
+    // 临时启用缓存以避免热重载问题
+    // config.cache = false;
+    
+    // 确保客户端代码不会在服务端运行
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        net: false,
+        tls: false,
+      };
+    }
+    
     return config;
   },
   // 环境变量配置

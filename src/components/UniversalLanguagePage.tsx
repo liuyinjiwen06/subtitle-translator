@@ -43,39 +43,91 @@ const UniversalLanguagePage: React.FC<UniversalLanguagePageProps> = ({ languageC
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    // 添加详细的调试信息
+    console.log(`🔍 UniversalLanguagePage useEffect triggered`);
+    console.log(`🔍 languageCode: "${languageCode}"`);
+    console.log(`🔍 locale: "${locale}"`);
+    console.log(`🔍 translations exists: ${!!translations}`);
+    console.log(`🔍 translations keys:`, translations ? Object.keys(translations) : 'N/A');
+    
+    // 尝试多种 key 格式
+    const possibleKeys = [
+      `new${languageCode}subtitle`,  // 新格式：newchinesesubtitle
+      `${languageCode}Subtitle`,     // 原格式：englishSubtitle
+      `${languageCode}subtitle`      // 小写格式：englishsubtitle
+    ];
+    
+    console.log(`🔍 Trying keys:`, possibleKeys);
+    
+    let pageData = null;
+    let foundKey = null;
+    
+    // 查找可用的数据
+    for (const key of possibleKeys) {
+      if (translations && translations[key]) {
+        pageData = translations[key];
+        foundKey = key;
+        console.log(`✅ Found data with key: "${key}"`);
+        break;
+      }
+    }
+    
+    if (!pageData) {
+      console.log(`❌ No data found for any key. Available keys:`, translations ? Object.keys(translations) : 'N/A');
+    }
+    
     // 如果有服务器端翻译数据，优先使用它们
-    if (translations && translations.pages && translations.pages[`${languageCode}Subtitle`]) {
-      console.log(`✅ Using server-side translations for ${languageCode}`);
-      const pageData = translations.pages[`${languageCode}Subtitle`];
+    if (pageData) {
+      console.log(`✅ Using server-side translations for ${languageCode} with key: ${foundKey}`);
+      console.log(`🔍 Page data structure:`, Object.keys(pageData));
+      
+      // 根据数据结构适配不同的字段
+      const seoData = pageData.seo || {};
+      const heroData = pageData.hero || {};
+      const benefitsData = pageData.languageBenefits || pageData.benefits || {};
+      const useCasesData = pageData.industryUseCases || pageData.useCases || {};
+      const statsData = pageData.languageStats || {};
+      const learningData = pageData.languageLearning || {};
+      const ctaData = pageData.cta || {};
+      const footerData = pageData.footer || {};
       
       // 构建布局数据
       const mockLayout: LayoutData = {
         language: languageCode,
-        languageName: pageData.hero?.title || `${languageCode} Subtitle`,
-        title: pageData.seo?.title || `${languageCode} Subtitle Translator`,
-        description: pageData.seo?.description || `Professional ${languageCode} subtitle translator`,
+        languageName: heroData.title || pageData.title || `${languageCode} Subtitle`,
+        title: seoData.title || pageData.title || `${languageCode} Subtitle Translator`,
+        description: seoData.description || pageData.description || `Professional ${languageCode} subtitle translator`,
         sections: [],
-        metadata: pageData.seo
+        metadata: seoData
       };
 
       // 构建内容数据
       const mockContent: ContentData = {
         language: {
           code: languageCode,
-          name: pageData.hero?.title || languageCode
+          name: heroData.title || pageData.title || languageCode
         },
-        seo: pageData.seo,
-        hero: pageData.hero,
-        languageBenefits: pageData.benefits,
-        languageStats: pageData.stats,
+        seo: seoData,
+        hero: heroData,
+        languageBenefits: benefitsData,
+        languageStats: statsData,
         contentTypes: pageData.contentTypes,
         faq: pageData.faq,
         common_questions: pageData.faq,
-        cta: pageData.cta,
-        footer: pageData.footer,
-        industryUseCases: pageData.useCases,
-        languageLearning: pageData.languageLearning
+        cta: ctaData,
+        footer: footerData,
+        industryUseCases: useCasesData,
+        languageLearning: learningData
       };
+
+      console.log(`🔍 Built content structure:`, {
+        seo: !!mockContent.seo,
+        hero: !!mockContent.hero,
+        benefits: !!mockContent.languageBenefits,
+        useCases: !!mockContent.industryUseCases,
+        stats: !!mockContent.languageStats,
+        learning: !!mockContent.languageLearning
+      });
 
       setLayout(mockLayout);
       setContent(mockContent);
@@ -84,8 +136,9 @@ const UniversalLanguagePage: React.FC<UniversalLanguagePageProps> = ({ languageC
     }
 
     // 如果没有服务器端数据，尝试加载JSON文件
+    console.log(`🔄 No i18n data found, falling back to JSON files for ${languageCode}`);
     loadLanguagePageData(languageCode);
-  }, [languageCode, translations]);
+  }, [languageCode, locale, translations]);
 
   const loadLanguagePageData = async (langCode: string) => {
     try {

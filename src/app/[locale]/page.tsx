@@ -9,12 +9,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
   const { t } = await getServerTranslations(locale);
   
   return {
-    title: t('seo.title'),
-    description: t('seo.description'),
+    title: t('homepage.meta.title'),
+    description: t('homepage.meta.description'),
     keywords: t('seo.keywords'),
     openGraph: {
-      title: t('seo.title'),
-      description: t('seo.description'),
+      title: t('homepage.meta.title'),
+      description: t('homepage.meta.description'),
       type: 'website',
     },
   };

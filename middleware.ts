@@ -47,6 +47,13 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  // 检查是否是语言特定页面（如 /english-subtitle, /french-subtitle 等）
+  const languagePageMatch = pathname.match(/^\/([a-z]+-subtitle)$/);
+  if (languagePageMatch) {
+    // 重定向到英语版本
+    return NextResponse.redirect(new URL(`/en${pathname}`, request.url));
+  }
+
   // 检查是否使用了旧格式的URL（如 /chinese-subtitle/spanish-subtitle）
   const oldFormatMatch = pathname.match(/^\/([a-z]+-subtitle)\/([a-z]+-subtitle)$/);
   if (oldFormatMatch) {

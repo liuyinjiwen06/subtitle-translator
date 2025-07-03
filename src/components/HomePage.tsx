@@ -2,6 +2,7 @@
 
 import SubtitleTranslator from './SubtitleTranslator';
 import LanguageChanger from './LanguageChanger';
+import UnifiedFooter from './UnifiedFooter';
 import Link from 'next/link';
 
 interface HomePageProps {
@@ -16,52 +17,19 @@ export default function HomePage({ pageConfig, translations, locale }: HomePageP
     return `/${locale}/${cleanPath}`;
   };
 
-  // 结构化数据
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": translations.homepage?.seo?.structuredData?.name || "Subtitle Translator - Free Online SRT Translation Tool",
-    "applicationCategory": "MultimediaApplication",
-    "description": translations.homepage?.seo?.structuredData?.description || "Free online subtitle translator for SRT files. Convert subtitles between 100+ languages using Google Translate and OpenAI. No registration required.",
-    "operatingSystem": "Web Browser",
-    "url": `https://yourdomain.com${getLocalizedPath('/')}`,
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "featureList": translations.homepage?.seo?.structuredData?.featureList || [
-      "SRT file translation",
-      "100+ languages support", 
-      "Google Translate integration",
-      "OpenAI translation engine",
-      "Free unlimited usage",
-      "No registration required"
-    ]
-  };
+  const hp = translations.homepage || {};
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-      {/* 结构化数据 */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
-
-      {/* Navigation */}
+    <div className="min-h-screen bg-white">
+      {/* Navigation - 保持原有导航栏 */}
       <nav className="bg-white shadow-sm border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            {/* Logo and Navigation Links */}
             <div className="flex items-center space-x-8">
-              <Link href={`/${locale}`} className="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
-                {translations.homepage?.navigation?.logo || translations.title || 'Subtitle Translator'}
+              <Link href={`/${locale}`} className="text-xl font-bold text-blue-600">
+                SubTran
               </Link>
-              
-              {/* Navigation links removed as requested */}
             </div>
-
-            {/* Language Selector */}
             <div className="flex items-center">
               <LanguageChanger currentLocale={locale} />
             </div>
@@ -70,247 +38,271 @@ export default function HomePage({ pageConfig, translations, locale }: HomePageP
       </nav>
 
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-blue-600 to-purple-700 text-white">
-        <div className="absolute inset-0 bg-black opacity-10"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              {translations.homepage?.hero?.title || translations.title}
+      <section className="bg-gradient-to-br from-blue-100 via-blue-50 to-blue-100 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+              {hp.hero?.headline || "Translate SRT Subtitle Files Instantly"}
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
-              {translations.homepage?.hero?.description || translations.description}
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              {hp.hero?.subheadline || "Professional subtitle translator supporting 30+ languages"}
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Translator Section */}
-        <div className="flex justify-center mb-16">
-          <div className="w-full max-w-4xl">
-            <SubtitleTranslator pageConfig={pageConfig} translations={translations} />
-          </div>
-        </div>
-
-        {/* Core Advantages Section - benefits */}
-        <section className="mb-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {translations.benefits?.title || "Core Advantages"}
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {translations.benefits?.subtitle}
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {translations.benefits?.items &&
-              Object.entries(translations.benefits.items).map(([key, item]: [string, any]) => (
-                <div key={key} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-gray-100">
-                  <div className="text-4xl mb-4 text-center">{item.icon}</div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">{item.title}</h3>
-                  <p className="text-gray-600 leading-relaxed text-center">{item.description}</p>
-                </div>
-              ))}
-          </div>
-        </section>
-
-        {/* Use Cases Section - useCases */}
-        <section className="mb-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {translations.useCases?.title || "Use Cases"}
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {translations.useCases?.subtitle}
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {translations.useCases?.items &&
-              Object.entries(translations.useCases.items).map(([key, item]: [string, any]) => (
-                <div key={key} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100">
-                  <div className="text-3xl mb-4 text-center">{item.icon}</div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-3 text-center">{item.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed text-center">{item.description}</p>
-                </div>
-              ))}
-          </div>
-        </section>
-
-        {/* Free Service Section */}
-        <section className="mb-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {translations.freeService?.title || "Free Subtitle Translation Service"}
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {translations.freeService?.subtitle}
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {translations.freeService?.items &&
-              Object.entries(translations.freeService.items).map(([key, item]: [string, any]) => (
-                <div key={key} className="bg-yellow-50 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-yellow-200">
-                  <div className="text-3xl mb-4 text-center">{item.icon}</div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-3 text-center">{item.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed text-center">{item.description}</p>
-                </div>
-              ))}
-          </div>
-        </section>
-
-        {/* Benefits and Use Cases Grid */}
-        {((pageConfig.benefits && pageConfig.benefits.length > 0) || (pageConfig.useCases && pageConfig.useCases.length > 0)) && (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-            {/* Benefits Section */}
-            {pageConfig.benefits && pageConfig.benefits.length > 0 && (
-              <div className="bg-white rounded-2xl shadow-lg p-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  {translations.benefits?.title || 'Benefits'}
-                </h2>
-                <div className="space-y-4">
-                  {pageConfig.benefits.map((benefit: any, index: number) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <div className="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                        <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-gray-900">{benefit.title}</h3>
-                        <p className="text-gray-600 text-sm">{benefit.description}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* Use Cases */}
-            {pageConfig.useCases && pageConfig.useCases.length > 0 && (
-              <div className="bg-white rounded-2xl shadow-lg p-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  {translations.useCases?.title || 'Use Cases'}
-                </h2>
-                <div className="space-y-4">
-                  {pageConfig.useCases.map((useCase: any, index: number) => (
-                    <div key={index} className="border-l-4 border-blue-400 pl-4">
-                      <h3 className="font-semibold text-gray-900">{useCase.title}</h3>
-                      <p className="text-gray-600 text-sm">{useCase.description}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-        )}
-
-        {/* FAQ Section */}
-        {pageConfig.faq && pageConfig.faq.length > 0 && (
-          <div className="mt-16">
-            <div className="bg-white rounded-2xl shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-                {translations.faq?.title || 'Frequently Asked Questions'}
-              </h2>
-              <div className="space-y-6">
-                {pageConfig.faq.map((item: any, index: number) => (
-                  <div key={index} className="border-b border-gray-200 pb-6 last:border-b-0">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.question}</h3>
-                    <p className="text-gray-600">{item.answer}</p>
-                  </div>
-                ))}
-              </div>
+      {/* Translator Functionality Section - 保持原有功能区 */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-center">
+            <div className="w-full max-w-4xl">
+              <SubtitleTranslator 
+                pageConfig={pageConfig}
+                translations={translations}
+              />
             </div>
           </div>
-        )}
+        </div>
+      </section>
 
-        {/* Specialized Tools Section */}
-        <div className="mb-16">
+      {/* Key Features 
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              {hp.keyFeatures?.title || "✨ Why Choose SubTran"}
+            </h2>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+            {(hp.keyFeatures?.items || []).map((feature: string, index: number) => (
+              <div key={index} className="flex items-center space-x-3 bg-blue-50 rounded-lg p-4">
+                <div className="text-2xl">{feature.split(' ')[0]}</div>
+                <span className="font-medium text-gray-800">{feature.substring(feature.indexOf(' ') + 1)}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>*/}
+
+      {/* How It Works */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              {translations.specializedTools?.title || "Professional Subtitle Translation Tools"}
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              {hp.howItWorks?.title || "How It Works"}
+            </h2>
+            <p className="text-xl text-gray-600">
+              {hp.howItWorks?.subtitle || "Simple 4-step process"}
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {Object.entries(hp.howItWorks?.steps || {}).map(([key, step]: [string, any], index) => (
+              <div key={key} className="text-center">
+                <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                  {index + 1}
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
+                <p className="text-gray-600 text-sm">{step.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      
+      {/* Why Choose SubTran */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              {hp.whyChoose?.title || "🚀 Why Choose SubTran"}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              {hp.whyChoose?.subtitle || "Transform your subtitle translation experience"}
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {Object.entries(hp.whyChoose?.items || {}).map(([key, item]: [string, any]) => (
+              <div key={key} className="text-center">
+                <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                  <div className="text-4xl mb-4">{item.icon}</div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
+                  <p className="text-gray-600 text-sm">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Supported Languages */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              {hp.supportedLanguages?.title || "Supported Languages"}
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+              {hp.supportedLanguages?.subtitle || "Connect with global audiences"}
+            </p>
+          </div>
+          
+          <div className="bg-white rounded-xl p-8 shadow-lg">
+            <p className="text-center text-gray-700 leading-relaxed">
+              {hp.supportedLanguages?.description || "31 languages supported"}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Language Selection Buttons - 保持原有语言按钮 */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              {translations.specializedTools?.title || "Professional Subtitle Translation Tools"}
+            </h2>
+            <p className="text-xl text-gray-600">
               {translations.specializedTools?.subtitle || "Specialized translation services for different languages"}
             </p>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
             {[
-              { code: 'en', name: 'english', flag: '🇺🇸', color: 'blue' },
-              { code: 'zh', name: 'chinese', flag: '🇨🇳', color: 'red' },
-              { code: 'es', name: 'spanish', flag: '🇪🇸', color: 'yellow' },
-              { code: 'fr', name: 'french', flag: '🇫🇷', color: 'blue' },
-              { code: 'pt', name: 'portuguese', flag: '🇵🇹', color: 'green' }
+              { code: 'en', name: 'english', color: 'blue' },
+              { code: 'zh', name: 'chinese', color: 'red' },
+              { code: 'es', name: 'spanish', color: 'yellow' },
+              { code: 'fr', name: 'french', color: 'blue' },
+              { code: 'pt', name: 'portuguese', color: 'green' }
             ].map((lang) => (
               <Link 
                 key={lang.code}
                 href={`/${locale}/${lang.name}-subtitle`}
-                className={`bg-white hover:bg-${lang.color}-50 rounded-xl shadow-md hover:shadow-lg transition-all p-4 text-center flex flex-col items-center justify-center`}
+                className={`bg-white hover:bg-${lang.color}-50 rounded-xl shadow-md hover:shadow-lg transition-all p-4 text-center`}
               >
-                <div className="text-3xl mb-2">{lang.flag}</div>
-                <div className="text-gray-900 font-medium flex flex-col items-center">
-                  <span>{translations.languages?.[lang.code] || lang.code.toUpperCase()}</span>
-                  <span className={`text-sm text-${lang.color}-600 mt-1`}>
-                    Translate to {translations.languages?.[lang.code] || lang.code.toUpperCase()}
-                  </span>
+                <div className="text-gray-900 font-medium">
+                  {translations.specializedTools?.languageButtons?.[lang.name] || lang.name.charAt(0).toUpperCase() + lang.name.slice(1)}
                 </div>
               </Link>
             ))}
           </div>
         </div>
+      </section>
 
-        {/* CTA Section */}
-        {pageConfig.cta && (
-          <div className="mt-16 bg-gradient-to-r from-blue-600 to-purple-700 rounded-2xl shadow-2xl p-12 text-center text-white">
-            <h2 className="text-3xl font-bold mb-4">{pageConfig.cta.title}</h2>
-            <p className="text-xl text-blue-100 mb-8">{pageConfig.cta.description}</p>
-          </div>
-        )}
-      </div>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 mt-16">
+      {/* Use Cases */}
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="text-lg font-semibold mb-4">
-                {translations.homepage?.navigation?.logo || translations.title || 'Subtitle Translator'}
-              </h3>
-              <p className="text-gray-300">
-                {translations.homepage?.footer?.description || translations.description || 'Free online subtitle translation tool'}
-              </p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">
-                {translations.homepage?.footer?.quickLinks || translations.footer?.quick_links || 'Quick Links'}
-              </h3>
-              <div className="space-y-2">
-                <Link href={`/${locale}`} className="block text-gray-300 hover:text-white transition-colors">
-                  {translations.homepage?.navigation?.home || translations.nav?.home || 'Home'}
-                </Link>
-                <Link href={`/${locale}/english-subtitle`} className="block text-gray-300 hover:text-white transition-colors">
-                  {translations.homepage?.navigation?.english_subtitle || translations.nav?.english_subtitle || 'English Subtitle'}
-                </Link>
-                <Link href={`/${locale}/chinese-subtitle`} className="block text-gray-300 hover:text-white transition-colors">
-                  {translations.homepage?.navigation?.chinese_subtitle || translations.nav?.chinese_subtitle || 'Chinese Subtitle'}
-                </Link>
-              </div>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">
-                {translations.homepage?.footer?.languages || translations.footer?.languages || 'Languages'}
-              </h3>
-              <div className="text-gray-300">
-                {translations.homepage?.footer?.supportedLanguages || translations.footer?.supported_languages || 'Supports 100+ languages for translation'}
-              </div>
-            </div>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              {hp.useCases?.title || "Perfect for These Use Cases"}
+            </h2>
+            <p className="text-xl text-gray-600">
+              {hp.useCases?.subtitle || "Discover how SubTran serves various industries"}
+            </p>
           </div>
-          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
-            <p>&copy; 2024 {translations.homepage?.navigation?.logo || translations.title || 'Subtitle Translator'}. {translations.homepage?.footer?.copyright || translations.footer?.rights || 'All rights reserved.'}</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {Object.entries(hp.useCases?.items || {}).map(([key, useCase]: [string, any]) => (
+              <div key={key} className="bg-gray-50 rounded-xl p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">{useCase.title}</h3>
+                <p className="text-gray-600">{useCase.description}</p>
+              </div>
+            ))}
           </div>
         </div>
-      </footer>
+      </section>
+
+      {/* Engine Comparison */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              {hp.engineComparison?.title || "Translation Engine Comparison"}
+            </h2>
+            <p className="text-xl text-gray-600">
+              {hp.engineComparison?.subtitle || "Choose the right engine for your needs"}
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Google Translate */}
+            <div className="bg-white rounded-xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                {hp.engineComparison?.google?.title || "Google Translate Engine"}
+              </h3>
+              <div className="space-y-4">
+                <div>
+                  <span className="font-semibold text-gray-700">Best for: </span>
+                  <span className="text-gray-600">{hp.engineComparison?.google?.bestFor}</span>
+                </div>
+                <div>
+                  <span className="font-semibold text-gray-700">Strengths: </span>
+                  <span className="text-gray-600">{hp.engineComparison?.google?.strengths}</span>
+                </div>
+                <div>
+                  <span className="font-semibold text-gray-700">Ideal when: </span>
+                  <span className="text-gray-600">{hp.engineComparison?.google?.idealWhen}</span>
+                </div>
+              </div>
+            </div>
+            
+            {/* OpenAI */}
+            <div className="bg-white rounded-xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                {hp.engineComparison?.openai?.title || "OpenAI Translation Engine"}
+              </h3>
+              <div className="space-y-4">
+                <div>
+                  <span className="font-semibold text-gray-700">Best for: </span>
+                  <span className="text-gray-600">{hp.engineComparison?.openai?.bestFor}</span>
+                </div>
+                <div>
+                  <span className="font-semibold text-gray-700">Strengths: </span>
+                  <span className="text-gray-600">{hp.engineComparison?.openai?.strengths}</span>
+                </div>
+                <div>
+                  <span className="font-semibold text-gray-700">Ideal when: </span>
+                  <span className="text-gray-600">{hp.engineComparison?.openai?.idealWhen}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center mt-8">
+            <p className="text-gray-600 max-w-4xl mx-auto">
+              {hp.engineComparison?.note}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              {hp.faq?.title || "Frequently Asked Questions"}
+            </h2>
+            <p className="text-xl text-gray-600">
+              {hp.faq?.subtitle || "Get answers to common questions"}
+            </p>
+          </div>
+          
+          <div className="space-y-6">
+            {Object.entries(hp.faq?.items || {}).map(([key, faq]: [string, any]) => (
+              <div key={key} className="bg-gray-50 rounded-xl p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">{faq.question}</h3>
+                <p className="text-gray-600">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Footer - 保持统一的Footer */}
+      <UnifiedFooter translations={translations} />
     </div>
   );
-} 
+}

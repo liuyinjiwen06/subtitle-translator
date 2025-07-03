@@ -5,20 +5,34 @@ const translationCache = new Map<string, any>();
 
 // 加载翻译文件
 async function loadTranslations(locale: Locale) {
+  // 添加调试信息
+  console.log(`🔍 Loading translations for locale: "${locale}"`);
+  console.log(`🔍 Locale type: ${typeof locale}`);
+  console.log(`🔍 Call stack:`, new Error().stack?.split('\n').slice(1, 5).join('\n'));
+  
   if (translationCache.has(locale)) {
+    console.log(`✅ Found cached translations for locale: ${locale}`);
     return translationCache.get(locale);
   }
 
   try {
+    console.log(`📂 Attempting to import: ../lib/locales/${locale}.json`);
     const translations = await import(`../lib/locales/${locale}.json`);
     translationCache.set(locale, translations.default);
+    console.log(`✅ Successfully loaded translations for locale: ${locale}`);
     return translations.default;
   } catch (error) {
-    console.warn(`Failed to load translations for locale: ${locale}`);
+    console.error(`❌ Failed to load translations for locale: ${locale}`);
+    console.error(`❌ Error details:`, error);
+    console.error(`❌ Error message:`, error instanceof Error ? error.message : 'Unknown error');
+    console.error(`❌ Call stack when error occurred:`, new Error().stack);
+    
     // 回退到英语
     if (locale !== 'en') {
+      console.warn(`🔄 Falling back to English translations for failed locale: ${locale}`);
       return loadTranslations('en');
     }
+    console.error(`💥 Critical: Even English translations failed to load!`);
     return {};
   }
 }
@@ -27,7 +41,17 @@ async function loadTranslations(locale: Locale) {
 export async function getServerTranslations(locale: Locale) {
   const translations = await loadTranslations(locale);
   
-  const t = (key: string, fallback?: string): string => {
+  const t = (key: string, options?: { returnObjects?: boolean } | string): any => {
+    // 处理参数
+    let returnObjects = false;
+    let fallback: string | undefined;
+    
+    if (typeof options === 'object' && options !== null) {
+      returnObjects = options.returnObjects || false;
+    } else if (typeof options === 'string') {
+      fallback = options;
+    }
+    
     const keys = key.split('.');
     let value = translations;
     
@@ -39,6 +63,12 @@ export async function getServerTranslations(locale: Locale) {
       }
     }
     
+    // 如果 returnObjects 为 true，返回原始值（可能是数组或对象）
+    if (returnObjects) {
+      return value;
+    }
+    
+    // 否则只返回字符串
     return typeof value === 'string' ? value : fallback || key;
   };
 

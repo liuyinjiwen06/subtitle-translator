@@ -21,7 +21,8 @@ const languageNames = {
   vi: 'Tiếng Việt',
   tr: 'Türkçe',
   pl: 'Polski',
-  nl: 'Nederlands'
+  nl: 'Nederlands',
+  sv: 'Svenska'
 };
 
 const languageFlags = {
@@ -41,7 +42,8 @@ const languageFlags = {
   vi: '🇻🇳',
   tr: '🇹🇷',
   pl: '🇵🇱',
-  nl: '🇳🇱'
+  nl: '🇳🇱',
+  sv: '🇸🇪'
 };
 
 interface LanguageChangerProps {

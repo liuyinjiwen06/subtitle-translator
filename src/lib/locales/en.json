@@ -1,4 +1,155 @@
 {
+  "homepage": {
+    "meta": {
+      "title": "Free SRT Translator - Translate Subtitle Files Online | SubTran",
+      "description": "Free online SRT translator to translate subtitle files instantly. Support 30+ languages with Google Translate and OpenAI. No registration required - upload SRT, translate, download."
+    },
+    "hero": {
+      "headline": "Translate SRT Subtitle Files Instantly",
+      "subheadline": "Professional subtitle translator supporting 30+ languages. Upload your SRT file, choose your target language, and get accurate translations in seconds - completely free with no registration required.",
+      "features": [
+        "Free Forever - No hidden costs or subscriptions",
+        "31 Languages - From English to Chinese, Spanish, French and more",
+        "Two AI Engines - Choose between Google Translate and OpenAI for best results",
+        "Instant Download - Get your translated SRT file immediately"
+      ]
+    },
+    "keyFeatures": {
+      "title": "✨ Why Choose SubTran",
+      "items": [
+        "💰 Free Forever - No hidden costs or subscriptions",
+        "🌍 31 Languages - From English to Chinese, Spanish, French and more",
+        "🤖 Two AI Engines - Choose between Google Translate and OpenAI for best results",
+        "⚡ Instant Download - Get your translated SRT file immediately"
+      ]
+    },
+    "whyChoose": {
+      "title": "🚀 Why Choose SubTran",
+      "subtitle": "Transform your subtitle translation experience with our powerful, user-friendly tools designed for creators worldwide.",
+      "items": {
+        "free": {
+          "icon": "💎",
+          "title": "Free & No Registration Required",
+          "description": "Translate your subtitle files without creating an account or paying fees. Our SRT translator is completely free and always will be."
+        },
+        "dualEngines": {
+          "icon": "⚙️",
+          "title": "Dual Translation Engines",
+          "description": "Choose between Google Translate for fast, reliable translations, or OpenAI for more contextually accurate results. Pick the engine that works best for your content."
+        },
+        "languages": {
+          "icon": "🌐",
+          "title": "31 Language Support",
+          "description": "Translate subtitles between major world languages including English, Chinese, Spanish, French, German, Japanese, Korean, Portuguese, Russian, Arabic, and many more."
+        },
+        "formatting": {
+          "icon": "📝",
+          "title": "Preserve SRT Formatting",
+          "description": "Our subtitle translator maintains perfect timing, formatting, and structure of your original SRT file. No manual fixing required."
+        }
+      }
+    },
+    "supportedLanguages": {
+      "title": "🌍 Supported Languages",
+      "subtitle": "Connect with global audiences using our comprehensive language support covering major world languages and regional dialects.",
+      "description": "English • Chinese • Japanese • French • German • Spanish • Russian • Italian • Portuguese • Arabic • Hindi • Korean • Thai • Vietnamese • Turkish • Polish • Dutch • Swedish • Danish • Norwegian • Finnish • Czech • Hungarian • Romanian • Bulgarian • Croatian • Slovak • Slovenian • Estonian • Latvian • Lithuanian"
+    },
+    "howItWorks": {
+      "title": "⚡ How It Works",
+      "subtitle": "Simple 4-step process to translate your subtitle files professionally in under a minute.",
+      "steps": {
+        "upload": {
+          "title": "Upload Your SRT File",
+          "description": "Drag and drop your subtitle file or click to browse. We support standard SRT format files up to 10MB in size."
+        },
+        "selectLanguage": {
+          "title": "Select Target Language",
+          "description": "Choose from 31 supported languages. Our interface automatically detects your source language for convenience."
+        },
+        "chooseEngine": {
+          "title": "Choose Translation Engine",
+          "description": "Pick Google Translate for speed and broad language support, or OpenAI for more nuanced, context-aware translations."
+        },
+        "download": {
+          "title": "Download Results",
+          "description": "Click translate and download your professionally translated SRT file within seconds. All timing and formatting preserved."
+        }
+      }
+    },
+    "faq": {
+      "title": "❓ Frequently Asked Questions",
+      "subtitle": "Get answers to common questions about our SRT translation service and technical capabilities.",
+      "items": {
+        "formats": {
+          "question": "What file formats do you support?",
+          "answer": "We currently support SRT (SubRip Subtitle) files, the most widely used subtitle format. Support for additional formats like VTT and ASS is coming soon."
+        },
+        "fileSize": {
+          "question": "How large can my SRT file be?",
+          "answer": "You can upload SRT files up to 10MB in size, which typically contains several hours of subtitle content."
+        },
+        "speed": {
+          "question": "How long does translation take?",
+          "answer": "Most subtitle files are translated within 10-30 seconds, depending on file size and selected translation engine."
+        },
+        "security": {
+          "question": "Is my content secure and private?",
+          "answer": "Yes, your files are processed securely and automatically deleted from our servers after translation. We never store or share your content."
+        },
+        "engine": {
+          "question": "Which translation engine should I choose?",
+          "answer": "Google Translate is faster and supports more language combinations, while OpenAI provides more contextually accurate translations, especially for conversational content."
+        },
+        "batch": {
+          "question": "Do you support batch translation?",
+          "answer": "Currently, you can translate one SRT file at a time. Batch processing features are planned for future updates."
+        }
+      }
+    },
+    "useCases": {
+      "title": "🎯 Perfect for These Use Cases",
+      "subtitle": "Discover how SubTran serves content creators, businesses, and individuals across various industries and projects.",
+      "items": {
+        "creators": {
+          "title": "Content Creators",
+          "description": "Expand your YouTube, TikTok, or social media reach by adding subtitles in multiple languages to your videos."
+        },
+        "education": {
+          "title": "Educational Content",
+          "description": "Make your online courses and training materials accessible to international students with accurate subtitle translation."
+        },
+        "business": {
+          "title": "Business & Marketing",
+          "description": "Localize your promotional videos, webinars, and corporate content for global audiences."
+        },
+        "entertainment": {
+          "title": "Entertainment Industry",
+          "description": "Quickly translate subtitles for films, series, documentaries, and other video content for international distribution."
+        },
+        "individual": {
+          "title": "Individual Users",
+          "description": "Translate foreign language content for personal understanding or create subtitles for family videos and presentations."
+        }
+      }
+    },
+    "engineComparison": {
+      "title": "🔧 Translation Engine Comparison",
+      "subtitle": "Choose the right translation engine for your specific needs - speed or quality, we've got you covered.",
+      "google": {
+        "title": "Google Translate Engine",
+        "bestFor": "Fast translations and rare language pairs",
+        "strengths": "Lightning-fast processing, supports the widest range of languages, excellent for technical content",
+        "idealWhen": "You need quick results or are translating between less common language pairs"
+      },
+      "openai": {
+        "title": "OpenAI Translation Engine",
+        "bestFor": "Natural, contextually accurate translations",
+        "strengths": "Better understanding of context, idioms, and conversational language, more human-like results",
+        "idealWhen": "Quality is priority over speed, translating dialogue-heavy content, or need natural-sounding results"
+      },
+      "note": "Both engines maintain perfect SRT formatting and timing, so you can choose based on your specific needs for speed versus quality."
+    }
+  },
   "title": "Online Subtitle Translator",
   "description": "Upload SRT files, select target language, translate subtitles online and download.",
   "loading": "Loading...",
@@ -471,306 +622,1026 @@
     }
   },
   "chineseSubtitle": {
-    "seo": {
-      "title": "Free Chinese Subtitle Translator - Translate SRT Online",
-      "description": "Professional Chinese subtitle translation service, supporting 30 languages to Chinese translation. Upload SRT subtitle files, AI smart translation to Chinese subtitles, accurate context understanding, completely free.",
-      "keywords": "Chinese subtitle translation,translate to Chinese,SRT Chinese translation,subtitle Chinese translation,online Chinese translation,free Chinese subtitles,AI Chinese translation,video Chinese subtitles"
+    "meta": {
+      "title": "Chinese SRT Translator - Translate Chinese Subtitles Online Free | SubTran",
+      "description": "Professional Chinese subtitle translator. Translate SRT files from Chinese to 30+ languages or translate any language to Chinese. Free online tool with AI-powered accuracy for Simplified & Traditional Chinese."
     },
-    "title": "Translate Any Subtitle to Fluent Chinese",
-    "description": "Make your content accessible to Chinese audiences with our intelligent subtitle translation service. Supporting 30+ languages with cultural localization.",
-    "benefits": {
-      "title": "Chinese Subtitle Translation Advantages",
-      "subtitle": "Why choose our Chinese subtitle translation service? Accurate, fluent, and localized",
+    "hero": {
+      "headline": "Professional Chinese Subtitle Translator",
+      "subheadline": "Translate Chinese subtitles to 30+ languages or convert any language to Chinese with perfect accuracy. Our specialized Chinese SRT translator handles both Simplified and Traditional Chinese with cultural nuance and linguistic precision."
+    },
+    "solutions": {
+      "title": "🏮 Chinese Subtitle Solutions",
+      "subtitle": "Bridge Eastern and Western content markets with our advanced Chinese subtitle translation technology optimized for the complexities of Chinese language and culture.",
       "items": {
-        "context": {
-          "icon": "🧠",
-          "title": "Intelligent Context Understanding",
-          "description": "AI deeply understands original context to generate natural translations that conform to Chinese expression habits"
-        },
-        "localization": {
+        "fromChinese": {
           "icon": "🏮",
-          "title": "Localized Expression",
-          "description": "Not only translates language but also focuses on cultural localization for better understanding by Chinese audiences"
+          "title": "From Chinese to Global Markets",
+          "description": "Expand your Chinese content's international reach with translations that preserve cultural context, linguistic subtleties, and regional expressions. Perfect for exporting Chinese entertainment, education, and business content worldwide."
         },
-        "accuracy": {
-          "icon": "✨",
-          "title": "Professional Terminology Accuracy",
-          "description": "Accurately translates professional terms and industry vocabulary while maintaining original meaning and Chinese conventions"
+        "toChinese": {
+          "icon": "🌏",
+          "title": "To Chinese for Local Markets",
+          "description": "Bring international content to Chinese-speaking audiences with culturally adapted translations. Ideal for streaming platforms, educational institutions, and businesses entering Chinese markets."
+        },
+        "dualScript": {
+          "icon": "📱",
+          "title": "Simplified & Traditional Chinese Support",
+          "description": "Complete support for both 简体中文 (Simplified) and 繁體中文 (Traditional) Chinese, with automatic detection and cross-conversion capabilities for Hong Kong, Taiwan, and Mainland China markets."
+        },
+        "cultural": {
+          "icon": "🎋",
+          "title": "Cultural Adaptation Excellence",
+          "description": "Our AI understands Chinese cultural references, idioms (成语), regional expressions, and formal/informal language patterns, ensuring translations that resonate authentically with target audiences."
+        }
+      },
+      "features": [
+        "✅ Chinese Expertise - Specialized for Chinese language complexities",
+        "🌐 Dual Script Support - Both Simplified and Traditional Chinese",
+        "🧠 Cultural Intelligence - Understands idioms, references, and context",
+        "⭐ Market-Ready Quality - Perfect for streaming, business, and education"
+      ]
+    },
+    "supportedLanguages": {
+      "title": "🌍 Supported Languages",
+      "subtitle": "Connect Chinese content with global audiences through comprehensive language support covering major international markets.",
+      "fromChinese": "Translate Chinese Subtitles To:",
+      "toChinese": "Plus Reverse Translation:",
+      "description": "English • Japanese • Korean • French • German • Spanish • Russian • Italian • Portuguese • Arabic • Hindi • Thai • Vietnamese • Turkish • Polish • Dutch • Swedish • Danish • Norwegian • Finnish • Czech • Hungarian • Romanian • Bulgarian • Croatian • Slovak • Slovenian • Estonian • Latvian • Lithuanian",
+      "reverseNote": "Translate any of these languages to Chinese (Simplified or Traditional) with the same cultural sensitivity and linguistic accuracy."
+    },
+    "optimization": {
+      "title": "🀄 Chinese Language Optimization",
+      "subtitle": "Advanced processing specifically designed for the unique characteristics and complexities of Chinese language content.",
+      "items": {
+        "character": {
+          "icon": "🀄",
+          "title": "Character Recognition & Context",
+          "description": "Advanced processing of Chinese characters with contextual understanding, handling homonyms, tone variations, and meaning disambiguation based on surrounding context."
+        },
+        "idiom": {
+          "icon": "📚",
+          "title": "Idiom & Proverb Handling",
+          "description": "Specialized recognition and translation of Chinese idioms (成语), proverbs (谚语), and classical references with cultural equivalent matching rather than literal translation."
+        },
+        "regional": {
+          "icon": "🎌",
+          "title": "Regional Variant Processing",
+          "description": "Intelligent handling of Mainland Chinese, Taiwanese, Hong Kong, and Singapore Chinese variants, including regional vocabulary, expressions, and cultural preferences."
+        },
+        "register": {
+          "icon": "📝",
+          "title": "Formal & Informal Register",
+          "description": "Accurate detection and preservation of formal (书面语) versus informal (口语) language styles, ensuring appropriate tone matching in target languages."
         }
       }
     },
-    "useCases": {
-      "title": "Chinese Subtitle Use Cases",
+    "industries": {
+      "title": "🏢 Industry Applications",
+      "subtitle": "Discover how Chinese content creators and international businesses leverage our Chinese subtitle translator for market expansion.",
       "items": {
-        "foreign": {
-          "icon": "🎭",
-          "title": "Foreign Content Localization",
-          "description": "Chinese subtitle creation for overseas films, documentaries, and educational videos"
-        },
-        "learning": {
-          "icon": "📖",
-          "title": "Language Learning Aid",
-          "description": "Chinese subtitles for foreign language learning videos and online courses to aid comprehension"
+        "entertainment": {
+          "icon": "📺",
+          "title": "Entertainment & Media",
+          "applications": {
+            "drama": "Chinese Drama & Film: Translate Chinese TV shows, movies, and web series for international streaming platforms with cultural authenticity.",
+            "creators": "Content Creators: Help Chinese YouTubers, Bilibili creators, and social media influencers reach global audiences while maintaining their unique voice."
+          }
         },
         "business": {
-          "icon": "🏢",
-          "title": "Business Communication",
-          "description": "Chinese subtitle translation for international conferences, business training, and product introductions"
+          "icon": "💼",
+          "title": "Business & E-commerce",
+          "applications": {
+            "training": "Corporate Training: Localize Chinese business content for international subsidiaries or translate global content for Chinese markets.",
+            "marketing": "Product Marketing: Adapt marketing videos and product demonstrations between Chinese and international markets with cultural sensitivity."
+          }
+        },
+        "education": {
+          "icon": "📚",
+          "title": "Education & Culture",
+          "applications": {
+            "learning": "Language Learning: Create bilingual educational content for Chinese language learners or Chinese students studying foreign languages.",
+            "cultural": "Cultural Exchange: Translate documentaries, lectures, and cultural content to promote understanding between Chinese and international communities."
+          }
+        },
+        "digital": {
+          "icon": "🎬",
+          "title": "Digital Content",
+          "applications": {
+            "streaming": "Live Streaming: Real-time subtitle translation for Chinese streamers expanding internationally or international content entering Chinese platforms.",
+            "courses": "Online Courses: Make Chinese MOOCs accessible globally or bring international education content to Chinese learners."
+          }
+        }
+      }
+    },
+    "quality": {
+      "title": "🏆 Quality & Accuracy",
+      "subtitle": "Experience superior Chinese translation quality with our culturally-aware AI engines and specialized quality assurance processes.",
+      "engines": {
+        "title": "🤖 Dual AI Engine Advantage",
+        "google": "Google Translate for Chinese: Optimized for Chinese character recognition and broad language pair support, providing reliable translations for standard content.",
+        "openai": "OpenAI for Chinese: Advanced cultural context understanding, handling Chinese idioms, cultural references, and nuanced expressions with human-like accuracy."
+      },
+      "checks": {
+        "title": "✅ Chinese-Specific Quality Checks",
+        "items": [
+          "Character Accuracy: Ensures correct Chinese character usage and variant consistency",
+          "Cultural Sensitivity: Adapts Chinese cultural concepts for international audiences",
+          "Tone Preservation: Maintains formal/informal register appropriate to content type",
+          "Regional Consistency: Applies correct Simplified/Traditional conventions"
+        ]
+      },
+      "metrics": {
+        "title": "📊 Accuracy Metrics",
+        "items": [
+          "96%+ Accuracy for standard Chinese content",
+          "Cultural Context Recognition for 5,000+ Chinese idioms and expressions",
+          "Regional Variant Support for Mainland, Taiwan, Hong Kong, and Singapore Chinese",
+          "Technical Terminology coverage for major industries and academic fields"
+        ]
+      }
+    },
+    "technical": {
+      "title": "⚡ Technical Specifications",
+      "subtitle": "Built specifically to handle the technical requirements of Chinese subtitle translation with professional reliability and cultural precision.",
+      "processing": {
+        "title": "⚡ Processing Capabilities",
+        "fileSize": "File Size: Up to 10MB (typically 8-12 hours of content)",
+        "character": "Character Support: Full Unicode support for all Chinese characters",
+        "speed": "Speed: 15-35 seconds processing time for Chinese content",
+        "quality": "Quality: 96%+ accuracy with specialized Chinese AI models"
+      },
+      "features": {
+        "title": "🚀 Advanced Features",
+        "items": [
+          "Script Auto-Detection: Automatically identifies Simplified vs Traditional Chinese",
+          "Cross-Script Conversion: Convert between Simplified and Traditional as needed",
+          "Cultural Context Mapping: Understands Chinese cultural references and adapts appropriately",
+          "Regional Preference Settings: Optimize translations for specific Chinese-speaking regions"
+        ]
+      },
+      "assurance": {
+        "title": "🛡️ Quality Assurance",
+        "items": [
+          "Character Validation: Ensures correct Chinese character encoding and display",
+          "Cultural Appropriateness: Automatic checking for culturally sensitive content adaptation",
+          "Consistency Verification: Maintains terminology consistency across long Chinese documents",
+          "Perfect Formatting: Preserves original SRT timing with proper Chinese text rendering"
+        ]
+      }
+    },
+    "faq": {
+      "title": "❓ Frequently Asked Questions",
+      "subtitle": "Get answers to common questions about our Chinese subtitle translation service.",
+      "items": {
+        "variants": {
+          "question": "Do you support both Simplified and Traditional Chinese?",
+          "answer": "Yes, we fully support both 简体中文 (Simplified) and 繁體中文 (Traditional) Chinese. Our system automatically detects which variant you're using and can convert between them as needed."
+        },
+        "idioms": {
+          "question": "How do you handle Chinese idioms and cultural references?",
+          "answer": "Our AI is trained on extensive Chinese cultural content and recognizes over 5,000 Chinese idioms (成语), proverbs, and cultural references, translating them with cultural equivalents rather than literal meanings."
+        },
+        "regional": {
+          "question": "Can you translate between different Chinese regions' variants?",
+          "answer": "Absolutely. We understand regional differences between Mainland Chinese, Taiwanese, Hong Kong, and Singapore Chinese, including vocabulary variations and cultural preferences."
+        },
+        "accuracy": {
+          "question": "What's the accuracy rate for Chinese translations?",
+          "answer": "Our specialized Chinese models achieve 96%+ accuracy for standard content, with particularly strong performance on cultural context and idiomatic expressions."
+        },
+        "speed": {
+          "question": "How long does Chinese subtitle translation take?",
+          "answer": "Chinese content typically processes in 15-35 seconds due to the complexity of character recognition and cultural context analysis, ensuring higher quality results."
+        },
+        "engine": {
+          "question": "Which translation engine works better for Chinese content?",
+          "answer": "For technical or formal content, Google Translate provides excellent speed and accuracy. For entertainment, cultural, or creative content with idioms and cultural references, OpenAI typically delivers more nuanced results."
         }
       }
     }
   },
   "spanishSubtitle": {
-    "seo": {
-      "title": "Spanish Subtitle Translator - Unleashing the Power of Spanish Content",
-      "description": "Experience seamless Spanish subtitle translation with our tool, ideal for expanding your business in the rapidly growing Spanish-speaking market or for enjoying Spanish movies at home.",
-      "keywords": [
-        "Spanish subtitle translator",
-        "English to Spanish translation",
-        "SRT translation to Spanish",
-        "Video localization in Spanish",
-        "Spanish language support",
-        "Spanish movie subtitles",
-        "Translate English movie to Spanish",
-        "Spanish subtitle for business videos",
-        "Spanish subtitle for education",
-        "AI Spanish translation"
-      ]
+    "meta": {
+      "title": "Spanish SRT Translator - Translate Spanish Subtitles Online Free | SubTran",
+      "description": "Professional Spanish subtitle translator. Translate SRT files from Spanish to 30+ languages or translate any language to Spanish. Free online tool with AI-powered accuracy for all Spanish variants."
     },
-    "title": "Transform Your Subtitles into Perfect Spanish",
-    "description": "Convert subtitles from any language to native-quality Spanish with our advanced AI translation technology. Fast, accurate, and completely free.",
     "hero": {
-      "title": "Unlock the Power of Spanish Translation",
-      "description": "With over 500 million speakers worldwide, Spanish is one of the most widely spoken languages globally. Our subtitle translation tool supports Spanish translation, making it easy for Spanish-speaking content creators and consumers to connect, communicate, and grow in this vibrant language community.",
+      "headline": "Professional Spanish Subtitle Translator",
+      "subheadline": "Transform your content for 500+ million Spanish speakers worldwide. Our AI-powered translator delivers culturally accurate Spanish subtitles with support for regional variations including Mexican, Argentinian, Colombian, and European Spanish.",
       "flag": "🇪🇸"
     },
-    "benefits": {
-      "title": "Unleash the Power of Spanish Subtitle Translation",
-      "subtitle": "Tap into the vast Spanish-speaking market with our state-of-the-art translation tool",
+    "solutions": {
+      "title": "🌶️ Spanish Subtitle Solutions",
+      "subtitle": "Bridge global markets with our advanced Spanish subtitle translation technology designed for the diverse Hispanic world.",
       "items": {
-        "benefit_0": {
-          "icon": "🌎",
-          "title": "Global Hispanic Market",
-          "description": "Spanish is spoken by over 500 million people across 20+ countries. Our tool enables you to reach this vast and diverse market, increasing the accessibility of your content."
+        "regional": {
+          "icon": "🗺️",
+          "title": "Regional Spanish Variants",
+          "description": "Support for Mexican, Argentinian, Colombian, Peruvian, Venezuelan, Chilean, European Spanish and other regional variations with cultural nuances and local expressions."
         },
-        "benefit_1": {
-          "icon": "💼",
-          "title": "Business Expansion",
-          "description": "Spanish-speaking markets represent significant economic opportunities. Our tool helps you break language barriers and expand into Latin America and Spain."
+        "bidirectional": {
+          "icon": "↔️",
+          "title": "Bidirectional Translation",
+          "description": "Translate from Spanish to 30+ languages or translate any language to Spanish with equal precision and cultural sensitivity."
         },
-        "benefit_2": {
+        "cultural": {
           "icon": "🎭",
-          "title": "Cultural Richness",
-          "description": "Spanish has rich regional variations and cultural nuances. Our AI-powered tool accurately translates these subtleties while preserving cultural authenticity."
+          "title": "Cultural Adaptation",
+          "description": "AI engines trained on Hispanic culture, slang, idioms, and regional expressions to deliver translations that resonate with Spanish-speaking audiences."
         },
-        "benefit_3": {
-          "icon": "📺",
-          "title": "Entertainment Industry",
-          "description": "Spanish content is booming globally. Our tool handles movies, series, documentaries, and educational content with precision and cultural sensitivity."
+        "business": {
+          "icon": "💼",
+          "title": "Business Content Focus",
+          "description": "Specialized handling of corporate content, educational materials, marketing videos, and professional communications for Spanish-speaking markets."
+        }
+      },
+      "features": [
+        "🇲🇽 Mexican Spanish Localization",
+        "🇦🇷 Argentinian Spanish Support", 
+        "🇪🇸 European Spanish Variations",
+        "🇨🇴 Colombian Spanish Dialects",
+        "📚 Educational Content Optimization",
+        "🎬 Entertainment Industry Standards"
+      ]
+    },
+    "supportedLanguages": {
+      "title": "🌍 Spanish Translation Coverage",
+      "subtitle": "Connect Spanish content with global audiences through comprehensive language support covering major world languages.",
+      "fromSpanish": "Translate Spanish Subtitles To:",
+      "description": "English • Chinese • Japanese • French • German • Russian • Italian • Portuguese • Arabic • Hindi • Korean • Thai • Vietnamese • Turkish • Polish • Dutch • Swedish • Danish • Norwegian • Finnish • Czech • Hungarian • Romanian • Bulgarian • Croatian • Slovak • Slovenian • Estonian • Latvian • Lithuanian",
+      "toSpanish": "Plus Reverse Translation:",
+      "reverseNote": "Translate any of these languages to Spanish with the same regional sensitivity and cultural accuracy, supporting both Latin American and European Spanish variants."
+    },
+    "optimization": {
+      "title": "🌮 Spanish Language Optimization",
+      "subtitle": "Advanced processing specifically designed for the unique characteristics and regional complexities of Spanish language content.",
+      "items": {
+        "grammar": {
+          "icon": "📚",
+          "title": "Spanish Grammar Mastery",
+          "description": "Advanced handling of Spanish verb conjugations, gender agreements, subjunctive mood, and complex grammatical structures."
         },
-        "benefit_4": {
+        "regional": {
+          "icon": "🗺️",
+          "title": "Regional Dialect Support",
+          "description": "Intelligent recognition and translation of regional Spanish variants including Mexican, Argentinian, Colombian, and European Spanish dialects."
+        },
+        "cultural": {
+          "icon": "🎪",
+          "title": "Cultural Context Awareness",
+          "description": "AI trained on Hispanic cultural references, idioms, slang, and colloquialisms for authentic Spanish translations."
+        },
+        "formal": {
           "icon": "🏛️",
-          "title": "Educational Value",
-          "description": "Spanish is the second most studied language worldwide. Our tool supports educational content creation and language learning materials."
-        },
-        "benefit_5": {
-          "icon": "🤖",
-          "title": "AI-Driven Precision",
-          "description": "Our advanced AI technology handles Spanish grammar complexities, regional variations, and cultural context for superior translation quality."
+          "title": "Formal vs Informal Register",
+          "description": "Appropriate handling of tú/usted distinctions and formal/informal language registers based on content context."
         }
       }
     },
-    "useCases": {
-      "title": "Spanish Subtitle Translator Applications",
+    "industries": {
+      "title": "🏢 Spanish Content Industries",
+      "subtitle": "Discover how Spanish content creators and international businesses leverage our Spanish subtitle translator across diverse sectors.",
       "items": {
-        "international": {
-          "icon": "🌎",
-          "title": "Latin American Expansion",
-          "description": "Use our Spanish subtitle translator for business expansion into Latin American markets and Spanish-speaking regions"
-        },
-        "education": {
-          "icon": "📚",
-          "title": "Educational Content",
-          "description": "Spanish subtitle translator perfect for online courses, educational videos, and language learning materials"
-        },
         "entertainment": {
           "icon": "🎬",
-          "title": "Media Localization",
-          "description": "Professional Spanish subtitle translator for film distribution, streaming platforms, and entertainment content"
+          "title": "Entertainment & Media",
+          "applications": {
+            "streaming": "Netflix, Amazon Prime, and streaming platform content localization for Spanish-speaking markets",
+            "film": "Hollywood and international film distribution with Spanish subtitles for theaters and home video",
+            "television": "TV series, documentaries, and broadcast content for Spanish television networks",
+            "youtube": "YouTube creators expanding to Spanish-speaking audiences across Latin America and Spain"
+          }
+        },
+        "education": {
+          "icon": "🎓",
+          "title": "Education & Training",
+          "applications": {
+            "online": "Online course platforms like Coursera, Udemy translating educational content to Spanish",
+            "corporate": "Corporate training materials for Spanish-speaking employees and international teams",
+            "academic": "University lectures, research presentations, and academic content for Spanish institutions",
+            "language": "Language learning platforms creating Spanish content for global Spanish learners"
+          }
+        },
+        "business": {
+          "icon": "💼",
+          "title": "Business & Marketing",
+          "applications": {
+            "marketing": "Product launches, promotional videos, and marketing campaigns for Latin American markets",
+            "corporate": "CEO messages, company announcements, and internal communications for Spanish offices",
+            "sales": "Sales presentations, product demos, and client communications in Spanish-speaking regions",
+            "customer": "Customer support videos, tutorials, and help content for Spanish-speaking users"
+          }
+        },
+        "technology": {
+          "icon": "💻",
+          "title": "Technology & Software",
+          "applications": {
+            "saas": "SaaS companies creating Spanish tutorials, onboarding, and feature explanation videos",
+            "mobile": "Mobile app developers localizing promotional and instructional content for Spanish markets",
+            "gaming": "Game developers translating cutscenes, tutorials, and promotional content for Spanish gamers",
+            "tech": "Tech conferences, webinars, and technical presentations for Spanish-speaking developers"
+          }
         }
       }
     },
-    "cta": {
-      "title": "Start Your Spanish Subtitle Translation Journey",
-      "description": "Experience seamless communication with Spanish-speaking audiences worldwide. Don't let language barriers limit your reach. Start translating your subtitles into Spanish and connect with over 500 million Spanish speakers globally."
+    "quality": {
+      "title": "🏆 Spanish Translation Excellence",
+      "subtitle": "Experience superior Spanish translation quality with our culturally-aware AI engines optimized for Hispanic markets.",
+      "engines": {
+        "title": "🤖 Dual AI Engine Advantage",
+        "google": "Optimized for speed and broad Spanish dialect coverage, excellent for general content and regional variations across Latin America.",
+        "openai": "Advanced contextual understanding of Spanish culture, idioms, and business terminology for professional and creative content."
+      },
+      "checks": {
+        "title": "✅ Spanish-Specific Quality Checks",
+        "items": [
+          "Gender agreement validation for Spanish nouns and adjectives",
+          "Verb conjugation accuracy across all Spanish tenses and moods",
+          "Regional dialect consistency (Mexican vs European Spanish)",
+          "Cultural reference appropriateness for target Spanish market",
+          "Formal/informal register consistency (tú/usted usage)",
+          "Spanish punctuation and formatting standards compliance"
+        ]
+      },
+      "metrics": {
+        "title": "📊 Accuracy Metrics",
+        "items": [
+          "98%+ accuracy for Spanish grammar and syntax",
+          "95%+ cultural relevance score for Spanish idioms and expressions",
+          "99%+ timing preservation for Spanish subtitle formatting",
+          "Regional dialect recognition accuracy: 94%+ for major Spanish variants"
+        ]
+      }
+    },
+    "technical": {
+      "title": "⚡ Spanish Technical Specifications",
+      "subtitle": "Built specifically to handle the technical requirements of Spanish subtitle translation with regional accuracy.",
+      "processing": {
+        "title": "⚡ Processing Capabilities",
+        "fileSize": "File Size: Up to 50MB per SRT file for large Spanish content projects",
+        "character": "Character Limit: 1M+ characters optimized for Spanish text expansion",
+        "speed": "Processing Speed: 2-15 seconds for typical Spanish subtitle files",
+        "quality": "Quality: Professional-grade Spanish translation with regional accuracy"
+      },
+      "features": {
+        "title": "🚀 Advanced Features",
+        "items": [
+          "Spanish dialect auto-detection (Mexican, Argentinian, European)",
+          "Cultural context adaptation for Spanish-speaking regions",
+          "Spanish grammar validation and correction",
+          "Regional slang and idiom recognition",
+          "Formal/informal register auto-adjustment",
+          "Spanish subtitle timing optimization"
+        ]
+      },
+      "assurance": {
+        "title": "🛡️ Quality Assurance",
+        "items": [
+          "Spanish linguistic accuracy validation",
+          "Cultural appropriateness screening",
+          "Regional dialect consistency checks",
+          "Spanish subtitle formatting verification",
+          "Content safety and appropriateness review"
+        ]
+      }
+    },
+    "faq": {
+      "title": "❓ Spanish Subtitle Translation FAQ",
+      "subtitle": "Get answers to common questions about our Spanish subtitle translation service and regional capabilities.",
+      "items": {
+        "dialects": {
+          "question": "Do you support different Spanish dialects?",
+          "answer": "Yes! We support major Spanish variants including Mexican Spanish, Argentinian Spanish, Colombian Spanish, European Spanish, and other regional dialects. Our AI recognizes regional differences and adapts translations accordingly."
+        },
+        "accuracy": {
+          "question": "How accurate are Spanish translations?",
+          "answer": "Our Spanish translations achieve 98%+ accuracy for grammar and syntax, with 95%+ cultural relevance for Spanish idioms and expressions. We use AI engines specifically trained on Hispanic content."
+        },
+        "cultural": {
+          "question": "How do you handle Spanish cultural references?",
+          "answer": "Our AI is trained on extensive Spanish and Latin American cultural content, ensuring proper translation of idioms, cultural references, and regional expressions while maintaining cultural authenticity."
+        },
+        "formal": {
+          "question": "Can you handle formal and informal Spanish?",
+          "answer": "Absolutely! Our system recognizes context and appropriately uses tú/usted distinctions, formal vs informal vocabulary, and professional vs casual language registers based on your content type."
+        },
+        "regions": {
+          "question": "Which Spanish-speaking regions do you support?",
+          "answer": "We support Spanish for all major regions including Mexico, Argentina, Colombia, Spain, Peru, Venezuela, Chile, and other Spanish-speaking countries, with cultural and linguistic adaptations for each market."
+        },
+        "business": {
+          "question": "Is this suitable for business Spanish content?",
+          "answer": "Yes! Our tool excels at business Spanish, handling corporate terminology, formal communications, marketing content, and professional presentations with appropriate cultural sensitivity for your target market."
+        }
+      }
     }
   },
   "portugueseSubtitle": {
-    "seo": {
-      "title": "Professional Portuguese Subtitle Translator - Accurate & Fast Translation Tool",
-      "description": "Unlock the power of Portuguese content with our accurate subtitle translator. Ideal for video localization, cultural exchange, and boosting business communication in emerging markets.",
-      "keywords": [
-        "Portuguese subtitle translator",
-        "subtitle translation tool",
-        "English to Portuguese subtitles",
-        "Translate English movie to Portuguese",
-        "SRT translator Portuguese",
-        "Portuguese video localization",
-        "business translation to Portuguese",
-        "educational content translation Portuguese"
-      ]
+    "meta": {
+      "title": "Portuguese SRT Translator - Translate Portuguese Subtitles Online Free | SubTran",
+      "description": "Professional Portuguese subtitle translator. Translate SRT files from Portuguese to 30+ languages or translate any language to Portuguese. Free online tool with AI-powered accuracy for all Portuguese variants."
     },
-    "title": "Transform Your Subtitles into Perfect Portuguese",
-    "description": "Convert subtitles from any language to native-quality Portuguese with our advanced AI translation technology. Fast, accurate, and completely free.",
     "hero": {
-      "title": "Unlock the Power of Portuguese Translation",
-      "description": "With over 260 million speakers across multiple continents, Portuguese opens doors to vibrant markets in Brazil, Portugal, and beyond. Our subtitle translation tool supports Portuguese translation, connecting you with this dynamic global community.",
+      "headline": "Translate Portuguese Subtitles Instantly",
+      "subheadline": "Connect with 260+ million Portuguese speakers worldwide. Our specialized Portuguese SRT translator handles Brazilian Portuguese, European Portuguese, and African Portuguese variants with cultural authenticity and linguistic precision.",
       "flag": "🇵🇹"
     },
-    "benefits": {
-      "title": "Unleash the Power of Portuguese Subtitle Translation",
-      "subtitle": "Connect with Portuguese-speaking markets worldwide with our advanced translation tool",
+    "solutions": {
+      "title": "🇵🇹 Portuguese Subtitle Solutions",
+      "subtitle": "Bridge Brazilian, European, and African Portuguese markets with our advanced subtitle translation technology optimized for the linguistic diversity and cultural richness of the Portuguese-speaking world.",
       "items": {
-        "benefit_0": {
+        "brazilianMarket": {
+          "icon": "🇧🇷",
+          "title": "Brazilian Portuguese Excellence",
+          "description": "Specialized handling of Brazilian Portuguese with local expressions, cultural references, and regional variations. Perfect for reaching the massive Brazilian market with authentic, culturally relevant content."
+        },
+        "europeanPortuguese": {
+          "icon": "🇵🇹",
+          "title": "European Portuguese Precision",
+          "description": "Accurate European Portuguese translations that respect formal language structures, cultural nuances, and traditional expressions used in Portugal and other European Portuguese-speaking communities."
+        },
+        "africaLusophone": {
           "icon": "🌍",
-          "title": "Global Portuguese Community",
-          "description": "Portuguese is spoken by over 260 million people worldwide, especially in Brazil - the world's 6th largest economy. Reach this massive market with accurate translations."
+          "title": "African Portuguese Markets",
+          "description": "Support for Portuguese variants in Angola, Mozambique, Cape Verde, Guinea-Bissau, and São Tomé and Príncipe with region-specific cultural and linguistic adaptations."
         },
-        "benefit_1": {
-          "icon": "💰",
-          "title": "Economic Opportunities",
-          "description": "Brazil and Portuguese-speaking countries offer significant business opportunities. Our tool helps you tap into these emerging markets effectively."
+        "globalReach": {
+          "icon": "🌐",
+          "title": "Global Portuguese Network",
+          "description": "Connect with Portuguese-speaking communities worldwide including Macau, East Timor, and diaspora communities with culturally appropriate and linguistically accurate translations."
+        }
+      },
+      "features": [
+        "🇧🇷 Brazilian Portuguese - Specialized for Brazilian market and culture",
+        "🇵🇹 European Portuguese - Authentic Portugal Portuguese language",
+        "🌍 African Variants - Support for Lusophone African countries",
+        "⭐ Cultural Intelligence - Understands regional expressions and customs"
+      ]
+    },
+    "supportedLanguages": {
+      "title": "🌍 Portuguese Translation Coverage",
+      "subtitle": "Connect Portuguese content with global audiences through comprehensive language support covering major international markets and regional Portuguese variations.",
+      "fromPortuguese": "Translate Portuguese Subtitles To:",
+      "description": "English • Spanish • French • German • Italian • Russian • Chinese • Japanese • Korean • Arabic • Hindi • Dutch • Swedish • Danish • Norwegian • Finnish • Polish • Czech • Hungarian • Romanian • Bulgarian • Croatian • Slovak • Slovenian • Estonian • Latvian • Lithuanian • Turkish • Thai • Vietnamese",
+      "toPortuguese": "Plus Reverse Translation:",
+      "reverseNote": "Translate any of these languages to Portuguese with regional preference settings for Brazil, Portugal, or other Portuguese-speaking markets with appropriate cultural adaptation."
+    },
+    "optimization": {
+      "title": "🎯 Portuguese Language Optimization",
+      "subtitle": "Advanced processing specifically designed for the grammatical complexity and cultural diversity of Portuguese language content across different regions.",
+      "items": {
+        "regionalVariants": {
+          "icon": "🗺️",
+          "title": "Regional Variant Mastery",
+          "description": "Intelligent handling of differences between Brazilian Portuguese, European Portuguese, and African Portuguese variants including vocabulary, pronunciation markers, and cultural references."
         },
-        "benefit_2": {
-          "icon": "🎨",
-          "title": "Cultural Diversity",
-          "description": "Portuguese varies between regions with unique expressions and cultural contexts. Our AI preserves these nuances for authentic communication."
+        "grammarPrecision": {
+          "icon": "📚",
+          "title": "Grammar & Conjugation Excellence",
+          "description": "Advanced processing of Portuguese verb conjugations, subjunctive mood, formal/informal registers (você/tu), and complex grammatical structures that vary across regions."
         },
-        "benefit_3": {
-          "icon": "📱",
-          "title": "Digital Content Growth",
-          "description": "Portuguese digital content consumption is rapidly growing. Our tool helps you create engaging subtitled content for this expanding audience."
+        "culturalAdaptation": {
+          "icon": "🎭",
+          "title": "Cultural Context Awareness",
+          "description": "AI trained on Portuguese cultural references, regional expressions, local customs, and colloquialisms from Brazil, Portugal, and Lusophone Africa for authentic translations."
         },
-        "benefit_4": {
-          "icon": "🎓",
-          "title": "Educational Impact",
-          "description": "Portuguese is increasingly popular in education and business. Our tool supports academic and professional content translation."
-        },
-        "benefit_5": {
-          "icon": "⚡",
-          "title": "Advanced AI Technology",
-          "description": "Our cutting-edge AI handles Portuguese grammar complexities and cultural context for superior translation accuracy."
+        "businessLanguage": {
+          "icon": "💼",
+          "title": "Professional Portuguese",
+          "description": "Specialized handling of business terminology, formal communications, and professional content with appropriate register and cultural sensitivity for different Portuguese-speaking markets."
         }
       }
     },
-    "useCases": {
-      "title": "Portuguese Subtitle Translator Applications",
+    "industries": {
+      "title": "🏢 Portuguese Content Industries",
+      "subtitle": "Discover how Portuguese content creators and international businesses leverage our Portuguese subtitle translator across diverse markets and sectors.",
       "items": {
-        "international": {
-          "icon": "🌎",
-          "title": "Brazilian Market Entry",
-          "description": "Use our Portuguese subtitle translator for business expansion into Brazil and Portuguese-speaking markets"
-        },
-        "education": {
-          "icon": "📚",
-          "title": "Educational Content",
-          "description": "Portuguese subtitle translator ideal for online courses, training materials, and educational video content"
-        },
         "entertainment": {
           "icon": "🎬",
-          "title": "Media Production",
-          "description": "Professional Portuguese subtitle translator for streaming content, film distribution, and media localization"
+          "title": "Entertainment & Media",
+          "applications": {
+            "brazilian": "Brazilian Content: Translate Brazilian entertainment for international distribution and bring global content to Brazil with cultural authenticity.",
+            "streaming": "Streaming Platforms: Help Netflix, Amazon Prime, and other platforms localize content for Lusophone audiences across Brazil, Portugal, and Africa."
+          }
+        },
+        "business": {
+          "icon": "💼",
+          "title": "Business & Commerce",
+          "applications": {
+            "corporate": "Corporate Communications: Adapt business presentations, training materials, and corporate videos for Brazilian and European markets.",
+            "ecommerce": "E-commerce: Translate product videos, promotional content, and marketing materials for Lusophone online shoppers and digital commerce."
+          }
+        },
+        "education": {
+          "icon": "🎓",
+          "title": "Education & Training",
+          "applications": {
+            "online": "Online Learning: Translate educational content for students across Brazil, Portugal, and Lusophone Africa with culturally appropriate examples.",
+            "professional": "Professional Training: Adapt corporate training, certification programs, and skill development content for Lusophone professionals."
+          }
+        },
+        "digital": {
+          "icon": "💻",
+          "title": "Digital & Technology",
+          "applications": {
+            "creators": "Content Creators: Help Lusophone YouTubers and digital influencers reach international audiences while maintaining authentic cultural perspective.",
+            "gaming": "Gaming Industry: Translate gaming content, live streams, and esports coverage for the growing gaming community, especially in Brazil."
+          }
         }
       }
     },
-    "cta": {
-      "title": "Start Your Portuguese Subtitle Translation Journey",
-      "description": "Connect with Portuguese-speaking audiences and unlock new market opportunities. Start translating your subtitles into Portuguese and reach over 260 million speakers worldwide."
+    "quality": {
+      "title": "🏆 Portuguese Translation Excellence",
+      "subtitle": "Experience superior Portuguese translation quality with our culturally-aware AI engines optimized for the linguistic diversity of Portuguese-speaking markets.",
+      "engines": {
+        "title": "🤖 Dual AI Engine Advantage",
+        "google": "Optimized for broad Portuguese language support with excellent handling of Brazilian and European variants, ideal for general content and business communications.",
+        "openai": "Advanced cultural context understanding, handling Portuguese idioms, regional expressions, and nuanced cultural references with sophisticated accuracy across all Portuguese variants."
+      },
+      "checks": {
+        "title": "✅ Portuguese-Specific Quality Checks",
+        "items": [
+          "Regional Variant Consistency: Ensures appropriate Brazilian vs European Portuguese usage",
+          "Grammar Validation: Correct Portuguese verb conjugations and complex grammatical structures",
+          "Cultural Sensitivity: Adapts cultural references and expressions for target Portuguese market",
+          "Formal Register: Maintains appropriate você/tu usage and formal/informal distinctions",
+          "Business Terminology: Accurate translation of Portuguese business and technical terms",
+          "Character Encoding: Perfect handling of Portuguese accents and special characters"
+        ]
+      },
+      "metrics": {
+        "title": "📊 Accuracy Metrics",
+        "items": [
+          "97%+ Accuracy for standard Portuguese content across Brazilian and European variants",
+          "Cultural Context Recognition for 8,000+ Portuguese idioms, expressions, and regional references",
+          "Regional Variant Support covering Brazil, Portugal, Angola, Mozambique, and other Lusophone countries",
+          "Business & Technical Precision for specialized content requiring professional Portuguese terminology"
+        ]
+      }
+    },
+    "technical": {
+      "title": "⚡ Portuguese Technical Specifications",
+      "subtitle": "Built specifically to handle the technical requirements of Portuguese subtitle translation with regional accuracy and cultural authenticity.",
+      "processing": {
+        "title": "⚡ Processing Capabilities",
+        "fileSize": "File Size: Up to 15MB per SRT file optimized for Portuguese content",
+        "character": "Character Support: Full Unicode support including Portuguese accents (á, ã, ç, ê, ô)",
+        "speed": "Speed: 10-25 seconds processing time for Portuguese content",
+        "quality": "Quality: 97%+ accuracy with specialized Portuguese language models"
+      },
+      "features": {
+        "title": "🚀 Advanced Features",
+        "items": [
+          "Regional Auto-Detection: Automatically identifies Brazilian vs European Portuguese variants",
+          "Cultural Context Mapping: Understands Portuguese cultural references and regional nuances",
+          "Business Language Processing: Specialized handling of Portuguese business and technical terminology",
+          "Accent Preservation: Maintains correct Portuguese accent marks and character encoding",
+          "Register Analysis: Detects and preserves appropriate formal/informal language levels",
+          "Portuguese Grammar Validation: Advanced handling of complex Portuguese grammatical structures"
+        ]
+      },
+      "assurance": {
+        "title": "🛡️ Quality Assurance",
+        "items": [
+          "Portuguese Linguistic Validation: Ensures authentic Portuguese language usage",
+          "Cultural Appropriateness Screening: Automatic review for culturally sensitive content",
+          "Regional Consistency Checks: Maintains terminology consistency for target Portuguese markets",
+          "Perfect SRT Formatting: Preserves original timing with proper Portuguese text rendering",
+          "Content Safety Review: Appropriate content screening for Portuguese-speaking audiences"
+        ]
+      }
+    },
+    "faq": {
+      "title": "❓ Portuguese Subtitle Translation FAQ",
+      "subtitle": "Get answers to common questions about our Portuguese subtitle translation service and regional capabilities.",
+      "items": {
+        "variants": {
+          "question": "Do you support both Brazilian and European Portuguese?",
+          "answer": "Yes! We support both Brazilian Portuguese and European Portuguese, as well as African Portuguese variants. Our system automatically detects the variant and can adapt translations for your target Portuguese-speaking market with appropriate cultural and linguistic adjustments."
+        },
+        "fileSize": {
+          "question": "What's the maximum file size for Portuguese subtitles?",
+          "answer": "You can upload SRT files up to 15MB, which typically contains 10-15 hours of content - ideal for feature films, series, documentaries, or comprehensive educational materials in Portuguese."
+        },
+        "speed": {
+          "question": "How quickly are Portuguese subtitles translated?",
+          "answer": "Most Portuguese subtitle files are processed within 10-25 seconds. Our system analyzes Portuguese grammatical structures and cultural context to ensure optimal translation quality for your target market."
+        },
+        "security": {
+          "question": "Is my Portuguese content secure and private?",
+          "answer": "Absolutely. Your files are automatically deleted after translation to ensure complete privacy. We never store, share, or use your Portuguese content for any other purpose. Your data security is our priority."
+        },
+        "regional": {
+          "question": "Can I specify which type of Portuguese for my translations?",
+          "answer": "Yes, you can choose between Brazilian Portuguese, European Portuguese, or other regional variants to ensure your translations match your target audience's linguistic preferences and cultural expectations."
+        },
+        "engine": {
+          "question": "Which translation engine works best for Portuguese content?",
+          "answer": "For business, technical, or formal Portuguese content, Google Translate provides excellent grammatical accuracy. For creative content with cultural references, regional expressions, or entertainment material, OpenAI typically delivers more nuanced and culturally sensitive results."
+        }
+      }
     }
   },
   "frenchSubtitle": {
-    "seo": {
-      "title": "French Subtitle Translator - Accurate, Fast, and User-friendly",
-      "description": "Experience seamless French subtitle translation with our tool. Ideal for businesses, educators, and entertainment, it bridges language gaps and boosts cultural understanding. Translate subtitle to French with ease and accuracy.",
-      "keywords": [
-        "French subtitle translator",
-        "Translate subtitle to French",
-        "French SRT translation",
-        "Subtitle translation tool",
-        "French video localization",
-        "Subtitle translator for education",
-        "Business subtitle translation",
-        "AI-powered subtitle translation",
-        "French language complexity",
-        "Cultural exchange through subtitle translation"
-      ]
+    "meta": {
+      "title": "French SRT Translator - Translate French Subtitles Online Free | SubTran",
+      "description": "Professional French subtitle translator. Translate SRT files from French to 30+ languages or translate any language to French. Free online tool with AI-powered accuracy for all French variants."
     },
-    "title": "Transform Your Subtitles into Perfect French",
-    "description": "Convert subtitles from any language to native-quality French with our advanced AI translation technology. Fast, accurate, and completely free.",
     "hero": {
-      "title": "Unlock the Power of French Translation",
-      "description": "With over 280 million speakers across five continents, French is a language of diplomacy, culture, and international business. Our subtitle translation tool supports French translation, connecting you with this sophisticated global community.",
+      "headline": "Translate French Subtitles Instantly",
+      "subheadline": "Transform French content for global audiences or bring international content to French-speaking markets. Our specialized French SRT translator handles metropolitan French, Canadian French, and African French variants with linguistic precision and cultural authenticity.",
       "flag": "🇫🇷"
     },
-    "benefits": {
-      "title": "Unleash the Power of French Subtitle Translation",
-      "subtitle": "Connect with French-speaking audiences worldwide with our sophisticated translation tool",
+    "solutions": {
+      "title": "🇫🇷 French Subtitle Solutions",
+      "subtitle": "Bridge French and international markets with our advanced French subtitle translation technology optimized for the elegance and cultural richness of the French language worldwide.",
       "items": {
-        "benefit_0": {
+        "globalMarkets": {
+          "icon": "🌍",
+          "title": "From French to Global Markets",
+          "description": "Expand your French content's international reach with translations that preserve the sophistication, cultural nuances, and linguistic beauty of French expression. Perfect for exporting French cinema, education, and cultural content worldwide."
+        },
+        "francophoneMarkets": {
+          "icon": "🗼",
+          "title": "To French for Francophone Markets",
+          "description": "Bring international content to the 300+ million French speakers across France, Canada, Belgium, Switzerland, and Francophone Africa with culturally adapted translations that respect French linguistic traditions."
+        },
+        "regionalMastery": {
           "icon": "🌐",
-          "title": "Global Francophone Network",
-          "description": "French is spoken by over 280 million people across 29 countries. Our tool enables you to reach this diverse and influential global community."
+          "title": "Regional French Mastery",
+          "description": "Complete support for French variants including Metropolitan French (France), Quebec French (Canadian), Belgian French, Swiss French, and African French with region-specific cultural and linguistic adaptations."
         },
-        "benefit_1": {
-          "icon": "🏛️",
-          "title": "International Diplomacy",
-          "description": "French is an official language of major international organizations. Our tool helps you communicate in this language of global diplomacy and culture."
-        },
-        "benefit_2": {
+        "culturalExcellence": {
           "icon": "🎨",
-          "title": "Cultural Sophistication",
-          "description": "French carries rich cultural heritage and linguistic elegance. Our AI preserves the nuanced beauty and sophistication of French expression."
+          "title": "Cultural & Linguistic Excellence",
+          "description": "Our AI understands French cultural references, formal register variations, subjunctive mood usage, and cultural concepts, ensuring translations that maintain the elegance and precision expected in French communication."
+        }
+      },
+      "features": [
+        "🇫🇷 French Expertise - Specialized for French language elegance and precision",
+        "🌍 Regional Variants - Support for all French-speaking regions worldwide",
+        "🧠 Cultural Intelligence - Understands French cultural context and formality",
+        "⭐ Premium Quality - Perfect for cinema, education, and business content"
+      ]
+    },
+    "supportedLanguages": {
+      "title": "🌍 French Translation Coverage",
+      "subtitle": "Connect French content with global audiences through comprehensive language support covering major international markets.",
+      "fromFrench": "Translate French Subtitles To:",
+      "description": "English • Spanish • German • Italian • Portuguese • Russian • Chinese • Japanese • Korean • Arabic • Hindi • Dutch • Swedish • Danish • Norwegian • Finnish • Polish • Czech • Hungarian • Romanian • Bulgarian • Croatian • Slovak • Slovenian • Estonian • Latvian • Lithuanian • Turkish • Thai • Vietnamese",
+      "toFrench": "Plus Reverse Translation:",
+      "reverseNote": "Translate any of these languages to French with regional preference settings for France, Quebec, Belgium, or other French-speaking markets."
+    },
+    "optimization": {
+      "title": "🎭 French Language Optimization",
+      "subtitle": "Advanced processing specifically designed for the sophisticated grammar structure and cultural nuances of French language content.",
+      "items": {
+        "formalRegister": {
+          "icon": "🎭",
+          "title": "Formal Register & Politeness",
+          "description": "Intelligent handling of French formality levels including vous/tu distinctions, subjunctive mood usage, and appropriate register matching for professional, academic, or casual content contexts."
         },
-        "benefit_3": {
-          "icon": "🎬",
-          "title": "Entertainment Excellence",
-          "description": "French cinema and media are globally celebrated. Our tool helps you create high-quality French subtitles for international content distribution."
-        },
-        "benefit_4": {
+        "literaryExpression": {
           "icon": "📚",
-          "title": "Academic Prestige",
-          "description": "French is a prestigious academic language. Our tool supports educational content creation and scholarly communication in French."
+          "title": "Literary & Cultural Expression",
+          "description": "Specialized processing of French idioms, expressions, cultural references, and literary devices with culturally appropriate equivalent matching that preserves French sophistication and wit."
         },
-        "benefit_5": {
-          "icon": "🧠",
-          "title": "Linguistic Precision",
-          "description": "Our advanced AI technology handles French grammar intricacies, formal registers, and cultural context with exceptional accuracy."
+        "francophoneVariants": {
+          "icon": "🌍",
+          "title": "Francophone Variant Processing",
+          "description": "Smart adaptation for specific French-speaking regions, understanding cultural preferences, local terminology, and regional sensitivities for France, Quebec, Belgium, Switzerland, and Africa."
+        },
+        "linguisticPrecision": {
+          "icon": "⚜️",
+          "title": "Linguistic Precision & Grammar",
+          "description": "Advanced handling of complex French grammar including subjunctive constructions, past participle agreements, and sophisticated sentence structures that maintain linguistic accuracy in translations."
         }
       }
     },
-    "useCases": {
-      "title": "French Subtitle Translator Applications",
+    "industries": {
+      "title": "🏢 French Content Industries",
+      "subtitle": "Discover how French content creators and international businesses leverage our French subtitle translator for cultural exchange and market expansion.",
       "items": {
-        "international": {
+        "cinema": {
+          "icon": "🎬",
+          "title": "Cinema & Entertainment",
+          "applications": {
+            "frenchExport": "French Film Export: Translate French cinema, documentaries, and artistic content for international film festivals and streaming platforms while preserving artistic integrity and cultural depth.",
+            "internationalization": "International Localization: Help global streaming services adapt content for French-speaking audiences with appropriate cultural sensitivity and linguistic sophistication."
+          }
+        },
+        "business": {
+          "icon": "💼",
+          "title": "Business & Education",
+          "applications": {
+            "corporate": "Corporate Communications: Localize business presentations, training materials, and corporate videos for French-speaking markets or translate French business content for international expansion.",
+            "academic": "Academic Content: Adapt educational materials, lectures, and research content between French and international academic communities with scholarly precision."
+          }
+        },
+        "cultural": {
+          "icon": "📺",
+          "title": "Cultural & Media Content",
+          "applications": {
+            "programming": "Cultural Programming: Translate French cultural programs, art documentaries, and educational content to promote French culture globally or bring international perspectives to French audiences.",
+            "journalism": "News & Journalism: Professional subtitle translation for French news content, interviews, and documentary programming requiring journalistic accuracy and cultural context."
+          }
+        },
+        "digital": {
+          "icon": "🖥️",
+          "title": "Digital & Technology",
+          "applications": {
+            "creation": "Content Creation: Help French-speaking YouTubers, content creators, and digital influencers reach international audiences while maintaining their authentic French voice and cultural perspective.",
+            "elearning": "E-learning Platforms: Translate online courses, webinars, and educational technology content for French-speaking learners or global French language education."
+          }
+        }
+      }
+    },
+    "quality": {
+      "title": "🏆 French Translation Excellence",
+      "subtitle": "Experience superior French translation quality with our culturally-aware AI engines and linguistically precise quality assurance processes.",
+      "engines": {
+        "title": "🤖 Dual AI Engine Advantage",
+        "google": "Excellent for standard French content with reliable grammar handling and broad language pair support for formal or technical material.",
+        "openai": "Superior cultural context understanding, handling French literary expressions, cultural references, and nuanced linguistic subtleties with sophisticated accuracy."
+      },
+      "checks": {
+        "title": "✅ French-Specific Quality Checks",
+        "items": [
+          "Grammar Precision: Ensures correct French grammar including subjunctive mood and complex tenses",
+          "Cultural Sensitivity: Adapts French cultural concepts and references with appropriate sophistication",
+          "Register Matching: Maintains proper formal/informal distinctions and politeness levels",
+          "Regional Adaptation: Considers cultural preferences for specific French-speaking regions"
+        ]
+      },
+      "metrics": {
+        "title": "📊 Accuracy Metrics",
+        "items": [
+          "96%+ Accuracy for standard French content across all regional variants",
+          "Cultural Context Recognition for 6,000+ French idioms, expressions, and cultural references",
+          "Regional Variant Support covering France, Quebec, Belgium, Switzerland, and Francophone Africa",
+          "Academic & Technical Precision for specialized content requiring linguistic sophistication"
+        ]
+      }
+    },
+    "technical": {
+      "title": "⚡ French Technical Specifications",
+      "subtitle": "Built specifically to handle the technical requirements of French subtitle translation with linguistic precision and cultural authenticity.",
+      "processing": {
+        "title": "⚡ Processing Capabilities",
+        "fileSize": "File Size: Up to 10MB (typically 8-12 hours of content)",
+        "character": "Character Support: Full Unicode support including French accents and special characters",
+        "speed": "Speed: 12-32 seconds processing time for French content",
+        "quality": "Quality: 96%+ accuracy with specialized French language models"
+      },
+      "features": {
+        "title": "🚀 Advanced Features",
+        "items": [
+          "Regional Auto-Detection: Automatically identifies French variant (Metropolitan, Quebec, Belgian, etc.)",
+          "Cultural Context Mapping: Understands French cultural references and regional nuances",
+          "Formality Analysis: Detects and preserves appropriate formal/informal language levels",
+          "Linguistic Precision: Maintains complex French grammar structures and sophisticated expressions"
+        ]
+      },
+      "assurance": {
+        "title": "🛡️ Quality Assurance",
+        "items": [
+          "Accent Validation: Ensures correct French accent marks and character encoding",
+          "Cultural Appropriateness: Automatic screening for culturally sensitive content adaptation",
+          "Regional Consistency: Maintains terminology and expression consistency for target French markets",
+          "Perfect Formatting: Preserves original SRT timing with proper French text rendering"
+        ]
+      }
+    },
+    "faq": {
+      "title": "❓ French Subtitle Translation FAQ",
+      "subtitle": "Get answers to common questions about our French subtitle translation service and regional capabilities.",
+      "items": {
+        "variants": {
+          "question": "Which French variants do you support?",
+          "answer": "We support Metropolitan French (France), Quebec French (Canada), Belgian French, Swiss French, and African French variants. Our system automatically detects the variant and can adapt translations for your target French-speaking market."
+        },
+        "fileSize": {
+          "question": "What's the maximum file size for French subtitles?",
+          "answer": "You can upload SRT files up to 10MB, which typically contains 8-12 hours of content - ideal for feature films, documentaries, or comprehensive educational materials."
+        },
+        "speed": {
+          "question": "How quickly are French subtitles translated?",
+          "answer": "Most French subtitle files are processed within 12-32 seconds, as our system carefully analyzes French grammar complexities and cultural context for optimal translation quality."
+        },
+        "security": {
+          "question": "Is my French content secure and private?",
+          "answer": "Yes, absolutely. Your files are automatically deleted after translation to ensure complete privacy. We never store, share, or use your French content for any other purpose."
+        },
+        "regional": {
+          "question": "Can I specify which type of French for my translations?",
+          "answer": "Certainly. You can choose between Metropolitan French (France), Quebec French (Canada), or other regional variants to ensure your translations match your target audience's linguistic preferences."
+        },
+        "engine": {
+          "question": "Which translation engine works best for French content?",
+          "answer": "For formal, academic, or business French content, Google Translate provides excellent grammatical accuracy. For creative content with cultural references, literary expressions, or artistic nuances, OpenAI typically delivers more sophisticated and culturally sensitive results."
+        }
+      }
+    }
+  },
+  "englishSubtitle": {
+    "meta": {
+      "title": "English SRT Translator - Translate English Subtitles Online Free | SubTran",
+      "description": "Professional English subtitle translator. Translate SRT files from English to 30+ languages or translate any language to English. Free online tool with AI-powered accuracy."
+    },
+    "hero": {
+      "headline": "Translate English Subtitles Instantly",
+      "subheadline": "Translate English subtitles to 30+ languages or convert any language to English with perfect accuracy. Our specialized English SRT translator ensures natural, context-aware translations for global content distribution."
+    },
+    "solutions": {
+      "title": "🌟 English Subtitle Solutions",
+      "subtitle": "Master the global content market with our specialized English subtitle translation technology designed for content creators and businesses.",
+      "items": {
+        "fromEnglish": {
           "icon": "🌍",
-          "title": "European Market Access",
-          "description": "Use our French subtitle translator for business expansion into France, Canada, and French-speaking African markets"
+          "title": "From English to Global Markets",
+          "description": "Transform your English content for international audiences with translations that preserve the original tone, humor, and cultural nuances. Our English SRT translator is specifically optimized for English source material."
+        },
+        "toEnglish": {
+          "icon": "🔄",
+          "title": "To English for Global Understanding",
+          "description": "Convert foreign language subtitles to English with exceptional accuracy. Perfect for importing international content, educational materials, or understanding foreign media."
+        },
+        "optimization": {
+          "icon": "🎯",
+          "title": "English Content Optimization",
+          "description": "Our AI recognizes English-specific elements like idioms, colloquialisms, cultural references, and technical terminology, ensuring translations that feel natural in the target language."
+        },
+        "professional": {
+          "icon": "💼",
+          "title": "Professional-Grade Results",
+          "description": "Trusted by content creators, streaming platforms, and international businesses for high-quality English subtitle translation that meets professional standards."
+        }
+      },
+      "features": [
+        "✅ English Expertise - Optimized for English subtitle translation",
+        "📈 30 Languages - Translate to major world languages or from them to English",
+        "🧠 Context-Aware AI - Understands idioms, slang, and cultural references",
+        "⭐ Professional Quality - Perfect for YouTube, streaming, and business content"
+      ]
+    },
+    "supportedLanguages": {
+      "title": "🌍 Supported Languages",
+      "subtitle": "Transform your English subtitles for global audiences with comprehensive language support covering major international markets.",
+      "fromEnglish": "Translate English Subtitles To:",
+      "toEnglish": "Plus Reverse Translation:",
+      "description": "Chinese • Japanese • French • German • Spanish • Russian • Italian • Portuguese • Arabic • Hindi • Korean • Thai • Vietnamese • Turkish • Polish • Dutch • Swedish • Danish • Norwegian • Finnish • Czech • Hungarian • Romanian • Bulgarian • Croatian • Slovak • Slovenian • Estonian • Latvian • Lithuanian",
+      "reverseNote": "Translate any of these languages back to English with the same professional quality and cultural understanding."
+    },
+    "optimization": {
+      "title": "🔧 English Content Optimization",
+      "subtitle": "Advanced features specifically designed to handle the complexities and nuances of English language content.",
+      "items": {
+        "cultural": {
+          "icon": "🌐",
+          "title": "Cultural Context Recognition",
+          "description": "Our AI understands English cultural references, pop culture mentions, and regional expressions, ensuring translations that resonate with target audiences rather than literal word-for-word conversions."
+        },
+        "technical": {
+          "icon": "⚙️",
+          "title": "Technical English Handling",
+          "description": "Specialized processing for business English, academic English, technical documentation, and industry-specific terminology commonly found in professional English content."
+        },
+        "tone": {
+          "icon": "🎭",
+          "title": "Tone Preservation",
+          "description": "Maintains the original tone whether it's casual YouTube content, formal business presentations, educational material, or entertainment media."
+        },
+        "grammar": {
+          "icon": "📝",
+          "title": "English Grammar Optimization",
+          "description": "Recognizes complex English grammar structures, passive voice, conditional statements, and converts them appropriately for target language grammar rules."
+        }
+      }
+    },
+    "industries": {
+      "title": "🏢 Industry Applications",
+      "subtitle": "Discover how professionals across industries rely on our English subtitle translator for their content localization needs.",
+      "items": {
+        "content": {
+          "icon": "📺",
+          "title": "Content Creation & Streaming",
+          "applications": {
+            "youtube": "YouTube Creators: Expand your English channel's reach to international audiences with professional subtitle translation that maintains your personality and brand voice.",
+            "streaming": "Streaming Platforms: Professional-grade English subtitle translation for Netflix, Amazon Prime, and other platforms requiring high-quality localization."
+          }
+        },
+        "business": {
+          "icon": "💼",
+          "title": "Business & Corporate",
+          "applications": {
+            "training": "Training Videos: Translate English corporate training materials and onboarding content for international teams and global subsidiaries.",
+            "marketing": "Marketing Content: Localize English promotional videos, product demos, and brand content for international markets with culturally appropriate translations."
+          }
         },
         "education": {
           "icon": "📚",
-          "title": "Educational Excellence",
-          "description": "French subtitle translator perfect for academic content, online courses, and educational video materials"
+          "title": "Education & E-Learning",
+          "applications": {
+            "courses": "Online Courses: Make English educational content accessible to global learners with accurate, pedagogically sound subtitle translations.",
+            "academic": "Academic Content: Translate English lectures, research presentations, and educational videos for international academic exchange."
+          }
         },
         "entertainment": {
-          "icon": "🎭",
-          "title": "Cultural Content",
-          "description": "Professional French subtitle translator for film festivals, cultural exchanges, and artistic content localization"
+          "icon": "🎬",
+          "title": "Entertainment Industry",
+          "applications": {
+            "film": "Film & TV: Professional English subtitle translation for international distribution of English-language entertainment content.",
+            "documentary": "Documentary Translation: Bring English documentaries to global audiences or translate international documentaries into English."
+          }
         }
       }
     },
-    "cta": {
-      "title": "Start Your French Subtitle Translation Journey",
-      "description": "Experience the elegance of French communication and connect with sophisticated global audiences. Start translating your subtitles into French and join the prestigious Francophone community."
+    "quality": {
+      "title": "🏆 Quality & Accuracy",
+      "subtitle": "Experience superior translation quality with our English-specialized AI engines and quality assurance processes.",
+      "engines": {
+        "title": "🤖 Dual AI Engine Advantage",
+        "google": "Google Translate for English: Optimized for English's complex grammar and extensive vocabulary, providing fast, reliable translations for standard content.",
+        "openai": "OpenAI for English: Advanced contextual understanding of English nuances, idioms, and cultural references, delivering human-like translation quality."
+      },
+      "checks": {
+        "title": "✅ English-Specific Quality Checks",
+        "items": [
+          "Grammar Verification: Ensures target language grammar rules are properly applied",
+          "Cultural Adaptation: Adapts English cultural references for target audiences",
+          "Terminology Consistency: Maintains consistent translation of technical terms",
+          "Tone Matching: Preserves the original English tone and style"
+        ]
+      },
+      "metrics": {
+        "title": "📊 Accuracy Metrics",
+        "items": [
+          "95%+ Accuracy for standard English content",
+          "Context Recognition for 10,000+ English idioms and expressions",
+          "Cultural Reference Database covering English-speaking regions",
+          "Technical Terminology support for 50+ industries"
+        ]
+      }
+    },
+    "technical": {
+      "title": "⚡ Technical Specifications",
+      "subtitle": "Built specifically to handle the technical requirements of English subtitle translation with professional reliability.",
+      "processing": {
+        "title": "⚡ Processing Capabilities",
+        "fileSize": "File Size: Up to 10MB (typically 8-12 hours of content)",
+        "format": "Format Support: Standard SRT format with full character support",
+        "speed": "Speed: 10-30 seconds processing time for most files",
+        "quality": "Quality: 95%+ accuracy with advanced AI engines"
+      },
+      "features": {
+        "title": "🚀 Advanced Features",
+        "items": [
+          "Smart Context Recognition: Understands idioms, cultural references, and technical terminology",
+          "Multiple Engine Options: Choose between Google Translate and OpenAI based on your content type",
+          "Tone Preservation: Maintains original style whether casual, formal, or technical",
+          "Regional Adaptation: Supports different English variants and target language preferences"
+        ]
+      },
+      "assurance": {
+        "title": "🛡️ Quality Assurance",
+        "items": [
+          "Smart Processing: Grammar, spelling, and formatting validation",
+          "Cultural Adaptation: Automatic handling of cultural references and context",
+          "Consistency Checks: Terminology consistency across long documents",
+          "Perfect Formatting: Maintains original SRT timing and structure"
+        ]
+      }
+    },
+    "faq": {
+      "title": "❓ Frequently Asked Questions",
+      "subtitle": "Get answers to common questions about our English subtitle translation service.",
+      "items": {
+        "accuracy": {
+          "question": "How accurate are the translations?",
+          "answer": "Our dual AI engines achieve 95%+ accuracy for standard content. Google Translate excels at speed and broad language support, while OpenAI provides more nuanced, contextually aware translations."
+        },
+        "fileSize": {
+          "question": "What's the maximum file size I can upload?",
+          "answer": "You can upload SRT files up to 10MB, which typically contains 8-12 hours of subtitle content - perfect for full-length movies or comprehensive course materials."
+        },
+        "speed": {
+          "question": "How long does the translation process take?",
+          "answer": "Most files are processed within 10-30 seconds, depending on file size and complexity. Our optimized servers ensure fast turnaround without compromising quality."
+        },
+        "privacy": {
+          "question": "Do you store my subtitle files?",
+          "answer": "No, your files are automatically deleted after translation for complete privacy. We never store, share, or use your content for any other purpose."
+        },
+        "multiple": {
+          "question": "Can I translate the same file to multiple languages?",
+          "answer": "Yes, you can translate the same English subtitle file to as many different languages as needed. Each translation maintains the original timing and formatting."
+        },
+        "engine": {
+          "question": "Which translation engine should I choose?",
+          "answer": "For speed and standard content, choose Google Translate. For creative content with idioms, humor, or cultural references, OpenAI typically provides more natural results."
+        }
+      }
     }
   },
   "pageTemplate": {
@@ -963,6 +1834,243 @@
           "flag": "🇺🇸"
         }
       }
+    }
+  },
+  "newchinesesubtitle": {
+    "language": {
+      "code": "chinese",
+      "name": "Chinese",
+      "flag": "🇨🇳",
+      "family": "Sino-Tibetan",
+      "speakers": "1.1B",
+      "focus": "cultural-bridge"
+    },
+    "generatedAt": "2025-06-21T19:12:46.524Z",
+    "version": "2.0-enhanced",
+    "generation": {
+      "model": "gpt-4",
+      "temperature": 0.8,
+      "qualityScore": 100,
+      "selectedOptionalBlocks": [
+        {
+          "name": "行业应用",
+          "key": "industryUseCases",
+          "component": "IndustrySection",
+          "weight": 8
+        },
+        {
+          "name": "语言统计",
+          "key": "languageStats",
+          "component": "StatsSection",
+          "weight": 7
+        },
+        {
+          "name": "语言学习",
+          "key": "languageLearning",
+          "component": "LearningSection",
+          "weight": 9
+        }
+      ]
+    },
+    "seo": {
+      "title": "Professional Chinese Subtitle Translator - Accurate and Fast",
+      "description": "Leverage our advanced subtitle translation tool designed to support over 1.1 billion Chinese speakers. Perfect for cultural exchange, business expansion, and video localization.",
+      "features": [
+        "Highly accurate Chinese subtitle translation",
+        "Fast translation speed for SRT files",
+        "Supports complex Sino-Tibetan language structure",
+        "Ideal for international trade, corporate expansion, and professional communication",
+        "Cultural bridge through localized entertainment and educational content",
+        "AI-powered for enhanced accuracy and format compatibility"
+      ],
+      "keywords": [
+        "Chinese subtitle translator",
+        "SRT translation",
+        "Video localization",
+        "Business expansion in China",
+        "Cultural exchange with China",
+        "Education in Chinese",
+        "Translate English to Chinese subtitles",
+        "Chinese film subtitles",
+        "Online Chinese subtitle creator",
+        "Professional subtitle translation tool"
+      ]
+    },
+    "hero": {
+      "flag": "🇨🇳",
+      "title": "Master Chinese Subtitles with Our Subtitle Translator",
+      "description": "Unlock the world of 1.1 billion Chinese speakers. Our subtitle translation tool bridges the cultural gap, delivering precise and context-aware Chinese subtitles. Perfect for expanding your content's reach in the Sino-Tibetan world.",
+      "keywords": [
+        "Subtitle Translator",
+        "Chinese subtitle translation",
+        "Translate subtitle to Chinese"
+      ]
+    },
+    "translatorSection": {
+      "title": "Subtitle Translator for Chinese",
+      "description": "Use our subtitle translation tool to quickly and accurately translate your English subtitles into Chinese. With support for over 1.1 billion Chinese speakers, our tool serves as a cultural bridge for your content.",
+      "uploadButton": "Upload Subtitle File",
+      "selectLanguagePrompt": "Select Chinese as your target language",
+      "translateButton": "Start Translation",
+      "downloadButton": "Download Translated File",
+      "translatingStatus": "Translating... Please wait",
+      "translationCompleteStatus": "Translation Complete! Ready for Download",
+      "errorMessage": "Translation Error! Please Check Your File and Try Again."
+    },
+    "languageBenefits": {
+      "title": "Unlock the Enormous Potential with Chinese Subtitle Translation",
+      "subtitle": "Heralding a new era in connecting with the world's most spoken language",
+      "benefits": [
+        {
+          "icon": "🌐",
+          "title": "Enter a billion-strong Market",
+          "description": "By using our subtitle translator tool to translate English subtitles to Chinese, tap into the vast Chinese-speaking audience, a market of over 1.1 billion people."
+        },
+        {
+          "icon": "🎞️",
+          "title": "Enhanced Movie Distribution",
+          "description": "Reach out to the massive Chinese film enthusiasts by ensuring your movie's accurate and culturally relevant subtitle translation."
+        },
+        {
+          "icon": "🏮",
+          "title": "Cultural Bridge",
+          "description": "Use our subtitle translation tool to capture the nuances of the Sino-Tibetan language family and successfully translate the rich cultural nuances of Chinese."
+        },
+        {
+          "icon": "📚",
+          "title": "Educational Value",
+          "description": "Unlock a treasure trove of learning materials for English speakers studying Chinese, with accurately translated subtitles of Chinese movies, series, and documentaries."
+        },
+        {
+          "icon": "📈",
+          "title": "Business Growth",
+          "description": "With our subtitle translation tool, English business webinars, presentations, and courses can reach a wider audience, driving global scale and growth."
+        },
+        {
+          "icon": "💡",
+          "title": "Innovative AI Technology",
+          "description": "Our AI technology is adept at handling the complexities of Chinese grammar and sentence structure, providing accurate translations and overcoming technical challenges."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bridge the Gap with Chinese Subtitle Translation!",
+      "description": "With over 1.1 billion Chinese speakers worldwide, the power of our translation tool extends your reach beyond language barriers. Embrace the Sino-Tibetan culture, communicate effectively and connect deeply with your Chinese audience using our subtitle translator. Do not miss out on the opportunity to engage, influence, and create a global impact. Start translating your subtitles to Chinese now - because every word counts in the global arena!",
+      "button": "Start Chinese Translation Now"
+    },
+    "footer": {
+      "brandName": "SubtitleMaster - Mastering subtitle translations",
+      "description": "SubtitleMaster is your go-to tool for accurate and nuanced Chinese subtitle translations. Our AI-powered technology grasps the complexities of the Chinese language, bridging cultural divides and making content accessible to the 1.1 billion Chinese speakers worldwide.",
+      "languages": [
+        "Mandarin",
+        "Cantonese",
+        "Hokkien",
+        "Shanghainese"
+      ],
+      "features": [
+        "Optimized for Sino-Tibetan languages, ensuring accurate translation of Chinese subtitles",
+        "Advanced AI learns and evolves with each translation, overcoming language nuances and colloquialisms",
+        "A cultural-bridge feature that translates not just words but also the essence of the content, keeping cultural references intact"
+      ],
+      "support": [
+        "24/7 customer service team fluent in English and Chinese",
+        "Comprehensive FAQ section addressing all your Chinese translation queries",
+        "Community forum for users to discuss Chinese subtitle translation and share tips"
+      ],
+      "copyright": "© 2022 SubtitleMaster. All rights reserved."
+    },
+    "industryUseCases": {
+      "title": "Unlocking Chinese Markets with Subtitle Translation",
+      "subtitle": "Explore the unique opportunities in Chinese-speaking markets with our high-quality subtitle translation tool.",
+      "cases": [
+        {
+          "icon": "🎬",
+          "title": "Entertainment & Media",
+          "description": "With over 1.1B Chinese speakers worldwide, translating subtitles of movies, TV shows, and online video content in Chinese can help you tap into this massive audience. Our subtitle translation tool ensures that your content is culturally accurate and contextually appropriate."
+        },
+        {
+          "icon": "📈",
+          "title": "Business Expansion",
+          "description": "Localizing your video content in Chinese can pave the way for your business expansion in the Sino-Tibetan region. Our subtitle translator aids in breaking language barriers, helping you connect and communicate effectively with potential customers."
+        },
+        {
+          "icon": "📚",
+          "title": "Education & Training",
+          "description": "E-Learning platforms can hugely benefit from Chinese translated subtitles, making educational content accessible to millions of Chinese learners. Our tool ensures accurate translation, helping to disseminate knowledge effectively."
+        },
+        {
+          "icon": "🌉",
+          "title": "Cultural Bridge",
+          "description": "Chinese language serves as a cultural bridge, giving insights into rich traditions and heritage. Translating subtitles in Chinese using our tool can enable cultural exchange, enhancing global understanding and cooperation."
+        },
+        {
+          "icon": "🚀",
+          "title": "Emerging Opportunities",
+          "description": "China's rapidly growing digital landscape offers numerous untapped opportunities. Translating subtitles into Chinese can help you leverage these new trends and opportunities, ensuring you stay ahead in the competitive market."
+        }
+      ]
+    },
+    "languageStats": {
+      "title": "Chinese Subtitle Translation: Bridging Cultures Through Language",
+      "subtitle": "Unleashing the power of our subtitle translator to connect with over 1.1 billion Chinese speakers globally.",
+      "stats": [
+        {
+          "icon": "🌍",
+          "number": "1.1B+",
+          "title": "Native Speakers",
+          "description": "Chinese is spoken by over 1.1 billion people around the world, making it one of the most widely spoken languages."
+        },
+        {
+          "icon": "💻",
+          "number": "20%+",
+          "title": "Internet Content",
+          "description": "Over 20% of the world's digital content is in Chinese, reflecting the growing influence and digital presence of this language."
+        },
+        {
+          "icon": "🇨🇳",
+          "number": "2nd",
+          "title": "Economic Powerhouse",
+          "description": "China is the world's second-largest economy, underscoring the enormous economic value and potential of this language."
+        },
+        {
+          "icon": "🌉",
+          "number": "1st",
+          "title": "Cultural Bridge",
+          "description": "Chinese serves as a bridge to a rich and ancient culture, with its influence felt in various forms of media and art globally."
+        },
+        {
+          "icon": "🤖",
+          "number": "Advanced",
+          "title": "Translation Technology",
+          "description": "Our advanced AI technology has refined the art of Chinese subtitle translation, ensuring a seamless and enriching user experience."
+        }
+      ]
+    },
+    "languageLearning": {
+      "title": "Unlock new horizons with Mandarin Chinese",
+      "subtitle": "Leverage the power of our subtitle translation tool for an immersive Chinese learning experience",
+      "methods": [
+        {
+          "icon": "📚",
+          "title": "Subtitle Translation: Your Innovative Learning Companion",
+          "description": "With over 1.1 billion Chinese speakers globally, learning Chinese can be a daunting task. However, our subtitle translator makes this process more effortless than ever. Translate subtitles from Chinese movies, series, and documentaries into English, enhancing your vocabulary and comprehension skills simultaneously."
+        },
+        {
+          "icon": "🌍",
+          "title": "Cultural Immersion through Chinese Content",
+          "description": "Chinese culture, with its rich history and traditions, offers a unique learning opportunity. By utilizing our subtitle translation tool, you can understand Chinese TV shows, movies, and music, thereby getting an authentic taste of Chinese culture. It's not just about language, it's about understanding nuances and customs that make Chinese a cultural bridge."
+        },
+        {
+          "icon": "💼",
+          "title": "Professional Opportunities Awaits with Chinese Proficiency",
+          "description": "Being fluent in Chinese places you in an advantageous position in the global business landscape. With our subtitle translation tool, you can learn industry-specific terminologies and understand Chinese business etiquette, making you a valuable asset in any multinational corporation."
+        },
+        {
+          "icon": "👥",
+          "title": "Join a Global Community of Chinese Learners",
+          "description": "Learning Chinese is more fun when you're not doing it alone! By using our subtitle translation, you can connect with a global community of learners, engage in language exchange, and enhance your fluency. Let our tool be your bridge to a new world of friendships and interactions."
+        }
+      ]
     }
   }
 }
