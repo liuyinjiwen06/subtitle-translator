@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { getServerTranslations } from '@/lib/server-i18n';
-import { Locale } from '../../../../i18nConfig';
+import { Locale, i18nConfig } from '../../../../i18nConfig';
 import ClientNavigation from '@/components/ClientNavigation';
 import LanguageDropdown from '@/components/LanguageDropdown';
 import SubtitleTranslator from '@/components/SubtitleTranslator';
@@ -21,6 +21,15 @@ export async function generateMetadata({ params: { locale } }: PortugueseSubtitl
     title: ps.meta?.title || 'Portuguese SRT Translator - Translate Portuguese Subtitles Online Free | SubTran',
     description: ps.meta?.description || 'Professional Portuguese subtitle translator. Translate SRT files from Portuguese to 30+ languages or translate any language to Portuguese. Free online tool with AI-powered accuracy for all Portuguese variants.',
     keywords: 'portuguese subtitle translator,translate portuguese subtitles,portuguese srt translator',
+    alternates: {
+      canonical: `https://subtitletranslator.cc/${locale}/portuguese-subtitle`,
+      languages: Object.fromEntries(
+        i18nConfig.locales.map(loc => [
+          loc,
+          `https://subtitletranslator.cc/${loc}/portuguese-subtitle`
+        ])
+      )
+    },
   };
 }
 

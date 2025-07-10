@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { getServerTranslations } from '@/lib/server-i18n';
-import { Locale } from '../../../../i18nConfig';
+import { Locale, i18nConfig } from '../../../../i18nConfig';
 import ClientNavigation from '@/components/ClientNavigation';
 import LanguageDropdown from '@/components/LanguageDropdown';
 import SubtitleTranslator from '@/components/SubtitleTranslator';
@@ -20,6 +20,15 @@ export async function generateMetadata({ params: { locale } }: ChineseSubtitlePa
     title: t('chineseSubtitle.meta.title'),
     description: t('chineseSubtitle.meta.description'),
     keywords: t('chineseSubtitle.meta.keywords', 'chinese subtitle translator,translate chinese subtitles,chinese srt translator'),
+    alternates: {
+      canonical: `https://subtitletranslator.cc/${locale}/chinese-subtitle`,
+      languages: Object.fromEntries(
+        i18nConfig.locales.map(loc => [
+          loc,
+          `https://subtitletranslator.cc/${loc}/chinese-subtitle`
+        ])
+      )
+    },
   };
 }
 

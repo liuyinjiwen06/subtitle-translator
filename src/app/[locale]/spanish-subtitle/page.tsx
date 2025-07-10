@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { getServerTranslations } from '@/lib/server-i18n';
-import { Locale } from '../../../../i18nConfig';
+import { Locale, i18nConfig } from '../../../../i18nConfig';
 import ClientNavigation from '@/components/ClientNavigation';
 import LanguageDropdown from '@/components/LanguageDropdown';
 import SubtitleTranslator from '@/components/SubtitleTranslator';
@@ -21,6 +21,15 @@ export async function generateMetadata({ params: { locale } }: SpanishSubtitlePa
     title: ss.meta?.title || 'Spanish SRT Translator - Translate Spanish Subtitles Online Free | SubTran',
     description: ss.meta?.description || 'Professional Spanish subtitle translator. Translate SRT files from Spanish to 30+ languages or translate any language to Spanish. Free online tool with AI-powered accuracy for all Spanish variants.',
     keywords: 'spanish subtitle translator,translate spanish subtitles,spanish srt translator',
+    alternates: {
+      canonical: `https://subtitletranslator.cc/${locale}/spanish-subtitle`,
+      languages: Object.fromEntries(
+        i18nConfig.locales.map(loc => [
+          loc,
+          `https://subtitletranslator.cc/${loc}/spanish-subtitle`
+        ])
+      )
+    },
   };
 }
 

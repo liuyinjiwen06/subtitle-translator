@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { getServerTranslations } from '@/lib/server-i18n';
-import { Locale } from '../../../../i18nConfig';
+import { Locale, i18nConfig } from '../../../../i18nConfig';
 import ClientNavigation from '@/components/ClientNavigation';
 import LanguageDropdown from '@/components/LanguageDropdown';
 import SubtitleTranslator from '@/components/SubtitleTranslator';
@@ -21,6 +21,15 @@ export async function generateMetadata({ params: { locale } }: FrenchSubtitlePag
     title: fs.meta?.title || 'French SRT Translator - Translate French Subtitles Online Free | SubTran',
     description: fs.meta?.description || 'Professional French subtitle translator. Translate SRT files from French to 30+ languages or translate any language to French. Free online tool with AI-powered accuracy for all French variants.',
     keywords: 'french subtitle translator,translate french subtitles,french srt translator',
+    alternates: {
+      canonical: `https://subtitletranslator.cc/${locale}/french-subtitle`,
+      languages: Object.fromEntries(
+        i18nConfig.locales.map(loc => [
+          loc,
+          `https://subtitletranslator.cc/${loc}/french-subtitle`
+        ])
+      )
+    },
   };
 }
 
