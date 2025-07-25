@@ -21,7 +21,7 @@ const CONFIG = {
   i18nConfigFile: './i18nConfig.ts',
   openai: {
     model: 'gpt-4o-mini',
-    temperature: 0.3,
+    temperature: 0.5,
     maxTokens: 2000,
     batchSize: 5, // 每批翻译的key数量
     delayBetweenBatches: 1000, // 批次间延迟(ms)
@@ -45,10 +45,7 @@ const CONFIG = {
     'tr': 'Turkish',
     'pl': 'Polish',
     'nl': 'Dutch',
-    'sv': 'Swedish',
-    'da': 'Danish',
-    'no': 'Norwegian',
-    'fi': 'Finnish'
+    'sv': 'Swedish'
   }
 };
 
@@ -90,8 +87,8 @@ class I18nTranslator {
       console.warn('⚠️ 无法读取i18nConfig，使用默认语言列表');
     }
     
-    // 默认语言列表  
-    return ['zh', 'ja', 'fr', 'de', 'es', 'ru', 'it', 'pt', 'ar', 'hi', 'ko', 'th', 'vi', 'tr', 'pl', 'nl', 'sv'];
+    // 默认语言列表
+    return ['zh', 'ja', 'fr', 'de', 'es', 'ru', 'it', 'pt', 'ar', 'hi', 'ko', 'th', 'vi', 'tr', 'pl', 'nl'];
   }
 
   // 获取需要翻译的内容
@@ -254,29 +251,23 @@ Return only the translated JSON without any additional text or markdown formatti
     
     if (!force && Object.keys(missing).length === 0) {
       console.log(`  ✅ 无需翻译，所有内容已存在`);
-      return { success: true, translated: 0, skipped: 0 };
+      return;
     }
     
     const toTranslate = force ? this.sourceData : missing;
-    const totalItems = Object.keys(toTranslate).length;
-    console.log(`  📋 需要翻译 ${totalItems} 个项目`);
+    console.log(`  📋 需要翻译 ${Object.keys(toTranslate).length} 个项目`);
     
-    if (totalItems === 0) {
-      return { success: true, translated: 0, skipped: 0 };
+    if (Object.keys(toTranslate).length === 0) {
+      return;
     }
     
-    const startTime = Date.now();
     const translations = await this.translateMissing(toTranslate, targetLang);
-    const endTime = Date.now();
     
     if (translations && Object.keys(translations).length > 0) {
       this.saveTranslation(targetLang, translations, force ? {} : targetData);
-      const duration = ((endTime - startTime) / 1000).toFixed(1);
-      console.log(`  🎉 完成翻译: ${targetLang} (${duration}秒, ${Object.keys(translations).length}个项目)`);
-      return { success: true, translated: Object.keys(translations).length, skipped: 0 };
+      console.log(`  🎉 完成翻译: ${targetLang}`);
     } else {
       console.log(`  ❌ 翻译失败: ${targetLang}`);
-      return { success: false, translated: 0, skipped: totalItems };
     }
   }
 
@@ -307,53 +298,20 @@ Return only the translated JSON without any additional text or markdown formatti
     
     await this.init();
     
-    const stats = {
-      total: targetLangs.length,
-      successful: 0,
-      failed: 0,
-      translated: 0,
-      skipped: 0
-    };
-    
-    const overallStartTime = Date.now();
-    
-    for (let i = 0; i < targetLangs.length; i++) {
-      const lang = targetLangs[i];
-      const progress = `[${i + 1}/${targetLangs.length}]`;
-      
+    for (const lang of targetLangs) {
       if (!this.supportedLocales.includes(lang)) {
-        console.warn(`⚠️ ${progress} 跳过不支持的语言: ${lang}`);
-        stats.skipped++;
+        console.warn(`⚠️ 跳过不支持的语言: ${lang}`);
         continue;
       }
       
-      console.log(`\n📍 ${progress} 处理语言: ${lang}`);
-      
       try {
-        const result = await this.translateLanguage(lang, force, specificKeys);
-        if (result.success) {
-          stats.successful++;
-          stats.translated += result.translated;
-        } else {
-          stats.failed++;
-        }
+        await this.translateLanguage(lang, force, specificKeys);
       } catch (error) {
         console.error(`❌ 翻译 ${lang} 时发生错误:`, error.message);
-        stats.failed++;
       }
     }
     
-    const overallEndTime = Date.now();
-    const totalDuration = ((overallEndTime - overallStartTime) / 1000).toFixed(1);
-    
-    console.log('\n🎉 翻译任务完成！');
-    console.log('📊 统计信息:');
-    console.log(`  - 总语言数: ${stats.total}`);
-    console.log(`  - 成功: ${stats.successful}`);
-    console.log(`  - 失败: ${stats.failed}`);
-    console.log(`  - 跳过: ${stats.skipped}`);
-    console.log(`  - 翻译项目数: ${stats.translated}`);
-    console.log(`  - 总耗时: ${totalDuration}秒`);
+    console.log('\n🎉 翻译完成！');
   }
 }
 

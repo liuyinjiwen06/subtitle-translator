@@ -38,7 +38,7 @@ export default function HomePage({ pageConfig, translations, locale }: HomePageP
       </nav>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-100 via-blue-50 to-blue-100 py-12">
+      <section className="bg-gradient-to-br from-blue-50 via-white to-blue-50 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">

@@ -331,36 +331,56 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
       }
 
       const decoder = new TextDecoder();
+      let buffer = '';
 
-      while (true) {
-        const { done, value } = await reader.read();
-        
-        if (done) break;
-        
-        const chunk = decoder.decode(value);
-        const lines = chunk.split('\n');
-        
-        for (const line of lines) {
-          if (line.startsWith('data: ')) {
-            try {
-              const data = JSON.parse(line.slice(6));
-              
-              if (data.type === 'progress') {
-                setTranslationProgress(data.progress);
-              } else if (data.type === 'complete') {
-                setTranslatedContent(data.result);
-                setTranslationProgress(100);
-                setIsTranslating(false);
-                return;
-              } else if (data.type === 'error') {
-                throw new Error(data.message);
+      try {
+        while (true) {
+          const { done, value } = await reader.read();
+          
+          if (done) break;
+          
+          // 将新数据添加到缓冲区
+          buffer += decoder.decode(value, { stream: true });
+          
+          // 处理完整的行
+          const lines = buffer.split('\n');
+          buffer = lines.pop() || ''; // 保留最后一个不完整的行
+          
+          for (const line of lines) {
+            if (line.startsWith('data: ')) {
+              try {
+                const data = JSON.parse(line.slice(6));
+                
+                if (data.type === 'progress') {
+                  setTranslationProgress(data.progress);
+                } else if (data.type === 'complete') {
+                  setTranslatedContent(data.result);
+                  setTranslationProgress(100);
+                  // 添加小延迟确保UI更新
+                  setTimeout(() => {
+                    setIsTranslating(false);
+                  }, 100);
+                  // 确保关闭 reader
+                  await reader.cancel();
+                  return;
+                } else if (data.type === 'error') {
+                  throw new Error(data.message || data.error || '翻译失败');
+                }
+              } catch (parseError) {
+                // 忽略JSON解析错误，继续处理
+                console.warn('Failed to parse SSE data:', line);
               }
-            } catch (parseError) {
-              // 忽略JSON解析错误，继续处理
-              console.warn('Failed to parse SSE data:', line);
             }
           }
         }
+        
+        // 处理最后的缓冲区数据
+        if (buffer.trim()) {
+          console.warn('Incomplete SSE data in buffer:', buffer);
+        }
+      } finally {
+        // 确保 reader 被关闭
+        await reader.cancel();
       }
     } catch (error) {
       console.error('翻译错误:', error);

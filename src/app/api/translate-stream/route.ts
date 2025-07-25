@@ -36,7 +36,8 @@ async function translateWithGoogle(text: string, targetLang: string): Promise<st
     // 检查是否配置了Google Cloud API密钥
     const apiKey = process.env.GOOGLE_TRANSLATE_API_KEY;
     if (!apiKey) {
-      throw new Error('Google Cloud Translation API key not configured');
+      console.error('Google Cloud API key not configured in environment');
+      throw new Error('翻译服务暂时不可用，请稍后再试');
     }
 
     const targetLangCode = languageMap[targetLang] || targetLang;
@@ -55,7 +56,16 @@ async function translateWithGoogle(text: string, targetLang: string): Promise<st
     });
 
     if (!response.ok) {
-      throw new Error(`Google Cloud Translation API error: ${response.status}`);
+      const errorData = await response.text();
+      console.error('Google API error response:', response.status, errorData);
+      
+      if (response.status === 403) {
+        throw new Error('Google翻译服务访问被拒绝，请检查API配额');
+      } else if (response.status === 400) {
+        throw new Error('请求格式错误，请重试');
+      } else {
+        throw new Error('Google翻译服务暂时不可用，请稍后再试');
+      }
     }
 
     const data = await response.json();
@@ -63,12 +73,21 @@ async function translateWithGoogle(text: string, targetLang: string): Promise<st
     if (data.data && data.data.translations && data.data.translations[0]) {
       return data.data.translations[0].translatedText;
     } else {
-      throw new Error('Google Cloud Translation API returned invalid response');
+      console.error('Invalid Google API response structure:', data);
+      throw new Error('翻译服务返回异常，请稍后再试');
     }
   } catch (error) {
-    console.error('Google翻译错误:', error);
-    // 返回原文而不是抛出错误，确保翻译流程继续
-    return text;
+    console.error('Google翻译错误详情:', error);
+    
+    if (error instanceof TypeError && error.message.includes('fetch')) {
+      throw new Error('网络连接失败，请检查网络后重试');
+    }
+    
+    if (error instanceof Error && error.message.includes('翻译服务')) {
+      throw error;
+    }
+    
+    throw new Error('翻译服务出现问题，请稍后再试');
   }
 }
 
@@ -82,7 +101,8 @@ async function translateWithOpenAI(text: string, targetLang: string): Promise<st
     // 注意：这里需要用户提供OpenAI API密钥
     const apiKey = process.env.OPENAI_API_KEY;
     if (!apiKey) {
-      throw new Error('OpenAI API key not configured');
+      console.error('OpenAI API key not configured in environment');
+      throw new Error('翻译服务暂时不可用，请稍后再试');
     }
 
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
@@ -114,7 +134,18 @@ async function translateWithOpenAI(text: string, targetLang: string): Promise<st
     });
 
     if (!response.ok) {
-      throw new Error(`OpenAI API error: ${response.status}`);
+      const errorData = await response.text();
+      console.error('OpenAI API error response:', response.status, errorData);
+      
+      if (response.status === 401) {
+        throw new Error('OpenAI服务认证失败，请稍后再试');
+      } else if (response.status === 429) {
+        throw new Error('OpenAI服务请求过多，请稍后再试');
+      } else if (response.status === 500) {
+        throw new Error('OpenAI服务暂时不可用，请稍后再试');
+      } else {
+        throw new Error('翻译服务暂时不可用，请稍后再试');
+      }
     }
 
     const data = await response.json();
@@ -122,12 +153,21 @@ async function translateWithOpenAI(text: string, targetLang: string): Promise<st
     if (data.choices && data.choices[0] && data.choices[0].message) {
       return data.choices[0].message.content.trim();
     } else {
-      throw new Error('OpenAI API returned invalid response');
+      console.error('Invalid OpenAI API response structure:', data);
+      throw new Error('翻译服务返回异常，请稍后再试');
     }
   } catch (error) {
-    console.error('OpenAI翻译错误:', error);
-    // 返回原文而不是抛出错误，确保翻译流程继续
-    return text;
+    console.error('OpenAI翻译错误详情:', error);
+    
+    if (error instanceof TypeError && error.message.includes('fetch')) {
+      throw new Error('网络连接失败，请检查网络后重试');
+    }
+    
+    if (error instanceof Error && error.message.includes('翻译服务')) {
+      throw error;
+    }
+    
+    throw new Error('翻译服务出现问题，请稍后再试');
   }
 }
 
@@ -204,8 +244,19 @@ export async function POST(req: NextRequest) {
               text: line.substring(0, 50) + (line.length > 50 ? '...' : '')
             })}\n\n`));
             
-            const translatedLine = await translateText(line, targetLang, translationService);
-            translatedLines.push(translatedLine);
+            try {
+              const translatedLine = await translateText(line, targetLang, translationService);
+              translatedLines.push(translatedLine);
+            } catch (translateError) {
+              console.error(`翻译单行失败: ${line.substring(0, 50)}...`, translateError);
+              const errorMessage = translateError instanceof Error ? translateError.message : '翻译失败';
+              controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
+                type: 'error', 
+                error: errorMessage 
+              })}\n\n`));
+              controller.close();
+              return;
+            }
             
             // 添加延迟避免API限制
             const delay = translationService === 'openai' ? 200 : 100;
