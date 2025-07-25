@@ -310,13 +310,67 @@ export async function POST(req: NextRequest) {
   const stream = new ReadableStream({
     async start(controller) {
       try {
+        // 详细的环境检测和日志记录
+        console.log('[环境检测] 开始检查环境配置...');
+        console.log('[环境检测] 运行时:', runtime);
+        console.log('[环境检测] Node版本:', process.version || 'unknown');
+        console.log('[环境检测] 环境变量状态:', {
+          GOOGLE_TRANSLATE_API_KEY: {
+            exists: !!process.env.GOOGLE_TRANSLATE_API_KEY,
+            length: process.env.GOOGLE_TRANSLATE_API_KEY?.length || 0,
+            prefix: process.env.GOOGLE_TRANSLATE_API_KEY?.substring(0, 10) + '...' || 'not configured'
+          },
+          OPENAI_API_KEY: {
+            exists: !!process.env.OPENAI_API_KEY,
+            length: process.env.OPENAI_API_KEY?.length || 0,
+            prefix: process.env.OPENAI_API_KEY?.substring(0, 10) + '...' || 'not configured'
+          }
+        });
+
         const formData = await req.formData();
         const file = formData.get("file") as File;
         const targetLang = formData.get("targetLang") as string;
         const translationService = formData.get("translationService") as string || 'google';
         
+        console.log(`[请求参数] 目标语言: ${targetLang}, 翻译服务: ${translationService}, 文件名: ${file?.name}`);
+
         if (!file || !targetLang) {
-          controller.enqueue(encoder.encode(`data: ${JSON.stringify({ error: "参数缺失" })}\n\n`));
+          const errorMsg = "参数缺失: " + (!file ? "文件未上传" : "") + (!targetLang ? "目标语言未指定" : "");
+          console.error('[参数错误]', errorMsg);
+          controller.enqueue(encoder.encode(`data: ${JSON.stringify({ error: errorMsg })}\n\n`));
+          controller.close();
+          return;
+        }
+
+        // 检查选择的翻译服务是否可用
+        if (translationService === 'openai' && !process.env.OPENAI_API_KEY) {
+          console.warn('[服务切换] OpenAI API密钥未配置，强制切换到Google翻译');
+          const switchMsg = "OpenAI API密钥未配置，已自动切换到Google翻译";
+          controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
+            type: 'service_switch', 
+            message: switchMsg,
+            from: 'openai',
+            to: 'google'
+          })}\n\n`));
+        }
+
+        if (translationService === 'google' && !process.env.GOOGLE_TRANSLATE_API_KEY) {
+          console.error('[配置错误] Google翻译API密钥未配置');
+          controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
+            type: 'error', 
+            error: "Google翻译API密钥未配置，请检查环境变量GOOGLE_TRANSLATE_API_KEY" 
+          })}\n\n`));
+          controller.close();
+          return;
+        }
+
+        // 如果两个API都没配置
+        if (!process.env.GOOGLE_TRANSLATE_API_KEY && !process.env.OPENAI_API_KEY) {
+          console.error('[配置错误] 没有配置任何翻译API密钥');
+          controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
+            type: 'error', 
+            error: "翻译服务未配置：缺少GOOGLE_TRANSLATE_API_KEY和OPENAI_API_KEY环境变量" 
+          })}\n\n`));
           controller.close();
           return;
         }
@@ -442,10 +496,34 @@ export async function POST(req: NextRequest) {
 
         controller.close();
       } catch (error) {
-        console.error('流式翻译错误:', error);
+        console.error('[流式翻译错误] 详细信息:', {
+          error: error instanceof Error ? error.message : String(error),
+          stack: error instanceof Error ? error.stack : undefined,
+          timestamp: new Date().toISOString(),
+          environment: {
+            googleApiKey: !!process.env.GOOGLE_TRANSLATE_API_KEY,
+            openaiApiKey: !!process.env.OPENAI_API_KEY
+          }
+        });
+        
+        let userFriendlyError = "翻译处理失败";
+        if (error instanceof Error) {
+          if (error.message.includes('API密钥') || error.message.includes('not configured')) {
+            userFriendlyError = "翻译服务配置错误：请检查API密钥设置";
+          } else if (error.message.includes('网络') || error.message.includes('fetch')) {
+            userFriendlyError = "网络连接失败：请检查网络连接或稍后重试";
+          } else if (error.message.includes('参数')) {
+            userFriendlyError = "请求参数错误：" + error.message;
+          } else {
+            userFriendlyError = "翻译服务暂时不可用：" + error.message;
+          }
+        }
+        
         controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
           type: 'error', 
-          error: "翻译处理失败" 
+          error: userFriendlyError,
+          technical_details: error instanceof Error ? error.message : String(error),
+          timestamp: new Date().toISOString()
         })}\n\n`));
         controller.close();
       }

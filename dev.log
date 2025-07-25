@@ -12223,3 +12223,148 @@ Require stack:
  GET /favicon.ico 200 in 123ms
  GET /icon.png?0a98a9ab7f64f2b1 200 in 133ms
  GET /icon.png?0a98a9ab7f64f2b1 200 in 28ms
+ ✓ Compiled in 2.4s (576 modules)
+🔍 Loading translations for locale: "en"
+🔍 Locale type: string
+🔍 Call stack:     at loadTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:13:35)
+    at getServerTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:40:32)
+    at HomePage (webpack-internal:///(rsc)/./src/app/[locale]/page.tsx:30:110)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+📂 Attempting to import: ../lib/locales/en.json
+✅ Successfully loaded translations for locale: en
+🔍 Loading translations for locale: "en"
+🔍 Locale type: string
+🔍 Call stack:     at loadTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:13:35)
+    at getServerTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:40:32)
+    at Module.generateMetadata (webpack-internal:///(rsc)/./src/app/[locale]/layout.tsx:14:96)
+✅ Found cached translations for locale: en
+🔍 Loading translations for locale: "en"
+🔍 Locale type: string
+🔍 Call stack:     at loadTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:13:35)
+    at getServerTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:40:32)
+    at Module.generateMetadata (webpack-internal:///(rsc)/./src/app/[locale]/page.tsx:16:96)
+✅ Found cached translations for locale: en
+ GET /en 200 in 1624ms
+ GET /favicon.ico 200 in 50ms
+ GET /icon.png?0a98a9ab7f64f2b1 200 in 387ms
+ GET /icon.png?0a98a9ab7f64f2b1 200 in 46ms
+ ✓ Compiled in 1897ms (1307 modules)
+🔍 Loading translations for locale: "en"
+🔍 Locale type: string
+🔍 Call stack:     at loadTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:13:35)
+    at getServerTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:40:32)
+    at HomePage (webpack-internal:///(rsc)/./src/app/[locale]/page.tsx:30:110)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+📂 Attempting to import: ../lib/locales/en.json
+✅ Successfully loaded translations for locale: en
+🔍 Loading translations for locale: "en"
+🔍 Locale type: string
+🔍 Call stack:     at loadTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:13:35)
+    at getServerTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:40:32)
+    at Module.generateMetadata (webpack-internal:///(rsc)/./src/app/[locale]/layout.tsx:14:96)
+✅ Found cached translations for locale: en
+🔍 Loading translations for locale: "en"
+🔍 Locale type: string
+🔍 Call stack:     at loadTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:13:35)
+    at getServerTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:40:32)
+    at Module.generateMetadata (webpack-internal:///(rsc)/./src/app/[locale]/page.tsx:16:96)
+✅ Found cached translations for locale: en
+ GET /en 200 in 983ms
+ GET /favicon.ico 200 in 47ms
+ GET /icon.png?0a98a9ab7f64f2b1 200 in 53ms
+ GET /icon.png?0a98a9ab7f64f2b1 200 in 26ms
+ ✓ Compiled in 531ms (576 modules)
+🔍 Loading translations for locale: "en"
+🔍 Locale type: string
+🔍 Call stack:     at loadTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:13:35)
+    at getServerTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:40:32)
+    at HomePage (webpack-internal:///(rsc)/./src/app/[locale]/page.tsx:30:110)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+📂 Attempting to import: ../lib/locales/en.json
+✅ Successfully loaded translations for locale: en
+🔍 Loading translations for locale: "en"
+🔍 Locale type: string
+🔍 Call stack:     at loadTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:13:35)
+    at getServerTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:40:32)
+    at Module.generateMetadata (webpack-internal:///(rsc)/./src/app/[locale]/layout.tsx:14:96)
+✅ Found cached translations for locale: en
+🔍 Loading translations for locale: "en"
+🔍 Locale type: string
+🔍 Call stack:     at loadTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:13:35)
+    at getServerTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:40:32)
+    at Module.generateMetadata (webpack-internal:///(rsc)/./src/app/[locale]/page.tsx:16:96)
+✅ Found cached translations for locale: en
+ GET /en 200 in 1806ms
+🔍 Loading translations for locale: "en"
+🔍 Locale type: string
+🔍 Call stack:     at loadTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:13:35)
+    at getServerTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:40:32)
+    at HomePage (webpack-internal:///(rsc)/./src/app/[locale]/page.tsx:30:110)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+✅ Found cached translations for locale: en
+🔍 Loading translations for locale: "en"
+🔍 Locale type: string
+🔍 Call stack:     at loadTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:13:35)
+    at getServerTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:40:32)
+    at Module.generateMetadata (webpack-internal:///(rsc)/./src/app/[locale]/layout.tsx:14:96)
+✅ Found cached translations for locale: en
+🔍 Loading translations for locale: "en"
+🔍 Locale type: string
+🔍 Call stack:     at loadTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:13:35)
+    at getServerTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:40:32)
+    at Module.generateMetadata (webpack-internal:///(rsc)/./src/app/[locale]/page.tsx:16:96)
+✅ Found cached translations for locale: en
+ GET /en 200 in 209ms
+ ✓ Compiled in 1090ms (576 modules)
+🔍 Loading translations for locale: "en"
+🔍 Locale type: string
+🔍 Call stack:     at loadTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:13:35)
+    at getServerTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:40:32)
+    at HomePage (webpack-internal:///(rsc)/./src/app/[locale]/page.tsx:30:110)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+📂 Attempting to import: ../lib/locales/en.json
+✅ Successfully loaded translations for locale: en
+🔍 Loading translations for locale: "en"
+🔍 Locale type: string
+🔍 Call stack:     at loadTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:13:35)
+    at getServerTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:40:32)
+    at Module.generateMetadata (webpack-internal:///(rsc)/./src/app/[locale]/layout.tsx:14:96)
+✅ Found cached translations for locale: en
+🔍 Loading translations for locale: "en"
+🔍 Locale type: string
+🔍 Call stack:     at loadTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:13:35)
+    at getServerTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:40:32)
+    at Module.generateMetadata (webpack-internal:///(rsc)/./src/app/[locale]/page.tsx:16:96)
+✅ Found cached translations for locale: en
+ GET /en 200 in 638ms
+ GET /favicon.ico 200 in 53ms
+ GET /icon.png?0a98a9ab7f64f2b1 200 in 58ms
+ GET /icon.png?0a98a9ab7f64f2b1 200 in 20ms
+ GET /favicon.ico 200 in 32ms
+ GET /icon.png?0a98a9ab7f64f2b1 200 in 36ms
+ GET /icon.png?0a98a9ab7f64f2b1 200 in 17ms
+ ✓ Compiled in 884ms (576 modules)
+🔍 Loading translations for locale: "en"
+🔍 Locale type: string
+🔍 Call stack:     at loadTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:13:35)
+    at getServerTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:40:32)
+    at HomePage (webpack-internal:///(rsc)/./src/app/[locale]/page.tsx:30:110)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+📂 Attempting to import: ../lib/locales/en.json
+✅ Successfully loaded translations for locale: en
+🔍 Loading translations for locale: "en"
+🔍 Locale type: string
+🔍 Call stack:     at loadTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:13:35)
+    at getServerTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:40:32)
+    at Module.generateMetadata (webpack-internal:///(rsc)/./src/app/[locale]/layout.tsx:14:96)
+✅ Found cached translations for locale: en
+🔍 Loading translations for locale: "en"
+🔍 Locale type: string
+🔍 Call stack:     at loadTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:13:35)
+    at getServerTranslations (webpack-internal:///(rsc)/./src/lib/server-i18n.ts:40:32)
+    at Module.generateMetadata (webpack-internal:///(rsc)/./src/app/[locale]/page.tsx:16:96)
+✅ Found cached translations for locale: en
+ GET /en 200 in 827ms
+ GET /favicon.ico 200 in 41ms
+ GET /icon.png?0a98a9ab7f64f2b1 200 in 44ms
+ GET /icon.png?0a98a9ab7f64f2b1 200 in 19ms

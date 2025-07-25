@@ -377,6 +377,10 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
                 } else if (data.type === 'translated') {
                   // 单条翻译完成，可以在这里显示实时翻译结果
                   console.log(`翻译完成: ${data.original} -> ${data.translated}`);
+                } else if (data.type === 'service_switch') {
+                  // 服务切换通知
+                  console.log(`服务切换: ${data.from} -> ${data.to} - ${data.message}`);
+                  setTranslationStats(prev => ({ ...prev, service: data.to }));
                 } else if (data.type === 'translation_error') {
                   // 非致命错误，显示警告但继续翻译
                   console.warn(`翻译单行失败: ${data.failedText} - ${data.error}`);
