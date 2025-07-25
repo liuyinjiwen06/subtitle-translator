@@ -279,6 +279,12 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
   const [translationProgress, setTranslationProgress] = useState(0);
   const [translatedContent, setTranslatedContent] = useState<string>("");
   const [translationError, setTranslationError] = useState<string>("");
+  const [currentTranslatingText, setCurrentTranslatingText] = useState<string>("");
+  const [translationStats, setTranslationStats] = useState<{
+    currentIndex: number;
+    totalCount: number;
+    service: string;
+  }>({ currentIndex: 0, totalCount: 0, service: "" });
 
   // 文件上传处理
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -297,6 +303,8 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
     setTranslationError("");
     setTranslationProgress(0);
     setIsTranslating(false);
+    setCurrentTranslatingText("");
+    setTranslationStats({ currentIndex: 0, totalCount: 0, service: "" });
   };
 
   // 翻译处理
@@ -309,6 +317,8 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
     setIsTranslating(true);
     setTranslationError("");
     setTranslationProgress(0);
+    setCurrentTranslatingText("");
+    setTranslationStats({ currentIndex: 0, totalCount: 0, service: translationService });
 
     const formData = new FormData();
     formData.append('file', file);
@@ -353,9 +363,42 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
                 
                 if (data.type === 'progress') {
                   setTranslationProgress(data.progress);
+                  if (data.currentText) {
+                    setCurrentTranslatingText(data.currentText);
+                  }
+                  if (data.current && data.total) {
+                    setTranslationStats(prev => ({
+                      ...prev,
+                      currentIndex: data.current,
+                      totalCount: data.total,
+                      service: data.service || prev.service
+                    }));
+                  }
+                } else if (data.type === 'translated') {
+                  // 单条翻译完成，可以在这里显示实时翻译结果
+                  console.log(`翻译完成: ${data.original} -> ${data.translated}`);
+                } else if (data.type === 'translation_error') {
+                  // 非致命错误，显示警告但继续翻译
+                  console.warn(`翻译单行失败: ${data.failedText} - ${data.error}`);
+                  setTranslationError(`部分内容翻译失败: ${data.error} (继续翻译中...)`);
+                } else if (data.type === 'fatal_error') {
+                  // 致命错误，停止翻译并显示部分结果
+                  setCurrentTranslatingText("");
+                  setTranslationError(`翻译中断: ${data.error}`);
+                  if (data.partialResult) {
+                    setTranslatedContent(data.partialResult);
+                  }
+                  setIsTranslating(false);
+                  await reader.cancel();
+                  return;
                 } else if (data.type === 'complete') {
                   setTranslatedContent(data.result);
                   setTranslationProgress(100);
+                  setCurrentTranslatingText("");
+                  // 清除非致命错误信息
+                  if (translationError.includes('继续翻译中')) {
+                    setTranslationError("");
+                  }
                   // 添加小延迟确保UI更新
                   setTimeout(() => {
                     setIsTranslating(false);
@@ -364,6 +407,7 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
                   await reader.cancel();
                   return;
                 } else if (data.type === 'error') {
+                  setCurrentTranslatingText("");
                   throw new Error(data.message || data.error || '翻译失败');
                 }
               } catch (parseError) {
@@ -386,6 +430,8 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
       console.error('翻译错误:', error);
       setTranslationError(error instanceof Error ? error.message : t('translation_error_occurred'));
       setIsTranslating(false);
+      setCurrentTranslatingText("");
+      setTranslationProgress(0);
     }
   };
 
@@ -508,7 +554,7 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
 
         {/* 翻译进度 */}
         {isTranslating && (
-          <div className="space-y-2">
+          <div className="space-y-4">
             <div className="flex justify-between text-sm text-gray-600">
               <span>{t('translation_progress')}</span>
               <span>{translationProgress}%</span>
@@ -518,6 +564,33 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
                 className="bg-gradient-to-r from-blue-500 to-purple-500 h-3 rounded-full transition-all duration-300"
                 style={{ width: `${translationProgress}%` }}
               ></div>
+            </div>
+            
+                          {/* 翻译状态信息 */}
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-blue-700">
+                    {translationStats.service === 'google' ? 'Google Cloud Translating...' : 'OpenAI GPT Translating...'}
+                  </span>
+                  <span className="text-xs text-blue-600">
+                    ({translationStats.currentIndex}/{translationStats.totalCount})
+                  </span>
+                </div>
+                
+                
+              
+                             {currentTranslatingText && (
+                 <div className="space-y-1">
+                   <div className="text-xs text-gray-600">Currently translating:</div>
+                   <div className="text-sm text-gray-800 bg-white rounded-md p-2 border border-gray-200 font-mono leading-relaxed">
+                     {currentTranslatingText.length > 100 
+                       ? `${currentTranslatingText.substring(0, 100)}...` 
+                       : currentTranslatingText
+                     }
+                   </div>
+                 </div>
+               )}
             </div>
           </div>
         )}
