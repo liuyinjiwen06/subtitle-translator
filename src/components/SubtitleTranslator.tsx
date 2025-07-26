@@ -285,6 +285,8 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
     totalCount: number;
     service: string;
   }>({ currentIndex: 0, totalCount: 0, service: "" });
+  const [showEnvDiagnostics, setShowEnvDiagnostics] = useState(false);
+  const [envDiagnostics, setEnvDiagnostics] = useState<any>(null);
 
   // 文件上传处理
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -326,13 +328,20 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
     formData.append('translationService', translationService);
 
     try {
-      const response = await fetch('/api/translate', {
+      console.log('[翻译开始] 准备发送请求到 /api/translate-stream');
+      console.log(`[翻译参数] 文件: ${file.name}, 目标语言: ${targetLanguage}, 服务: ${translationService}`);
+      
+      const response = await fetch('/api/translate-stream', {
         method: 'POST',
         body: formData,
       });
 
+      console.log(`[API响应] 状态码: ${response.status}, 状态文本: ${response.statusText}`);
+
       if (!response.ok) {
-        throw new Error(`${t('translation_failed')}: ${response.statusText}`);
+        const errorText = await response.text();
+        console.error(`[API错误] 响应内容: ${errorText}`);
+        throw new Error(`${t('translation_failed')}: ${response.status} ${response.statusText} - ${errorText}`);
       }
 
       const reader = response.body?.getReader();
@@ -361,7 +370,20 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
               try {
                 const data = JSON.parse(line.slice(6));
                 
-                if (data.type === 'progress') {
+                if (data.type === 'env_status') {
+                  console.log(`[SSE环境状态]`, data);
+                  if (!data.googleConfigured && !data.openaiConfigured) {
+                    throw new Error('翻译服务未配置：缺少API密钥。请检查环境变量配置。');
+                  }
+                } else if (data.type === 'start') {
+                  console.log(`[SSE开始] 总计需翻译: ${data.total} 句, 使用服务: ${data.service}`);
+                  setTranslationStats({ 
+                    currentIndex: 0, 
+                    totalCount: data.total, 
+                    service: data.service 
+                  });
+                } else if (data.type === 'progress') {
+                  console.log(`[SSE进度] ${data.progress}% (${data.current}/${data.total})`);
                   setTranslationProgress(data.progress);
                   if (data.currentText) {
                     setCurrentTranslatingText(data.currentText);
@@ -376,17 +398,18 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
                   }
                 } else if (data.type === 'translated') {
                   // 单条翻译完成，可以在这里显示实时翻译结果
-                  console.log(`翻译完成: ${data.original} -> ${data.translated}`);
+                  console.log(`[SSE翻译完成] ${data.original} -> ${data.translated} (耗时: ${data.time}ms)`);
                 } else if (data.type === 'service_switch') {
                   // 服务切换通知
-                  console.log(`服务切换: ${data.from} -> ${data.to} - ${data.message}`);
+                  console.log(`[SSE服务切换] ${data.from} -> ${data.to} - ${data.message}`);
                   setTranslationStats(prev => ({ ...prev, service: data.to }));
                 } else if (data.type === 'translation_error') {
                   // 非致命错误，显示警告但继续翻译
-                  console.warn(`翻译单行失败: ${data.failedText} - ${data.error}`);
+                  console.warn(`[SSE翻译错误] ${data.failedText} - ${data.error}`);
                   setTranslationError(`部分内容翻译失败: ${data.error} (继续翻译中...)`);
                 } else if (data.type === 'fatal_error') {
                   // 致命错误，停止翻译并显示部分结果
+                  console.error(`[SSE致命错误] ${data.error}`);
                   setCurrentTranslatingText("");
                   setTranslationError(`翻译中断: ${data.error}`);
                   if (data.partialResult) {
@@ -454,6 +477,22 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
+  };
+
+  // 环境诊断
+  const runEnvDiagnostics = async () => {
+    try {
+      console.log('[环境诊断] 开始检查...');
+      const response = await fetch('/api/test-env');
+      const data = await response.json();
+      console.log('[环境诊断] 结果:', data);
+      setEnvDiagnostics(data);
+      setShowEnvDiagnostics(true);
+    } catch (error) {
+      console.error('[环境诊断] 失败:', error);
+      setEnvDiagnostics({ error: error instanceof Error ? error.message : '诊断失败' });
+      setShowEnvDiagnostics(true);
+    }
   };
 
   // 在组件未挂载或translations未准备好时显示加载状态
@@ -602,11 +641,39 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
         {/* 错误显示 */}
         {translationError && (
           <div className="p-4 bg-red-50 border border-red-200 rounded-xl">
-            <div className="flex items-center space-x-2">
-              <span className="text-red-500">❌</span>
-              <span className="text-red-700 font-medium">{t('translation_failed')}</span>
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="flex items-center space-x-2">
+                  <span className="text-red-500">❌</span>
+                  <span className="text-red-700 font-medium">{t('translation_failed')}</span>
+                </div>
+                <p className="text-red-600 mt-2">{translationError}</p>
+              </div>
+              <button
+                onClick={runEnvDiagnostics}
+                className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm"
+              >
+                🔍 诊断环境
+              </button>
             </div>
-            <p className="text-red-600 mt-2">{translationError}</p>
+          </div>
+        )}
+
+        {/* 环境诊断结果 */}
+        {showEnvDiagnostics && envDiagnostics && (
+          <div className="p-4 bg-gray-50 border border-gray-200 rounded-xl">
+            <div className="flex items-center justify-between mb-3">
+              <h3 className="font-semibold text-gray-800">环境诊断结果</h3>
+              <button
+                onClick={() => setShowEnvDiagnostics(false)}
+                className="text-gray-500 hover:text-gray-700"
+              >
+                ✕
+              </button>
+            </div>
+            <pre className="text-xs bg-white p-3 rounded border border-gray-200 overflow-x-auto">
+              {JSON.stringify(envDiagnostics, null, 2)}
+            </pre>
           </div>
         )}
 

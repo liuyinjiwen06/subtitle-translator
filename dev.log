@@ -12368,3 +12368,12 @@ Require stack:
  GET /favicon.ico 200 in 41ms
  GET /icon.png?0a98a9ab7f64f2b1 200 in 44ms
  GET /icon.png?0a98a9ab7f64f2b1 200 in 19ms
+ ✓ Compiled in 3s (1307 modules)
+ ✓ Compiled in 729ms (1307 modules)
+ ✓ Compiled in 330ms (576 modules)
+ ✓ Compiled in 1166ms (1361 modules)
+ ✓ Compiled in 703ms (1307 modules)
+ ✓ Compiled in 754ms (1307 modules)
+ ✓ Compiled in 867ms (1307 modules)
+ ✓ Compiled in 306ms (576 modules)
+ ✓ Compiled in 592ms (1307 modules)

@@ -327,6 +327,15 @@ export async function POST(req: NextRequest) {
           }
         });
 
+        // 立即发送环境状态信息
+        controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
+          type: 'env_status',
+          googleConfigured: !!process.env.GOOGLE_TRANSLATE_API_KEY,
+          openaiConfigured: !!process.env.OPENAI_API_KEY,
+          runtime: runtime,
+          timestamp: new Date().toISOString()
+        })}\n\n`));
+
         const formData = await req.formData();
         const file = formData.get("file") as File;
         const targetLang = formData.get("targetLang") as string;
