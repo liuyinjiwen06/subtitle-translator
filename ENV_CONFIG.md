@@ -20,7 +20,12 @@ OPENAI_API_KEY=你的OpenAI API密钥
 OPENAI_MODEL=gpt-3.5-turbo  # 可选，默认为 gpt-3.5-turbo
 ```
 
-**注意**：如果在 Cloudflare 环境中使用 `gpt-4o-mini` 遇到 403 错误，请使用 `gpt-3.5-turbo`
+**重要提示**：
+- 如果在 Cloudflare 环境中使用 `gpt-4o-mini` 遇到 403 错误，请使用 `gpt-3.5-turbo`
+- OpenAI API 不支持某些地区（如香港、中国大陆等），如果遇到 `unsupported_country_region_territory` 错误，有以下解决方案：
+  1. 使用 Google Translate（推荐）
+  2. 配置 `OPENAI_BASE_URL` 使用代理服务
+  3. 使用支持的 VPN 或代理服务商
 
 获取方法：
 1. 访问 [OpenAI Platform](https://platform.openai.com/)

@@ -1,0 +1,11 @@
+name = "sub-trans4"
+compatibility_date = "2024-01-01"
+
+[route]
+pattern = "subtitletranslator.cc/*"
+
+# 强制使用美国或欧洲的数据中心
+[placement]
+mode = "smart"
+
+# 环境变量在 Cloudflare Dashboard 中配置

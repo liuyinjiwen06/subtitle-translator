@@ -161,7 +161,13 @@ async function translateWithOpenAI(text: string, targetLang: string): Promise<st
       controller.abort();
     }, 45000); // 45秒超时（OpenAI通常需要更长时间）
 
-    const response = await fetch('https://api.openai.com/v1/chat/completions', {
+    // 检查是否配置了代理 URL
+    const openaiBaseUrl = process.env.OPENAI_BASE_URL || 'https://api.openai.com';
+    const apiUrl = `${openaiBaseUrl}/v1/chat/completions`;
+    
+    console.log(`[OPENAI] 使用 API URL: ${apiUrl}`);
+    
+    const response = await fetch(apiUrl, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${apiKey}`,
