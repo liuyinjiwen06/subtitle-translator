@@ -435,7 +435,13 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
                   return;
                 } else if (data.type === 'error') {
                   setCurrentTranslatingText("");
-                  throw new Error(data.message || data.error || '翻译失败');
+                  // 检查是否是地区限制错误
+                  const errorMsg = data.message || data.error || '翻译失败';
+                  if (errorMsg.includes('unsupported_country_region_territory') || 
+                      errorMsg.includes('Country, region, or territory not supported')) {
+                    throw new Error('OpenAI 服务在当前地区不可用。请使用 Google 翻译或配置代理服务。详见控制台日志。');
+                  }
+                  throw new Error(errorMsg);
                 }
               } catch (parseError) {
                 // 忽略JSON解析错误，继续处理
