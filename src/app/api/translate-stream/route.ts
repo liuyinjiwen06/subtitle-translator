@@ -168,7 +168,7 @@ async function translateWithOpenAI(text: string, targetLang: string): Promise<st
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'gpt-3.5-turbo', // 使用稳定且广泛可用的模型
+        model: process.env.OPENAI_MODEL || 'gpt-3.5-turbo', // 可通过环境变量配置，默认使用 gpt-3.5-turbo
         messages: [
           {
             role: 'system',

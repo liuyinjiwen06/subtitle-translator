@@ -17,7 +17,10 @@ GOOGLE_TRANSLATE_API_KEY=你的Google翻译API密钥
 ### 2. OpenAI API（可选）
 ```
 OPENAI_API_KEY=你的OpenAI API密钥
+OPENAI_MODEL=gpt-3.5-turbo  # 可选，默认为 gpt-3.5-turbo
 ```
+
+**注意**：如果在 Cloudflare 环境中使用 `gpt-4o-mini` 遇到 403 错误，请使用 `gpt-3.5-turbo`
 
 获取方法：
 1. 访问 [OpenAI Platform](https://platform.openai.com/)
