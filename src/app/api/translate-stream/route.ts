@@ -168,7 +168,7 @@ async function translateWithOpenAI(text: string, targetLang: string): Promise<st
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'gpt-4o-mini', // 最快的GPT-4模型
+        model: 'gpt-3.5-turbo', // 使用稳定且广泛可用的模型
         messages: [
           {
             role: 'system',
