@@ -403,15 +403,26 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
                   // 服务切换通知
                   console.log(`[SSE服务切换] ${data.from} -> ${data.to} - ${data.message}`);
                   setTranslationStats(prev => ({ ...prev, service: data.to }));
+                } else if (data.type === 'retry_start') {
+                  // Starting retry phase
+                  console.log(`[SSE Retry] Starting to retry ${data.count} failed translations`);
+                  setCurrentTranslatingText(data.message);
+                } else if (data.type === 'retry_progress') {
+                  // Retry progress update
+                  console.log(`[SSE Retry Progress] ${data.progress}% (${data.current}/${data.total})`);
+                  setCurrentTranslatingText(`Retrying failed translations... (${data.current}/${data.total})`);
+                } else if (data.type === 'retry_success') {
+                  // Retry succeeded
+                  console.log(`[SSE Retry Success] Successfully retranslated: ${data.original}`);
                 } else if (data.type === 'translation_error') {
-                  // 非致命错误，显示警告但继续翻译
-                  console.warn(`[SSE翻译错误] ${data.failedText} - ${data.error}`);
-                  setTranslationError(`部分内容翻译失败: ${data.error} (继续翻译中...)`);
+                  // Silent fail - don't show error to user
+                  console.warn(`[SSE Translation Error] ${data.failedText} - ${data.error}`);
+                  // Don't set error state - we'll retry later
                 } else if (data.type === 'fatal_error') {
-                  // 致命错误，停止翻译并显示部分结果
-                  console.error(`[SSE致命错误] ${data.error}`);
+                  // Fatal error, stop translation and show partial results
+                  console.error(`[SSE Fatal Error] ${data.error}`);
                   setCurrentTranslatingText("");
-                  setTranslationError(`翻译中断: ${data.error}`);
+                  setTranslationError(`Translation interrupted: ${data.error}`);
                   if (data.partialResult) {
                     setTranslatedContent(data.partialResult);
                   }
@@ -436,10 +447,10 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
                 } else if (data.type === 'error') {
                   setCurrentTranslatingText("");
                   // 检查是否是地区限制错误
-                  const errorMsg = data.message || data.error || '翻译失败';
+                  const errorMsg = data.message || data.error || 'Translation failed';
                   if (errorMsg.includes('unsupported_country_region_territory') || 
                       errorMsg.includes('Country, region, or territory not supported')) {
-                    throw new Error('OpenAI 服务在当前地区不可用。请使用 Google 翻译或配置代理服务。详见控制台日志。');
+                    throw new Error('OpenAI service is not available in your region. Please use Google Translate or configure a proxy service. See console logs for details.');
                   }
                   throw new Error(errorMsg);
                 }
@@ -485,18 +496,18 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
     URL.revokeObjectURL(url);
   };
 
-  // 环境诊断
+  // Environment diagnostics
   const runEnvDiagnostics = async () => {
     try {
-      console.log('[环境诊断] 开始检查...');
+      console.log('[Environment Diagnostics] Starting check...');
       const response = await fetch('/api/test-env');
       const data = await response.json();
-      console.log('[环境诊断] 结果:', data);
+      console.log('[Environment Diagnostics] Results:', data);
       setEnvDiagnostics(data);
       setShowEnvDiagnostics(true);
     } catch (error) {
-      console.error('[环境诊断] 失败:', error);
-      setEnvDiagnostics({ error: error instanceof Error ? error.message : '诊断失败' });
+      console.error('[Environment Diagnostics] Failed:', error);
+      setEnvDiagnostics({ error: error instanceof Error ? error.message : 'Diagnostics failed' });
       setShowEnvDiagnostics(true);
     }
   };
@@ -659,7 +670,7 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
                 onClick={runEnvDiagnostics}
                 className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm"
               >
-                🔍 诊断环境
+                🔍 Run Diagnostics
               </button>
             </div>
           </div>
@@ -669,7 +680,7 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
         {showEnvDiagnostics && envDiagnostics && (
           <div className="p-4 bg-gray-50 border border-gray-200 rounded-xl">
             <div className="flex items-center justify-between mb-3">
-              <h3 className="font-semibold text-gray-800">环境诊断结果</h3>
+              <h3 className="font-semibold text-gray-800">Diagnostic Results</h3>
               <button
                 onClick={() => setShowEnvDiagnostics(false)}
                 className="text-gray-500 hover:text-gray-700"

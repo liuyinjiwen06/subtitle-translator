@@ -393,6 +393,7 @@ export async function POST(req: NextRequest) {
         const text = await file.text();
         const lines = text.split("\n");
         const translatedLines: string[] = [];
+        const failedTranslations: { lineIndex: number; lineContent: string; textIndex: number }[] = [];
 
         // 计算需要翻译的行数（用于进度计算）
         const textLines = lines.filter(line => {
@@ -411,6 +412,7 @@ export async function POST(req: NextRequest) {
           service: translationService 
         })}\n\n`));
 
+        // First pass: translate all lines
         for (let i = 0; i < lines.length; i++) {
           const line = lines[i];
           
@@ -424,7 +426,7 @@ export async function POST(req: NextRequest) {
             translatedCount++;
             const progress = Math.round((translatedCount / textLines.length) * 100);
             
-            console.log(`[翻译进度] ${progress}% (${translatedCount}/${textLines.length}) - 正在翻译: "${line.substring(0, 50)}${line.length > 50 ? '...' : ''}"`);
+            console.log(`[Translation Progress] ${progress}% (${translatedCount}/${textLines.length}) - Translating: "${line.substring(0, 50)}${line.length > 50 ? '...' : ''}"`);
             
             // 发送进度更新，包含当前翻译的句子
             controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
@@ -442,7 +444,7 @@ export async function POST(req: NextRequest) {
               const translatedLine = await translateText(line, targetLang, translationService);
               const translationTime = Date.now() - translationStartTime;
               
-              console.log(`[翻译完成] 耗时: ${translationTime}ms, 原文: "${line.substring(0, 30)}...", 译文: "${translatedLine.substring(0, 30)}..."`);
+              console.log(`[Translation Complete] Time: ${translationTime}ms, Original: "${line.substring(0, 30)}...", Translated: "${translatedLine.substring(0, 30)}..."`);
               
               translatedLines.push(translatedLine);
               
@@ -456,27 +458,27 @@ export async function POST(req: NextRequest) {
               })}\n\n`));
               
             } catch (translateError) {
-              console.error(`[翻译失败] 行 ${translatedCount}: "${line.substring(0, 50)}..." - 错误:`, translateError);
-              const errorMessage = translateError instanceof Error ? translateError.message : '翻译失败';
+              console.error(`[Translation Failed] Line ${translatedCount}: "${line.substring(0, 50)}..." - Error:`, translateError);
+              const errorMessage = translateError instanceof Error ? translateError.message : 'Translation failed';
               
-              // 发送错误信息但不立即关闭连接，允许用户选择继续或停止
-              controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
-                type: 'translation_error', 
-                error: errorMessage,
-                failedText: line.trim(),
-                currentIndex: translatedCount,
-                progress: progress,
-                canContinue: true
-              })}\n\n`));
+              // Store failed translation for retry
+              failedTranslations.push({
+                lineIndex: i,
+                lineContent: line,
+                textIndex: translatedCount
+              });
               
-              // 添加原文作为翻译失败的占位符
-              translatedLines.push(`[翻译失败] ${line}`);
+              // Add placeholder for failed translation
+              translatedLines.push(line); // Keep original text temporarily
               
-              // 检查是否是致命错误（如API密钥问题）
+              // Check for fatal errors (e.g., API key issues)
               if (errorMessage.includes('认证失败') || 
                   errorMessage.includes('API密钥') || 
-                  errorMessage.includes('访问被拒绝')) {
-                console.log(`[致命错误] 检测到配置问题，停止翻译: ${errorMessage}`);
+                  errorMessage.includes('访问被拒绝') ||
+                  errorMessage.includes('authentication') ||
+                  errorMessage.includes('API key') ||
+                  errorMessage.includes('access denied')) {
+                console.log(`[Fatal Error] Configuration issue detected: ${errorMessage}`);
                 controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
                   type: 'fatal_error', 
                   error: errorMessage,
@@ -486,13 +488,60 @@ export async function POST(req: NextRequest) {
                 return;
               }
               
-              // 非致命错误继续翻译下一行
-              console.log(`[继续翻译] 跳过失败的行，继续处理下一行`);
+              // Continue with next line without showing error
+              console.log(`[Continuing] Skipping failed line, will retry later`);
             }
             
             // 添加延迟避免API限制
             const delay = translationService === 'openai' ? 200 : 100;
             await new Promise(resolve => setTimeout(resolve, delay));
+          }
+        }
+
+        // Second pass: retry failed translations
+        if (failedTranslations.length > 0) {
+          console.log(`[Retry Phase] Attempting to translate ${failedTranslations.length} failed lines`);
+          
+          controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
+            type: 'retry_start', 
+            count: failedTranslations.length,
+            message: `Retrying ${failedTranslations.length} failed translations...`
+          })}\n\n`));
+          
+          let retryCount = 0;
+          for (const failed of failedTranslations) {
+            retryCount++;
+            const retryProgress = Math.round((retryCount / failedTranslations.length) * 100);
+            
+            controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
+              type: 'retry_progress', 
+              progress: retryProgress,
+              current: retryCount,
+              total: failedTranslations.length,
+              currentText: failed.lineContent.trim()
+            })}\n\n`));
+            
+            try {
+              // Wait longer before retry
+              await new Promise(resolve => setTimeout(resolve, 1000));
+              
+              const translatedLine = await translateText(failed.lineContent, targetLang, translationService);
+              translatedLines[failed.lineIndex] = translatedLine;
+              
+              console.log(`[Retry Success] Line ${failed.textIndex} translated successfully`);
+              
+              controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
+                type: 'retry_success', 
+                original: failed.lineContent.trim(),
+                translated: translatedLine.trim(),
+                index: failed.textIndex
+              })}\n\n`));
+              
+            } catch (retryError) {
+              console.error(`[Retry Failed] Line ${failed.textIndex} still failed:`, retryError);
+              // Keep original text if retry also fails
+              // No error message shown to user
+            }
           }
         }
 
