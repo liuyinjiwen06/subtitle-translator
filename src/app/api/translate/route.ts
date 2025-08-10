@@ -74,11 +74,11 @@ async function translateWithGoogle(text: string, targetLang: string): Promise<st
     
     console.log(`[GOOGLE_TRANSLATE] 开始翻译 - 目标语言: ${targetLangCode}, 文本长度: ${text.length}, 文本预览: "${text.substring(0, 50)}${text.length > 50 ? '...' : ''}"`);
     
-    // 添加超时控制
+    // 添加超时控制 - 适应Cloudflare Pages 30秒限制
     const controller = new AbortController();
     const timeoutId = setTimeout(() => {
       controller.abort();
-    }, 30000); // 30秒超时
+    }, 25000); // 25秒超时（为Cloudflare 30秒限制留出缓冲）
 
     const response = await fetch(url, {
       method: 'POST',
@@ -183,11 +183,11 @@ async function translateWithOpenAI(text: string, targetLang: string): Promise<st
 
     console.log(`[OPENAI] 开始翻译 - 目标语言: ${targetLanguage}, 文本长度: ${text.length}, 文本预览: "${text.substring(0, 50)}${text.length > 50 ? '...' : ''}"`);
 
-    // 添加超时控制
+    // 添加超时控制 - 适应Cloudflare Pages 30秒限制
     const controller = new AbortController();
     const timeoutId = setTimeout(() => {
       controller.abort();
-    }, 45000); // 45秒超时（OpenAI通常需要更长时间）
+    }, 25000); // 25秒超时（为Cloudflare 30秒限制留出缓冲）
 
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
@@ -465,8 +465,8 @@ export async function POST(req: NextRequest) {
                 throw new Error(`翻译失败: ${errorMessage}`);
               }
               
-              // 添加延迟避免API限制
-              const delay = translationService === 'openai' ? 200 : 100;
+              // 添加延迟避免API限制 - 在Cloudflare环境中减少延迟
+              const delay = translationService === 'openai' ? 100 : 50; // 减少延迟以适应30秒限制
               await new Promise(resolve => setTimeout(resolve, delay));
             }
           }

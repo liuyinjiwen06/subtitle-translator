@@ -287,12 +287,33 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
   }>({ currentIndex: 0, totalCount: 0, service: "" });
   const [showEnvDiagnostics, setShowEnvDiagnostics] = useState(false);
   const [envDiagnostics, setEnvDiagnostics] = useState<any>(null);
+  
+  // 增强功能状态
+  const [autoSaveCount, setAutoSaveCount] = useState(0);
+  const [fileLineCount, setFileLineCount] = useState(0);
+  
+  const abortControllerRef = useRef<AbortController | null>(null);
+
+  // 分析文件内容
+  const analyzeFile = async (file: File) => {
+    const content = await file.text();
+    const lines = content.split('\n');
+    const textLines = lines.filter(line => {
+      const trimmed = line.trim();
+      return trimmed !== "" && 
+             !/^\d+$/.test(trimmed) && 
+             !/^\d{2}:\d{2}:\d{2}/.test(trimmed);
+    });
+    setFileLineCount(textLines.length);
+    return content;
+  };
 
   // 文件上传处理
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0];
     if (selectedFile && selectedFile.name.endsWith('.srt')) {
       setFile(selectedFile);
+      await analyzeFile(selectedFile);
       resetTranslationState();
     } else {
       alert(t('please_select_srt_file'));
@@ -307,10 +328,122 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
     setIsTranslating(false);
     setCurrentTranslatingText("");
     setTranslationStats({ currentIndex: 0, totalCount: 0, service: "" });
+    setAutoSaveCount(0);
   };
 
+  // 增强翻译处理（大文件或需要高级功能时使用）
+  const handleAdvancedTranslate = async (resume = false) => {
+    try {
+      const fileContent = await file!.text();
+      const requestBody = {
+        content: fileContent,
+        targetLang: targetLanguage,
+        translationService: translationService,
+        skipTranslated: true,
+        batchMode: fileLineCount > 100 ? 'auto' : 'off'
+      };
+
+      abortControllerRef.current = new AbortController();
+
+      const response = await fetch('/api/translate-advanced', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestBody),
+        signal: abortControllerRef.current.signal
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`${t('translation_failed')}: ${response.status} ${response.statusText} - ${errorText}`);
+      }
+
+      const reader = response.body?.getReader();
+      if (!reader) {
+        throw new Error(t('cannot_read_response'));
+      }
+
+      const decoder = new TextDecoder();
+      let buffer = '';
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines[lines.length - 1];
+
+        for (const line of lines.slice(0, -1)) {
+          if (line.startsWith('data: ')) {
+            try {
+              const jsonString = line.substring(6).trim();
+              if (jsonString) {
+                const data = JSON.parse(jsonString);
+                handleAdvancedStreamEvent(data);
+              }
+            } catch (e) {
+              console.error('Error parsing stream data:', e, 'Line:', line);
+            }
+          }
+        }
+
+      }
+    } catch (error) {
+      console.error('Advanced translation error:', error);
+      setTranslationError(error instanceof Error ? error.message : t('translation_failed'));
+      setIsTranslating(false);
+    }
+  };
+
+  // 处理增强流事件
+  const handleAdvancedStreamEvent = (data: any) => {
+    switch (data.type) {
+      case 'env_status':
+        setEnvDiagnostics(data);
+        break;
+        
+        
+      case 'start':
+        setTranslationStats(prev => ({ ...prev, totalCount: data.total }));
+        break;
+        
+      case 'progress':
+        setTranslationProgress(data.progress);
+        setCurrentTranslatingText(data.currentText);
+        setTranslationStats(prev => ({ 
+          ...prev, 
+          currentIndex: data.current,
+          totalCount: data.total 
+        }));
+        break;
+        
+      case 'auto_save':
+        setAutoSaveCount(data.savedCount);
+        break;
+        
+        
+      case 'complete':
+        setTranslatedContent(data.result);
+        setTranslationProgress(100);
+        setIsTranslating(false);
+        setTranslationStats(prev => ({ ...prev, currentIndex: data.totalTranslated }));
+        if (data.failedLines && data.failedLines.length > 0) {
+          setTranslationError(`Translation completed with ${data.failedLines.length} failed lines.`);
+        }
+        break;
+        
+      case 'error':
+        setTranslationError(data.error);
+        setIsTranslating(false);
+        break;
+    }
+  };
+
+
   // 翻译处理
-  const handleTranslate = async () => {
+  const handleTranslate = async (resume = false) => {
     if (!file) {
       alert(t('please_upload_file_first'));
       return;
@@ -318,20 +451,24 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
 
     setIsTranslating(true);
     setTranslationError("");
-    setTranslationProgress(0);
-    setCurrentTranslatingText("");
-    setTranslationStats({ currentIndex: 0, totalCount: 0, service: translationService });
+    if (!resume) {
+      setTranslationProgress(0);
+      setCurrentTranslatingText("");
+      setTranslationStats({ currentIndex: 0, totalCount: 0, service: translationService });
+      setAutoSaveCount(0);
+    }
 
+    // 使用统一的 translate-unified API
     const formData = new FormData();
     formData.append('file', file);
     formData.append('targetLang', targetLanguage);
     formData.append('translationService', translationService);
 
     try {
-      console.log('[翻译开始] 准备发送请求到 /api/translate-stream');
+      console.log('[Unified翻译开始] 准备发送请求到 /api/translate-unified');
       console.log(`[翻译参数] 文件: ${file.name}, 目标语言: ${targetLanguage}, 服务: ${translationService}`);
       
-      const response = await fetch('/api/translate-stream', {
+      const response = await fetch('/api/translate-unified', {
         method: 'POST',
         body: formData,
       });
@@ -371,83 +508,86 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
                 const data = JSON.parse(line.slice(6));
                 
                 if (data.type === 'env_status') {
-                  console.log(`[SSE环境状态]`, data);
+                  console.log(`[Unified环境状态]`, data);
                   if (!data.googleConfigured && !data.openaiConfigured) {
                     throw new Error('翻译服务未配置：缺少API密钥。请检查环境变量配置。');
                   }
+                } else if (data.type === 'analysis_complete') {
+                  console.log(`[文件分析完成] 总行数: ${data.totalLines}, 需翻译: ${data.needTranslation}, 已翻译: ${data.alreadyTranslated}`);
+                  setCurrentTranslatingText(`分析完成：${data.needTranslation}句需翻译，${data.alreadyTranslated}句已翻译`);
                 } else if (data.type === 'start') {
-                  console.log(`[SSE开始] 总计需翻译: ${data.total} 句, 使用服务: ${data.service}`);
+                  console.log(`[Unified开始] 总计需翻译: ${data.total} 句, 分组数: ${data.totalGroups}`);
                   setTranslationStats({ 
                     currentIndex: 0, 
                     totalCount: data.total, 
-                    service: data.service 
+                    service: translationService 
                   });
+                  // 不再设置批次信息
+                } else if (data.type === 'group_start') {
+                  console.log(`[组开始] 第 ${data.groupNumber}/${data.totalGroups} 组, ${data.groupSize}句, 并发数: ${data.concurrentSize}`);
+                  // 不再显示批次信息，只在控制台记录
+                } else if (data.type === 'translation_start') {
+                  setCurrentTranslatingText(data.text);
+                } else if (data.type === 'translation_success') {
+                  console.log(`[翻译成功] ${data.original} -> ${data.translated} (${data.service}, ${data.responseTime}ms)`);
+                } else if (data.type === 'translation_failure') {
+                  console.warn(`[翻译失败] ${data.text} - ${data.error}`);
                 } else if (data.type === 'progress') {
-                  console.log(`[SSE进度] ${data.progress}% (${data.current}/${data.total})`);
+                  console.log(`[进度更新] ${data.progress}% (${data.completed}/${data.total})`);
                   setTranslationProgress(data.progress);
-                  if (data.currentText) {
-                    setCurrentTranslatingText(data.currentText);
-                  }
-                  if (data.current && data.total) {
-                    setTranslationStats(prev => ({
-                      ...prev,
-                      currentIndex: data.current,
-                      totalCount: data.total,
-                      service: data.service || prev.service
-                    }));
-                  }
-                } else if (data.type === 'translated') {
-                  // 单条翻译完成，可以在这里显示实时翻译结果
-                  console.log(`[SSE翻译完成] ${data.original} -> ${data.translated} (耗时: ${data.time}ms)`);
+                  setTranslationStats(prev => ({
+                    ...prev,
+                    currentIndex: data.completed,
+                    totalCount: data.total,
+                    service: data.serviceStats ? 
+                      (data.serviceStats.google.successRate > data.serviceStats.openai.successRate ? 'google' : 'openai') 
+                      : prev.service
+                  }));
+                  // 移除批次信息显示
+                } else if (data.type === 'group_complete') {
+                  console.log(`[组完成] 第 ${data.groupNumber} 组: 成功 ${data.groupSuccess}, 失败 ${data.groupFailures}`);
+                } else if (data.type === 'concurrent_adjusted') {
+                  console.log(`[并发调整] ${data.oldSize} -> ${data.newSize} (${data.reason})`);
+                } else if (data.type === 'auto_save') {
+                  console.log(`[自动保存] ${data.savedLines} 句已保存`);
+                  setAutoSaveCount(data.savedLines);
                 } else if (data.type === 'service_switch') {
                   // 服务切换通知
                   console.log(`[SSE服务切换] ${data.from} -> ${data.to} - ${data.message}`);
                   setTranslationStats(prev => ({ ...prev, service: data.to }));
-                } else if (data.type === 'retry_start') {
-                  // Starting retry phase
-                  console.log(`[SSE Retry] Starting to retry ${data.count} failed translations`);
-                  setCurrentTranslatingText(data.message);
-                } else if (data.type === 'retry_progress') {
-                  // Retry progress update
-                  console.log(`[SSE Retry Progress] ${data.progress}% (${data.current}/${data.total})`);
-                  setCurrentTranslatingText(`Retrying failed translations... (${data.current}/${data.total})`);
+                } else if (data.type === 'retry_phase_start') {
+                  console.log(`[重试阶段开始] ${data.failureCount} 句失败，开始重试`);
+                  setCurrentTranslatingText(`重试 ${data.failureCount} 句失败翻译...`);
                 } else if (data.type === 'retry_success') {
-                  // Retry succeeded
-                  console.log(`[SSE Retry Success] Successfully retranslated: ${data.original}`);
-                } else if (data.type === 'translation_error') {
-                  // Silent fail - don't show error to user
-                  console.warn(`[SSE Translation Error] ${data.failedText} - ${data.error}`);
-                  // Don't set error state - we'll retry later
-                } else if (data.type === 'fatal_error') {
-                  // Fatal error, stop translation and show partial results
-                  console.error(`[SSE Fatal Error] ${data.error}`);
-                  setCurrentTranslatingText("");
-                  setTranslationError(`Translation interrupted: ${data.error}`);
-                  if (data.partialResult) {
-                    setTranslatedContent(data.partialResult);
-                  }
-                  setIsTranslating(false);
-                  await reader.cancel();
-                  return;
+                  console.log(`[重试成功] ${data.original} -> ${data.translated} (总尝试: ${data.totalAttempts})`);
+                } else if (data.type === 'retry_failed') {
+                  console.warn(`[重试失败] ${data.text} - ${data.finalError}`);
+                } else if (data.type === 'retry_phase_complete') {
+                  console.log(`[重试阶段完成] 重试 ${data.retriedCount} 句，成功 ${data.successfulRetries} 句`);
+                  setCurrentTranslatingText("重试阶段完成");
                 } else if (data.type === 'complete') {
+                  console.log(`[翻译完成] 统计:`, data.statistics);
                   setTranslatedContent(data.result);
                   setTranslationProgress(100);
                   setCurrentTranslatingText("");
-                  // 清除非致命错误信息
-                  if (translationError.includes('继续翻译中')) {
+                  
+                  // 清除错误信息
+                  if (translationError) {
                     setTranslationError("");
                   }
+                  
                   // 添加小延迟确保UI更新
                   setTimeout(() => {
                     setIsTranslating(false);
                   }, 100);
+                  
                   // 确保关闭 reader
                   await reader.cancel();
                   return;
                 } else if (data.type === 'error') {
                   setCurrentTranslatingText("");
                   // 检查是否是地区限制错误
-                  const errorMsg = data.message || data.error || 'Translation failed';
+                  const errorMsg = data.error || 'Translation failed';
                   if (errorMsg.includes('unsupported_country_region_territory') || 
                       errorMsg.includes('Country, region, or territory not supported')) {
                     throw new Error('OpenAI service is not available in your region. Please use Google Translate or configure a proxy service. See console logs for details.');
@@ -587,70 +727,100 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
           </div>
         </div>
 
-        {/* 翻译按钮 */}
-        <div className="text-center">
-          <button
-            onClick={handleTranslate}
-            disabled={!file || isTranslating}
-            className={`px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform ${
-              !file || isTranslating
-                ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                : 'bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 hover:scale-105 shadow-lg hover:shadow-xl'
-            }`}
-          >
-            {isTranslating ? (
-              <div className="flex items-center space-x-2">
-                <svg className="animate-spin w-5 h-5" fill="none" viewBox="0 0 24 24">
-                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                </svg>
-                <span>{t('translating')} {translationProgress}%</span>
+        {/* 文件信息和增强功能提示 */}
+        {file && (
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-sm text-blue-800">
+                  <span className="font-medium">{file.name}</span> ({fileLineCount} translatable lines)
+                </p>
               </div>
-            ) : (
-              t('translate')
-            )}
-          </button>
+              {autoSaveCount > 0 && (
+                <span className="text-sm text-green-600 font-medium">
+                  💾 Auto-saved: {autoSaveCount} lines
+                </span>
+              )}
+            </div>
+          </div>
+        )}
+
+
+        {/* 翻译按钮区域 */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          {!isTranslating && !translatedContent && (
+            <button
+              onClick={() => handleTranslate()}
+              disabled={!file}
+              className={`px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform ${
+                !file
+                  ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                  : 'bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 hover:scale-105 shadow-lg hover:shadow-xl'
+              }`}
+            >
+              {t('translate')}
+            </button>
+          )}
+
+          {translatedContent && !isTranslating && (
+            <button
+              onClick={handleDownload}
+              className="px-8 py-4 rounded-xl font-semibold text-lg bg-gradient-to-r from-green-500 to-teal-600 text-white hover:from-green-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              <div className="flex items-center space-x-2">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <span>{t('download')}</span>
+              </div>
+            </button>
+          )}
         </div>
 
         {/* 翻译进度 */}
         {isTranslating && (
           <div className="space-y-4">
-            <div className="flex justify-between text-sm text-gray-600">
-              <span>{t('translation_progress')}</span>
-              <span>{translationProgress}%</span>
-            </div>
-            <div className="w-full bg-gray-200 rounded-full h-3">
-              <div 
-                className="bg-gradient-to-r from-blue-500 to-purple-500 h-3 rounded-full transition-all duration-300"
-                style={{ width: `${translationProgress}%` }}
-              ></div>
+            <div className="flex justify-between items-center text-sm">
+              <span className="font-medium text-gray-700">{t('translation_progress')}: {translationProgress}%</span>
+              <div className="flex items-center space-x-4 text-xs text-gray-600">
+                <span>{translationStats.currentIndex} / {translationStats.totalCount}</span>
+                {autoSaveCount > 0 && (
+                  <span className="text-green-600 font-medium">
+                    💾 Auto-saved: {autoSaveCount}
+                  </span>
+                )}
+              </div>
             </div>
             
-                          {/* 翻译状态信息 */}
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                <div className="flex items-center space-x-2 mb-2">
-                  <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
-                  <span className="text-sm font-medium text-blue-700">
-                    {translationStats.service === 'google' ? 'Google Cloud Translating...' : 'OpenAI GPT Translating...'}
-                  </span>
-                  <span className="text-xs text-blue-600">
-                    ({translationStats.currentIndex}/{translationStats.totalCount})
-                  </span>
+            <div className="relative">
+              <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
+                <div 
+                  className="h-full bg-gradient-to-r from-blue-500 via-blue-600 to-purple-600 rounded-full transition-all duration-300 ease-out relative"
+                  style={{ width: `${translationProgress}%` }}
+                >
+                  <div className="absolute inset-0 bg-white opacity-20 animate-pulse"></div>
                 </div>
-                
-                
+              </div>
+            </div>
+            
+            {/* 翻译状态信息 */}
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+              <div className="flex items-center space-x-2 mb-2">
+                <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
+                <span className="text-sm font-medium text-blue-700">Translating...</span>
+              </div>
               
-                             {currentTranslatingText && (
-                 <div className="space-y-1">
-                   <div className="text-xs text-gray-600">Currently translating:</div>
-                   <div className="text-sm text-gray-800 bg-white rounded-md p-2 border border-gray-200 font-mono leading-relaxed">
-                     {currentTranslatingText.length > 100 
-                       ? `${currentTranslatingText.substring(0, 100)}...` 
-                       : currentTranslatingText
-                     }
-                   </div>
-                 </div>
-               )}
+              {currentTranslatingText && (
+                <div className="space-y-1">
+                  <div className="text-xs text-gray-600">Currently translating:</div>
+                  <div className="text-sm text-gray-800 bg-white rounded-md p-2 border border-gray-200 font-mono leading-relaxed">
+                    {currentTranslatingText.length > 100 
+                      ? `${currentTranslatingText.substring(0, 100)}...` 
+                      : currentTranslatingText
+                    }
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         )}
@@ -698,17 +868,9 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
         {translatedContent && !isTranslating && (
           <div className="space-y-4">
             <div className="p-6 bg-green-50 border border-green-200 rounded-xl">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-2">
-                  <span className="text-green-500 text-2xl">🎉</span>
-                  <span className="text-green-700 font-semibold text-lg">{t('translation_complete')}</span>
-                </div>
-                <button
-                  onClick={handleDownload}
-                  className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
-                >
-                  {t('download')}
-                </button>
+              <div className="flex items-center space-x-2">
+                <span className="text-green-500 text-2xl">🎉</span>
+                <span className="text-green-700 font-semibold text-lg">{t('translation_complete')}</span>
               </div>
             </div>
             
@@ -725,4 +887,4 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
       </div>
     </div>
   );
-} 
+}

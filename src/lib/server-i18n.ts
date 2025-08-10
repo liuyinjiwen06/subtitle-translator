@@ -1,4 +1,5 @@
 import { Locale } from '../../i18nConfig';
+import { getFallbackTranslation } from './fallback-translations';
 
 // 翻译文件缓存
 const translationCache = new Map<string, any>();
@@ -16,11 +17,51 @@ async function loadTranslations(locale: Locale) {
   }
 
   try {
-    console.log(`📂 Attempting to import: ../lib/locales/${locale}.json`);
-    const translations = await import(`../lib/locales/${locale}.json`);
-    translationCache.set(locale, translations.default);
+    console.log(`📂 Attempting to import: ./locales/${locale}.json`);
+    
+    // 尝试多种导入方式
+    let translations;
+    try {
+      translations = await import(`./locales/${locale}.json`);
+    } catch (importError) {
+      console.warn(`⚠️ Direct import failed for ${locale}, trying alternative paths`);
+      // 尝试其他路径
+      try {
+        translations = await import(`../lib/locales/${locale}.json`);
+      } catch (altError) {
+        console.error(`❌ All import attempts failed for ${locale}`);
+        throw new Error(`Failed to import ${locale} translations: ${altError}`);
+      }
+    }
+    
+    // 多层安全检查
+    if (!translations) {
+      console.error(`❌ Import returned null/undefined for ${locale}`);
+      throw new Error(`Import returned null or undefined for ${locale}`);
+    }
+    
+    // 检查是否有 default 属性
+    let finalTranslations;
+    if (translations.default && typeof translations.default === 'object') {
+      console.log(`✅ Using default export for ${locale}`);
+      finalTranslations = translations.default;
+    } else if (typeof translations === 'object' && translations.homepage) {
+      console.log(`✅ Using direct export for ${locale}`);
+      finalTranslations = translations;
+    } else {
+      console.warn(`⚠️ Unexpected translation structure for ${locale}:`, Object.keys(translations || {}));
+      // 尝试使用整个对象
+      finalTranslations = translations;
+    }
+    
+    // 验证翻译数据结构
+    if (!finalTranslations || typeof finalTranslations !== 'object') {
+      throw new Error(`Invalid translations structure for ${locale}`);
+    }
+    
+    translationCache.set(locale, finalTranslations);
     console.log(`✅ Successfully loaded translations for locale: ${locale}`);
-    return translations.default;
+    return finalTranslations;
   } catch (error) {
     console.error(`❌ Failed to load translations for locale: ${locale}`);
     console.error(`❌ Error details:`, error);
@@ -33,7 +74,10 @@ async function loadTranslations(locale: Locale) {
       return loadTranslations('en');
     }
     console.error(`💥 Critical: Even English translations failed to load!`);
-    return {};
+    console.warn(`🆘 Using hardcoded fallback translations for ${locale}`);
+    const fallback = getFallbackTranslation(locale);
+    translationCache.set(locale, fallback);
+    return fallback;
   }
 }
 
