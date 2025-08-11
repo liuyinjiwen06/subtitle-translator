@@ -330,9 +330,18 @@ export async function POST(req: NextRequest) {
   
   const encoder = new TextEncoder();
   
-  // 检测是否在Cloudflare环境中运行
-  const isCloudflare = typeof process === 'undefined' || 
-    (process.env && (process.env.CF_PAGES || process.env.CF_WORKER || process.env.CF_RAY_ID));
+  // 检测是否在Cloudflare环境中运行 - 修复检测逻辑
+  const isCloudflare = 
+    typeof process === 'undefined' || 
+    (process.env && (
+      process.env.CF_PAGES || 
+      process.env.CF_WORKER || 
+      process.env.CF_RAY_ID ||
+      process.env.VERCEL_REGION === 'iad1' || // Vercel部署到Cloudflare
+      process.env.NODE_ENV === 'production' && typeof process.env.CF_PAGES === 'undefined' // 生产环境可能是Cloudflare
+    )) ||
+    (typeof globalThis !== 'undefined' && (globalThis as any).__CLOUDFLARE__) || // 全局Cloudflare标识
+    (typeof globalThis !== 'undefined' && (globalThis as any).__CF_WORKER__); // Cloudflare Worker标识
   
   console.log('[DEBUG] Cloudflare环境检测结果:', isCloudflare);
   console.log('[DEBUG] process对象:', typeof process);

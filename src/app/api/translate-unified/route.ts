@@ -321,7 +321,28 @@ function updateServiceStats(serviceStats: ServiceStats, service: string, success
 
 // 全局subrequest计数器（Cloudflare限制追踪）
 let globalSubrequestCount = 0;
-const CLOUDFLARE_SUBREQUEST_LIMIT = 45; // 保守限制，低于50
+let lastResetTime = Date.now();
+const RATE_LIMIT_WINDOW = 60000; // 1分钟窗口
+const MAX_REQUESTS_PER_MINUTE = 800; // 每分钟800个请求（低于Cloudflare的1000限制）
+
+// 动态速率限制函数
+function checkRateLimit(): boolean {
+  const now = Date.now();
+  
+  // 如果超过1分钟，重置计数器
+  if (now - lastResetTime > RATE_LIMIT_WINDOW) {
+    globalSubrequestCount = 0;
+    lastResetTime = now;
+    return true; // 可以继续
+  }
+  
+  // 检查是否超过限制
+  if (globalSubrequestCount >= MAX_REQUESTS_PER_MINUTE) {
+    return false; // 需要等待
+  }
+  
+  return true; // 可以继续
+}
 
 // 智能翻译（带Cloudflare限制控制）
 async function smartTranslateWithRetry(
@@ -344,18 +365,16 @@ async function smartTranslateWithRetry(
     for (let attempt = 1; attempt <= maxAttempts; attempt++) {
       totalAttempts++;
       
-      // Cloudflare subrequest限制检查
-      if (globalSubrequestCount >= CLOUDFLARE_SUBREQUEST_LIMIT) {
-        console.warn(`[Subrequest Limit] 达到Cloudflare限制 ${globalSubrequestCount}/${CLOUDFLARE_SUBREQUEST_LIMIT}，跳过重试`);
-        const error = new Error(`已达到Cloudflare subrequest限制，跳过此任务`) as any;
-        error.attempts = totalAttempts;
-        error.lastService = service;
-        throw error;
+      // 动态速率限制检查
+      if (!checkRateLimit()) {
+        const waitTime = 2000; // 等待2秒
+        console.log(`[Rate Limit] 达到速率限制，等待 ${waitTime}ms 后继续`);
+        await new Promise(resolve => setTimeout(resolve, waitTime));
       }
       
       try {
         globalSubrequestCount++; // 增加计数器
-        console.log(`[Subrequest] ${globalSubrequestCount}/${CLOUDFLARE_SUBREQUEST_LIMIT} - 翻译: ${task.textToTranslate.substring(0, 30)}...`);
+        console.log(`[Subrequest] ${globalSubrequestCount} - 翻译: ${task.textToTranslate.substring(0, 30)}...`);
         
         const result = service === 'google'
           ? await translateWithGoogle(task.textToTranslate, targetLang)

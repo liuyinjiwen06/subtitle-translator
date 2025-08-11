@@ -459,9 +459,18 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
     }
 
     // 在Cloudflare环境下使用stream API，在其他环境使用unified API
-    const isCloudflare = typeof window !== 'undefined' && 
-      (window.location.hostname.includes('.pages.dev') || 
-       window.location.hostname.includes('.workers.dev'));
+    // 修复Cloudflare检测逻辑，支持更多Cloudflare域名
+    const isCloudflare = typeof window !== 'undefined' && (
+      window.location.hostname.includes('.pages.dev') || 
+      window.location.hostname.includes('.workers.dev') ||
+      window.location.hostname.includes('.cloudflare.com') ||
+      window.location.hostname.includes('.cf.dev') ||
+      window.location.hostname.includes('.cf-ipfs.com') ||
+      // 如果域名包含cloudflare相关关键词，也认为是Cloudflare环境
+      window.location.hostname.includes('cloudflare') ||
+      // 生产环境默认使用stream API（更稳定）
+      window.location.hostname !== 'localhost' && !window.location.hostname.includes('127.0.0.1')
+    );
     
     const apiEndpoint = isCloudflare ? '/api/translate-stream' : '/api/translate-unified';
     
