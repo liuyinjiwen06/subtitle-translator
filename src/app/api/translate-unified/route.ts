@@ -323,7 +323,7 @@ function updateServiceStats(serviceStats: ServiceStats, service: string, success
 let globalSubrequestCount = 0;
 let lastResetTime = Date.now();
 const RATE_LIMIT_WINDOW = 60000; // 1分钟窗口
-const MAX_REQUESTS_PER_MINUTE = 800; // 每分钟800个请求（低于Cloudflare的1000限制）
+const MAX_REQUESTS_PER_MINUTE = 300; // 降低到每分钟300个请求，避免Cloudflare subrequest限制
 
 // 动态速率限制函数
 function checkRateLimit(): boolean {
@@ -365,10 +365,10 @@ async function smartTranslateWithRetry(
     for (let attempt = 1; attempt <= maxAttempts; attempt++) {
       totalAttempts++;
       
-      // 动态速率限制检查
-      if (!checkRateLimit()) {
-        const waitTime = 2000; // 等待2秒
-        console.log(`[Rate Limit] 达到速率限制，等待 ${waitTime}ms 后继续`);
+      // 动态速率限制检查 - 修复Cloudflare subrequest限制
+      while (!checkRateLimit()) {
+        const waitTime = 5000; // 等待5秒，给Cloudflare更多时间重置
+        console.log(`[Rate Limit] 达到Cloudflare subrequest限制，等待 ${waitTime}ms 后继续`);
         await new Promise(resolve => setTimeout(resolve, waitTime));
       }
       
@@ -711,9 +711,11 @@ export async function POST(request: NextRequest) {
               }
             })}\n\n`));
 
-            // 批次间智能延迟
+            // 批次间智能延迟 - 增加Cloudflare环境下的延迟
             if (i + CONCURRENT_SIZE < currentGroup.length) {
-              await smartDelay(serviceStats, CONCURRENT_SIZE);
+              const delay = 1000; // 固定1秒延迟，给Cloudflare更多时间
+              console.log(`[批次延迟] 等待 ${delay}ms 后继续下一批次`);
+              await new Promise(resolve => setTimeout(resolve, delay));
             }
           }
 
