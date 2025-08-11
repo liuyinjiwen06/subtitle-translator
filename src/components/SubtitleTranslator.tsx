@@ -565,6 +565,9 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
                 } else if (data.type === 'retry_phase_start') {
                   console.log(`[重试阶段开始] ${data.failureCount} 句失败，开始重试`);
                   setCurrentTranslatingText(`重试 ${data.failureCount} 句失败翻译...`);
+                } else if (data.type === 'retry_progress') {
+                  console.log(`[重试进度] ${data.progress}% (${data.current}/${data.total}) - ${data.currentText}`);
+                  setCurrentTranslatingText(`重试进度: ${data.progress}% - ${data.currentText}`);
                 } else if (data.type === 'retry_success') {
                   console.log(`[重试成功] ${data.original} -> ${data.translated} (总尝试: ${data.totalAttempts})`);
                 } else if (data.type === 'retry_failed') {
@@ -594,6 +597,13 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
                   
                   // 确保关闭 reader
                   await reader.cancel();
+                  return;
+                } else if (data.type === 'fatal_error') {
+                  setCurrentTranslatingText("");
+                  setTranslationError(data.error || '翻译服务配置错误');
+                  setIsTranslating(false);
+                  setTranslationProgress(0);
+                  console.error('[致命错误]', data.error);
                   return;
                 } else if (data.type === 'error') {
                   setCurrentTranslatingText("");
