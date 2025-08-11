@@ -398,14 +398,14 @@ function adjustConcurrentLevel(
     ? results.reduce((sum, r) => sum + r.responseTime, 0) / results.length 
     : 3000;
   
-  // 成功率高 + 响应快 → 增加并发
+  // 成功率高 + 响应快 → 增加并发 (Cloudflare限制最大5)
   if (successRate > 0.95 && avgResponseTime < 2000) {
-    return Math.min(current + 2, 12);
+    return Math.min(current + 1, 5);
   }
   
   // 成功率低 + 响应慢 → 减少并发
   if (successRate < 0.8 || avgResponseTime > 4000) {
-    return Math.max(current - 2, 2);
+    return Math.max(current - 1, 1);
   }
   
   // 网络错误多 → 大幅减少并发
@@ -427,18 +427,18 @@ async function smartDelay(serviceStats: ServiceStats, concurrentLevel: number) {
     serviceStats.openai.avgResponseTime
   );
   
-  // 基础延迟
-  let delay = 50;
+  // 基础延迟 (Cloudflare优化：增加延迟避免subrequest限制)
+  let delay = 200; // 提高基础延迟
   
   // 根据响应时间调整
   if (avgResponseTime > 2000) delay *= 2;
   if (avgResponseTime > 4000) delay *= 3;
   
-  // 根据并发级别调整
-  if (concurrentLevel > 8) delay *= 1.5;
+  // 根据并发级别调整 (现在最大并发是5)
+  if (concurrentLevel > 3) delay *= 1.5;
   
   // 最大延迟限制
-  delay = Math.min(delay, 2000);
+  delay = Math.min(delay, 3000);
   
   await new Promise(resolve => setTimeout(resolve, delay));
 }
@@ -532,9 +532,10 @@ export async function POST(request: NextRequest) {
           openai: { success: 0, failure: 0, successRate: 0, avgResponseTime: 0, totalCalls: 0 }
         };
 
-        // 阶段2：混合并发处理
-        const GROUP_SIZE = analysis.translationTasks.length > 100 ? 60 : 40;
-        let CONCURRENT_SIZE = analysis.translationTasks.length > 100 ? 8 : 5;
+        // 阶段2：混合并发处理 (Cloudflare优化)
+        // Cloudflare Workers限制：每个请求最多50个subrequest
+        const GROUP_SIZE = analysis.translationTasks.length > 100 ? 40 : 30;
+        let CONCURRENT_SIZE = 3; // 降低并发数适应Cloudflare限制
         const totalGroups = Math.ceil(analysis.translationTasks.length / GROUP_SIZE);
         
         const allResults: TranslationResult[] = [];
