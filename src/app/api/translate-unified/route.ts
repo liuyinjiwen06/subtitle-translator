@@ -398,26 +398,8 @@ function adjustConcurrentLevel(
     ? results.reduce((sum, r) => sum + r.responseTime, 0) / results.length 
     : 3000;
   
-  // 成功率高 + 响应快 → 增加并发 (Cloudflare限制最大5)
-  if (successRate > 0.95 && avgResponseTime < 2000) {
-    return Math.min(current + 1, 5);
-  }
-  
-  // 成功率低 + 响应慢 → 减少并发
-  if (successRate < 0.8 || avgResponseTime > 4000) {
-    return Math.max(current - 1, 1);
-  }
-  
-  // 网络错误多 → 大幅减少并发
-  const networkErrors = failures.filter(f => 
-    f.error && (f.error.includes('network') || f.error.includes('timeout'))
-  ).length;
-  
-  if (networkErrors > failures.length * 0.5) {
-    return Math.max(Math.floor(current / 2), 1);
-  }
-  
-  return current;
+  // Cloudflare环境下保持串行处理，确保不超过subrequest限制
+  return 1;
 }
 
 // 智能延迟
@@ -427,18 +409,15 @@ async function smartDelay(serviceStats: ServiceStats, concurrentLevel: number) {
     serviceStats.openai.avgResponseTime
   );
   
-  // 基础延迟 (Cloudflare优化：增加延迟避免subrequest限制)
-  let delay = 200; // 提高基础延迟
+  // Cloudflare串行处理：最小延迟即可
+  let delay = 50; // 串行处理下的基础延迟
   
   // 根据响应时间调整
-  if (avgResponseTime > 2000) delay *= 2;
-  if (avgResponseTime > 4000) delay *= 3;
-  
-  // 根据并发级别调整 (现在最大并发是5)
-  if (concurrentLevel > 3) delay *= 1.5;
+  if (avgResponseTime > 2000) delay = 100;
+  if (avgResponseTime > 4000) delay = 150;
   
   // 最大延迟限制
-  delay = Math.min(delay, 3000);
+  delay = Math.min(delay, 300);
   
   await new Promise(resolve => setTimeout(resolve, delay));
 }
@@ -532,10 +511,11 @@ export async function POST(request: NextRequest) {
           openai: { success: 0, failure: 0, successRate: 0, avgResponseTime: 0, totalCalls: 0 }
         };
 
-        // 阶段2：混合并发处理 (Cloudflare优化)
+        // 阶段2：串行处理 (Cloudflare严格限制)
         // Cloudflare Workers限制：每个请求最多50个subrequest
-        const GROUP_SIZE = analysis.translationTasks.length > 100 ? 40 : 30;
-        let CONCURRENT_SIZE = 3; // 降低并发数适应Cloudflare限制
+        // 为确保绝对不超限，改为串行处理，只保留错误重试的并发
+        const GROUP_SIZE = 20; // 更小的组大小
+        let CONCURRENT_SIZE = 1; // 串行处理，确保不超过subrequest限制
         const totalGroups = Math.ceil(analysis.translationTasks.length / GROUP_SIZE);
         
         const allResults: TranslationResult[] = [];
@@ -718,9 +698,9 @@ export async function POST(request: NextRequest) {
 
           const retryResults: TranslationResult[] = [];
 
-          // 简单重试策略：降低并发数重试
-          for (let i = 0; i < allFailures.length; i += 2) { // 并发数降到2
-            const retryBatch = allFailures.slice(i, i + 2);
+          // Cloudflare环境：串行重试策略
+          for (let i = 0; i < allFailures.length; i += 1) { // 串行重试
+            const retryBatch = allFailures.slice(i, i + 1);
             
             const retryPromises = retryBatch.map(async (failedItem) => {
               try {
