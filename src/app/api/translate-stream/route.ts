@@ -439,120 +439,122 @@ export async function POST(req: NextRequest) {
         const startTime = Date.now();
         const CLOUDFLARE_TIMEOUT = 28000; // 28秒超时（为Cloudflare 30秒限制留出缓冲）
         
-        for (let batchIndex = 0; batchIndex < totalBatches; batchIndex++) {
-          const startIndex = batchIndex * BATCH_SIZE;
-          const endIndex = Math.min(startIndex + BATCH_SIZE, textLines.length);
+        // 简化批处理逻辑，避免索引混乱
+        let batchCount = 0;
+        
+        for (let i = 0; i < lines.length; i++) {
+          const line = lines[i];
           
-          if (isCloudflare && totalBatches > 1) {
-            console.log(`[Cloudflare批处理] 开始处理第 ${batchIndex + 1}/${totalBatches} 批 (行 ${startIndex + 1}-${endIndex})`);
-          }
-          
-          // 在Cloudflare环境中检查是否接近超时
-          if (isCloudflare) {
-            const elapsedTime = Date.now() - startTime;
-            if (elapsedTime > CLOUDFLARE_TIMEOUT) {
-              console.log(`[Cloudflare超时保护] 已运行${elapsedTime}ms，接近30秒限制，提前进入重试阶段`);
-              break;
-            }
-          }
-          
-          for (let i = startIndex; i < endIndex; i++) {
-            const line = lines[i];
+          // 跳过序号行、时间戳行和空行
+          if (/^\d+$/.test(line.trim()) || 
+              /^\d{2}:\d{2}:\d{2}/.test(line) || 
+              line.trim() === "") {
+            translatedLines.push(line);
+          } else {
+            // 翻译字幕文本
+            translatedCount++;
+            const progress = Math.round((translatedCount / textLines.length) * 100);
             
-            // 跳过序号行、时间戳行和空行
-            if (/^\d+$/.test(line.trim()) || 
-                /^\d{2}:\d{2}:\d{2}/.test(line) || 
-                line.trim() === "") {
-              translatedLines.push(line);
-            } else {
-              // 翻译字幕文本
-              translatedCount++;
-              const progress = Math.round((translatedCount / textLines.length) * 100);
-              
-              console.log(`[Translation Progress] ${progress}% (${translatedCount}/${textLines.length}) - Translating: "${line.substring(0, 50)}${line.length > 50 ? '...' : ''}"`);
-              
-              // 发送进度更新，包含当前翻译的句子
-              controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
-                type: 'progress', 
-                progress: progress,
-                current: translatedCount,
-                total: textLines.length,
-                currentText: line.trim(),
-                currentTextPreview: line.substring(0, 50) + (line.length > 50 ? '...' : ''),
-                service: translationService
-              })}\n\n`));
-              
-              try {
-                const translationStartTime = Date.now();
-                const translatedLine = await translateText(line, targetLang, translationService);
-                const translationTime = Date.now() - translationStartTime;
-                
-                console.log(`[Translation Complete] Time: ${translationTime}ms, Original: "${line.substring(0, 30)}...", Translated: "${translatedLine.substring(0, 30)}..."`);
-                
-                translatedLines.push(translatedLine);
-                
-                // 发送翻译完成的单条结果
-                controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
-                  type: 'translated', 
-                  original: line.trim(),
-                  translated: translatedLine.trim(),
-                  index: translatedCount,
-                  time: translationTime
-                })}\n\n`));
-                
-              } catch (translateError) {
-                console.error(`[Translation Failed] Line ${translatedCount}: "${line.substring(0, 50)}..." - Error:`, translateError);
-                const errorMessage = translateError instanceof Error ? translateError.message : 'Translation failed';
-                
-                // Store failed translation for retry
-                failedTranslations.push({
-                  lineIndex: i,
-                  lineContent: line,
-                  textIndex: translatedCount
-                });
-                
-                // Add placeholder for failed translation
-                translatedLines.push(line); // Keep original text temporarily
-                
-                // Check for fatal errors (e.g., API key issues)
-                if (errorMessage.includes('认证失败') || 
-                    errorMessage.includes('API密钥') || 
-                    errorMessage.includes('访问被拒绝') ||
-                    errorMessage.includes('authentication') ||
-                    errorMessage.includes('API key') ||
-                    errorMessage.includes('access denied')) {
-                  console.log(`[Fatal Error] Configuration issue detected: ${errorMessage}`);
-                  controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
-                    type: 'fatal_error', 
-                    error: errorMessage,
-                    partialResult: translatedLines.join('\n')
-                  })}\n\n`));
-                  controller.close();
-                  return;
-                }
-                
-                // 在Cloudflare环境中，如果是超时错误，提前进入重试阶段
-                if (isCloudflare && (errorMessage.includes('超时') || errorMessage.includes('timeout') || errorMessage.includes('AbortError'))) {
-                  console.log(`[Cloudflare超时检测] 检测到超时错误，提前进入重试阶段`);
-                  break;
-                }
-                
-                // Continue with next line without showing error
-                console.log(`[Continuing] Skipping failed line, will retry later`);
+            // 检查是否需要开始新批次
+            if (translatedCount % BATCH_SIZE === 1) {
+              batchCount++;
+              if (isCloudflare && totalBatches > 1) {
+                console.log(`[Cloudflare批处理] 开始处理第 ${batchCount}/${totalBatches} 批`);
+              }
+            }
+            
+            // 在Cloudflare环境中检查是否接近超时
+            if (isCloudflare && translatedCount % BATCH_SIZE === 0) {
+              const elapsedTime = Date.now() - startTime;
+              if (elapsedTime > CLOUDFLARE_TIMEOUT) {
+                console.log(`[Cloudflare超时保护] 已运行${elapsedTime}ms，接近30秒限制，提前进入重试阶段`);
+                break;
               }
               
-              // 添加延迟避免API限制 - 在Cloudflare环境中减少延迟
-              const delay = isCloudflare ? 
-                (translationService === 'openai' ? 50 : 25) : // Cloudflare环境：减少延迟
-                (translationService === 'openai' ? 100 : 50);  // 本地环境：正常延迟
-              await new Promise(resolve => setTimeout(resolve, delay));
+              // 每批完成后休息
+              if (batchCount < totalBatches) {
+                console.log(`[Cloudflare批处理] 第 ${batchCount} 批完成，休息100ms...`);
+                await new Promise(resolve => setTimeout(resolve, 100));
+              }
             }
-          }
-          
-          // 在Cloudflare环境中，每批完成后添加短暂休息
-          if (isCloudflare && batchIndex < totalBatches - 1) {
-            console.log(`[Cloudflare批处理] 第 ${batchIndex + 1} 批完成，休息100ms...`);
-            await new Promise(resolve => setTimeout(resolve, 100));
+            
+            console.log(`[Translation Progress] ${progress}% (${translatedCount}/${textLines.length}) - Translating: "${line.substring(0, 50)}${line.length > 50 ? '...' : ''}"`);
+            
+            // 发送进度更新，包含当前翻译的句子
+            controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
+              type: 'progress', 
+              progress: progress,
+              current: translatedCount,
+              total: textLines.length,
+              currentText: line.trim(),
+              currentTextPreview: line.substring(0, 50) + (line.length > 50 ? '...' : ''),
+              service: translationService
+            })}\n\n`));
+            
+            try {
+              const translationStartTime = Date.now();
+              const translatedLine = await translateText(line, targetLang, translationService);
+              const translationTime = Date.now() - translationStartTime;
+              
+              console.log(`[Translation Complete] Time: ${translationTime}ms, Original: "${line.substring(0, 30)}...", Translated: "${translatedLine.substring(0, 30)}..."`);
+              
+              translatedLines.push(translatedLine);
+              
+              // 发送翻译完成的单条结果
+              controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
+                type: 'translated', 
+                original: line.trim(),
+                translated: translatedLine.trim(),
+                index: translatedCount,
+                time: translationTime
+              })}\n\n`));
+              
+            } catch (translateError) {
+              console.error(`[Translation Failed] Line ${translatedCount}: "${line.substring(0, 50)}..." - Error:`, translateError);
+              const errorMessage = translateError instanceof Error ? translateError.message : 'Translation failed';
+              
+              // Store failed translation for retry
+              failedTranslations.push({
+                lineIndex: i,
+                lineContent: line,
+                textIndex: translatedCount
+              });
+              
+              // Add placeholder for failed translation
+              translatedLines.push(line); // Keep original text temporarily
+              
+              // Check for fatal errors (e.g., API key issues)
+              if (errorMessage.includes('认证失败') || 
+                  errorMessage.includes('API密钥') || 
+                  errorMessage.includes('访问被拒绝') ||
+                  errorMessage.includes('authentication') ||
+                  errorMessage.includes('API key') ||
+                  errorMessage.includes('access denied')) {
+                console.log(`[Fatal Error] Configuration issue detected: ${errorMessage}`);
+                controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
+                  type: 'fatal_error', 
+                  error: errorMessage,
+                  partialResult: translatedLines.join('\n')
+                })}\n\n`));
+                controller.close();
+                return;
+              }
+              
+              // 在Cloudflare环境中，如果是超时错误，提前进入重试阶段
+              if (isCloudflare && (errorMessage.includes('超时') || errorMessage.includes('timeout') || errorMessage.includes('AbortError'))) {
+                console.log(`[Cloudflare超时检测] 检测到超时错误，提前进入重试阶段`);
+                break;
+              }
+              
+              // Continue with next line without showing error
+              console.log(`[Continuing] Skipping failed line, will retry later`);
+            }
+            
+            // 添加延迟避免API限制 - 在Cloudflare环境中减少延迟
+            const delay = isCloudflare ? 
+              (translationService === 'openai' ? 50 : 25) : // Cloudflare环境：减少延迟
+              (translationService === 'openai' ? 100 : 50);  // 本地环境：正常延迟
+            await new Promise(resolve => setTimeout(resolve, delay));
           }
         }
 
