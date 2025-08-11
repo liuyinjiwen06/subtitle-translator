@@ -184,7 +184,22 @@ async function translateWithGoogle(text: string, targetLang: string): Promise<{t
     clearTimeout(timeoutId);
 
     if (!response.ok) {
-      throw new Error(`Google翻译失败: ${response.status}`);
+      const errorText = await response.text();
+      let errorMessage = `Google翻译失败: ${response.status}`;
+      
+      // 处理特定的错误状态
+      if (response.status === 429) {
+        errorMessage = 'Google翻译API请求频率过高，请稍后再试';
+      } else if (response.status === 403) {
+        errorMessage = 'Google翻译API访问被拒绝，请检查API密钥';
+      } else if (response.status === 400) {
+        errorMessage = 'Google翻译API请求格式错误';
+      } else if (response.status >= 500) {
+        errorMessage = 'Google翻译服务器错误';
+      }
+      
+      console.error(`[Google Translate] 错误详情: ${response.status} - ${errorText}`);
+      throw new Error(errorMessage);
     }
 
     const data = await response.json();
@@ -250,7 +265,22 @@ async function translateWithOpenAI(text: string, targetLang: string): Promise<{t
     clearTimeout(timeoutId);
 
     if (!response.ok) {
-      throw new Error(`OpenAI翻译失败: ${response.status}`);
+      const errorText = await response.text();
+      let errorMessage = `OpenAI翻译失败: ${response.status}`;
+      
+      // 处理特定的错误状态
+      if (response.status === 429) {
+        errorMessage = 'OpenAI API请求频率过高，请稍后再试';
+      } else if (response.status === 403) {
+        errorMessage = 'OpenAI API访问被拒绝，请检查API密钥';
+      } else if (response.status === 400) {
+        errorMessage = 'OpenAI API请求格式错误';
+      } else if (response.status >= 500) {
+        errorMessage = 'OpenAI服务器错误';
+      }
+      
+      console.error(`[OpenAI] 错误详情: ${response.status} - ${errorText}`);
+      throw new Error(errorMessage);
     }
 
     const data = await response.json();
@@ -413,6 +443,7 @@ async function smartTranslateWithRetry(
         // 其他错误：指数退避重试
         if (attempt < maxAttempts) {
           const delay = Math.min(1000 * Math.pow(2, attempt - 1), 5000);
+          console.log(`[重试] ${service} 第${attempt}次失败，等待${delay}ms后重试: ${lastError.message}`);
           await new Promise(resolve => setTimeout(resolve, delay));
         }
       }
