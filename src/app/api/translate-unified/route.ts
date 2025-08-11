@@ -323,7 +323,7 @@ function updateServiceStats(serviceStats: ServiceStats, service: string, success
 let globalSubrequestCount = 0;
 let lastResetTime = Date.now();
 const RATE_LIMIT_WINDOW = 60000; // 1分钟窗口
-const MAX_REQUESTS_PER_MINUTE = 300; // 降低到每分钟300个请求，避免Cloudflare subrequest限制
+const MAX_REQUESTS_PER_MINUTE = 150; // 进一步降低到每分钟150个请求，确保不触发Cloudflare限制
 
 // 动态速率限制函数
 function checkRateLimit(): boolean {
@@ -375,6 +375,13 @@ async function smartTranslateWithRetry(
       try {
         globalSubrequestCount++; // 增加计数器
         console.log(`[Subrequest] ${globalSubrequestCount} - 翻译: ${task.textToTranslate.substring(0, 30)}...`);
+        
+        // 每10个请求后强制等待，避免Cloudflare限制
+        if (globalSubrequestCount % 10 === 0) {
+          const forceDelay = 3000; // 强制等待3秒
+          console.log(`[强制延迟] 第${globalSubrequestCount}个请求后强制等待${forceDelay}ms`);
+          await new Promise(resolve => setTimeout(resolve, forceDelay));
+        }
         
         const result = service === 'google'
           ? await translateWithGoogle(task.textToTranslate, targetLang)
