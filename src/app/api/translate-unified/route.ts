@@ -630,8 +630,14 @@ export async function POST(request: NextRequest) {
                   status: 'success'
                 };
 
-                // 更新处理后的行
-                processedLines[task.index] = result.translation;
+                // 修复：使用正确的行索引更新processedLines
+                // task.index 是translationTasks中的索引，需要找到对应的原始文件行索引
+                const originalLineIndex = lines.findIndex(line => line === task.originalText);
+                if (originalLineIndex !== -1) {
+                  processedLines[originalLineIndex] = result.translation;
+                } else {
+                  console.warn(`[警告] 无法找到原始行索引: ${task.originalText.substring(0, 50)}...`);
+                }
 
                 // 发送翻译成功事件
                 controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
@@ -782,8 +788,13 @@ export async function POST(request: NextRequest) {
                   status: 'success'
                 };
 
-                // 更新处理后的行
-                processedLines[failedItem.index] = result.translation;
+                // 修复：使用正确的行索引更新processedLines
+                const originalLineIndex = lines.findIndex(line => line === failedItem.originalText);
+                if (originalLineIndex !== -1) {
+                  processedLines[originalLineIndex] = result.translation;
+                } else {
+                  console.warn(`[警告] 无法找到重试原始行索引: ${failedItem.originalText.substring(0, 50)}...`);
+                }
 
                 controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
                   type: 'retry_success',
@@ -806,7 +817,13 @@ export async function POST(request: NextRequest) {
                   status: 'fallback'
                 };
 
-                processedLines[failedItem.index] = fallbackResult.translatedText;
+                // 修复：使用正确的行索引更新processedLines
+                const originalLineIndex = lines.findIndex(line => line === failedItem.originalText);
+                if (originalLineIndex !== -1) {
+                  processedLines[originalLineIndex] = fallbackResult.translatedText;
+                } else {
+                  console.warn(`[警告] 无法找到fallback原始行索引: ${failedItem.originalText.substring(0, 50)}...`);
+                }
 
                 controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
                   type: 'retry_failed',
