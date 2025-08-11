@@ -270,32 +270,10 @@ async function translateWithOpenAI(text: string, targetLang: string): Promise<{t
   }
 }
 
-// 智能服务选择
+// Cloudflare环境：简化服务选择，避免复杂计算
 function selectBestService(task: TranslationTask, serviceStats: ServiceStats): string {
-  const google = serviceStats.google;
-  const openai = serviceStats.openai;
-  
-  // 如果服务未初始化，返回默认选择
-  if (google.totalCalls === 0 && openai.totalCalls === 0) {
-    return 'google'; // 默认使用Google
-  }
-  
-  // 基于历史成功率 (40%)
-  const googleScore = (google.successRate || 0.5) * 0.4;
-  const openaiScore = (openai.successRate || 0.5) * 0.4;
-  
-  // 基于响应时间 (30%)
-  const googleSpeedScore = Math.max(0, (3000 - (google.avgResponseTime || 2000)) / 3000) * 0.3;
-  const openaiSpeedScore = Math.max(0, (5000 - (openai.avgResponseTime || 3000)) / 5000) * 0.3;
-  
-  // 基于内容复杂度 (30%)
-  const googleComplexityScore = task.complexity === 'simple' ? 0.3 : 0.1;
-  const openaiComplexityScore = task.complexity === 'complex' ? 0.3 : 0.1;
-  
-  const googleTotal = googleScore + googleSpeedScore + googleComplexityScore;
-  const openaiTotal = openaiScore + openaiSpeedScore + openaiComplexityScore;
-  
-  return googleTotal >= openaiTotal ? 'google' : 'openai';
+  // Cloudflare环境下固定使用Google，避免服务切换的复杂性
+  return 'google';
 }
 
 // 更新服务统计
@@ -319,19 +297,17 @@ function updateServiceStats(serviceStats: ServiceStats, service: string, success
   }
 }
 
-// 智能翻译（带重试）
+// Cloudflare优化：极简重试策略
 async function smartTranslateWithRetry(
   task: TranslationTask, 
   targetLang: string,
   serviceStats: ServiceStats,
-  maxAttempts: number = 3
+  maxAttempts: number = 1 // Cloudflare环境下只尝试1次，避免subrequest累积
 ): Promise<{translation: string, service: string, responseTime: number, attempts: number}> {
   
-  const services = ['google', 'openai'];
+  // 只使用一个服务，避免服务切换导致的额外subrequest
   const primaryService = selectBestService(task, serviceStats);
-  const orderedServices = primaryService === 'google' 
-    ? ['google', 'openai'] 
-    : ['openai', 'google'];
+  const orderedServices = [primaryService]; // 只使用主服务
   
   let totalAttempts = 0;
   let lastError: Error | null = null;
@@ -565,7 +541,7 @@ export async function POST(request: NextRequest) {
                   progress: Math.round((allResults.length / analysis.translationTasks.length) * 100)
                 })}\n\n`));
 
-                const result = await smartTranslateWithRetry(task, targetLang, serviceStats, 2);
+                const result = await smartTranslateWithRetry(task, targetLang, serviceStats, 1);
                 
                 const successResult: TranslationResult = {
                   index: task.index,
