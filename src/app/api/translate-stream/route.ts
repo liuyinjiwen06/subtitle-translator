@@ -324,14 +324,28 @@ async function translateText(text: string, targetLang: string, service: string, 
 }
 
 export async function POST(req: NextRequest) {
+  console.log('[DEBUG] ===== translate-stream API 开始执行 =====');
+  console.log('[DEBUG] 请求方法: POST');
+  console.log('[DEBUG] 请求时间:', new Date().toISOString());
+  
   const encoder = new TextEncoder();
   
   // 检测是否在Cloudflare环境中运行
   const isCloudflare = typeof process === 'undefined' || 
     (process.env && (process.env.CF_PAGES || process.env.CF_WORKER || process.env.CF_RAY_ID));
   
+  console.log('[DEBUG] Cloudflare环境检测结果:', isCloudflare);
+  console.log('[DEBUG] process对象:', typeof process);
+  console.log('[DEBUG] process.env:', process.env ? '存在' : '不存在');
+  if (process.env) {
+    console.log('[DEBUG] CF_PAGES:', process.env.CF_PAGES);
+    console.log('[DEBUG] CF_WORKER:', process.env.CF_WORKER);
+    console.log('[DEBUG] CF_RAY_ID:', process.env.CF_RAY_ID);
+  }
+  
   const stream = new ReadableStream({
     async start(controller) {
+      console.log('[DEBUG] ===== ReadableStream start 开始执行 =====');
       try {
         // 详细的环境检测和日志记录
         console.log('[环境检测] 开始检查环境配置...');
@@ -360,10 +374,18 @@ export async function POST(req: NextRequest) {
           timestamp: new Date().toISOString()
         })}\n\n`));
 
+        console.log('[DEBUG] ===== 开始解析请求参数 =====');
         const formData = await req.formData();
+        console.log('[DEBUG] FormData解析完成');
+        
         const file = formData.get("file") as File;
         const targetLang = formData.get("targetLang") as string;
         const translationService = formData.get("translationService") as string || 'google';
+        
+        console.log('[DEBUG] 请求参数解析结果:');
+        console.log('[DEBUG] - file:', file ? `存在 (${file.name}, ${file.size} bytes)` : '不存在');
+        console.log('[DEBUG] - targetLang:', targetLang);
+        console.log('[DEBUG] - translationService:', translationService);
         
         console.log(`[请求参数] 目标语言: ${targetLang}, 翻译服务: ${translationService}, 文件名: ${file?.name}`);
         console.log(`[DEBUG] 文件大小: ${file?.size} bytes`);
@@ -411,12 +433,14 @@ export async function POST(req: NextRequest) {
           return;
         }
 
+        console.log('[DEBUG] ===== 开始读取文件内容 =====');
         const text = await file.text();
-        console.log(`[DEBUG] 文件内容长度: ${text.length} 字符`);
+        console.log(`[DEBUG] 文件内容读取完成，长度: ${text.length} 字符`);
         console.log(`[DEBUG] 文件内容前200字符预览: "${text.substring(0, 200)}..."`);
         
         const lines = text.split("\n");
-        console.log(`[DEBUG] 按换行符分割后行数: ${lines.length}`);
+        console.log(`[DEBUG] 文件按换行符分割完成，行数: ${lines.length}`);
+        console.log(`[DEBUG] 前5行内容:`, lines.slice(0, 5));
         const translatedLines: string[] = [];
         const failedTranslations: { lineIndex: number; lineContent: string; textIndex: number }[] = [];
 
@@ -682,6 +706,12 @@ export async function POST(req: NextRequest) {
 
         controller.close();
       } catch (error) {
+        console.error('[DEBUG] ===== 捕获到严重错误 =====');
+        console.error('[DEBUG] 错误类型:', error instanceof Error ? error.constructor.name : typeof error);
+        console.error('[DEBUG] 错误消息:', error instanceof Error ? error.message : String(error));
+        console.error('[DEBUG] 错误堆栈:', error instanceof Error ? error.stack : '无堆栈信息');
+        console.error('[DEBUG] 错误时间:', new Date().toISOString());
+        
         console.error('[流式翻译错误] 详细信息:', {
           error: error instanceof Error ? error.message : String(error),
           stack: error instanceof Error ? error.stack : undefined,
@@ -716,11 +746,21 @@ export async function POST(req: NextRequest) {
     }
   });
 
-  return new Response(stream, {
+  console.log('[DEBUG] ===== 准备返回Response =====');
+  console.log('[DEBUG] stream对象类型:', typeof stream);
+  console.log('[DEBUG] stream对象:', stream);
+  
+  const response = new Response(stream, {
     headers: {
       'Content-Type': 'text/event-stream',
       'Cache-Control': 'no-cache',
       'Connection': 'keep-alive',
     },
   });
+  
+  console.log('[DEBUG] ===== Response创建完成，准备返回 =====');
+  console.log('[DEBUG] response状态:', response.status);
+  console.log('[DEBUG] response头部:', Object.fromEntries(response.headers.entries()));
+  
+  return response;
 } 
