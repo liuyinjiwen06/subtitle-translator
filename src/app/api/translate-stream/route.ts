@@ -32,10 +32,17 @@ const languageNames: { [key: string]: string } = {
 async function translateWithGoogle(text: string, targetLang: string): Promise<string> {
   const startTime = Date.now();
   try {
-    if (!text.trim()) return text;
+    console.log(`[DEBUG] Google翻译开始，文本: "${text}", 目标语言: ${targetLang}`);
+    
+    if (!text.trim()) {
+      console.log(`[DEBUG] 文本为空，直接返回`);
+      return text;
+    }
 
     // 检查是否配置了Google Cloud API密钥
     const apiKey = process.env.GOOGLE_TRANSLATE_API_KEY;
+    console.log(`[DEBUG] Google API密钥检查: ${apiKey ? '已配置' : '未配置'}`);
+    
     if (!apiKey) {
       console.error('[GOOGLE_TRANSLATE] API key not configured in environment');
       throw new Error('翻译服务暂时不可用，请稍后再试');
@@ -43,6 +50,12 @@ async function translateWithGoogle(text: string, targetLang: string): Promise<st
 
     const targetLangCode = languageMap[targetLang] || targetLang;
     const url = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
+    
+    console.log(`[DEBUG] Google翻译API调用详情:`);
+    console.log(`[DEBUG] - 目标语言代码: ${targetLangCode}`);
+    console.log(`[DEBUG] - API URL: ${url}`);
+    console.log(`[DEBUG] - 文本长度: ${text.length}`);
+    console.log(`[DEBUG] - 文本预览: "${text.substring(0, 50)}${text.length > 50 ? '...' : ''}"`);
     
     console.log(`[GOOGLE_TRANSLATE] 开始翻译 - 目标语言: ${targetLangCode}, 文本长度: ${text.length}, 文本预览: "${text.substring(0, 50)}${text.length > 50 ? '...' : ''}"`);
     
@@ -353,6 +366,9 @@ export async function POST(req: NextRequest) {
         const translationService = formData.get("translationService") as string || 'google';
         
         console.log(`[请求参数] 目标语言: ${targetLang}, 翻译服务: ${translationService}, 文件名: ${file?.name}`);
+        console.log(`[DEBUG] 文件大小: ${file?.size} bytes`);
+        console.log(`[DEBUG] 文件类型: ${file?.type}`);
+        console.log(`[DEBUG] 文件最后修改时间: ${file?.lastModified}`);
 
         if (!file || !targetLang) {
           const errorMsg = "参数缺失: " + (!file ? "文件未上传" : "") + (!targetLang ? "目标语言未指定" : "");
@@ -396,17 +412,31 @@ export async function POST(req: NextRequest) {
         }
 
         const text = await file.text();
+        console.log(`[DEBUG] 文件内容长度: ${text.length} 字符`);
+        console.log(`[DEBUG] 文件内容前200字符预览: "${text.substring(0, 200)}..."`);
+        
         const lines = text.split("\n");
+        console.log(`[DEBUG] 按换行符分割后行数: ${lines.length}`);
         const translatedLines: string[] = [];
         const failedTranslations: { lineIndex: number; lineContent: string; textIndex: number }[] = [];
 
         // 计算需要翻译的行数（用于进度计算）
+        console.log(`[DEBUG] 原始文件总行数: ${lines.length}`);
+        console.log(`[DEBUG] 原始文件前10行预览:`, lines.slice(0, 10));
+        
         const textLines = lines.filter(line => {
           const trimmed = line.trim();
-          return trimmed !== "" && 
-                 !/^\d+$/.test(trimmed) && 
-                 !/^\d{2}:\d{2}:\d{2}/.test(trimmed);
+          const isNumber = /^\d+$/.test(trimmed);
+          const isTimestamp = /^\d{2}:\d{2}:\d{2}/.test(trimmed);
+          const isEmpty = trimmed === "";
+          
+          console.log(`[DEBUG] 行内容: "${line}", 修剪后: "${trimmed}", 是否数字: ${isNumber}, 是否时间戳: ${isTimestamp}, 是否空行: ${isEmpty}`);
+          
+          return trimmed !== "" && !isNumber && !isTimestamp;
         });
+        
+        console.log(`[DEBUG] 过滤后需要翻译的行数: ${textLines.length}`);
+        console.log(`[DEBUG] 需要翻译的前5行:`, textLines.slice(0, 5));
 
         let translatedCount = 0;
         
@@ -442,22 +472,34 @@ export async function POST(req: NextRequest) {
         // 简化批处理逻辑，避免索引混乱
         let batchCount = 0;
         
+        console.log(`[DEBUG] 开始遍历文件，总共 ${lines.length} 行`);
+        
         for (let i = 0; i < lines.length; i++) {
           const line = lines[i];
+          console.log(`[DEBUG] 处理第 ${i + 1} 行: "${line}"`);
           
           // 跳过序号行、时间戳行和空行
-          if (/^\d+$/.test(line.trim()) || 
-              /^\d{2}:\d{2}:\d{2}/.test(line) || 
-              line.trim() === "") {
+          const trimmed = line.trim();
+          const isNumber = /^\d+$/.test(trimmed);
+          const isTimestamp = /^\d{2}:\d{2}:\d{2}/.test(trimmed);
+          const isEmpty = trimmed === "";
+          
+          console.log(`[DEBUG] 第 ${i + 1} 行分析: 修剪后="${trimmed}", 是否数字=${isNumber}, 是否时间戳=${isTimestamp}, 是否空行=${isEmpty}`);
+          
+          if (isNumber || isTimestamp || isEmpty) {
+            console.log(`[DEBUG] 第 ${i + 1} 行被跳过，直接添加到结果`);
             translatedLines.push(line);
           } else {
             // 翻译字幕文本
             translatedCount++;
             const progress = Math.round((translatedCount / textLines.length) * 100);
             
+            console.log(`[DEBUG] 第 ${i + 1} 行开始翻译，当前进度: ${translatedCount}/${textLines.length} (${progress}%)`);
+            
             // 检查是否需要开始新批次
             if (translatedCount % BATCH_SIZE === 1) {
               batchCount++;
+              console.log(`[DEBUG] 开始新批次: 第 ${batchCount}/${totalBatches} 批`);
               if (isCloudflare && totalBatches > 1) {
                 console.log(`[Cloudflare批处理] 开始处理第 ${batchCount}/${totalBatches} 批`);
               }
@@ -492,10 +534,12 @@ export async function POST(req: NextRequest) {
             })}\n\n`));
             
             try {
+              console.log(`[DEBUG] 第 ${i + 1} 行调用翻译API，目标语言: ${targetLang}, 服务: ${translationService}`);
               const translationStartTime = Date.now();
               const translatedLine = await translateText(line, targetLang, translationService);
               const translationTime = Date.now() - translationStartTime;
               
+              console.log(`[DEBUG] 第 ${i + 1} 行翻译成功，耗时: ${translationTime}ms`);
               console.log(`[Translation Complete] Time: ${translationTime}ms, Original: "${line.substring(0, 30)}...", Translated: "${translatedLine.substring(0, 30)}..."`);
               
               translatedLines.push(translatedLine);
@@ -510,6 +554,7 @@ export async function POST(req: NextRequest) {
               })}\n\n`));
               
             } catch (translateError) {
+              console.error(`[DEBUG] 第 ${i + 1} 行翻译失败，错误详情:`, translateError);
               console.error(`[Translation Failed] Line ${translatedCount}: "${line.substring(0, 50)}..." - Error:`, translateError);
               const errorMessage = translateError instanceof Error ? translateError.message : 'Translation failed';
               
