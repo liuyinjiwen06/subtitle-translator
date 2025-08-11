@@ -198,8 +198,16 @@ async function translateWithGoogle(text: string, targetLang: string): Promise<{t
         errorMessage = 'Google翻译服务器错误';
       }
       
-      console.error(`[Google Translate] 错误详情: ${response.status} - ${errorText}`);
-      throw new Error(errorMessage);
+      // 记录完整的错误信息
+      console.error(`[Google Translate] 完整错误信息:`, {
+        status: response.status,
+        statusText: response.statusText,
+        headers: Object.fromEntries(response.headers.entries()),
+        errorText: errorText,
+        url: response.url
+      });
+      
+      throw new Error(`${errorMessage} (状态: ${response.status}, 详情: ${errorText})`);
     }
 
     const data = await response.json();
@@ -279,8 +287,16 @@ async function translateWithOpenAI(text: string, targetLang: string): Promise<{t
         errorMessage = 'OpenAI服务器错误';
       }
       
-      console.error(`[OpenAI] 错误详情: ${response.status} - ${errorText}`);
-      throw new Error(errorMessage);
+      // 记录完整的错误信息
+      console.error(`[OpenAI] 完整错误信息:`, {
+        status: response.status,
+        statusText: response.statusText,
+        headers: Object.fromEntries(response.headers.entries()),
+        errorText: errorText,
+        url: response.url
+      });
+      
+      throw new Error(`${errorMessage} (状态: ${response.status}, 详情: ${errorText})`);
     }
 
     const data = await response.json();
@@ -451,9 +467,17 @@ async function smartTranslateWithRetry(
   }
   
   // 所有服务都失败了
-  const error = new Error(`所有翻译服务都失败了: ${lastError?.message}`) as any;
+  console.error(`[所有服务失败] 详细错误信息:`, {
+    lastError: lastError?.message,
+    lastErrorStack: lastError?.stack,
+    attempts: totalAttempts,
+    lastService: orderedServices[orderedServices.length - 1]
+  });
+  
+  const error = new Error(`所有翻译服务都失败了: ${lastError?.message || '未知错误'}`) as any;
   error.attempts = totalAttempts;
   error.lastService = orderedServices[orderedServices.length - 1];
+  error.originalError = lastError;
   throw error;
 }
 
