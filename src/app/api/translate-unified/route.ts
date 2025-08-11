@@ -270,10 +270,32 @@ async function translateWithOpenAI(text: string, targetLang: string): Promise<{t
   }
 }
 
-// Cloudflare环境：简化服务选择，避免复杂计算
+// 智能服务选择（恢复完整逻辑）
 function selectBestService(task: TranslationTask, serviceStats: ServiceStats): string {
-  // Cloudflare环境下固定使用Google，避免服务切换的复杂性
-  return 'google';
+  const google = serviceStats.google;
+  const openai = serviceStats.openai;
+  
+  // 如果服务未初始化，返回默认选择
+  if (google.totalCalls === 0 && openai.totalCalls === 0) {
+    return 'google'; // 默认使用Google
+  }
+  
+  // 基于历史成功率 (40%)
+  const googleScore = (google.successRate || 0.5) * 0.4;
+  const openaiScore = (openai.successRate || 0.5) * 0.4;
+  
+  // 基于响应时间 (30%)
+  const googleSpeedScore = Math.max(0, (3000 - (google.avgResponseTime || 2000)) / 3000) * 0.3;
+  const openaiSpeedScore = Math.max(0, (5000 - (openai.avgResponseTime || 3000)) / 5000) * 0.3;
+  
+  // 基于内容复杂度 (30%)
+  const googleComplexityScore = task.complexity === 'simple' ? 0.3 : 0.1;
+  const openaiComplexityScore = task.complexity === 'complex' ? 0.3 : 0.1;
+  
+  const googleTotal = googleScore + googleSpeedScore + googleComplexityScore;
+  const openaiTotal = openaiScore + openaiSpeedScore + openaiComplexityScore;
+  
+  return googleTotal >= openaiTotal ? 'google' : 'openai';
 }
 
 // 更新服务统计
@@ -297,17 +319,23 @@ function updateServiceStats(serviceStats: ServiceStats, service: string, success
   }
 }
 
-// Cloudflare优化：极简重试策略
+// 全局subrequest计数器（Cloudflare限制追踪）
+let globalSubrequestCount = 0;
+const CLOUDFLARE_SUBREQUEST_LIMIT = 45; // 保守限制，低于50
+
+// 智能翻译（带Cloudflare限制控制）
 async function smartTranslateWithRetry(
   task: TranslationTask, 
   targetLang: string,
   serviceStats: ServiceStats,
-  maxAttempts: number = 1 // Cloudflare环境下只尝试1次，避免subrequest累积
+  maxAttempts: number = 3 // 恢复重试机制
 ): Promise<{translation: string, service: string, responseTime: number, attempts: number}> {
   
-  // 只使用一个服务，避免服务切换导致的额外subrequest
+  const services = ['google', 'openai'];
   const primaryService = selectBestService(task, serviceStats);
-  const orderedServices = [primaryService]; // 只使用主服务
+  const orderedServices = primaryService === 'google' 
+    ? ['google', 'openai'] 
+    : ['openai', 'google'];
   
   let totalAttempts = 0;
   let lastError: Error | null = null;
@@ -316,7 +344,19 @@ async function smartTranslateWithRetry(
     for (let attempt = 1; attempt <= maxAttempts; attempt++) {
       totalAttempts++;
       
+      // Cloudflare subrequest限制检查
+      if (globalSubrequestCount >= CLOUDFLARE_SUBREQUEST_LIMIT) {
+        console.warn(`[Subrequest Limit] 达到Cloudflare限制 ${globalSubrequestCount}/${CLOUDFLARE_SUBREQUEST_LIMIT}，跳过重试`);
+        const error = new Error(`已达到Cloudflare subrequest限制，跳过此任务`) as any;
+        error.attempts = totalAttempts;
+        error.lastService = service;
+        throw error;
+      }
+      
       try {
+        globalSubrequestCount++; // 增加计数器
+        console.log(`[Subrequest] ${globalSubrequestCount}/${CLOUDFLARE_SUBREQUEST_LIMIT} - 翻译: ${task.textToTranslate.substring(0, 30)}...`);
+        
         const result = service === 'google'
           ? await translateWithGoogle(task.textToTranslate, targetLang)
           : await translateWithOpenAI(task.textToTranslate, targetLang);
@@ -374,8 +414,26 @@ function adjustConcurrentLevel(
     ? results.reduce((sum, r) => sum + r.responseTime, 0) / results.length 
     : 3000;
   
-  // Cloudflare环境下保持串行处理，确保不超过subrequest限制
-  return 1;
+  // 成功率高 + 响应快 → 增加并发（但有全局限制保护）
+  if (successRate > 0.95 && avgResponseTime < 2000) {
+    return Math.min(current + 1, 3); // Cloudflare环境最大3并发
+  }
+  
+  // 成功率低 + 响应慢 → 减少并发
+  if (successRate < 0.8 || avgResponseTime > 4000) {
+    return Math.max(current - 1, 1);
+  }
+  
+  // 网络错误多 → 大幅减少并发
+  const networkErrors = failures.filter(f => 
+    f.error && (f.error.includes('network') || f.error.includes('timeout') || f.error.includes('subrequest'))
+  ).length;
+  
+  if (networkErrors > failures.length * 0.3) { // 30%错误率就降低并发
+    return Math.max(Math.floor(current / 2), 1);
+  }
+  
+  return current;
 }
 
 // 智能延迟

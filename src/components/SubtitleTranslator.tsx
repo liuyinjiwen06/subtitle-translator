@@ -458,17 +458,24 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
       setAutoSaveCount(0);
     }
 
-    // 使用统一的 translate-unified API
+    // 在Cloudflare环境下使用stream API，在其他环境使用unified API
+    const isCloudflare = typeof window !== 'undefined' && 
+      (window.location.hostname.includes('.pages.dev') || 
+       window.location.hostname.includes('.workers.dev'));
+    
+    const apiEndpoint = isCloudflare ? '/api/translate-stream' : '/api/translate-unified';
+    
     const formData = new FormData();
     formData.append('file', file);
     formData.append('targetLang', targetLanguage);
     formData.append('translationService', translationService);
 
     try {
-      console.log('[Unified翻译开始] 准备发送请求到 /api/translate-unified');
+      console.log(`[智能翻译开始] 准备发送请求到 ${apiEndpoint}`);
+      console.log(`[环境检测] Cloudflare环境: ${isCloudflare}`);
       console.log(`[翻译参数] 文件: ${file.name}, 目标语言: ${targetLanguage}, 服务: ${translationService}`);
       
-      const response = await fetch('/api/translate-unified', {
+      const response = await fetch(apiEndpoint, {
         method: 'POST',
         body: formData,
       });
@@ -508,7 +515,7 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
                 const data = JSON.parse(line.slice(6));
                 
                 if (data.type === 'env_status') {
-                  console.log(`[Unified环境状态]`, data);
+                  console.log(`[环境状态]`, data);
                   if (!data.googleConfigured && !data.openaiConfigured) {
                     throw new Error('翻译服务未配置：缺少API密钥。请检查环境变量配置。');
                   }
@@ -516,11 +523,11 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
                   console.log(`[文件分析完成] 总行数: ${data.totalLines}, 需翻译: ${data.needTranslation}, 已翻译: ${data.alreadyTranslated}`);
                   setCurrentTranslatingText(`分析完成：${data.needTranslation}句需翻译，${data.alreadyTranslated}句已翻译`);
                 } else if (data.type === 'start') {
-                  console.log(`[Unified开始] 总计需翻译: ${data.total} 句, 分组数: ${data.totalGroups}`);
+                  console.log(`[开始翻译] 总计需翻译: ${data.total} 句`);
                   setTranslationStats({ 
                     currentIndex: 0, 
                     totalCount: data.total, 
-                    service: translationService 
+                    service: data.service || translationService 
                   });
                   // 不再设置批次信息
                 } else if (data.type === 'group_start') {
@@ -565,8 +572,12 @@ export default function SubtitleTranslator({ pageConfig, className = "", transla
                 } else if (data.type === 'retry_phase_complete') {
                   console.log(`[重试阶段完成] 重试 ${data.retriedCount} 句，成功 ${data.successfulRetries} 句`);
                   setCurrentTranslatingText("重试阶段完成");
+                } else if (data.type === 'translated') {
+                  // 处理stream API的单条翻译结果
+                  console.log(`[单条翻译] ${data.original} -> ${data.translated}`);
+                  setCurrentTranslatingText(data.translated);
                 } else if (data.type === 'complete') {
-                  console.log(`[翻译完成] 统计:`, data.statistics);
+                  console.log(`[翻译完成]`, data.statistics || `共翻译${data.totalTranslated || 0}句`);
                   setTranslatedContent(data.result);
                   setTranslationProgress(100);
                   setCurrentTranslatingText("");
