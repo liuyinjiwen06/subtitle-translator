@@ -323,7 +323,7 @@ function updateServiceStats(serviceStats: ServiceStats, service: string, success
 let globalSubrequestCount = 0;
 let lastResetTime = Date.now();
 const RATE_LIMIT_WINDOW = 60000; // 1分钟窗口
-const MAX_REQUESTS_PER_MINUTE = 40; // 免费版Cloudflare限制：50个subrequest/request，保守设置为40
+const MAX_REQUESTS_PER_MINUTE = 800; // Cloudflare Pages免费版：1000 requests/min，保守设置为800
 
 // 动态速率限制函数
 function checkRateLimit(): boolean {
@@ -376,10 +376,10 @@ async function smartTranslateWithRetry(
         globalSubrequestCount++; // 增加计数器
         console.log(`[Subrequest] ${globalSubrequestCount} - 翻译: ${task.textToTranslate.substring(0, 30)}...`);
         
-        // 每5个请求后强制等待，避免Cloudflare限制（免费版只有50个subrequest）
-        if (globalSubrequestCount % 5 === 0) {
-          const forceDelay = 5000; // 强制等待5秒
-          console.log(`[强制延迟] 第${globalSubrequestCount}个请求后强制等待${forceDelay}ms，免费版Cloudflare限制：50个subrequest`);
+        // 每20个请求后强制等待，避免Cloudflare Pages rate limit
+        if (globalSubrequestCount % 20 === 0) {
+          const forceDelay = 2000; // 强制等待2秒
+          console.log(`[强制延迟] 第${globalSubrequestCount}个请求后强制等待${forceDelay}ms，Cloudflare Pages免费版：1000 requests/min`);
           await new Promise(resolve => setTimeout(resolve, forceDelay));
         }
         
@@ -572,10 +572,10 @@ export async function POST(request: NextRequest) {
         };
 
         // 阶段2：串行处理 (Cloudflare严格限制)
-        // Cloudflare免费版限制：每个请求最多50个subrequest
-        // 为确保绝对不超限，改为串行处理，只保留错误重试的并发
-        const GROUP_SIZE = 10; // 免费版限制：更小的组大小
-        let CONCURRENT_SIZE = 1; // 串行处理，确保不超过subrequest限制
+        // Cloudflare Pages免费版：1000 requests/min
+        // 使用合理的并发处理，避免rate limit
+        const GROUP_SIZE = 50; // 合理的组大小
+        let CONCURRENT_SIZE = 3; // 适度的并发处理
         const totalGroups = Math.ceil(analysis.translationTasks.length / GROUP_SIZE);
         
         const allResults: TranslationResult[] = [];
