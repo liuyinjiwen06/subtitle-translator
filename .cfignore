@@ -1,0 +1,29 @@
+# Cloudflare Pages ignore file
+# 排除大的缓存文件和不必要的构建文件
+
+# Next.js cache
+.next/cache/
+.next/cache/**/*
+
+# Webpack cache
+cache/
+webpack/
+
+# Node modules
+node_modules/
+
+# Build artifacts
+*.pack
+*.cache
+
+# Development files
+.env*
+.DS_Store
+*.log
+
+# 排除构建输出目录（我们只需要 out 目录）
+.next/
+# 保留 out 目录用于部署
+
+# Git files
+.git/ 

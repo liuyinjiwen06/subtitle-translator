@@ -1,0 +1,36 @@
+{
+  "title": "在线字幕翻译工具",
+  "description": "上传 SRT 文件，选择目标语言，在线翻译字幕并下载。",
+  "upload": "上传 SRT 文件",
+  "select_language": "选择目标语言",
+  "translate": "翻译",
+  "download": "下载翻译文件",
+  "switch_language": "切换语言",
+  "specializedTools": {
+    "title": "专业字幕翻译工具",
+    "subtitle": "针对不同语言优化的专业翻译服务，提供更精准的翻译体验",
+    "note": "选择专门的语言工具可以获得更精准的翻译结果，每个工具都针对特定语言进行了深度优化。",
+    "english": {
+      "title": "English Subtitle Translator",
+      "tagline": "Professional English Translation",
+      "description": "专为英文字幕翻译优化，使用先进的AI技术，提供准确、自然的英文翻译服务。支持全球化内容本地化。",
+      "button": "翻译成英文",
+      "features": {
+        "ai": "AI优化",
+        "global": "全球化",
+        "professional": "专业级"
+      }
+    },
+    "chinese": {
+      "title": "中文字幕翻译工具",
+      "tagline": "专业中文翻译服务",
+      "description": "专门针对中文翻译优化，深度理解中文语境和文化特色，提供地道、准确的中文字幕翻译服务。",
+      "button": "翻译成中文",
+      "features": {
+        "cultural": "文化适配",
+        "context": "语境理解",
+        "native": "地道表达"
+      }
+    }
+  }
+} 

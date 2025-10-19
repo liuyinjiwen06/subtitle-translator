@@ -1,0 +1,1991 @@
+{
+  "homepage": {
+    "meta": {
+      "title": "Free SRT Translator - Translate Subtitle Files Online | SubTran",
+      "description": "Free online SRT translator to translate subtitle files instantly. Support 30+ languages with Google Translate and OpenAI. No registration required - upload SRT, translate, download."
+    },
+    "hero": {
+      "headline": "Translate SRT Subtitle Files Instantly",
+      "subheadline": "Professional subtitle translator supporting 30+ languages. Upload your SRT file, choose your target language, and get accurate translations in seconds - completely free with no registration required.",
+      "features": [
+        "Free Forever - No hidden costs or subscriptions",
+        "31 Languages - From English to Chinese, Spanish, French and more",
+        "Two AI Engines - Choose between Google Translate and OpenAI for best results",
+        "Instant Download - Get your translated SRT file immediately"
+      ]
+    },
+    "keyFeatures": {
+      "title": "✨ Why Choose SubTran",
+      "items": [
+        "💰 Free Forever - No hidden costs or subscriptions",
+        "🌍 31 Languages - From English to Chinese, Spanish, French and more",
+        "🤖 Two AI Engines - Choose between Google Translate and OpenAI for best results",
+        "⚡ Instant Download - Get your translated SRT file immediately"
+      ]
+    },
+    "whyChoose": {
+      "title": "🚀 Why Choose SubTran",
+      "subtitle": "Transform your subtitle translation experience with our powerful, user-friendly tools designed for creators worldwide.",
+      "items": {
+        "free": {
+          "icon": "💎",
+          "title": "Free & No Registration Required",
+          "description": "Translate your subtitle files without creating an account or paying fees. Our SRT translator is completely free and always will be."
+        },
+        "dualEngines": {
+          "icon": "⚙️",
+          "title": "Dual Translation Engines",
+          "description": "Choose between Google Translate for fast, reliable translations, or OpenAI for more contextually accurate results. Pick the engine that works best for your content."
+        },
+        "languages": {
+          "icon": "🌐",
+          "title": "31 Language Support",
+          "description": "Translate subtitles between major world languages including English, Chinese, Spanish, French, German, Japanese, Korean, Portuguese, Russian, Arabic, and many more."
+        },
+        "formatting": {
+          "icon": "📝",
+          "title": "Preserve SRT Formatting",
+          "description": "Our subtitle translator maintains perfect timing, formatting, and structure of your original SRT file. No manual fixing required."
+        }
+      }
+    },
+    "supportedLanguages": {
+      "title": "🌍 Supported Languages",
+      "subtitle": "Connect with global audiences using our comprehensive language support covering major world languages and regional dialects.",
+      "description": "English • Chinese • Japanese • French • German • Spanish • Russian • Italian • Portuguese • Arabic • Hindi • Korean • Thai • Vietnamese • Turkish • Polish • Dutch • Swedish • Danish • Norwegian • Finnish • Czech • Hungarian • Romanian • Bulgarian • Croatian • Slovak • Slovenian • Estonian • Latvian • Lithuanian"
+    },
+    "howItWorks": {
+      "title": "⚡ How It Works",
+      "subtitle": "Simple 4-step process to translate your subtitle files professionally in under a minute.",
+      "steps": {
+        "upload": {
+          "title": "Upload Your SRT File",
+          "description": "Drag and drop your subtitle file or click to browse. We support standard SRT format files up to 10MB in size."
+        },
+        "selectLanguage": {
+          "title": "Select Target Language",
+          "description": "Choose from 31 supported languages. Our interface automatically detects your source language for convenience."
+        },
+        "chooseEngine": {
+          "title": "Choose Translation Engine",
+          "description": "Pick Google Translate for speed and broad language support, or OpenAI for more nuanced, context-aware translations."
+        },
+        "download": {
+          "title": "Download Results",
+          "description": "Click translate and download your professionally translated SRT file within seconds. All timing and formatting preserved."
+        }
+      }
+    },
+    "faq": {
+      "title": "❓ Frequently Asked Questions",
+      "subtitle": "Get answers to common questions about our SRT translation service and technical capabilities.",
+      "items": {
+        "formats": {
+          "question": "What file formats do you support?",
+          "answer": "We currently support SRT (SubRip Subtitle) files, the most widely used subtitle format. Support for additional formats like VTT and ASS is coming soon."
+        },
+        "fileSize": {
+          "question": "How large can my SRT file be?",
+          "answer": "You can upload SRT files up to 10MB in size, which typically contains several hours of subtitle content."
+        },
+        "speed": {
+          "question": "How long does translation take?",
+          "answer": "Most subtitle files are translated within 10-30 seconds, depending on file size and selected translation engine."
+        },
+        "security": {
+          "question": "Is my content secure and private?",
+          "answer": "Yes, your files are processed securely and automatically deleted from our servers after translation. We never store or share your content."
+        },
+        "engine": {
+          "question": "Which translation engine should I choose?",
+          "answer": "Google Translate is faster and supports more language combinations, while OpenAI provides more contextually accurate translations, especially for conversational content."
+        },
+        "batch": {
+          "question": "Do you support batch translation?",
+          "answer": "Currently, you can translate one SRT file at a time. Batch processing features are planned for future updates."
+        }
+      }
+    },
+    "useCases": {
+      "title": "🎯 Perfect for These Use Cases",
+      "subtitle": "Discover how SubTran serves content creators, businesses, and individuals across various industries and projects.",
+      "items": {
+        "creators": {
+          "title": "Content Creators",
+          "description": "Expand your YouTube, TikTok, or social media reach by adding subtitles in multiple languages to your videos."
+        },
+        "education": {
+          "title": "Educational Content",
+          "description": "Make your online courses and training materials accessible to international students with accurate subtitle translation."
+        },
+        "business": {
+          "title": "Business & Marketing",
+          "description": "Localize your promotional videos, webinars, and corporate content for global audiences."
+        },
+        "entertainment": {
+          "title": "Entertainment Industry",
+          "description": "Quickly translate subtitles for films, series, documentaries, and other video content for international distribution."
+        },
+        "individual": {
+          "title": "Individual Users",
+          "description": "Translate foreign language content for personal understanding or create subtitles for family videos and presentations."
+        }
+      }
+    },
+    "engineComparison": {
+      "title": "🔧 Translation Engine Comparison",
+      "subtitle": "Choose the right translation engine for your specific needs - speed or quality, we've got you covered.",
+      "google": {
+        "title": "Google Translate Engine",
+        "bestFor": "Fast translations and rare language pairs",
+        "strengths": "Lightning-fast processing, supports the widest range of languages, excellent for technical content",
+        "idealWhen": "You need quick results or are translating between less common language pairs"
+      },
+      "openai": {
+        "title": "OpenAI Translation Engine",
+        "bestFor": "Natural, contextually accurate translations",
+        "strengths": "Better understanding of context, idioms, and conversational language, more human-like results",
+        "idealWhen": "Quality is priority over speed, translating dialogue-heavy content, or need natural-sounding results"
+      },
+      "note": "Both engines maintain perfect SRT formatting and timing, so you can choose based on your specific needs for speed versus quality."
+    }
+  },
+  "title": "Online Subtitle Translator",
+  "description": "Upload SRT files, select target language, translate subtitles online and download.",
+  "loading": "Loading...",
+  "pageConfigNotFound": "Page configuration not found",
+  "seo": {
+    "title": "Free Online Subtitle Translator - SRT Translation Tool for 30 Languages",
+    "description": "Professional online subtitle translation tool supporting Chinese, English, Japanese and 30 languages. Upload SRT files, one-click translation, high-quality AI translation, completely free to use.",
+    "keywords": "subtitle translation,SRT translation,online translation,subtitle file translation,multilingual subtitles,free translation tool,AI translation,video subtitles"
+  },
+  "upload": "Upload SRT File",
+  "select_language": "Select Target Language",
+  "click_to_select_language": "Click to select target language",
+  "file_selected_click_to_reselect": "File selected, click to reselect",
+  "click_or_drag_to_upload": "Click or drag to upload SRT subtitle file",
+  "search_languages": "Search languages...",
+  "no_matching_languages": "No matching languages found",
+  "please_select_srt_file": "Please select an .srt subtitle file",
+  "please_upload_file_first": "Please upload a subtitle file first",
+  "cannot_read_response": "Cannot read response stream",
+  "translation_error_occurred": "An error occurred during translation",
+  "select_interface_language": "Select Interface Language",
+  "multilingual_interface_support": "Multilingual Interface Support",
+  "translation_failed": "Translation Failed",
+  "select_translation_service": "Select Translation Service",
+  "translate": "Translate",
+  "translating": "Translating...",
+  "download": "Download Translated File",
+  "translation_services": {
+    "google": "High Quality Translation",
+    "openai": "AI Smart Translation"
+  },
+  "translation_progress": "Translation Progress",
+  "translating_please_wait": "Translating, please wait...",
+  "translation_complete": "Translation Complete!",
+  "current_translating": "Currently Translating",
+  "translate_again": "Translate Again",
+  "features": {
+    "title": "Why Choose Us?",
+    "items": {
+      "fast": {
+        "icon": "⚡",
+        "title": "Fast Translation",
+        "description": "Advanced AI technology completes subtitle translation in seconds"
+      },
+      "multilang": {
+        "icon": "🌍",
+        "title": "Multi-language Support",
+        "description": "Supports 8 mainstream languages to meet global user needs"
+      },
+      "privacy": {
+        "icon": "🔒",
+        "title": "Privacy & Security",
+        "description": "Local file processing, no server upload, protecting your privacy"
+      },
+      "free": {
+        "icon": "💯",
+        "title": "Completely Free",
+        "description": "No registration required, no usage limits, permanently free"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Główne zalety",
+    "subtitle": "Why choose our subtitle translation tool? Professional, efficient, and secure translation experience",
+    "items": {
+      "accuracy": {
+        "icon": "🎯",
+        "title": "Accurate Translation",
+        "description": "Using the latest AI translation technology to ensure translation accuracy and language fluency, specially optimized for subtitle content"
+      },
+      "speed": {
+        "icon": "⚡",
+        "title": "Lightning Fast",
+        "description": "Powerful cloud processing capabilities, even large files can be translated in minutes with real-time progress display"
+      },
+      "security": {
+        "icon": "🛡️",
+        "title": "Secure & Reliable",
+        "description": "Standardy bezpieczeństwa dla przedsiębiorstw, szyfrowana transmisja plików, automatyczne usunięcie po przetłumaczeniu, ochrona Twojej prywatności"
+      },
+      "support": {
+        "icon": "🌐",
+        "title": "Wsparcie wielojęzyczne",
+        "description": "Supports 8 mainstream languages including Chinese, English, Japanese, French, German, Spanish, Russian, and Italian"
+      },
+      "cost": {
+        "icon": "💰",
+        "title": "Całkowicie darmowe",
+        "description": "No account registration, no paid subscription, no usage limits, permanently free access to all features"
+      },
+      "ease": {
+        "icon": "🎨",
+        "title": "Łatwy w użyciu",
+        "description": "Intuicyjny interfejs użytkownika, pełne tłumaczenie w trzech krokach: przesłać plik, wybrać język, pobrać wynik, nie wymagane żadne specjalistyczne umiejętności"
+      }
+    }
+  },
+  "useCases": {
+    "title": "Use Cases",
+    "subtitle": "Czy jesteś użytkownikiem indywidualnym czy zespołem zawodowym, możemy sprostać Twoim potrzebom tłumaczenia napisów.",
+    "items": {
+      "education": {
+        "icon": "🎓",
+        "title": "Edukacja i szkolenie",
+        "description": "Tworzenie napisów wielojęzycznych do kursów online, filmów edukacyjnych i wykładów akademickich."
+      },
+      "business": {
+        "icon": "💼",
+        "title": "Biznesowy cel",
+        "description": "Tłumaczenia na język polski: filmy promocyjne korporacyjne, prezentacje produktów, zapisy zebrań z internacjonalizacją tłumaczeń."
+      },
+      "entertainment": {
+        "icon": "🎬",
+        "title": "Film i rozrywka",
+        "description": "Lokalizacja napisów do filmów, seriali telewizyjnych, dokumentów i krótkich filmów"
+      },
+      "personal": {
+        "icon": "👤",
+        "title": "Osobiste tworzenie",
+        "description": "Dodawanie napisów wielojęzycznych do vlogów, filmów z gier, nagrania z życia"
+      }
+    }
+  },
+  "freeService": {
+    "title": "Bezpłatna usługa tłumaczenia napisów",
+    "subtitle": "Ciesz się nieograniczonym, wysokiej jakości tłumaczeniem napisów za darmo. Bez rejestracji, bez opłat, bez ukrytych kosztów.",
+    "items": {
+      "unlimited": {
+        "icon": "💡",
+        "title": "Nieograniczone korzystanie",
+        "description": "Tłumacz tyle plików z napisami, ile chcesz, bez żadnych ograniczeń."
+      },
+      "noRegistration": {
+        "icon": "🔓",
+        "title": "Nie wymagana rejestracja",
+        "description": "Zacznij tłumaczyć od razu, nie potrzebujesz konta ani rejestracji."
+      },
+      "noFees": {
+        "icon": "💸",
+        "title": "Całkowicie darmowe",
+        "description": "Wszystkie funkcje są dostępne za darmo, na zawsze. Brak subskrypcji, brak ukrytych opłat."
+      },
+      "highQuality": {
+        "icon": "✨",
+        "title": "Wysokiej jakości tłumaczenie",
+        "description": "Napędzany zaawansowaną sztuczną inteligencją, zapewniającą dokładne i naturalne tłumaczenia napisów."
+      }
+    }
+  },
+  "faq": {
+    "title": "Najczęściej zadawane pytania",
+    "subtitle": "Odpowiedzi na pytania, które możesz napotkać podczas korzystania",
+    "items": {
+      "format": {
+        "question": "Jakie formaty plików z napisami są obsługiwane?",
+        "answer": "Obecnie obsługujemy pliki z napisami w formacie SRT, który jest najczęściej używanym formatem napisów o najlepszej kompatybilności. Planujemy obsługiwać więcej formatów, takich jak ASS, VTT, w przyszłych wersjach."
+      },
+      "languages": {
+        "question": "Między jakimi językami można tłumaczyć?",
+        "answer": "Obsługuje wzajemne tłumaczenie między 8 głównymi językami, w tym chińskim, angielskim, japońskim, francuskim, niemieckim, hiszpańskim, rosyjskim i włoskim, spełniając większość potrzeb użytkowników."
+      },
+      "quality": {
+        "question": "Jak zapewniana jest jakość tłumaczenia?",
+        "answer": "Korzystamy z zaawansowanej technologii tłumaczenia z Google Cloud i OpenAI, specjalnie zoptymalizowanej do treści napisów, aby zapewnić dokładność i płynność tłumaczenia. Dostępne są różne silniki tłumaczenia do wyboru."
+      },
+      "privacy": {
+        "question": "Czy moje pliki są bezpieczne?",
+        "answer": "Traktujemy prywatność użytkowników bardzo poważnie. Transmisja plików odbywa się za pomocą szyfrowania HTTPS, proces tłumaczenia zachodzi w bezpiecznym środowisku chmurowym, pliki są automatycznie usuwane po tłumaczeniu, żadne dane użytkownika nie są przechowywane."
+      },
+      "cost": {
+        "question": "Czy korzystanie z tego jest płatne?",
+        "answer": "Całkowicie za darmo! Nie jest wymagana rejestracja konta, nie ma płatnej subskrypcji, nie ma ograniczeń w użyciu. Jesteśmy zobowiązani do świadczenia bezpłatnych usług tłumaczenia napisów dla użytkowników z całego świata."
+      },
+      "speed": {
+        "question": "Ile czasu zajmuje tłumaczenie?",
+        "answer": "Szybkość tłumaczenia zależy od rozmiaru pliku i wybranego usługodawcy tłumaczeń. Ogólnie rzecz biorąc, pliki napisów o normalnej długości (100-500 linii) mogą zostać ukończone w ciągu 1-3 minut."
+      }
+    }
+  },
+  "specializedTools": {
+    "title": "Profesjonalne narzędzia do tłumaczenia napisów",
+    "subtitle": "Specjalistyczne usługi tłumaczeniowe zoptymalizowane pod kątem różnych języków, zapewniające bardziej precyzyjne doświadczenie tłumaczeniowe.",
+    "english": {
+      "button": "Przetłumacz na polski"
+    },
+    "chinese": {
+      "button": "Przetłumacz na język polski"
+    }
+  },
+  "cta": {
+    "title": "Zacznij teraz tłumaczyć napisy.",
+    "subtitle": "Trzy proste kroki, aby łatwo ukończyć tłumaczenie napisów wielojęzycznych i dotrzeć z treścią do globalnej publiczności.",
+    "startButton": "Rozpocznij",
+    "learnMore": "Dowiedz się więcej"
+  },
+  "howToUse": {
+    "title": "Jak używać",
+    "steps": {
+      "step1": "Załaduj plik napisów SRT",
+      "step2": "Wybierz język docelowy tłumaczenia",
+      "step3": "Kliknij przycisk tłumaczenia, aby rozpocząć przetwarzanie.",
+      "step4": "Pobierz plik z przetłumaczonymi napisami."
+    }
+  },
+  "footer": {
+    "title": "Zacznij korzystać z narzędzia do tłumaczenia napisów online.",
+    "description": "Czy jesteś twórcą treści, edukatorem czy użytkownikiem biznesowym, nasze narzędzie może pomóc Ci szybko i dokładnie tłumaczyć napisy, sprawiając, że Twoja treść dotrze do globalnej publiczności.",
+    "quick_links": "Szybkie łącza",
+    "languages": "Języki",
+    "supported_languages": "Obsługuje tłumaczenie w 17+ językach",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "stats": {
+      "languages": "Obsługiwane języki",
+      "free": "Darmowe do użytku",
+      "speed": "Szybkość tłumaczenia",
+      "speedValue": "Sekundy"
+    }
+  },
+  "languages": {
+    "en": "Polski",
+    "zh": "Chiński",
+    "ja": "Japoński",
+    "fr": "Francuski",
+    "de": "Niemiecki",
+    "es": "Hiszpański",
+    "ru": "Rosyjski",
+    "it": "Włoski",
+    "pt": "Polski",
+    "ar": "Arabski",
+    "hi": "Polski",
+    "ko": "Koreański",
+    "th": "Tajski",
+    "vi": "Wietnamski",
+    "tr": "Turecki",
+    "pl": "Polski",
+    "nl": "Holenderski",
+    "sv": "Szwedzki",
+    "da": "Duński",
+    "no": "Norweski",
+    "fi": "Fiński",
+    "cs": "Czeski",
+    "hu": "Węgierski",
+    "ro": "Polski",
+    "bg": "Bułgarski",
+    "hr": "Chorwacki",
+    "sk": "Słowacki",
+    "sl": "Słoweński",
+    "et": "Estoński",
+    "lv": "Łotewski",
+    "lt": "Litewski"
+  },
+  "pages": {
+    "englishSubtitle": {
+      "title": "Profesjonalny tłumacz napisów w języku angielskim",
+      "description": "Przekształć swoją treść dla globalnej publiczności za pomocą naszego tłumacza napisów w języku angielskim zasilanego sztuczną inteligencją. Obsługujemy ponad 30 języków z profesjonalną dokładnością.",
+      "seo": {
+        "title": "Tłumacz napisów - Darmowe narzędzie online | Przetłumacz napisy na język polski",
+        "description": "Profesjonalny tłumacz napisów angielskich obsługujący ponad 30 języków. Prześlij pliki SRT i otrzymaj wysokiej jakości napisy angielskie natychmiast. Darmowe narzędzie do tłumaczenia napisów z wykorzystaniem sztucznej inteligencji, zapewniające dokładne wyniki.",
+        "keywords": "Tłumacz napisów angielskich, tłumaczenie napisów na angielski, tłumacz SRT na angielski, narzędzie do tłumaczenia napisów angielskich online, darmowy tłumacz napisów angielskich, tłumaczenie angielskiej sztucznej inteligencji, napisy wideo angielskie."
+      },
+      "heroTitle": "Tłumacz napisów angielskich",
+      "heroSubtitle": "Profesjonalny tłumacz napisów z języka angielskiego - Przekształć napisy w dowolnym języku na doskonały angielski za pomocą naszego narzędzia do tłumaczenia zasilanego sztuczną inteligencją.",
+      "targetLanguage": "Polski",
+      "benefits": {
+        "title": "Dlaczego wybrać naszego tłumacza angielskich napisów?",
+        "subtitle": "Profesjonalny tłumacz napisów angielsko-polskich z zaawansowaną technologią AI zapewniający dokładne i naturalne tłumaczenia",
+        "items": {
+          "native": {
+            "icon": "🇺🇸",
+            "title": "Jakość natywnej angielszczyzny",
+            "description": "Nasz tłumacz napisów w języku angielskim tworzy wyrażenia o jakości rodowitej dla języka angielskiego, brzmiące naturalnie dla osób mówiących po angielsku."
+          },
+          "context": {
+            "icon": "🎯",
+            "title": "Tłumaczenie uwzględniające kontekst",
+            "description": "Zaawansowany tłumacz napisów angielskich, który rozumie kontekst w celu spójnych i precyzyjnych tłumaczeń napisów."
+          },
+          "timing": {
+            "icon": "⏱️",
+            "title": "Idealna synchronizacja czasowa",
+            "description": "Tłumacz napisów zachowuje idealnie oryginalny timing - żadne ręczne dostosowania nie są potrzebne po przetłumaczeniu."
+          }
+        }
+      },
+      "useCases": {
+        "title": "Przypadki użycia tłumacza napisów w języku angielskim",
+        "items": {
+          "global": {
+            "icon": "🌍",
+            "title": "Globalna dystrybucja treści",
+            "description": "Wykorzystaj naszego tłumacza napisów angielskich do filmów korporacyjnych i treści marketingowych, aby dotrzeć do międzynarodowej publiczności."
+          },
+          "education": {
+            "icon": "📚",
+            "title": "Zawartość edukacyjna",
+            "description": "Doskonały tłumacz napisów angielskich idealny do kursów online, samouczków i materiałów wideo edukacyjnych dla uczniów z całego świata."
+          },
+          "entertainment": {
+            "icon": "🎬",
+            "title": "Media i rozrywka",
+            "description": "Profesjonalny tłumacz napisów do filmów, dokumentów i dystrybucji treści wideo"
+          }
+        }
+      }
+    },
+    "chineseSubtitle": {
+      "title": "Dokładny tłumacz napisów chińskich",
+      "description": "Nawiąż kontakt z chińską publicznością dzięki inteligentnemu tłumaczeniu napisów. Nasza sztuczna inteligencja rozumie subtelności kulturowe dla autentycznej lokalizacji.",
+      "seo": {
+        "title": "Przetłumacz napisy na język chiński - Darmowy tłumacz napisów online na język chiński | Wysokiej jakości tłumaczenie napisów SRT na język chiński",
+        "description": "Profesjonalne narzędzie do tłumaczenia napisów na język chiński obsługujące języki angielski, japoński, francuski i wiele innych na napisy w języku chińskim. Tłumaczenie oparte na sztucznej inteligencji, precyzyjne i płynne, całkowicie darmowe. Prześlij pliki SRT i zacznij tłumaczyć teraz!",
+        "keywords": "tłumaczenie napisów na chiński, tłumaczenie napisów chińskich, tłumaczenie SRT na chiński, angielskie napisy na chiński, narzędzie do tłumaczenia napisów online na chiński, darmowe tłumaczenie na chiński"
+      },
+      "heroTitle": "Przetłumacz napisy na język chiński.",
+      "heroSubtitle": "Szybko i dokładnie przetłumacz napisy na język chiński, aby uczynić swój content dostępnym dla chińskiej publiczności.",
+      "targetLanguage": "Chiński",
+      "benefits": {
+        "title": "Dlaczego wybrać nasze tłumaczenie napisów chińskich?",
+        "subtitle": "Profesjonalna technologia tłumaczenia chińskiego zapewniająca jakość napisów i doświadczenie związane z oglądaniem.",
+        "items": {
+          "native": {
+            "icon": "🇨🇳",
+            "title": "Rodzime chińskie wyrażenie",
+            "description": "Sztuczna inteligencja inteligentnie rozpoznaje kontekst, dostarczając rodzime wyrażenia chińskie, które pasują do chińskich nawyków językowych."
+          },
+          "context": {
+            "icon": "🎯",
+            "title": "Zrozumienie kontekstu",
+            "description": "Głębokie zrozumienie kontekstu treści napisów, zapewniające spójność i dokładność tłumaczenia"
+          },
+          "timing": {
+            "icon": "⏱️",
+            "title": "Zachowanie czasu",
+            "description": "Idealnie zachowuje oryginalny czas napisów, gotowe do użycia po przetłumaczeniu bez konieczności dostosowywania."
+          }
+        }
+      },
+      "useCases": {
+        "title": "Przypadki użycia tłumaczenia napisów chińskich",
+        "items": {
+          "localization": {
+            "icon": "🏠",
+            "title": "Lokalizacja treści",
+            "description": "Chińskie napisy do filmów zagranicznych oraz treści edukacyjnych, aby służyć publiczności chińskiej."
+          },
+          "business": {
+            "icon": "💼",
+            "title": "Aplikacje biznesowe",
+            "description": "Chińskie napisy na konferencjach międzynarodowych i prezentacjach produktów w celu ułatwienia komunikacji biznesowej."
+          },
+          "learning": {
+            "icon": "📖",
+            "title": "Materiały do nauki",
+            "description": "Chińskie napisy do filmów i kursów online z nauki języków obcych"
+          }
+        }
+      }
+    },
+    "spanishSubtitle": {
+      "title": "Profesjonalne tłumaczenie napisów hiszpańskich",
+      "description": "Doświadcz bezproblemowego tłumaczenia napisów hiszpańskich za pomocą naszego narzędzia, idealnego do rozwoju biznesu na dynamicznie rosnącym hiszpańskojęzycznym rynku lub do cieszenia się hiszpańskimi filmami w domu.",
+      "seo": {
+        "title": "Darmowy tłumacz napisów hiszpańskich - Tłumacz SRT Online",
+        "description": "Doświadcz bezproblemowego tłumaczenia napisów hiszpańskich za pomocą naszego narzędzia, idealnego do rozszerzania działalności w dynamicznie rosnącym hiszpańskojęzycznym rynku lub do cieszenia się hiszpańskimi filmami w domu.",
+        "keywords": "Tłumacz napisów z hiszpańskiego na angielski, tłumaczenie angielski-hiszpański SRT, lokalizacja wideo na hiszpański, wsparcie dla języka hiszpańskiego, hiszpańskie napisy do filmów, tłumaczenie filmów z angielskiego na hiszpański, hiszpańskie napisy do filmów biznesowych, hiszpańskie napisy do materiałów edukacyjnych, tłumaczenie na hiszpański przy użyciu sztucznej inteligencji."
+      }
+    },
+    "portugueseSubtitle": {
+      "title": "Profesjonalne tłumaczenie napisów na język portugalski",
+      "description": "Odblokuj moc treści portugalskich dzięki naszemu dokładnemu tłumaczowi napisów. Idealny do lokalizacji wideo, wymiany kulturowej i zwiększenia komunikacji biznesowej na wschodzących rynkach.",
+      "seo": {
+        "title": "Darmowy tłumacz napisów portugalskich - Tłumacz SRT Online",
+        "description": "Odblokuj potęgę treści portugalskich dzięki naszemu precyzyjnemu tłumaczowi napisów. Idealny do lokalizacji wideo, wymiany kulturowej i zwiększenia komunikacji biznesowej na wschodzących rynkach.",
+        "keywords": "Tłumacz napisów w języku portugalskim, narzędzie do tłumaczenia napisów, tłumaczenie napisów z angielskiego na portugalski, tłumaczenie filmu z angielskiego na portugalski, tłumacz SRT na portugalski, lokalizacja wideo na portugalski, tłumaczenie treści biznesowych na portugalski, tłumaczenie treści edukacyjnych na portugalski."
+      }
+    },
+    "frenchSubtitle": {
+      "title": "Profesjonalne tłumaczenie napisów francuskich",
+      "description": "Doświadcz bezproblemowego tłumaczenia napisów francuskich za pomocą naszego narzędzia. Idealne dla firm, edukatorów i branży rozrywkowej, eliminuje bariery językowe i wzmacnia zrozumienie kulturowe.",
+      "seo": {
+        "title": "Darmowy tłumacz napisów francuskich - Tłumaczenie SRT online",
+        "description": "Doświadcz bezproblemowego tłumaczenia napisów na francuski za pomocą naszego narzędzia. Idealne dla firm, edukatorów i branży rozrywkowej, pomaga w przełamywaniu barier językowych i zwiększa zrozumienie kulturowe. Tłumacz napisy na francuski z łatwością i precyzją.",
+        "keywords": "Tłumacz napisów francuskich, Tłumaczenie napisów na francuski, Tłumaczenie SRT na francuski, Narzędzie do tłumaczenia napisów, Lokalizacja wideo na język francuski, Tłumacz napisów do celów edukacyjnych, Tłumaczenie napisów biznesowych, Tłumaczenie napisów z wykorzystaniem sztucznej inteligencji, Skomplikowanie języka francuskiego, Wymiana kulturowa poprzez tłumaczenie napisów."
+      }
+    }
+  },
+  "englishSubtitle": {
+    "meta": {
+      "title": "Tłumacz SRT z angielskiego - Tłumacz napisy online za darmo | SubTran",
+      "description": "Profesjonalny tłumacz napisów w języku angielskim. Tłumaczenie plików SRT z angielskiego na ponad 30 języków lub tłumaczenie dowolnego języka na angielski. Darmowe narzędzie online z dokładnością wspieraną przez sztuczną inteligencję."
+    },
+    "hero": {
+      "headline": "Tłumaczenie napisów na żywo",
+      "subheadline": "Tłumaczymy angielskie napisy na ponad 30 języków lub przekształcamy dowolny język na angielski z doskonałą dokładnością. Nasz specjalizowany tłumacz SRT zapewnia naturalne, świadome kontekstu tłumaczenia dla globalnej dystrybucji treści."
+    },
+    "solutions": {
+      "title": "🌟 Rozwiązania napisów angielskich",
+      "subtitle": "Opanuj globalny rynek treści dzięki naszej specjalistycznej technologii tłumaczenia napisów angielskich przeznaczonej dla twórców treści i firm.",
+      "items": {
+        "fromEnglish": {
+          "icon": "🌍",
+          "title": "Od angielskiego do globalnych rynków.",
+          "description": "Przekształć swoje treści angielskie dla międzynarodowej publiczności za pomocą tłumaczeń, które zachowują oryginalny ton, humor i subtelności kulturowe. Nasz tłumacz SRT angielskiego jest specjalnie zoptymalizowany dla materiałów źródłowych w języku angielskim."
+        },
+        "toEnglish": {
+          "icon": "🔄",
+          "title": "Do zrozumienia na poziomie globalnym",
+          "description": "Konwertuj napisy w obcym języku na angielski z wyjątkową dokładnością. Doskonałe do importowania międzynarodowych treści, materiałów edukacyjnych lub zrozumienia zagranicznych mediów."
+        },
+        "optimization": {
+          "icon": "🎯",
+          "title": "Optymalizacja treści",
+          "description": "Nasza sztuczna inteligencja rozpoznaje elementy specyficzne dla języka angielskiego, takie jak idiomy, kolokwializmy, odniesienia kulturowe i terminologia techniczna, co zapewnia tłumaczenia, które są naturalne w języku docelowym."
+        },
+        "professional": {
+          "icon": "💼",
+          "title": "Wyniki na poziomie profesjonalnym",
+          "description": "Zaufany przez twórców treści, platformy streamingowe i międzynarodowe firmy do wysokiej jakości tłumaczeń angielskich napisów spełniających standardy zawodowe."
+        }
+      },
+      "features": [
+        "✅ Umiejętności języka angielskiego - Zoptymalizowane do tłumaczenia napisów angielskich",
+        "📈 30 Języków - Tłumaczenie na główne języki świata lub z nich na angielski",
+        "🧠 Sztuczna inteligencja uwzględniająca kontekst - Rozumie idiomy, slang i odniesienia kulturowe",
+        "⭐ Profesjonalna jakość - Doskonała do YouTube, streamingu i treści biznesowych"
+      ]
+    },
+    "supportedLanguages": {
+      "title": "🌍 Obsługiwane języki",
+      "subtitle": "Przekształć swoje angielskie napisy na potrzeby globalnej publiczności, zapewniając wsparcie językowe obejmujące główne rynki międzynarodowe.",
+      "fromEnglish": "Przetłumacz napisy z angielskiego na:",
+      "toEnglish": "Plus Odwrócona Tłumaczenie:",
+      "description": "Chiński • Japoński • Francuski • Niemiecki • Hiszpański • Rosyjski • Włoski • Portugalski • Arabski • Hindi • Koreanski • Tajski • Wietnamski • Turecki • Polski • Holenderski • Szwedzki • Duński • Norweski • Fiński • Czeski • Węgierski • Rumuński • Bułgarski • Chorwacki • Słowacki • Słoweński • Estoński • Łotewski • Litewski",
+      "reverseNote": "Przetłumacz którykolwiek z tych języków z powrotem na angielski z taką samą jakością zawodową i zrozumieniem kulturowym."
+    },
+    "optimization": {
+      "title": "Optymalizacja treści w języku angielskim",
+      "subtitle": "Zaawansowane funkcje specjalnie zaprojektowane do radzenia sobie z złożonościami i niuansami treści w języku angielskim.",
+      "items": {
+        "cultural": {
+          "icon": "🌐",
+          "title": "Rozpoznawanie kontekstu kulturowego",
+          "description": "Nasza sztuczna inteligencja rozumie angielskie odniesienia kulturowe, wzmianki o popkulturze i regionalne wyrażenia, zapewniając tłumaczenia, które rezonują z docelową publicznością, a nie dosłowne konwersje słowo w słowo."
+        },
+        "technical": {
+          "icon": "⚙️",
+          "title": "Obsługa techniczna w języku angielskim",
+          "description": "Specjalistyczne przetwarzanie dla angielskiego biznesowego, angielskiego akademickiego, dokumentacji technicznej oraz terminologii specyficznej dla branży, która często występuje w zawartościach profesjonalnych w języku angielskim."
+        },
+        "tone": {
+          "icon": "🎭",
+          "title": "Zachowanie tonacji",
+          "description": "Zachowuje oryginalny ton, czy to jest luźna treść na YouTube, formalne prezentacje biznesowe, materiały edukacyjne czy media rozrywkowe."
+        },
+        "grammar": {
+          "icon": "📝",
+          "title": "Optymalizacja gramatyki angielskiej",
+          "description": "Rozpoznaje złożone struktury gramatyczne w języku angielskim, stronę bierną, zdania warunkowe i przekształca je odpowiednio zgodnie z regułami gramatyki języka docelowego."
+        }
+      }
+    },
+    "industries": {
+      "title": "🏢 Zastosowania przemysłowe",
+      "subtitle": "Odkryj, jak profesjonaliści z różnych branż polegają na naszym tłumaczu napisów angielskich do lokalizacji treści.",
+      "items": {
+        "content": {
+          "icon": "📺",
+          "title": "Tworzenie treści i streaming",
+          "applications": {
+            "youtube": "Twórcy na YouTube: Poszerzaj zasięg swojego kanału anglojęzycznego wśród międzynarodowej publiczności dzięki profesjonalnemu tłumaczeniu napisów, które zachowuje twój charakter i głos marki.",
+            "streaming": "Platformy streamingowe: Profesjonalne tłumaczenie napisów w języku angielskim dla Netflix, Amazon Prime i innych platform wymagających wysokiej jakości lokalizacji."
+          }
+        },
+        "business": {
+          "icon": "💼",
+          "title": "Biznes i korporacje",
+          "applications": {
+            "training": "Materiały szkoleniowe: Tłumaczenie angielskich materiałów szkoleniowych korporacyjnych oraz treści wprowadzających dla międzynarodowych zespołów i zagranicznych oddziałów.",
+            "marketing": "Treść marketingowa: Lokalizuj angielskie materiały promocyjne, prezentacje produktów i treści marki dla międzynarodowych rynków za pomocą kulturowo odpowiednich tłumaczeń."
+          }
+        },
+        "education": {
+          "icon": "📚",
+          "title": "Edukacja i e-learning",
+          "applications": {
+            "courses": "Kursy online: Spraw, aby anglojęzyczne treści edukacyjne były dostępne dla uczących się z całego świata dzięki dokładnym i pedagogicznie poprawnym tłumaczeniom napisów.",
+            "academic": "Treść akademicka: Tłumaczenie wykładów, prezentacji naukowych i materiałów wideo edukacyjnych z języka angielskiego na potrzeby międzynarodowej wymiany akademickiej."
+          }
+        },
+        "entertainment": {
+          "icon": "🎬",
+          "title": "Przemysł rozrywkowy",
+          "applications": {
+            "film": "Tłumaczenie napisów filmowych i telewizyjnych: Profesjonalne tłumaczenie napisów angielskich do międzynarodowej dystrybucji anglojęzycznych treści rozrywkowych.",
+            "documentary": "Przynieś angielskie dokumenty do globalnej publiczności lub przetłumacz międzynarodowe dokumenty na język angielski."
+          }
+        }
+      }
+    },
+    "quality": {
+      "title": "🏆 Jakość i dokładność",
+      "subtitle": "Doświadcz wyższej jakości tłumaczeń dzięki naszym silnikom AI specjalizującym się w języku angielskim oraz procesom zapewniania jakości.",
+      "engines": {
+        "title": "🤖 Podwójna korzyść z silnika AI",
+        "google": "Optymalizowany pod kątem złożonej gramatyki i bogatego słownictwa języka angielskiego, zapewnia szybkie i niezawodne tłumaczenia standardowych treści.",
+        "openai": "OpenAI dla języka angielskiego: Zaawansowane zrozumienie kontekstu angielskich niuansów, idiomów i odniesień kulturowych, zapewniające jakość tłumaczenia zbliżoną do ludzkiej."
+      },
+      "checks": {
+        "title": "✅ Angielskie specyficzne kontrole jakości",
+        "items": [
+          "Weryfikacja gramatyki: Zapewnia poprawne zastosowanie zasad gramatyki języka docelowego",
+          "Adaptacja kulturowa: Dostosowuje angielskie odniesienia kulturowe do grup docelowych.",
+          "Spójność terminologii: Zapewnia spójne tłumaczenie terminów technicznych",
+          "Dopasowanie tonacji: Zachowuje oryginalną angielską tonację i styl"
+        ]
+      },
+      "metrics": {
+        "title": "📊 Metryki dokładności",
+        "items": [
+          "Ponad 95% dokładności dla standardowych treści w języku angielskim.",
+          "Rozpoznawanie kontekstu dla ponad 10 000 angielskich idiomów i wyrażeń.",
+          "Baza danych z odniesieniami kulturowymi obejmująca obszary anglojęzyczne.",
+          "Wsparcie techniczne dla ponad 50 branż"
+        ]
+      }
+    },
+    "technical": {
+      "title": "⚡ Specyfikacje techniczne",
+      "subtitle": "Zaprojektowany specjalnie do obsługi wymagań technicznych związanych z tłumaczeniem napisów angielskich z profesjonalną niezawodnością.",
+      "processing": {
+        "title": "⚡ Możliwości przetwarzania",
+        "fileSize": "Rozmiar pliku: Do 10 MB (zazwyczaj 8-12 godzin treści)",
+        "format": "Obsługa formatu: Standardowy format SRT z pełnym wsparciem dla znaków.",
+        "speed": "Prędkość: 10-30 sekund czasu przetwarzania dla większości plików",
+        "quality": "Jakość: Dokładność powyżej 95% dzięki zaawansowanym silnikom sztucznej inteligencji"
+      },
+      "features": {
+        "title": "🚀 Zaawansowane funkcje",
+        "items": [
+          "Inteligentne rozpoznawanie kontekstu: Rozumie idiomy, odniesienia kulturowe i terminologię techniczną",
+          "Wiele opcji silników: Wybierz między Google Translate a OpenAI w zależności od rodzaju treści.",
+          "Zachowanie tonu: Zachowuje oryginalny styl, czy to luźny, formalny, czy techniczny.",
+          "Dostosowanie regionalne: Obsługuje różne warianty języka angielskiego i preferencje językowe docelowej grupy odbiorców."
+        ]
+      },
+      "assurance": {
+        "title": "🛡️ Zapewnienie jakości",
+        "items": [
+          "Inteligentne przetwarzanie: Walidacja gramatyki, pisowni i formatowania",
+          "Adaptacja kulturowa: Automatyczne przetwarzanie odniesień kulturowych i kontekstu",
+          "Sprawdzanie spójności: Spójność terminologii w długich dokumentach",
+          "Doskonałe formatowanie: Zachowuje oryginalny czas i strukturę pliku SRT"
+        ]
+      }
+    },
+    "faq": {
+      "title": "❓ Najczęściej zadawane pytania",
+      "subtitle": "Uzyskaj odpowiedzi na często zadawane pytania dotyczące naszej usługi tłumaczenia napisów angielskich.",
+      "items": {
+        "accuracy": {
+          "question": "Jak dokładne są te tłumaczenia?",
+          "answer": "Nasze podwójne silniki AI osiągają dokładność powyżej 95% dla standardowych treści. Google Translate wyróżnia się szybkością i szerokim wsparciem językowym, podczas gdy OpenAI zapewnia bardziej wyszukane, kontekstowo świadome tłumaczenia."
+        },
+        "fileSize": {
+          "question": "Jaki jest maksymalny rozmiar pliku, który mogę przesłać?",
+          "answer": "Możesz przesłać pliki SRT o wielkości do 10 MB, co zazwyczaj odpowiada 8-12 godzinom treści napisów - idealne do pełnometrażowych filmów lub obszernych materiałów kursowych."
+        },
+        "speed": {
+          "question": "Jak długo trwa proces tłumaczenia?",
+          "answer": "Większość plików jest przetwarzana w ciągu 10-30 sekund, w zależności od rozmiaru pliku i złożoności. Nasze zoptymalizowane serwery zapewniają szybki czas realizacji bez kompromitowania jakości."
+        },
+        "privacy": {
+          "question": "Czy przechowujecie moje pliki z napisami?",
+          "answer": "Nie, Twoje pliki są automatycznie usuwane po przetłumaczeniu w celu zapewnienia pełnej prywatności. Nigdy nie przechowujemy, nie udostępniamy ani nie wykorzystujemy Twojej zawartości w żadnym innym celu."
+        },
+        "multiple": {
+          "question": "Czy mogę przetłumaczyć ten sam plik na kilka języków?",
+          "answer": "Tak, możesz przetłumaczyć ten sam plik napisów angielskich na tyle różnych języków, ile jest potrzebne. Każde tłumaczenie zachowuje oryginalny czas i formatowanie."
+        },
+        "engine": {
+          "question": "Który silnik tłumaczeniowy powinienem wybrać?",
+          "answer": "Dla szybkości i standardowej treści wybierz Google Translate. Dla kreatywnej treści z idiomami, humorem lub odniesieniami kulturowymi OpenAI zazwyczaj zapewnia bardziej naturalne rezultaty."
+        }
+      }
+    }
+  },
+  "chineseSubtitle": {
+    "meta": {
+      "title": "Chiński tłumacz SRT - Tłumacz chińskie napisy online za darmo | SubTran",
+      "description": "Profesjonalny tłumacz napisów SRT z języka chińskiego na ponad 30 innych języków lub z dowolnego języka na chiński. Darmowe narzędzie online z dokładnością opartą na sztucznej inteligencji dla chińskiego uproszczonego i tradycyjnego."
+    },
+    "hero": {
+      "headline": "Profesjonalny tłumacz napisów chińskich",
+      "subheadline": "Nasze specjalistyczne tłumaczenia SRT na język chiński obsługują zarówno chiński uproszczony, jak i tradycyjny, z uwzględnieniem subtelności kulturowych i precyzji językowej."
+    },
+    "solutions": {
+      "title": "🏮 Chińskie rozwiązania napisów",
+      "subtitle": "Połącz wschodnie i zachodnie rynki treści za pomocą naszej zaawansowanej technologii tłumaczenia napisów chińskich, zoptymalizowanej pod kątem złożoności języka i kultury chińskiej.",
+      "items": {
+        "fromChinese": {
+          "icon": "🏮",
+          "title": "Z chińskiego na globalne rynki",
+          "description": "Rozszerz zasięg międzynarodowy swoich treści chińskojęzycznych dzięki tłumaczeniom, które zachowują kontekst kulturowy, lingwistyczne subtelności i regionalne wyrażenia. Doskonałe do eksportu chińskiej rozrywki, edukacji i treści biznesowych na cały świat."
+        },
+        "toChinese": {
+          "icon": "🌏",
+          "title": "Na lokalne rynki chińskie",
+          "description": "Przyciągnij międzynarodową publiczność mówiącą po chińsku dzięki kulturowo dostosowanym tłumaczeniom. Idealne dla platform streamingowych, instytucji edukacyjnych i firm wchodzących na chiński rynek."
+        },
+        "dualScript": {
+          "icon": "📱",
+          "title": "Obsługa chińskiego uproszczonego i tradycyjnego",
+          "description": "Pełne wsparcie zarówno dla chińskiego uproszczonego (Simplified), jak i tradycyjnego (Traditional), z automatycznym wykrywaniem i możliwością konwersji między Hongkongiem, Tajwanem i rynkiem chińskim kontynentalnym."
+        },
+        "cultural": {
+          "icon": "🎋",
+          "title": "Doskonałość w adaptacji kulturowej",
+          "description": "Nasza sztuczna inteligencja rozumie chińskie odniesienia kulturowe, idiomy (成语), regionalne wyrażenia oraz formalne/nieformalne wzorce językowe, co zapewnia autentyczne tłumaczenia, które rezonują z docelową publicznością."
+        }
+      },
+      "features": [
+        "✅ Specjalizacja w języku chińskim - Specjalizacja w złożonościach języka chińskiego",
+        "🌐 Obsługa podwójnego skryptu - zarówno uproszczonego, jak i tradycyjnego chińskiego",
+        "🧠 Inteligencja kulturowa - Rozumie idiomy, odniesienia i kontekst",
+        "⭐ Jakość gotowa na rynek - idealna do streamowania, biznesu i edukacji"
+      ]
+    },
+    "supportedLanguages": {
+      "title": "🌍 Obsługiwane języki",
+      "subtitle": "Zapewnij wsparcie językowe dla treści chińskich dla globalnej publiczności, obejmujące główne rynki międzynarodowe.",
+      "fromChinese": "Przetłumacz napisy chińskie na:",
+      "toChinese": "Plus Odwrócona Tłumaczenie:",
+      "description": "Angielski • Japoński • Koreański • Francuski • Niemiecki • Hiszpański • Rosyjski • Włoski • Portugalski • Arabski • Hindi • Tajski • Wietnamski • Turecki • Polski • Holenderski • Szwedzki • Duński • Norweski • Fiński • Czeski • Węgierski • Rumuński • Bułgarski • Chorwacki • Słowacki • Słoweński • Estoński • Łotewski • Litewski",
+      "reverseNote": "Przetłumacz dowolny z tych języków na chiński (uproszczony lub tradycyjny) z zachowaniem takiej samej kulturowej wrażliwości i dokładności językowej."
+    },
+    "optimization": {
+      "title": "Optymalizacja języka chińskiego",
+      "subtitle": "Zaawansowane przetwarzanie specjalnie zaprojektowane dla unikalnych cech i złożoności treści w języku chińskim.",
+      "items": {
+        "character": {
+          "icon": "🀄",
+          "title": "Rozpoznawanie znaków i kontekst",
+          "description": "Zaawansowana obróbka znaków chińskich z zrozumieniem kontekstu, obsługa homonimów, wariacji tonów i rozwiązywanie niejednoznaczności znaczeń na podstawie otaczającego kontekstu."
+        },
+        "idiom": {
+          "icon": "📚",
+          "title": "Obsługa idiomów i przysłówków",
+          "description": "Specjalistyczne rozpoznawanie i tłumaczenie chińskich idiomów (成语), przysłów (谚语) i klasycznych odniesień z dopasowaniem odpowiedników kulturowych, zamiast dosłownego tłumaczenia."
+        },
+        "regional": {
+          "icon": "🎌",
+          "title": "Przetwarzanie wariantów regionalnych",
+          "description": "Inteligentne zarządzanie wariantami języka chińskiego z Chin Kontynentalnych, Tajwanu, Hongkongu i Singapuru, uwzględniające regionalne słownictwo, zwroty i preferencje kulturowe."
+        },
+        "register": {
+          "icon": "📝",
+          "title": "Rejestr formalny i nieformalny",
+          "description": "Dokładne wykrywanie i zachowanie formalnych (书面语) kontra nieformalnych (口语) stylów językowych, zapewniając odpowiednie dopasowanie tonu w językach docelowych."
+        }
+      }
+    },
+    "industries": {
+      "title": "🏢 Zastosowania przemysłowe",
+      "subtitle": "Odkryj, w jaki sposób chińscy twórcy treści i międzynarodowe firmy wykorzystują naszego tłumacza napisów chińskich do ekspansji na rynek.",
+      "items": {
+        "entertainment": {
+          "icon": "📺",
+          "title": "Rozrywka i media",
+          "applications": {
+            "drama": "Chińskie dramaty i filmy: Tłumaczenie chińskich programów telewizyjnych, filmów i seriali internetowych dla międzynarodowych platform streamingowych z zachowaniem autentyczności kulturowej.",
+            "creators": "Twórcy treści: Pomóż chińskim twórcom na YouTubie, twórcom na Bilibili oraz influencerom mediów społecznościowych dotrzeć do globalnej publiczności, zachowując jednocześnie ich unikalny głos."
+          }
+        },
+        "business": {
+          "icon": "💼",
+          "title": "Biznes i e-commerce",
+          "applications": {
+            "training": "Szkolenia korporacyjne: Lokalizuj chińskie treści biznesowe dla międzynarodowych oddziałów lub tłumacz globalne treści dla chińskich rynków.",
+            "marketing": "Marketing produktów: Dostosuj filmy marketingowe i prezentacje produktów między rynkami chińskim i międzynarodowym z uwzględnieniem kulturowej wrażliwości."
+          }
+        },
+        "education": {
+          "icon": "📚",
+          "title": "Edukacja i Kultura",
+          "applications": {
+            "learning": "Nauka języków: Tworzenie dwujęzycznych materiałów edukacyjnych dla uczących się języka chińskiego lub chińskich studentów studiujących języki obce.",
+            "cultural": "Wymiana kulturowa: Tłumaczenie dokumentacji, wykładów i treści kulturalnych w celu promowania zrozumienia między społecznościami chińskimi i międzynarodowymi."
+          }
+        },
+        "digital": {
+          "icon": "🎬",
+          "title": "Zawartość cyfrowa",
+          "applications": {
+            "streaming": "Transmisja na żywo: Tłumaczenie napisów w czasie rzeczywistym dla chińskich streamerów rozszerzających swoją działalność za granicą lub treści międzynarodowe wchodzące na chińskie platformy.",
+            "courses": "Kursy online: Spraw, by chińskie MOOC były dostępne globalnie albo przynieś treści edukacyjne z całego świata do chińskich uczniów."
+          }
+        }
+      }
+    },
+    "quality": {
+      "title": "🏆 Jakość i dokładność",
+      "subtitle": "Doświadcz wyższej jakości tłumaczenia chińskiego dzięki naszym silnikom AI świadomym kulturowo i specjalistycznym procesom zapewniania jakości.",
+      "engines": {
+        "title": "🤖 Podwójna korzyść z silnika AI",
+        "google": "Google Translate dla języka chińskiego: Zoptymalizowany pod kątem rozpoznawania znaków chińskich i szerokiego wsparcia dla par językowych, zapewniający niezawodne tłumaczenia dla standardowych treści.",
+        "openai": "OpenAI dla języka chińskiego: Zaawansowane zrozumienie kontekstu kulturowego, obsługa chińskich idiomów, odniesień kulturowych i subtelnych wyrażeń z ludzką dokładnością."
+      },
+      "checks": {
+        "title": "✅ Chińskie specyficzne kontrole jakości",
+        "items": [
+          "Dokładność znaków: Zapewnia poprawne użycie chińskich znaków i spójność wariantów",
+          "Czułość kulturowa: Dostosowuje chińskie koncepcje kulturowe dla międzynarodowej publiczności.",
+          "Zachowanie tonacji: Zachowuje formalny/nieformalny rejestr odpowiedni do rodzaju treści.",
+          "Spójność regionalna: Stosuje właściwe konwencje uproszczone/tradycyjne"
+        ]
+      },
+      "metrics": {
+        "title": "📊 Metryki dokładności",
+        "items": [
+          "Ponad 96% dokładności dla treści w standardowym języku chińskim.",
+          "Rozpoznawanie kontekstu kulturowego dla ponad 5 000 chińskich idiomów i wyrażeń.",
+          "Wsparcie dla wariantów regionalnych języka chińskiego z obszarów kontynentalnych, Tajwanu, Hongkongu i Singapuru.",
+          "Pokrycie terminologii technicznej dla głównych branż i dziedzin akademickich."
+        ]
+      }
+    },
+    "technical": {
+      "title": "⚡ Specyfikacje techniczne",
+      "subtitle": "Zaprojektowany specjalnie do obsługi technicznych wymagań tłumaczenia napisów chińskich z profesjonalną niezawodnością i kulturową precyzją.",
+      "processing": {
+        "title": "⚡ Możliwości przetwarzania",
+        "fileSize": "Rozmiar pliku: Do 10 MB (zazwyczaj 8-12 godzin treści)",
+        "character": "Obsługa znaków: Pełne wsparcie Unicode dla wszystkich znaków chińskich",
+        "speed": "Prędkość: Czas przetwarzania treści chińskich wynosi od 15 do 35 sekund.",
+        "quality": "Jakość: Ponad 96% dokładności przy użyciu specjalistycznych modeli sztucznej inteligencji w języku chińskim."
+      },
+      "features": {
+        "title": "🚀 Zaawansowane funkcje",
+        "items": [
+          "Wykrywanie skryptu automatyczne: Automatycznie identyfikuje uproszczony i tradycyjny chiński.",
+          "Konwersja międzyskryptowa: Konwertuj między uproszczonym a tradycyjnym w razie potrzeby",
+          "Mapowanie kontekstu kulturowego: Rozumie chińskie odniesienia kulturowe i dostosowuje się odpowiednio",
+          "Ustawienia preferencji regionalnych: Zoptymalizuj tłumaczenia dla określonych regionów mówiących po chińsku"
+        ]
+      },
+      "assurance": {
+        "title": "🛡️ Zapewnienie jakości",
+        "items": [
+          "Walidacja znaków: Zapewnia poprawne kodowanie i wyświetlanie chińskich znaków.",
+          "Odpowiedniość kulturowa: Automatyczne sprawdzanie adaptacji treści kulturowo wrażliwych",
+          "Weryfikacja spójności: Zapewnia spójność terminologii w długich chińskich dokumentach",
+          "Doskonałe formatowanie: Zachowuje oryginalny czas SRT z odpowiednim renderowaniem chińskiego tekstu."
+        ]
+      }
+    },
+    "faq": {
+      "title": "❓ Najczęściej zadawane pytania",
+      "subtitle": "Uzyskaj odpowiedzi na często zadawane pytania dotyczące naszej usługi tłumaczenia napisów na język chiński.",
+      "items": {
+        "variants": {
+          "question": "Czy obsługujesz zarówno uproszczony, jak i tradycyjny chiński?",
+          "answer": "Tak, w pełni wspieramy zarówno chiński uproszczony (Simplified) jak i tradycyjny (Traditional). Nasz system automatycznie wykrywa, którą wersję używasz i może przekształcać między nimi w razie potrzeby."
+        },
+        "idioms": {
+          "question": "Jak radzisz sobie z chińskimi idiomami i odniesieniami kulturowymi?",
+          "answer": "Nasza sztuczna inteligencja jest szkolona na obszernych treściach kulturowych chińskich i rozpoznaje ponad 5000 chińskich idiomów (成语), przysłów i odniesień kulturowych, tłumacząc je za pomocą odpowiedników kulturowych, a nie dosłownych znaczeń."
+        },
+        "regional": {
+          "question": "Czy potrafisz tłumaczyć między różnymi wariantami języka chińskiego w różnych regionach?",
+          "answer": "Oczywiście. Rozumiemy różnice regionalne między Chińczykami z kontynentu, Tajwanu, Hongkongu i Singapuru, włączając w to różnice w słownictwie i preferencje kulturowe."
+        },
+        "accuracy": {
+          "question": "Jaka jest stopa dokładności tłumaczeń chińskich?",
+          "answer": "Nasze specjalistyczne modele chińskie osiągają dokładność powyżej 96% dla standardowych treści, ze szczególnie silnym wynikiem w kontekście kulturowym i wyrażeniach idiomatycznych."
+        },
+        "speed": {
+          "question": "Ile czasu zajmuje tłumaczenie napisów w języku chińskim?",
+          "answer": "Treść chińska zazwyczaj przetwarza się w ciągu 15-35 sekund ze względu na złożoność rozpoznawania znaków i analizy kontekstu kulturowego, co zapewnia wyższą jakość wyników."
+        },
+        "engine": {
+          "question": "Który silnik tłumaczeniowy lepiej sprawdza się przy treściach chińskojęzycznych?",
+          "answer": "Dla treści technicznych lub formalnych Google Translate zapewnia doskonałą szybkość i dokładność. Natomiast dla treści rozrywkowych, kulturowych lub twórczych z idiomami i odniesieniami kulturowymi, zazwyczaj bardziej nuansowane rezultaty dostarcza OpenAI."
+        }
+      }
+    }
+  },
+  "spanishSubtitle": {
+    "meta": {
+      "title": "Hiszpański tłumacz SRT - Tłumaczenie hiszpańskich napisów online za darmo | SubTran",
+      "description": "Profesjonalny tłumacz napisów SRT z języka hiszpańskiego na ponad 30 innych języków lub tłumaczenie z dowolnego języka na hiszpański. Darmowe narzędzie online z dokładnością wspieraną przez sztuczną inteligencję dla wszystkich wariantów języka hiszpańskiego."
+    },
+    "hero": {
+      "headline": "Profesjonalny tłumacz napisów hiszpańskich",
+      "subheadline": "Przekształć swoją treść dla ponad 500 milionów hiszpańskojęzycznych użytkowników na całym świecie. Nasz tłumacz oparty na sztucznej inteligencji dostarcza kulturowo poprawne hiszpańskie napisy z obsługą wariantów regionalnych, w tym meksykańskiego, argentyńskiego, kolumbijskiego i europejskiego hiszpańskiego.",
+      "flag": "🇪🇸"
+    },
+    "solutions": {
+      "title": "Rozwiązania napisów hiszpańskich 🌶️",
+      "subtitle": "Łącz światowe rynki za pomocą naszej zaawansowanej technologii tłumaczenia napisów w języku hiszpańskim, stworzonej z myślą o zróżnicowanym świecie hiszpańskojęzycznym.",
+      "items": {
+        "regional": {
+          "icon": "🗺️",
+          "title": "Regionalne warianty języka hiszpańskiego",
+          "description": "Wsparcie dla meksykańskiego, argentyńskiego, kolumbijskiego, peruwiańskiego, wenezuelskiego, chilijskiego, hiszpańskiego europejskiego oraz innych regionalnych wariantów z niuansami kulturowymi i lokalnymi wyrażeniami."
+        },
+        "bidirectional": {
+          "icon": "↔️",
+          "title": "Tłumaczenie dwukierunkowe",
+          "description": "Tłumacz z hiszpańskiego na ponad 30 języków lub tłumacz z dowolnego języka na hiszpański z równą precyzją i wrażliwością kulturową."
+        },
+        "cultural": {
+          "icon": "🎭",
+          "title": "Adaptacja kulturowa",
+          "description": "Silniki AI szkoleniowe oparte na kulturze hiszpańskiej, slang, idiomach i regionalnych wyrażeniach, aby dostarczyć tłumaczenia rezonujące z hiszpańskojęzyczną publicznością."
+        },
+        "business": {
+          "icon": "💼",
+          "title": "Skupienie na treściach biznesowych",
+          "description": "Specjalistyczne przetwarzanie treści korporacyjnych, materiałów edukacyjnych, wideoklipów marketingowych i komunikacji zawodowej na rynkach hiszpańskojęzycznych."
+        }
+      },
+      "features": [
+        "Lokalizacja w meksykańskim hiszpańskim",
+        "Wsparcie w języku hiszpańskim w Argentynie",
+        "Warianty hiszpańskiego europejskiego 🇪🇸",
+        "Dialekty hiszpańskie w Kolumbii",
+        "Optymalizacja treści edukacyjnych 📚",
+        "🎬 Standardy przemysłu rozrywkowego"
+      ]
+    },
+    "supportedLanguages": {
+      "title": "Zakres tłumaczenia na język hiszpański",
+      "subtitle": "Zapewnij wsparcie językowe dla treści hiszpańskojęzycznych dla globalnej publiczności, obejmujące główne języki świata.",
+      "fromSpanish": "Przetłumacz napisy hiszpańskie na:",
+      "description": "Angielski • Chiński • Japoński • Francuski • Niemiecki • Rosyjski • Włoski • Portugalski • Arabski • Hindi • Koreanski • Tajski • Wietnamski • Turecki • Polski • Holenderski • Szwedzki • Duński • Norweski • Fiński • Czeski • Węgierski • Rumuński • Bułgarski • Chorwacki • Słowacki • Słoweński • Estoński • Łotewski • Litewski",
+      "toSpanish": "Plus Odwrócona Tłumaczenie:",
+      "reverseNote": "Przetłumacz dowolny z tych języków na hiszpański z zachowaniem regionalnej wrażliwości i kulturowej dokładności, wspierając zarówno warianty latynoamerykańskie, jak i europejskie hiszpańskiego."
+    },
+    "optimization": {
+      "title": "Optymalizacja języka hiszpańskiego 🌮",
+      "subtitle": "Zaawansowane przetwarzanie specjalnie zaprojektowane dla unikalnych cech i regionalnych złożoności treści w języku hiszpańskim.",
+      "items": {
+        "grammar": {
+          "icon": "📚",
+          "title": "Mistrzostwo gramatyki hiszpańskiej",
+          "description": "Zaawansowane operowanie hiszpańskimi koniugacjami czasowników, zgodnościami rodzajowymi, trybem przypuszczającym oraz złożonymi strukturami gramatycznymi."
+        },
+        "regional": {
+          "icon": "🗺️",
+          "title": "Obsługa dialektów regionalnych",
+          "description": "Inteligentne rozpoznawanie i tłumaczenie regionalnych wariantów hiszpańskich, w tym meksykańskich, argentyńskich, kolumbijskich i europejskich dialektów hiszpańskich."
+        },
+        "cultural": {
+          "icon": "🎪",
+          "title": "Świadomość kontekstu kulturowego",
+          "description": "Sztuczna inteligencja została przeszkolona na hiszpańskie odniesienia kulturowe, idiomy, slang i kolokwializmy dla autentycznych tłumaczeń hiszpańskich."
+        },
+        "formal": {
+          "icon": "🏛️",
+          "title": "Rejestr formalny kontra nieformalny",
+          "description": "Odpowiednie zachowanie różnic między \"tú/usted\" oraz rejestrów językowych formalnego/nieformalnego w zależności od kontekstu treści."
+        }
+      }
+    },
+    "industries": {
+      "title": "Przemysł treści w języku hiszpańskim",
+      "subtitle": "Odkryj, w jaki sposób hiszpańscy twórcy treści i międzynarodowe firmy wykorzystują naszego tłumacza napisów hiszpańskich w różnych sektorach.",
+      "items": {
+        "entertainment": {
+          "icon": "🎬",
+          "title": "Rozrywka i media",
+          "applications": {
+            "streaming": "Lokalizacja treści platformy Netflix, Amazon Prime i innych platform streamingowych dla hiszpańskojęzycznych rynków.",
+            "film": "Dystrybucja filmów Hollywood i międzynarodowych z hiszpańskimi napisami dla kin i wideo domowego",
+            "television": "Seriale telewizyjne, dokumentalne i treści nadawane dla hiszpańskich stacji telewizyjnych.",
+            "youtube": "Twórcy na YouTube rozszerzający swoją działalność na hiszpańskojęzyczne audytorium w całej Ameryce Łacińskiej i Hiszpanii"
+          }
+        },
+        "education": {
+          "icon": "🎓",
+          "title": "Edukacja i szkolenie",
+          "applications": {
+            "online": "Platformy kursów online, takie jak Coursera, Udemy, tłumaczą treści edukacyjne na język hiszpański.",
+            "corporate": "Materiały szkoleniowe dla pracowników hiszpańskojęzycznych i międzynarodowych zespołów.",
+            "academic": "Wykłady uniwersyteckie, prezentacje badawcze i treści akademickie dla hiszpańskich instytucji.",
+            "language": "Platformy do nauki języków tworzące treści hiszpańskie dla hiszpańskich uczniów z całego świata."
+          }
+        },
+        "business": {
+          "icon": "💼",
+          "title": "Biznes i marketing",
+          "applications": {
+            "marketing": "Wprowadzenia produktów, filmy promocyjne i kampanie marketingowe dla rynków latynoamerykańskich.",
+            "corporate": "Komunikaty CEO, ogłoszenia firmowe i komunikaty wewnętrzne dla biur w Hiszpanii.",
+            "sales": "Prezentacje sprzedażowe, prezentacje produktów i komunikacja z klientami w regionach hiszpańskojęzycznych.",
+            "customer": "Filmy instruktażowe, samouczki i treści pomocnicze dla użytkowników hiszpańskojęzycznych."
+          }
+        },
+        "technology": {
+          "icon": "💻",
+          "title": "Technologia i oprogramowanie",
+          "applications": {
+            "saas": "Firmy SaaS tworzące hiszpańskie tutoriale, wprowadzające oraz filmy wyjaśniające funkcje",
+            "mobile": "Deweloperzy aplikacji mobilnych lokalizujący treści promocyjne i instruktażowe dla hiszpańskich rynków",
+            "gaming": "Deweloperzy gier tłumaczący przerywniki, samouczki i treści promocyjne dla hiszpańskich graczy.",
+            "tech": "Konferencje technologiczne, webinary i prezentacje techniczne dla hiszpańskojęzycznych programistów."
+          }
+        }
+      }
+    },
+    "quality": {
+      "title": "Doskonałość w tłumaczeniu na język hiszpański",
+      "subtitle": "Doświadcz wyjątkowej jakości tłumaczeń hiszpańskich dzięki naszym silnikom AI zoptymalizowanym pod kątem rynków hiszpańskojęzycznych.",
+      "engines": {
+        "title": "🤖 Podwójna korzyść z silnika AI",
+        "google": "Optymalizowany pod kątem szybkości i szerokiego pokrycia dialektów hiszpańskich, doskonały do treści ogólnych i regionalnych różnic w Ameryce Łacińskiej.",
+        "openai": "Zaawansowane zrozumienie kontekstu hiszpańskiej kultury, idiomów i terminologii biznesowej w celu tworzenia profesjonalnych i kreatywnych treści."
+      },
+      "checks": {
+        "title": "✅ Hiszpańskie specyficzne kontrole jakości",
+        "items": [
+          "Walidacja zgodności rodzajowej dla hiszpańskich rzeczowników i przymiotników",
+          "Dokładność odmiany czasowników we wszystkich hiszpańskich czasach i trybach.",
+          "Spójność dialektalna regionalna (meksykański kontra hiszpański europejski)",
+          "Odpowiedniość odniesień kulturowych dla hiszpańskiego rynku docelowego",
+          "Spójność rejestrów formalnego/nieformalnego (użycie \"ty\"/\"pan/pani\")",
+          "Zgodność z hiszpańskimi standardami interpunkcji i formatowania."
+        ]
+      },
+      "metrics": {
+        "title": "📊 Metryki dokładności",
+        "items": [
+          "Ponad 98% dokładności w gramatyce i składni hiszpańskiej.",
+          "Wskaźnik kulturowej trafności wynoszący 95%+ dla hiszpańskich idiomów i zwrotów.",
+          "Zachowanie synchronizacji czasowej na poziomie 99%+ dla formatowania hiszpańskich napisów.",
+          "Dokładność rozpoznawania regionalnych dialektów: powyżej 94% dla głównych wariantów hiszpańskich"
+        ]
+      }
+    },
+    "technical": {
+      "title": "⚡ Hiszpańskie specyfikacje techniczne",
+      "subtitle": "Zaprojektowany specjalnie do obsługi wymagań technicznych tłumaczenia napisów hiszpańskich z regionalną dokładnością.",
+      "processing": {
+        "title": "⚡ Możliwości przetwarzania",
+        "fileSize": "Rozmiar pliku: Do 50 MB na plik SRT dla dużych projektów z treściami w języku hiszpańskim.",
+        "character": "Limit znaków: 1M+ znaków zoptymalizowany pod kątem rozszerzenia tekstu w języku hiszpańskim",
+        "speed": "Prędkość przetwarzania: 2-15 sekund dla typowych plików z napisami w języku hiszpańskim.",
+        "quality": "Jakość: Profesjonalne tłumaczenie hiszpańskiego na poziomie zawodowym z uwzględnieniem regionalnej dokładności"
+      },
+      "features": {
+        "title": "🚀 Zaawansowane funkcje",
+        "items": [
+          "Wykrywanie dialektu hiszpańskiego (meksykański, argentyński, europejski)",
+          "Dostosowanie kontekstu kulturowego dla regionów hiszpańskojęzycznych",
+          "Walidacja i poprawa gramatyki hiszpańskiej",
+          "Rozpoznawanie regionalnego slang i idiomów",
+          "Automatyczna regulacja rejestru formalnego/nieformalnego",
+          "Optymalizacja czasowania napisów w języku hiszpańskim"
+        ]
+      },
+      "assurance": {
+        "title": "🛡️ Zapewnienie jakości",
+        "items": [
+          "Walidacja dokładności lingwistycznej w języku hiszpańskim",
+          "Badanie odpowiedniego kulturowo dopasowania",
+          "Sprawdzenia spójności dialektów regionalnych",
+          "Weryfikacja formatowania hiszpańskich napisów.",
+          "Ocena bezpieczeństwa i odpowiedniości treści"
+        ]
+      }
+    },
+    "faq": {
+      "title": "❓ Najczęściej zadawane pytania dotyczące tłumaczenia napisów na język hiszpański",
+      "subtitle": "Uzyskaj odpowiedzi na często zadawane pytania dotyczące naszej usługi tłumaczenia napisów na hiszpański oraz naszych możliwości regionalnych.",
+      "items": {
+        "dialects": {
+          "question": "Czy wspierasz różne dialekty hiszpańskie?",
+          "answer": "Tak! Wspieramy główne warianty języka hiszpańskiego, w tym hiszpański meksykański, argentyński, kolumbijski, europejski oraz inne dialekty regionalne. Nasza sztuczna inteligencja rozpoznaje różnice regionalne i dostosowuje tłumaczenia odpowiednio."
+        },
+        "accuracy": {
+          "question": "Jak dokładne są tłumaczenia na język hiszpański?",
+          "answer": "Nasze tłumaczenia hiszpańskiego osiągają dokładność powyżej 98% pod względem gramatyki i składni, a także powyżej 95% pod względem kulturowej trafności idiomów i zwrotów hiszpańskich. Wykorzystujemy silniki sztucznej inteligencji specjalnie przeszkolone na treściach hiszpańskojęzycznych."
+        },
+        "cultural": {
+          "question": "Jak radzisz sobie z hiszpańskimi odniesieniami kulturowymi?",
+          "answer": "Nasza sztuczna inteligencja jest szkolona na obszernych treściach kulturowych hiszpańskich i latynoamerykańskich, co zapewnia właściwe tłumaczenie idiomów, odniesień kulturowych i regionalnych wyrażeń, zachowując autentyczność kulturową."
+        },
+        "formal": {
+          "question": "Czy potrafisz obsługiwać hiszpański w formie formalnej i nieformalnej?",
+          "answer": "Oczywiście! Nasz system rozpoznaje kontekst i odpowiednio stosuje różnice między \"tú/usted\", formalny a nieformalny słownictwo oraz profesjonalny a nieformalny rejestr językowy w oparciu o rodzaj treści."
+        },
+        "regions": {
+          "question": "Które regiony hiszpańskojęzyczne wspierasz?",
+          "answer": "We support Spanish for all major regions including Mexico, Argentina, Colombia, Spain, Peru, Venezuela, Chile, and other Spanish-speaking countries, with cultural and linguistic adaptations for each market."
+        },
+        "business": {
+          "question": "Czy to jest odpowiednie do treści biznesowej po hiszpańsku?",
+          "answer": "Tak! Nasze narzędzie doskonale sprawdza się w języku hiszpańskim biznesowym, obsługując terminologię korporacyjną, formalne komunikaty, treści marketingowe i prezentacje zawodowe z odpowiednią wrażliwością kulturową dla docelowego rynku."
+        }
+      }
+    }
+  },
+  "portugueseSubtitle": {
+    "meta": {
+      "title": "Portugalski tłumacz SRT - Tłumaczenie napisów portugalskich online za darmo | SubTran",
+      "description": "Profesjonalny tłumacz napisów SRT z języka portugalskiego na ponad 30 innych języków lub tłumaczenie z dowolnego języka na portugalski. Darmowe narzędzie online z dokładnością wspieraną sztuczną inteligencją dla wszystkich wariantów języka portugalskiego."
+    },
+    "hero": {
+      "headline": "Tłumacz napisy z języka portugalskiego na bieżąco.",
+      "subheadline": "Nawiąż kontakt z ponad 260 milionami osób mówiących po portugalsku na całym świecie. Nasz specjalizowany tłumacz SRT języka portugalskiego obsługuje warianty portugalskiego brazylijskiego, europejskiego i afrykańskiego z autentycznością kulturową i precyzją językową.",
+      "flag": "🇵🇹"
+    },
+    "solutions": {
+      "title": "Rozwiązania napisów w języku portugalskim 🇵🇹",
+      "subtitle": "Połącz brazylijski, europejski i afrykański rynek portugalskojęzyczny dzięki naszej zaawansowanej technologii tłumaczenia napisów, zoptymalizowanej pod kątem różnorodności językowej i bogactwa kulturowego świata portugalskojęzycznego.",
+      "items": {
+        "brazilianMarket": {
+          "icon": "🇧🇷",
+          "title": "Doskonałość w brazylijskim portugalskim",
+          "description": "Specjalistyczne przetwarzanie brazylijskiego portugalskiego z lokalnymi zwrotami, odniesieniami kulturowymi i regionalnymi wariacjami. Doskonałe do dotarcia do ogromnego brazylijskiego rynku z autentycznymi, kulturowo istotnymi treściami."
+        },
+        "europeanPortuguese": {
+          "icon": "🇵🇹",
+          "title": "European Portuguese Precision",
+          "description": "Dokładne tłumaczenia na europejski portugalski, które respektują formalne struktury językowe, kulturowe niuanse oraz tradycyjne zwroty używane w Portugalii i innych społecznościach europejskojęzycznych."
+        },
+        "africaLusophone": {
+          "icon": "🌍",
+          "title": "Africké portugalskie rynki",
+          "description": "Wsparcie dla wariantów portugalskiego w Angoli, Mozambiku, Republice Zielonego Przylądka, Gwinei Bissau oraz Wyspach Świętego Tomasza i Książęcej z adaptacjami kulturowymi i językowymi specyficznymi dla regionu."
+        },
+        "globalReach": {
+          "icon": "🌐",
+          "title": "Globalna Sieć Portugalska",
+          "description": "Nawiąż kontakt z portugalskojęzycznymi społecznościami na całym świecie, w tym w Makau, Timorze Wschodnim oraz społecznościami diaspory, oferując odpowiednie kulturowo i językowo tłumaczenia."
+        }
+      },
+      "features": [
+        "🇧🇷 Portugalski brazylijski - Specjalizowany dla rynku i kultury brazylijskiej",
+        "🇵🇹 Europejski portugalski - Autentyczny język portugalski z Portugalii",
+        "🌍 African Variants - Support for Lusophone African countries",
+        "⭐ Inteligencja kulturowa - Rozumie regionalne zwroty i obyczaje"
+      ]
+    },
+    "supportedLanguages": {
+      "title": "Zasięg tłumaczeń na język portugalski 🌍",
+      "subtitle": "Zapewnij wsparcie językowe obejmujące główne rynki międzynarodowe oraz regionalne odmiany języka portugalskiego, aby dotrzeć do globalnej publiczności.",
+      "fromPortuguese": "Przetłumacz napisy z portugalskiego na:",
+      "description": "English • Spanish • French • German • Italian • Russian • Chinese • Japanese • Korean • Arabic • Hindi • Dutch • Swedish • Danish • Norwegian • Finnish • Polish • Czech • Hungarian • Romanian • Bulgarian • Croatian • Slovak • Slovenian • Estonian • Latvian • Lithuanian • Turkish • Thai • Vietnamese",
+      "toPortuguese": "Plus Odwrócona Tłumaczenie:",
+      "reverseNote": "Przetłumacz dowolny z tych języków na portugalski z ustawieniami preferencji regionalnych dla Brazylii, Portugalii lub innych rynków portugalskojęzycznych z odpowiednią adaptacją kulturową."
+    },
+    "optimization": {
+      "title": "Optymalizacja języka portugalskiego 🎯",
+      "subtitle": "Zaawansowane przetwarzanie specjalnie zaprojektowane dla gramatycznej złożoności i różnorodności kulturowej treści w języku portugalskim z różnych regionów.",
+      "items": {
+        "regionalVariants": {
+          "icon": "🗺️",
+          "title": "Mistrzostwo regionalnej wersji",
+          "description": "Inteligentne radzenie sobie z różnicami między brazylijskim portugalskim, portugalskim europejskim i portugalskim afrykańskim, włączając w to słownictwo, znaczniki wymowy i odniesienia kulturowe."
+        },
+        "grammarPrecision": {
+          "icon": "📚",
+          "title": "Grammar & Conjugation Excellence",
+          "description": "Zaawansowana obróbka odmiany czasowników w języku portugalskim, tryb przypuszczający, formy formalne/nieformalne (você/tu) oraz złożone struktury gramatyczne, które różnią się w zależności od regionów."
+        },
+        "culturalAdaptation": {
+          "icon": "🎭",
+          "title": "Świadomość kontekstu kulturowego",
+          "description": "Sztuczna inteligencja przeszkolona na portugalskich odniesieniach kulturowych, regionalnych wyrażeniach, miejscowych zwyczajach i kolokwializmach z Brazylii, Portugalii i Afryki Lusofonicznej dla autentycznych tłumaczeń."
+        },
+        "businessLanguage": {
+          "icon": "💼",
+          "title": "Profesjonalne tłumaczenia.",
+          "description": "Specjalistyczne przetwarzanie terminologii biznesowej, oficjalnych komunikatów i zawartości profesjonalnej z odpowiednim rejestrem i wrażliwością kulturową dla różnych rynków portugalskojęzycznych."
+        }
+      }
+    },
+    "industries": {
+      "title": "🏢 Portuguese Content Industries",
+      "subtitle": "Odkryj, jak portugalscy twórcy treści i międzynarodowe firmy wykorzystują naszego tłumacza napisów na język portugalski w różnorodnych rynkach i sektorach.",
+      "items": {
+        "entertainment": {
+          "icon": "🎬",
+          "title": "Rozrywka i media",
+          "applications": {
+            "brazilian": "Tłumaczenie treści brazylijskich: Przetłumacz brazylijską rozrywkę na potrzeby międzynarodowej dystrybucji i przynieś globalne treści do Brazylii z zachowaniem autentyczności kulturowej.",
+            "streaming": "Platformy streamingowe: Pomóż Netflixowi, Amazon Prime i innym platformom zlokalizować treści dla publiczności lusofonów w Brazylii, Portugalii i Afryce."
+          }
+        },
+        "business": {
+          "icon": "💼",
+          "title": "Biznes i handel",
+          "applications": {
+            "corporate": "Komunikacja korporacyjna: Dostosuj prezentacje biznesowe, materiały szkoleniowe i filmy korporacyjne do rynków brazylijskiego i europejskiego.",
+            "ecommerce": "E-commerce: Przetłumacz filmy produktowe, treści promocyjne i materiały marketingowe dla lusofonów dokonujących zakupów online i handlu elektronicznego."
+          }
+        },
+        "education": {
+          "icon": "🎓",
+          "title": "Edukacja i szkolenie",
+          "applications": {
+            "online": "Nauka online: Tłumaczenie treści edukacyjnych dla uczniów z Brazylii, Portugalii i Afryki Lusofonicznej z odpowiednimi kulturowo przykładami.",
+            "professional": "Szkolenie zawodowe: Dostosuj korporacyjne szkolenia, programy certyfikacyjne oraz treści dotyczące rozwoju umiejętności dla profesjonalistów z obszaru języka portugalskiego."
+          }
+        },
+        "digital": {
+          "icon": "💻",
+          "title": "Cyfrowe i technologia",
+          "applications": {
+            "creators": "Twórcy treści: Pomóż lusofońskim YouTuberom i influencerom cyfrowym dotrzeć do międzynarodowej publiczności, zachowując autentyczną perspektywę kulturową.",
+            "gaming": "Branża gier: Tłumaczenie treści z gier, transmisji na żywo oraz relacji z esportu dla rosnącej społeczności graczy, zwłaszcza w Brazylii."
+          }
+        }
+      }
+    },
+    "quality": {
+      "title": "Doskonałość w tłumaczeniach na język portugalski 🏆",
+      "subtitle": "Experience superior Portuguese translation quality with our culturally-aware AI engines optimized for the linguistic diversity of Portuguese-speaking markets.",
+      "engines": {
+        "title": "🤖 Podwójna korzyść z silnika AI",
+        "google": "Optymalizowany pod kątem wsparcia dla szerokiego zakresu języka portugalskiego z doskonałą obsługą wariantów brazylijskich i europejskich, idealny do treści ogólnych i komunikacji biznesowej.",
+        "openai": "Advanced cultural context understanding, handling Portuguese idioms, regional expressions, and nuanced cultural references with sophisticated accuracy across all Portuguese variants."
+      },
+      "checks": {
+        "title": "✅ Specyficzne kontrole jakości dla języka portugalskiego",
+        "items": [
+          "Spójność regionalna: Zapewnia odpowiednie użycie brazylijskiego i europejskiego portugalskiego.",
+          "Walidacja gramatyki: Poprawne odmiany czasowników w języku portugalskim i złożone struktury gramatyczne",
+          "Czułość kulturowa: Dostosowuje odniesienia kulturowe i wyrażenia do docelowego rynku portugalskiego.",
+          "Zachowuje odpowiednie użycie você/tu oraz rozróżnienia formalne/nieformalne.",
+          "Business Terminology: Accurate translation of Portuguese business and technical terms",
+          "Kodowanie znaków: Doskonała obsługa portugalskich akcentów i znaków specjalnych"
+        ]
+      },
+      "metrics": {
+        "title": "📊 Metryki dokładności",
+        "items": [
+          "Ponad 97% dokładności dla standardowych treści portugalskich w wariantach brazylijskich i europejskich.",
+          "Rozpoznawanie kontekstu kulturowego dla ponad 8 000 portugalskich idiomów, zwrotów i regionalnych odniesień.",
+          "Wsparcie dla regionalnych wariantów obejmujących Brazylię, Portugalię, Angolę, Mozambik i inne kraje lusofońskie.",
+          "Biznes i precyzja techniczna dla specjalistycznych treści wymagających profesjonalnej terminologii portugalskiej."
+        ]
+      }
+    },
+    "technical": {
+      "title": "⚡ Portugalskie specyfikacje techniczne",
+      "subtitle": "Zaprojektowany specjalnie do obsługi wymagań technicznych związanych z tłumaczeniem napisów w języku portugalskim z regionalną dokładnością i kulturową autentycznością.",
+      "processing": {
+        "title": "⚡ Możliwości przetwarzania",
+        "fileSize": "File Size: Up to 15MB per SRT file optimized for Portuguese content",
+        "character": "Obsługa znaków: Pełne wsparcie Unicode, w tym portugalskie akcenty (á, ã, ç, ê, ô)",
+        "speed": "Prędkość: Czas przetwarzania treści portugalskich wynosi 10-25 sekund.",
+        "quality": "Jakość: Ponad 97% dokładności przy użyciu specjalistycznych modeli języka portugalskiego"
+      },
+      "features": {
+        "title": "🚀 Zaawansowane funkcje",
+        "items": [
+          "Regionalne wykrywanie automatyczne: Automatycznie identyfikuje warianty portugalskiego brazylijskiego i europejskiego.",
+          "Mapowanie kontekstu kulturowego: Rozumie portugalskie odniesienia kulturowe i regionalne niuanse",
+          "Business Language Processing: Specialized handling of Portuguese business and technical terminology",
+          "Accent Preservation: Maintains correct Portuguese accent marks and character encoding",
+          "Analiza rejestracji: Wykrywa i zachowuje odpowiednie poziomy formalnego/nieformalnego języka",
+          "Zaawansowana obsługa skomplikowanych struktur gramatycznych w języku portugalskim."
+        ]
+      },
+      "assurance": {
+        "title": "🛡️ Zapewnienie jakości",
+        "items": [
+          "Walidacja lingwistyczna w języku portugalskim: Zapewnia autentyczne użycie języka portugalskiego.",
+          "Badanie odpowiedniości kulturowej: Automatyczna kontrola treści kulturowo wrażliwych",
+          "Sprawdzenia spójności regionalnej: Zapewnia spójność terminologii dla docelowych rynków portugalskojęzycznych",
+          "Doskonałe formatowanie SRT: Zachowuje oryginalny timing z właściwym renderowaniem tekstu w języku portugalskim.",
+          "Przegląd bezpieczeństwa treści: Odpowiednie przesiewanie treści dla publiczności mówiącej po portugalsku"
+        ]
+      }
+    },
+    "faq": {
+      "title": "❓ Najczęstsze pytania dotyczące tłumaczenia napisów na język portugalski",
+      "subtitle": "Uzyskaj odpowiedzi na często zadawane pytania dotyczące naszej usługi tłumaczenia napisów na język portugalski oraz naszych możliwości regionalnych.",
+      "items": {
+        "variants": {
+          "question": "Czy obsługujesz zarówno portugalski brazylijski, jak i europejski?",
+          "answer": "Yes! We support both Brazilian Portuguese and European Portuguese, as well as African Portuguese variants. Our system automatically detects the variant and can adapt translations for your target Portuguese-speaking market with appropriate cultural and linguistic adjustments."
+        },
+        "fileSize": {
+          "question": "Jaka jest maksymalna wielkość pliku dla napisów w języku portugalskim?",
+          "answer": "You can upload SRT files up to 15MB, which typically contains 10-15 hours of content - ideal for feature films, series, documentaries, or comprehensive educational materials in Portuguese."
+        },
+        "speed": {
+          "question": "How quickly are Portuguese subtitles translated?",
+          "answer": "Większość plików z napisami w języku portugalskim jest przetwarzana w ciągu 10-25 sekund. Nasz system analizuje struktury gramatyczne i kontekst kulturowy języka portugalskiego, aby zapewnić optymalną jakość tłumaczenia dla Twojego rynku docelowego."
+        },
+        "security": {
+          "question": "Czy mój portugalski kontent jest bezpieczny i prywatny?",
+          "answer": "Oczywiście. Twoje pliki są automatycznie usuwane po przetłumaczeniu, aby zapewnić pełną prywatność. Nigdy nie przechowujemy, nie udostępniamy ani nie używamy Twojej treści portugalskiej w żadnym innym celu. Bezpieczeństwo Twoich danych jest naszym priorytetem."
+        },
+        "regional": {
+          "question": "Can I specify which type of Portuguese for my translations?",
+          "answer": "Tak, możesz wybrać między portugalskim brazylijskim, portugalskim europejskim lub innymi regionalnymi wariantami, aby dopasować tłumaczenia do preferencji językowych i oczekiwań kulturowych twojej grupy docelowej."
+        },
+        "engine": {
+          "question": "Który silnik tłumaczeniowy najlepiej sprawdza się przy treściach portugalskich?",
+          "answer": "For business, technical, or formal Portuguese content, Google Translate provides excellent grammatical accuracy. For creative content with cultural references, regional expressions, or entertainment material, OpenAI typically delivers more nuanced and culturally sensitive results."
+        }
+      }
+    }
+  },
+  "frenchSubtitle": {
+    "meta": {
+      "title": "Francuski tłumacz SRT - Tłumaczenie francuskich napisów online za darmo | SubTran",
+      "description": "Profesjonalny tłumacz napisów SRT z języka francuskiego na ponad 30 innych języków lub tłumaczenie z dowolnego języka na francuski. Darmowe narzędzie online z dokładnością wspieraną sztuczną inteligencją dla wszystkich wariantów języka francuskiego."
+    },
+    "hero": {
+      "headline": "Tłumaczenie napisów z francuskiego na bieżąco",
+      "subheadline": "Przetwarzaj treści francuskie dla globalnej publiczności lub przynosząc treści międzynarodowe na rynki francuskojęzyczne. Nasz wyspecjalizowany tłumacz SRT języka francuskiego obsługuje warianty francuskiego metropolitalnego, kanadyjskiego i afrykańskiego z precyzją językową i autentycznością kulturową.",
+      "flag": "🇫🇷"
+    },
+    "solutions": {
+      "title": "Rozwiązania napisów francuskich 🇫🇷",
+      "subtitle": "Połącz francuski i międzynarodowe rynki za pomocą naszej zaawansowanej technologii tłumaczenia napisów francuskich, zoptymalizowanej pod kątem elegancji i bogactwa kulturowego francuskiego języka na całym świecie.",
+      "items": {
+        "globalMarkets": {
+          "icon": "🌍",
+          "title": "Z francuskiego na globalne rynki",
+          "description": "Expand your French content's international reach with translations that preserve the sophistication, cultural nuances, and linguistic beauty of French expression. Perfect for exporting French cinema, education, and cultural content worldwide."
+        },
+        "francophoneMarkets": {
+          "icon": "🗼",
+          "title": "Na rynki frankofońskie.",
+          "description": "Przynieś międzynarodowe treści dla ponad 300 milionów francuskojęzycznych użytkowników we Francji, Kanadzie, Belgii, Szwajcarii i Afryce Frankofońskiej, oferując kulturowo dostosowane tłumaczenia, które szanują francuskie tradycje językowe."
+        },
+        "regionalMastery": {
+          "icon": "🌐",
+          "title": "Mistrzostwo regionalnego dialektu francuskiego",
+          "description": "Pełne wsparcie dla wariantów języka francuskiego, w tym francuskiego metropolitalnego (Francja), francuskiego Quebecu (kanadyjskiego), francuskiego belgijskiego, francuskiego szwajcarskiego i francuskiego afrykańskiego z adaptacjami kulturowymi i językowymi specyficznymi dla regionu."
+        },
+        "culturalExcellence": {
+          "icon": "🎨",
+          "title": "Doskonałość kulturowa i językowa",
+          "description": "Our AI understands French cultural references, formal register variations, subjunctive mood usage, and cultural concepts, ensuring translations that maintain the elegance and precision expected in French communication."
+        }
+      },
+      "features": [
+        "Ekspertyza francuska - specjalizacja w elegancji i precyzji języka francuskiego.",
+        "🌍 Regional Variants - Support for all French-speaking regions worldwide",
+        "🧠 Cultural Intelligence - Understands French cultural context and formality",
+        "⭐ Wysoka jakość - Doskonała do treści kinowych, edukacyjnych i biznesowych"
+      ]
+    },
+    "supportedLanguages": {
+      "title": "Zasięg tłumaczeń na język francuski 🌍",
+      "subtitle": "Zapewnij wsparcie językowe dla treści w języku francuskim, aby dotrzeć do globalnej publiczności, obejmując główne rynki międzynarodowe.",
+      "fromFrench": "Przetłumacz napisy francuskie na:",
+      "description": "Angielski • hiszpański • niemiecki • włoski • portugalski • rosyjski • chiński • japoński • koreański • arabski • hindi • holenderski • szwedzki • duński • norweski • fiński • polski • czeski • węgierski • rumuński • bułgarski • chorwacki • słowacki • słoweński • estoński • łotewski • litewski • turecki • tajski • wietnamski",
+      "toFrench": "Plus Odwrócona Tłumaczenie:",
+      "reverseNote": "Translate any of these languages to French with regional preference settings for France, Quebec, Belgium, or other French-speaking markets."
+    },
+    "optimization": {
+      "title": "Optymalizacja języka francuskiego",
+      "subtitle": "Zaawansowane przetwarzanie specjalnie zaprojektowane dla wyrafinowanej struktury gramatycznej i kulturowych niuansów treści w języku francuskim.",
+      "items": {
+        "formalRegister": {
+          "icon": "🎭",
+          "title": "Formal Register & Politeness",
+          "description": "Inteligentne posługiwanie się poziomami formalności we francuskim, włączając rozróżnienie między vous/tu, użycie trybu przypuszczającego oraz dopasowanie odpowiedniego rejestru do kontekstów zawodowych, akademickich lub nieformalnych."
+        },
+        "literaryExpression": {
+          "icon": "📚",
+          "title": "Literary & Cultural Expression",
+          "description": "Specjalistyczna obróbka francuskich idiomów, zwrotów, odniesień kulturowych i środków stylistycznych z odpowiednimi odpowiednikami kulturowymi, które zachowują francuską wyrafinowanie i dowcip."
+        },
+        "francophoneVariants": {
+          "icon": "🌍",
+          "title": "Przetwarzanie wariantów frankofońskich",
+          "description": "Smart adaptation for specific French-speaking regions, understanding cultural preferences, local terminology, and regional sensitivities for France, Quebec, Belgium, Switzerland, and Africa."
+        },
+        "linguisticPrecision": {
+          "icon": "⚜️",
+          "title": "Precyzja językowa i gramatyka",
+          "description": "Zaawansowana obsługa złożonej gramatyki francuskiej, w tym konstrukcje w trybie przypuszczającym, zgody przymiotników w czasie przeszłym oraz złożone struktury zdaniowe, które zachowują dokładność językową w tłumaczeniach."
+        }
+      }
+    },
+    "industries": {
+      "title": "Przemysł treści francuskich",
+      "subtitle": "Dowiedz się, jak francuscy twórcy treści i międzynarodowe firmy wykorzystują naszego tłumacza napisów francuskich do wymiany kulturowej i ekspansji rynkowej.",
+      "items": {
+        "cinema": {
+          "icon": "🎬",
+          "title": "Kino i rozrywka",
+          "applications": {
+            "frenchExport": "Eksport filmów francuskich: Tłumaczenie kina francuskiego, dokumentów i treści artystycznych na międzynarodowe festiwale filmowe i platformy streamingowe, zachowując artystyczną integralność i głębię kulturową.",
+            "internationalization": "Międzynarodowa lokalizacja: Pomóż globalnym usługom streamingowym dostosować treści do francuskojęzycznych odbiorców z odpowiednią wrażliwością kulturową i językową wyrafinowaniem."
+          }
+        },
+        "business": {
+          "icon": "💼",
+          "title": "Biznes i Edukacja",
+          "applications": {
+            "corporate": "Komunikacja korporacyjna: Lokalizuj prezentacje biznesowe, materiały szkoleniowe i filmy korporacyjne dla rynków francuskojęzycznych lub tłumacz treści biznesowe z języka francuskiego dla międzynarodowej ekspansji.",
+            "academic": "Treść akademicka: Dostosowywać materiały edukacyjne, wykłady i treści badawcze pomiędzy francuskimi i międzynarodowymi społecznościami akademickimi z naukową precyzją."
+          }
+        },
+        "cultural": {
+          "icon": "📺",
+          "title": "Treści kulturalne i medialne",
+          "applications": {
+            "programming": "Programowanie kulturalne: Tłumaczenie francuskich programów kulturalnych, dokumentów artystycznych i treści edukacyjnych w celu promowania francuskiej kultury na całym świecie lub przynoszenia międzynarodowych perspektyw francuskim widzom.",
+            "journalism": "Tłumaczenia napisów: Profesjonalne tłumaczenie napisów dla francuskich treści informacyjnych, wywiadów i programów dokumentalnych wymagających dokładności dziennikarskiej oraz kontekstu kulturowego."
+          }
+        },
+        "digital": {
+          "icon": "🖥️",
+          "title": "Cyfrowe i technologia",
+          "applications": {
+            "creation": "Tworzenie treści: Pomóż francuskojęzycznym twórcom YouTuba, twórcom treści i influencerom cyfrowym dotrzeć do międzynarodowej publiczności, zachowując jednocześnie autentyczny francuski głos i perspektywę kulturową.",
+            "elearning": "Platformy e-learningowe: Tłumacz kursy online, webinaria i treści dotyczące technologii edukacyjnych dla uczniów francuskojęzycznych lub globalnego nauczania języka francuskiego."
+          }
+        }
+      }
+    },
+    "quality": {
+      "title": "Doskonałość tłumaczenia na język francuski 🏆",
+      "subtitle": "Doświadcz wyższą jakość tłumaczeń francuskich dzięki naszym silnikom AI świadomym kulturowo oraz procesom kontroli jakości lingwistycznie precyzyjnym.",
+      "engines": {
+        "title": "🤖 Podwójna korzyść z silnika AI",
+        "google": "Doskonałe do standardowej treści w języku francuskim z niezawodną obsługą gramatyki i szerokim wsparciem dla par językowych w przypadku materiałów formalnych lub technicznych.",
+        "openai": "Doskonałe zrozumienie kontekstu kulturowego, obsługa francuskich wyrażeń literackich, odniesienia kulturowe oraz subtelności językowe z wyrafinowaną precyzją."
+      },
+      "checks": {
+        "title": "✅ Francuskie Kontrole Jakości",
+        "items": [
+          "Precyzja gramatyczna: Zapewnia poprawną francuską gramatykę, w tym tryb przypuszczający i skomplikowane czasy.",
+          "Cultural Sensitivity: Adapts French cultural concepts and references with appropriate sophistication",
+          "Rejestr dopasowań: Zachowuje odpowiednie różnice formalne/nieformalne oraz poziomy uprzejmości",
+          "Adaptacja regionalna: uwzględnia preferencje kulturowe konkretnych regionów francuskojęzycznych"
+        ]
+      },
+      "metrics": {
+        "title": "📊 Metryki dokładności",
+        "items": [
+          "Ponad 96% dokładności dla standardowych treści francuskich we wszystkich regionalnych wariantach.",
+          "Rozpoznawanie kontekstu kulturowego dla ponad 6 000 francuskich idiomów, zwrotów i odniesień kulturowych.",
+          "Wsparcie dla wariantów regionalnych obejmujące Francję, Quebec, Belgię, Szwajcarię i Afrykę Frankofońską.",
+          "Akademicka i techniczna precyzja dla specjalistycznych treści wymagających lingwistycznej wyrafinowania."
+        ]
+      }
+    },
+    "technical": {
+      "title": "⚡ Francuskie specyfikacje techniczne",
+      "subtitle": "Zaprojektowany specjalnie do obsługi wymagań technicznych tłumaczenia napisów francuskich z precyzją językową i autentycznością kulturową.",
+      "processing": {
+        "title": "⚡ Możliwości przetwarzania",
+        "fileSize": "Rozmiar pliku: Do 10 MB (zazwyczaj 8-12 godzin treści)",
+        "character": "Obsługa znaków: Pełne wsparcie dla Unicode, w tym akcentów francuskich i znaków specjalnych.",
+        "speed": "Prędkość: Czas przetwarzania treści w języku francuskim wynosi od 12 do 32 sekund.",
+        "quality": "Quality: 96%+ accuracy with specialized French language models"
+      },
+      "features": {
+        "title": "🚀 Zaawansowane funkcje",
+        "items": [
+          "Regional Auto-Detection: Automatically identifies French variant (Metropolitan, Quebec, Belgian, etc.)",
+          "Mapowanie kontekstu kulturowego: Rozumie francuskie odniesienia kulturowe i regionalne niuanse.",
+          "Analiza formalności: Wykrywa i zachowuje odpowiednie poziomy formalności/nieformalności językowej.",
+          "Precyzja językowa: Zachowuje złożone struktury gramatyczne i wyrażenia o wyrafinowanym charakterze we francuskim."
+        ]
+      },
+      "assurance": {
+        "title": "🛡️ Zapewnienie jakości",
+        "items": [
+          "Accent Validation: Ensures correct French accent marks and character encoding",
+          "Odpowiedniość kulturowa: Automatyczne przesiewanie w celu adaptacji treści kulturowo wrażliwych.",
+          "Regionalna spójność: Zachowuje spójność terminologii i wyrażeń dla docelowych rynków francuskich.",
+          "Doskonałe formatowanie: Zachowuje oryginalny czas SRT z właściwym renderowaniem tekstu francuskiego."
+        ]
+      }
+    },
+    "faq": {
+      "title": "❓ Najczęściej zadawane pytania dotyczące tłumaczenia napisów francuskich",
+      "subtitle": "Uzyskaj odpowiedzi na często zadawane pytania dotyczące naszej usługi tłumaczenia napisów na francuski oraz naszych możliwości regionalnych.",
+      "items": {
+        "variants": {
+          "question": "Które warianty języka francuskiego obsługujesz?",
+          "answer": "Wspieramy warianty francuskiego metropolitalnego (Francja), francuskiego Quebecu (Kanada), francuskiego belgijskiego, francuskiego szwajcarskiego i afrykańskiego. Nasz system automatycznie wykrywa wariant i potrafi dostosować tłumaczenia do wybranego rynku frankofońskiego."
+        },
+        "fileSize": {
+          "question": "Jaka jest maksymalna wielkość pliku dla napisów francuskich?",
+          "answer": "Możesz przesłać pliki SRT o maksymalnym rozmiarze 10 MB, co zazwyczaj odpowiada 8-12 godzinom treści - idealne dla filmów fabularnych, dokumentalnych lub kompleksowych materiałów edukacyjnych."
+        },
+        "speed": {
+          "question": "Jak szybko są tłumaczone francuskie napisy?",
+          "answer": "Most French subtitle files are processed within 12-32 seconds, as our system carefully analyzes French grammar complexities and cultural context for optimal translation quality."
+        },
+        "security": {
+          "question": "Czy mój francuski kontent jest bezpieczny i prywatny?",
+          "answer": "Tak, absolutnie. Twoje pliki są automatycznie usuwane po przetłumaczeniu, aby zapewnić pełną prywatność. Nigdy nie przechowujemy, nie udostępniamy ani nie używamy Twojej zawartości francuskiej w żadnym innym celu."
+        },
+        "regional": {
+          "question": "Czy mogę określić, który rodzaj francuskiego chcę użyć w moich tłumaczeniach?",
+          "answer": "Certainly. You can choose between Metropolitan French (France), Quebec French (Canada), or other regional variants to ensure your translations match your target audience's linguistic preferences."
+        },
+        "engine": {
+          "question": "Który silnik tłumaczeniowy najlepiej sprawdza się do tłumaczenia treści francuskich?",
+          "answer": "For formal, academic, or business French content, Google Translate provides excellent grammatical accuracy. For creative content with cultural references, literary expressions, or artistic nuances, OpenAI typically delivers more sophisticated and culturally sensitive results."
+        }
+      }
+    }
+  },
+  "pageTemplate": {
+    "breadcrumb": {
+      "home": "Narzędzie do tłumaczenia napisów",
+      "englishSubtitle": "Narzędzie do tworzenia napisów w języku angielskim",
+      "chineseSubtitle": "Chińskie narzędzie do tworzenia napisów"
+    },
+    "hero": {
+      "englishSubtitle": {
+        "title": "Tłumacz napisów angielskich",
+        "subtitle": "Profesjonalna usługa tłumaczenia napisów. Konwertuj napisy na język polski za pomocą tłumaczenia opartego na sztucznej inteligencji."
+      },
+      "chineseSubtitle": {
+        "title": "Chinese Subtitle Translator",
+        "subtitle": "Professional Chinese subtitle translation service. AI-powered translation to Chinese. Supports SRT format, free, fast, and accurate."
+      }
+    },
+    "benefits": {
+      "englishSubtitle": {
+        "title": "Dlaczego wybrać naszego tłumacza angielskiego?",
+        "subtitle": "Profesjonalna usługa tłumaczeń z zaawansowaną technologią sztucznej inteligencji",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "Dokładne tłumaczenie",
+            "description": "AI-powered translation ensures high accuracy and natural English expression."
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "Fast Processing",
+            "description": "Szybkie tłumaczenie napisów z śledzeniem postępu w czasie rzeczywistym."
+          },
+          "free": {
+            "icon": "🆓",
+            "title": "Całkowicie darmowe",
+            "description": "No registration required, unlimited usage for all users."
+          }
+        }
+      },
+      "chineseSubtitle": {
+        "title": "Dlaczego wybrać naszego tłumacza chińskiego?",
+        "subtitle": "Profesjonalna usługa tłumaczeń z zaawansowaną technologią sztucznej inteligencji",
+        "items": {
+          "accuracy": {
+            "icon": "🎯",
+            "title": "Dokładne tłumaczenie",
+            "description": "Tłumaczenie oparte na sztucznej inteligencji zapewnia wysoką dokładność i naturalne wyrażenie w języku chińskim."
+          },
+          "speed": {
+            "icon": "⚡",
+            "title": "Szybka obróbka",
+            "description": "Szybkie tłumaczenie napisów z śledzeniem postępu w czasie rzeczywistym."
+          },
+          "free": {
+            "icon": "🆓",
+            "title": "Całkowicie darmowe",
+            "description": "Nie wymagana rejestracja, nieograniczone korzystanie dla wszystkich użytkowników."
+          }
+        }
+      }
+    }
+  },
+  "nav": {
+    "home": "Dom",
+    "english_subtitle": "Tłumacz napisów angielskich",
+    "chinese_subtitle": "Tłumacz napisów chińskich"
+  },
+  "layout": {
+    "chinese": {
+      "title": "Chińskie narzędzie do tłumaczenia napisów",
+      "description": "Profesjonalna usługa tłumaczenia napisów z języka chińskiego przy użyciu sztucznej inteligencji.",
+      "sections": {
+        "hero": {
+          "title": "Sekcja bohatera",
+          "description": "Główny obszar wyświetlania na górze strony"
+        },
+        "translatorSection": {
+          "title": "Sekcja tłumacza",
+          "description": "Funkcjonalność przesyłania pliku z napisami oraz tłumaczenia"
+        },
+        "languageBenefits": {
+          "title": "Language Benefits",
+          "description": "Unikalne zalety tłumaczenia napisów chińskich"
+        },
+        "industryUseCases": {
+          "title": "Industry Applications",
+          "description": "Przypadki użycia w różnych branżach"
+        },
+        "languageStats": {
+          "title": "Statystyki językowe",
+          "description": "Dane statystyczne i wpływ języka chińskiego"
+        },
+        "languageLearning": {
+          "title": "Nauka języków",
+          "description": "Metody nauki chińskiego za pomocą napisów."
+        },
+        "seo": {
+          "title": "Informacje meta SEO",
+          "description": "Optymalizacja wyszukiwarek internetowych metadanych"
+        },
+        "cta": {
+          "title": "CTA Call to Action",
+          "description": "Obszar, który ma na celu przeprowadzenie użytkowników do podjęcia działań"
+        },
+        "footer": {
+          "title": "Footer",
+          "description": "Dolny obszar informacji na stronie"
+        }
+      },
+      "metadata": {
+        "languageFeatures": {
+          "family": "Sino-Tibetan",
+          "speakers": "1,1 mld",
+          "focus": "Most kulturowy",
+          "flag": "🇨🇳"
+        }
+      }
+    },
+    "english": {
+      "title": "English Subtitle Translation Tool",
+      "description": "Profesjonalna usługa tłumaczenia napisów z języka angielskiego przy użyciu sztucznej inteligencji.",
+      "sections": {
+        "hero": {
+          "title": "Obszar Bohatera",
+          "component": "Sekcja bohatera",
+          "order": 1,
+          "required": true,
+          "optional": false
+        },
+        "languageBenefits": {
+          "title": "Przewaga językowa",
+          "component": "Korzyści językowe",
+          "order": 2,
+          "required": true,
+          "optional": false
+        },
+        "seo": {
+          "title": "Meta informacje SEO",
+          "component": "SEOMeta",
+          "order": 12,
+          "required": true,
+          "optional": false
+        },
+        "regionalVariants": {
+          "title": "Dialekty regionalne",
+          "component": "SekcjaRegionalna",
+          "order": 13,
+          "required": false,
+          "optional": true
+        },
+        "cultureContext": {
+          "title": "Lokalizacja kulturowa",
+          "component": "SekcjaKultura",
+          "order": 14,
+          "required": false,
+          "optional": true
+        },
+        "techIntegration": {
+          "title": "AI技术",
+          "component": "Sekcja techniczna",
+          "order": 15,
+          "required": false,
+          "optional": true
+        },
+        "cta": {
+          "title": "CTA行动号召",
+          "component": "Sekcja CTA",
+          "order": 90,
+          "required": true,
+          "optional": false
+        },
+        "footer": {
+          "title": "Stopka",
+          "component": "Stopka",
+          "order": 99,
+          "required": true,
+          "optional": false
+        }
+      },
+      "metadata": {
+        "generatedAt": "2025-06-21T17:24:59.118Z",
+        "totalSections": 8,
+        "requiredSections": 5,
+        "optionalSections": 3,
+        "languageFeatures": {
+          "family": "Germański",
+          "speakers": "1,5 miliarda",
+          "focus": "biznes globalny",
+          "flag": "🇺🇸"
+        }
+      }
+    }
+  },
+  "newchinesesubtitle": {
+    "language": {
+      "code": "chiński",
+      "name": "Chiński",
+      "flag": "🇨🇳",
+      "family": "Sino-Tybetański",
+      "speakers": "1,1 mld",
+      "focus": "most kulturowy"
+    },
+    "generatedAt": "2025-06-21T19:12:46.524Z",
+    "version": "2.0-wzmocniony",
+    "generation": {
+      "model": "gpt-4",
+      "temperature": 0.8,
+      "qualityScore": 100,
+      "selectedOptionalBlocks": [
+        {
+          "name": "行业应用",
+          "key": "PrzypadkiUżyciaPrzemysłu",
+          "component": "SekcjaPrzemysłowa",
+          "weight": 8
+        },
+        {
+          "name": "Statystyka językowa",
+          "key": "Statystyki językowe",
+          "component": "SekcjaStatystyk",
+          "weight": 7
+        },
+        {
+          "name": "Nauka języków",
+          "key": "Nauka języka",
+          "component": "LearningSection",
+          "weight": 9
+        }
+      ]
+    },
+    "seo": {
+      "title": "Profesjonalny tłumacz napisów chińskich - dokładny i szybki",
+      "description": "Leverage our advanced subtitle translation tool designed to support over 1.1 billion Chinese speakers. Perfect for cultural exchange, business expansion, and video localization.",
+      "features": [
+        "Bardzo dokładne tłumaczenie napisów na język chiński",
+        "Szybka prędkość tłumaczenia dla plików SRT",
+        "Wspiera złożoną strukturę języka sinotybetańskiego.",
+        "Ideal for international trade, corporate expansion, and professional communication",
+        "Most przez spersonalizowane treści rozrywkowe i edukacyjne.",
+        "Zasilany sztuczną inteligencją dla zwiększonej dokładności i kompatybilności formatu."
+      ],
+      "keywords": [
+        "Tłumacz napisów chińskich",
+        "Tłumaczenie SRT",
+        "Lokalizacja wideo",
+        "Rozwój biznesu w Chinach",
+        "Wymiana kulturowa z Chinami",
+        "Edukacja w języku chińskim",
+        "Translate English to Chinese subtitles",
+        "Napisy do chińskich filmów",
+        "Online Chinese subtitle creator",
+        "Profesjonalne narzędzie do tłumaczenia napisów"
+      ]
+    },
+    "hero": {
+      "flag": "🇨🇳",
+      "title": "Opanuj chińskie napisy za pomocą naszego tłumacza napisów.",
+      "description": "Odblokuj świat 1,1 miliarda osób mówiących po chińsku. Nasze narzędzie do tłumaczenia napisów mostkuje przepaść kulturową, dostarczając precyzyjne napisy w języku chińskim, uwzględniające kontekst. Doskonałe do poszerzania zasięgu treści w świecie sino-tybetańskim.",
+      "keywords": [
+        "Tłumacz napisów",
+        "Tłumaczenie napisów na język chiński",
+        "Przetłumacz napisy na język chiński"
+      ]
+    },
+    "translatorSection": {
+      "title": "Tłumacz napisów dla języka chińskiego",
+      "description": "Korzystaj z naszego narzędzia do tłumaczenia napisów, aby szybko i dokładnie przetłumaczyć swoje angielskie napisy na chiński. Z obsługą ponad 1,1 miliarda osób mówiących po chińsku, nasze narzędzie pełni rolę mostu kulturowego dla Twojej treści.",
+      "uploadButton": "Prześlij plik z napisami",
+      "selectLanguagePrompt": "Select Chinese as your target language",
+      "translateButton": "Rozpocznij tłumaczenie",
+      "downloadButton": "Pobierz przetłumaczony plik",
+      "translatingStatus": "Tłumaczę... Proszę czekać",
+      "translationCompleteStatus": "Tłumaczenie zakończone! Gotowe do pobrania",
+      "errorMessage": "Błąd tłumaczenia! Proszę sprawdzić plik i spróbować ponownie."
+    },
+    "languageBenefits": {
+      "title": "Unlock the Enormous Potential with Chinese Subtitle Translation",
+      "subtitle": "Heralding a new era in connecting with the world's most spoken language",
+      "benefits": [
+        {
+          "icon": "🌐",
+          "title": "Wejdź na rynek wart miliard dolarów",
+          "description": "Korzystając z naszego narzędzia do tłumaczenia napisów na chiński, dotrzyj do ogromnej publiczności mówiącej po chińsku, rynku liczącego ponad 1,1 miliarda osób."
+        },
+        {
+          "icon": "🎞️",
+          "title": "Rozszerzona dystrybucja filmów",
+          "description": "Dotrzyj do ogromnej grupy entuzjastów filmowych z Chin, zapewniając dokładne i kulturowo adekwatne tłumaczenie napisów do swojego filmu."
+        },
+        {
+          "icon": "🏮",
+          "title": "Most kulturowy",
+          "description": "Użyj naszego narzędzia do tłumaczenia napisów, aby uchwycić niuanse rodziny języków sinotybetańskich i skutecznie przetłumaczyć bogate kulturowe niuanse chińskiego."
+        },
+        {
+          "icon": "📚",
+          "title": "Educational Value",
+          "description": "Odblokuj skarbnicę materiałów edukacyjnych dla osób mówiących po angielsku uczących się chińskiego, dzięki dokładnie przetłumaczonym napisom do chińskich filmów, seriali i dokumentów."
+        },
+        {
+          "icon": "📈",
+          "title": "Wzrost biznesu",
+          "description": "Dzięki naszemu narzędziu do tłumaczenia napisów, angielskie webinary biznesowe, prezentacje i kursy mogą dotrzeć do szerszej publiczności, stymulując globalną skalę i wzrost."
+        },
+        {
+          "icon": "💡",
+          "title": "Innowacyjna technologia sztucznej inteligencji",
+          "description": "Nasza technologia sztucznej inteligencji doskonale radzi sobie z złożonościami gramatyki i struktury zdania chińskiego, zapewniając dokładne tłumaczenia i pokonując wyzwania techniczne."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Zamknij przepaść z tłumaczeniem napisów na język chiński!",
+      "description": "Z ponad 1,1 miliarda mówiących w języku chińskim na całym świecie, siła naszego narzędzia do tłumaczenia rozszerza Twój zasięg poza bariery językowe. Przyjmij kulturę sino-tybetańską, komunikuj się skutecznie i nawiąż głębokie połączenie z chińską publicznością, korzystając z naszego tłumacza napisów. Nie przegap okazji, aby zaangażować się, wpływać i tworzyć globalny wpływ. Zacznij tłumaczyć swoje napisy na język chiński teraz - ponieważ każde słowo ma znaczenie na arenie globalnej!",
+      "button": "Rozpocznij teraz tłumaczenie na język chiński."
+    },
+    "footer": {
+      "brandName": "SubtitleMaster - Opanowywanie tłumaczeń napisów",
+      "description": "SubtitleMaster to narzędzie, na które możesz polegać do precyzyjnych i wyrafinowanych tłumaczeń napisów w języku chińskim. Nasza technologia oparta na sztucznej inteligencji rozumie złożoności języka chińskiego, przełamując różnice kulturowe i umożliwiając dostęp do treści dla 1,1 miliarda chińskojęzycznych użytkowników na całym świecie.",
+      "languages": [
+        "Mandarynka",
+        "Cantonese",
+        "Hokkien",
+        "Szanghajczyk"
+      ],
+      "features": [
+        "Optymalizowane dla języków sinotybetańskich, zapewniające dokładne tłumaczenie chińskich napisów.",
+        "Zaawansowana sztuczna inteligencja uczy się i ewoluuje wraz z każdym tłumaczeniem, przezwyciężając niuanse językowe i kolokwializmy.",
+        "Funkcja mostu kulturowego, która tłumaczy nie tylko słowa, ale także istotę treści, zachowując integralność odniesień kulturowych."
+      ],
+      "support": [
+        "Zespół obsługi klienta dostępny 24 godziny na dobę, 7 dni w tygodniu, biegle posługujący się językiem angielskim i chińskim.",
+        "Obszerny dział FAQ, który odpowiada na wszystkie Państwa pytania dotyczące tłumaczeń chińskich.",
+        "Forum społecznościowy dla użytkowników do dyskusji na temat tłumaczenia chińskich napisów i dzielenia się wskazówkami"
+      ],
+      "copyright": "© 2022 SubtitleMaster. All rights reserved."
+    },
+    "industryUseCases": {
+      "title": "Odblokowanie chińskich rynków dzięki tłumaczeniom napisów",
+      "subtitle": "Odkryj unikalne możliwości na chińskojęzycznych rynkach dzięki naszemu wysokiej jakości narzędziu do tłumaczenia napisów.",
+      "cases": [
+        {
+          "icon": "🎬",
+          "title": "Rozrywka i media",
+          "description": "Z ponad 1,1 miliarda mówiących w języku chińskim na całym świecie, tłumaczenie napisów filmowych, programów telewizyjnych i treści wideo online na język chiński może pomóc Ci dotrzeć do tej ogromnej publiczności. Nasze narzędzie do tłumaczenia napisów zapewnia, że Twoja treść jest kulturowo poprawna i odpowiednia kontekstowo."
+        },
+        {
+          "icon": "📈",
+          "title": "Rozwój biznesu",
+          "description": "Lokalizacja treści wideo w języku chińskim może otworzyć drogę do rozwoju biznesu w regionie sino-tybetańskim. Nasz tłumacz napisów pomaga przełamywać bariery językowe, umożliwiając skuteczne nawiązanie kontaktu i komunikację z potencjalnymi klientami."
+        },
+        {
+          "icon": "📚",
+          "title": "Edukacja i szkolenie",
+          "description": "Platformy e-learningowe mogą ogromnie skorzystać z chińskich napisów tłumaczonych, umożliwiając dostęp do treści edukacyjnych dla milionów chińskich uczniów. Nasze narzędzie zapewnia dokładne tłumaczenie, pomagając skutecznie rozpowszechniać wiedzę."
+        },
+        {
+          "icon": "🌉",
+          "title": "Most kulturowy",
+          "description": "Język chiński pełni rolę mostu kulturowego, dając wgląd w bogate tradycje i dziedzictwo. Tłumaczenie napisów na chiński za pomocą naszego narzędzia może umożliwić wymianę kulturową, wzmacniając globalne zrozumienie i współpracę."
+        },
+        {
+          "icon": "🚀",
+          "title": "Nadchodzące możliwości",
+          "description": "Dynamicznie rozwijający się cyfrowy krajobraz Chin oferuje liczne niewykorzystane możliwości. Tłumaczenie napisów na język chiński może pomóc Ci wykorzystać te nowe trendy i możliwości, zapewniając, że pozostaniesz krok przed konkurencyjnym rynkiem."
+        }
+      ]
+    },
+    "languageStats": {
+      "title": "Chinese Subtitle Translation: Bridging Cultures Through Language",
+      "subtitle": "Uwalniamy moc naszego tłumacza napisów, aby nawiązać kontakt z ponad 1,1 miliarda mówców chińskich na całym świecie.",
+      "stats": [
+        {
+          "icon": "🌍",
+          "number": "1,1 mld",
+          "title": "Native Speakers",
+          "description": "Chiński jest językiem mówionym przez ponad 1,1 miliarda ludzi na całym świecie, co czyni go jednym z najbardziej rozpowszechnionych języków."
+        },
+        {
+          "icon": "💻",
+          "number": "20%+ -> 20%+",
+          "title": "Zawartość internetowa",
+          "description": "Ponad 20% cyfrowych treści na świecie jest w języku chińskim, odzwierciedlając rosnący wpływ i obecność tego języka w świecie cyfrowym."
+        },
+        {
+          "icon": "🇨🇳",
+          "number": "2.",
+          "title": "Potęga gospodarcza",
+          "description": "Chiny są drugą co do wielkości gospodarką na świecie, podkreślając ogromną wartość gospodarczą i potencjał tego języka."
+        },
+        {
+          "icon": "🌉",
+          "number": "1szy",
+          "title": "Most kulturowy",
+          "description": "Chiński pełni rolę mostu do bogatej i starożytnej kultury, której wpływ jest odczuwalny w różnych formach mediów i sztuki na całym świecie."
+        },
+        {
+          "icon": "🤖",
+          "number": "Zaawansowany",
+          "title": "Translation Technology",
+          "description": "Our advanced AI technology has refined the art of Chinese subtitle translation, ensuring a seamless and enriching user experience."
+        }
+      ]
+    },
+    "languageLearning": {
+      "title": "Unlock new horizons with Mandarin Chinese",
+      "subtitle": "Wykorzystaj moc naszego narzędzia do tłumaczenia napisów, aby zapewnić sobie wciągające doświadczenie nauki języka chińskiego.",
+      "methods": [
+        {
+          "icon": "📚",
+          "title": "Twój Innowacyjny Towarzysz Nauki",
+          "description": "With over 1.1 billion Chinese speakers globally, learning Chinese can be a daunting task. However, our subtitle translator makes this process more effortless than ever. Translate subtitles from Chinese movies, series, and documentaries into English, enhancing your vocabulary and comprehension skills simultaneously."
+        },
+        {
+          "icon": "🌍",
+          "title": "Cultural Immersion through Chinese Content",
+          "description": "Chińska kultura, ze swoją bogatą historią i tradycjami, oferuje unikalną możliwość nauki. Korzystając z naszego narzędzia do tłumaczenia napisów, możesz zrozumieć chińskie programy telewizyjne, filmy i muzykę, co pozwoli ci poznać autentyczny smak chińskiej kultury. To nie tylko o języku, chodzi o zrozumienie niuansów i zwyczajów, które sprawiają, że chiński staje się mostem kulturowym."
+        },
+        {
+          "icon": "💼",
+          "title": "Profesjonalne możliwości czekają na osoby posługujące się językiem chińskim.",
+          "description": "Biegła znajomość języka chińskiego umieszcza cię w korzystnej pozycji na globalnej mapie biznesu. Dzięki naszemu narzędziu do tłumaczenia napisów możesz nauczyć się terminologii branżowej i zrozumieć chińskie etykiety biznesowe, co czyni cię cennym aktywem w każdej międzynarodowej korporacji."
+        },
+        {
+          "icon": "👥",
+          "title": "Dołącz do globalnej społeczności uczących się języka chińskiego.",
+          "description": "Nauka chińskiego jest bardziej przyjemna, gdy nie robisz tego sam! Korzystając z naszego tłumaczenia napisów, możesz nawiązać kontakt z globalną społecznością uczących się, uczestniczyć w wymianie językowej i poprawić swoją płynność. Pozwól naszemu narzędziu być twoim mostem do nowego świata przyjaźni i interakcji."
+        }
+      ]
+    }
+  }
+}

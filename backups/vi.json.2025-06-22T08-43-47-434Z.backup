@@ -1,0 +1,42 @@
+{
+  "upload_file": "Tải lên tệp",
+  "select_language": "Chọn ngôn ngữ đích",
+  "translate": "Dịch",
+  "translation_services": {
+    "google": "Google Cloud Translation",
+    "openai": "OpenAI GPT Translation"
+  },
+  "languages": {
+    "en": "Tiếng Anh",
+    "zh": "Tiếng Trung",
+    "ja": "Tiếng Nhật",
+    "fr": "Tiếng Pháp",
+    "de": "Tiếng Đức",
+    "es": "Tiếng Tây Ban Nha",
+    "ru": "Tiếng Nga",
+    "it": "Tiếng Ý",
+    "pt": "Tiếng Bồ Đào Nha",
+    "ar": "Tiếng Ả Rập",
+    "hi": "Tiếng Hindi",
+    "ko": "Tiếng Hàn",
+    "th": "Tiếng Thái",
+    "vi": "Tiếng Việt",
+    "tr": "Tiếng Thổ Nhĩ Kỳ",
+    "pl": "Tiếng Ba Lan",
+    "nl": "Tiếng Hà Lan",
+    "sv": "Tiếng Thụy Điển",
+    "da": "Tiếng Đan Mạch",
+    "no": "Tiếng Na Uy",
+    "fi": "Tiếng Phần Lan",
+    "cs": "Tiếng Séc",
+    "hu": "Tiếng Hungary",
+    "ro": "Tiếng Romania",
+    "bg": "Tiếng Bulgaria",
+    "hr": "Tiếng Croatia",
+    "sk": "Tiếng Slovakia",
+    "sl": "Tiếng Slovenia",
+    "et": "Tiếng Estonia",
+    "lv": "Tiếng Latvia",
+    "lt": "Tiếng Lithuania"
+  }
+} 
