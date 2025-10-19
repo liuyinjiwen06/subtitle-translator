@@ -1,0 +1,100 @@
+{
+  "common": {
+    "title": "字幕翻译器",
+    "description": "使用人工智能将SRT字幕翻译成50多种语言",
+    "upload": "上传 SRT 文件",
+    "translate": "开始翻译",
+    "download": "下载",
+    "loading": "处理中...",
+    "cancel": "取消",
+    "retry": "重试",
+    "close": "关闭"
+  },
+  "upload": {
+    "title": "上传您的字幕文件",
+    "dragDrop": "请将您的SRT文件拖放至此处",
+    "or": "或",
+    "browse": "浏览文件",
+    "maxSize": "最大文件大小：5MB",
+    "formatSupport": "仅支持 .srt 格式",
+    "fileSelected": "已选择文件：{filename}",
+    "remove": "删除文件"
+  },
+  "language": {
+    "source": "源语言",
+    "target": "目标语言",
+    "selectPlaceholder": "选择语言...",
+    "searchPlaceholder": "搜索语言...",
+    "autoDetect": "自动检测"
+  },
+  "output": {
+    "title": "选择输出格式",
+    "monoSubtitle": "目标语言",
+    "monoDescription": "仅翻译字幕",
+    "bilingualSubtitle": "双语字幕",
+    "bilingualDescription": "原文 + 译文（逐行显示）",
+    "both": "两种格式",
+    "bothDescription": "获取两个单独的文件"
+  },
+  "progress": {
+    "parsing": "解析 SRT 文件...",
+    "translating": "正在翻译字幕 {current} / {total}...",
+    "generating": "生成字幕文件中...",
+    "complete": "翻译完成！",
+    "estimatedTime": "剩余时间估计：{time}"
+  },
+  "errors": {
+    "invalidFile": "SRT文件格式无效。请检查您的文件。",
+    "fileTooLarge": "文件大小超过5MB。请上传较小的文件。",
+    "apiError": "翻译服务错误。请重试。",
+    "rateLimitHourly": "您已达到每小时限制（10次翻译）。请在{minutes}分钟后重试。",
+    "rateLimitDaily": "您已达到每日限制（50次翻译）。请明天再来。",
+    "networkError": "网络连接错误。请检查您的互联网。",
+    "noFileSelected": "请先选择一个文件。",
+    "sameLanguage": "源语言和目标语言不能相同。",
+    "unknown": "发生了意外错误。请重试。"
+  },
+  "success": {
+    "translationComplete": "您的字幕已成功翻译！",
+    "downloadReady": "您的文件已准备好下载。"
+  },
+  "footer": {
+    "madeWith": "制作完成",
+    "by": "通过",
+    "poweredBy": "由OpenAI GPT-3.5-turbo技术驱动",
+    "privacyPolicy": "隐私政策",
+    "terms": "服务条款",
+    "contact": "联系我们"
+  },
+  "languagePair": {
+    "title": "从{source}翻译为{target}",
+    "description": "使用先进的人工智能技术，快速准确地将字幕从{source}翻译到{target}。",
+    "startTranslating": "立即开始翻译",
+    "features": {
+      "title": "为什么选择我们的翻译服务？",
+      "accurate": "准确翻译",
+      "accurateDesc": "具备上下文感知的AI驱动翻译",
+      "fast": "闪电般快速",
+      "fastDesc": "分钟内处理数百个字幕",
+      "free": "免费使用",
+      "freeDesc": "每天最多可免费翻译50次",
+      "privacy": "隐私至上",
+      "privacyDesc": "您的文件在本地处理，永不存储"
+    },
+    "howItWorks": {
+      "title": "工作原理",
+      "step1": "上传您的SRT文件",
+      "step2": "选择语言和输出格式",
+      "step3": "点击翻译并等待",
+      "step4": "下载您的翻译字幕"
+    }
+  },
+  "_meta": {
+    "lastUpdated": "2025-10-19T13:50:03.227Z",
+    "version": "1.0.1",
+    "language": "zh",
+    "translatedBy": "gpt-3.5-turbo",
+    "reviewedBy": null,
+    "notes": ""
+  }
+}
