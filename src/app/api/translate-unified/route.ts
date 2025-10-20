@@ -742,7 +742,7 @@ export async function POST(request: NextRequest) {
             const batchResults = await Promise.all(batchPromises);
             
             // 分类结果
-            batchResults.forEach(result => {
+            batchResults.forEach((result: any) => {
               if (result.type === 'success') {
                 groupResults.push(result.data);
                 allResults.push(result.data);

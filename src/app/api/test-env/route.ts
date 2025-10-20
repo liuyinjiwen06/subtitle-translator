@@ -27,11 +27,19 @@ export async function GET(req: NextRequest) {
     testServices: {
       google: {
         available: !!process.env.GOOGLE_TRANSLATE_API_KEY,
-        testUrl: "https://translation.googleapis.com"
+        testUrl: "https://translation.googleapis.com",
+        reachable: undefined as boolean | undefined,
+        status: undefined as number | undefined,
+        statusText: undefined as string | undefined,
+        error: undefined as string | undefined
       },
       openai: {
         available: !!process.env.OPENAI_API_KEY,
-        testUrl: "https://api.openai.com"
+        testUrl: "https://api.openai.com",
+        reachable: undefined as boolean | undefined,
+        status: undefined as number | undefined,
+        statusText: undefined as string | undefined,
+        error: undefined as string | undefined
       }
     }
   };

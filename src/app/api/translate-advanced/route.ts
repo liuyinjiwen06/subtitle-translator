@@ -215,14 +215,14 @@ export async function POST(request: NextRequest) {
         const failedTranslations: any[] = [];
         
         // 找出需要翻译的文本行
-        const textLines = lines.map((line, index) => ({
+        const textLines = lines.map((line: string, index: number) => ({
           index,
           text: line,
           needsTranslation: line.trim() !== "" && 
                            !/^\d+$/.test(line.trim()) && 
                            !/^\d{2}:\d{2}:\d{2}/.test(line) &&
                            (!skipTranslated || !isAlreadyTranslated(line, targetLang))
-        })).filter(item => item.needsTranslation);
+        })).filter((item: any) => item.needsTranslation);
 
         // 计算批次
         if (batchMode === 'auto' && textLines.length > 100) {
@@ -250,7 +250,7 @@ export async function POST(request: NextRequest) {
         // 翻译处理
         for (let i = 0; i < lines.length; i++) {
           const line = lines[i];
-          const textLineInfo = textLines.find(t => t.index === i);
+          const textLineInfo = textLines.find((t: any) => t.index === i);
           
           if (!textLineInfo) {
             // 不需要翻译的行（时间戳、序号、空行或已翻译）

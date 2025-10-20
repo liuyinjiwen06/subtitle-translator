@@ -14,7 +14,7 @@ export async function GET(req: NextRequest) {
     });
   }
 
-  const results = {
+  const results: any = {
     timestamp: new Date().toISOString(),
     runtime: runtime,
     apiKeyInfo: {

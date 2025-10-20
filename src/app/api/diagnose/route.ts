@@ -23,7 +23,7 @@ export async function GET(request: NextRequest) {
       googleApiLatency: 0,
       openaiApiLatency: 0,
     },
-    errors: []
+    errors: [] as string[]
   };
 
   // 测试 Google API 延迟

@@ -40,7 +40,7 @@ export interface TranslationState {
   error: string | null;
 
   // Actions
-  setFile: (file: File) => void;
+  setFile: (file: File | null) => void;
   setOriginalEntries: (entries: SubtitleEntry[]) => void;
   setSourceLanguage: (lang: TranslationLanguage) => void;
   setTargetLanguage: (lang: TranslationLanguage) => void;

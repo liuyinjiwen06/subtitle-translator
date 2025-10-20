@@ -78,8 +78,13 @@ export default async function FrenchSubtitlePage({ params: { locale } }: FrenchS
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center">
             <div className="w-full max-w-4xl">
-              <SubtitleTranslator 
-                pageConfig={{}}
+              <SubtitleTranslator
+                pageConfig={{
+                  pageKey: 'frenchSubtitle',
+                  targetLanguage: 'fr',
+                  targetLanguageKey: 'languages.fr',
+                  path: '/french-subtitle'
+                }}
                 translations={translations}
               />
             </div>

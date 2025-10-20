@@ -78,8 +78,13 @@ export default async function SpanishSubtitlePage({ params: { locale } }: Spanis
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center">
             <div className="w-full max-w-4xl">
-              <SubtitleTranslator 
-                pageConfig={{}}
+              <SubtitleTranslator
+                pageConfig={{
+                  pageKey: 'spanishSubtitle',
+                  targetLanguage: 'es',
+                  targetLanguageKey: 'languages.es',
+                  path: '/spanish-subtitle'
+                }}
                 translations={translations}
               />
             </div>

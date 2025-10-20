@@ -77,8 +77,13 @@ export default async function EnglishSubtitlePage({ params: { locale } }: Englis
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center">
             <div className="w-full max-w-4xl">
-              <SubtitleTranslator 
-                pageConfig={{}}
+              <SubtitleTranslator
+                pageConfig={{
+                  pageKey: 'englishSubtitle',
+                  targetLanguage: 'en',
+                  targetLanguageKey: 'languages.en',
+                  path: '/english-subtitle'
+                }}
                 translations={translations}
               />
             </div>

@@ -26,8 +26,7 @@ const languageNames: { [key: string]: string } = {
   'it': 'Italian'
 };
 
-// 简单的语言检测函数  
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// 简单的语言检测函数
 function detectLanguage(text: string): string {
   // 检测中文字符
   if (/[\u4e00-\u9fff]/.test(text)) return 'zh';
