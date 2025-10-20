@@ -3,6 +3,9 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { isValidUILocale } from '@/config/ui-locales';
 
+// 强制动态渲染以支持 next-intl
+export const dynamic = 'force-dynamic';
+
 export function generateStaticParams() {
   return [
     { locale: 'en' },
