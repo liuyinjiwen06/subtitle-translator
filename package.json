@@ -5,10 +5,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "dev:workers": "wrangler dev workers/translator.ts",
+    "dev:workers": "wrangler dev workers/translator.ts --config wrangler-worker.toml",
     "dev:all": "concurrently \"npm run dev\" \"npm run dev:workers\"",
     "build": "next build",
-    "build:workers": "wrangler deploy workers/translator.ts",
+    "build:workers": "wrangler deploy --config wrangler-worker.toml",
     "pages:build": "next build",
     "start": "next start",
     "lint": "next lint",

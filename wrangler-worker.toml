@@ -1,0 +1,14 @@
+name = "subtitle-translator-api"
+main = "workers/translator.ts"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# KV 命名空间（用于速率限制）
+[[kv_namespaces]]
+binding = "RATE_LIMIT_KV"
+id = "03d9c12a3a6d46b8a2716d6a4184c4e4"
+
+# 环境变量（本地开发使用 .dev.vars 文件）
+# [vars]
+# RATE_LIMIT_HOURLY = "10"
+# RATE_LIMIT_DAILY = "50"
