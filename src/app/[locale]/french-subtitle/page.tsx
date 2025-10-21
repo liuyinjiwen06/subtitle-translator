@@ -7,6 +7,8 @@ import SubtitleTranslator from '@/components/SubtitleTranslator';
 import UnifiedFooter from '@/components/UnifiedFooter';
 import Link from 'next/link';
 
+export const runtime = 'edge';
+
 interface FrenchSubtitlePageProps {
   params: Promise<{
     locale: Locale;
