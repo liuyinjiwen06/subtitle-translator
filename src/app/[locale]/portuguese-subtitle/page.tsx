@@ -8,12 +8,13 @@ import UnifiedFooter from '@/components/UnifiedFooter';
 import Link from 'next/link';
 
 interface PortugueseSubtitlePageProps {
-  params: {
+  params: Promise<{
     locale: Locale;
-  };
+  }>;
 }
 
-export async function generateMetadata({ params: { locale } }: PortugueseSubtitlePageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: PortugueseSubtitlePageProps): Promise<Metadata> {
+  const { locale } = await params;
   const { t, translations } = await getServerTranslations(locale);
   const ps = translations.portugueseSubtitle || {};
   
@@ -33,7 +34,8 @@ export async function generateMetadata({ params: { locale } }: PortugueseSubtitl
   };
 }
 
-export default async function PortugueseSubtitlePage({ params: { locale } }: PortugueseSubtitlePageProps) {
+export default async function PortugueseSubtitlePage({ params }: PortugueseSubtitlePageProps) {
+  const { locale } = await params;
   const { t, translations } = await getServerTranslations(locale);
 
   const ps = translations.portugueseSubtitle || {};

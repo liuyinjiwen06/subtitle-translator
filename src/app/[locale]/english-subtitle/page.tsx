@@ -8,12 +8,13 @@ import UnifiedFooter from '@/components/UnifiedFooter';
 import Link from 'next/link';
 
 interface EnglishSubtitlePageProps {
-  params: {
+  params: Promise<{
     locale: Locale;
-  };
+  }>;
 }
 
-export async function generateMetadata({ params: { locale } }: EnglishSubtitlePageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: EnglishSubtitlePageProps): Promise<Metadata> {
+  const { locale } = await params;
   const { t } = await getServerTranslations(locale);
   
   return {
@@ -32,7 +33,8 @@ export async function generateMetadata({ params: { locale } }: EnglishSubtitlePa
   };
 }
 
-export default async function EnglishSubtitlePage({ params: { locale } }: EnglishSubtitlePageProps) {
+export default async function EnglishSubtitlePage({ params }: EnglishSubtitlePageProps) {
+  const { locale } = await params;
   const { t, translations } = await getServerTranslations(locale);
 
   const es = translations.englishSubtitle || {};

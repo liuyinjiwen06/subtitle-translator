@@ -8,12 +8,13 @@ import UnifiedFooter from '@/components/UnifiedFooter';
 import Link from 'next/link';
 
 interface ChineseSubtitlePageProps {
-  params: {
+  params: Promise<{
     locale: Locale;
-  };
+  }>;
 }
 
-export async function generateMetadata({ params: { locale } }: ChineseSubtitlePageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: ChineseSubtitlePageProps): Promise<Metadata> {
+  const { locale } = await params;
   const { t } = await getServerTranslations(locale);
   
   return {
@@ -32,7 +33,8 @@ export async function generateMetadata({ params: { locale } }: ChineseSubtitlePa
   };
 }
 
-export default async function ChineseSubtitlePage({ params: { locale } }: ChineseSubtitlePageProps) {
+export default async function ChineseSubtitlePage({ params }: ChineseSubtitlePageProps) {
+  const { locale } = await params;
   const { t, translations } = await getServerTranslations(locale);
 
   const cs = translations.chineseSubtitle || {};
