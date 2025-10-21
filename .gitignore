@@ -27,8 +27,9 @@ yarn-error.log*
 .env*.local
 .dev.vars
 
-# Vercel
+# Vercel & Cloudflare Pages build output
 .vercel
+.vercel/
 
 # TypeScript
 *.tsbuildinfo

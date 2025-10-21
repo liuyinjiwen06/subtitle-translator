@@ -39,9 +39,25 @@
 **问题**：Cloudflare Pages 使用错误的构建命令或输出目录。
 
 **解决方案**：
-- 构建命令：`npm run build`
+- 构建命令：`npm run pages:build` (会自动删除缓存文件)
 - 输出目录：`.next`
 - 框架预设：Next.js
+
+### 6. 文件大小超限 (25 MiB)  ⚠️ **重要**
+
+**问题**：Next.js 构建时会生成 webpack 缓存文件 `.next/cache/webpack/server-production/0.pack`，可能超过 46 MiB，而 Cloudflare Pages 单文件限制为 25 MiB。
+
+**错误信息**：
+```
+✘ Error: Pages only supports files up to 25 MiB in size
+cache/webpack/server-production/0.pack is 46.1 MiB
+```
+
+**解决方案**：
+项目已配置自动删除缓存：
+- `package.json` 中的 `pages:build` 脚本会自动执行 `rm -rf .next/cache`
+- `next.config.ts` 已禁用 webpack 缓存 (`config.cache = false`)
+- 使用构建命令：`npm run pages:build` (不要使用 `npm run build`)
 
 ---
 
@@ -119,7 +135,7 @@ git push origin main
 3. 选择你的 GitHub 仓库
 4. 配置构建设置：
    - **框架预设**：Next.js
-   - **构建命令**：`npm run build`
+   - **构建命令**：`npm run pages:build` ⚠️ (必须使用此命令，不要使用 `npm run build`)
    - **构建输出目录**：`.next`
    - **Root directory**：`/`（保持默认）
 
