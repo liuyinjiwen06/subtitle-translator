@@ -4,3 +4,6 @@ compatibility_date = "2024-01-01"
 # Cloudflare Pages 配置
 # 使用 Next.js 标准构建输出,已禁用 webpack cache 避免超大文件
 pages_build_output_dir = ".next"
+
+[build]
+command = "npm run pages:build"
