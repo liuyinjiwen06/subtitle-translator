@@ -1,5 +1,6 @@
 name = "subtitle-translator"
 compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
 
 # Cloudflare Pages 配置
 # 使用 @cloudflare/next-on-pages 构建输出
