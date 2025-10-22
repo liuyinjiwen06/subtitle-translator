@@ -21,8 +21,15 @@ export default async function LocaleLayout({
     notFound();
   }
 
-  // 获取翻译消息
-  const messages = await getMessages();
+  // 获取翻译消息，使用 try-catch 处理 Edge Runtime 兼容性
+  let messages;
+  try {
+    messages = await getMessages({ locale });
+  } catch (error) {
+    console.error('Failed to load messages for locale:', locale, error);
+    // 回退到空消息对象
+    messages = {};
+  }
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
