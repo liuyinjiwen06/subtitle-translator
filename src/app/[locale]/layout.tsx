@@ -5,31 +5,7 @@ import { isValidUILocale } from '@/config/ui-locales';
 
 // 强制动态渲染以支持 next-intl
 export const dynamic = 'force-dynamic';
-
-export function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'zh' },
-    { locale: 'es' },
-    { locale: 'fr' },
-    { locale: 'de' },
-    { locale: 'ja' },
-    { locale: 'ko' },
-    { locale: 'pt' },
-    { locale: 'ru' },
-    { locale: 'ar' },
-    { locale: 'hi' },
-    { locale: 'it' },
-    { locale: 'tr' },
-    { locale: 'vi' },
-    { locale: 'th' },
-    { locale: 'pl' },
-    { locale: 'nl' },
-    { locale: 'id' },
-    { locale: 'uk' },
-    { locale: 'sv' },
-  ];
-}
+export const runtime = 'edge';
 
 export default async function LocaleLayout({
   children,

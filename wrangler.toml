@@ -2,7 +2,7 @@ name = "subtitle-translator"
 compatibility_date = "2024-01-01"
 
 # Cloudflare Pages 配置
-# 使用 Next.js 标准构建输出,已禁用 webpack cache 避免超大文件
+# 使用 @cloudflare/next-on-pages 构建输出
 # 注意: Pages 项目不支持在 wrangler.toml 中配置 build 命令
 # 请在 Cloudflare Dashboard 的 Build settings 中设置 "npm run pages:build"
-pages_build_output_dir = ".next"
+pages_build_output_dir = ".vercel/output/static"
