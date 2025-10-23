@@ -15,7 +15,7 @@ export async function GET(req: NextRequest) {
 
   const results: any = {
     timestamp: new Date().toISOString(),
-    runtime: runtime,
+    runtime: 'nodejs',
     apiKeyInfo: {
       length: apiKey.length,
       prefix: apiKey.substring(0, 10) + '...',
