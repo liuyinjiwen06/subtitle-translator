@@ -17,10 +17,10 @@ async function loadTranslations(locale: Locale) {
   }
 
   try {
-    console.log(`📂 Attempting to import: ./locales/${locale}.json`);
+    console.log(`📂 Attempting to import: ./locales/${locale}`);
 
     // 从 src/lib/server-i18n.ts 导入 src/lib/locales/
-    const translations = await import(`./locales/${locale}.json`);
+    const translations = await import(`./locales/${locale}`);
     
     // 多层安全检查
     if (!translations) {
@@ -59,7 +59,7 @@ async function loadTranslations(locale: Locale) {
     // 回退到英语
     if (locale !== 'en') {
       console.warn(`🔄 Falling back to English translations for failed locale: ${locale}`);
-      return loadTranslations('en');
+      return loadTranslations('en' as Locale);
     }
     console.error(`💥 Critical: Even English translations failed to load!`);
     console.warn(`🆘 Using hardcoded fallback translations for ${locale}`);

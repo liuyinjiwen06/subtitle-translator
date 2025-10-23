@@ -9,7 +9,7 @@
     "dev:all": "concurrently \"npm run dev\" \"npm run dev:workers\"",
     "build": "next build",
     "build:workers": "wrangler deploy --config wrangler-worker.toml",
-    "pages:build": "npx @cloudflare/next-on-pages",
+    "pages:build": "node scripts/convert-locales-to-ts.js && npx @cloudflare/next-on-pages",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
