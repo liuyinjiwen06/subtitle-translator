@@ -18,21 +18,9 @@ async function loadTranslations(locale: Locale) {
 
   try {
     console.log(`📂 Attempting to import: ./locales/${locale}.json`);
-    
-    // 尝试多种导入方式
-    let translations;
-    try {
-      translations = await import(`./locales/${locale}.json`);
-    } catch (importError) {
-      console.warn(`⚠️ Direct import failed for ${locale}, trying alternative paths`);
-      // 尝试其他路径
-      try {
-        translations = await import(`../lib/locales/${locale}.json`);
-      } catch (altError) {
-        console.error(`❌ All import attempts failed for ${locale}`);
-        throw new Error(`Failed to import ${locale} translations: ${altError}`);
-      }
-    }
+
+    // 从 src/lib/server-i18n.ts 导入 src/lib/locales/
+    const translations = await import(`./locales/${locale}.json`);
     
     // 多层安全检查
     if (!translations) {
