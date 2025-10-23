@@ -358,7 +358,7 @@ export async function POST(req: NextRequest) {
         // 详细的环境检测和日志记录
         console.log('[环境检测] 开始检查环境配置...');
         console.log('[环境检测] Cloudflare环境:', isCloudflare);
-        console.log('[环境检测] 运行时:', runtime);
+        console.log('[环境检测] 运行时:', 'nodejs');
         console.log('[环境检测] Node版本:', process.version || 'unknown');
         console.log('[环境检测] 环境变量状态:', {
           GOOGLE_TRANSLATE_API_KEY: {
