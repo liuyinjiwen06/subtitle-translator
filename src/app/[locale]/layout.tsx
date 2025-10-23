@@ -1,7 +1,7 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { isValidUILocale } from '@/config/ui-locales';
+import { isValidUILocale, type UILocale } from '@/config/ui-locales';
+import { getMessagesForLocale } from '@/lib/get-messages';
 
 // 强制动态渲染以支持 next-intl
 export const dynamic = 'force-dynamic';
@@ -21,15 +21,8 @@ export default async function LocaleLayout({
     notFound();
   }
 
-  // 获取翻译消息，使用 try-catch 处理 Edge Runtime 兼容性
-  let messages;
-  try {
-    messages = await getMessages({ locale });
-  } catch (error) {
-    console.error('Failed to load messages for locale:', locale, error);
-    // 回退到空消息对象
-    messages = {};
-  }
+  // 获取翻译消息 - Edge Runtime 兼容的方式
+  const messages = await getMessagesForLocale(locale as UILocale);
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
