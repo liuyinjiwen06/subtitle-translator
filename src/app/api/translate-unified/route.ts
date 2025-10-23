@@ -563,7 +563,7 @@ export async function POST(request: NextRequest) {
           type: 'env_status',
           googleConfigured: !!process.env.GOOGLE_TRANSLATE_API_KEY,
           openaiConfigured: !!process.env.OPENAI_API_KEY,
-          runtime: 'edge'
+          runtime: 'nodejs'
         })}\n\n`));
 
         // 检查服务可用性

@@ -7,7 +7,7 @@ export async function GET(request: NextRequest) {
   const results = {
     timestamp: new Date().toISOString(),
     environment: {
-      runtime: "edge",
+      runtime: "nodejs",
       region: request.headers.get('cf-ray') ? 'Cloudflare' : 'Unknown',
       cfRay: request.headers.get('cf-ray') || 'N/A',
       country: request.headers.get('cf-ipcountry') || 'Unknown',

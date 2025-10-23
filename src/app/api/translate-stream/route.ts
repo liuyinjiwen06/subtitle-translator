@@ -378,7 +378,7 @@ export async function POST(req: NextRequest) {
           type: 'env_status',
           googleConfigured: !!process.env.GOOGLE_TRANSLATE_API_KEY,
           openaiConfigured: !!process.env.OPENAI_API_KEY,
-          runtime: runtime,
+          runtime: "nodejs",
           timestamp: new Date().toISOString()
         })}\n\n`));
 

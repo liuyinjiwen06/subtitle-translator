@@ -6,7 +6,7 @@ export async function GET() {
     const result = {
       timestamp: new Date().toISOString(),
       environment: {
-        runtime: "edge",
+        runtime: "nodejs",
         nodeVersion: process.version || 'unknown',
       },
       apiKeys: {
