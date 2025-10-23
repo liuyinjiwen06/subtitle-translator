@@ -13,13 +13,13 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
   try {
     return {
-      messages: (await import(`../locales/${locale}.json`)).default,
+      messages: (await import(`./lib/locales/${locale}.json`)).default,
     };
   } catch (error) {
     console.error('Failed to load locale messages:', locale, error);
     // 回退到英语
     return {
-      messages: (await import(`../locales/en.json`)).default,
+      messages: (await import(`./lib/locales/en.json`)).default,
     };
   }
 });
