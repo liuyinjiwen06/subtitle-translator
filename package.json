@@ -9,7 +9,7 @@
     "dev:all": "concurrently \"npm run dev\" \"npm run dev:workers\"",
     "build": "next build",
     "build:workers": "wrangler deploy --config wrangler-worker.toml",
-    "pages:build": "node scripts/convert-locales-to-ts.js && npx @cloudflare/next-on-pages",
+    "pages:build": "node scripts/convert-locales-to-ts.js && npx @opennextjs/cloudflare build",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
@@ -45,8 +45,8 @@
     "zustand": "^4.5.0"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.5",
     "@cloudflare/workers-types": "^4.20251011.0",
+    "@opennextjs/cloudflare": "^1.11.0",
     "@playwright/test": "^1.41.0",
     "@testing-library/jest-dom": "^6.2.0",
     "@testing-library/react": "^14.1.0",
@@ -64,7 +64,7 @@
     "tailwindcss": "^3.4.0",
     "tsx": "^4.7.0",
     "typescript": "^5.3.0",
-    "wrangler": "^3.114.15"
+    "wrangler": "^4.45.0"
   },
   "engines": {
     "node": ">=18.17.0",

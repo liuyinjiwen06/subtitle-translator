@@ -5,7 +5,6 @@ import { getMessagesForLocale } from '@/lib/get-messages';
 
 // 强制动态渲染以支持 next-intl
 export const dynamic = 'force-dynamic';
-export const runtime = 'edge';
 
 export default async function LocaleLayout({
   children,

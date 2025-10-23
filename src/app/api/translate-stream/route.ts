@@ -1,6 +1,5 @@
 import { NextRequest } from "next/server";
 
-export const runtime = "edge";
 
 // 语言代码映射
 const languageMap: { [key: string]: string } = {

@@ -1,7 +1,6 @@
 // 批量翻译API - 处理大文件时分批进行
 import { NextRequest, NextResponse } from "next/server";
 
-export const runtime = "edge";
 
 const BATCH_SIZE = 20; // 每批翻译20行
 const BATCH_TIMEOUT = 20000; // 每批20秒超时

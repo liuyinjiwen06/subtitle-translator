@@ -1,6 +1,5 @@
 import { NextRequest } from "next/server";
 
-export const runtime = "edge";
 
 // 完整的44种语言映射
 const languageMap: { [key: string]: string } = {

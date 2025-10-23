@@ -1,6 +1,5 @@
 // 这是一个通过 Cloudflare Workers 强制使用美国节点的方案
 // 仅作为临时解决方案，需要配合 Workers 路由使用
-export const runtime = "edge";
 
 export async function POST(request: Request) {
   // 将请求转发到美国的代理端点

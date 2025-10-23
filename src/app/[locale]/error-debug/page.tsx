@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 
 import { getMessagesForLocale } from '@/lib/get-messages';
 import type { UILocale } from '@/config/ui-locales';

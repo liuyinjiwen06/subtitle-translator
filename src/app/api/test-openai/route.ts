@@ -1,6 +1,5 @@
 import { NextRequest } from "next/server";
 
-export const runtime = "edge";
 
 export async function GET(req: NextRequest) {
   const apiKey = process.env.OPENAI_API_KEY;

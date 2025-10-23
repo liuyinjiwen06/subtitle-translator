@@ -1,11 +1,10 @@
 import { NextRequest } from "next/server";
 
-export const runtime = "edge";
 
 export async function GET(req: NextRequest) {
   const envCheck = {
     timestamp: new Date().toISOString(),
-    runtime: runtime,
+    runtime: 'nodejs',
     environment: {
       GOOGLE_TRANSLATE_API_KEY: {
         configured: !!process.env.GOOGLE_TRANSLATE_API_KEY,
