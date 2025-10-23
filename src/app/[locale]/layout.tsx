@@ -18,11 +18,23 @@ export default async function LocaleLayout({
 
   // 验证 locale 是否有效
   if (!isValidUILocale(locale)) {
+    console.error('[Layout] Invalid locale:', locale);
     notFound();
   }
 
   // 获取翻译消息 - Edge Runtime 兼容的方式
-  const messages = await getMessagesForLocale(locale as UILocale);
+  let messages;
+  try {
+    console.log('[Layout] Loading messages for locale:', locale);
+    messages = await getMessagesForLocale(locale as UILocale);
+    console.log('[Layout] Messages loaded successfully, keys:', Object.keys(messages || {}).slice(0, 5));
+  } catch (error) {
+    console.error('[Layout] CRITICAL ERROR loading messages for locale:', locale);
+    console.error('[Layout] Error details:', error);
+    console.error('[Layout] Error stack:', error instanceof Error ? error.stack : 'No stack');
+    // 使用空对象作为后备
+    messages = {};
+  }
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
