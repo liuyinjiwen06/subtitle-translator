@@ -375,20 +375,55 @@ export async function POST(req: NextRequest) {
       openaiKeyLength: process.env.OPENAI_API_KEY?.length || 0
     });
 
+    // 检查请求类型（JSON 或 FormData）
+    const contentType = req.headers.get('content-type') || '';
+    const isJsonRequest = contentType.includes('application/json');
+
+    // 如果是 JSON 请求（单条翻译）
+    if (isJsonRequest) {
+      const body = await req.json();
+      const { text, sourceLanguage, targetLanguage } = body;
+
+      if (!text || !targetLanguage) {
+        return NextResponse.json({
+          success: false,
+          error: "参数缺失"
+        }, { status: 400 });
+      }
+
+      console.log(`[JSON翻译请求] 文本: "${text.substring(0, 50)}...", 目标语言: ${targetLanguage}`);
+
+      try {
+        // 使用默认服务 (Google)
+        const translatedText = await translateText(text, targetLanguage, 'google', 2);
+        return NextResponse.json({
+          success: true,
+          translatedText
+        });
+      } catch (error) {
+        console.error('[JSON翻译失败]', error);
+        return NextResponse.json({
+          success: false,
+          error: error instanceof Error ? error.message : '翻译失败'
+        }, { status: 500 });
+      }
+    }
+
+    // FormData 请求（文件翻译）
     // 网络连通性检测
     console.log('[网络诊断] 开始检测网络连通性...');
     try {
       // 测试Google API连通性
       const googleTestStart = Date.now();
-      const googleTest = await fetch('https://translation.googleapis.com', { 
+      const googleTest = await fetch('https://translation.googleapis.com', {
         method: 'HEAD',
         signal: AbortSignal.timeout(5000)
       });
       console.log(`[网络诊断] Google API连通性: ${googleTest.status}, 耗时: ${Date.now() - googleTestStart}ms`);
-      
+
       // 测试OpenAI API连通性
       const openaiTestStart = Date.now();
-      const openaiTest = await fetch('https://api.openai.com', { 
+      const openaiTest = await fetch('https://api.openai.com', {
         method: 'HEAD',
         signal: AbortSignal.timeout(5000)
       });
@@ -401,7 +436,7 @@ export async function POST(req: NextRequest) {
     const file = formData.get("file") as File;
     const targetLang = formData.get("targetLang") as string;
     const translationService = formData.get("translationService") as string || 'google';
-    
+
     if (!file || !targetLang) {
       return NextResponse.json({ error: "参数缺失" }, { status: 400 });
     }
