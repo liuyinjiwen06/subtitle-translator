@@ -4,19 +4,20 @@
 import type { UILocale } from '@/config/ui-locales';
 
 // Static imports of locale files from root /locales/ directory
-// Only en and zh are available, all others fallback to English
+// Available locales: en, zh, fr - others fallback to English
 import en from '@/../locales/en.json';
 import zh from '@/../locales/zh.json';
+import fr from '@/../locales/fr.json';
 
-// Locale messages map - only en and zh are available
+// Locale messages map
 const localeMessages: Record<UILocale, any> = {
   en,
   zh,
+  fr,
   // Fallback all other locales to English
   ar: en,
   de: en,
   es: en,
-  fr: en,
   hi: en,
   id: en,
   it: en,

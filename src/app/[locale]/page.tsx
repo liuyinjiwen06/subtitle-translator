@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { useParams } from 'next/navigation';
 import { FileUploader } from '@/components/FileUploader';
 import { LanguageSelector } from '@/components/LanguageSelector';
 import { OutputFormatSelector } from '@/components/OutputFormatSelector';
@@ -12,8 +13,11 @@ import { FAQSection } from '@/components/FAQSection';
 import { Button } from '@/components/ui/button';
 import { useTranslationStore } from '@/store/translation-store';
 import { translateSubtitles } from '@/lib/translation-client';
+import LanguageChanger from '@/components/LanguageChanger';
 
 export default function HomePage() {
+  const params = useParams();
+  const currentLocale = (params?.locale as string) || 'en';
   const t = useTranslations('common');
   const tSteps = useTranslations('steps');
   const tFileInfo = useTranslations('fileInfo');
@@ -94,6 +98,11 @@ export default function HomePage() {
     <main className="flex-1 bg-gradient-to-b from-blue-50 to-white">
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
+          {/* 语言切换器 - 右上角 */}
+          <div className="flex justify-end mb-4">
+            <LanguageChanger currentLocale={currentLocale} />
+          </div>
+
           {/* 标题 */}
           <div className="text-center mb-12">
             <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
