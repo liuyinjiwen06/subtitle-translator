@@ -21,11 +21,11 @@ export async function translateSubtitle(
   sourceLanguage: TranslationLanguage,
   targetLanguage: TranslationLanguage
 ): Promise<TranslationResult> {
-  const workersURL =
-    process.env.NEXT_PUBLIC_WORKERS_URL || 'http://localhost:8787';
+  // 使用 Next.js API 路由
+  const apiURL = '/api/translate';
 
   try {
-    const response = await fetch(workersURL, {
+    const response = await fetch(apiURL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

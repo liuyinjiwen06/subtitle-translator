@@ -84,23 +84,23 @@ export function LanguageSelector({
       </Button>
 
       {isOpen && (
-        <div className="absolute z-50 mt-1 w-full rounded-md border bg-popover shadow-lg">
+        <div className="absolute z-50 mt-1 w-full rounded-md border bg-white shadow-lg">
           {/* 搜索框 */}
-          <div className="p-2 border-b">
+          <div className="p-2 border-b bg-white">
             <div className="relative">
-              <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
+              <Search className="absolute left-2 top-2.5 h-4 w-4 text-gray-400" />
               <input
                 type="text"
                 placeholder={t('searchPlaceholder')}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-8 pr-2 py-2 text-sm border rounded focus:outline-none focus:ring-2 focus:ring-ring"
+                className="w-full pl-8 pr-2 py-2 text-sm border rounded bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
           </div>
 
           {/* 语言列表 */}
-          <div className="max-h-80 overflow-y-auto p-1">
+          <div className="max-h-80 overflow-y-auto p-1 bg-white">
             {filteredLanguages.length === 0 ? (
               <div className="p-4 text-center text-sm text-muted-foreground">
                 No languages found
@@ -115,8 +115,8 @@ export function LanguageSelector({
                     key={lang}
                     onClick={() => handleSelect(lang)}
                     className={cn(
-                      'w-full flex items-center gap-2 px-3 py-2 text-sm rounded hover:bg-accent',
-                      isSelected && 'bg-accent'
+                      'w-full flex items-center gap-2 px-3 py-2 text-sm rounded hover:bg-blue-50',
+                      isSelected && 'bg-blue-100'
                     )}
                   >
                     <Check

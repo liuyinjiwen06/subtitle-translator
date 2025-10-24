@@ -91,16 +91,19 @@ export default function HomePage() {
     status !== 'translating';
 
   return (
-    <main className="flex-1 container mx-auto px-4 py-8">
-      <div className="max-w-4xl mx-auto">
-        {/* 标题 */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4">{t('title')}</h1>
-          <p className="text-lg text-muted-foreground">{t('description')}</p>
-        </div>
+    <main className="flex-1 bg-gradient-to-b from-blue-50 to-white">
+      <div className="container mx-auto px-4 py-12">
+        <div className="max-w-4xl mx-auto">
+          {/* 标题 */}
+          <div className="text-center mb-12">
+            <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+              {t('title')}
+            </h1>
+            <p className="text-xl text-gray-600">{t('description')}</p>
+          </div>
 
-        {/* 主要内容 */}
-        <div className="space-y-6">
+          {/* 主要内容 */}
+          <div className="bg-white rounded-2xl shadow-xl p-8 space-y-8">
           {/* 错误提示 */}
           {error && status === 'error' && (
             <div className="border border-destructive/50 rounded-lg p-4 bg-destructive/10">
@@ -125,20 +128,26 @@ export default function HomePage() {
           )}
 
           {/* 步骤 1: 上传文件 */}
-          <div>
-            <h2 className="text-lg font-semibold mb-4">
-              {tSteps('step1')}: {tSteps('uploadFile')}
+          <div className="border-l-4 border-blue-500 pl-6">
+            <h2 className="text-xl font-bold mb-4 text-gray-800 flex items-center gap-2">
+              <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white text-sm font-bold">
+                1
+              </span>
+              {tSteps('uploadFile')}
             </h2>
             <FileUploader />
           </div>
 
           {/* 步骤 2: 选择语言 */}
           {file && originalEntries.length > 0 && (
-            <div>
-              <h2 className="text-lg font-semibold mb-4">
-                {tSteps('step2')}: {tSteps('selectLanguages')}
+            <div className="border-l-4 border-blue-500 pl-6">
+              <h2 className="text-xl font-bold mb-4 text-gray-800 flex items-center gap-2">
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white text-sm font-bold">
+                  2
+                </span>
+                {tSteps('selectLanguages')}
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <LanguageSelector
                   type="source"
                   value={sourceLanguage}
@@ -157,9 +166,12 @@ export default function HomePage() {
 
           {/* 步骤 3: 选择输出格式 */}
           {sourceLanguage && targetLanguage && (
-            <div>
-              <h2 className="text-lg font-semibold mb-4">
-                {tSteps('step3')}: {tSteps('selectFormat')}
+            <div className="border-l-4 border-blue-500 pl-6">
+              <h2 className="text-xl font-bold mb-4 text-gray-800 flex items-center gap-2">
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white text-sm font-bold">
+                  3
+                </span>
+                {tSteps('selectFormat')}
               </h2>
               <OutputFormatSelector />
             </div>
