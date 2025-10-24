@@ -195,26 +195,28 @@ export default function HomePage() {
 
           {/* 下载按钮 */}
           <DownloadButtons />
-        </div>
 
-        {/* 文件信息 */}
-        {file && originalEntries.length > 0 && (
-          <div className="mt-8 p-4 bg-muted rounded-lg text-sm text-muted-foreground">
-            <p>
-              {tFileInfo('fileName')}: <span className="font-medium">{file.name}</span>
-            </p>
-            <p>
-              {tFileInfo('subtitleCount')}:{' '}
-              <span className="font-medium">{originalEntries.length}</span>
-            </p>
-          </div>
-        )}
+          {/* 文件信息 */}
+          {file && originalEntries.length > 0 && (
+            <div className="p-4 bg-gray-50 rounded-lg text-sm text-gray-600">
+              <p>
+                {tFileInfo('fileName')}: <span className="font-medium">{file.name}</span>
+              </p>
+              <p>
+                {tFileInfo('subtitleCount')}:{' '}
+                <span className="font-medium">{originalEntries.length}</span>
+              </p>
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Information Sections */}
-      <BenefitsSection />
-      <HowToUseSection />
-      <FAQSection />
+      <div className="container mx-auto px-4 pb-12">
+        <BenefitsSection />
+        <HowToUseSection />
+        <FAQSection />
+      </div>
     </main>
   );
 }
