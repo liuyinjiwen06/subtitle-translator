@@ -1,9 +1,7 @@
 name = "subtitle-translator"
 compatibility_date = "2024-01-01"
-compatibility_flags = ["nodejs_compat", "streams_enable_constructors"]
+compatibility_flags = ["nodejs_compat"]
 
-# Cloudflare Pages 配置
-# 使用 OpenNext (@opennextjs/cloudflare) 构建输出
-# 注意: Pages 项目不支持在 wrangler.toml 中配置 build 命令
-# 请在 Cloudflare Dashboard 的 Build settings 中设置 "npm run pages:build"
+# Cloudflare Pages 输出目录
+# OpenNext 生成 worker.js 和 assets，我们将其转换为 Pages Advanced Mode 格式
 pages_build_output_dir = ".open-next/worker"
