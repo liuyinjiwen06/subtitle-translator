@@ -104,8 +104,8 @@ export default function HomePage() {
 
           {/* 主要内容 */}
           <div className="bg-white rounded-2xl shadow-xl p-8 space-y-8">
-          {/* 错误提示 */}
-          {error && status === 'error' && (
+            {/* 错误提示 */}
+            {error && status === 'error' && (
             <div className="border border-destructive/50 rounded-lg p-4 bg-destructive/10">
               <div className="flex items-start gap-3">
                 <div className="flex-shrink-0 mt-0.5">
@@ -128,26 +128,20 @@ export default function HomePage() {
           )}
 
           {/* 步骤 1: 上传文件 */}
-          <div className="border-l-4 border-blue-500 pl-6">
-            <h2 className="text-xl font-bold mb-4 text-gray-800 flex items-center gap-2">
-              <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white text-sm font-bold">
-                1
-              </span>
-              {tSteps('uploadFile')}
+          <div>
+            <h2 className="text-lg font-semibold mb-4">
+              {tSteps('step1')}: {tSteps('uploadFile')}
             </h2>
             <FileUploader />
           </div>
 
           {/* 步骤 2: 选择语言 */}
           {file && originalEntries.length > 0 && (
-            <div className="border-l-4 border-blue-500 pl-6">
-              <h2 className="text-xl font-bold mb-4 text-gray-800 flex items-center gap-2">
-                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white text-sm font-bold">
-                  2
-                </span>
-                {tSteps('selectLanguages')}
+            <div>
+              <h2 className="text-lg font-semibold mb-4">
+                {tSteps('step2')}: {tSteps('selectLanguages')}
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <LanguageSelector
                   type="source"
                   value={sourceLanguage}
@@ -166,12 +160,9 @@ export default function HomePage() {
 
           {/* 步骤 3: 选择输出格式 */}
           {sourceLanguage && targetLanguage && (
-            <div className="border-l-4 border-blue-500 pl-6">
-              <h2 className="text-xl font-bold mb-4 text-gray-800 flex items-center gap-2">
-                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white text-sm font-bold">
-                  3
-                </span>
-                {tSteps('selectFormat')}
+            <div>
+              <h2 className="text-lg font-semibold mb-4">
+                {tSteps('step3')}: {tSteps('selectFormat')}
               </h2>
               <OutputFormatSelector />
             </div>
@@ -208,6 +199,7 @@ export default function HomePage() {
               </p>
             </div>
           )}
+          </div>
         </div>
       </div>
 
