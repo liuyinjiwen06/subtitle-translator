@@ -17,23 +17,23 @@ async function loadTranslations(locale: Locale) {
   }
 
   try {
-    console.log(`📂 Attempting to import: ./locales/${locale}`);
+    console.log(`📂 Attempting to import from root: ../../locales/${locale}.json`);
 
-    // 从 src/lib/server-i18n.ts 导入 src/lib/locales/
-    const translations = await import(`./locales/${locale}`);
-    
+    // 从根目录 /locales/ 加载翻译文件
+    const translations = await import(`../../locales/${locale}.json`);
+
     // 多层安全检查
     if (!translations) {
       console.error(`❌ Import returned null/undefined for ${locale}`);
       throw new Error(`Import returned null or undefined for ${locale}`);
     }
-    
+
     // 检查是否有 default 属性
     let finalTranslations;
     if (translations.default && typeof translations.default === 'object') {
       console.log(`✅ Using default export for ${locale}`);
       finalTranslations = translations.default;
-    } else if (typeof translations === 'object' && translations.homepage) {
+    } else if (typeof translations === 'object') {
       console.log(`✅ Using direct export for ${locale}`);
       finalTranslations = translations;
     } else {
@@ -41,12 +41,12 @@ async function loadTranslations(locale: Locale) {
       // 尝试使用整个对象
       finalTranslations = translations;
     }
-    
+
     // 验证翻译数据结构
     if (!finalTranslations || typeof finalTranslations !== 'object') {
       throw new Error(`Invalid translations structure for ${locale}`);
     }
-    
+
     translationCache.set(locale, finalTranslations);
     console.log(`✅ Successfully loaded translations for locale: ${locale}`);
     return finalTranslations;
@@ -55,7 +55,7 @@ async function loadTranslations(locale: Locale) {
     console.error(`❌ Error details:`, error);
     console.error(`❌ Error message:`, error instanceof Error ? error.message : 'Unknown error');
     console.error(`❌ Call stack when error occurred:`, new Error().stack);
-    
+
     // 回退到英语
     if (locale !== 'en') {
       console.warn(`🔄 Falling back to English translations for failed locale: ${locale}`);

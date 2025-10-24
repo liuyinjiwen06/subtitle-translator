@@ -1,51 +1,36 @@
 // Edge Runtime compatible message loader
-// Uses static imports to ensure compatibility with Cloudflare Workers
+// Loads translations from /locales/ directory (root level)
 
 import type { UILocale } from '@/config/ui-locales';
 
-// Static imports of all locale files
-import ar from './locales/ar';
-import de from './locales/de';
-import en from './locales/en';
-import es from './locales/es';
-import fr from './locales/fr';
-import hi from './locales/hi';
-import it from './locales/it';
-import ja from './locales/ja';
-import ko from './locales/ko';
-import nl from './locales/nl';
-import pl from './locales/pl';
-import pt from './locales/pt';
-import ru from './locales/ru';
-import sv from './locales/sv';
-import th from './locales/th';
-import tr from './locales/tr';
-import vi from './locales/vi';
-import zh from './locales/zh';
+// Static imports of locale files from root /locales/ directory
+// Only en and zh are available, all others fallback to English
+import en from '@/../locales/en.json';
+import zh from '@/../locales/zh.json';
 
-// Locale messages map
+// Locale messages map - only en and zh are available
 const localeMessages: Record<UILocale, any> = {
-  ar,
-  de,
   en,
-  es,
-  fr,
-  hi,
-  it,
-  ja,
-  ko,
-  nl,
-  pl,
-  pt,
-  ru,
-  sv,
-  th,
-  tr,
-  vi,
   zh,
-  // TODO: Add translations for Indonesian and Ukrainian
-  id: en, // Fallback to English for Indonesian
-  uk: en, // Fallback to English for Ukrainian
+  // Fallback all other locales to English
+  ar: en,
+  de: en,
+  es: en,
+  fr: en,
+  hi: en,
+  id: en,
+  it: en,
+  ja: en,
+  ko: en,
+  nl: en,
+  pl: en,
+  pt: en,
+  ru: en,
+  sv: en,
+  th: en,
+  tr: en,
+  uk: en,
+  vi: en,
 };
 
 export async function getMessagesForLocale(locale: UILocale) {

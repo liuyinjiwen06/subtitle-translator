@@ -13,6 +13,12 @@
 # Production
 /build
 
+# Generated files
+/backups/
+/public/generated-content/
+/src/new/
+/src/lib/locales/*.backup
+
 # Misc
 .DS_Store
 *.pem

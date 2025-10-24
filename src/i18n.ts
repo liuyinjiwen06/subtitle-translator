@@ -12,14 +12,15 @@ export default getRequestConfig(async ({ requestLocale }) => {
   }
 
   try {
+    // Load from root /locales/ directory
     return {
-      messages: (await import(`./lib/locales/${locale}`)).default,
+      messages: (await import(`../locales/${locale}.json`)).default,
     };
   } catch (error) {
     console.error('Failed to load locale messages:', locale, error);
     // 回退到英语
     return {
-      messages: (await import(`./lib/locales/en`)).default,
+      messages: (await import(`../locales/en.json`)).default,
     };
   }
 });
