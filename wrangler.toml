@@ -1,5 +1,5 @@
 name = "subtitle-translator"
-compatibility_date = "2024-01-01"
+compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
 
 # Cloudflare Pages 输出目录
