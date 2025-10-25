@@ -16,8 +16,8 @@ const { OpenAI } = require('openai');
 
 // 配置
 const CONFIG = {
-  sourceFile: './src/lib/locales/en.json',
-  targetDir: './src/lib/locales',
+  sourceFile: './locales/en.json',
+  targetDir: './locales',
   i18nConfigFile: './i18nConfig.ts',
   openai: {
     model: 'gpt-4o-mini',

@@ -4,34 +4,49 @@
 import type { UILocale } from '@/config/ui-locales';
 
 // Static imports of locale files from root /locales/ directory
-// Available locales: en, zh, fr - others fallback to English
+// All 18 locales now have full translations
 import en from '@/../locales/en.json';
 import zh from '@/../locales/zh.json';
 import fr from '@/../locales/fr.json';
+import ja from '@/../locales/ja.json';
+import de from '@/../locales/de.json';
+import es from '@/../locales/es.json';
+import ru from '@/../locales/ru.json';
+import it from '@/../locales/it.json';
+import pt from '@/../locales/pt.json';
+import ar from '@/../locales/ar.json';
+import hi from '@/../locales/hi.json';
+import ko from '@/../locales/ko.json';
+import th from '@/../locales/th.json';
+import vi from '@/../locales/vi.json';
+import tr from '@/../locales/tr.json';
+import pl from '@/../locales/pl.json';
+import nl from '@/../locales/nl.json';
+import sv from '@/../locales/sv.json';
 
 // Locale messages map
 const localeMessages: Record<UILocale, any> = {
   en,
   zh,
   fr,
-  // Fallback all other locales to English
-  ar: en,
-  de: en,
-  es: en,
-  hi: en,
+  ja,
+  de,
+  es,
+  ru,
+  it,
+  pt,
+  ar,
+  hi,
+  ko,
+  th,
+  vi,
+  tr,
+  pl,
+  nl,
+  sv,
+  // id and uk fallback to English (not in translation list)
   id: en,
-  it: en,
-  ja: en,
-  ko: en,
-  nl: en,
-  pl: en,
-  pt: en,
-  ru: en,
-  sv: en,
-  th: en,
-  tr: en,
   uk: en,
-  vi: en,
 };
 
 export async function getMessagesForLocale(locale: UILocale) {
