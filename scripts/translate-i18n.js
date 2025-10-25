@@ -22,7 +22,7 @@ const CONFIG = {
   openai: {
     model: 'gpt-4o-mini',
     temperature: 0.5,
-    maxTokens: 2000,
+    maxTokens: 8000, // 增加到8000以容纳完整的JSON翻译
     batchSize: 5, // 每批翻译的key数量
     delayBetweenBatches: 1000, // 批次间延迟(ms)
   },
@@ -185,38 +185,19 @@ Return only the translated JSON without any additional text or markdown formatti
     }
   }
 
-  // 分批翻译
-  async translateMissing(missing, targetLang) {
-    const keys = Object.keys(missing);
-    const translations = {};
-    
-    // 分批处理
-    for (let i = 0; i < keys.length; i += CONFIG.openai.batchSize) {
-      const batch = {};
-      const batchKeys = keys.slice(i, i + CONFIG.openai.batchSize);
-      
-      batchKeys.forEach(key => {
-        batch[key] = missing[key];
-      });
-      
-      console.log(`  📝 翻译批次 ${Math.floor(i / CONFIG.openai.batchSize) + 1}: [${batchKeys.join(', ')}]`);
-      
-      const batchTranslations = await this.translateBatch(batch, targetLang);
-      
-      if (batchTranslations) {
-        Object.assign(translations, batchTranslations);
-        console.log(`  ✅ 批次完成`);
-      } else {
-        console.log(`  ❌ 批次失败，跳过`);
-      }
-      
-      // 延迟以避免API限制
-      if (i + CONFIG.openai.batchSize < keys.length) {
-        await new Promise(resolve => setTimeout(resolve, CONFIG.openai.delayBetweenBatches));
-      }
+  // 翻译整个JSON对象（保持嵌套结构）
+  async translateMissing(sourceData, targetLang) {
+    console.log(`  📝 翻译整个JSON对象（保持嵌套结构）`);
+
+    const batchTranslations = await this.translateBatch(sourceData, targetLang);
+
+    if (batchTranslations) {
+      console.log(`  ✅ 翻译完成`);
+      return batchTranslations;
+    } else {
+      console.log(`  ❌ 翻译失败`);
+      return null;
     }
-    
-    return translations;
   }
 
   // 深度合并对象
@@ -235,36 +216,29 @@ Return only the translated JSON without any additional text or markdown formatti
   }
 
   // 保存翻译结果
-  saveTranslation(targetLang, translations, originalData) {
+  saveTranslation(targetLang, translations) {
     const targetFile = path.join(CONFIG.targetDir, `${targetLang}.json`);
-    const mergedData = this.deepMerge(originalData, translations);
-    
-    fs.writeFileSync(targetFile, JSON.stringify(mergedData, null, 2), 'utf8');
+
+    fs.writeFileSync(targetFile, JSON.stringify(translations, null, 2), 'utf8');
     console.log(`💾 已保存: ${targetFile}`);
   }
 
   // 主翻译流程
   async translateLanguage(targetLang, force = false, specificKeys = null) {
     console.log(`\n🌍 开始翻译: ${targetLang} (${CONFIG.languageMap[targetLang] || targetLang})`);
-    
-    const { missing, targetData } = this.getMissingTranslations(targetLang, specificKeys);
-    
-    if (!force && Object.keys(missing).length === 0) {
-      console.log(`  ✅ 无需翻译，所有内容已存在`);
-      return;
-    }
-    
-    const toTranslate = force ? this.sourceData : missing;
-    console.log(`  📋 需要翻译 ${Object.keys(toTranslate).length} 个项目`);
+
+    // 直接翻译整个源文件以保持完整的嵌套结构
+    const toTranslate = this.sourceData;
+    console.log(`  📋 翻译完整文件以保持嵌套结构`);
     
     if (Object.keys(toTranslate).length === 0) {
       return;
     }
     
     const translations = await this.translateMissing(toTranslate, targetLang);
-    
+
     if (translations && Object.keys(translations).length > 0) {
-      this.saveTranslation(targetLang, translations, force ? {} : targetData);
+      this.saveTranslation(targetLang, translations);
       console.log(`  🎉 完成翻译: ${targetLang}`);
     } else {
       console.log(`  ❌ 翻译失败: ${targetLang}`);
