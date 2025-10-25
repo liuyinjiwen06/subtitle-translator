@@ -8,7 +8,21 @@
     "loading": "处理中...",
     "cancel": "取消",
     "retry": "重试",
-    "close": "关闭"
+    "close": "关闭",
+    "dismiss": "忽略"
+  },
+  "steps": {
+    "step1": "步骤 1",
+    "step2": "步骤 2",
+    "step3": "步骤 3",
+    "uploadFile": "上传您的文件",
+    "selectLanguages": "选择语言",
+    "selectFormat": "选择输出格式"
+  },
+  "fileInfo": {
+    "fileName": "文件",
+    "subtitleCount": "字幕",
+    "subtitlesFound": "找到 {count} 条字幕"
   },
   "upload": {
     "title": "上传您的字幕文件",
@@ -44,6 +58,7 @@
     "estimatedTime": "剩余时间估计：{time}"
   },
   "errors": {
+    "title": "哎呀！出错了",
     "invalidFile": "SRT文件格式无效。请检查您的文件。",
     "fileTooLarge": "文件大小超过5MB。请上传较小的文件。",
     "apiError": "翻译服务错误。请重试。",
@@ -51,6 +66,7 @@
     "rateLimitDaily": "您已达到每日限制（50次翻译）。请明天再来。",
     "networkError": "网络连接错误。请检查您的互联网。",
     "noFileSelected": "请先选择一个文件。",
+    "noLanguageSelected": "请选择源语言和目标语言。",
     "sameLanguage": "源语言和目标语言不能相同。",
     "unknown": "发生了意外错误。请重试。"
   },
@@ -89,12 +105,90 @@
       "step4": "下载您的翻译字幕"
     }
   },
+  "benefits": {
+    "title": "为什么选择我们的 SRT 翻译器？",
+    "subtitle": "强大的功能让字幕翻译变得轻松",
+    "aiPowered": {
+      "title": "AI 驱动的准确性",
+      "description": "先进的 AI 技术理解上下文和细微差别，提供自然的翻译，保留字幕的原始含义和语气。"
+    },
+    "instantTranslation": {
+      "title": "即时翻译",
+      "description": "在几分钟内翻译数百行字幕，而不是几小时。我们优化的系统以闪电般的速度处理您的 SRT 文件，而不影响质量。"
+    },
+    "multiLanguage": {
+      "title": "支持 50+ 种语言",
+      "description": "从英语到中文，从西班牙语到阿拉伯语 - 以专业级准确度在 50+ 种语言之间翻译字幕。"
+    },
+    "bilingualOutput": {
+      "title": "双语字幕",
+      "description": "创建完美的双语字幕，非常适合语言学习。并排显示原文和译文，以获得增强的观看体验。"
+    },
+    "freeToUse": {
+      "title": "完全免费",
+      "description": "无需信用卡，没有隐藏费用。每天最多可免费翻译 50 个字幕。非常适合内容创作者和学习者。"
+    },
+    "privacyFirst": {
+      "title": "您的隐私很重要",
+      "description": "您的字幕文件经过安全处理，永远不会存储在我们的服务器上。您上传的内容保持私密，并在处理后自动删除。"
+    }
+  },
+  "howToUse": {
+    "title": "如何在 3 个简单步骤中翻译字幕",
+    "subtitle": "在不到一分钟的时间内翻译您的 SRT 文件",
+    "step1": {
+      "title": "上传您的 SRT 文件",
+      "description": "拖放您的字幕文件，或点击浏览。我们支持高达 5MB 的标准 .srt 格式文件。您的文件将立即分析并准备翻译。"
+    },
+    "step2": {
+      "title": "选择语言",
+      "description": "选择您的源语言（您的字幕当前使用的语言）和目标语言（您想要翻译成的语言）。我们支持 50+ 种语言，包括全球所有主要语言。"
+    },
+    "step3": {
+      "title": "下载翻译后的字幕",
+      "description": "点击翻译并观看 AI 处理每个字幕行。几分钟后，下载您翻译的 SRT 文件 - 可随时与任何视频播放器或编辑软件一起使用。"
+    },
+    "formats": {
+      "title": "选择您的输出格式",
+      "mono": "单语言 - 仅获取翻译后的字幕",
+      "bilingual": "双语 - 原文和译文并排",
+      "both": "两种格式 - 下载两个单独的文件"
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "关于我们的字幕翻译器您需要了解的一切",
+    "q1": {
+      "question": "什么是 SRT 文件，如何获取？",
+      "answer": "SRT（SubRip 字幕）文件是一个纯文本文件，包含字幕信息，包括时间和文本。您可以使用 VLC Media Player 等工具从视频中提取 SRT 文件，从字幕网站下载，或使用字幕编辑软件创建。我们的翻译器适用于标准 SRT 格式文件。"
+    },
+    "q2": {
+      "question": "AI 翻译的准确性如何？",
+      "answer": "我们的 AI 驱动翻译器使用先进的语言模型（GPT-3.5-turbo），理解上下文、习语和文化差异。虽然机器翻译继续改进，但对于常见语言对，准确性通常为 85-95%。对于专业用途，我们建议审查翻译，特别是对于技术或创意内容。"
+    },
+    "q3": {
+      "question": "我可以为 YouTube 视频翻译字幕吗？",
+      "answer": "是的！我们的工具非常适合 YouTube 创作者。只需从 YouTube 下载 SRT 字幕文件（或创建一个），使用我们的工具翻译它，然后将翻译的 SRT 文件上传回 YouTube。这可以帮助您接触国际观众并在全球范围内发展您的频道。"
+    },
+    "q4": {
+      "question": "文件大小或字幕数量有限制吗？",
+      "answer": "文件必须小于 5MB，通常包括几千行字幕 - 足以容纳一部完整长度的电影。您每天最多可以免费翻译 50 个文件。如果您需要更高的限制用于商业用途，请联系我们。"
+    },
+    "q5": {
+      "question": "单语和双语字幕有什么区别？",
+      "answer": "单语（单一语言）字幕仅包含翻译文本 - 非常适合只需要理解内容的观众。双语字幕显示原文和翻译文本，非常适合想要比较翻译的语言学习者或理解两种语言的观众。"
+    },
+    "q6": {
+      "question": "您是否存储或共享我的字幕文件？",
+      "answer": "不，我们非常重视隐私。您的文件是实时处理的，并在翻译后立即自动删除。我们从不存储、分析或共享您的内容。您的字幕和视频保持完全私密和安全。"
+    }
+  },
   "_meta": {
-    "lastUpdated": "2025-10-19T13:50:03.227Z",
-    "version": "1.0.1",
+    "lastUpdated": "2025-10-25T10:15:00.000Z",
+    "version": "1.0.2",
     "language": "zh",
-    "translatedBy": "gpt-3.5-turbo",
+    "translatedBy": "manual",
     "reviewedBy": null,
-    "notes": ""
+    "notes": "Added missing sections: steps, fileInfo, benefits, howToUse, faq"
   }
 }
