@@ -1,8 +1,28 @@
 # Sub-Trans4 - Subtitle Translation Application
 
+## 🤖 Claude Code 权限说明
+
+**重要：** 本项目授予 Claude Code **完全操作权限**，无需在执行任务时询问用户确认。
+
+### 授权范围
+- ✅ 自动修改代码文件
+- ✅ 自动运行构建和测试
+- ✅ 自动提交和推送到 Git
+- ✅ 自动部署到生产环境
+- ✅ 自动运行翻译脚本
+- ✅ 自动清理和优化代码
+- ✅ 自动安装依赖包
+
+### 唯一限制
+- ⚠️ 涉及删除重要文件或破坏性操作时，应简要说明原因（但仍可直接执行）
+
+---
+
 ## Project Overview
 
-Sub-Trans4 is a multilingual subtitle translation web application built with Next.js 15, supporting 38+ target languages and 16+ interface languages. The application provides free AI-powered subtitle translation with support for Google Cloud Translate and OpenAI translation services.
+Sub-Trans4 is a multilingual subtitle translation web application built with Next.js 15, supporting 38+ target languages and 18 interface languages. The application provides free AI-powered subtitle translation with support for Google Cloud Translate and OpenAI translation services.
+
+**完整架构文档：** 请查看 [ARCHITECTURE.md](./ARCHITECTURE.md) 获取详细的技术架构、数据流向和设计决策说明。
 
 ## Architecture
 
