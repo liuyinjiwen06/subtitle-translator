@@ -1,12 +1,12 @@
 {
   "meta": {
     "title": "Tłumacz napisów - Tłumaczenie SRT z wykorzystaniem AI",
-    "description": "Tłumacz napisy SRT na 50+ języków z użyciem zaawansowanej technologii AI. Szybko, dokładnie i za darmo.",
+    "description": "Tłumacz napisy SRT na ponad 50 języków z wykorzystaniem zaawansowanej technologii AI. Szybko, dokładnie i za darmo.",
     "keywords": "tłumaczenie napisów, tłumacz SRT, tłumaczenie AI, napisy wideo"
   },
   "common": {
     "title": "Tłumacz napisów",
-    "description": "Tłumacz napisy SRT na 50+ języków z użyciem AI",
+    "description": "Przetłumacz napisy SRT na 50+ języków za pomocą AI",
     "upload": "Prześlij plik SRT",
     "translate": "Rozpocznij tłumaczenie",
     "download": "Pobierz",
@@ -50,7 +50,7 @@
     "title": "Wybierz format wyjściowy",
     "monoSubtitle": "Tylko język docelowy",
     "monoDescription": "Tylko przetłumaczone napisy",
-    "bilingualSubtitle": "Dwujęzyczne napisy",
+    "bilingualSubtitle": "Napisy dwujęzyczne",
     "bilingualDescription": "Oryginał + tłumaczenie (linia po linii)",
     "both": "Oba formaty",
     "bothDescription": "Pobierz dwa oddzielne pliki"
@@ -60,20 +60,20 @@
     "translating": "Tłumaczenie napisu {current} z {total}...",
     "generating": "Przygotowywanie plików...",
     "complete": "Tłumaczenie zakończone!",
-    "estimatedTime": "Szacowany pozostały czas: {time}"
+    "estimatedTime": "Szacowany czas pozostały: {time}"
   },
   "errors": {
     "title": "Ups! Coś poszło nie tak",
-    "invalidFile": "Nie mogliśmy odczytać pliku z napisami. Proszę upewnić się, że jest to prawidłowy plik .srt.",
-    "fileTooLarge": "Twój plik jest za duży (maks. 5MB). Proszę spróbować mniejszy plik.",
-    "apiError": "Usługa tłumaczenia jest tymczasowo niedostępna. Proszę spróbować ponownie za chwilę.",
-    "rateLimitHourly": "Wykorzystałeś wszystkie 10 darmowych tłumaczeń w tej godzinie. Proszę poczekać {minutes} minut, aby kontynuować.",
+    "invalidFile": "Nie mogliśmy odczytać pliku z napisami. Upewnij się, że jest to ważny plik .srt.",
+    "fileTooLarge": "Twój plik jest za duży (maks. 5MB). Spróbuj mniejszego pliku.",
+    "apiError": "Usługa tłumaczenia jest tymczasowo niedostępna. Spróbuj ponownie za chwilę.",
+    "rateLimitHourly": "Wykorzystałeś wszystkie 10 darmowych tłumaczeń w tej godzinie. Poczekaj {minutes} minut, aby kontynuować.",
     "rateLimitDaily": "Osiągnąłeś dzienny limit 50 tłumaczeń. Wróć jutro po więcej!",
-    "networkError": "Nie można połączyć się z internetem. Proszę sprawdzić połączenie i spróbować ponownie.",
-    "noFileSelected": "Proszę najpierw przesłać plik z napisami.",
-    "noLanguageSelected": "Proszę wybrać zarówno język źródłowy, jak i docelowy.",
+    "networkError": "Nie można połączyć się z internetem. Sprawdź swoje połączenie i spróbuj ponownie.",
+    "noFileSelected": "Najpierw załaduj plik z napisami.",
+    "noLanguageSelected": "Wybierz zarówno język źródłowy, jak i docelowy.",
     "sameLanguage": "Języki źródłowy i docelowy muszą być różne.",
-    "unknown": "Wystąpił nieoczekiwany błąd. Proszę spróbować ponownie."
+    "unknown": "Coś niespodziewanego się wydarzyło. Spróbuj ponownie."
   },
   "success": {
     "translationComplete": "Twoje napisy zostały pomyślnie przetłumaczone!",
@@ -83,20 +83,20 @@
     "madeWith": "Stworzone z",
     "by": "przez",
     "poweredBy": "Zasilane przez OpenAI GPT-3.5-turbo",
-    "privacyPolicy": "Polityka Prywatności",
-    "terms": "Warunki Usługi",
+    "privacyPolicy": "Polityka prywatności",
+    "terms": "Warunki korzystania z usługi",
     "contact": "Skontaktuj się z nami"
   },
   "languagePair": {
     "title": "Przetłumacz z {source} na {target}",
-    "description": "Szybkie i dokładne tłumaczenie napisów z {source} na {target} przy użyciu zaawansowanej technologii AI.",
+    "description": "Szybkie i dokładne tłumaczenie napisów z {source} na {target} z wykorzystaniem zaawansowanej technologii AI.",
     "startTranslating": "Rozpocznij Tłumaczenie Teraz",
     "features": {
       "title": "Dlaczego warto wybrać nasz tłumacz?",
       "accurate": "Dokładne Tłumaczenie",
       "accurateDesc": "Tłumaczenie z wykorzystaniem AI z uwzględnieniem kontekstu",
       "fast": "Błyskawicznie Szybkie",
-      "fastDesc": "Przetwarzaj setki napisów w ciągu kilku minut",
+      "fastDesc": "Przetwarzaj setki napisów w kilka minut",
       "free": "Darmowe w Użyciu",
       "freeDesc": "Do 50 tłumaczeń dziennie, całkowicie za darmo",
       "privacy": "Prywatność na Pierwszym Miejscu",
@@ -107,7 +107,85 @@
       "step1": "Prześlij swój plik SRT",
       "step2": "Wybierz języki i format wyjściowy",
       "step3": "Kliknij tłumacz i poczekaj",
-      "step4": "Pobierz przetłumaczone napisy"
+      "step4": "Pobierz swoje przetłumaczone napisy"
+    }
+  },
+  "benefits": {
+    "title": "Dlaczego warto wybrać nasz translator SRT?",
+    "subtitle": "Potężne funkcje, które sprawiają, że tłumaczenie napisów jest łatwe",
+    "aiPowered": {
+      "title": "Dokładność napędzana AI",
+      "description": "Zaawansowana technologia AI rozumie kontekst i niuanse, dostarczając naturalne tłumaczenia, które zachowują pierwotne znaczenie i ton Twoich napisów."
+    },
+    "instantTranslation": {
+      "title": "Natychmiastowe tłumaczenie",
+      "description": "Przetłumacz setki linii napisów w ciągu minut, a nie godzin. Nasz zoptymalizowany system przetwarza Twoje pliki SRT z prędkością błyskawicy, nie kompromitując jakości."
+    },
+    "multiLanguage": {
+      "title": "Obsługuje 50+ języków",
+      "description": "Od angielskiego po chiński, hiszpański po arabski - tłumacz napisy między dowolną kombinacją 50+ języków z profesjonalną dokładnością."
+    },
+    "bilingualOutput": {
+      "title": "Dwujęzyczne napisy",
+      "description": "Twórz napisy w dwóch językach, idealne do nauki języków. Wyświetlaj oryginalny i przetłumaczony tekst obok siebie dla lepszego doświadczenia oglądania."
+    },
+    "freeToUse": {
+      "title": "Całkowicie za darmo",
+      "description": "Nie wymagana karta kredytowa, brak ukrytych opłat. Uzyskaj do 50 tłumaczeń napisów dziennie, całkowicie za darmo. Idealne dla twórców treści i uczniów."
+    },
+    "privacyFirst": {
+      "title": "Twoja prywatność ma znaczenie",
+      "description": "Twoje pliki z napisami są przetwarzane w sposób bezpieczny i nigdy nie są przechowywane na naszych serwerach. To, co przesyłasz, pozostaje prywatne i jest automatycznie usuwane po przetworzeniu."
+    }
+  },
+  "howToUse": {
+    "title": "Jak przetłumaczyć napisy w 3 prostych krokach",
+    "subtitle": "Przetłumacz swoje pliki SRT w mniej niż minutę",
+    "step1": {
+      "title": "Prześlij swój plik SRT",
+      "description": "Przeciągnij i upuść swój plik z napisami lub kliknij, aby przeszukać. Obsługujemy standardowe pliki w formacie .srt do 5 MB. Twój plik zostanie natychmiast przeanalizowany i gotowy do tłumaczenia."
+    },
+    "step2": {
+      "title": "Wybierz języki",
+      "description": "Wybierz swój język źródłowy (język, w którym obecnie są napisy) oraz język docelowy (język, na który chcesz przetłumaczyć). Obsługujemy ponad 50 języków, w tym wszystkie główne języki na całym świecie."
+    },
+    "step3": {
+      "title": "Pobierz przetłumaczone napisy",
+      "description": "Kliknij przetłumacz i obserwuj, jak AI przetwarza każdą linię napisów. W ciągu kilku minut pobierz swój przetłumaczony plik SRT - gotowy do użycia z dowolnym odtwarzaczem wideo lub oprogramowaniem do edycji."
+    },
+    "formats": {
+      "title": "Wybierz swój format wyjściowy",
+      "mono": "Jeden język - Pobierz tylko przetłumaczone napisy",
+      "bilingual": "Bilingwalny - Oryginał i tłumaczenie obok siebie",
+      "both": "Oba formaty - Pobierz dwa oddzielne pliki"
+    }
+  },
+  "faq": {
+    "title": "Najczęściej Zadawane Pytania",
+    "subtitle": "Wszystko, co musisz wiedzieć o naszym translatorze napisów",
+    "q1": {
+      "question": "Czym jest plik SRT i jak mogę go zdobyć?",
+      "answer": "Plik SRT (SubRip Subtitle) to plik tekstowy zawierający informacje o napisach, w tym czasy i tekst. Możesz wyodrębnić pliki SRT z filmów za pomocą narzędzi takich jak VLC Media Player, pobrać je z witryn z napisami lub stworzyć je za pomocą oprogramowania do edycji napisów. Nasz translator działa z plikami w standardowym formacie SRT."
+    },
+    "q2": {
+      "question": "Jak dokładne są tłumaczenia AI?",
+      "answer": "Nasz translator oparty na AI wykorzystuje zaawansowane modele językowe (GPT-3.5-turbo), które rozumieją kontekst, idiomy i niuanse kulturowe. Chociaż tłumaczenie maszynowe wciąż się poprawia, dokładność wynosi zazwyczaj 85-95% dla popularnych par językowych. Do użytku profesjonalnego zalecamy przeglądanie tłumaczeń, szczególnie w przypadku treści technicznych lub kreatywnych."
+    },
+    "q3": {
+      "question": "Czy mogę tłumaczyć napisy do filmów na YouTube?",
+      "answer": "Tak! Nasze narzędzie jest idealne dla twórców YouTube. Po prostu pobierz plik SRT z napisami z YouTube (lub stwórz jeden), przetłumacz go za pomocą naszego narzędzia, a następnie prześlij przetłumaczony plik SRT z powrotem do YouTube. To pomoże Ci dotrzeć do międzynarodowej publiczności i rozwijać swój kanał na całym świecie."
+    },
+    "q4": {
+      "question": "Czy istnieje limit rozmiaru pliku lub liczby napisów?",
+      "answer": "Pliki muszą mieć mniej niż 5MB, co zazwyczaj obejmuje kilka tysięcy linii napisów - więcej niż wystarczająco na pełnometrażowy film. Możesz tłumaczyć do 50 plików dziennie za darmo. Jeśli potrzebujesz wyższych limitów do użytku komercyjnego, skontaktuj się z nami."
+    },
+    "q5": {
+      "question": "Jaka jest różnica między napisami mono a dwujęzycznymi?",
+      "answer": "Napisy mono (jednolanguage) zawierają tylko przetłumaczony tekst - idealne dla widzów, którzy po prostu chcą zrozumieć treść. Napisy dwujęzyczne pokazują zarówno oryginalny, jak i przetłumaczony tekst, idealne dla osób uczących się języków, które chcą porównać tłumaczenia, lub widzów, którzy rozumieją oba języki."
+    },
+    "q6": {
+      "question": "Czy przechowujecie lub udostępniacie moje pliki z napisami?",
+      "answer": "Nie, traktujemy prywatność poważnie. Twoje pliki są przetwarzane w czasie rzeczywistym i automatycznie usuwane natychmiast po tłumaczeniu. Nigdy nie przechowujemy, nie analizujemy ani nie udostępniamy Twoich treści. Twoje napisy i filmy pozostają całkowicie prywatne i bezpieczne."
     }
   },
   "_meta": {

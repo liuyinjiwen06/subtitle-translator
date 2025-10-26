@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "Tradutor de Legendas - Tradução SRT com IA",
+    "title": "Tradutor de Legendas - Tradução SRT com Tecnologia de IA",
     "description": "Traduza legendas SRT para mais de 50 idiomas usando tecnologia avançada de IA. Rápido, preciso e gratuito.",
-    "keywords": "tradução de legendas, tradutor SRT, tradução com IA, legendas de vídeo"
+    "keywords": "tradução de legendas, tradutor SRT, tradução de IA, legendas de vídeo"
   },
   "common": {
     "title": "Tradutor de Legendas",
-    "description": "Traduza legendas SRT para mais de 50 idiomas usando IA",
-    "upload": "Carregar Arquivo SRT",
+    "description": "Traduzir legendas SRT para mais de 50 idiomas usando IA",
+    "upload": "Enviar Arquivo SRT",
     "translate": "Iniciar Tradução",
     "download": "Baixar",
     "loading": "Processando...",
@@ -20,8 +20,8 @@
     "step1": "Passo 1",
     "step2": "Passo 2",
     "step3": "Passo 3",
-    "uploadFile": "Carregue Seu Arquivo",
-    "selectLanguages": "Selecione os Idiomas",
+    "uploadFile": "Envie Seu Arquivo",
+    "selectLanguages": "Selecione Idiomas",
     "selectFormat": "Escolha o Formato de Saída"
   },
   "fileInfo": {
@@ -30,30 +30,30 @@
     "subtitlesFound": "{count} legendas encontradas"
   },
   "upload": {
-    "title": "Faça o Upload do Seu Arquivo de Legenda",
+    "title": "Carregue Seu Arquivo de Legenda",
     "dragDrop": "Arraste e solte seu arquivo SRT aqui",
     "or": "ou",
     "browse": "Procurar Arquivos",
     "maxSize": "Tamanho máximo do arquivo: 5MB",
-    "formatSupport": "Somente o formato .srt é suportado",
+    "formatSupport": "Apenas o formato .srt é suportado",
     "fileSelected": "Arquivo selecionado: {filename}",
     "remove": "Remover arquivo"
   },
   "language": {
-    "source": "Idioma de Origem",
-    "target": "Idioma de Destino",
+    "source": "Idioma de origem",
+    "target": "Idioma de destino",
     "selectPlaceholder": "Selecione um idioma...",
     "searchPlaceholder": "Pesquisar idiomas...",
     "autoDetect": "Detecção automática"
   },
   "output": {
     "title": "Selecionar Formato de Saída",
-    "monoSubtitle": "Apenas idioma alvo",
+    "monoSubtitle": "Apenas idioma de destino",
     "monoDescription": "Apenas legendas traduzidas",
     "bilingualSubtitle": "Legendas bilíngues",
     "bilingualDescription": "Original + traduzido (linha por linha)",
     "both": "Ambos os formatos",
-    "bothDescription": "Receba dois arquivos separados"
+    "bothDescription": "Obtenha dois arquivos separados"
   },
   "progress": {
     "parsing": "Lendo seu arquivo de legenda...",
@@ -71,32 +71,32 @@
     "rateLimitDaily": "Você atingiu o limite diário de 50 traduções. Volte amanhã para mais!",
     "networkError": "Não é possível conectar à internet. Por favor, verifique sua conexão e tente novamente.",
     "noFileSelected": "Por favor, faça o upload de um arquivo de legenda primeiro.",
-    "noLanguageSelected": "Por favor, selecione tanto o idioma de origem quanto o idioma alvo.",
-    "sameLanguage": "Os idiomas de origem e alvo devem ser diferentes.",
+    "noLanguageSelected": "Por favor, selecione tanto os idiomas de origem quanto os de destino.",
+    "sameLanguage": "Os idiomas de origem e destino devem ser diferentes.",
     "unknown": "Algo inesperado aconteceu. Por favor, tente novamente."
   },
   "success": {
-    "translationComplete": "Seus subtítulos foram traduzidos com sucesso!",
+    "translationComplete": "Seus legendas foram traduzidas com sucesso!",
     "downloadReady": "Seus arquivos estão prontos para download."
   },
   "footer": {
     "madeWith": "Feito com",
     "by": "por",
-    "poweredBy": "Desenvolvido pela OpenAI GPT-3.5-turbo",
+    "poweredBy": "Desenvolvido por OpenAI GPT-3.5-turbo",
     "privacyPolicy": "Política de Privacidade",
     "terms": "Termos de Serviço",
-    "contact": "Entre em Contato"
+    "contact": "Fale Conosco"
   },
   "languagePair": {
     "title": "Traduzir de {source} para {target}",
-    "description": "Tradução de subtítulos rápida e precisa de {source} para {target} usando tecnologia avançada de IA.",
+    "description": "Tradução de legendas rápida e precisa de {source} para {target} usando tecnologia avançada de IA.",
     "startTranslating": "Comece a Traduzir Agora",
     "features": {
-      "title": "Por Que Escolher Nosso Tradutor?",
+      "title": "Por que Escolher Nosso Tradutor?",
       "accurate": "Tradução Precisa",
-      "accurateDesc": "Tradução com IA com consciência de contexto",
+      "accurateDesc": "Tradução com tecnologia de IA e consciência de contexto",
       "fast": "Extremamente Rápido",
-      "fastDesc": "Processar centenas de subtítulos em minutos",
+      "fastDesc": "Processa centenas de legendas em minutos",
       "free": "Gratuito para Usar",
       "freeDesc": "Até 50 traduções por dia, completamente grátis",
       "privacy": "Privacidade em Primeiro Lugar",
@@ -105,9 +105,87 @@
     "howItWorks": {
       "title": "Como Funciona",
       "step1": "Carregue seu arquivo SRT",
-      "step2": "Escolha idiomas e formato de saída",
+      "step2": "Escolha os idiomas e o formato de saída",
       "step3": "Clique em traduzir e aguarde",
-      "step4": "Baixe seus subtítulos traduzidos"
+      "step4": "Baixe suas legendas traduzidas"
+    }
+  },
+  "benefits": {
+    "title": "Por que escolher nosso tradutor SRT?",
+    "subtitle": "Recursos poderosos que tornam a tradução de legendas sem esforço",
+    "aiPowered": {
+      "title": "Precisão com IA",
+      "description": "Tecnologia avançada de IA entende contexto e nuances, oferecendo traduções naturais que preservam o significado e o tom originais das suas legendas."
+    },
+    "instantTranslation": {
+      "title": "Tradução Instantânea",
+      "description": "Traduza centenas de linhas de legendas em minutos, não horas. Nosso sistema otimizado processa seus arquivos SRT a uma velocidade impressionante, sem comprometer a qualidade."
+    },
+    "multiLanguage": {
+      "title": "Mais de 50 Idiomas Suportados",
+      "description": "Do inglês ao chinês, do espanhol ao árabe - traduza legendas entre qualquer combinação de mais de 50 idiomas com precisão de nível profissional."
+    },
+    "bilingualOutput": {
+      "title": "Legendas Bilingues",
+      "description": "Crie legendas em dois idiomas perfeitas para o aprendizado de idiomas. Exiba o texto original e traduzido lado a lado para uma experiência de visualização aprimorada."
+    },
+    "freeToUse": {
+      "title": "Totalmente Grátis",
+      "description": "Nenhum cartão de crédito necessário, sem taxas ocultas. Receba até 50 traduções de legendas por dia, absolutamente grátis. Perfeito para criadores de conteúdo e aprendizes."
+    },
+    "privacyFirst": {
+      "title": "Sua Privacidade Importa",
+      "description": "Seus arquivos de legenda são processados de forma segura e nunca armazenados em nossos servidores. O que você envia permanece privado e é automaticamente excluído após o processamento."
+    }
+  },
+  "howToUse": {
+    "title": "Como Traduzir Legendas em 3 Passos Fáceis",
+    "subtitle": "Traduza seus arquivos SRT em menos de um minuto",
+    "step1": {
+      "title": "Envie Seu Arquivo SRT",
+      "description": "Arraste e solte seu arquivo de legenda ou clique para procurar. Suportamos arquivos no formato padrão .srt de até 5MB. Seu arquivo será analisado instantaneamente e estará pronto para tradução."
+    },
+    "step2": {
+      "title": "Selecione os Idiomas",
+      "description": "Escolha seu idioma de origem (o idioma em que suas legendas estão atualmente) e o idioma de destino (o idioma para o qual você deseja traduzir). Suportamos mais de 50 idiomas, incluindo todos os principais idiomas do mundo."
+    },
+    "step3": {
+      "title": "Baixe as Legendas Traduzidas",
+      "description": "Clique em traduzir e veja enquanto a IA processa cada linha de legenda. Em minutos, baixe seu arquivo SRT traduzido - pronto para usar com qualquer reprodutor de vídeo ou software de edição."
+    },
+    "formats": {
+      "title": "Escolha Seu Formato de Saída",
+      "mono": "Idioma Único - Obtenha apenas as legendas traduzidas",
+      "bilingual": "Bilingue - Original e tradução lado a lado",
+      "both": "Ambos os Formatos - Baixe dois arquivos separados"
+    }
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Tudo o que você precisa saber sobre nosso tradutor de legendas",
+    "q1": {
+      "question": "O que é um arquivo SRT e como eu consigo um?",
+      "answer": "Um arquivo SRT (SubRip Subtitle) é um arquivo de texto simples que contém informações de legendas, incluindo temporização e texto. Você pode extrair arquivos SRT de vídeos usando ferramentas como VLC Media Player, baixá-los de sites de legendas ou criá-los com software de edição de legendas. Nosso tradutor funciona com arquivos no formato SRT padrão."
+    },
+    "q2": {
+      "question": "Quão precisas são as traduções da IA?",
+      "answer": "Nosso tradutor alimentado por IA utiliza modelos de linguagem avançados (GPT-3.5-turbo) que entendem contexto, expressões idiomáticas e nuances culturais. Embora a tradução automática continue a melhorar, a precisão é tipicamente de 85-95% para pares de idiomas comuns. Para uso profissional, recomendamos revisar as traduções, especialmente para conteúdo técnico ou criativo."
+    },
+    "q3": {
+      "question": "Posso traduzir legendas para vídeos do YouTube?",
+      "answer": "Sim! Nossa ferramenta é perfeita para criadores do YouTube. Basta baixar o arquivo de legenda SRT do YouTube (ou criar um), traduzi-lo usando nossa ferramenta e, em seguida, fazer o upload do arquivo SRT traduzido de volta para o YouTube. Isso ajuda você a alcançar públicos internacionais e expandir seu canal globalmente."
+    },
+    "q4": {
+      "question": "Há um limite de tamanho de arquivo ou número de legendas?",
+      "answer": "Os arquivos devem ter menos de 5MB, o que normalmente inclui várias milhares de linhas de legendas - mais do que suficiente para um filme de longa-metragem. Você pode traduzir até 50 arquivos por dia gratuitamente. Se precisar de limites mais altos para uso comercial, entre em contato conosco."
+    },
+    "q5": {
+      "question": "Qual é a diferença entre legendas mono e bilíngues?",
+      "answer": "Legendas mono (em uma única língua) contêm apenas o texto traduzido - perfeitas para espectadores que apenas precisam entender o conteúdo. Legendas bilíngues mostram tanto o texto original quanto o traduzido, ideais para aprendizes de idiomas que desejam comparar traduções ou espectadores que entendem ambas as línguas."
+    },
+    "q6": {
+      "question": "Você armazena ou compartilha meus arquivos de legenda?",
+      "answer": "Não, levamos a privacidade a sério. Seus arquivos são processados em tempo real e excluídos automaticamente imediatamente após a tradução. Nunca armazenamos, analisamos ou compartilhamos seu conteúdo. Suas legendas e vídeos permanecem completamente privados e seguros."
     }
   },
   "_meta": {

@@ -6,12 +6,12 @@
   },
   "common": {
     "title": "Altyazı Çevirmeni",
-    "description": "AI kullanarak SRT altyazılarını 50'den fazla dile çevirin",
+    "description": "SRT altyazılarını AI kullanarak 50'den fazla dile çevirin",
     "upload": "SRT Dosyasını Yükle",
     "translate": "Çeviriyi Başlat",
     "download": "İndir",
     "loading": "İşleniyor...",
-    "cancel": "İptal",
+    "cancel": "İptal Et",
     "retry": "Tekrar Dene",
     "close": "Kapat",
     "dismiss": "Kapat"
@@ -31,11 +31,11 @@
   },
   "upload": {
     "title": "Altyazı Dosyanızı Yükleyin",
-    "dragDrop": "SRT dosyanızı buraya sürükleyin ve bırakın",
+    "dragDrop": "SRT dosyanızı buraya sürükleyip bırakın",
     "or": "veya",
     "browse": "Dosyaları Gözat",
     "maxSize": "Maksimum dosya boyutu: 5MB",
-    "formatSupport": "Yalnızca .srt formatı desteklenmektedir",
+    "formatSupport": "Sadece .srt formatı desteklenmektedir",
     "fileSelected": "Seçilen dosya: {filename}",
     "remove": "Dosyayı kaldır"
   },
@@ -56,20 +56,20 @@
     "bothDescription": "İki ayrı dosya alın"
   },
   "progress": {
-    "parsing": "Altyazı dosyanızı okuyoruz...",
-    "translating": "Çeviri {current} / {total} altyazı yapılıyor...",
-    "generating": "Dosyalarınızı hazırlıyoruz...",
+    "parsing": "Altyazı dosyanızı okuyor...",
+    "translating": "Altyazı {current} / {total} çeviriliyor...",
+    "generating": "Dosyalarınızı hazırlıyor...",
     "complete": "Çeviri tamamlandı!",
     "estimatedTime": "Kalan tahmini süre: {time}"
   },
   "errors": {
-    "title": "Aman! Bir şeyler yanlış gitti",
+    "title": "Hop! Bir şeyler yanlış gitti",
     "invalidFile": "Altyazı dosyanızı okuyamadık. Lütfen geçerli bir .srt dosyası olduğundan emin olun.",
     "fileTooLarge": "Dosyanız çok büyük (maks 5MB). Lütfen daha küçük bir dosya deneyin.",
     "apiError": "Çeviri hizmeti geçici olarak kullanılamıyor. Lütfen bir süre sonra tekrar deneyin.",
-    "rateLimitHourly": "Bu saat içinde 10 ücretsiz çeviriyi kullandınız. Devam etmek için lütfen {minutes} dakika bekleyin.",
+    "rateLimitHourly": "Bu saatteki 10 ücretsiz çeviriyi kullandınız. Devam etmek için lütfen {minutes} dakika bekleyin.",
     "rateLimitDaily": "Günlük 50 çeviri limitine ulaştınız. Daha fazlası için yarın geri gelin!",
-    "networkError": "İnternete bağlanılamıyor. Lütfen bağlantınızı kontrol edin ve tekrar deneyin.",
+    "networkError": "İnternete bağlanamıyoruz. Lütfen bağlantınızı kontrol edin ve tekrar deneyin.",
     "noFileSelected": "Lütfen önce bir altyazı dosyası yükleyin.",
     "noLanguageSelected": "Lütfen hem kaynak hem de hedef dilleri seçin.",
     "sameLanguage": "Kaynak ve hedef diller farklı olmalıdır.",
@@ -80,7 +80,7 @@
     "downloadReady": "Dosyalarınız indirilmeye hazır."
   },
   "footer": {
-    "madeWith": "Şununla yapıldı",
+    "madeWith": "Yapıldı",
     "by": "tarafından",
     "poweredBy": "OpenAI GPT-3.5-turbo ile desteklenmektedir",
     "privacyPolicy": "Gizlilik Politikası",
@@ -94,12 +94,12 @@
     "features": {
       "title": "Neden Bizim Çevirmenimizi Seçmelisiniz?",
       "accurate": "Doğru Çeviri",
-      "accurateDesc": "Bağlam farkındalığına sahip AI destekli çeviri",
-      "fast": "Şimşek Hızında",
-      "fastDesc": "Yüzlerce altyazıyı dakikalar içinde işleyin",
+      "accurateDesc": "Kontekst farkındalığına sahip AI destekli çeviri",
+      "fast": "Yıldırım Hızı",
+      "fastDesc": "Dakikalar içinde yüzlerce altyazıyı işleyin",
       "free": "Ücretsiz Kullanım",
       "freeDesc": "Günde 50'ye kadar çeviri, tamamen ücretsiz",
-      "privacy": "Öncelikle Gizlilik",
+      "privacy": "Öncelik Gizlilik",
       "privacyDesc": "Dosyalarınız yerel olarak işlenir ve asla saklanmaz"
     },
     "howItWorks": {
@@ -108,6 +108,84 @@
       "step2": "Dilleri ve çıktı formatını seçin",
       "step3": "Çevir butonuna tıklayın ve bekleyin",
       "step4": "Çevrilmiş altyazılarınızı indirin"
+    }
+  },
+  "benefits": {
+    "title": "Neden SRT Çevirmenimizi Seçmelisiniz?",
+    "subtitle": "Altyazı çevirisini zahmetsiz hale getiren güçlü özellikler",
+    "aiPowered": {
+      "title": "Yapay Zeka Destekli Doğruluk",
+      "description": "Gelişmiş yapay zeka teknolojisi bağlamı ve nüansı anlar, altyazılarınızın orijinal anlamını ve tonunu koruyan doğal çeviriler sunar."
+    },
+    "instantTranslation": {
+      "title": "Anında Çeviri",
+      "description": "Yüzlerce altyazı satırını dakikalar içinde, saatler değil. Optimize edilmiş sistemimiz, kaliteyi tehlikeye atmadan SRT dosyalarınızı yıldırım hızında işler."
+    },
+    "multiLanguage": {
+      "title": "50+ Dil Desteği",
+      "description": "İngilizceden Çinceye, İspanyolcadan Arapçaya - 50'den fazla dilin herhangi bir kombinasyonu arasında profesyonel düzeyde doğrulukla altyazı çevirisi yapın."
+    },
+    "bilingualOutput": {
+      "title": "İki Dilli Altyazılar",
+      "description": "Dil öğrenimi için mükemmel olan çift dilli altyazılar oluşturun. Orijinal ve çevrilmiş metni yan yana göstererek geliştirilmiş bir izleme deneyimi sunun."
+    },
+    "freeToUse": {
+      "title": "Tamamen Ücretsiz",
+      "description": "Kredi kartı gerekmez, gizli ücret yok. Günde 50'ye kadar altyazı çevirisi alın, tamamen ücretsiz. İçerik üreticileri ve öğrenenler için mükemmel."
+    },
+    "privacyFirst": {
+      "title": "Gizliliğiniz Önemlidir",
+      "description": "Altyazı dosyalarınız güvenli bir şekilde işlenir ve asla sunucularımızda saklanmaz. Yüklediğiniz her şey özel kalır ve işlemden sonra otomatik olarak silinir."
+    }
+  },
+  "howToUse": {
+    "title": "Altyazıları 3 Kolay Adımda Nasıl Çevirirsiniz",
+    "subtitle": "SRT dosyalarınızı bir dakikadan kısa sürede çevirin",
+    "step1": {
+      "title": "SRT Dosyanızı Yükleyin",
+      "description": "Altyazı dosyanızı sürükleyip bırakın veya gözatmak için tıklayın. 5MB'a kadar standart .srt format dosyalarını destekliyoruz. Dosyanız anında analiz edilecek ve çeviri için hazır hale gelecektir."
+    },
+    "step2": {
+      "title": "Dilleri Seçin",
+      "description": "Kaynak dilinizi (altyazılarınızın mevcut olduğu dil) ve hedef dilinizi (çevirmek istediğiniz dil) seçin. Tüm büyük diller dahil olmak üzere 50'den fazla dili destekliyoruz."
+    },
+    "step3": {
+      "title": "Çevrilmiş Altyazıları İndirin",
+      "description": "Çevir butonuna tıklayın ve AI'nın her altyazı satırını işlediğini izleyin. Dakikalar içinde, her video oynatıcı veya düzenleme yazılımı ile kullanıma hazır çevirilmiş SRT dosyanızı indirin."
+    },
+    "formats": {
+      "title": "Çıktı Formatınızı Seçin",
+      "mono": "Tek Dil - Sadece çevrilmiş altyazıları alın",
+      "bilingual": "İki Dilli - Orijinal ve çeviri yan yana",
+      "both": "Her İki Format - İki ayrı dosya indirin"
+    }
+  },
+  "faq": {
+    "title": "Sıkça Sorulan Sorular",
+    "subtitle": "Altyazı çevirmenimiz hakkında bilmeniz gereken her şey",
+    "q1": {
+      "question": "SRT dosyası nedir ve nasıl edinilir?",
+      "answer": "SRT (SubRip Subtitle) dosyası, zaman ve metin dahil olmak üzere altyazı bilgilerini içeren düz bir metin dosyasıdır. VLC Media Player gibi araçları kullanarak videolardan SRT dosyalarını çıkarabilir, altyazı web sitelerinden indirebilir veya altyazı düzenleme yazılımıyla oluşturabilirsiniz. Çevirmenimiz standart SRT format dosyalarıyla çalışır."
+    },
+    "q2": {
+      "question": "AI çevirileri ne kadar doğru?",
+      "answer": "AI destekli çevirmenimiz, bağlamı, deyimleri ve kültürel nüansları anlayan gelişmiş dil modellerini (GPT-3.5-turbo) kullanır. Makine çevirisi gelişmeye devam ederken, yaygın dil çiftleri için doğruluk genellikle %85-95 arasındadır. Profesyonel kullanım için, özellikle teknik veya yaratıcı içerik için çevirileri incelemenizi öneririz."
+    },
+    "q3": {
+      "question": "YouTube videoları için altyazıları çevirebilir miyim?",
+      "answer": "Evet! Aracımız YouTube içerik üreticileri için mükemmeldir. Sadece YouTube'dan SRT altyazı dosyasını indirin (veya bir tane oluşturun), aracımızı kullanarak çevirin, ardından çevrilmiş SRT dosyasını YouTube'a geri yükleyin. Bu, uluslararası izleyicilere ulaşmanıza ve kanalınızı küresel olarak büyütmenize yardımcı olur."
+    },
+    "q4": {
+      "question": "Dosya boyutu veya altyazı sayısı konusunda bir sınır var mı?",
+      "answer": "Dosyalar 5MB'ın altında olmalıdır, bu genellikle birkaç bin altyazı satırını içerir - tam uzunlukta bir film için fazlasıyla yeterlidir. Günde 50'ye kadar dosyayı ücretsiz çevirebilirsiniz. Ticari kullanım için daha yüksek limitlere ihtiyacınız varsa, lütfen bizimle iletişime geçin."
+    },
+    "q5": {
+      "question": "Mono ve iki dilli altyazılar arasındaki fark nedir?",
+      "answer": "Mono (tek dilli) altyazılar yalnızca çevrilmiş metni içerir - sadece içeriği anlaması gereken izleyiciler için mükemmeldir. İki dilli altyazılar hem orijinal hem de çevrilmiş metni gösterir, çevirileri karşılaştırmak isteyen dil öğrenenler veya her iki dili de anlayan izleyiciler için idealdir."
+    },
+    "q6": {
+      "question": "Altyazı dosyalarımı saklıyor veya paylaşıyor musunuz?",
+      "answer": "Hayır, gizliliği ciddiye alıyoruz. Dosyalarınız gerçek zamanlı olarak işlenir ve çeviriden hemen sonra otomatik olarak silinir. İçeriğinizi asla saklamaz, analiz etmez veya paylaşmayız. Altyazılarınız ve videolarınız tamamen özel ve güvenli kalır."
     }
   },
   "_meta": {

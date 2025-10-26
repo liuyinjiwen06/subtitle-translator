@@ -1,37 +1,37 @@
 {
   "meta": {
-    "title": "Trình Dịch Phụ Đề - Dịch SRT Từ AI",
+    "title": "Dịch phụ đề - Dịch SRT bằng AI",
     "description": "Dịch phụ đề SRT sang hơn 50 ngôn ngữ bằng công nghệ AI tiên tiến. Nhanh chóng, chính xác và miễn phí.",
-    "keywords": "dịch phụ đề, trình dịch SRT, dịch AI, phụ đề video"
+    "keywords": "dịch phụ đề, dịch SRT, dịch AI, phụ đề video"
   },
   "common": {
-    "title": "Trình Dịch Phụ Đề",
-    "description": "Dịch phụ đề SRT sang hơn 50 ngôn ngữ bằng AI",
-    "upload": "Tải Lên Tệp SRT",
-    "translate": "Bắt Đầu Dịch",
-    "download": "Tải Xuống",
-    "loading": "Đang Xử Lý...",
+    "title": "Dịch phụ đề",
+    "description": "Dịch phụ đề SRT sang hơn 50 ngôn ngữ sử dụng AI",
+    "upload": "Tải lên tệp SRT",
+    "translate": "Bắt đầu dịch",
+    "download": "Tải xuống",
+    "loading": "Đang xử lý...",
     "cancel": "Hủy",
-    "retry": "Thử Lại",
+    "retry": "Thử lại",
     "close": "Đóng",
-    "dismiss": "Bỏ Qua"
+    "dismiss": "Bỏ qua"
   },
   "steps": {
     "step1": "Bước 1",
     "step2": "Bước 2",
     "step3": "Bước 3",
-    "uploadFile": "Tải Lên Tệp Của Bạn",
+    "uploadFile": "Tải lên Tệp của Bạn",
     "selectLanguages": "Chọn Ngôn Ngữ",
     "selectFormat": "Chọn Định Dạng Đầu Ra"
   },
   "fileInfo": {
     "fileName": "Tệp",
     "subtitleCount": "Phụ đề",
-    "subtitlesFound": "{count} phụ đề được tìm thấy"
+    "subtitlesFound": "Tìm thấy {count} phụ đề"
   },
   "upload": {
     "title": "Tải lên tệp phụ đề của bạn",
-    "dragDrop": "Kéo và thả tệp SRT của bạn ở đây",
+    "dragDrop": "Kéo và thả tệp SRT của bạn vào đây",
     "or": "hoặc",
     "browse": "Duyệt tệp",
     "maxSize": "Kích thước tệp tối đa: 5MB",
@@ -44,7 +44,7 @@
     "target": "Ngôn ngữ đích",
     "selectPlaceholder": "Chọn một ngôn ngữ...",
     "searchPlaceholder": "Tìm kiếm ngôn ngữ...",
-    "autoDetect": "Phát hiện tự động"
+    "autoDetect": "Tự động phát hiện"
   },
   "output": {
     "title": "Chọn định dạng đầu ra",
@@ -57,23 +57,23 @@
   },
   "progress": {
     "parsing": "Đang đọc tệp phụ đề của bạn...",
-    "translating": "Đang dịch phụ đề {current} trong tổng số {total}...",
-    "generating": "Đang chuẩn bị các tệp của bạn...",
-    "complete": "Dịch thuật hoàn tất!",
+    "translating": "Đang dịch phụ đề {current} của {total}...",
+    "generating": "Đang chuẩn bị tệp của bạn...",
+    "complete": "Hoàn thành dịch thuật!",
     "estimatedTime": "Thời gian ước tính còn lại: {time}"
   },
   "errors": {
     "title": "Ôi! Có điều gì đó không đúng",
-    "invalidFile": "Chúng tôi không thể đọc tệp phụ đề của bạn. Vui lòng đảm bảo đó là tệp .srt hợp lệ.",
-    "fileTooLarge": "Tệp của bạn quá lớn (tối đa 5MB). Vui lòng thử tệp nhỏ hơn.",
-    "apiError": "Dịch vụ dịch thuật tạm thời không khả dụng. Vui lòng thử lại sau.",
+    "invalidFile": "Chúng tôi không thể đọc tệp phụ đề của bạn. Vui lòng đảm bảo rằng đó là tệp .srt hợp lệ.",
+    "fileTooLarge": "Tệp của bạn quá lớn (tối đa 5MB). Vui lòng thử một tệp nhỏ hơn.",
+    "apiError": "Dịch vụ dịch tạm thời không khả dụng. Vui lòng thử lại sau một chút.",
     "rateLimitHourly": "Bạn đã sử dụng hết 10 bản dịch miễn phí trong giờ này. Vui lòng chờ {minutes} phút để tiếp tục.",
     "rateLimitDaily": "Bạn đã đạt giới hạn hàng ngày là 50 bản dịch. Hãy quay lại vào ngày mai để có thêm!",
     "networkError": "Không thể kết nối với internet. Vui lòng kiểm tra kết nối của bạn và thử lại.",
     "noFileSelected": "Vui lòng tải lên một tệp phụ đề trước.",
-    "noLanguageSelected": "Vui lòng chọn cả ngôn ngữ nguồn và ngôn ngữ mục tiêu.",
-    "sameLanguage": "Ngôn ngữ nguồn và ngôn ngữ mục tiêu phải khác nhau.",
-    "unknown": "Có điều gì đó bất ngờ đã xảy ra. Vui lòng thử lại."
+    "noLanguageSelected": "Vui lòng chọn cả ngôn ngữ nguồn và ngôn ngữ đích.",
+    "sameLanguage": "Ngôn ngữ nguồn và ngôn ngữ đích phải khác nhau.",
+    "unknown": "Có điều gì đó bất ngờ xảy ra. Vui lòng thử lại."
   },
   "success": {
     "translationComplete": "Phụ đề của bạn đã được dịch thành công!",
@@ -83,31 +83,109 @@
     "madeWith": "Được tạo ra với",
     "by": "bởi",
     "poweredBy": "Được hỗ trợ bởi OpenAI GPT-3.5-turbo",
-    "privacyPolicy": "Chính sách quyền riêng tư",
+    "privacyPolicy": "Chính sách bảo mật",
     "terms": "Điều khoản dịch vụ",
     "contact": "Liên hệ với chúng tôi"
   },
   "languagePair": {
     "title": "Dịch từ {source} sang {target}",
-    "description": "Dịch phụ đề nhanh chóng và chính xác từ {source} sang {target} bằng công nghệ AI tiên tiến.",
+    "description": "Dịch phụ đề nhanh chóng và chính xác từ {source} sang {target} sử dụng công nghệ AI tiên tiến.",
     "startTranslating": "Bắt đầu dịch ngay",
     "features": {
-      "title": "Tại sao chọn dịch giả của chúng tôi?",
+      "title": "Tại sao chọn công cụ dịch của chúng tôi?",
       "accurate": "Dịch chính xác",
-      "accurateDesc": "Dịch thuật sử dụng AI với nhận thức ngữ cảnh",
-      "fast": "Siêu nhanh",
+      "accurateDesc": "Dịch tự động với khả năng nhận biết ngữ cảnh",
+      "fast": "Nhanh như chớp",
       "fastDesc": "Xử lý hàng trăm phụ đề trong vài phút",
       "free": "Miễn phí sử dụng",
-      "freeDesc": "Lên đến 50 bản dịch mỗi ngày, hoàn toàn miễn phí",
-      "privacy": "Quyền riêng tư là ưu tiên",
+      "freeDesc": "Tối đa 50 bản dịch mỗi ngày, hoàn toàn miễn phí",
+      "privacy": "Bảo mật hàng đầu",
       "privacyDesc": "Tệp của bạn được xử lý tại chỗ và không bao giờ được lưu trữ"
     },
     "howItWorks": {
-      "title": "Cách hoạt động",
+      "title": "Cách thức hoạt động",
       "step1": "Tải lên tệp SRT của bạn",
       "step2": "Chọn ngôn ngữ và định dạng đầu ra",
       "step3": "Nhấn dịch và chờ",
       "step4": "Tải xuống phụ đề đã dịch của bạn"
+    }
+  },
+  "benefits": {
+    "title": "Tại Sao Chọn Trình Dịch SRT Của Chúng Tôi?",
+    "subtitle": "Các tính năng mạnh mẽ giúp việc dịch phụ đề trở nên dễ dàng",
+    "aiPowered": {
+      "title": "Độ Chính Xác Được Hỗ Trợ Bởi AI",
+      "description": "Công nghệ AI tiên tiến hiểu ngữ cảnh và sắc thái, mang đến những bản dịch tự nhiên mà vẫn giữ nguyên ý nghĩa và giọng điệu của phụ đề của bạn."
+    },
+    "instantTranslation": {
+      "title": "Dịch Ngay Lập Tức",
+      "description": "Dịch hàng trăm dòng phụ đề chỉ trong vài phút, không phải vài giờ. Hệ thống tối ưu của chúng tôi xử lý các tệp SRT của bạn với tốc độ ánh sáng mà không làm giảm chất lượng."
+    },
+    "multiLanguage": {
+      "title": "Hỗ Trợ Hơn 50 Ngôn Ngữ",
+      "description": "Từ tiếng Anh đến tiếng Trung, tiếng Tây Ban Nha đến tiếng Ả Rập - dịch phụ đề giữa bất kỳ sự kết hợp nào của hơn 50 ngôn ngữ với độ chính xác chuyên nghiệp."
+    },
+    "bilingualOutput": {
+      "title": "Phụ Đề Song Ngữ",
+      "description": "Tạo phụ đề song ngữ hoàn hảo cho việc học ngôn ngữ. Hiển thị văn bản gốc và văn bản đã dịch cạnh nhau để nâng cao trải nghiệm xem."
+    },
+    "freeToUse": {
+      "title": "Hoàn Toàn Miễn Phí",
+      "description": "Không cần thẻ tín dụng, không có phí ẩn. Nhận tối đa 50 bản dịch phụ đề mỗi ngày, hoàn toàn miễn phí. Hoàn hảo cho các nhà sáng tạo nội dung và người học."
+    },
+    "privacyFirst": {
+      "title": "Quyền Riêng Tư Của Bạn Quan Trọng",
+      "description": "Các tệp phụ đề của bạn được xử lý một cách an toàn và không bao giờ được lưu trữ trên máy chủ của chúng tôi. Những gì bạn tải lên sẽ được giữ riêng tư và tự động bị xóa sau khi xử lý."
+    }
+  },
+  "howToUse": {
+    "title": "Cách Dịch Phụ Đề Trong 3 Bước Đơn Giản",
+    "subtitle": "Dịch các tệp SRT của bạn trong chưa đầy một phút",
+    "step1": {
+      "title": "Tải Lên Tệp SRT Của Bạn",
+      "description": "Kéo và thả tệp phụ đề của bạn, hoặc nhấp để duyệt. Chúng tôi hỗ trợ các tệp định dạng .srt tiêu chuẩn lên đến 5MB. Tệp của bạn sẽ được phân tích ngay lập tức và sẵn sàng để dịch."
+    },
+    "step2": {
+      "title": "Chọn Ngôn Ngữ",
+      "description": "Chọn ngôn ngữ nguồn của bạn (ngôn ngữ mà phụ đề của bạn hiện đang sử dụng) và ngôn ngữ đích (ngôn ngữ mà bạn muốn dịch sang). Chúng tôi hỗ trợ hơn 50 ngôn ngữ bao gồm tất cả các ngôn ngữ chính trên toàn cầu."
+    },
+    "step3": {
+      "title": "Tải Xuống Phụ Đề Đã Dịch",
+      "description": "Nhấp vào dịch và xem AI xử lý từng dòng phụ đề. Chỉ trong vài phút, tải xuống tệp SRT đã dịch của bạn - sẵn sàng sử dụng với bất kỳ trình phát video hoặc phần mềm chỉnh sửa nào."
+    },
+    "formats": {
+      "title": "Chọn Định Dạng Đầu Ra Của Bạn",
+      "mono": "Ngôn Ngữ Đơn - Chỉ nhận phụ đề đã dịch",
+      "bilingual": "Song Ngữ - Nguyên bản và bản dịch bên cạnh nhau",
+      "both": "Cả Hai Định Dạng - Tải xuống hai tệp riêng biệt"
+    }
+  },
+  "faq": {
+    "title": "Câu Hỏi Thường Gặp",
+    "subtitle": "Tất cả những gì bạn cần biết về trình dịch phụ đề của chúng tôi",
+    "q1": {
+      "question": "Tệp SRT là gì và tôi có thể lấy một cái ở đâu?",
+      "answer": "Tệp SRT (SubRip Subtitle) là một tệp văn bản thuần túy chứa thông tin phụ đề bao gồm thời gian và văn bản. Bạn có thể trích xuất tệp SRT từ video bằng cách sử dụng các công cụ như VLC Media Player, tải xuống từ các trang web phụ đề hoặc tạo chúng bằng phần mềm chỉnh sửa phụ đề. Trình dịch của chúng tôi hoạt động với các tệp định dạng SRT tiêu chuẩn."
+    },
+    "q2": {
+      "question": "Độ chính xác của các bản dịch AI là bao nhiêu?",
+      "answer": "Trình dịch sử dụng AI của chúng tôi sử dụng các mô hình ngôn ngữ tiên tiến (GPT-3.5-turbo) hiểu ngữ cảnh, thành ngữ và các sắc thái văn hóa. Trong khi dịch máy tiếp tục cải thiện, độ chính xác thường đạt từ 85-95% cho các cặp ngôn ngữ phổ biến. Đối với mục đích chuyên nghiệp, chúng tôi khuyên bạn nên xem xét các bản dịch, đặc biệt là đối với nội dung kỹ thuật hoặc sáng tạo."
+    },
+    "q3": {
+      "question": "Tôi có thể dịch phụ đề cho video YouTube không?",
+      "answer": "Có! Công cụ của chúng tôi rất phù hợp cho các nhà sáng tạo YouTube. Chỉ cần tải xuống tệp phụ đề SRT từ YouTube (hoặc tạo một cái), dịch nó bằng công cụ của chúng tôi, sau đó tải lên tệp SRT đã dịch trở lại YouTube. Điều này giúp bạn tiếp cận khán giả quốc tế và phát triển kênh của bạn trên toàn cầu."
+    },
+    "q4": {
+      "question": "Có giới hạn về kích thước tệp hoặc số lượng phụ đề không?",
+      "answer": "Các tệp phải có kích thước dưới 5MB, thường bao gồm hàng nghìn dòng phụ đề - nhiều hơn đủ cho một bộ phim dài. Bạn có thể dịch tối đa 50 tệp mỗi ngày miễn phí. Nếu bạn cần giới hạn cao hơn cho mục đích thương mại, vui lòng liên hệ với chúng tôi."
+    },
+    "q5": {
+      "question": "Sự khác biệt giữa phụ đề đơn ngữ và song ngữ là gì?",
+      "answer": "Phụ đề đơn ngữ (mono) chỉ chứa văn bản đã dịch - hoàn hảo cho những người xem chỉ cần hiểu nội dung. Phụ đề song ngữ hiển thị cả văn bản gốc và văn bản đã dịch, lý tưởng cho những người học ngôn ngữ muốn so sánh các bản dịch hoặc những người xem hiểu cả hai ngôn ngữ."
+    },
+    "q6": {
+      "question": "Bạn có lưu trữ hoặc chia sẻ tệp phụ đề của tôi không?",
+      "answer": "Không, chúng tôi rất nghiêm túc về quyền riêng tư. Tệp của bạn được xử lý theo thời gian thực và tự động bị xóa ngay lập tức sau khi dịch. Chúng tôi không bao giờ lưu trữ, phân tích hoặc chia sẻ nội dung của bạn. Phụ đề và video của bạn hoàn toàn riêng tư và an toàn."
     }
   },
   "_meta": {

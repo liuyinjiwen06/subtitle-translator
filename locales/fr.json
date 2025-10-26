@@ -1,12 +1,12 @@
 {
   "meta": {
     "title": "Traducteur de Sous-titres - Traduction SRT Alimentée par l'IA",
-    "description": "Traduisez des sous-titres SRT dans plus de 50 langues en utilisant une technologie IA avancée. Rapide, précis et gratuit.",
+    "description": "Traduisez des sous-titres SRT en plus de 50 langues en utilisant une technologie IA avancée. Rapide, précis et gratuit.",
     "keywords": "traduction de sous-titres, traducteur SRT, traduction IA, sous-titres vidéo"
   },
   "common": {
     "title": "Traducteur de Sous-titres",
-    "description": "Traduisez des sous-titres SRT dans plus de 50 langues en utilisant l'IA",
+    "description": "Traduisez des sous-titres SRT en plus de 50 langues en utilisant l'IA",
     "upload": "Télécharger le fichier SRT",
     "translate": "Commencer la traduction",
     "download": "Télécharger",
@@ -42,7 +42,7 @@
   "language": {
     "source": "Langue source",
     "target": "Langue cible",
-    "selectPlaceholder": "Sélectionnez une langue...",
+    "selectPlaceholder": "Sélectionner une langue...",
     "searchPlaceholder": "Rechercher des langues...",
     "autoDetect": "Détection automatique"
   },
@@ -71,7 +71,7 @@
     "rateLimitDaily": "Vous avez atteint la limite quotidienne de 50 traductions. Revenez demain pour plus !",
     "networkError": "Impossible de se connecter à Internet. Veuillez vérifier votre connexion et réessayer.",
     "noFileSelected": "Veuillez d'abord télécharger un fichier de sous-titres.",
-    "noLanguageSelected": "Veuillez sélectionner à la fois les langues source et cible.",
+    "noLanguageSelected": "Veuillez sélectionner les langues source et cible.",
     "sameLanguage": "Les langues source et cible doivent être différentes.",
     "unknown": "Quelque chose d'inattendu s'est produit. Veuillez réessayer."
   },
@@ -82,24 +82,24 @@
   "footer": {
     "madeWith": "Fait avec",
     "by": "par",
-    "poweredBy": "Alimenté par OpenAI GPT-3.5-turbo",
+    "poweredBy": "Propulsé par OpenAI GPT-3.5-turbo",
     "privacyPolicy": "Politique de confidentialité",
-    "terms": "Conditions d'utilisation",
+    "terms": "Conditions de service",
     "contact": "Contactez-nous"
   },
   "languagePair": {
     "title": "Traduire de {source} à {target}",
-    "description": "Traduction de sous-titres rapide et précise de {source} à {target} utilisant une technologie AI avancée.",
+    "description": "Traduction de sous-titres rapide et précise de {source} à {target} utilisant une technologie IA avancée.",
     "startTranslating": "Commencer à traduire maintenant",
     "features": {
       "title": "Pourquoi choisir notre traducteur ?",
       "accurate": "Traduction précise",
-      "accurateDesc": "Traduction alimentée par l'IA avec sensibilité au contexte",
-      "fast": "Éclair rapide",
+      "accurateDesc": "Traduction alimentée par IA avec conscience du contexte",
+      "fast": "Éclair",
       "fastDesc": "Traitez des centaines de sous-titres en quelques minutes",
       "free": "Gratuit à utiliser",
       "freeDesc": "Jusqu'à 50 traductions par jour, complètement gratuit",
-      "privacy": "Confidentialité d'abord",
+      "privacy": "La vie privée d'abord",
       "privacyDesc": "Vos fichiers sont traités localement et jamais stockés"
     },
     "howItWorks": {
@@ -108,6 +108,84 @@
       "step2": "Choisissez les langues et le format de sortie",
       "step3": "Cliquez sur traduire et attendez",
       "step4": "Téléchargez vos sous-titres traduits"
+    }
+  },
+  "benefits": {
+    "title": "Pourquoi choisir notre traducteur SRT ?",
+    "subtitle": "Des fonctionnalités puissantes qui rendent la traduction de sous-titres sans effort",
+    "aiPowered": {
+      "title": "Précision alimentée par l'IA",
+      "description": "Une technologie IA avancée comprend le contexte et la nuance, offrant des traductions naturelles qui préservent le sens et le ton originaux de vos sous-titres."
+    },
+    "instantTranslation": {
+      "title": "Traduction instantanée",
+      "description": "Traduisiez des centaines de lignes de sous-titres en quelques minutes, pas en heures. Notre système optimisé traite vos fichiers SRT à une vitesse fulgurante sans compromettre la qualité."
+    },
+    "multiLanguage": {
+      "title": "Plus de 50 langues prises en charge",
+      "description": "De l'anglais au chinois, de l'espagnol à l'arabe - traduisez des sous-titres entre n'importe quelle combinaison de plus de 50 langues avec une précision de qualité professionnelle."
+    },
+    "bilingualOutput": {
+      "title": "Sous-titres bilingues",
+      "description": "Créez des sous-titres en deux langues parfaits pour l'apprentissage des langues. Affichez le texte original et traduit côte à côte pour une expérience de visionnage améliorée."
+    },
+    "freeToUse": {
+      "title": "Complètement gratuit",
+      "description": "Aucune carte de crédit requise, pas de frais cachés. Obtenez jusqu'à 50 traductions de sous-titres par jour, totalement gratuit. Parfait pour les créateurs de contenu et les apprenants."
+    },
+    "privacyFirst": {
+      "title": "Votre vie privée compte",
+      "description": "Vos fichiers de sous-titres sont traités en toute sécurité et ne sont jamais stockés sur nos serveurs. Ce que vous téléchargez reste privé et est automatiquement supprimé après traitement."
+    }
+  },
+  "howToUse": {
+    "title": "Comment traduire des sous-titres en 3 étapes faciles",
+    "subtitle": "Traduisez vos fichiers SRT en moins d'une minute",
+    "step1": {
+      "title": "Téléchargez votre fichier SRT",
+      "description": "Faites glisser et déposez votre fichier de sous-titres, ou cliquez pour parcourir. Nous supportons les fichiers au format .srt standard jusqu'à 5 Mo. Votre fichier sera instantanément analysé et prêt pour la traduction."
+    },
+    "step2": {
+      "title": "Sélectionnez les langues",
+      "description": "Choisissez votre langue source (la langue dans laquelle se trouvent actuellement vos sous-titres) et la langue cible (la langue vers laquelle vous souhaitez traduire). Nous supportons plus de 50 langues, y compris toutes les langues majeures dans le monde."
+    },
+    "step3": {
+      "title": "Téléchargez les sous-titres traduits",
+      "description": "Cliquez sur traduire et regardez l'IA traiter chaque ligne de sous-titre. En quelques minutes, téléchargez votre fichier SRT traduit - prêt à être utilisé avec n'importe quel lecteur vidéo ou logiciel de montage."
+    },
+    "formats": {
+      "title": "Choisissez votre format de sortie",
+      "mono": "Langue unique - Obtenez uniquement les sous-titres traduits",
+      "bilingual": "Bilingue - Original et traduction côte à côte",
+      "both": "Les deux formats - Téléchargez deux fichiers séparés"
+    }
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "subtitle": "Tout ce que vous devez savoir sur notre traducteur de sous-titres",
+    "q1": {
+      "question": "Qu'est-ce qu'un fichier SRT et comment en obtenir un ?",
+      "answer": "Un fichier SRT (SubRip Subtitle) est un fichier texte brut contenant des informations sur les sous-titres, y compris le timing et le texte. Vous pouvez extraire des fichiers SRT à partir de vidéos en utilisant des outils comme VLC Media Player, les télécharger depuis des sites de sous-titres ou les créer avec un logiciel de montage de sous-titres. Notre traducteur fonctionne avec des fichiers au format SRT standard."
+    },
+    "q2": {
+      "question": "Quelle est la précision des traductions AI ?",
+      "answer": "Notre traducteur alimenté par l'IA utilise des modèles linguistiques avancés (GPT-3.5-turbo) qui comprennent le contexte, les idiomes et les nuances culturelles. Bien que la traduction automatique continue de s'améliorer, la précision est généralement de 85 à 95 % pour les paires de langues courantes. Pour un usage professionnel, nous recommandons de revoir les traductions, en particulier pour le contenu technique ou créatif."
+    },
+    "q3": {
+      "question": "Puis-je traduire des sous-titres pour des vidéos YouTube ?",
+      "answer": "Oui ! Notre outil est parfait pour les créateurs YouTube. Il vous suffit de télécharger le fichier de sous-titres SRT depuis YouTube (ou d'en créer un), de le traduire à l'aide de notre outil, puis de télécharger le fichier SRT traduit sur YouTube. Cela vous aide à atteindre des audiences internationales et à développer votre chaîne à l'échelle mondiale."
+    },
+    "q4": {
+      "question": "Y a-t-il une limite de taille de fichier ou de nombre de sous-titres ?",
+      "answer": "Les fichiers doivent faire moins de 5 Mo, ce qui inclut généralement plusieurs milliers de lignes de sous-titres - plus que suffisant pour un film de longueur complète. Vous pouvez traduire jusqu'à 50 fichiers par jour gratuitement. Si vous avez besoin de limites plus élevées pour un usage commercial, veuillez nous contacter."
+    },
+    "q5": {
+      "question": "Quelle est la différence entre des sous-titres mono et bilingues ?",
+      "answer": "Les sous-titres mono (langue unique) ne contiennent que le texte traduit - parfait pour les spectateurs qui ont juste besoin de comprendre le contenu. Les sous-titres bilingues affichent à la fois le texte original et le texte traduit, idéaux pour les apprenants de langues qui souhaitent comparer les traductions ou les spectateurs qui comprennent les deux langues."
+    },
+    "q6": {
+      "question": "Conservez-vous ou partagez-vous mes fichiers de sous-titres ?",
+      "answer": "Non, nous prenons la vie privée au sérieux. Vos fichiers sont traités en temps réel et supprimés automatiquement immédiatement après la traduction. Nous ne stockons, n'analysons ni ne partageons votre contenu. Vos sous-titres et vidéos restent complètement privés et sécurisés."
     }
   },
   "_meta": {

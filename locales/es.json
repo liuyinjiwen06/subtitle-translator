@@ -2,7 +2,7 @@
   "meta": {
     "title": "Traductor de Subtítulos - Traducción SRT Potenciada por IA",
     "description": "Traduce subtítulos SRT a más de 50 idiomas utilizando tecnología avanzada de IA. Rápido, preciso y gratis.",
-    "keywords": "traducción de subtítulos, traductor SRT, traducción por IA, subtítulos de video"
+    "keywords": "traducción de subtítulos, traductor SRT, traducción IA, subtítulos de video"
   },
   "common": {
     "title": "Traductor de Subtítulos",
@@ -20,9 +20,9 @@
     "step1": "Paso 1",
     "step2": "Paso 2",
     "step3": "Paso 3",
-    "uploadFile": "Sube Tu Archivo",
-    "selectLanguages": "Seleccionar Idiomas",
-    "selectFormat": "Elegir Formato de Salida"
+    "uploadFile": "Sube tu archivo",
+    "selectLanguages": "Selecciona idiomas",
+    "selectFormat": "Elige el formato de salida"
   },
   "fileInfo": {
     "fileName": "Archivo",
@@ -33,7 +33,7 @@
     "title": "Sube tu archivo de subtítulos",
     "dragDrop": "Arrastra y suelta tu archivo SRT aquí",
     "or": "o",
-    "browse": "Explorar archivos",
+    "browse": "Examinar archivos",
     "maxSize": "Tamaño máximo del archivo: 5MB",
     "formatSupport": "Solo se admite el formato .srt",
     "fileSelected": "Archivo seleccionado: {filename}",
@@ -53,27 +53,27 @@
     "bilingualSubtitle": "Subtítulos bilingües",
     "bilingualDescription": "Original + traducido (línea por línea)",
     "both": "Ambos formatos",
-    "bothDescription": "Obtén dos archivos separados"
+    "bothDescription": "Obtener dos archivos separados"
   },
   "progress": {
-    "parsing": "Leyendo tu archivo de subtítulos...",
+    "parsing": "Leyendo su archivo de subtítulos...",
     "translating": "Traduciendo el subtítulo {current} de {total}...",
-    "generating": "Preparando tus archivos...",
+    "generating": "Preparando sus archivos...",
     "complete": "¡Traducción completa!",
     "estimatedTime": "Tiempo estimado restante: {time}"
   },
   "errors": {
     "title": "¡Ups! Algo salió mal",
-    "invalidFile": "No pudimos leer tu archivo de subtítulos. Asegúrate de que sea un archivo .srt válido.",
+    "invalidFile": "No pudimos leer tu archivo de subtítulos. Por favor, asegúrate de que sea un archivo .srt válido.",
     "fileTooLarge": "Tu archivo es demasiado grande (máx. 5MB). Por favor, intenta con un archivo más pequeño.",
-    "apiError": "El servicio de traducción no está disponible temporalmente. Por favor, intenta de nuevo en un momento.",
+    "apiError": "El servicio de traducción está temporalmente no disponible. Por favor, intenta de nuevo en un momento.",
     "rateLimitHourly": "Has utilizado las 10 traducciones gratuitas de esta hora. Por favor, espera {minutes} minutos para continuar.",
     "rateLimitDaily": "Has alcanzado el límite diario de 50 traducciones. ¡Vuelve mañana para más!",
-    "networkError": "No se puede conectar a Internet. Por favor, verifica tu conexión e intenta de nuevo.",
-    "noFileSelected": "Por favor, sube un archivo de subtítulos primero.",
+    "networkError": "No se puede conectar a internet. Por favor, verifica tu conexión e intenta de nuevo.",
+    "noFileSelected": "Por favor, sube primero un archivo de subtítulos.",
     "noLanguageSelected": "Por favor, selecciona tanto el idioma de origen como el de destino.",
     "sameLanguage": "Los idiomas de origen y destino deben ser diferentes.",
-    "unknown": "Algo inesperado sucedió. Por favor, intenta de nuevo."
+    "unknown": "Algo inesperado ocurrió. Por favor, intenta de nuevo."
   },
   "success": {
     "translationComplete": "¡Tus subtítulos han sido traducidos con éxito!",
@@ -90,7 +90,7 @@
   "languagePair": {
     "title": "Traducir de {source} a {target}",
     "description": "Traducción de subtítulos rápida y precisa de {source} a {target} utilizando tecnología avanzada de IA.",
-    "startTranslating": "Comienza a Traducir Ahora",
+    "startTranslating": "Comenzar a Traducir Ahora",
     "features": {
       "title": "¿Por qué elegir nuestro traductor?",
       "accurate": "Traducción Precisa",
@@ -108,6 +108,84 @@
       "step2": "Elige idiomas y formato de salida",
       "step3": "Haz clic en traducir y espera",
       "step4": "Descarga tus subtítulos traducidos"
+    }
+  },
+  "benefits": {
+    "title": "¿Por qué elegir nuestro traductor SRT?",
+    "subtitle": "Características potentes que hacen que la traducción de subtítulos sea sencilla",
+    "aiPowered": {
+      "title": "Precisión impulsada por IA",
+      "description": "La avanzada tecnología de IA entiende el contexto y los matices, ofreciendo traducciones naturales que preservan el significado y el tono originales de tus subtítulos."
+    },
+    "instantTranslation": {
+      "title": "Traducción instantánea",
+      "description": "Traduce cientos de líneas de subtítulos en minutos, no en horas. Nuestro sistema optimizado procesa tus archivos SRT a una velocidad vertiginosa sin comprometer la calidad."
+    },
+    "multiLanguage": {
+      "title": "Más de 50 idiomas soportados",
+      "description": "Desde inglés hasta chino, español hasta árabe: traduce subtítulos entre cualquier combinación de más de 50 idiomas con precisión de nivel profesional."
+    },
+    "bilingualOutput": {
+      "title": "Subtítulos bilingües",
+      "description": "Crea subtítulos en dos idiomas perfectos para el aprendizaje de idiomas. Muestra el texto original y el traducido uno al lado del otro para una experiencia de visualización mejorada."
+    },
+    "freeToUse": {
+      "title": "Totalmente gratis",
+      "description": "No se requiere tarjeta de crédito, sin tarifas ocultas. Obtén hasta 50 traducciones de subtítulos por día, absolutamente gratis. Perfecto para creadores de contenido y aprendices."
+    },
+    "privacyFirst": {
+      "title": "Tu privacidad importa",
+      "description": "Tus archivos de subtítulos se procesan de forma segura y nunca se almacenan en nuestros servidores. Lo que subes permanece privado y se elimina automáticamente después del procesamiento."
+    }
+  },
+  "howToUse": {
+    "title": "Cómo Traducir Subtítulos en 3 Pasos Sencillos",
+    "subtitle": "Traduce tus archivos SRT en menos de un minuto",
+    "step1": {
+      "title": "Sube Tu Archivo SRT",
+      "description": "Arrastra y suelta tu archivo de subtítulos, o haz clic para buscar. Soportamos archivos en formato .srt estándar de hasta 5MB. Tu archivo será analizado al instante y estará listo para la traducción."
+    },
+    "step2": {
+      "title": "Selecciona Idiomas",
+      "description": "Elige tu idioma de origen (el idioma en el que están actualmente tus subtítulos) y el idioma de destino (el idioma al que deseas traducir). Soportamos más de 50 idiomas, incluyendo todos los principales idiomas del mundo."
+    },
+    "step3": {
+      "title": "Descarga Subtítulos Traducidos",
+      "description": "Haz clic en traducir y observa cómo la IA procesa cada línea de subtítulo. En minutos, descarga tu archivo SRT traducido - listo para usar con cualquier reproductor de video o software de edición."
+    },
+    "formats": {
+      "title": "Elige Tu Formato de Salida",
+      "mono": "Idioma Único - Obtén solo los subtítulos traducidos",
+      "bilingual": "Bilingüe - Original y traducción uno al lado del otro",
+      "both": "Ambos Formatos - Descarga dos archivos separados"
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Todo lo que necesitas saber sobre nuestro traductor de subtítulos",
+    "q1": {
+      "question": "¿Qué es un archivo SRT y cómo obtengo uno?",
+      "answer": "Un archivo SRT (SubRip Subtitle) es un archivo de texto plano que contiene información de subtítulos, incluyendo tiempos y texto. Puedes extraer archivos SRT de videos utilizando herramientas como VLC Media Player, descargarlos de sitios web de subtítulos, o crearlos con software de edición de subtítulos. Nuestro traductor trabaja con archivos en formato SRT estándar."
+    },
+    "q2": {
+      "question": "¿Qué tan precisas son las traducciones de la IA?",
+      "answer": "Nuestro traductor impulsado por IA utiliza modelos de lenguaje avanzados (GPT-3.5-turbo) que entienden el contexto, los modismos y las sutilezas culturales. Aunque la traducción automática sigue mejorando, la precisión suele ser del 85-95% para pares de idiomas comunes. Para uso profesional, recomendamos revisar las traducciones, especialmente para contenido técnico o creativo."
+    },
+    "q3": {
+      "question": "¿Puedo traducir subtítulos para videos de YouTube?",
+      "answer": "¡Sí! Nuestra herramienta es perfecta para creadores de YouTube. Simplemente descarga el archivo de subtítulos SRT de YouTube (o crea uno), tradúcelo utilizando nuestra herramienta, y luego carga el archivo SRT traducido de nuevo a YouTube. Esto te ayuda a alcanzar audiencias internacionales y hacer crecer tu canal a nivel global."
+    },
+    "q4": {
+      "question": "¿Hay un límite en el tamaño del archivo o en el número de subtítulos?",
+      "answer": "Los archivos deben ser de menos de 5MB, lo que típicamente incluye varios miles de líneas de subtítulos, más que suficiente para una película completa. Puedes traducir hasta 50 archivos por día de forma gratuita. Si necesitas límites más altos para uso comercial, por favor contáctanos."
+    },
+    "q5": {
+      "question": "¿Cuál es la diferencia entre subtítulos mono y bilingües?",
+      "answer": "Los subtítulos mono (de un solo idioma) contienen solo el texto traducido, perfectos para los espectadores que solo necesitan entender el contenido. Los subtítulos bilingües muestran tanto el texto original como el traducido, ideales para estudiantes de idiomas que quieren comparar traducciones o para espectadores que entienden ambos idiomas."
+    },
+    "q6": {
+      "question": "¿Almacenan o comparten mis archivos de subtítulos?",
+      "answer": "No, tomamos la privacidad en serio. Tus archivos se procesan en tiempo real y se eliminan automáticamente inmediatamente después de la traducción. Nunca almacenamos, analizamos ni compartimos tu contenido. Tus subtítulos y videos permanecen completamente privados y seguros."
     }
   },
   "_meta": {

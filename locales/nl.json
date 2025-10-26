@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "Ondertitelvertaler - AI-gestuurde SRT-vertaling",
-    "description": "Vertaal SRT-ondertitels naar 50+ talen met behulp van geavanceerde AI-technologie. Snel, nauwkeurig en gratis.",
+    "description": "Vertaal SRT-ondertitels naar meer dan 50 talen met behulp van geavanceerde AI-technologie. Snel, nauwkeurig en gratis.",
     "keywords": "ondertitelvertaling, SRT-vertaler, AI-vertaling, video-ondertitels"
   },
   "common": {
     "title": "Ondertitelvertaler",
-    "description": "Vertaal SRT-ondertitels naar 50+ talen met AI",
+    "description": "Vertaal SRT-ondertitels naar 50+ talen met behulp van AI",
     "upload": "Upload SRT-bestand",
-    "translate": "Start vertaling",
+    "translate": "Start Vertaling",
     "download": "Downloaden",
     "loading": "Bezig met verwerken...",
     "cancel": "Annuleren",
@@ -33,10 +33,10 @@
     "title": "Upload uw ondertitelbestand",
     "dragDrop": "Sleep uw SRT-bestand hierheen",
     "or": "of",
-    "browse": "Blader door bestanden",
+    "browse": "Bestanden doorbladeren",
     "maxSize": "Maximale bestandsgrootte: 5MB",
     "formatSupport": "Alleen .srt-indeling wordt ondersteund",
-    "fileSelected": "Bestand geselecteerd: {filename}",
+    "fileSelected": "Geselecteerd bestand: {filename}",
     "remove": "Verwijder bestand"
   },
   "language": {
@@ -50,15 +50,15 @@
     "title": "Selecteer uitvoerformaat",
     "monoSubtitle": "Doeltaal alleen",
     "monoDescription": "Alleen vertaalde ondertitels",
-    "bilingualSubtitle": "Bilinguale ondertitels",
+    "bilingualSubtitle": "Tweetalige ondertitels",
     "bilingualDescription": "Origineel + vertaald (regel voor regel)",
     "both": "Beide formaten",
-    "bothDescription": "Ontvang twee aparte bestanden"
+    "bothDescription": "Krijg twee aparte bestanden"
   },
   "progress": {
-    "parsing": "Je ondertitelbestand aan het lezen...",
-    "translating": "Onderdeel {current} van {total} aan het vertalen...",
-    "generating": "Je bestanden aan het voorbereiden...",
+    "parsing": "Uw ondertitelbestand aan het lezen...",
+    "translating": "Ondertitel {current} van {total} aan het vertalen...",
+    "generating": "Uw bestanden aan het voorbereiden...",
     "complete": "Vertaling voltooid!",
     "estimatedTime": "Geschatte resterende tijd: {time}"
   },
@@ -90,24 +90,102 @@
   "languagePair": {
     "title": "Vertaal van {source} naar {target}",
     "description": "Snelle en nauwkeurige ondertitelvertaling van {source} naar {target} met behulp van geavanceerde AI-technologie.",
-    "startTranslating": "Begin nu met vertalen",
+    "startTranslating": "Begin Nu met Vertalen",
     "features": {
-      "title": "Waarom onze vertaler kiezen?",
+      "title": "Waarom Kiezen voor Onze Vertaler?",
       "accurate": "Nauwkeurige Vertaling",
       "accurateDesc": "AI-gestuurde vertaling met contextbewustzijn",
       "fast": "Bliksemsnel",
       "fastDesc": "Verwerk honderden ondertitels in enkele minuten",
       "free": "Gratis te Gebruiken",
       "freeDesc": "Tot 50 vertalingen per dag, volledig gratis",
-      "privacy": "Privacy Eerst",
+      "privacy": "Privacy Voorop",
       "privacyDesc": "Uw bestanden worden lokaal verwerkt en nooit opgeslagen"
     },
     "howItWorks": {
-      "title": "Hoe het Werkt",
+      "title": "Hoe Het Werkt",
       "step1": "Upload uw SRT-bestand",
       "step2": "Kies talen en uitvoerformaat",
       "step3": "Klik op vertalen en wacht",
-      "step4": "Download uw vertaalde ondertitels"
+      "step4": "Download uw vertaald ondertitels"
+    }
+  },
+  "benefits": {
+    "title": "Waarom Kiezen Voor Onze SRT-Vertaler?",
+    "subtitle": "Krachtige functies die ondertitelvertaling moeiteloos maken",
+    "aiPowered": {
+      "title": "AI-Aangedreven Nauwkeurigheid",
+      "description": "Geavanceerde AI-technologie begrijpt context en nuance, en levert natuurlijke vertalingen die de oorspronkelijke betekenis en toon van uw ondertitels behouden."
+    },
+    "instantTranslation": {
+      "title": "Directe Vertaling",
+      "description": "Vertaal honderden ondertitelregels in minuten, niet in uren. Ons geoptimaliseerde systeem verwerkt uw SRT-bestanden met bliksemsnelle snelheid zonder in te boeten op kwaliteit."
+    },
+    "multiLanguage": {
+      "title": "50+ Talen Ondersteund",
+      "description": "Van Engels tot Chinees, Spaans tot Arabisch - vertaal ondertitels tussen elke combinatie van 50+ talen met professionele nauwkeurigheid."
+    },
+    "bilingualOutput": {
+      "title": "Tweetalige Ondertitels",
+      "description": "Maak tweetalige ondertitels die perfect zijn voor taalleren. Toon originele en vertaalde tekst naast elkaar voor een verbeterde kijkervaring."
+    },
+    "freeToUse": {
+      "title": "Volledig Gratis",
+      "description": "Geen creditcard vereist, geen verborgen kosten. Krijg tot 50 ondertitelvertalingen per dag, helemaal gratis. Perfect voor contentmakers en leerlingen."
+    },
+    "privacyFirst": {
+      "title": "Uw Privacy Telt",
+      "description": "Uw ondertitelbestanden worden veilig verwerkt en nooit op onze servers opgeslagen. Wat u uploadt blijft privé en wordt automatisch verwijderd na verwerking."
+    }
+  },
+  "howToUse": {
+    "title": "Hoe je Ondertitels in 3 Eenvoudige Stappen Kunt Vertalen",
+    "subtitle": "Vertaal je SRT-bestanden in minder dan een minuut",
+    "step1": {
+      "title": "Upload je SRT-bestand",
+      "description": "Sleep je ondertitelbestand hierheen of klik om te bladeren. We ondersteunen standaard .srt-bestanden tot 5MB. Je bestand wordt onmiddellijk geanalyseerd en is klaar voor vertaling."
+    },
+    "step2": {
+      "title": "Selecteer Talen",
+      "description": "Kies je brontaal (de taal waarin je ondertitels momenteel zijn) en doeltaal (de taal waarin je wilt vertalen). We ondersteunen meer dan 50 talen, inclusief alle belangrijke talen wereldwijd."
+    },
+    "step3": {
+      "title": "Download Vertaalde Ondertitels",
+      "description": "Klik op vertalen en kijk hoe AI elke ondertitelregel verwerkt. Binnen enkele minuten kun je je vertaalde SRT-bestand downloaden - klaar voor gebruik met elke videospeler of bewerkingssoftware."
+    },
+    "formats": {
+      "title": "Kies je Uitvoerformaat",
+      "mono": "Enkele Taal - Ontvang alleen de vertaalde ondertitels",
+      "bilingual": "Bilingual - Origineel en vertaling naast elkaar",
+      "both": "Beide Formaten - Download twee aparte bestanden"
+    }
+  },
+  "faq": {
+    "title": "Veelgestelde Vragen",
+    "subtitle": "Alles wat je moet weten over onze ondertitelvertaler",
+    "q1": {
+      "question": "Wat is een SRT-bestand en hoe krijg ik er een?",
+      "answer": "Een SRT (SubRip Subtitle) bestand is een platte tekstbestand dat ondertitelinformatie bevat, inclusief timing en tekst. Je kunt SRT-bestanden uit video's extraheren met tools zoals VLC Media Player, ze downloaden van ondertitelwebsites, of ze maken met ondertitelbewerkingssoftware. Onze vertaler werkt met standaard SRT-formaatbestanden."
+    },
+    "q2": {
+      "question": "Hoe nauwkeurig zijn de AI-vertalingen?",
+      "answer": "Onze AI-aangedreven vertaler maakt gebruik van geavanceerde taalmiddelen (GPT-3.5-turbo) die context, idiomen en culturele nuances begrijpen. Hoewel machinevertaling blijft verbeteren, is de nauwkeurigheid doorgaans 85-95% voor veelvoorkomende taalkoppels. Voor professioneel gebruik raden we aan om vertalingen te controleren, vooral voor technische of creatieve inhoud."
+    },
+    "q3": {
+      "question": "Kan ik ondertitels voor YouTube-video's vertalen?",
+      "answer": "Ja! Onze tool is perfect voor YouTube-creators. Download eenvoudig het SRT-ondertitelbestand van YouTube (of maak er een), vertaal het met onze tool en upload het vertaalde SRT-bestand weer naar YouTube. Dit helpt je om internationale publieken te bereiken en je kanaal wereldwijd te laten groeien."
+    },
+    "q4": {
+      "question": "Is er een limiet aan de bestandsgrootte of het aantal ondertitels?",
+      "answer": "Bestanden moeten onder de 5MB zijn, wat doorgaans enkele duizenden ondertitelregels omvat - meer dan genoeg voor een volledige film. Je kunt tot 50 bestanden per dag gratis vertalen. Als je hogere limieten nodig hebt voor commercieel gebruik, neem dan contact met ons op."
+    },
+    "q5": {
+      "question": "Wat is het verschil tussen mono- en tweetalige ondertitels?",
+      "answer": "Mono (één taal) ondertitels bevatten alleen de vertaalde tekst - perfect voor kijkers die alleen de inhoud willen begrijpen. Tweetalige ondertitels tonen zowel de originele als de vertaalde tekst, ideaal voor taalleerders die vertalingen willen vergelijken of kijkers die beide talen begrijpen."
+    },
+    "q6": {
+      "question": "Bewaar of deel je mijn ondertitelbestanden?",
+      "answer": "Nee, we nemen privacy serieus. Je bestanden worden in realtime verwerkt en onmiddellijk na vertaling automatisch verwijderd. We slaan je inhoud nooit op, analyseren deze niet of delen deze niet. Je ondertitels en video's blijven volledig privé en veilig."
     }
   },
   "_meta": {

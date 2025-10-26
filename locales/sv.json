@@ -1,12 +1,12 @@
 {
   "meta": {
     "title": "Undertextöversättare - AI-drivna SRT-översättningar",
-    "description": "Översätt SRT-undertexter till över 50 språk med avancerad AI-teknologi. Snabbt, exakt och gratis.",
+    "description": "Översätt SRT-undertexter till över 50 språk med hjälp av avancerad AI-teknik. Snabbt, exakt och gratis.",
     "keywords": "undertextöversättning, SRT-översättare, AI-översättning, videoundertexter"
   },
   "common": {
     "title": "Undertextöversättare",
-    "description": "Översätt SRT-undertexter till över 50 språk med AI",
+    "description": "Översätt SRT-undertexter till 50+ språk med hjälp av AI",
     "upload": "Ladda upp SRT-fil",
     "translate": "Börja översätta",
     "download": "Ladda ner",
@@ -44,7 +44,7 @@
     "target": "Målspråk",
     "selectPlaceholder": "Välj ett språk...",
     "searchPlaceholder": "Sök språk...",
-    "autoDetect": "Automatisk upptäck"
+    "autoDetect": "Automatisk upptäckte"
   },
   "output": {
     "title": "Välj utdataformat",
@@ -59,7 +59,7 @@
     "parsing": "Läser din undertextfil...",
     "translating": "Översätter undertext {current} av {total}...",
     "generating": "Förbereder dina filer...",
-    "complete": "Översättning klar!",
+    "complete": "Översättningen är klar!",
     "estimatedTime": "Beräknad tid kvar: {time}"
   },
   "errors": {
@@ -77,10 +77,10 @@
   },
   "success": {
     "translationComplete": "Dina undertexter har översatts framgångsrikt!",
-    "downloadReady": "Dina filer är redo att laddas ner."
+    "downloadReady": "Dina filer är klara att ladda ner."
   },
   "footer": {
-    "madeWith": "Tillverkad med",
+    "madeWith": "Tillverkat med",
     "by": "av",
     "poweredBy": "Drivs av OpenAI GPT-3.5-turbo",
     "privacyPolicy": "Integritetspolicy",
@@ -89,13 +89,13 @@
   },
   "languagePair": {
     "title": "Översätt från {source} till {target}",
-    "description": "Snabb och noggrann översättning av undertexter från {source} till {target} med avancerad AI-teknologi.",
+    "description": "Snabb och exakt översättning av undertexter från {source} till {target} med hjälp av avancerad AI-teknologi.",
     "startTranslating": "Börja översätta nu",
     "features": {
       "title": "Varför välja vår översättare?",
-      "accurate": "Noggrann översättning",
+      "accurate": "Exakt översättning",
       "accurateDesc": "AI-driven översättning med kontextmedvetenhet",
-      "fast": "Lynsnabb",
+      "fast": "Blixtsnabb",
       "fastDesc": "Bearbeta hundratals undertexter på några minuter",
       "free": "Gratis att använda",
       "freeDesc": "Upp till 50 översättningar per dag, helt gratis",
@@ -108,6 +108,84 @@
       "step2": "Välj språk och utdataformat",
       "step3": "Klicka på översätt och vänta",
       "step4": "Ladda ner dina översatta undertexter"
+    }
+  },
+  "benefits": {
+    "title": "Varför Välja Vår SRT-Översättare?",
+    "subtitle": "Maktfulla funktioner som gör undertextöversättning enkelt",
+    "aiPowered": {
+      "title": "AI-Drivna Noggrannhet",
+      "description": "Avancerad AI-teknologi förstår sammanhang och nyanser, och levererar naturliga översättningar som bevarar den ursprungliga betydelsen och tonen i dina undertexter."
+    },
+    "instantTranslation": {
+      "title": "Omedelbar Översättning",
+      "description": "Översätt hundratals undertextlinjer på minuter, inte timmar. Vårt optimerade system bearbetar dina SRT-filer med blixtsnabb hastighet utan att kompromissa med kvaliteten."
+    },
+    "multiLanguage": {
+      "title": "50+ Stödja Språk",
+      "description": "Från engelska till kinesiska, spanska till arabiska - översätt undertexter mellan vilken kombination som helst av 50+ språk med professionell noggrannhet."
+    },
+    "bilingualOutput": {
+      "title": "Tvåspråkiga Undertexter",
+      "description": "Skapa tvåspråkiga undertexter perfekta för språkinlärning. Visa original och översatt text sida vid sida för en förbättrad tittarupplevelse."
+    },
+    "freeToUse": {
+      "title": "Helt Gratis",
+      "description": "Ingen kreditkort krävs, inga dolda avgifter. Få upp till 50 undertextöversättningar per dag, helt gratis. Perfekt för innehållsskapare och studenter."
+    },
+    "privacyFirst": {
+      "title": "Din Integritet Är Viktig",
+      "description": "Dina undertextfiler bearbetas säkert och lagras aldrig på våra servrar. Det du laddar upp förblir privat och raderas automatiskt efter bearbetning."
+    }
+  },
+  "howToUse": {
+    "title": "Så här översätter du undertexter i 3 enkla steg",
+    "subtitle": "Översätt dina SRT-filer på mindre än en minut",
+    "step1": {
+      "title": "Ladda upp din SRT-fil",
+      "description": "Dra och släpp din undertextfil, eller klicka för att bläddra. Vi stödjer standard .srt-formatfiler upp till 5MB. Din fil kommer att analyseras omedelbart och vara redo för översättning."
+    },
+    "step2": {
+      "title": "Välj språk",
+      "description": "Välj ditt källspråk (språket som dina undertexter för närvarande är på) och målspråk (språket du vill översätta till). Vi stödjer över 50 språk inklusive alla stora språk världen över."
+    },
+    "step3": {
+      "title": "Ladda ner översatta undertexter",
+      "description": "Klicka på översätt och se hur AI bearbetar varje undertextlinje. Inom minuter, ladda ner din översatta SRT-fil - redo att använda med vilken videospelare eller redigeringsprogramvara som helst."
+    },
+    "formats": {
+      "title": "Välj ditt utdataformat",
+      "mono": "Enkelspråkig - Få endast de översatta undertexterna",
+      "bilingual": "Tvåspråkig - Original och översättning sida vid sida",
+      "both": "Båda formaten - Ladda ner två separata filer"
+    }
+  },
+  "faq": {
+    "title": "Vanliga Frågor",
+    "subtitle": "Allt du behöver veta om vår undertextöversättare",
+    "q1": {
+      "question": "Vad är en SRT-fil och hur får jag en?",
+      "answer": "En SRT (SubRip Subtitle) fil är en vanlig textfil som innehåller undertextinformation inklusive tid och text. Du kan extrahera SRT-filer från videor med verktyg som VLC Media Player, ladda ner dem från undertextwebbplatser, eller skapa dem med undertextredigeringsprogram. Vår översättare fungerar med standard SRT-formatfiler."
+    },
+    "q2": {
+      "question": "Hur precisa är AI-översättningarna?",
+      "answer": "Vår AI-drivna översättare använder avancerade språkmodeller (GPT-3.5-turbo) som förstår sammanhang, idiom och kulturella nyanser. Även om maskinöversättning fortsätter att förbättras, är noggrannheten vanligtvis 85-95% för vanliga språkpar. För professionellt bruk rekommenderar vi att granska översättningarna, särskilt för tekniskt eller kreativt innehåll."
+    },
+    "q3": {
+      "question": "Kan jag översätta undertexter för YouTube-videor?",
+      "answer": "Ja! Vårt verktyg är perfekt för YouTube-skapare. Ladda helt enkelt ner SRT-undertextfilen från YouTube (eller skapa en), översätt den med vårt verktyg, och ladda sedan upp den översatta SRT-filen tillbaka till YouTube. Detta hjälper dig att nå internationella publik och växa din kanal globalt."
+    },
+    "q4": {
+      "question": "Finns det en gräns för filstorlek eller antal undertexter?",
+      "answer": "Filer måste vara under 5MB, vilket vanligtvis inkluderar flera tusen undertextlinjer - mer än tillräckligt för en långfilm. Du kan översätta upp till 50 filer per dag gratis. Om du behöver högre gränser för kommersiellt bruk, vänligen kontakta oss."
+    },
+    "q5": {
+      "question": "Vad är skillnaden mellan mono och tvåspråkiga undertexter?",
+      "answer": "Mono (enspråkiga) undertexter innehåller endast den översatta texten - perfekt för tittare som bara behöver förstå innehållet. Tvåspråkiga undertexter visar både original- och översatt text, idealiskt för språkstudenter som vill jämföra översättningar eller tittare som förstår båda språken."
+    },
+    "q6": {
+      "question": "Lagrar eller delar ni mina undertextfiler?",
+      "answer": "Nej, vi tar integritet på allvar. Dina filer behandlas i realtid och raderas automatiskt omedelbart efter översättning. Vi lagrar, analyserar eller delar aldrig ditt innehåll. Dina undertexter och videor förblir helt privata och säkra."
     }
   },
   "_meta": {

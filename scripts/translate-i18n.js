@@ -199,8 +199,8 @@ Return only the translated JSON without any additional text or markdown formatti
     const topLevelKeys = Object.keys(sourceData);
     const result = {};
 
-    // 按顶层key分批翻译（每次3-4个key）
-    const chunkSize = 3;
+    // 按顶层key分批翻译（每次1个key用于 benefits/howToUse/faq 这样的大对象）
+    const chunkSize = 1;
     for (let i = 0; i < topLevelKeys.length; i += chunkSize) {
       const chunkKeys = topLevelKeys.slice(i, i + chunkSize);
       const chunk = {};
