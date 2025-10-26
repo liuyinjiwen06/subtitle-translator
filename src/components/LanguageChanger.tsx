@@ -94,16 +94,9 @@ export default function LanguageChanger({ currentLocale }: LanguageChangerProps)
       currentPath = '/' + currentPath;
     }
     
-    // 构建新路径
-    let newPath;
-    if (newLocale === 'en') {
-      // 英语使用根路径（无前缀）
-      newPath = currentPath;
-    } else {
-      // 其他语言添加前缀
-      newPath = `/${newLocale}${currentPath}`;
-    }
-    
+    // 构建新路径 - 所有语言都使用前缀（包括英语）
+    const newPath = `/${newLocale}${currentPath}`;
+
     router.push(newPath);
   };
 
