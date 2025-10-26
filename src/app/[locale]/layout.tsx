@@ -2,9 +2,36 @@ import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { isValidUILocale, type UILocale } from '@/config/ui-locales';
 import { getMessagesForLocale } from '@/lib/get-messages';
+import type { Metadata } from 'next';
 
 // 强制动态渲染以支持 next-intl
 export const dynamic = 'force-dynamic';
+
+// 生成多语言 metadata
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  // 验证 locale
+  if (!isValidUILocale(locale)) {
+    return {
+      title: 'Subtitle Translator',
+      description: 'Translate SRT subtitles using AI'
+    };
+  }
+
+  // 获取翻译消息
+  const messages = await getMessagesForLocale(locale as UILocale);
+
+  return {
+    title: messages?.meta?.title || 'Subtitle Translator - AI-Powered SRT Translation',
+    description: messages?.meta?.description || 'Translate SRT subtitles to 50+ languages using advanced AI technology. Fast, accurate, and free.',
+    keywords: messages?.meta?.keywords || 'subtitle translation, SRT translator, AI translation, video subtitles',
+  };
+}
 
 export default async function LocaleLayout({
   children,

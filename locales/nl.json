@@ -1,9 +1,14 @@
 {
+  "meta": {
+    "title": "Ondertitelvertaler - AI-gestuurde SRT-vertaling",
+    "description": "Vertaal SRT-ondertitels naar 50+ talen met behulp van geavanceerde AI-technologie. Snel, nauwkeurig en gratis.",
+    "keywords": "ondertitelvertaling, SRT-vertaler, AI-vertaling, video-ondertitels"
+  },
   "common": {
     "title": "Ondertitelvertaler",
-    "description": "Vertaal SRT-ondertitels naar 50+ talen met behulp van AI",
+    "description": "Vertaal SRT-ondertitels naar 50+ talen met AI",
     "upload": "Upload SRT-bestand",
-    "translate": "Start Vertaling",
+    "translate": "Start vertaling",
     "download": "Downloaden",
     "loading": "Bezig met verwerken...",
     "cancel": "Annuleren",
@@ -15,7 +20,7 @@
     "step1": "Stap 1",
     "step2": "Stap 2",
     "step3": "Stap 3",
-    "uploadFile": "Upload je bestand",
+    "uploadFile": "Upload uw bestand",
     "selectLanguages": "Selecteer talen",
     "selectFormat": "Kies uitvoerformaat"
   },
@@ -28,7 +33,7 @@
     "title": "Upload uw ondertitelbestand",
     "dragDrop": "Sleep uw SRT-bestand hierheen",
     "or": "of",
-    "browse": "Bestanden doorbladeren",
+    "browse": "Blader door bestanden",
     "maxSize": "Maximale bestandsgrootte: 5MB",
     "formatSupport": "Alleen .srt-indeling wordt ondersteund",
     "fileSelected": "Bestand geselecteerd: {filename}",
@@ -43,17 +48,17 @@
   },
   "output": {
     "title": "Selecteer uitvoerformaat",
-    "monoSubtitle": "Alleen doeltaal",
+    "monoSubtitle": "Doeltaal alleen",
     "monoDescription": "Alleen vertaalde ondertitels",
-    "bilingualSubtitle": "Tweetalige ondertitels",
+    "bilingualSubtitle": "Bilinguale ondertitels",
     "bilingualDescription": "Origineel + vertaald (regel voor regel)",
     "both": "Beide formaten",
-    "bothDescription": "Krijg twee aparte bestanden"
+    "bothDescription": "Ontvang twee aparte bestanden"
   },
   "progress": {
-    "parsing": "Je ondertitelbestand wordt gelezen...",
-    "translating": "Ondertitel {current} van {total} wordt vertaald...",
-    "generating": "Je bestanden worden voorbereid...",
+    "parsing": "Je ondertitelbestand aan het lezen...",
+    "translating": "Onderdeel {current} van {total} aan het vertalen...",
+    "generating": "Je bestanden aan het voorbereiden...",
     "complete": "Vertaling voltooid!",
     "estimatedTime": "Geschatte resterende tijd: {time}"
   },
@@ -61,7 +66,7 @@
     "title": "Oeps! Er is iets misgegaan",
     "invalidFile": "We konden je ondertitelbestand niet lezen. Zorg ervoor dat het een geldig .srt-bestand is.",
     "fileTooLarge": "Je bestand is te groot (max 5MB). Probeer een kleiner bestand.",
-    "apiError": "De vertalingsdienst is tijdelijk niet beschikbaar. Probeer het over een moment opnieuw.",
+    "apiError": "De vertaalservice is tijdelijk niet beschikbaar. Probeer het over een moment opnieuw.",
     "rateLimitHourly": "Je hebt alle 10 gratis vertalingen dit uur gebruikt. Wacht {minutes} minuten om door te gaan.",
     "rateLimitDaily": "Je hebt de dagelijkse limiet van 50 vertalingen bereikt. Kom morgen terug voor meer!",
     "networkError": "Kan geen verbinding maken met het internet. Controleer je verbinding en probeer het opnieuw.",
@@ -71,15 +76,15 @@
     "unknown": "Er is iets onverwachts gebeurd. Probeer het opnieuw."
   },
   "success": {
-    "translationComplete": "Je ondertitels zijn succesvol vertaald!",
-    "downloadReady": "Je bestanden zijn klaar om te downloaden."
+    "translationComplete": "Uw ondertitels zijn succesvol vertaald!",
+    "downloadReady": "Uw bestanden zijn klaar om te downloaden."
   },
   "footer": {
     "madeWith": "Gemaakt met",
     "by": "door",
     "poweredBy": "Aangedreven door OpenAI GPT-3.5-turbo",
     "privacyPolicy": "Privacybeleid",
-    "terms": "Voorwaarden",
+    "terms": "Servicevoorwaarden",
     "contact": "Neem contact met ons op"
   },
   "languagePair": {
@@ -88,49 +93,27 @@
     "startTranslating": "Begin nu met vertalen",
     "features": {
       "title": "Waarom onze vertaler kiezen?",
-      "accurate": "Nauwkeurige vertaling",
+      "accurate": "Nauwkeurige Vertaling",
       "accurateDesc": "AI-gestuurde vertaling met contextbewustzijn",
       "fast": "Bliksemsnel",
       "fastDesc": "Verwerk honderden ondertitels in enkele minuten",
-      "free": "Gratis te gebruiken",
-      "freeDesc": "Tot 50 vertalingen per dag, helemaal gratis",
-      "privacy": "Privacy eerst",
+      "free": "Gratis te Gebruiken",
+      "freeDesc": "Tot 50 vertalingen per dag, volledig gratis",
+      "privacy": "Privacy Eerst",
       "privacyDesc": "Uw bestanden worden lokaal verwerkt en nooit opgeslagen"
     },
     "howItWorks": {
-      "title": "Hoe het werkt",
+      "title": "Hoe het Werkt",
       "step1": "Upload uw SRT-bestand",
       "step2": "Kies talen en uitvoerformaat",
       "step3": "Klik op vertalen en wacht",
       "step4": "Download uw vertaalde ondertitels"
     }
   },
-  "benefits": {
-    "title": "Waarom onze SRT-vertaler kiezen?",
-    "subtitle": "Krachtige functies die ondertitelvertaling moeiteloos maken",
-    "aiPowered": {
-      "title": "AI-gestuurde nauwkeurigheid",
-      "description": "Geavanceerde AI-technologie begrijpt context en nuance, en levert natuurlijke vertalingen die de oorspronkelijke betekenis en toon van uw ondertitels behouden."
-    },
-    "instantTranslation": {
-      "title": "Directe vertaling",
-      "description": "Vertaal honderden ondertitelregels in enkele minuten, niet uren. Ons geoptimaliseerde systeem verwerkt uw SRT-bestanden met bliksemsnelle snelheid zonder kwaliteit in te boeten."
-    },
-    "multiLanguage": {
-      "title": "50+ ondersteunde talen",
-      "description": "Van Engels tot Chinees, Spaans tot Arabisch - vertaal ondertitels tussen elke combinatie van 50+ talen met professionele nauwkeurigheid."
-    },
-    "bilingualOutput": {
-      "title": "Bilinguale ondertitels",
-      "description": "Maak tweetalige ondertitels perfect voor taalleren. Toon originele en vertaalde tekst naast elkaar voor een verbeterde kijkervaring."
-    },
-    "freeToUse": {
-      "title": "Volledig gratis",
-      "description": "Geen creditcard vereist, geen verborgen kosten. Krijg tot 50 ondertitelvertalingen per dag, absoluut gratis. Perfect voor contentmakers en leerlingen."
-    },
-    "privacyFirst": {
-      "title": "Uw privacy is belangrijk",
-      "description": "Uw ondertitelbestanden worden veilig verwerkt en nooit op onze servers opgeslagen. Wat u uploadt blijft privé en wordt automatisch verwijderd na verwerking."
-    }
+  "_meta": {
+    "lastUpdated": "2025-01-19T12:00:00Z",
+    "version": "1.0.0",
+    "language": "nl",
+    "translatedBy": "handmatig"
   }
 }

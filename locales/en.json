@@ -1,4 +1,9 @@
 {
+  "meta": {
+    "title": "Subtitle Translator - AI-Powered SRT Translation",
+    "description": "Translate SRT subtitles to 50+ languages using advanced AI technology. Fast, accurate, and free.",
+    "keywords": "subtitle translation, SRT translator, AI translation, video subtitles"
+  },
   "common": {
     "title": "Subtitle Translator",
     "description": "Translate SRT subtitles to 50+ languages using AI",

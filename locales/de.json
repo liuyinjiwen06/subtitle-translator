@@ -1,11 +1,16 @@
 {
+  "meta": {
+    "title": "Untertitelübersetzer - KI-gestützte SRT-Übersetzung",
+    "description": "Übersetzen Sie SRT-Untertitel in über 50 Sprachen mit fortschrittlicher KI-Technologie. Schnell, genau und kostenlos.",
+    "keywords": "Untertitelübersetzung, SRT-Übersetzer, KI-Übersetzung, Video-Untertitel"
+  },
   "common": {
     "title": "Untertitelübersetzer",
     "description": "Übersetzen Sie SRT-Untertitel in über 50 Sprachen mit KI",
     "upload": "SRT-Datei hochladen",
     "translate": "Übersetzung starten",
     "download": "Herunterladen",
-    "loading": "Wird verarbeitet...",
+    "loading": "Verarbeitung...",
     "cancel": "Abbrechen",
     "retry": "Erneut versuchen",
     "close": "Schließen",
@@ -30,8 +35,8 @@
     "or": "oder",
     "browse": "Dateien durchsuchen",
     "maxSize": "Maximale Dateigröße: 5MB",
-    "formatSupport": "Nur .srt-Format wird unterstützt",
-    "fileSelected": "Datei ausgewählt: {filename}",
+    "formatSupport": "Nur das .srt-Format wird unterstützt",
+    "fileSelected": "Ausgewählte Datei: {filename}",
     "remove": "Datei entfernen"
   },
   "language": {
@@ -39,11 +44,11 @@
     "target": "Zielsprache",
     "selectPlaceholder": "Wählen Sie eine Sprache...",
     "searchPlaceholder": "Sprachen suchen...",
-    "autoDetect": "Automatische Erkennung"
+    "autoDetect": "Automatisch erkennen"
   },
   "output": {
-    "title": "Wählen Sie das Ausgabeformat",
-    "monoSubtitle": "Nur Zielsprache",
+    "title": "Ausgabeformat auswählen",
+    "monoSubtitle": "Zielsprache nur",
     "monoDescription": "Nur übersetzte Untertitel",
     "bilingualSubtitle": "Zweisprachige Untertitel",
     "bilingualDescription": "Original + übersetzt (Zeile für Zeile)",
@@ -63,16 +68,16 @@
     "fileTooLarge": "Ihre Datei ist zu groß (max 5MB). Bitte versuchen Sie eine kleinere Datei.",
     "apiError": "Der Übersetzungsdienst ist vorübergehend nicht verfügbar. Bitte versuchen Sie es in einem Moment erneut.",
     "rateLimitHourly": "Sie haben in dieser Stunde alle 10 kostenlosen Übersetzungen verwendet. Bitte warten Sie {minutes} Minuten, um fortzufahren.",
-    "rateLimitDaily": "Sie haben das tägliche Limit von 50 Übersetzungen erreicht. Kommen Sie morgen für mehr zurück!",
+    "rateLimitDaily": "Sie haben das tägliche Limit von 50 Übersetzungen erreicht. Kommen Sie morgen wieder für mehr!",
     "networkError": "Kann keine Verbindung zum Internet herstellen. Bitte überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
     "noFileSelected": "Bitte laden Sie zuerst eine Untertiteldatei hoch.",
-    "noLanguageSelected": "Bitte wählen Sie sowohl Quell- als auch Zielsprache aus.",
+    "noLanguageSelected": "Bitte wählen Sie sowohl die Quell- als auch die Zielsprache.",
     "sameLanguage": "Quell- und Zielsprache müssen unterschiedlich sein.",
     "unknown": "Etwas Unerwartetes ist passiert. Bitte versuchen Sie es erneut."
   },
   "success": {
     "translationComplete": "Ihre Untertitel wurden erfolgreich übersetzt!",
-    "downloadReady": "Ihre Dateien sind zum Herunterladen bereit."
+    "downloadReady": "Ihre Dateien sind zum Download bereit."
   },
   "footer": {
     "madeWith": "Hergestellt mit",
@@ -84,17 +89,17 @@
   },
   "languagePair": {
     "title": "Übersetzen von {source} nach {target}",
-    "description": "Schnelle und genaue Untertitelübersetzung von {source} nach {target} unter Verwendung fortschrittlicher KI-Technologie.",
+    "description": "Schnelle und genaue Untertitelübersetzung von {source} nach {target} mit fortschrittlicher KI-Technologie.",
     "startTranslating": "Jetzt Übersetzen",
     "features": {
       "title": "Warum unseren Übersetzer wählen?",
-      "accurate": "Genauige Übersetzung",
+      "accurate": "Genau Übersetzen",
       "accurateDesc": "KI-gestützte Übersetzung mit Kontextbewusstsein",
       "fast": "Blitzschnell",
       "fastDesc": "Verarbeiten Sie Hunderte von Untertiteln in Minuten",
-      "free": "Kostenlos zu verwenden",
+      "free": "Kostenlos zu nutzen",
       "freeDesc": "Bis zu 50 Übersetzungen pro Tag, völlig kostenlos",
-      "privacy": "Datenschutz an erster Stelle",
+      "privacy": "Datenschutz zuerst",
       "privacyDesc": "Ihre Dateien werden lokal verarbeitet und niemals gespeichert"
     },
     "howItWorks": {
@@ -105,88 +110,10 @@
       "step4": "Laden Sie Ihre übersetzten Untertitel herunter"
     }
   },
-  "benefits": {
-    "title": "Warum unseren SRT-Übersetzer wählen?",
-    "subtitle": "Leistungsstarke Funktionen, die die Untertitelübersetzung mühelos machen",
-    "aiPowered": {
-      "title": "KI-gestützte Genauigkeit",
-      "description": "Fortschrittliche KI-Technologie versteht Kontext und Nuancen und liefert natürliche Übersetzungen, die die ursprüngliche Bedeutung und den Ton Ihrer Untertitel bewahren."
-    },
-    "instantTranslation": {
-      "title": "Sofortige Übersetzung",
-      "description": "Übersetzen Sie Hunderte von Untertitelzeilen in Minuten, nicht in Stunden. Unser optimiertes System verarbeitet Ihre SRT-Dateien blitzschnell, ohne die Qualität zu beeinträchtigen."
-    },
-    "multiLanguage": {
-      "title": "Über 50 unterstützte Sprachen",
-      "description": "Von Englisch bis Chinesisch, Spanisch bis Arabisch - übersetzen Sie Untertitel zwischen jeder Kombination von über 50 Sprachen mit professioneller Genauigkeit."
-    },
-    "bilingualOutput": {
-      "title": "Zweisprachige Untertitel",
-      "description": "Erstellen Sie zweisprachige Untertitel, die perfekt zum Sprachenlernen geeignet sind. Zeigen Sie den Originaltext und den übersetzten Text nebeneinander für ein verbessertes Seherlebnis."
-    },
-    "freeToUse": {
-      "title": "Völlig kostenlos",
-      "description": "Keine Kreditkarte erforderlich, keine versteckten Gebühren. Erhalten Sie bis zu 50 Untertitelübersetzungen pro Tag, absolut kostenlos. Perfekt für Inhaltsanbieter und Lernende."
-    },
-    "privacyFirst": {
-      "title": "Ihre Privatsphäre ist wichtig",
-      "description": "Ihre Untertiteldateien werden sicher verarbeitet und niemals auf unseren Servern gespeichert. Was Sie hochladen, bleibt privat und wird nach der Verarbeitung automatisch gelöscht."
-    }
-  },
-  "howToUse": {
-    "title": "So übersetzen Sie Untertitel in 3 einfachen Schritten",
-    "subtitle": "Übersetzen Sie Ihre SRT-Dateien in weniger als einer Minute",
-    "step1": {
-      "title": "Laden Sie Ihre SRT-Datei hoch",
-      "description": "Ziehen Sie Ihre Untertiteldatei per Drag & Drop oder klicken Sie, um zu browsen. Wir unterstützen Standard .srt-Formatdateien bis zu 5 MB. Ihre Datei wird sofort analysiert und ist bereit für die Übersetzung."
-    },
-    "step2": {
-      "title": "Sprachen auswählen",
-      "description": "Wählen Sie Ihre Ausgangssprache (die Sprache, in der sich Ihre Untertitel derzeit befinden) und die Zielsprache (die Sprache, in die Sie übersetzen möchten). Wir unterstützen über 50 Sprachen, einschließlich aller wichtigen Sprachen weltweit."
-    },
-    "step3": {
-      "title": "Herunterladen der übersetzten Untertitel",
-      "description": "Klicken Sie auf Übersetzen und beobachten Sie, wie die KI jede Untertitellinie verarbeitet. In wenigen Minuten können Sie Ihre übersetzte SRT-Datei herunterladen - bereit zur Verwendung mit jedem Videoplayer oder Bearbeitungssoftware."
-    },
-    "formats": {
-      "title": "Wählen Sie Ihr Ausgabeformat",
-      "mono": "Einzelne Sprache - Erhalten Sie nur die übersetzten Untertitel",
-      "bilingual": "Zweisprachig - Original und Übersetzung nebeneinander",
-      "both": "Beide Formate - Laden Sie zwei separate Dateien herunter"
-    }
-  },
-  "faq": {
-    "title": "Häufig gestellte Fragen",
-    "subtitle": "Alles, was Sie über unseren Untertitelübersetzer wissen müssen",
-    "q1": {
-      "question": "Was ist eine SRT-Datei und wie bekomme ich eine?",
-      "answer": "Eine SRT (SubRip Subtitle) Datei ist eine einfache Textdatei, die Untertitelinformationen einschließlich Timing und Text enthält. Sie können SRT-Dateien aus Videos mit Tools wie VLC Media Player extrahieren, sie von Untertitelseiten herunterladen oder sie mit Untertitelbearbeitungssoftware erstellen. Unser Übersetzer funktioniert mit Standard-SRT-Formatdateien."
-    },
-    "q2": {
-      "question": "Wie genau sind die KI-Übersetzungen?",
-      "answer": "Unser KI-gestützter Übersetzer verwendet fortschrittliche Sprachmodelle (GPT-3.5-turbo), die den Kontext, Idiome und kulturelle Nuancen verstehen. Während die maschinelle Übersetzung weiterhin verbessert wird, liegt die Genauigkeit typischerweise bei 85-95 % für gängige Sprachpaare. Für professionelle Anwendungen empfehlen wir, Übersetzungen zu überprüfen, insbesondere bei technischem oder kreativem Inhalt."
-    },
-    "q3": {
-      "question": "Kann ich Untertitel für YouTube-Videos übersetzen?",
-      "answer": "Ja! Unser Tool ist perfekt für YouTube-Ersteller. Laden Sie einfach die SRT-Untertiteldatei von YouTube herunter (oder erstellen Sie eine), übersetzen Sie sie mit unserem Tool und laden Sie die übersetzte SRT-Datei zurück zu YouTube hoch. Dies hilft Ihnen, internationale Zuschauer zu erreichen und Ihren Kanal global zu erweitern."
-    },
-    "q4": {
-      "question": "Gibt es eine Begrenzung für die Dateigröße oder die Anzahl der Untertitel?",
-      "answer": "Dateien müssen unter 5 MB liegen, was typischerweise mehrere tausend Untertitellinien umfasst - mehr als genug für einen Spielfilm. Sie können bis zu 50 Dateien pro Tag kostenlos übersetzen. Wenn Sie höhere Limits für kommerzielle Zwecke benötigen, kontaktieren Sie uns bitte."
-    },
-    "q5": {
-      "question": "Was ist der Unterschied zwischen mono und zweisprachigen Untertiteln?",
-      "answer": "Mono (einzelne Sprache) Untertitel enthalten nur den übersetzten Text - perfekt für Zuschauer, die nur den Inhalt verstehen möchten. Zweisprachige Untertitel zeigen sowohl den Original- als auch den übersetzten Text, ideal für Sprachlerner, die Übersetzungen vergleichen möchten, oder Zuschauer, die beide Sprachen verstehen."
-    },
-    "q6": {
-      "question": "Speichern oder teilen Sie meine Untertiteldateien?",
-      "answer": "Nein, wir nehmen Datenschutz ernst. Ihre Dateien werden in Echtzeit verarbeitet und sofort nach der Übersetzung automatisch gelöscht. Wir speichern, analysieren oder teilen Ihre Inhalte niemals. Ihre Untertitel und Videos bleiben völlig privat und sicher."
-    }
-  },
   "_meta": {
     "lastUpdated": "2025-01-19T12:00:00Z",
     "version": "1.0.0",
     "language": "de",
-    "translatedBy": "manual"
+    "translatedBy": "manuell"
   }
 }

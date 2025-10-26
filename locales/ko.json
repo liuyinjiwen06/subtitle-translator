@@ -1,15 +1,20 @@
 {
+  "meta": {
+    "title": "자막 번역기 - AI 기반 SRT 번역",
+    "description": "고급 AI 기술을 사용하여 SRT 자막을 50개 이상의 언어로 번역하세요. 빠르고, 정확하며, 무료입니다.",
+    "keywords": "자막 번역, SRT 번역기, AI 번역, 비디오 자막"
+  },
   "common": {
     "title": "자막 번역기",
-    "description": "AI를 사용하여 50개 이상의 언어로 SRT 자막 번역",
+    "description": "AI를 사용하여 SRT 자막을 50개 이상의 언어로 번역하세요",
     "upload": "SRT 파일 업로드",
     "translate": "번역 시작",
     "download": "다운로드",
     "loading": "처리 중...",
     "cancel": "취소",
-    "retry": "재시도",
+    "retry": "다시 시도",
     "close": "닫기",
-    "dismiss": "무시"
+    "dismiss": "해제"
   },
   "steps": {
     "step1": "1단계",
@@ -22,7 +27,7 @@
   "fileInfo": {
     "fileName": "파일",
     "subtitleCount": "자막",
-    "subtitlesFound": "{count}개의 자막이 발견되었습니다"
+    "subtitlesFound": "{count} 개의 자막이 발견되었습니다"
   },
   "upload": {
     "title": "자막 파일 업로드",
@@ -36,7 +41,7 @@
   },
   "language": {
     "source": "출발 언어",
-    "target": "목표 언어",
+    "target": "대상 언어",
     "selectPlaceholder": "언어 선택...",
     "searchPlaceholder": "언어 검색...",
     "autoDetect": "자동 감지"
@@ -46,25 +51,25 @@
     "monoSubtitle": "목표 언어만",
     "monoDescription": "번역된 자막만",
     "bilingualSubtitle": "이중 언어 자막",
-    "bilingualDescription": "원본 + 번역 (행별)",
-    "both": "두 형식 모두",
+    "bilingualDescription": "원본 + 번역 (라인별)",
+    "both": "두 형식",
     "bothDescription": "두 개의 별도 파일 받기"
   },
   "progress": {
     "parsing": "자막 파일을 읽는 중...",
-    "translating": "자막 {current} / {total}를 번역하는 중...",
-    "generating": "파일을 준비하는 중...",
-    "complete": "번역이 완료되었습니다!",
+    "translating": "{total} 중 {current} 자막 번역 중...",
+    "generating": "파일 준비 중...",
+    "complete": "번역 완료!",
     "estimatedTime": "남은 예상 시간: {time}"
   },
   "errors": {
-    "title": "앗! 문제가 발생했습니다.",
+    "title": "앗! 문제가 발생했습니다",
     "invalidFile": "자막 파일을 읽을 수 없습니다. 유효한 .srt 파일인지 확인해 주세요.",
-    "fileTooLarge": "파일이 너무 큽니다 (최대 5MB). 더 작은 파일로 시도해 주세요.",
+    "fileTooLarge": "파일이 너무 큽니다 (최대 5MB). 더 작은 파일을 사용해 주세요.",
     "apiError": "번역 서비스가 일시적으로 사용할 수 없습니다. 잠시 후 다시 시도해 주세요.",
     "rateLimitHourly": "이번 시간에 무료 번역 10개를 모두 사용했습니다. 계속하려면 {minutes} 분 기다려 주세요.",
     "rateLimitDaily": "일일 번역 한도인 50개에 도달했습니다. 내일 다시 오세요!",
-    "networkError": "인터넷에 연결할 수 없습니다. 연결 상태를 확인하고 다시 시도해 주세요.",
+    "networkError": "인터넷에 연결할 수 없습니다. 연결을 확인하고 다시 시도해 주세요.",
     "noFileSelected": "먼저 자막 파일을 업로드해 주세요.",
     "noLanguageSelected": "원본 언어와 목표 언어를 모두 선택해 주세요.",
     "sameLanguage": "원본 언어와 목표 언어는 달라야 합니다.",
@@ -72,6 +77,43 @@
   },
   "success": {
     "translationComplete": "자막이 성공적으로 번역되었습니다!",
-    "downloadReady": "파일 다운로드 준비가 완료되었습니다."
+    "downloadReady": "파일을 다운로드할 준비가 되었습니다."
+  },
+  "footer": {
+    "madeWith": "제작됨",
+    "by": "에 의해",
+    "poweredBy": "OpenAI GPT-3.5-turbo로 구동",
+    "privacyPolicy": "개인정보 보호정책",
+    "terms": "서비스 약관",
+    "contact": "문의하기"
+  },
+  "languagePair": {
+    "title": "{source}에서 {target}으로 번역",
+    "description": "첨단 AI 기술을 사용하여 {source}에서 {target}으로 빠르고 정확한 자막 번역.",
+    "startTranslating": "지금 번역 시작하기",
+    "features": {
+      "title": "우리 번역기를 선택해야 하는 이유는?",
+      "accurate": "정확한 번역",
+      "accurateDesc": "맥락 인식이 가능한 AI 기반 번역",
+      "fast": "번개처럼 빠름",
+      "fastDesc": "몇 분 안에 수백 개의 자막 처리",
+      "free": "무료로 사용",
+      "freeDesc": "하루에 최대 50개의 번역, 완전 무료",
+      "privacy": "개인정보 우선",
+      "privacyDesc": "귀하의 파일은 로컬에서 처리되며 저장되지 않습니다."
+    },
+    "howItWorks": {
+      "title": "작동 방식",
+      "step1": "SRT 파일 업로드",
+      "step2": "언어 및 출력 형식 선택",
+      "step3": "번역 클릭 후 기다리기",
+      "step4": "번역된 자막 다운로드"
+    }
+  },
+  "_meta": {
+    "lastUpdated": "2025-01-19T12:00:00Z",
+    "version": "1.0.0",
+    "language": "ko",
+    "translatedBy": "수동"
   }
 }

@@ -1,4 +1,9 @@
 {
+  "meta": {
+    "title": "Tłumacz napisów - Tłumaczenie SRT z wykorzystaniem AI",
+    "description": "Tłumacz napisy SRT na 50+ języków z użyciem zaawansowanej technologii AI. Szybko, dokładnie i za darmo.",
+    "keywords": "tłumaczenie napisów, tłumacz SRT, tłumaczenie AI, napisy wideo"
+  },
   "common": {
     "title": "Tłumacz napisów",
     "description": "Tłumacz napisy SRT na 50+ języków z użyciem AI",
@@ -39,7 +44,7 @@
     "target": "Język docelowy",
     "selectPlaceholder": "Wybierz język...",
     "searchPlaceholder": "Szukaj języków...",
-    "autoDetect": "Auto-detekcja"
+    "autoDetect": "Automatyczne wykrywanie"
   },
   "output": {
     "title": "Wybierz format wyjściowy",
@@ -55,23 +60,60 @@
     "translating": "Tłumaczenie napisu {current} z {total}...",
     "generating": "Przygotowywanie plików...",
     "complete": "Tłumaczenie zakończone!",
-    "estimatedTime": "Szacowany czas pozostały: {time}"
+    "estimatedTime": "Szacowany pozostały czas: {time}"
   },
   "errors": {
     "title": "Ups! Coś poszło nie tak",
-    "invalidFile": "Nie mogliśmy odczytać pliku z napisami. Proszę upewnić się, że jest to ważny plik .srt.",
-    "fileTooLarge": "Twój plik jest zbyt duży (maks. 5MB). Proszę spróbować mniejszy plik.",
+    "invalidFile": "Nie mogliśmy odczytać pliku z napisami. Proszę upewnić się, że jest to prawidłowy plik .srt.",
+    "fileTooLarge": "Twój plik jest za duży (maks. 5MB). Proszę spróbować mniejszy plik.",
     "apiError": "Usługa tłumaczenia jest tymczasowo niedostępna. Proszę spróbować ponownie za chwilę.",
     "rateLimitHourly": "Wykorzystałeś wszystkie 10 darmowych tłumaczeń w tej godzinie. Proszę poczekać {minutes} minut, aby kontynuować.",
     "rateLimitDaily": "Osiągnąłeś dzienny limit 50 tłumaczeń. Wróć jutro po więcej!",
     "networkError": "Nie można połączyć się z internetem. Proszę sprawdzić połączenie i spróbować ponownie.",
     "noFileSelected": "Proszę najpierw przesłać plik z napisami.",
     "noLanguageSelected": "Proszę wybrać zarówno język źródłowy, jak i docelowy.",
-    "sameLanguage": "Język źródłowy i docelowy muszą być różne.",
-    "unknown": "Coś niespodziewanego się wydarzyło. Proszę spróbować ponownie."
+    "sameLanguage": "Języki źródłowy i docelowy muszą być różne.",
+    "unknown": "Wystąpił nieoczekiwany błąd. Proszę spróbować ponownie."
   },
   "success": {
     "translationComplete": "Twoje napisy zostały pomyślnie przetłumaczone!",
     "downloadReady": "Twoje pliki są gotowe do pobrania."
+  },
+  "footer": {
+    "madeWith": "Stworzone z",
+    "by": "przez",
+    "poweredBy": "Zasilane przez OpenAI GPT-3.5-turbo",
+    "privacyPolicy": "Polityka Prywatności",
+    "terms": "Warunki Usługi",
+    "contact": "Skontaktuj się z nami"
+  },
+  "languagePair": {
+    "title": "Przetłumacz z {source} na {target}",
+    "description": "Szybkie i dokładne tłumaczenie napisów z {source} na {target} przy użyciu zaawansowanej technologii AI.",
+    "startTranslating": "Rozpocznij Tłumaczenie Teraz",
+    "features": {
+      "title": "Dlaczego warto wybrać nasz tłumacz?",
+      "accurate": "Dokładne Tłumaczenie",
+      "accurateDesc": "Tłumaczenie z wykorzystaniem AI z uwzględnieniem kontekstu",
+      "fast": "Błyskawicznie Szybkie",
+      "fastDesc": "Przetwarzaj setki napisów w ciągu kilku minut",
+      "free": "Darmowe w Użyciu",
+      "freeDesc": "Do 50 tłumaczeń dziennie, całkowicie za darmo",
+      "privacy": "Prywatność na Pierwszym Miejscu",
+      "privacyDesc": "Twoje pliki są przetwarzane lokalnie i nigdy nie są przechowywane"
+    },
+    "howItWorks": {
+      "title": "Jak To Działa",
+      "step1": "Prześlij swój plik SRT",
+      "step2": "Wybierz języki i format wyjściowy",
+      "step3": "Kliknij tłumacz i poczekaj",
+      "step4": "Pobierz przetłumaczone napisy"
+    }
+  },
+  "_meta": {
+    "lastUpdated": "2025-01-19T12:00:00Z",
+    "version": "1.0.0",
+    "language": "pl",
+    "translatedBy": "ręcznie"
   }
 }

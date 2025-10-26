@@ -1,12 +1,17 @@
 {
+  "meta": {
+    "title": "Altyazı Çevirmeni - AI Destekli SRT Çevirisi",
+    "description": "Gelişmiş AI teknolojisini kullanarak SRT altyazılarını 50'den fazla dile çevirin. Hızlı, doğru ve ücretsiz.",
+    "keywords": "altyazı çevirisi, SRT çevirmeni, AI çevirisi, video altyazıları"
+  },
   "common": {
-    "title": "Altyazı Çevirici",
-    "description": "AI kullanarak SRT altyazılarını 50+ dile çevirin",
-    "upload": "SRT Dosyası Yükle",
+    "title": "Altyazı Çevirmeni",
+    "description": "AI kullanarak SRT altyazılarını 50'den fazla dile çevirin",
+    "upload": "SRT Dosyasını Yükle",
     "translate": "Çeviriyi Başlat",
     "download": "İndir",
     "loading": "İşleniyor...",
-    "cancel": "İptal Et",
+    "cancel": "İptal",
     "retry": "Tekrar Dene",
     "close": "Kapat",
     "dismiss": "Kapat"
@@ -26,11 +31,11 @@
   },
   "upload": {
     "title": "Altyazı Dosyanızı Yükleyin",
-    "dragDrop": "SRT dosyanızı buraya sürükleyip bırakın",
+    "dragDrop": "SRT dosyanızı buraya sürükleyin ve bırakın",
     "or": "veya",
     "browse": "Dosyaları Gözat",
     "maxSize": "Maksimum dosya boyutu: 5MB",
-    "formatSupport": "Sadece .srt formatı desteklenmektedir",
+    "formatSupport": "Yalnızca .srt formatı desteklenmektedir",
     "fileSelected": "Seçilen dosya: {filename}",
     "remove": "Dosyayı kaldır"
   },
@@ -43,7 +48,7 @@
   },
   "output": {
     "title": "Çıktı Formatını Seçin",
-    "monoSubtitle": "Sadece hedef dil",
+    "monoSubtitle": "Hedef dil yalnızca",
     "monoDescription": "Sadece çevrilmiş altyazılar",
     "bilingualSubtitle": "İki dilli altyazılar",
     "bilingualDescription": "Orijinal + çevrilmiş (satır satır)",
@@ -52,26 +57,63 @@
   },
   "progress": {
     "parsing": "Altyazı dosyanızı okuyoruz...",
-    "translating": "Altyazı {current} / {total} çeviriliyor...",
+    "translating": "Çeviri {current} / {total} altyazı yapılıyor...",
     "generating": "Dosyalarınızı hazırlıyoruz...",
     "complete": "Çeviri tamamlandı!",
     "estimatedTime": "Kalan tahmini süre: {time}"
   },
   "errors": {
-    "title": "Hata! Bir şeyler yanlış gitti",
+    "title": "Aman! Bir şeyler yanlış gitti",
     "invalidFile": "Altyazı dosyanızı okuyamadık. Lütfen geçerli bir .srt dosyası olduğundan emin olun.",
     "fileTooLarge": "Dosyanız çok büyük (maks 5MB). Lütfen daha küçük bir dosya deneyin.",
-    "apiError": "Çeviri hizmeti geçici olarak kullanılamıyor. Lütfen birazdan tekrar deneyin.",
-    "rateLimitHourly": "Bu saatteki 10 ücretsiz çeviriyi kullandınız. Devam etmek için lütfen {minutes} dakika bekleyin.",
-    "rateLimitDaily": "Günlük 50 çeviri limitine ulaştınız. Daha fazla çeviri için yarın geri gelin!",
+    "apiError": "Çeviri hizmeti geçici olarak kullanılamıyor. Lütfen bir süre sonra tekrar deneyin.",
+    "rateLimitHourly": "Bu saat içinde 10 ücretsiz çeviriyi kullandınız. Devam etmek için lütfen {minutes} dakika bekleyin.",
+    "rateLimitDaily": "Günlük 50 çeviri limitine ulaştınız. Daha fazlası için yarın geri gelin!",
     "networkError": "İnternete bağlanılamıyor. Lütfen bağlantınızı kontrol edin ve tekrar deneyin.",
     "noFileSelected": "Lütfen önce bir altyazı dosyası yükleyin.",
     "noLanguageSelected": "Lütfen hem kaynak hem de hedef dilleri seçin.",
     "sameLanguage": "Kaynak ve hedef diller farklı olmalıdır.",
-    "unknown": "Beklenmedik bir durum oluştu. Lütfen tekrar deneyin."
+    "unknown": "Beklenmedik bir şey oldu. Lütfen tekrar deneyin."
   },
   "success": {
     "translationComplete": "Altyazılarınız başarıyla çevrildi!",
-    "downloadReady": "Dosyalarınız indirmeye hazır."
+    "downloadReady": "Dosyalarınız indirilmeye hazır."
+  },
+  "footer": {
+    "madeWith": "Şununla yapıldı",
+    "by": "tarafından",
+    "poweredBy": "OpenAI GPT-3.5-turbo ile desteklenmektedir",
+    "privacyPolicy": "Gizlilik Politikası",
+    "terms": "Hizmet Şartları",
+    "contact": "Bize Ulaşın"
+  },
+  "languagePair": {
+    "title": "{source} dilinden {target} diline çevir",
+    "description": "{source} dilinden {target} diline hızlı ve doğru altyazı çevirisi, gelişmiş AI teknolojisi kullanarak.",
+    "startTranslating": "Şimdi Çeviriye Başla",
+    "features": {
+      "title": "Neden Bizim Çevirmenimizi Seçmelisiniz?",
+      "accurate": "Doğru Çeviri",
+      "accurateDesc": "Bağlam farkındalığına sahip AI destekli çeviri",
+      "fast": "Şimşek Hızında",
+      "fastDesc": "Yüzlerce altyazıyı dakikalar içinde işleyin",
+      "free": "Ücretsiz Kullanım",
+      "freeDesc": "Günde 50'ye kadar çeviri, tamamen ücretsiz",
+      "privacy": "Öncelikle Gizlilik",
+      "privacyDesc": "Dosyalarınız yerel olarak işlenir ve asla saklanmaz"
+    },
+    "howItWorks": {
+      "title": "Nasıl Çalışır",
+      "step1": "SRT dosyanızı yükleyin",
+      "step2": "Dilleri ve çıktı formatını seçin",
+      "step3": "Çevir butonuna tıklayın ve bekleyin",
+      "step4": "Çevrilmiş altyazılarınızı indirin"
+    }
+  },
+  "_meta": {
+    "lastUpdated": "2025-01-19T12:00:00Z",
+    "version": "1.0.0",
+    "language": "tr",
+    "translatedBy": "manuel"
   }
 }

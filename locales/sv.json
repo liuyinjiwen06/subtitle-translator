@@ -1,7 +1,12 @@
 {
+  "meta": {
+    "title": "Undertextöversättare - AI-drivna SRT-översättningar",
+    "description": "Översätt SRT-undertexter till över 50 språk med avancerad AI-teknologi. Snabbt, exakt och gratis.",
+    "keywords": "undertextöversättning, SRT-översättare, AI-översättning, videoundertexter"
+  },
   "common": {
     "title": "Undertextöversättare",
-    "description": "Översätt SRT-undertexter till över 50 språk med hjälp av AI",
+    "description": "Översätt SRT-undertexter till över 50 språk med AI",
     "upload": "Ladda upp SRT-fil",
     "translate": "Börja översätta",
     "download": "Ladda ner",
@@ -30,7 +35,7 @@
     "or": "eller",
     "browse": "Bläddra bland filer",
     "maxSize": "Maximal filstorlek: 5MB",
-    "formatSupport": "Endast .srt-formatet stöds",
+    "formatSupport": "Endast .srt-format stöds",
     "fileSelected": "Fil vald: {filename}",
     "remove": "Ta bort fil"
   },
@@ -43,7 +48,7 @@
   },
   "output": {
     "title": "Välj utdataformat",
-    "monoSubtitle": "Endast målspråk",
+    "monoSubtitle": "Målspråk endast",
     "monoDescription": "Endast översatta undertexter",
     "bilingualSubtitle": "Tvåspråkiga undertexter",
     "bilingualDescription": "Original + översatt (rad för rad)",
@@ -54,7 +59,7 @@
     "parsing": "Läser din undertextfil...",
     "translating": "Översätter undertext {current} av {total}...",
     "generating": "Förbereder dina filer...",
-    "complete": "Översättningen är klar!",
+    "complete": "Översättning klar!",
     "estimatedTime": "Beräknad tid kvar: {time}"
   },
   "errors": {
@@ -63,7 +68,7 @@
     "fileTooLarge": "Din fil är för stor (max 5MB). Vänligen försök med en mindre fil.",
     "apiError": "Översättningstjänsten är tillfälligt otillgänglig. Vänligen försök igen om en stund.",
     "rateLimitHourly": "Du har använt alla 10 gratisöversättningar denna timme. Vänligen vänta {minutes} minuter för att fortsätta.",
-    "rateLimitDaily": "Du har nått det dagliga gränsvärdet på 50 översättningar. Kom tillbaka imorgon för fler!",
+    "rateLimitDaily": "Du har nått det dagliga gränsen på 50 översättningar. Kom tillbaka imorgon för fler!",
     "networkError": "Kan inte ansluta till internet. Vänligen kontrollera din anslutning och försök igen.",
     "noFileSelected": "Vänligen ladda upp en undertextfil först.",
     "noLanguageSelected": "Vänligen välj både käll- och målspråk.",
@@ -72,62 +77,43 @@
   },
   "success": {
     "translationComplete": "Dina undertexter har översatts framgångsrikt!",
-    "downloadReady": "Dina filer är klara för nedladdning."
+    "downloadReady": "Dina filer är redo att laddas ner."
   },
-  "howToUse": {
-    "title": "Hur man översätter undertexter i 3 enkla steg",
-    "subtitle": "Översätt dina SRT-filer på under en minut",
-    "step1": {
-      "title": "Ladda upp din SRT-fil",
-      "description": "Dra och släpp din undertextfil, eller klicka för att bläddra. Vi stöder standard .srt-formatfiler upp till 5MB. Din fil kommer att analyseras omedelbart och vara redo för översättning."
-    },
-    "step2": {
-      "title": "Välj språk",
-      "description": "Välj ditt källspråk (språket dina undertexter för närvarande är på) och målspråk (språket du vill översätta till). Vi stöder över 50 språk, inklusive alla stora språk världen över."
-    },
-    "step3": {
-      "title": "Ladda ner översatta undertexter",
-      "description": "Klicka på översätt och se hur AI bearbetar varje undertextlinje. På några minuter, ladda ner din översatta SRT-fil - redo att användas med vilken videospelare eller redigeringsprogramvara som helst."
-    },
-    "formats": {
-      "title": "Välj ditt utdataformat",
-      "mono": "Enkelt språk - Få endast de översatta undertexterna",
-      "bilingual": "Tvåspråkig - Original och översättning sida vid sida",
-      "both": "Båda formaten - Ladda ner två separata filer"
-    }
+  "footer": {
+    "madeWith": "Tillverkad med",
+    "by": "av",
+    "poweredBy": "Drivs av OpenAI GPT-3.5-turbo",
+    "privacyPolicy": "Integritetspolicy",
+    "terms": "Användarvillkor",
+    "contact": "Kontakta oss"
   },
-  "faq": {
-    "title": "Vanliga frågor",
-    "subtitle": "Allt du behöver veta om vår undertextöversättare",
-    "q1": {
-      "question": "Vad är en SRT-fil och hur får jag en?",
-      "answer": "En SRT (SubRip Subtitle) fil är en vanlig textfil som innehåller undertextinformation inklusive tid och text. Du kan extrahera SRT-filer från videor med verktyg som VLC Media Player, ladda ner dem från undertextwebbplatser, eller skapa dem med undertextredigeringsprogramvara. Vår översättare fungerar med standard SRT-formatfiler."
+  "languagePair": {
+    "title": "Översätt från {source} till {target}",
+    "description": "Snabb och noggrann översättning av undertexter från {source} till {target} med avancerad AI-teknologi.",
+    "startTranslating": "Börja översätta nu",
+    "features": {
+      "title": "Varför välja vår översättare?",
+      "accurate": "Noggrann översättning",
+      "accurateDesc": "AI-driven översättning med kontextmedvetenhet",
+      "fast": "Lynsnabb",
+      "fastDesc": "Bearbeta hundratals undertexter på några minuter",
+      "free": "Gratis att använda",
+      "freeDesc": "Upp till 50 översättningar per dag, helt gratis",
+      "privacy": "Integritet först",
+      "privacyDesc": "Dina filer behandlas lokalt och lagras aldrig"
     },
-    "q2": {
-      "question": "Hur exakta är AI-översättningarna?",
-      "answer": "Vår AI-drivna översättare använder avancerade språkmodeller (GPT-3.5-turbo) som förstår sammanhang, idiom och kulturella nyanser. Även om maskinöversättning fortsätter att förbättras, är noggrannheten vanligtvis 85-95% för vanliga språkpar. För professionellt bruk rekommenderar vi att granska översättningarna, särskilt för tekniskt eller kreativt innehåll."
-    },
-    "q3": {
-      "question": "Kan jag översätta undertexter för YouTube-videor?",
-      "answer": "Ja! Vårt verktyg är perfekt för YouTube-skapare. Ladda helt enkelt ner SRT-undertextfilen från YouTube (eller skapa en), översätt den med vårt verktyg, och ladda sedan upp den översatta SRT-filen tillbaka till YouTube. Detta hjälper dig att nå internationella publik och växa din kanal globalt."
-    },
-    "q4": {
-      "question": "Finns det en gräns för filstorlek eller antal undertexter?",
-      "answer": "Filer måste vara under 5MB, vilket vanligtvis inkluderar flera tusen undertextlinjer - mer än tillräckligt för en långfilm. Du kan översätta upp till 50 filer per dag gratis. Om du behöver högre gränser för kommersiellt bruk, vänligen kontakta oss."
-    },
-    "q5": {
-      "question": "Vad är skillnaden mellan mono och tvåspråkiga undertexter?",
-      "answer": "Mono (enkelt språk) undertexter innehåller endast den översatta texten - perfekt för tittare som bara behöver förstå innehållet. Tvåspråkiga undertexter visar både original och översatt text, idealiskt för språkinlärare som vill jämföra översättningar eller tittare som förstår båda språken."
-    },
-    "q6": {
-      "question": "Lagrar eller delar ni mina undertextfiler?",
-      "answer": "Nej, vi tar integritet på allvar. Dina filer bearbetas i realtid och raderas automatiskt omedelbart efter översättning. Vi lagrar, analyserar eller delar aldrig ditt innehåll. Dina undertexter och videor förblir helt privata och säkra."
+    "howItWorks": {
+      "title": "Hur det fungerar",
+      "step1": "Ladda upp din SRT-fil",
+      "step2": "Välj språk och utdataformat",
+      "step3": "Klicka på översätt och vänta",
+      "step4": "Ladda ner dina översatta undertexter"
     }
   },
   "_meta": {
     "lastUpdated": "2025-01-19T12:00:00Z",
     "version": "1.0.0",
-    "language": "en",
-    "translatedBy": "manual"
+    "language": "sv",
+    "translatedBy": "manuell"
   }
 }
