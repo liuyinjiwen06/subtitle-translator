@@ -53,6 +53,8 @@ class I18nTranslator {
   constructor() {
     this.openai = new OpenAI({
       apiKey: process.env.OPENAI_API_KEY,
+      timeout: 60000, // 60秒超时
+      maxRetries: 3,  // 最多重试3次
     });
     this.sourceData = {};
     this.supportedLocales = [];
@@ -181,19 +183,51 @@ Return only the translated JSON without any additional text or markdown formatti
       }
     } catch (error) {
       console.error(`❌ 翻译失败 (${targetLang}):`, error.message);
+      console.error('错误详情:', error);
+      if (error.response) {
+        console.error('响应状态:', error.response.status);
+        console.error('响应数据:', error.response.data);
+      }
       return null;
     }
   }
 
-  // 翻译整个JSON对象（保持嵌套结构）
+  // 翻译整个JSON对象（保持嵌套结构）- 分块处理
   async translateMissing(sourceData, targetLang) {
-    console.log(`  📝 翻译整个JSON对象（保持嵌套结构）`);
+    console.log(`  📝 翻译JSON对象（分块处理以避免超时）`);
 
-    const batchTranslations = await this.translateBatch(sourceData, targetLang);
+    const topLevelKeys = Object.keys(sourceData);
+    const result = {};
 
-    if (batchTranslations) {
+    // 按顶层key分批翻译（每次3-4个key）
+    const chunkSize = 3;
+    for (let i = 0; i < topLevelKeys.length; i += chunkSize) {
+      const chunkKeys = topLevelKeys.slice(i, i + chunkSize);
+      const chunk = {};
+      chunkKeys.forEach(key => {
+        chunk[key] = sourceData[key];
+      });
+
+      console.log(`  📦 翻译块 ${Math.floor(i / chunkSize) + 1}/${Math.ceil(topLevelKeys.length / chunkSize)}: [${chunkKeys.join(', ')}]`);
+
+      const chunkTranslation = await this.translateBatch(chunk, targetLang);
+
+      if (chunkTranslation) {
+        Object.assign(result, chunkTranslation);
+        console.log(`  ✅ 块完成`);
+      } else {
+        console.log(`  ❌ 块失败，跳过`);
+      }
+
+      // 延迟以避免API限制
+      if (i + chunkSize < topLevelKeys.length) {
+        await new Promise(resolve => setTimeout(resolve, 1000));
+      }
+    }
+
+    if (Object.keys(result).length > 0) {
       console.log(`  ✅ 翻译完成`);
-      return batchTranslations;
+      return result;
     } else {
       console.log(`  ❌ 翻译失败`);
       return null;

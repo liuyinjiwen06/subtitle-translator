@@ -1,194 +1,77 @@
 {
   "common": {
-    "title": "Tradutor de Legendas",
-    "description": "Use inteligência artificial para traduzir legendas SRT em mais de 50 idiomas",
-    "upload": "Carregar arquivo SRT",
-    "translate": "Começar a traduzir",
-    "download": "Baixar",
-    "loading": "Processando...",
-    "cancel": "Cancelar",
-    "retry": "Tentar novamente",
-    "close": "Fechar",
-    "dismiss": "Ignorar"
+    "title": "Altyazı Çevirici",
+    "description": "AI kullanarak SRT altyazılarını 50+ dile çevirin",
+    "upload": "SRT Dosyası Yükle",
+    "translate": "Çeviriyi Başlat",
+    "download": "İndir",
+    "loading": "İşleniyor...",
+    "cancel": "İptal Et",
+    "retry": "Tekrar Dene",
+    "close": "Kapat",
+    "dismiss": "Kapat"
   },
   "steps": {
-    "step1": "Passo 1",
-    "step2": "Passo 2",
-    "step3": "Passo 3",
-    "uploadFile": "Carregue seu arquivo",
-    "selectLanguages": "Selecionar idiomas",
-    "selectFormat": "Selecionar formato de saída"
+    "step1": "Adım 1",
+    "step2": "Adım 2",
+    "step3": "Adım 3",
+    "uploadFile": "Dosyanızı Yükleyin",
+    "selectLanguages": "Dilleri Seçin",
+    "selectFormat": "Çıktı Formatını Seçin"
   },
   "fileInfo": {
-    "fileName": "Arquivo",
-    "subtitleCount": "Legendas",
-    "subtitlesFound": "Encontradas {count} legendas"
+    "fileName": "Dosya",
+    "subtitleCount": "Altyazılar",
+    "subtitlesFound": "{count} altyazı bulundu"
   },
   "upload": {
-    "title": "Carregue seu arquivo de legendas",
-    "dragDrop": "Por favor, arraste e solte seu arquivo SRT aqui",
-    "or": "ou",
-    "browse": "Navegar por arquivos",
-    "maxSize": "Tamanho máximo do arquivo: 5MB",
-    "formatSupport": "Apenas formato .srt suportado",
-    "fileSelected": "Arquivo selecionado: {filename}",
-    "remove": "Remover arquivo"
+    "title": "Altyazı Dosyanızı Yükleyin",
+    "dragDrop": "SRT dosyanızı buraya sürükleyip bırakın",
+    "or": "veya",
+    "browse": "Dosyaları Gözat",
+    "maxSize": "Maksimum dosya boyutu: 5MB",
+    "formatSupport": "Sadece .srt formatı desteklenmektedir",
+    "fileSelected": "Seçilen dosya: {filename}",
+    "remove": "Dosyayı kaldır"
   },
   "language": {
-    "source": "Idioma de origem",
-    "target": "Idioma de destino",
-    "selectPlaceholder": "Selecionar idioma...",
-    "searchPlaceholder": "Pesquisar idioma...",
-    "autoDetect": "Detecção automática"
+    "source": "Kaynak Dil",
+    "target": "Hedef Dil",
+    "selectPlaceholder": "Bir dil seçin...",
+    "searchPlaceholder": "Dilleri ara...",
+    "autoDetect": "Otomatik algıla"
   },
   "output": {
-    "title": "Selecionar formato de saída",
-    "monoSubtitle": "Idioma de destino",
-    "monoDescription": "Traduzir apenas legendas",
-    "bilingualSubtitle": "Legendas bilíngues",
-    "bilingualDescription": "Texto original + Tradução (exibição linha por linha)",
-    "both": "Dois formatos",
-    "bothDescription": "Obtenha dois arquivos separados"
+    "title": "Çıktı Formatını Seçin",
+    "monoSubtitle": "Sadece hedef dil",
+    "monoDescription": "Sadece çevrilmiş altyazılar",
+    "bilingualSubtitle": "İki dilli altyazılar",
+    "bilingualDescription": "Orijinal + çevrilmiş (satır satır)",
+    "both": "Her iki format",
+    "bothDescription": "İki ayrı dosya alın"
   },
   "progress": {
-    "parsing": "Analisando arquivo SRT...",
-    "translating": "Traduzindo legendas {current} / {total}...",
-    "generating": "Gerando arquivo de legendas...",
-    "complete": "Tradução concluída!",
-    "estimatedTime": "Tempo restante estimado: {time}"
+    "parsing": "Altyazı dosyanızı okuyoruz...",
+    "translating": "Altyazı {current} / {total} çeviriliyor...",
+    "generating": "Dosyalarınızı hazırlıyoruz...",
+    "complete": "Çeviri tamamlandı!",
+    "estimatedTime": "Kalan tahmini süre: {time}"
   },
   "errors": {
-    "title": "Ops! Ocorreu um erro",
-    "invalidFile": "Formato de arquivo SRT inválido. Por favor, verifique seu arquivo.",
-    "fileTooLarge": "O tamanho do arquivo excede 5MB. Por favor, carregue um arquivo menor.",
-    "apiError": "Erro no serviço de tradução. Por favor, tente novamente.",
-    "rateLimitHourly": "Você atingiu o limite horário (10 traduções). Por favor, tente novamente em {minutes} minutos.",
-    "rateLimitDaily": "Você atingiu o limite diário (50 traduções). Por favor, volte amanhã.",
-    "networkError": "Erro de conexão de rede. Por favor, verifique sua internet.",
-    "noFileSelected": "Por favor, selecione um arquivo primeiro.",
-    "noLanguageSelected": "Por favor, selecione o idioma de origem e o idioma de destino.",
-    "sameLanguage": "O idioma de origem e o idioma de destino não podem ser iguais.",
-    "unknown": "Ocorreu um erro inesperado. Por favor, tente novamente."
+    "title": "Hata! Bir şeyler yanlış gitti",
+    "invalidFile": "Altyazı dosyanızı okuyamadık. Lütfen geçerli bir .srt dosyası olduğundan emin olun.",
+    "fileTooLarge": "Dosyanız çok büyük (maks 5MB). Lütfen daha küçük bir dosya deneyin.",
+    "apiError": "Çeviri hizmeti geçici olarak kullanılamıyor. Lütfen birazdan tekrar deneyin.",
+    "rateLimitHourly": "Bu saatteki 10 ücretsiz çeviriyi kullandınız. Devam etmek için lütfen {minutes} dakika bekleyin.",
+    "rateLimitDaily": "Günlük 50 çeviri limitine ulaştınız. Daha fazla çeviri için yarın geri gelin!",
+    "networkError": "İnternete bağlanılamıyor. Lütfen bağlantınızı kontrol edin ve tekrar deneyin.",
+    "noFileSelected": "Lütfen önce bir altyazı dosyası yükleyin.",
+    "noLanguageSelected": "Lütfen hem kaynak hem de hedef dilleri seçin.",
+    "sameLanguage": "Kaynak ve hedef diller farklı olmalıdır.",
+    "unknown": "Beklenmedik bir durum oluştu. Lütfen tekrar deneyin."
   },
   "success": {
-    "translationComplete": "Suas legendas foram traduzidas com sucesso!",
-    "downloadReady": "Seu arquivo está pronto para download."
-  },
-  "footer": {
-    "madeWith": "Feito com",
-    "by": "por",
-    "poweredBy": "Impulsionado pela tecnologia OpenAI GPT-3.5-turbo",
-    "privacyPolicy": "Política de Privacidade",
-    "terms": "Termos de Serviço",
-    "contact": "Entre em contato"
-  },
-  "languagePair": {
-    "title": "Traduzir de {source} para {target}",
-    "description": "Use tecnologia avançada de inteligência artificial para traduzir legendas de {source} para {target} de forma rápida e precisa.",
-    "startTranslating": "Comece a traduzir agora",
-    "features": {
-      "title": "Por que escolher nosso serviço de tradução?",
-      "accurate": "Tradução precisa",
-      "accurateDesc": "Tradução impulsionada por IA com percepção de contexto",
-      "fast": "Extremamente rápido",
-      "fastDesc": "Processa centenas de legendas em minutos",
-      "free": "Uso gratuito",
-      "freeDesc": "Traduza até 50 vezes gratuitamente por dia",
-      "privacy": "Privacidade em primeiro lugar",
-      "privacyDesc": "Seus arquivos são processados localmente e nunca armazenados"
-    },
-    "howItWorks": {
-      "title": "Como funciona",
-      "step1": "Carregue seu arquivo SRT",
-      "step2": "Selecione idiomas e formato de saída",
-      "step3": "Clique em traduzir e aguarde",
-      "step4": "Baixe suas legendas traduzidas"
-    }
-  },
-  "benefits": {
-    "title": "Por que escolher nosso tradutor SRT?",
-    "subtitle": "Recursos poderosos tornam a tradução de legendas fácil",
-    "aiPowered": {
-      "title": "Precisão impulsionada por IA",
-      "description": "Tecnologia de IA avançada que entende contexto e nuances, oferecendo traduções naturais que preservam o significado e o tom originais das legendas."
-    },
-    "instantTranslation": {
-      "title": "Tradução instantânea",
-      "description": "Traduza centenas de linhas de legendas em minutos, em vez de horas. Nosso sistema otimizado processa seu arquivo SRT a uma velocidade impressionante, sem comprometer a qualidade."
-    },
-    "multiLanguage": {
-      "title": "Suporte a mais de 50 idiomas",
-      "description": "Traduza legendas entre mais de 50 idiomas com precisão profissional, desde inglês até chinês, e de espanhol a árabe."
-    },
-    "bilingualOutput": {
-      "title": "Legendas bilíngues",
-      "description": "Crie legendas bilíngues perfeitas, ideais para aprendizado de idiomas. Exiba o texto original e a tradução lado a lado para uma experiência de visualização aprimorada."
-    },
-    "freeToUse": {
-      "title": "Totalmente gratuito",
-      "description": "Sem cartão de crédito, sem taxas ocultas. Traduza até 50 legendas gratuitamente por dia. Perfeito para criadores de conteúdo e estudantes."
-    },
-    "privacyFirst": {
-      "title": "Sua privacidade é importante",
-      "description": "Seus arquivos de legendas são processados de forma segura e nunca são armazenados em nossos servidores. O que você envia permanece privado e é excluído automaticamente após o processamento."
-    }
-  },
-  "howToUse": {
-    "title": "Como traduzir legendas em 3 passos simples",
-    "subtitle": "Traduza seu arquivo SRT em menos de um minuto",
-    "step1": {
-      "title": "Carregue seu arquivo SRT",
-      "description": "Arraste e solte seu arquivo de legendas ou clique para navegar. Suportamos arquivos padrão .srt de até 5MB. Seu arquivo será analisado e preparado para tradução imediatamente."
-    },
-    "step2": {
-      "title": "Selecione idiomas",
-      "description": "Escolha seu idioma de origem (o idioma que suas legendas estão usando atualmente) e o idioma de destino (o idioma para o qual você deseja traduzir). Suportamos mais de 50 idiomas, incluindo todos os principais idiomas globais."
-    },
-    "step3": {
-      "title": "Baixe as legendas traduzidas",
-      "description": "Clique em traduzir e veja a IA processar cada linha de legenda. Após alguns minutos, baixe seu arquivo SRT traduzido - utilizável com qualquer reprodutor de vídeo ou software de edição."
-    },
-    "formats": {
-      "title": "Escolha seu formato de saída",
-      "mono": "Mono - obtenha apenas as legendas traduzidas",
-      "bilingual": "Bilingue - texto original e tradução lado a lado",
-      "both": "Dois formatos - baixe dois arquivos separados"
-    }
-  },
-  "faq": {
-    "title": "Perguntas Frequentes",
-    "subtitle": "Tudo o que você precisa saber sobre nosso tradutor de legendas",
-    "q1": {
-      "question": "O que é um arquivo SRT e como obtê-lo?",
-      "answer": "Um arquivo SRT (SubRip Subtitle) é um arquivo de texto simples que contém informações de legendas, incluindo tempos e texto. Você pode extrair arquivos SRT de vídeos usando ferramentas como VLC Media Player, baixá-los de sites de legendas ou criá-los usando software de edição de legendas. Nosso tradutor é compatível com arquivos no formato SRT padrão."
-    },
-    "q2": {
-      "question": "Qual é a precisão da tradução de IA?",
-      "answer": "Nosso tradutor impulsionado por IA usa modelos de linguagem avançados (GPT-3.5-turbo) que entendem contexto, expressões idiomáticas e diferenças culturais. Embora a tradução automática continue a melhorar, a precisão geralmente varia de 85% a 95% para pares de idiomas comuns. Para usos profissionais, recomendamos revisar a tradução, especialmente para conteúdos técnicos ou criativos."
-    },
-    "q3": {
-      "question": "Posso traduzir legendas para vídeos do YouTube?",
-      "answer": "Sim! Nossa ferramenta é perfeita para criadores do YouTube. Basta baixar o arquivo de legendas SRT do YouTube (ou criar um), usar nossa ferramenta para traduzi-lo e, em seguida, fazer o upload do arquivo SRT traduzido de volta para o YouTube. Isso pode ajudar você a alcançar um público internacional e expandir seu canal globalmente."
-    },
-    "q4": {
-      "question": "Há limites para o tamanho do arquivo ou número de legendas?",
-      "answer": "Os arquivos devem ter menos de 5MB, normalmente incluindo milhares de linhas de legendas - o suficiente para um filme de longa-metragem. Você pode traduzir até 50 arquivos gratuitamente por dia. Se precisar de limites mais altos para uso comercial, entre em contato conosco."
-    },
-    "q5": {
-      "question": "Qual é a diferença entre legendas monolíngues e bilíngues?",
-      "answer": "Legendas monolíngues (em um único idioma) contêm apenas o texto traduzido - ideais para espectadores que só precisam entender o conteúdo. Legendas bilíngues exibem o texto original e o texto traduzido, sendo muito úteis para estudantes de idiomas que desejam comparar a tradução ou para espectadores que entendem ambas as línguas."
-    },
-    "q6": {
-      "question": "Você armazena ou compartilha meus arquivos de legendas?",
-      "answer": "Não, valorizamos muito a privacidade. Seus arquivos são processados em tempo real e excluídos automaticamente após a tradução. Nunca armazenamos, analisamos ou compartilhamos seu conteúdo. Suas legendas e vídeos permanecem completamente privados e seguros."
-    }
-  },
-  "_meta": {
-    "lastUpdated": "2025-10-25T10:15:00.000Z",
-    "version": "1.0.2",
-    "language": "zh",
-    "translatedBy": "manual",
-    "reviewedBy": null,
-    "notes": "Adicionadas seções ausentes: passos, fileInfo, benefícios, como usar, faq"
+    "translationComplete": "Altyazılarınız başarıyla çevrildi!",
+    "downloadReady": "Dosyalarınız indirmeye hazır."
   }
 }

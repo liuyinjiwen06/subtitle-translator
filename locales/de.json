@@ -1,194 +1,192 @@
 {
   "common": {
-    "title": "Tradutor de Legendas",
-    "description": "Use inteligência artificial para traduzir legendas SRT em mais de 50 idiomas",
-    "upload": "Carregar arquivo SRT",
-    "translate": "Começar a traduzir",
-    "download": "Baixar",
-    "loading": "Processando...",
-    "cancel": "Cancelar",
-    "retry": "Tentar novamente",
-    "close": "Fechar",
-    "dismiss": "Ignorar"
+    "title": "Untertitelübersetzer",
+    "description": "Übersetzen Sie SRT-Untertitel in über 50 Sprachen mit KI",
+    "upload": "SRT-Datei hochladen",
+    "translate": "Übersetzung starten",
+    "download": "Herunterladen",
+    "loading": "Wird verarbeitet...",
+    "cancel": "Abbrechen",
+    "retry": "Erneut versuchen",
+    "close": "Schließen",
+    "dismiss": "Schließen"
   },
   "steps": {
-    "step1": "Passo 1",
-    "step2": "Passo 2",
-    "step3": "Passo 3",
-    "uploadFile": "Carregue seu arquivo",
-    "selectLanguages": "Selecionar idiomas",
-    "selectFormat": "Selecionar formato de saída"
+    "step1": "Schritt 1",
+    "step2": "Schritt 2",
+    "step3": "Schritt 3",
+    "uploadFile": "Laden Sie Ihre Datei hoch",
+    "selectLanguages": "Sprachen auswählen",
+    "selectFormat": "Ausgabeformat wählen"
   },
   "fileInfo": {
-    "fileName": "Arquivo",
-    "subtitleCount": "Legendas",
-    "subtitlesFound": "Encontradas {count} legendas"
+    "fileName": "Datei",
+    "subtitleCount": "Untertitel",
+    "subtitlesFound": "{count} Untertitel gefunden"
   },
   "upload": {
-    "title": "Carregue seu arquivo de legendas",
-    "dragDrop": "Por favor, arraste e solte seu arquivo SRT aqui",
-    "or": "ou",
-    "browse": "Navegar por arquivos",
-    "maxSize": "Tamanho máximo do arquivo: 5MB",
-    "formatSupport": "Apenas formato .srt suportado",
-    "fileSelected": "Arquivo selecionado: {filename}",
-    "remove": "Remover arquivo"
+    "title": "Laden Sie Ihre Untertiteldatei hoch",
+    "dragDrop": "Ziehen Sie Ihre SRT-Datei hierher",
+    "or": "oder",
+    "browse": "Dateien durchsuchen",
+    "maxSize": "Maximale Dateigröße: 5MB",
+    "formatSupport": "Nur .srt-Format wird unterstützt",
+    "fileSelected": "Datei ausgewählt: {filename}",
+    "remove": "Datei entfernen"
   },
   "language": {
-    "source": "Idioma de origem",
-    "target": "Idioma de destino",
-    "selectPlaceholder": "Selecionar idioma...",
-    "searchPlaceholder": "Pesquisar idioma...",
-    "autoDetect": "Detecção automática"
+    "source": "Quellsprache",
+    "target": "Zielsprache",
+    "selectPlaceholder": "Wählen Sie eine Sprache...",
+    "searchPlaceholder": "Sprachen suchen...",
+    "autoDetect": "Automatische Erkennung"
   },
   "output": {
-    "title": "Selecionar formato de saída",
-    "monoSubtitle": "Idioma de destino",
-    "monoDescription": "Traduzir apenas legendas",
-    "bilingualSubtitle": "Legendas bilíngues",
-    "bilingualDescription": "Texto original + Tradução (exibição linha por linha)",
-    "both": "Dois formatos",
-    "bothDescription": "Obtenha dois arquivos separados"
+    "title": "Wählen Sie das Ausgabeformat",
+    "monoSubtitle": "Nur Zielsprache",
+    "monoDescription": "Nur übersetzte Untertitel",
+    "bilingualSubtitle": "Zweisprachige Untertitel",
+    "bilingualDescription": "Original + übersetzt (Zeile für Zeile)",
+    "both": "Beide Formate",
+    "bothDescription": "Erhalten Sie zwei separate Dateien"
   },
   "progress": {
-    "parsing": "Analisando arquivo SRT...",
-    "translating": "Traduzindo legendas {current} / {total}...",
-    "generating": "Gerando arquivo de legendas...",
-    "complete": "Tradução concluída!",
-    "estimatedTime": "Tempo restante estimado: {time}"
+    "parsing": "Lese Ihre Untertiteldatei...",
+    "translating": "Übersetze Untertitel {current} von {total}...",
+    "generating": "Bereite Ihre Dateien vor...",
+    "complete": "Übersetzung abgeschlossen!",
+    "estimatedTime": "Geschätzte verbleibende Zeit: {time}"
   },
   "errors": {
-    "title": "Ops! Ocorreu um erro",
-    "invalidFile": "Formato de arquivo SRT inválido. Por favor, verifique seu arquivo.",
-    "fileTooLarge": "O tamanho do arquivo excede 5MB. Por favor, carregue um arquivo menor.",
-    "apiError": "Erro no serviço de tradução. Por favor, tente novamente.",
-    "rateLimitHourly": "Você atingiu o limite horário (10 traduções). Por favor, tente novamente em {minutes} minutos.",
-    "rateLimitDaily": "Você atingiu o limite diário (50 traduções). Por favor, volte amanhã.",
-    "networkError": "Erro de conexão de rede. Por favor, verifique sua internet.",
-    "noFileSelected": "Por favor, selecione um arquivo primeiro.",
-    "noLanguageSelected": "Por favor, selecione o idioma de origem e o idioma de destino.",
-    "sameLanguage": "O idioma de origem e o idioma de destino não podem ser iguais.",
-    "unknown": "Ocorreu um erro inesperado. Por favor, tente novamente."
+    "title": "Ups! Etwas ist schiefgelaufen",
+    "invalidFile": "Wir konnten Ihre Untertiteldatei nicht lesen. Bitte stellen Sie sicher, dass es sich um eine gültige .srt-Datei handelt.",
+    "fileTooLarge": "Ihre Datei ist zu groß (max 5MB). Bitte versuchen Sie eine kleinere Datei.",
+    "apiError": "Der Übersetzungsdienst ist vorübergehend nicht verfügbar. Bitte versuchen Sie es in einem Moment erneut.",
+    "rateLimitHourly": "Sie haben in dieser Stunde alle 10 kostenlosen Übersetzungen verwendet. Bitte warten Sie {minutes} Minuten, um fortzufahren.",
+    "rateLimitDaily": "Sie haben das tägliche Limit von 50 Übersetzungen erreicht. Kommen Sie morgen für mehr zurück!",
+    "networkError": "Kann keine Verbindung zum Internet herstellen. Bitte überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
+    "noFileSelected": "Bitte laden Sie zuerst eine Untertiteldatei hoch.",
+    "noLanguageSelected": "Bitte wählen Sie sowohl Quell- als auch Zielsprache aus.",
+    "sameLanguage": "Quell- und Zielsprache müssen unterschiedlich sein.",
+    "unknown": "Etwas Unerwartetes ist passiert. Bitte versuchen Sie es erneut."
   },
   "success": {
-    "translationComplete": "Suas legendas foram traduzidas com sucesso!",
-    "downloadReady": "Seu arquivo está pronto para download."
+    "translationComplete": "Ihre Untertitel wurden erfolgreich übersetzt!",
+    "downloadReady": "Ihre Dateien sind zum Herunterladen bereit."
   },
   "footer": {
-    "madeWith": "Feito com",
-    "by": "por",
-    "poweredBy": "Impulsionado pela tecnologia OpenAI GPT-3.5-turbo",
-    "privacyPolicy": "Política de Privacidade",
-    "terms": "Termos de Serviço",
-    "contact": "Entre em contato"
+    "madeWith": "Hergestellt mit",
+    "by": "von",
+    "poweredBy": "Powered by OpenAI GPT-3.5-turbo",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "contact": "Kontaktieren Sie uns"
   },
   "languagePair": {
-    "title": "Traduzir de {source} para {target}",
-    "description": "Use tecnologia avançada de inteligência artificial para traduzir legendas de {source} para {target} de forma rápida e precisa.",
-    "startTranslating": "Comece a traduzir agora",
+    "title": "Übersetzen von {source} nach {target}",
+    "description": "Schnelle und genaue Untertitelübersetzung von {source} nach {target} unter Verwendung fortschrittlicher KI-Technologie.",
+    "startTranslating": "Jetzt Übersetzen",
     "features": {
-      "title": "Por que escolher nosso serviço de tradução?",
-      "accurate": "Tradução precisa",
-      "accurateDesc": "Tradução impulsionada por IA com percepção de contexto",
-      "fast": "Extremamente rápido",
-      "fastDesc": "Processa centenas de legendas em minutos",
-      "free": "Uso gratuito",
-      "freeDesc": "Traduza até 50 vezes gratuitamente por dia",
-      "privacy": "Privacidade em primeiro lugar",
-      "privacyDesc": "Seus arquivos são processados localmente e nunca armazenados"
+      "title": "Warum unseren Übersetzer wählen?",
+      "accurate": "Genauige Übersetzung",
+      "accurateDesc": "KI-gestützte Übersetzung mit Kontextbewusstsein",
+      "fast": "Blitzschnell",
+      "fastDesc": "Verarbeiten Sie Hunderte von Untertiteln in Minuten",
+      "free": "Kostenlos zu verwenden",
+      "freeDesc": "Bis zu 50 Übersetzungen pro Tag, völlig kostenlos",
+      "privacy": "Datenschutz an erster Stelle",
+      "privacyDesc": "Ihre Dateien werden lokal verarbeitet und niemals gespeichert"
     },
     "howItWorks": {
-      "title": "Como funciona",
-      "step1": "Carregue seu arquivo SRT",
-      "step2": "Selecione idiomas e formato de saída",
-      "step3": "Clique em traduzir e aguarde",
-      "step4": "Baixe suas legendas traduzidas"
+      "title": "So funktioniert es",
+      "step1": "Laden Sie Ihre SRT-Datei hoch",
+      "step2": "Wählen Sie Sprachen und Ausgabeformat",
+      "step3": "Klicken Sie auf Übersetzen und warten Sie",
+      "step4": "Laden Sie Ihre übersetzten Untertitel herunter"
     }
   },
   "benefits": {
-    "title": "Por que escolher nosso tradutor SRT?",
-    "subtitle": "Recursos poderosos tornam a tradução de legendas fácil",
+    "title": "Warum unseren SRT-Übersetzer wählen?",
+    "subtitle": "Leistungsstarke Funktionen, die die Untertitelübersetzung mühelos machen",
     "aiPowered": {
-      "title": "Precisão impulsionada por IA",
-      "description": "Tecnologia de IA avançada que entende contexto e nuances, oferecendo traduções naturais que preservam o significado e o tom originais das legendas."
+      "title": "KI-gestützte Genauigkeit",
+      "description": "Fortschrittliche KI-Technologie versteht Kontext und Nuancen und liefert natürliche Übersetzungen, die die ursprüngliche Bedeutung und den Ton Ihrer Untertitel bewahren."
     },
     "instantTranslation": {
-      "title": "Tradução instantânea",
-      "description": "Traduza centenas de linhas de legendas em minutos, em vez de horas. Nosso sistema otimizado processa seu arquivo SRT a uma velocidade impressionante, sem comprometer a qualidade."
+      "title": "Sofortige Übersetzung",
+      "description": "Übersetzen Sie Hunderte von Untertitelzeilen in Minuten, nicht in Stunden. Unser optimiertes System verarbeitet Ihre SRT-Dateien blitzschnell, ohne die Qualität zu beeinträchtigen."
     },
     "multiLanguage": {
-      "title": "Suporte a mais de 50 idiomas",
-      "description": "Traduza legendas entre mais de 50 idiomas com precisão profissional, desde inglês até chinês, e de espanhol a árabe."
+      "title": "Über 50 unterstützte Sprachen",
+      "description": "Von Englisch bis Chinesisch, Spanisch bis Arabisch - übersetzen Sie Untertitel zwischen jeder Kombination von über 50 Sprachen mit professioneller Genauigkeit."
     },
     "bilingualOutput": {
-      "title": "Legendas bilíngues",
-      "description": "Crie legendas bilíngues perfeitas, ideais para aprendizado de idiomas. Exiba o texto original e a tradução lado a lado para uma experiência de visualização aprimorada."
+      "title": "Zweisprachige Untertitel",
+      "description": "Erstellen Sie zweisprachige Untertitel, die perfekt zum Sprachenlernen geeignet sind. Zeigen Sie den Originaltext und den übersetzten Text nebeneinander für ein verbessertes Seherlebnis."
     },
     "freeToUse": {
-      "title": "Totalmente gratuito",
-      "description": "Sem cartão de crédito, sem taxas ocultas. Traduza até 50 legendas gratuitamente por dia. Perfeito para criadores de conteúdo e estudantes."
+      "title": "Völlig kostenlos",
+      "description": "Keine Kreditkarte erforderlich, keine versteckten Gebühren. Erhalten Sie bis zu 50 Untertitelübersetzungen pro Tag, absolut kostenlos. Perfekt für Inhaltsanbieter und Lernende."
     },
     "privacyFirst": {
-      "title": "Sua privacidade é importante",
-      "description": "Seus arquivos de legendas são processados de forma segura e nunca são armazenados em nossos servidores. O que você envia permanece privado e é excluído automaticamente após o processamento."
+      "title": "Ihre Privatsphäre ist wichtig",
+      "description": "Ihre Untertiteldateien werden sicher verarbeitet und niemals auf unseren Servern gespeichert. Was Sie hochladen, bleibt privat und wird nach der Verarbeitung automatisch gelöscht."
     }
   },
   "howToUse": {
-    "title": "Como traduzir legendas em 3 passos simples",
-    "subtitle": "Traduza seu arquivo SRT em menos de um minuto",
+    "title": "So übersetzen Sie Untertitel in 3 einfachen Schritten",
+    "subtitle": "Übersetzen Sie Ihre SRT-Dateien in weniger als einer Minute",
     "step1": {
-      "title": "Carregue seu arquivo SRT",
-      "description": "Arraste e solte seu arquivo de legendas ou clique para navegar. Suportamos arquivos padrão .srt de até 5MB. Seu arquivo será analisado e preparado para tradução imediatamente."
+      "title": "Laden Sie Ihre SRT-Datei hoch",
+      "description": "Ziehen Sie Ihre Untertiteldatei per Drag & Drop oder klicken Sie, um zu browsen. Wir unterstützen Standard .srt-Formatdateien bis zu 5 MB. Ihre Datei wird sofort analysiert und ist bereit für die Übersetzung."
     },
     "step2": {
-      "title": "Selecione idiomas",
-      "description": "Escolha seu idioma de origem (o idioma que suas legendas estão usando atualmente) e o idioma de destino (o idioma para o qual você deseja traduzir). Suportamos mais de 50 idiomas, incluindo todos os principais idiomas globais."
+      "title": "Sprachen auswählen",
+      "description": "Wählen Sie Ihre Ausgangssprache (die Sprache, in der sich Ihre Untertitel derzeit befinden) und die Zielsprache (die Sprache, in die Sie übersetzen möchten). Wir unterstützen über 50 Sprachen, einschließlich aller wichtigen Sprachen weltweit."
     },
     "step3": {
-      "title": "Baixe as legendas traduzidas",
-      "description": "Clique em traduzir e veja a IA processar cada linha de legenda. Após alguns minutos, baixe seu arquivo SRT traduzido - utilizável com qualquer reprodutor de vídeo ou software de edição."
+      "title": "Herunterladen der übersetzten Untertitel",
+      "description": "Klicken Sie auf Übersetzen und beobachten Sie, wie die KI jede Untertitellinie verarbeitet. In wenigen Minuten können Sie Ihre übersetzte SRT-Datei herunterladen - bereit zur Verwendung mit jedem Videoplayer oder Bearbeitungssoftware."
     },
     "formats": {
-      "title": "Escolha seu formato de saída",
-      "mono": "Mono - obtenha apenas as legendas traduzidas",
-      "bilingual": "Bilingue - texto original e tradução lado a lado",
-      "both": "Dois formatos - baixe dois arquivos separados"
+      "title": "Wählen Sie Ihr Ausgabeformat",
+      "mono": "Einzelne Sprache - Erhalten Sie nur die übersetzten Untertitel",
+      "bilingual": "Zweisprachig - Original und Übersetzung nebeneinander",
+      "both": "Beide Formate - Laden Sie zwei separate Dateien herunter"
     }
   },
   "faq": {
-    "title": "Perguntas Frequentes",
-    "subtitle": "Tudo o que você precisa saber sobre nosso tradutor de legendas",
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Alles, was Sie über unseren Untertitelübersetzer wissen müssen",
     "q1": {
-      "question": "O que é um arquivo SRT e como obtê-lo?",
-      "answer": "Um arquivo SRT (SubRip Subtitle) é um arquivo de texto simples que contém informações de legendas, incluindo tempos e texto. Você pode extrair arquivos SRT de vídeos usando ferramentas como VLC Media Player, baixá-los de sites de legendas ou criá-los usando software de edição de legendas. Nosso tradutor é compatível com arquivos no formato SRT padrão."
+      "question": "Was ist eine SRT-Datei und wie bekomme ich eine?",
+      "answer": "Eine SRT (SubRip Subtitle) Datei ist eine einfache Textdatei, die Untertitelinformationen einschließlich Timing und Text enthält. Sie können SRT-Dateien aus Videos mit Tools wie VLC Media Player extrahieren, sie von Untertitelseiten herunterladen oder sie mit Untertitelbearbeitungssoftware erstellen. Unser Übersetzer funktioniert mit Standard-SRT-Formatdateien."
     },
     "q2": {
-      "question": "Qual é a precisão da tradução de IA?",
-      "answer": "Nosso tradutor impulsionado por IA usa modelos de linguagem avançados (GPT-3.5-turbo) que entendem contexto, expressões idiomáticas e diferenças culturais. Embora a tradução automática continue a melhorar, a precisão geralmente varia de 85% a 95% para pares de idiomas comuns. Para usos profissionais, recomendamos revisar a tradução, especialmente para conteúdos técnicos ou criativos."
+      "question": "Wie genau sind die KI-Übersetzungen?",
+      "answer": "Unser KI-gestützter Übersetzer verwendet fortschrittliche Sprachmodelle (GPT-3.5-turbo), die den Kontext, Idiome und kulturelle Nuancen verstehen. Während die maschinelle Übersetzung weiterhin verbessert wird, liegt die Genauigkeit typischerweise bei 85-95 % für gängige Sprachpaare. Für professionelle Anwendungen empfehlen wir, Übersetzungen zu überprüfen, insbesondere bei technischem oder kreativem Inhalt."
     },
     "q3": {
-      "question": "Posso traduzir legendas para vídeos do YouTube?",
-      "answer": "Sim! Nossa ferramenta é perfeita para criadores do YouTube. Basta baixar o arquivo de legendas SRT do YouTube (ou criar um), usar nossa ferramenta para traduzi-lo e, em seguida, fazer o upload do arquivo SRT traduzido de volta para o YouTube. Isso pode ajudar você a alcançar um público internacional e expandir seu canal globalmente."
+      "question": "Kann ich Untertitel für YouTube-Videos übersetzen?",
+      "answer": "Ja! Unser Tool ist perfekt für YouTube-Ersteller. Laden Sie einfach die SRT-Untertiteldatei von YouTube herunter (oder erstellen Sie eine), übersetzen Sie sie mit unserem Tool und laden Sie die übersetzte SRT-Datei zurück zu YouTube hoch. Dies hilft Ihnen, internationale Zuschauer zu erreichen und Ihren Kanal global zu erweitern."
     },
     "q4": {
-      "question": "Há limites para o tamanho do arquivo ou número de legendas?",
-      "answer": "Os arquivos devem ter menos de 5MB, normalmente incluindo milhares de linhas de legendas - o suficiente para um filme de longa-metragem. Você pode traduzir até 50 arquivos gratuitamente por dia. Se precisar de limites mais altos para uso comercial, entre em contato conosco."
+      "question": "Gibt es eine Begrenzung für die Dateigröße oder die Anzahl der Untertitel?",
+      "answer": "Dateien müssen unter 5 MB liegen, was typischerweise mehrere tausend Untertitellinien umfasst - mehr als genug für einen Spielfilm. Sie können bis zu 50 Dateien pro Tag kostenlos übersetzen. Wenn Sie höhere Limits für kommerzielle Zwecke benötigen, kontaktieren Sie uns bitte."
     },
     "q5": {
-      "question": "Qual é a diferença entre legendas monolíngues e bilíngues?",
-      "answer": "Legendas monolíngues (em um único idioma) contêm apenas o texto traduzido - ideais para espectadores que só precisam entender o conteúdo. Legendas bilíngues exibem o texto original e o texto traduzido, sendo muito úteis para estudantes de idiomas que desejam comparar a tradução ou para espectadores que entendem ambas as línguas."
+      "question": "Was ist der Unterschied zwischen mono und zweisprachigen Untertiteln?",
+      "answer": "Mono (einzelne Sprache) Untertitel enthalten nur den übersetzten Text - perfekt für Zuschauer, die nur den Inhalt verstehen möchten. Zweisprachige Untertitel zeigen sowohl den Original- als auch den übersetzten Text, ideal für Sprachlerner, die Übersetzungen vergleichen möchten, oder Zuschauer, die beide Sprachen verstehen."
     },
     "q6": {
-      "question": "Você armazena ou compartilha meus arquivos de legendas?",
-      "answer": "Não, valorizamos muito a privacidade. Seus arquivos são processados em tempo real e excluídos automaticamente após a tradução. Nunca armazenamos, analisamos ou compartilhamos seu conteúdo. Suas legendas e vídeos permanecem completamente privados e seguros."
+      "question": "Speichern oder teilen Sie meine Untertiteldateien?",
+      "answer": "Nein, wir nehmen Datenschutz ernst. Ihre Dateien werden in Echtzeit verarbeitet und sofort nach der Übersetzung automatisch gelöscht. Wir speichern, analysieren oder teilen Ihre Inhalte niemals. Ihre Untertitel und Videos bleiben völlig privat und sicher."
     }
   },
   "_meta": {
-    "lastUpdated": "2025-10-25T10:15:00.000Z",
-    "version": "1.0.2",
-    "language": "zh",
-    "translatedBy": "manual",
-    "reviewedBy": null,
-    "notes": "Adicionadas seções ausentes: passos, fileInfo, benefícios, como usar, faq"
+    "lastUpdated": "2025-01-19T12:00:00Z",
+    "version": "1.0.0",
+    "language": "de",
+    "translatedBy": "manual"
   }
 }
