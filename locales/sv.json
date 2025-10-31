@@ -193,5 +193,104 @@
     "version": "1.0.0",
     "language": "sv",
     "translatedBy": "manuell"
+  },
+  "englishSubtitle": {
+    "meta": {
+      "title": "Engelsk Undertextöversättare - Gratis AI-drivna Engelsk SRT Översättning",
+      "description": "Översätt undertexter till engelska från över 50 språk. Professionell engelsk undertextöversättning med AI-teknologi. Snabb, noggrann engelsk SRT-översättning för videor, filmer och innehåll.",
+      "keywords": "engelsk undertext, engelsk srt, undertext till engelska, översätt undertext engelska, engelsk undertextöversättare, srt till engelska, engelska videoundertitlar"
+    },
+    "hero": {
+      "title": "Engelsk Undertextöversättare - Professionell SRT-översättning till engelska",
+      "subtitle": "Transformera vilket språk som helst till exakta engelska undertexter med AI-driven SRT-översättningsteknik"
+    },
+    "useCases": {
+      "title": "Vem drar nytta av översättning av engelska undertexter?",
+      "subtitle": "Ett viktigt verktyg för innehållsskapare, utbildare och globala kommunikatörer",
+      "contentCreators": {
+        "title": "Innehållsskapare & YouTubers",
+        "description": "Nå engelsktalande publik världen över genom att översätta ditt videoinnehåll till engelska undertexter. Perfekt för att utöka din internationella publik och växa din kanal med professionella engelska SRT-filer."
+      },
+      "educators": {
+        "title": "Utbildare & E-Lärande",
+        "description": "Gör utbildningsinnehåll tillgängligt för engelsktalande studenter globalt. Översätt föreläsningar, handledningar och kurser till noggranna engelska undertexter som förbättrar lärande och engagemang."
+      },
+      "businesses": {
+        "title": "Företag & Marknadsföring",
+        "description": "Utöka din marknadsräckvidd genom att konvertera marknadsföringsvideor, produktdemonstrationer och företagsutbildningsmaterial till engelska undertexter. Avgörande för företag som riktar sig mot engelsktalande marknader världen över."
+      },
+      "filmmakers": {
+        "title": "Filmmakare & Media",
+        "description": "Förbered dina filmer, dokumentärer och medieinnehåll för internationella festivaler och engelsktalande distributörer. Professionell översättning av engelska undertexter bevarar konstnärlig nyans och kulturell kontext."
+      },
+      "researchers": {
+        "title": "Forskare & Akademiker",
+        "description": "Dela dina forskningspresentationer och akademiska innehåll med den globala engelsktalande akademiska gemenskapen. Översätt konferensföreläsningar och utbildningsmaterial till precisa engelska undertexter."
+      },
+      "entertainment": {
+        "title": "Underhållning & Streaming",
+        "description": "Lokalisera utländska språkprogram, filmer och underhållningsinnehåll för engelsktalande tittare. Skapa professionella engelska SRT-filer som fångar dialogens nyans och kulturella referenser."
+      }
+    },
+    "linguisticExplanation": {
+      "title": "Utmaningen med att översätta till engelska",
+      "subtitle": "Förståelse av språkliga komplexiteter och hur vår AI löser dem",
+      "intro": "Engelska är världens mest talade andraspråk, vilket gör engelska undertexter avgörande för globalt innehåll. Att översätta från olika språk till engelska medför dock unika språkliga utmaningar som kräver sofistikerade lösningar.",
+      "challenges": {
+        "title": "Vanliga översättningsutmaningar",
+        "wordOrder": {
+          "title": "Ordföljd & Syntax",
+          "description": "Många språk (japanska, koreanska, turkiska) använder subjekt-objekt-verb ordning, medan engelska använder subjekt-verb-objekt. Språk som arabiska läses från höger till vänster. Vår AI omstrukturerar meningar naturligt samtidigt som betydelsen bevaras, vilket säkerställer att engelska undertexter flyter smidigt."
+        },
+        "idioms": {
+          "title": "Idiom & Kulturella Uttryck",
+          "description": "Direkt översättning av idiom misslyckas ofta. Kinesiska '马马虎虎' (sådär), spanska 'estar en la luna' (drömma sig bort), eller franska 'avoir le cafard' (känna sig nedstämd) behöver kulturell anpassning. Vår engelska undertextöversättare känner igen idiom och ger naturliga engelska motsvarigheter."
+        },
+        "formality": {
+          "title": "Formell & Artighetsnivåer",
+          "description": "Språk som japanska, koreanska och thailändska har komplexa hederssystem som inte direkt motsvarar engelska. Vår AI tolkar kontext för att välja lämpliga engelska register (formellt, avslappnat, professionellt) för naturliga engelska undertexter."
+        },
+        "tense": {
+          "title": "Tempus & Aspekt System",
+          "description": "Mandarin-kinesiska saknar grammatiskt tempus, medan arabiska endast har dåtid och nutid. Slaviska språk har komplexa aspektuella distinktioner. Vår engelska SRT-översättare härleder tidskontext för att välja korrekta engelska tempus utifrån dialogkontext."
+        },
+        "timing": {
+          "title": "Textlängd & Timing",
+          "description": "Tyska sammansättningar och finsk agglutination skapar långa ord. Asiatiska språk uttrycker koncept med färre tecken. Vår engelska undertextöversättare balanserar noggrannhet med läsbarhet, vilket säkerställer att engelska SRT-timing matchar videons takt."
+        },
+        "contextual": {
+          "title": "Kontextberoende Betydelse",
+          "description": "Många språk förlitar sig starkt på kontext - japanska utelämnar subjekt, arabiska rötter har flera betydelser. Vår AI analyserar omgivande dialog för att fastställa exakta betydelser för noggrann översättning av engelska undertexter."
+        }
+      },
+      "advantages": {
+        "title": "Våra fördelar med engelsk undertextöversättning",
+        "subtitle": "Avancerad AI-teknologi specifikt optimerad för översättning av engelska undertexter",
+        "contextAware": {
+          "title": "Kontextmedveten översättning",
+          "description": "Till skillnad från grundläggande översättare analyserar vår AI hela undertextsekvenser, inte isolerade rader. Detta ger sammanhängande engelska undertexter som bibehåller berättelsens flyt och karaktärernas röstkonsekvens genom hela din video."
+        },
+        "culturalAdaptation": {
+          "title": "Kulturell lokalisering",
+          "description": "Anpassar automatiskt kulturella referenser, mått och uttryck för engelsktalande publik. Omvandlar idiom, ordspråk och kulturella koncept till naturliga engelska motsvarigheter som resonerar med tittarna."
+        },
+        "naturalFlow": {
+          "title": "Naturligt engelskt flyt",
+          "description": "Vår engelska SRT-generator producerar inte bokstavliga översättningar. Den skapar naturliga, läsbara engelska undertexter som låter autentiska för infödda talare, vilket undviker klumpiga formuleringar som är vanliga i maskinöversättning."
+        },
+        "technicalAccuracy": {
+          "title": "Teknisk och domänspecifik precision",
+          "description": "Tränad på olika innehållstyper - från medicinsk terminologi till gaming-slang. Oavsett om vi översätter teknisk dokumentation eller avslappnade vloggar, bibehåller vår engelska undertextöversättare domänanpassat vokabulär och terminologi."
+        },
+        "timing": {
+          "title": "Optimerad undertexttidsinställning",
+          "description": "Justera automatiskt längden på engelska undertexter för optimal läsbarhet samtidigt som synkroniseringen bibehålls. Vårt system säkerställer att engelska SRT-filer visas tillräckligt länge för att läsa bekvämt utan att störa tittarupplevelsen."
+        },
+        "quality": {
+          "title": "Konsekvent kvalitet",
+          "description": "Levererar professionell kvalitet på översättning av engelska undertexter konsekvent över alla 50+ källspråk. Oavsett om vi översätter från japanska, spanska eller arabiska, förvänta dig samma högkvalitativa engelska undertexter varje gång."
+        }
+      }
+    }
   }
 }

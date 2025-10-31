@@ -193,5 +193,104 @@
     "version": "1.0.0",
     "language": "pt",
     "translatedBy": "manual"
+  },
+  "englishSubtitle": {
+    "meta": {
+      "title": "Tradutor de Legendas em Inglês - Tradução de SRT em Inglês Gratuita com Tecnologia de IA",
+      "description": "Traduza legendas para inglês a partir de mais de 50 idiomas. Tradução profissional de legendas em inglês com tecnologia de IA. Tradução rápida e precisa de SRT em inglês para vídeos, filmes e conteúdos.",
+      "keywords": "legenda em inglês, srt em inglês, legenda para inglês, traduzir legenda em inglês, tradutor de legendas em inglês, srt para inglês, legendas em vídeo em inglês"
+    },
+    "hero": {
+      "title": "Tradutor de Legendas em Inglês - Tradução Profissional de SRT para Inglês",
+      "subtitle": "Transforme qualquer idioma em legendas em inglês precisas com tecnologia de tradução SRT alimentada por IA"
+    },
+    "useCases": {
+      "title": "Quem se Beneficia da Tradução de Legendas em Inglês?",
+      "subtitle": "Ferramenta essencial para criadores de conteúdo, educadores e comunicadores globais",
+      "contentCreators": {
+        "title": "Criadores de Conteúdo & YouTubers",
+        "description": "Alcance audiências de língua inglesa em todo o mundo traduzindo seu conteúdo de vídeo para legendas em inglês. Perfeito para expandir sua audiência internacional e crescer seu canal com arquivos SRT profissionais em inglês."
+      },
+      "educators": {
+        "title": "Educadores & E-Learning",
+        "description": "Torne o conteúdo educacional acessível para estudantes de língua inglesa globalmente. Traduza palestras, tutoriais e cursos em legendas em inglês precisas que melhoram a compreensão e o engajamento na aprendizagem."
+      },
+      "businesses": {
+        "title": "Empresas & Marketing",
+        "description": "Expanda seu alcance de mercado convertendo vídeos de marketing, demonstrações de produtos e materiais de treinamento corporativo em legendas em inglês. Essencial para empresas que visam mercados de língua inglesa em todo o mundo."
+      },
+      "filmmakers": {
+        "title": "Cineastas & Mídia",
+        "description": "Prepare seus filmes, documentários e conteúdo de mídia para festivais internacionais e distribuidores de língua inglesa. A tradução profissional de legendas em inglês mantém a nuance artística e o contexto cultural."
+      },
+      "researchers": {
+        "title": "Pesquisadores & Acadêmicos",
+        "description": "Compartilhe suas apresentações de pesquisa e conteúdo acadêmico com a comunidade acadêmica global de língua inglesa. Traduza palestras de conferências e materiais educacionais em legendas em inglês precisas."
+      },
+      "entertainment": {
+        "title": "Entretenimento & Streaming",
+        "description": "Localize programas, filmes e conteúdo de entretenimento em língua estrangeira para espectadores de língua inglesa. Crie arquivos SRT profissionais em inglês que capturem a nuance do diálogo e referências culturais."
+      }
+    },
+    "linguisticExplanation": {
+      "title": "O Desafio de Traduzir para o Inglês",
+      "subtitle": "Compreendendo as complexidades linguísticas e como nossa IA as resolve",
+      "intro": "O inglês é a segunda língua mais falada no mundo, tornando as legendas em inglês essenciais para conteúdo global. No entanto, traduzir de diversas línguas para o inglês apresenta desafios linguísticos únicos que requerem soluções sofisticadas.",
+      "challenges": {
+        "title": "Desafios Comuns de Tradução",
+        "wordOrder": {
+          "title": "Ordem das Palavras & Sintaxe",
+          "description": "Muitas línguas (japonês, coreano, turco) usam a ordem Sujeito-Objeto-Verbo, enquanto o inglês usa Sujeito-Verbo-Objeto. Línguas como o árabe são lidas da direita para a esquerda. Nossa IA reestrutura as frases de forma natural enquanto preserva o significado, garantindo que as legendas em inglês fluam suavemente."
+        },
+        "idioms": {
+          "title": "Expressões Idiomáticas & Culturais",
+          "description": "A tradução direta de expressões idiomáticas muitas vezes falha. O chinês '马马虎虎' (mais ou menos), o espanhol 'estar en la luna' (sonhando acordado) ou o francês 'avoir le cafard' (sentindo-se triste) precisam de adaptação cultural. Nosso tradutor de legendas em inglês reconhece expressões idiomáticas e fornece equivalentes naturais em inglês."
+        },
+        "formality": {
+          "title": "Níveis de Formalidade & Cortesia",
+          "description": "Línguas como japonês, coreano e tailandês têm sistemas honoríficos complexos que não se traduzem diretamente para o inglês. Nossa IA interpreta o contexto para escolher os registros apropriados em inglês (formal, casual, profissional) para legendas em inglês naturais."
+        },
+        "tense": {
+          "title": "Sistemas de Tempo & Aspecto",
+          "description": "O mandarim não possui tempo gramatical, enquanto o árabe tem apenas passado e presente. As línguas eslavas têm distinções aspectuais complexas. Nosso tradutor SRT em inglês infere o contexto temporal para selecionar os tempos verbais em inglês precisos a partir do contexto do diálogo."
+        },
+        "timing": {
+          "title": "Comprimento do Texto & Sincronização",
+          "description": "Os compostos alemães e a aglutinação finlandesa criam palavras longas. As línguas asiáticas expressam conceitos com menos caracteres. Nosso tradutor de legendas em inglês equilibra precisão com legibilidade, garantindo que a sincronização do SRT em inglês corresponda ao ritmo do vídeo."
+        },
+        "contextual": {
+          "title": "Significado Dependente do Contexto",
+          "description": "Muitas línguas dependem fortemente do contexto - o japonês omite sujeitos, as raízes árabes carregam múltiplos significados. Nossa IA analisa o diálogo circundante para determinar significados precisos para uma tradução exata das legendas em inglês."
+        }
+      },
+      "advantages": {
+        "title": "Nossas Vantagens do Tradutor de Legendas em Inglês",
+        "subtitle": "Tecnologia de IA avançada especificamente otimizada para tradução de legendas em inglês",
+        "contextAware": {
+          "title": "Tradução Consciente do Contexto",
+          "description": "Ao contrário dos tradutores básicos, nossa IA analisa sequências inteiras de legendas, não linhas isoladas. Isso produz legendas em inglês coerentes que mantêm o fluxo narrativo e a consistência da voz dos personagens ao longo do seu vídeo."
+        },
+        "culturalAdaptation": {
+          "title": "Localização Cultural",
+          "description": "Adapta automaticamente referências culturais, medidas e expressões para públicos de língua inglesa. Converte expressões idiomáticas, provérbios e conceitos culturais em equivalentes naturais em inglês que ressoam com os espectadores."
+        },
+        "naturalFlow": {
+          "title": "Fluidez Natural em Inglês",
+          "description": "Nosso gerador de SRT em inglês não produz traduções literais. Ele cria legendas em inglês naturais e legíveis que soam autênticas para falantes nativos, evitando frases estranhas comuns na tradução automática."
+        },
+        "technicalAccuracy": {
+          "title": "Precisão Técnica e de Domínio",
+          "description": "Treinado em diversos tipos de conteúdo - desde terminologia médica até gírias de jogos. Seja traduzindo documentação técnica ou vlogs casuais, nosso tradutor de legendas em inglês mantém vocabulário e terminologia apropriados para o domínio."
+        },
+        "timing": {
+          "title": "Tempos de Legenda Otimizados",
+          "description": "Ajusta automaticamente o comprimento das legendas em inglês para uma legibilidade ideal, mantendo a sincronização. Nosso sistema garante que os arquivos SRT em inglês sejam exibidos por tempo suficiente para leitura confortável, sem interromper a experiência do espectador."
+        },
+        "quality": {
+          "title": "Qualidade Consistente",
+          "description": "Entrega tradução de legendas em inglês de qualidade profissional de forma consistente em todos os 50+ idiomas de origem. Seja traduzindo do japonês, espanhol ou árabe, espere as mesmas legendas em inglês de alta qualidade todas as vezes."
+        }
+      }
+    }
   }
 }

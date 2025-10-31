@@ -188,6 +188,105 @@
       "answer": "No, we take privacy seriously. Your files are processed in real-time and automatically deleted immediately after translation. We never store, analyze, or share your content. Your subtitles and videos remain completely private and secure."
     }
   },
+  "englishSubtitle": {
+    "meta": {
+      "title": "English Subtitle Translator - Free AI-Powered English SRT Translation",
+      "description": "Translate subtitles to English from 50+ languages. Professional English subtitle translation with AI technology. Fast, accurate English SRT translation for videos, movies, and content.",
+      "keywords": "english subtitle, english srt, subtitle to english, translate subtitle english, english subtitle translator, srt to english, english video subtitles"
+    },
+    "hero": {
+      "title": "English Subtitle Translator - Professional SRT Translation to English",
+      "subtitle": "Transform any language into accurate English subtitles with AI-powered SRT translation technology"
+    },
+    "useCases": {
+      "title": "Who Benefits from English Subtitle Translation?",
+      "subtitle": "Essential tool for content creators, educators, and global communicators",
+      "contentCreators": {
+        "title": "Content Creators & YouTubers",
+        "description": "Reach English-speaking audiences worldwide by translating your video content into English subtitles. Perfect for expanding your international viewership and growing your channel with professional English SRT files."
+      },
+      "educators": {
+        "title": "Educators & E-Learning",
+        "description": "Make educational content accessible to English-speaking students globally. Translate lectures, tutorials, and courses into accurate English subtitles that enhance learning comprehension and engagement."
+      },
+      "businesses": {
+        "title": "Businesses & Marketing",
+        "description": "Expand your market reach by converting marketing videos, product demos, and corporate training materials into English subtitles. Essential for companies targeting English-speaking markets worldwide."
+      },
+      "filmmakers": {
+        "title": "Filmmakers & Media",
+        "description": "Prepare your films, documentaries, and media content for international festivals and English-speaking distributors. Professional English subtitle translation maintains artistic nuance and cultural context."
+      },
+      "researchers": {
+        "title": "Researchers & Academics",
+        "description": "Share your research presentations and academic content with the global English-speaking scholarly community. Translate conference talks and educational materials into precise English subtitles."
+      },
+      "entertainment": {
+        "title": "Entertainment & Streaming",
+        "description": "Localize foreign language shows, movies, and entertainment content for English-speaking viewers. Create professional English SRT files that capture dialogue nuance and cultural references."
+      }
+    },
+    "linguisticExplanation": {
+      "title": "The Challenge of Translating to English",
+      "subtitle": "Understanding linguistic complexities and how our AI solves them",
+      "intro": "English is the world's most widely spoken second language, making English subtitles essential for global content. However, translating from diverse languages into English presents unique linguistic challenges that require sophisticated solutions.",
+      "challenges": {
+        "title": "Common Translation Challenges",
+        "wordOrder": {
+          "title": "Word Order & Syntax",
+          "description": "Many languages (Japanese, Korean, Turkish) use Subject-Object-Verb order, while English uses Subject-Verb-Object. Languages like Arabic read right-to-left. Our AI restructures sentences naturally while preserving meaning, ensuring English subtitles flow smoothly."
+        },
+        "idioms": {
+          "title": "Idioms & Cultural Expressions",
+          "description": "Direct translation of idioms often fails. Chinese '马马虎虎' (so-so), Spanish 'estar en la luna' (daydreaming), or French 'avoir le cafard' (feeling blue) need cultural adaptation. Our English subtitle translator recognizes idioms and provides natural English equivalents."
+        },
+        "formality": {
+          "title": "Formality & Politeness Levels",
+          "description": "Languages like Japanese, Korean, and Thai have complex honorific systems that don't directly map to English. Our AI interprets context to choose appropriate English registers (formal, casual, professional) for natural English subtitles."
+        },
+        "tense": {
+          "title": "Tense & Aspect Systems",
+          "description": "Mandarin Chinese lacks grammatical tense, while Arabic has only past and present. Slavic languages have complex aspectual distinctions. Our English SRT translator infers temporal context to select accurate English tenses from dialogue context."
+        },
+        "timing": {
+          "title": "Text Length & Timing",
+          "description": "German compounds and Finnish agglutination create long words. Asian languages express concepts with fewer characters. Our English subtitle translator balances accuracy with readability, ensuring English SRT timing matches video pacing."
+        },
+        "contextual": {
+          "title": "Context-Dependent Meaning",
+          "description": "Many languages rely heavily on context - Japanese omits subjects, Arabic roots carry multiple meanings. Our AI analyzes surrounding dialogue to determine precise meanings for accurate English subtitle translation."
+        }
+      },
+      "advantages": {
+        "title": "Our English Subtitle Translator Advantages",
+        "subtitle": "Advanced AI technology specifically optimized for English subtitle translation",
+        "contextAware": {
+          "title": "Context-Aware Translation",
+          "description": "Unlike basic translators, our AI analyzes entire subtitle sequences, not isolated lines. This produces coherent English subtitles that maintain narrative flow and character voice consistency throughout your video."
+        },
+        "culturalAdaptation": {
+          "title": "Cultural Localization",
+          "description": "Automatically adapts cultural references, measurements, and expressions for English-speaking audiences. Converts idioms, proverbs, and cultural concepts into natural English equivalents that resonate with viewers."
+        },
+        "naturalFlow": {
+          "title": "Natural English Flow",
+          "description": "Our English SRT generator doesn't produce literal translations. It creates natural, readable English subtitles that sound authentic to native speakers, avoiding awkward phrasing common in machine translation."
+        },
+        "technicalAccuracy": {
+          "title": "Technical & Domain Precision",
+          "description": "Trained on diverse content types - from medical terminology to gaming slang. Whether translating technical documentation or casual vlogs, our English subtitle translator maintains domain-appropriate vocabulary and terminology."
+        },
+        "timing": {
+          "title": "Optimized Subtitle Timing",
+          "description": "Automatically adjusts English subtitle length for optimal readability while maintaining synchronization. Our system ensures English SRT files display long enough to read comfortably without disrupting viewer experience."
+        },
+        "quality": {
+          "title": "Consistent Quality",
+          "description": "Delivers professional-grade English subtitle translation consistently across all 50+ source languages. Whether translating from Japanese, Spanish, or Arabic, expect the same high-quality English subtitles every time."
+        }
+      }
+    }
+  },
   "_meta": {
     "lastUpdated": "2025-01-19T12:00:00Z",
     "version": "1.0.0",

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Traducteur de Sous-titres - Traduction SRT Alimentée par l'IA",
-    "description": "Traduisez des sous-titres SRT en plus de 50 langues en utilisant une technologie IA avancée. Rapide, précis et gratuit.",
+    "description": "Traduisez des sous-titres SRT en plus de 50 langues grâce à une technologie IA avancée. Rapide, précis et gratuit.",
     "keywords": "traduction de sous-titres, traducteur SRT, traduction IA, sous-titres vidéo"
   },
   "common": {
@@ -34,7 +34,7 @@
     "dragDrop": "Faites glisser et déposez votre fichier SRT ici",
     "or": "ou",
     "browse": "Parcourir les fichiers",
-    "maxSize": "Taille de fichier maximale : 5 Mo",
+    "maxSize": "Taille maximale du fichier : 5 Mo",
     "formatSupport": "Seul le format .srt est pris en charge",
     "fileSelected": "Fichier sélectionné : {filename}",
     "remove": "Supprimer le fichier"
@@ -42,7 +42,7 @@
   "language": {
     "source": "Langue source",
     "target": "Langue cible",
-    "selectPlaceholder": "Sélectionner une langue...",
+    "selectPlaceholder": "Sélectionnez une langue...",
     "searchPlaceholder": "Rechercher des langues...",
     "autoDetect": "Détection automatique"
   },
@@ -71,7 +71,7 @@
     "rateLimitDaily": "Vous avez atteint la limite quotidienne de 50 traductions. Revenez demain pour plus !",
     "networkError": "Impossible de se connecter à Internet. Veuillez vérifier votre connexion et réessayer.",
     "noFileSelected": "Veuillez d'abord télécharger un fichier de sous-titres.",
-    "noLanguageSelected": "Veuillez sélectionner les langues source et cible.",
+    "noLanguageSelected": "Veuillez sélectionner à la fois les langues source et cible.",
     "sameLanguage": "Les langues source et cible doivent être différentes.",
     "unknown": "Quelque chose d'inattendu s'est produit. Veuillez réessayer."
   },
@@ -93,17 +93,17 @@
     "startTranslating": "Commencer à traduire maintenant",
     "features": {
       "title": "Pourquoi choisir notre traducteur ?",
-      "accurate": "Traduction précise",
-      "accurateDesc": "Traduction alimentée par IA avec conscience du contexte",
+      "accurate": "Traduction Précise",
+      "accurateDesc": "Traduction alimentée par l'IA avec conscience du contexte",
       "fast": "Éclair",
       "fastDesc": "Traitez des centaines de sous-titres en quelques minutes",
       "free": "Gratuit à utiliser",
-      "freeDesc": "Jusqu'à 50 traductions par jour, complètement gratuit",
+      "freeDesc": "Jusqu'à 50 traductions par jour, entièrement gratuites",
       "privacy": "La vie privée d'abord",
       "privacyDesc": "Vos fichiers sont traités localement et jamais stockés"
     },
     "howItWorks": {
-      "title": "Comment ça fonctionne",
+      "title": "Comment ça marche",
       "step1": "Téléchargez votre fichier SRT",
       "step2": "Choisissez les langues et le format de sortie",
       "step3": "Cliquez sur traduire et attendez",
@@ -115,15 +115,15 @@
     "subtitle": "Des fonctionnalités puissantes qui rendent la traduction de sous-titres sans effort",
     "aiPowered": {
       "title": "Précision alimentée par l'IA",
-      "description": "Une technologie IA avancée comprend le contexte et la nuance, offrant des traductions naturelles qui préservent le sens et le ton originaux de vos sous-titres."
+      "description": "La technologie avancée de l'IA comprend le contexte et les nuances, offrant des traductions naturelles qui préservent le sens et le ton originaux de vos sous-titres."
     },
     "instantTranslation": {
       "title": "Traduction instantanée",
-      "description": "Traduisiez des centaines de lignes de sous-titres en quelques minutes, pas en heures. Notre système optimisé traite vos fichiers SRT à une vitesse fulgurante sans compromettre la qualité."
+      "description": "Traduisez des centaines de lignes de sous-titres en quelques minutes, pas en heures. Notre système optimisé traite vos fichiers SRT à une vitesse fulgurante sans compromettre la qualité."
     },
     "multiLanguage": {
       "title": "Plus de 50 langues prises en charge",
-      "description": "De l'anglais au chinois, de l'espagnol à l'arabe - traduisez des sous-titres entre n'importe quelle combinaison de plus de 50 langues avec une précision de qualité professionnelle."
+      "description": "De l'anglais au chinois, de l'espagnol à l'arabe - traduisez des sous-titres entre n'importe quelle combinaison de plus de 50 langues avec une précision de niveau professionnel."
     },
     "bilingualOutput": {
       "title": "Sous-titres bilingues",
@@ -131,7 +131,7 @@
     },
     "freeToUse": {
       "title": "Complètement gratuit",
-      "description": "Aucune carte de crédit requise, pas de frais cachés. Obtenez jusqu'à 50 traductions de sous-titres par jour, totalement gratuit. Parfait pour les créateurs de contenu et les apprenants."
+      "description": "Aucune carte de crédit requise, aucun frais caché. Obtenez jusqu'à 50 traductions de sous-titres par jour, absolument gratuites. Parfait pour les créateurs de contenu et les apprenants."
     },
     "privacyFirst": {
       "title": "Votre vie privée compte",
@@ -143,11 +143,11 @@
     "subtitle": "Traduisez vos fichiers SRT en moins d'une minute",
     "step1": {
       "title": "Téléchargez votre fichier SRT",
-      "description": "Faites glisser et déposez votre fichier de sous-titres, ou cliquez pour parcourir. Nous supportons les fichiers au format .srt standard jusqu'à 5 Mo. Votre fichier sera instantanément analysé et prêt pour la traduction."
+      "description": "Glissez-déposez votre fichier de sous-titres ou cliquez pour parcourir. Nous supportons les fichiers au format .srt standard jusqu'à 5 Mo. Votre fichier sera instantanément analysé et prêt pour la traduction."
     },
     "step2": {
       "title": "Sélectionnez les langues",
-      "description": "Choisissez votre langue source (la langue dans laquelle se trouvent actuellement vos sous-titres) et la langue cible (la langue vers laquelle vous souhaitez traduire). Nous supportons plus de 50 langues, y compris toutes les langues majeures dans le monde."
+      "description": "Choisissez votre langue source (la langue dans laquelle vos sous-titres sont actuellement) et la langue cible (la langue dans laquelle vous souhaitez traduire). Nous supportons plus de 50 langues, y compris toutes les langues majeures dans le monde."
     },
     "step3": {
       "title": "Téléchargez les sous-titres traduits",
@@ -165,26 +165,26 @@
     "subtitle": "Tout ce que vous devez savoir sur notre traducteur de sous-titres",
     "q1": {
       "question": "Qu'est-ce qu'un fichier SRT et comment en obtenir un ?",
-      "answer": "Un fichier SRT (SubRip Subtitle) est un fichier texte brut contenant des informations sur les sous-titres, y compris le timing et le texte. Vous pouvez extraire des fichiers SRT à partir de vidéos en utilisant des outils comme VLC Media Player, les télécharger depuis des sites de sous-titres ou les créer avec un logiciel de montage de sous-titres. Notre traducteur fonctionne avec des fichiers au format SRT standard."
+      "answer": "Un fichier SRT (SubRip Subtitle) est un fichier texte brut contenant des informations sur les sous-titres, y compris le timing et le texte. Vous pouvez extraire des fichiers SRT de vidéos en utilisant des outils comme VLC Media Player, les télécharger depuis des sites de sous-titres ou les créer avec un logiciel de montage de sous-titres. Notre traducteur fonctionne avec des fichiers au format SRT standard."
     },
     "q2": {
       "question": "Quelle est la précision des traductions AI ?",
-      "answer": "Notre traducteur alimenté par l'IA utilise des modèles linguistiques avancés (GPT-3.5-turbo) qui comprennent le contexte, les idiomes et les nuances culturelles. Bien que la traduction automatique continue de s'améliorer, la précision est généralement de 85 à 95 % pour les paires de langues courantes. Pour un usage professionnel, nous recommandons de revoir les traductions, en particulier pour le contenu technique ou créatif."
+      "answer": "Notre traducteur alimenté par l'IA utilise des modèles linguistiques avancés (GPT-3.5-turbo) qui comprennent le contexte, les idiomes et les nuances culturelles. Bien que la traduction automatique continue de s'améliorer, la précision est généralement de 85 à 95 % pour les paires de langues courantes. Pour un usage professionnel, nous recommandons de revoir les traductions, en particulier pour les contenus techniques ou créatifs."
     },
     "q3": {
       "question": "Puis-je traduire des sous-titres pour des vidéos YouTube ?",
-      "answer": "Oui ! Notre outil est parfait pour les créateurs YouTube. Il vous suffit de télécharger le fichier de sous-titres SRT depuis YouTube (ou d'en créer un), de le traduire à l'aide de notre outil, puis de télécharger le fichier SRT traduit sur YouTube. Cela vous aide à atteindre des audiences internationales et à développer votre chaîne à l'échelle mondiale."
+      "answer": "Oui ! Notre outil est parfait pour les créateurs YouTube. Téléchargez simplement le fichier de sous-titres SRT depuis YouTube (ou créez-en un), traduisez-le à l'aide de notre outil, puis téléchargez le fichier SRT traduit sur YouTube. Cela vous aide à atteindre des audiences internationales et à développer votre chaîne à l'échelle mondiale."
     },
     "q4": {
       "question": "Y a-t-il une limite de taille de fichier ou de nombre de sous-titres ?",
-      "answer": "Les fichiers doivent faire moins de 5 Mo, ce qui inclut généralement plusieurs milliers de lignes de sous-titres - plus que suffisant pour un film de longueur complète. Vous pouvez traduire jusqu'à 50 fichiers par jour gratuitement. Si vous avez besoin de limites plus élevées pour un usage commercial, veuillez nous contacter."
+      "answer": "Les fichiers doivent faire moins de 5 Mo, ce qui inclut généralement plusieurs milliers de lignes de sous-titres - plus que suffisant pour un film complet. Vous pouvez traduire jusqu'à 50 fichiers par jour gratuitement. Si vous avez besoin de limites plus élevées pour un usage commercial, veuillez nous contacter."
     },
     "q5": {
       "question": "Quelle est la différence entre des sous-titres mono et bilingues ?",
-      "answer": "Les sous-titres mono (langue unique) ne contiennent que le texte traduit - parfait pour les spectateurs qui ont juste besoin de comprendre le contenu. Les sous-titres bilingues affichent à la fois le texte original et le texte traduit, idéaux pour les apprenants de langues qui souhaitent comparer les traductions ou les spectateurs qui comprennent les deux langues."
+      "answer": "Les sous-titres mono (une seule langue) contiennent uniquement le texte traduit - parfait pour les spectateurs qui ont juste besoin de comprendre le contenu. Les sous-titres bilingues affichent à la fois le texte original et le texte traduit, idéaux pour les apprenants en langues qui souhaitent comparer les traductions ou pour les spectateurs qui comprennent les deux langues."
     },
     "q6": {
-      "question": "Conservez-vous ou partagez-vous mes fichiers de sous-titres ?",
+      "question": "Est-ce que vous stockez ou partagez mes fichiers de sous-titres ?",
       "answer": "Non, nous prenons la vie privée au sérieux. Vos fichiers sont traités en temps réel et supprimés automatiquement immédiatement après la traduction. Nous ne stockons, n'analysons ni ne partageons votre contenu. Vos sous-titres et vidéos restent complètement privés et sécurisés."
     }
   },
@@ -193,5 +193,104 @@
     "version": "1.0.0",
     "language": "fr",
     "translatedBy": "manuel"
+  },
+  "englishSubtitle": {
+    "meta": {
+      "title": "Traducteur de sous-titres en anglais - Traduction SRT anglaise gratuite alimentée par l'IA",
+      "description": "Traduisez des sous-titres en anglais depuis plus de 50 langues. Traduction professionnelle de sous-titres en anglais avec la technologie IA. Traduction SRT anglaise rapide et précise pour vidéos, films et contenus.",
+      "keywords": "sous-titre anglais, srt anglais, sous-titre en anglais, traduire sous-titre anglais, traducteur de sous-titres anglais, srt vers anglais, sous-titres vidéo anglais"
+    },
+    "hero": {
+      "title": "Traducteur de sous-titres en anglais - Traduction SRT professionnelle vers l'anglais",
+      "subtitle": "Transformez n'importe quelle langue en sous-titres anglais précis grâce à la technologie de traduction SRT alimentée par l'IA"
+    },
+    "useCases": {
+      "title": "Qui bénéficie de la traduction de sous-titres en anglais ?",
+      "subtitle": "Outil essentiel pour les créateurs de contenu, les éducateurs et les communicateurs mondiaux",
+      "contentCreators": {
+        "title": "Créateurs de contenu & YouTubers",
+        "description": "Atteignez des audiences anglophones dans le monde entier en traduisant votre contenu vidéo en sous-titres anglais. Parfait pour élargir votre audience internationale et faire croître votre chaîne avec des fichiers SRT anglais professionnels."
+      },
+      "educators": {
+        "title": "Éducateurs & E-Learning",
+        "description": "Rendez le contenu éducatif accessible aux étudiants anglophones du monde entier. Traduisez des conférences, des tutoriels et des cours en sous-titres anglais précis qui améliorent la compréhension et l'engagement des apprenants."
+      },
+      "businesses": {
+        "title": "Entreprises & Marketing",
+        "description": "Élargissez votre portée sur le marché en convertissant des vidéos marketing, des démonstrations de produits et des supports de formation en sous-titres anglais. Essentiel pour les entreprises ciblant des marchés anglophones dans le monde entier."
+      },
+      "filmmakers": {
+        "title": "Cinématographes & Médias",
+        "description": "Préparez vos films, documentaires et contenus médiatiques pour des festivals internationaux et des distributeurs anglophones. La traduction professionnelle de sous-titres anglais maintient la nuance artistique et le contexte culturel."
+      },
+      "researchers": {
+        "title": "Chercheurs & Académiques",
+        "description": "Partagez vos présentations de recherche et votre contenu académique avec la communauté savante anglophone mondiale. Traduisez des conférences et des matériaux éducatifs en sous-titres anglais précis."
+      },
+      "entertainment": {
+        "title": "Divertissement & Streaming",
+        "description": "Localisez des émissions, des films et du contenu de divertissement en langue étrangère pour les spectateurs anglophones. Créez des fichiers SRT anglais professionnels qui capturent la nuance des dialogues et les références culturelles."
+      }
+    },
+    "linguisticExplanation": {
+      "title": "Le défi de la traduction en anglais",
+      "subtitle": "Comprendre les complexités linguistiques et comment notre IA les résout",
+      "intro": "L'anglais est la langue seconde la plus parlée au monde, ce qui rend les sous-titres en anglais essentiels pour le contenu mondial. Cependant, la traduction de diverses langues vers l'anglais présente des défis linguistiques uniques qui nécessitent des solutions sophistiquées.",
+      "challenges": {
+        "title": "Défis de Traduction Courants",
+        "wordOrder": {
+          "title": "Ordre des Mots & Syntaxe",
+          "description": "De nombreuses langues (japonais, coréen, turc) utilisent l'ordre Sujet-Objet-Verbe, tandis que l'anglais utilise Sujet-Verbe-Objet. Des langues comme l'arabe se lisent de droite à gauche. Notre IA restructure les phrases naturellement tout en préservant le sens, garantissant que les sous-titres en anglais s'écoulent facilement."
+        },
+        "idioms": {
+          "title": "Idiomes & Expressions Culturelles",
+          "description": "La traduction directe des idiomes échoue souvent. Le chinois '马马虎虎' (bof), l'espagnol 'estar en la luna' (rêvasser), ou le français 'avoir le cafard' (se sentir bleu) nécessitent une adaptation culturelle. Notre traducteur de sous-titres en anglais reconnaît les idiomes et fournit des équivalents naturels en anglais."
+        },
+        "formality": {
+          "title": "Niveaux de Formalité & de Politesse",
+          "description": "Des langues comme le japonais, le coréen et le thaï ont des systèmes honorifiques complexes qui ne se traduisent pas directement en anglais. Notre IA interprète le contexte pour choisir les registres anglais appropriés (formel, décontracté, professionnel) pour des sous-titres en anglais naturels."
+        },
+        "tense": {
+          "title": "Systèmes de Temps & d'Aspect",
+          "description": "Le chinois mandarin manque de temps grammatical, tandis que l'arabe n'a que le passé et le présent. Les langues slaves ont des distinctions aspectuelles complexes. Notre traducteur SRT anglais infère le contexte temporel pour sélectionner des temps anglais précis à partir du contexte du dialogue."
+        },
+        "timing": {
+          "title": "Longueur du Texte & Timing",
+          "description": "Les composés allemands et l'agglutination finnoise créent de longs mots. Les langues asiatiques expriment des concepts avec moins de caractères. Notre traducteur de sous-titres en anglais équilibre précision et lisibilité, garantissant que le timing des SRT en anglais correspond au rythme de la vidéo."
+        },
+        "contextual": {
+          "title": "Sens Dépendant du Contexte",
+          "description": "De nombreuses langues dépendent fortement du contexte - le japonais omet les sujets, les racines arabes portent plusieurs significations. Notre IA analyse le dialogue environnant pour déterminer des significations précises pour une traduction exacte des sous-titres en anglais."
+        }
+      },
+      "advantages": {
+        "title": "Nos Avantages de Traduction de Sous-titres en Anglais",
+        "subtitle": "Technologie IA avancée spécifiquement optimisée pour la traduction de sous-titres en anglais",
+        "contextAware": {
+          "title": "Traduction Sensible au Contexte",
+          "description": "Contrairement aux traducteurs basiques, notre IA analyse l'ensemble des séquences de sous-titres, et non des lignes isolées. Cela produit des sous-titres en anglais cohérents qui maintiennent le flux narratif et la constance de la voix des personnages tout au long de votre vidéo."
+        },
+        "culturalAdaptation": {
+          "title": "Localisation Culturelle",
+          "description": "Adapte automatiquement les références culturelles, les mesures et les expressions pour les publics anglophones. Convertit les idiomes, proverbes et concepts culturels en équivalents naturels en anglais qui résonnent avec les spectateurs."
+        },
+        "naturalFlow": {
+          "title": "Flux Naturel en Anglais",
+          "description": "Notre générateur de SRT en anglais ne produit pas de traductions littérales. Il crée des sous-titres en anglais naturels et lisibles qui sonnent authentiques pour les locuteurs natifs, évitant les formulations maladroites courantes dans la traduction automatique."
+        },
+        "technicalAccuracy": {
+          "title": "Précision Technique et de Domaine",
+          "description": "Formé sur des types de contenu divers - de la terminologie médicale au jargon des jeux vidéo. Que ce soit pour traduire des documents techniques ou des vlogs informels, notre traducteur de sous-titres en anglais maintient un vocabulaire et une terminologie appropriés au domaine."
+        },
+        "timing": {
+          "title": "Timing Optimisé des Sous-titres",
+          "description": "Ajuste automatiquement la longueur des sous-titres en anglais pour une lisibilité optimale tout en maintenant la synchronisation. Notre système garantit que les fichiers SRT en anglais s'affichent suffisamment longtemps pour être lus confortablement sans perturber l'expérience du spectateur."
+        },
+        "quality": {
+          "title": "Qualité Cohérente",
+          "description": "Fournit une traduction de sous-titres en anglais de qualité professionnelle de manière cohérente à travers plus de 50 langues sources. Que ce soit pour traduire du japonais, de l'espagnol ou de l'arabe, attendez-vous à des sous-titres en anglais de la même haute qualité à chaque fois."
+        }
+      }
+    }
   }
 }

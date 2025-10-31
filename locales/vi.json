@@ -193,5 +193,104 @@
     "version": "1.0.0",
     "language": "vi",
     "translatedBy": "thủ công"
+  },
+  "englishSubtitle": {
+    "meta": {
+      "title": "Trình Dịch Phụ Đề Tiếng Anh - Dịch SRT Tiếng Anh Miễn Phí Được Hỗ Trợ Bởi AI",
+      "description": "Dịch phụ đề sang tiếng Anh từ hơn 50 ngôn ngữ. Dịch phụ đề tiếng Anh chuyên nghiệp với công nghệ AI. Dịch SRT tiếng Anh nhanh chóng, chính xác cho video, phim và nội dung.",
+      "keywords": "phụ đề tiếng anh, srt tiếng anh, phụ đề sang tiếng anh, dịch phụ đề tiếng anh, trình dịch phụ đề tiếng anh, srt sang tiếng anh, phụ đề video tiếng anh"
+    },
+    "hero": {
+      "title": "Dịch phụ đề tiếng Anh - Dịch SRT chuyên nghiệp sang tiếng Anh",
+      "subtitle": "Chuyển đổi bất kỳ ngôn ngữ nào thành phụ đề tiếng Anh chính xác với công nghệ dịch SRT sử dụng AI"
+    },
+    "useCases": {
+      "title": "Ai được lợi từ việc dịch phụ đề tiếng Anh?",
+      "subtitle": "Công cụ thiết yếu cho người sáng tạo nội dung, giáo viên và những người giao tiếp toàn cầu",
+      "contentCreators": {
+        "title": "Người sáng tạo nội dung & YouTubers",
+        "description": "Tiếp cận khán giả nói tiếng Anh trên toàn thế giới bằng cách dịch nội dung video của bạn thành phụ đề tiếng Anh. Hoàn hảo để mở rộng lượng người xem quốc tế và phát triển kênh của bạn với các tệp SRT tiếng Anh chuyên nghiệp."
+      },
+      "educators": {
+        "title": "Giáo viên & E-Learning",
+        "description": "Làm cho nội dung giáo dục dễ tiếp cận với sinh viên nói tiếng Anh trên toàn cầu. Dịch bài giảng, hướng dẫn và khóa học thành các phụ đề tiếng Anh chính xác giúp nâng cao sự hiểu biết và tương tác trong học tập."
+      },
+      "businesses": {
+        "title": "Doanh nghiệp & Tiếp thị",
+        "description": "Mở rộng thị trường của bạn bằng cách chuyển đổi video tiếp thị, trình diễn sản phẩm và tài liệu đào tạo doanh nghiệp thành phụ đề tiếng Anh. Thiết yếu cho các công ty nhắm đến thị trường nói tiếng Anh trên toàn thế giới."
+      },
+      "filmmakers": {
+        "title": "Nhà làm phim & Truyền thông",
+        "description": "Chuẩn bị phim, tài liệu và nội dung truyền thông của bạn cho các liên hoan quốc tế và các nhà phân phối nói tiếng Anh. Dịch phụ đề tiếng Anh chuyên nghiệp duy trì sự tinh tế nghệ thuật và bối cảnh văn hóa."
+      },
+      "researchers": {
+        "title": "Nhà nghiên cứu & Học giả",
+        "description": "Chia sẻ các bài thuyết trình nghiên cứu và nội dung học thuật của bạn với cộng đồng học thuật nói tiếng Anh toàn cầu. Dịch các bài nói chuyện tại hội nghị và tài liệu giáo dục thành các phụ đề tiếng Anh chính xác."
+      },
+      "entertainment": {
+        "title": "Giải trí & Phát trực tuyến",
+        "description": "Địa phương hóa các chương trình, phim và nội dung giải trí bằng ngôn ngữ nước ngoài cho khán giả nói tiếng Anh. Tạo các tệp SRT tiếng Anh chuyên nghiệp nắm bắt sự tinh tế trong đối thoại và các tham chiếu văn hóa."
+      }
+    },
+    "linguisticExplanation": {
+      "title": "Thách thức trong việc dịch sang tiếng Anh",
+      "subtitle": "Hiểu biết về sự phức tạp ngôn ngữ và cách mà AI của chúng tôi giải quyết chúng",
+      "intro": "Tiếng Anh là ngôn ngữ thứ hai được nói phổ biến nhất trên thế giới, làm cho phụ đề tiếng Anh trở nên cần thiết cho nội dung toàn cầu. Tuy nhiên, việc dịch từ các ngôn ngữ đa dạng sang tiếng Anh đặt ra những thách thức ngôn ngữ độc đáo cần những giải pháp tinh vi.",
+      "challenges": {
+        "title": "Những Thách Thức Dịch Thuật Thông Thường",
+        "wordOrder": {
+          "title": "Thứ Tự Từ & Cú Pháp",
+          "description": "Nhiều ngôn ngữ (Nhật Bản, Hàn Quốc, Thổ Nhĩ Kỳ) sử dụng thứ tự Chủ-Đối-Từ, trong khi tiếng Anh sử dụng Chủ-Từ-Đối. Các ngôn ngữ như Ả Rập đọc từ phải sang trái. AI của chúng tôi cấu trúc lại câu một cách tự nhiên trong khi vẫn giữ nguyên ý nghĩa, đảm bảo phụ đề tiếng Anh chảy trôi một cách mượt mà."
+        },
+        "idioms": {
+          "title": "Thành Ngữ & Biểu Hiện Văn Hóa",
+          "description": "Dịch trực tiếp thành ngữ thường thất bại. Thành ngữ Trung Quốc '马马虎虎' (tạm tạm), Tây Ban Nha 'estar en la luna' (mơ mộng), hoặc Pháp 'avoir le cafard' (cảm thấy buồn) cần sự thích ứng văn hóa. Trình dịch phụ đề tiếng Anh của chúng tôi nhận diện thành ngữ và cung cấp các tương đương tự nhiên bằng tiếng Anh."
+        },
+        "formality": {
+          "title": "Mức Độ Trang Trọng & Lịch Sự",
+          "description": "Các ngôn ngữ như Nhật Bản, Hàn Quốc và Thái Lan có hệ thống tôn kính phức tạp không tương ứng trực tiếp với tiếng Anh. AI của chúng tôi diễn giải ngữ cảnh để chọn các cấp độ tiếng Anh phù hợp (trang trọng, thân mật, chuyên nghiệp) cho phụ đề tiếng Anh tự nhiên."
+        },
+        "tense": {
+          "title": "Thì & Hệ Thống Khía Cạnh",
+          "description": "Tiếng Trung Quan Thoại thiếu thì ngữ pháp, trong khi tiếng Ả Rập chỉ có quá khứ và hiện tại. Các ngôn ngữ Slav có sự phân biệt khía cạnh phức tạp. Trình dịch SRT tiếng Anh của chúng tôi suy luận ngữ cảnh tạm thời để chọn thì tiếng Anh chính xác từ ngữ cảnh hội thoại."
+        },
+        "timing": {
+          "title": "Độ Dài Văn Bản & Thời Gian",
+          "description": "Các từ ghép trong tiếng Đức và sự kết hợp trong tiếng Phần Lan tạo ra những từ dài. Các ngôn ngữ châu Á diễn đạt khái niệm với ít ký tự hơn. Trình dịch phụ đề tiếng Anh của chúng tôi cân bằng độ chính xác với khả năng đọc, đảm bảo thời gian SRT tiếng Anh khớp với nhịp độ video."
+        },
+        "contextual": {
+          "title": "Ý Nghĩa Phụ Thuộc Vào Ngữ Cảnh",
+          "description": "Nhiều ngôn ngữ phụ thuộc nhiều vào ngữ cảnh - tiếng Nhật bỏ qua chủ ngữ, gốc tiếng Ả Rập mang nhiều nghĩa. AI của chúng tôi phân tích hội thoại xung quanh để xác định ý nghĩa chính xác cho việc dịch phụ đề tiếng Anh chính xác."
+        }
+      },
+      "advantages": {
+        "title": "Lợi Thế Của Dịch Phụ Đề Tiếng Anh Của Chúng Tôi",
+        "subtitle": "Công nghệ AI tiên tiến được tối ưu hóa đặc biệt cho việc dịch phụ đề tiếng Anh",
+        "contextAware": {
+          "title": "Dịch Nhận Thức Ngữ Cảnh",
+          "description": "Khác với các trình dịch cơ bản, AI của chúng tôi phân tích toàn bộ chuỗi phụ đề, không phải các dòng riêng lẻ. Điều này tạo ra phụ đề tiếng Anh mạch lạc, duy trì dòng chảy câu chuyện và sự nhất quán trong giọng điệu nhân vật xuyên suốt video của bạn."
+        },
+        "culturalAdaptation": {
+          "title": "Địa Phương Hóa Văn Hóa",
+          "description": "Tự động điều chỉnh các tham chiếu văn hóa, đơn vị đo lường và cách diễn đạt cho khán giả nói tiếng Anh. Chuyển đổi thành ngữ, tục ngữ và khái niệm văn hóa thành các tương đương tự nhiên trong tiếng Anh mà khán giả có thể dễ dàng hiểu."
+        },
+        "naturalFlow": {
+          "title": "Dòng Chảy Tiếng Anh Tự Nhiên",
+          "description": "Trình tạo SRT tiếng Anh của chúng tôi không tạo ra các bản dịch theo nghĩa đen. Nó tạo ra các phụ đề tiếng Anh tự nhiên, dễ đọc mà nghe thật với người bản ngữ, tránh các cách diễn đạt vụng về thường thấy trong dịch máy."
+        },
+        "technicalAccuracy": {
+          "title": "Độ Chính Xác Kỹ Thuật & Ngành",
+          "description": "Được đào tạo trên nhiều loại nội dung khác nhau - từ thuật ngữ y tế đến tiếng lóng trong game. Dù là dịch tài liệu kỹ thuật hay vlog thân mật, trình dịch phụ đề tiếng Anh của chúng tôi duy trì từ vựng và thuật ngữ phù hợp với lĩnh vực."
+        },
+        "timing": {
+          "title": "Thời Gian Phụ Đề Tối Ưu",
+          "description": "Tự động điều chỉnh độ dài phụ đề tiếng Anh để đảm bảo dễ đọc trong khi vẫn giữ đồng bộ. Hệ thống của chúng tôi đảm bảo các tệp SRT tiếng Anh hiển thị đủ lâu để đọc thoải mái mà không làm gián đoạn trải nghiệm của người xem."
+        },
+        "quality": {
+          "title": "Chất Lượng Nhất Quán",
+          "description": "Cung cấp dịch phụ đề tiếng Anh đạt tiêu chuẩn chuyên nghiệp một cách nhất quán trên tất cả 50+ ngôn ngữ nguồn. Dù dịch từ tiếng Nhật, tiếng Tây Ban Nha hay tiếng Ả Rập, bạn có thể mong đợi những phụ đề tiếng Anh chất lượng cao giống nhau mỗi lần."
+        }
+      }
+    }
   }
 }

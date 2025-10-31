@@ -193,5 +193,104 @@
     "version": "1.0.0",
     "language": "pl",
     "translatedBy": "ręcznie"
+  },
+  "englishSubtitle": {
+    "meta": {
+      "title": "Tłumacz napisów w języku angielskim - Darmowe tłumaczenie angielskich SRT z wykorzystaniem AI",
+      "description": "Tłumacz napisy na angielski z ponad 50 języków. Profesjonalne tłumaczenie angielskich napisów z technologią AI. Szybkie, dokładne tłumaczenie angielskich SRT dla filmów, wideo i treści.",
+      "keywords": "napisy angielskie, angielski srt, napisy na angielski, tłumacz napisy angielskie, tłumacz napisów angielskich, srt na angielski, napisy wideo w języku angielskim"
+    },
+    "hero": {
+      "title": "Tłumacz napisów angielskich - Profesjonalne tłumaczenie SRT na angielski",
+      "subtitle": "Przekształć dowolny język w dokładne napisy angielskie dzięki technologii tłumaczenia SRT wspieranej przez AI"
+    },
+    "useCases": {
+      "title": "Kto korzysta z tłumaczenia angielskich napisów?",
+      "subtitle": "Niezbędne narzędzie dla twórców treści, nauczycieli i globalnych komunikatorów",
+      "contentCreators": {
+        "title": "Twórcy Treści i YouTuberzy",
+        "description": "Dotrzyj do anglojęzycznych odbiorców na całym świecie, tłumacząc swoje treści wideo na angielskie napisy. Idealne do poszerzania międzynarodowej widowni i rozwijania swojego kanału za pomocą profesjonalnych plików SRT w języku angielskim."
+      },
+      "educators": {
+        "title": "Nauczyciele i E-Learning",
+        "description": "Uczyń treści edukacyjne dostępnymi dla anglojęzycznych studentów na całym świecie. Tłumacz wykłady, tutoriale i kursy na dokładne angielskie napisy, które zwiększają zrozumienie i zaangażowanie w naukę."
+      },
+      "businesses": {
+        "title": "Firmy i Marketing",
+        "description": "Poszerz swoje zasięgi rynkowe, przekształcając filmy marketingowe, demonstracje produktów i materiały szkoleniowe na angielskie napisy. Niezbędne dla firm celujących w anglojęzyczne rynki na całym świecie."
+      },
+      "filmmakers": {
+        "title": "Filmowcy i Media",
+        "description": "Przygotuj swoje filmy, dokumenty i treści medialne na międzynarodowe festiwale i anglojęzycznych dystrybutorów. Profesjonalne tłumaczenie angielskich napisów zachowuje artystyczne niuanse i kontekst kulturowy."
+      },
+      "researchers": {
+        "title": "Badacze i Akademicy",
+        "description": "Podziel się swoimi prezentacjami badawczymi i treściami akademickimi z globalną anglojęzyczną społecznością naukową. Tłumacz wystąpienia konferencyjne i materiały edukacyjne na precyzyjne angielskie napisy."
+      },
+      "entertainment": {
+        "title": "Rozrywka i Streaming",
+        "description": "Lokalizuj zagraniczne programy, filmy i treści rozrywkowe dla anglojęzycznych widzów. Twórz profesjonalne pliki SRT w języku angielskim, które uchwycą niuanse dialogu i odniesienia kulturowe."
+      }
+    },
+    "linguisticExplanation": {
+      "title": "Wyzwanie tłumaczenia na angielski",
+      "subtitle": "Zrozumienie złożoności językowych i jak nasza AI je rozwiązuje",
+      "intro": "Angielski jest najczęściej używanym językiem obcym na świecie, co sprawia, że napisy w języku angielskim są niezbędne dla globalnych treści. Jednak tłumaczenie z różnych języków na angielski stawia przed nami unikalne wyzwania językowe, które wymagają zaawansowanych rozwiązań.",
+      "challenges": {
+        "title": "Wspólne wyzwania tłumaczeniowe",
+        "wordOrder": {
+          "title": "Kolejność słów i składnia",
+          "description": "Wiele języków (japoński, koreański, turecki) używa kolejności Podmiot-Dopełnienie-Czasownik, podczas gdy angielski używa Podmiot-Czasownik-Dopełnienie. Języki takie jak arabski czyta się od prawej do lewej. Nasza AI naturalnie restrukturyzuje zdania, zachowując znaczenie i zapewniając płynny przepływ napisów angielskich."
+        },
+        "idioms": {
+          "title": "Idiomy i wyrażenia kulturowe",
+          "description": "Bezpośrednie tłumaczenie idiomów często zawodzi. Chińskie '马马虎虎' (tak sobie), hiszpańskie 'estar en la luna' (marzenia na jawie) lub francuskie 'avoir le cafard' (być smutnym) wymagają adaptacji kulturowej. Nasz tłumacz napisów angielskich rozpoznaje idiomy i dostarcza naturalne angielskie odpowiedniki."
+        },
+        "formality": {
+          "title": "Poziomy formalności i grzeczności",
+          "description": "Języki takie jak japoński, koreański i tajski mają złożone systemy honoryfików, które nie przekładają się bezpośrednio na angielski. Nasza AI interpretuje kontekst, aby wybrać odpowiednie angielskie rejestry (formalne, swobodne, profesjonalne) dla naturalnych napisów angielskich."
+        },
+        "tense": {
+          "title": "Systemy czasu i aspektu",
+          "description": "Język mandaryński nie ma gramatycznego czasu, podczas gdy arabski ma tylko przeszłość i teraźniejszość. Języki słowiańskie mają złożone rozróżnienia aspektowe. Nasz tłumacz angielskich SRT wywnioskuje kontekst czasowy, aby wybrać dokładne angielskie czasy z kontekstu dialogu."
+        },
+        "timing": {
+          "title": "Długość tekstu i synchronizacja",
+          "description": "Niemieckie złożenia i fińska aglutynacja tworzą długie słowa. Języki azjatyckie wyrażają koncepcje mniejszą liczbą znaków. Nasz tłumacz napisów angielskich równoważy dokładność z czytelnością, zapewniając, że synchronizacja angielskich SRT odpowiada tempu wideo."
+        },
+        "contextual": {
+          "title": "Znaczenie zależne od kontekstu",
+          "description": "Wiele języków w dużym stopniu polega na kontekście - japoński pomija podmioty, arabskie korzenie niosą wiele znaczeń. Nasza AI analizuje otaczający dialog, aby określić precyzyjne znaczenia dla dokładnego tłumaczenia napisów angielskich."
+        }
+      },
+      "advantages": {
+        "title": "Nasze zalety tłumacza napisów w języku angielskim",
+        "subtitle": "Zaawansowana technologia AI specjalnie zoptymalizowana do tłumaczenia napisów w języku angielskim",
+        "contextAware": {
+          "title": "Tłumaczenie z uwzględnieniem kontekstu",
+          "description": "W przeciwieństwie do podstawowych tłumaczy, nasza AI analizuje całe sekwencje napisów, a nie izolowane linie. To produkuje spójne napisy w języku angielskim, które utrzymują narracyjny ciąg i spójność głosu postaci w całym filmie."
+        },
+        "culturalAdaptation": {
+          "title": "Lokalizacja kulturowa",
+          "description": "Automatycznie dostosowuje odniesienia kulturowe, miary i wyrażenia dla anglojęzycznych odbiorców. Przekształca idiomy, przysłowia i koncepcje kulturowe w naturalne angielskie odpowiedniki, które trafiają do widzów."
+        },
+        "naturalFlow": {
+          "title": "Naturalny przepływ w języku angielskim",
+          "description": "Nasz generator SRT w języku angielskim nie produkuje dosłownych tłumaczeń. Tworzy naturalne, czytelne napisy w języku angielskim, które brzmią autentycznie dla rodzimych użytkowników, unikając niezręcznych sformułowań typowych dla tłumaczenia maszynowego."
+        },
+        "technicalAccuracy": {
+          "title": "Precyzja techniczna i domenowa",
+          "description": "Szkolony na różnorodnych rodzajach treści - od terminologii medycznej po żargon gamingowy. Niezależnie od tego, czy tłumaczymy dokumentację techniczną, czy swobodne vlogi, nasz tłumacz napisów w języku angielskim utrzymuje odpowiednie słownictwo i terminologię dla danej dziedziny."
+        },
+        "timing": {
+          "title": "Optymalizacja czasu wyświetlania napisów",
+          "description": "Automatycznie dostosowuje długość napisów w języku angielskim dla optymalnej czytelności, jednocześnie utrzymując synchronizację. Nasz system zapewnia, że pliki SRT w języku angielskim są wyświetlane wystarczająco długo, aby można je było komfortowo przeczytać, nie zakłócając doświadczenia widza."
+        },
+        "quality": {
+          "title": "Spójna jakość",
+          "description": "Dostarcza profesjonalnej jakości tłumaczenia napisów w języku angielskim konsekwentnie w ponad 50 językach źródłowych. Niezależnie od tego, czy tłumaczymy z japońskiego, hiszpańskiego, czy arabskiego, oczekuj tej samej wysokiej jakości napisów w języku angielskim za każdym razem."
+        }
+      }
+    }
   }
 }

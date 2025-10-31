@@ -193,5 +193,104 @@
     "version": "1.0.0",
     "language": "es",
     "translatedBy": "manual"
+  },
+  "englishSubtitle": {
+    "meta": {
+      "title": "Traductor de Subtítulos en Inglés - Traducción de SRT en Inglés Potenciada por IA Gratis",
+      "description": "Traduce subtítulos al inglés desde más de 50 idiomas. Traducción profesional de subtítulos en inglés con tecnología de IA. Traducción rápida y precisa de SRT en inglés para videos, películas y contenido.",
+      "keywords": "subtítulo en inglés, srt en inglés, subtítulo al inglés, traducir subtítulo en inglés, traductor de subtítulos en inglés, srt a inglés, subtítulos en video en inglés"
+    },
+    "hero": {
+      "title": "Traductor de Subtítulos en Inglés - Traducción Profesional de SRT al Inglés",
+      "subtitle": "Transforma cualquier idioma en subtítulos precisos en inglés con tecnología de traducción SRT impulsada por IA"
+    },
+    "useCases": {
+      "title": "¿Quién se beneficia de la traducción de subtítulos en inglés?",
+      "subtitle": "Herramienta esencial para creadores de contenido, educadores y comunicadores globales",
+      "contentCreators": {
+        "title": "Creadores de Contenido y YouTubers",
+        "description": "Alcanza audiencias de habla inglesa en todo el mundo traduciendo tu contenido de video a subtítulos en inglés. Perfecto para expandir tu audiencia internacional y hacer crecer tu canal con archivos SRT en inglés profesionales."
+      },
+      "educators": {
+        "title": "Educadores y E-Learning",
+        "description": "Haz que el contenido educativo sea accesible para estudiantes de habla inglesa en todo el mundo. Traduce conferencias, tutoriales y cursos a subtítulos en inglés precisos que mejoran la comprensión y el compromiso del aprendizaje."
+      },
+      "businesses": {
+        "title": "Empresas y Marketing",
+        "description": "Expande tu alcance de mercado convirtiendo videos de marketing, demostraciones de productos y materiales de capacitación corporativa en subtítulos en inglés. Esencial para empresas que apuntan a mercados de habla inglesa en todo el mundo."
+      },
+      "filmmakers": {
+        "title": "Cineastas y Medios",
+        "description": "Prepara tus películas, documentales y contenido mediático para festivales internacionales y distribuidores de habla inglesa. La traducción profesional de subtítulos en inglés mantiene la matiz artística y el contexto cultural."
+      },
+      "researchers": {
+        "title": "Investigadores y Académicos",
+        "description": "Comparte tus presentaciones de investigación y contenido académico con la comunidad académica global de habla inglesa. Traduce charlas de conferencias y materiales educativos a subtítulos en inglés precisos."
+      },
+      "entertainment": {
+        "title": "Entretenimiento y Streaming",
+        "description": "Localiza programas, películas y contenido de entretenimiento en idiomas extranjeros para espectadores de habla inglesa. Crea archivos SRT en inglés profesionales que capturan la matiz del diálogo y las referencias culturales."
+      }
+    },
+    "linguisticExplanation": {
+      "title": "El desafío de traducir al inglés",
+      "subtitle": "Comprendiendo las complejidades lingüísticas y cómo nuestra IA las resuelve",
+      "intro": "El inglés es el segundo idioma más hablado en el mundo, lo que hace que los subtítulos en inglés sean esenciales para el contenido global. Sin embargo, traducir de diversos idiomas al inglés presenta desafíos lingüísticos únicos que requieren soluciones sofisticadas.",
+      "challenges": {
+        "title": "Desafíos Comunes de Traducción",
+        "wordOrder": {
+          "title": "Orden de las Palabras y Sintaxis",
+          "description": "Muchas lenguas (japonés, coreano, turco) utilizan el orden Sujeto-Objeto-Verbo, mientras que el inglés utiliza Sujeto-Verbo-Objeto. Idiomas como el árabe se leen de derecha a izquierda. Nuestra IA reestructura las oraciones de manera natural mientras preserva el significado, asegurando que los subtítulos en inglés fluyan suavemente."
+        },
+        "idioms": {
+          "title": "Modismos y Expresiones Culturales",
+          "description": "La traducción directa de modismos a menudo falla. El chino '马马虎虎' (más o menos), el español 'estar en la luna' (soñar despierto), o el francés 'avoir le cafard' (sentirse triste) necesitan adaptación cultural. Nuestro traductor de subtítulos en inglés reconoce los modismos y proporciona equivalentes naturales en inglés."
+        },
+        "formality": {
+          "title": "Niveles de Formalidad y Cortesía",
+          "description": "Idiomas como el japonés, coreano y tailandés tienen sistemas honoríficos complejos que no se traducen directamente al inglés. Nuestra IA interpreta el contexto para elegir los registros apropiados en inglés (formal, casual, profesional) para subtítulos en inglés naturales."
+        },
+        "tense": {
+          "title": "Sistemas de Tiempo y Aspecto",
+          "description": "El chino mandarín carece de tiempo gramatical, mientras que el árabe solo tiene pasado y presente. Los idiomas eslavos tienen distinciones aspectuales complejas. Nuestro traductor de SRT en inglés infiere el contexto temporal para seleccionar los tiempos en inglés precisos a partir del contexto del diálogo."
+        },
+        "timing": {
+          "title": "Longitud del Texto y Tiempo",
+          "description": "Los compuestos alemanes y la aglutinación finlandesa crean palabras largas. Los idiomas asiáticos expresan conceptos con menos caracteres. Nuestro traductor de subtítulos en inglés equilibra la precisión con la legibilidad, asegurando que el tiempo de los SRT en inglés coincida con el ritmo del video."
+        },
+        "contextual": {
+          "title": "Significado Dependiente del Contexto",
+          "description": "Muchas lenguas dependen en gran medida del contexto: el japonés omite sujetos, las raíces árabes tienen múltiples significados. Nuestra IA analiza el diálogo circundante para determinar significados precisos para una traducción de subtítulos en inglés precisa."
+        }
+      },
+      "advantages": {
+        "title": "Nuestras Ventajas del Traductor de Subtítulos en Inglés",
+        "subtitle": "Tecnología avanzada de IA específicamente optimizada para la traducción de subtítulos en inglés",
+        "contextAware": {
+          "title": "Traducción Consciente del Contexto",
+          "description": "A diferencia de los traductores básicos, nuestra IA analiza secuencias completas de subtítulos, no líneas aisladas. Esto produce subtítulos en inglés coherentes que mantienen el flujo narrativo y la consistencia de la voz de los personajes a lo largo de tu video."
+        },
+        "culturalAdaptation": {
+          "title": "Localización Cultural",
+          "description": "Adapta automáticamente referencias culturales, medidas y expresiones para audiencias de habla inglesa. Convierte modismos, proverbios y conceptos culturales en equivalentes naturales en inglés que resuenan con los espectadores."
+        },
+        "naturalFlow": {
+          "title": "Fluidez Natural en Inglés",
+          "description": "Nuestro generador de SRT en inglés no produce traducciones literales. Crea subtítulos en inglés naturales y legibles que suenan auténticos para los hablantes nativos, evitando frases incómodas comunes en la traducción automática."
+        },
+        "technicalAccuracy": {
+          "title": "Precisión Técnica y de Dominio",
+          "description": "Entrenado en diversos tipos de contenido - desde terminología médica hasta jerga de videojuegos. Ya sea traduciendo documentación técnica o vlogs casuales, nuestro traductor de subtítulos en inglés mantiene un vocabulario y terminología apropiados para el dominio."
+        },
+        "timing": {
+          "title": "Temporización de Subtítulos Optimizada",
+          "description": "Ajusta automáticamente la longitud de los subtítulos en inglés para una legibilidad óptima mientras mantiene la sincronización. Nuestro sistema asegura que los archivos SRT en inglés se muestren el tiempo suficiente para leer cómodamente sin interrumpir la experiencia del espectador."
+        },
+        "quality": {
+          "title": "Calidad Consistente",
+          "description": "Ofrece traducción de subtítulos en inglés de calidad profesional de manera consistente en más de 50 idiomas de origen. Ya sea traduciendo del japonés, español o árabe, espera los mismos subtítulos en inglés de alta calidad cada vez."
+        }
+      }
+    }
   }
 }

@@ -199,28 +199,103 @@ Return only the translated JSON without any additional text or markdown formatti
     const topLevelKeys = Object.keys(sourceData);
     const result = {};
 
-    // 按顶层key分批翻译（每次1个key用于 benefits/howToUse/faq 这样的大对象）
-    const chunkSize = 1;
-    for (let i = 0; i < topLevelKeys.length; i += chunkSize) {
-      const chunkKeys = topLevelKeys.slice(i, i + chunkSize);
-      const chunk = {};
-      chunkKeys.forEach(key => {
-        chunk[key] = sourceData[key];
-      });
+    // 针对特别大的对象（如 englishSubtitle），需要进一步细分
+    for (let i = 0; i < topLevelKeys.length; i++) {
+      const key = topLevelKeys[i];
+      const value = sourceData[key];
 
-      console.log(`  📦 翻译块 ${Math.floor(i / chunkSize) + 1}/${Math.ceil(topLevelKeys.length / chunkSize)}: [${chunkKeys.join(', ')}]`);
+      console.log(`  📦 翻译块 ${i + 1}/${topLevelKeys.length}: [${key}]`);
 
-      const chunkTranslation = await this.translateBatch(chunk, targetLang);
+      // 检查是否是超大对象（需要进一步拆分）
+      const jsonSize = JSON.stringify(value).length;
+      const isLargeObject = jsonSize > 5000; // 超过 5KB
 
-      if (chunkTranslation) {
-        Object.assign(result, chunkTranslation);
-        console.log(`  ✅ 块完成`);
+      if (isLargeObject && typeof value === 'object' && value !== null) {
+        console.log(`    ⚠️ 检测到大对象 (${Math.round(jsonSize / 1024)}KB)，进行二级拆分`);
+
+        // 二级拆分：按子键翻译
+        const subKeys = Object.keys(value);
+        const subResult = {};
+
+        for (let j = 0; j < subKeys.length; j++) {
+          const subKey = subKeys[j];
+          const subValue = value[subKey];
+
+          console.log(`    📦 子块 ${j + 1}/${subKeys.length}: [${key}.${subKey}]`);
+
+          // 检查子块大小，如果还是太大，进行三级拆分
+          const subJsonSize = JSON.stringify(subValue).length;
+          const isLargeSubObject = subJsonSize > 3000; // 超过 3KB
+
+          if (isLargeSubObject && typeof subValue === 'object' && subValue !== null) {
+            console.log(`      ⚠️ 子块仍然过大 (${Math.round(subJsonSize / 1024)}KB)，进行三级拆分`);
+
+            // 三级拆分
+            const subSubKeys = Object.keys(subValue);
+            const subSubResult = {};
+
+            for (let k = 0; k < subSubKeys.length; k++) {
+              const subSubKey = subSubKeys[k];
+              const subSubValue = subValue[subSubKey];
+
+              console.log(`      📦 三级块 ${k + 1}/${subSubKeys.length}: [${key}.${subKey}.${subSubKey}]`);
+
+              const subSubChunk = { [key]: { [subKey]: { [subSubKey]: subSubValue } } };
+              const subSubTranslation = await this.translateBatch(subSubChunk, targetLang);
+
+              if (subSubTranslation && subSubTranslation[key] && subSubTranslation[key][subKey]) {
+                Object.assign(subSubResult, subSubTranslation[key][subKey]);
+                console.log(`      ✅ 三级块完成`);
+              } else {
+                console.log(`      ❌ 三级块失败，跳过`);
+              }
+
+              // 延迟
+              if (k < subSubKeys.length - 1) {
+                await new Promise(resolve => setTimeout(resolve, 800));
+              }
+            }
+
+            if (Object.keys(subSubResult).length > 0) {
+              subResult[subKey] = subSubResult;
+            }
+          } else {
+            // 正常大小的子块
+            const subChunk = { [key]: { [subKey]: subValue } };
+            const subTranslation = await this.translateBatch(subChunk, targetLang);
+
+            if (subTranslation && subTranslation[key]) {
+              Object.assign(subResult, subTranslation[key]);
+              console.log(`    ✅ 子块完成`);
+            } else {
+              console.log(`    ❌ 子块失败，跳过`);
+            }
+          }
+
+          // 延迟以避免API限制
+          if (j < subKeys.length - 1) {
+            await new Promise(resolve => setTimeout(resolve, 1000));
+          }
+        }
+
+        if (Object.keys(subResult).length > 0) {
+          result[key] = subResult;
+        }
       } else {
-        console.log(`  ❌ 块失败，跳过`);
+        // 正常大小的对象，直接翻译
+        const chunk = { [key]: value };
+        const chunkTranslation = await this.translateBatch(chunk, targetLang);
+
+        if (chunkTranslation) {
+          Object.assign(result, chunkTranslation);
+          console.log(`  ✅ 块完成`);
+        } else {
+          console.log(`  ❌ 块失败，跳过`);
+        }
       }
 
       // 延迟以避免API限制
-      if (i + chunkSize < topLevelKeys.length) {
+      if (i < topLevelKeys.length - 1) {
         await new Promise(resolve => setTimeout(resolve, 1000));
       }
     }
@@ -261,18 +336,40 @@ Return only the translated JSON without any additional text or markdown formatti
   async translateLanguage(targetLang, force = false, specificKeys = null) {
     console.log(`\n🌍 开始翻译: ${targetLang} (${CONFIG.languageMap[targetLang] || targetLang})`);
 
-    // 直接翻译整个源文件以保持完整的嵌套结构
-    const toTranslate = this.sourceData;
-    console.log(`  📋 翻译完整文件以保持嵌套结构`);
-    
+    // 读取目标文件（用于合并）
+    const targetFile = path.join(CONFIG.targetDir, `${targetLang}.json`);
+    let existingData = {};
+    if (fs.existsSync(targetFile)) {
+      existingData = JSON.parse(fs.readFileSync(targetFile, 'utf8'));
+    }
+
+    // 如果指定了 specificKeys，只翻译这些 keys
+    let toTranslate = this.sourceData;
+    if (specificKeys && specificKeys.length > 0) {
+      toTranslate = {};
+      specificKeys.forEach(key => {
+        if (this.sourceData[key]) {
+          toTranslate[key] = this.sourceData[key];
+          console.log(`  📋 只翻译指定的 key: ${key}`);
+        } else {
+          console.warn(`  ⚠️ 警告: 源文件中不存在 key: ${key}`);
+        }
+      });
+    } else {
+      console.log(`  📋 翻译完整文件以保持嵌套结构`);
+    }
+
     if (Object.keys(toTranslate).length === 0) {
+      console.log(`  ⚠️ 没有需要翻译的内容`);
       return;
     }
-    
+
     const translations = await this.translateMissing(toTranslate, targetLang);
 
     if (translations && Object.keys(translations).length > 0) {
-      this.saveTranslation(targetLang, translations);
+      // 合并翻译结果到现有数据
+      const finalData = this.deepMerge(existingData, translations);
+      this.saveTranslation(targetLang, finalData);
       console.log(`  🎉 完成翻译: ${targetLang}`);
     } else {
       console.log(`  ❌ 翻译失败: ${targetLang}`);

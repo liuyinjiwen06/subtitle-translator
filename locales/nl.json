@@ -193,5 +193,104 @@
     "version": "1.0.0",
     "language": "nl",
     "translatedBy": "handmatig"
+  },
+  "englishSubtitle": {
+    "meta": {
+      "title": "Engelse Ondertitelvertaler - Gratis AI-gestuurde Engelse SRT Vertaling",
+      "description": "Vertaal ondertitels naar het Engels vanuit 50+ talen. Professionele Engelse ondertitelvertaling met AI-technologie. Snelle, nauwkeurige Engelse SRT-vertaling voor video's, films en content.",
+      "keywords": "engelse ondertitel, engelse srt, ondertitel naar engels, vertaal ondertitel engels, engelse ondertitelvertaler, srt naar engels, engelse video-ondertitels"
+    },
+    "hero": {
+      "title": "Nederlands Ondertitel Vertaler - Professionele SRT Vertaling naar het Nederlands",
+      "subtitle": "Transformeer elke taal in nauwkeurige Nederlandse ondertitels met AI-aangedreven SRT vertalingstechnologie"
+    },
+    "useCases": {
+      "title": "Wie profiteert van Engelse ondertitelvertaling?",
+      "subtitle": "Essentieel hulpmiddel voor contentmakers, docenten en wereldwijde communicators",
+      "contentCreators": {
+        "title": "Contentmakers & YouTubers",
+        "description": "Bereik Engelstalige publieken wereldwijd door je video-inhoud in Engelse ondertitels te vertalen. Perfect voor het uitbreiden van je internationale kijkerspubliek en het laten groeien van je kanaal met professionele Engelse SRT-bestanden."
+      },
+      "educators": {
+        "title": "Docenten & E-Learning",
+        "description": "Maak educatieve inhoud toegankelijk voor Engelstalige studenten wereldwijd. Vertaal lezingen, tutorials en cursussen in nauwkeurige Engelse ondertitels die het leerbegrip en de betrokkenheid verbeteren."
+      },
+      "businesses": {
+        "title": "Bedrijven & Marketing",
+        "description": "Breid je marktbereik uit door marketingvideo's, productdemonstraties en bedrijfsopleidingmateriaal om te zetten in Engelse ondertitels. Essentieel voor bedrijven die zich richten op Engelstalige markten wereldwijd."
+      },
+      "filmmakers": {
+        "title": "Filmmakers & Media",
+        "description": "Bereid je films, documentaires en media-inhoud voor op internationale festivals en Engelstalige distributeurs. Professionele Engelse ondertitelvertaling behoudt artistieke nuance en culturele context."
+      },
+      "researchers": {
+        "title": "Onderzoekers & Academici",
+        "description": "Deel je onderzoekspresentaties en academische inhoud met de wereldwijde Engelstalige academische gemeenschap. Vertaal conferentietoespraken en educatief materiaal in precieze Engelse ondertitels."
+      },
+      "entertainment": {
+        "title": "Entertainment & Streaming",
+        "description": "Lokaliseer buitenlandse shows, films en entertainmentinhoud voor Engelstalige kijkers. Maak professionele Engelse SRT-bestanden die de nuance van dialogen en culturele verwijzingen vastleggen."
+      }
+    },
+    "linguisticExplanation": {
+      "title": "De uitdaging van vertalen naar het Engels",
+      "subtitle": "Begrijpen van linguïstische complexiteit en hoe onze AI deze oplost",
+      "intro": "Engels is de meest gesproken tweede taal ter wereld, waardoor Engelse ondertitels essentieel zijn voor wereldwijde content. Het vertalen van diverse talen naar het Engels brengt echter unieke taalkundige uitdagingen met zich mee die geavanceerde oplossingen vereisen.",
+      "challenges": {
+        "title": "Veelvoorkomende Vertaaluitdagingen",
+        "wordOrder": {
+          "title": "Woordvolgorde & Syntax",
+          "description": "Veel talen (Japans, Koreaans, Turks) gebruiken de volgorde Subject-Object-Verb, terwijl het Engels Subject-Verb-Object gebruikt. Talen zoals Arabisch lezen van rechts naar links. Onze AI herschikt zinnen op een natuurlijke manier terwijl de betekenis behouden blijft, waardoor Engelse ondertitels soepel verlopen."
+        },
+        "idioms": {
+          "title": "Idiomatische Uitdrukkingen & Culturele Expressies",
+          "description": "Directe vertaling van idiomen faalt vaak. Chinees '马马虎虎' (zo-zo), Spaans 'estar en la luna' (dromerig), of Frans 'avoir le cafard' (depressief) vereisen culturele aanpassing. Onze Engelse ondertitelvertaler herkent idiomen en biedt natuurlijke Engelse equivalenten."
+        },
+        "formality": {
+          "title": "Formele & Beleefde Niveaus",
+          "description": "Talen zoals Japans, Koreaans en Thais hebben complexe eerbiedsystemen die niet direct overeenkomen met het Engels. Onze AI interpreteert de context om geschikte Engelse registers (formeel, informeel, professioneel) te kiezen voor natuurlijke Engelse ondertitels."
+        },
+        "tense": {
+          "title": "Tijd & Aspectsystemen",
+          "description": "Mandarijn Chinees mist grammaticale tijd, terwijl Arabisch alleen verleden en heden heeft. Slavische talen hebben complexe aspectuele onderscheidingen. Onze Engelse SRT-vertaler haalt temporele context af om nauwkeurige Engelse tijden uit de dialoogcontext te selecteren."
+        },
+        "timing": {
+          "title": "Tekstlengte & Timing",
+          "description": "Duitse samenstellingen en Finse agglutinatie creëren lange woorden. Aziatische talen drukken concepten uit met minder tekens. Onze Engelse ondertitelvertaler balanceert nauwkeurigheid met leesbaarheid, waardoor de timing van Engelse SRT overeenkomt met het tempo van de video."
+        },
+        "contextual": {
+          "title": "Contextafhankelijke Betekenis",
+          "description": "Veel talen zijn sterk afhankelijk van context - Japans laat onderwerpen weg, Arabische wortels hebben meerdere betekenissen. Onze AI analyseert de omringende dialoog om nauwkeurige betekenissen te bepalen voor een accurate Engelse ondertitelvertaling."
+        }
+      },
+      "advantages": {
+        "title": "Onze Voordelen van de Engelse Ondertiteling Translator",
+        "subtitle": "Geavanceerde AI-technologie specifiek geoptimaliseerd voor Engelse ondertitelvertaling",
+        "contextAware": {
+          "title": "Contextbewuste Vertaling",
+          "description": "In tegenstelling tot basisvertalers, analyseert onze AI volledige ondertitelreeksen, niet geïsoleerde zinnen. Dit produceert samenhangende Engelse ondertitels die de verhaallijn en consistentie van de stem van de personages door uw video behouden."
+        },
+        "culturalAdaptation": {
+          "title": "Culturele Lokalisatie",
+          "description": "Past automatisch culturele verwijzingen, metingen en uitdrukkingen aan voor Engelstalige doelgroepen. Zet idiomen, spreekwoorden en culturele concepten om in natuurlijke Engelse equivalenten die resoneren met kijkers."
+        },
+        "naturalFlow": {
+          "title": "Natuurlijke Engelse Stroom",
+          "description": "Onze Engelse SRT-generator produceert geen letterlijke vertalingen. Het creëert natuurlijke, leesbare Engelse ondertitels die authentiek klinken voor moedertaalsprekers, en vermijdt ongemakkelijke formuleringen die vaak voorkomen in machinevertalingen."
+        },
+        "technicalAccuracy": {
+          "title": "Technische & Domeinprecisie",
+          "description": "Getraind op diverse inhoudstypen - van medische terminologie tot gaming slang. Of het nu gaat om het vertalen van technische documentatie of casual vlogs, onze Engelse ondertiteling translator behoudt domein-geschikte vocabulaire en terminologie."
+        },
+        "timing": {
+          "title": "Geoptimaliseerde Ondertitel Timing",
+          "description": "Past automatisch de lengte van Engelse ondertitels aan voor optimale leesbaarheid terwijl de synchronisatie behouden blijft. Ons systeem zorgt ervoor dat Engelse SRT-bestanden lang genoeg worden weergegeven om comfortabel te lezen zonder de kijkervaring te verstoren."
+        },
+        "quality": {
+          "title": "Consistente Kwaliteit",
+          "description": "Levert consistent professionele Engelse ondertitelvertaling van hoge kwaliteit over alle 50+ brontalen. Of het nu gaat om vertalen vanuit het Japans, Spaans of Arabisch, verwacht elke keer dezelfde hoogwaardige Engelse ondertitels."
+        }
+      }
+    }
   }
 }

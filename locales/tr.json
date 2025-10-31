@@ -193,5 +193,104 @@
     "version": "1.0.0",
     "language": "tr",
     "translatedBy": "manuel"
+  },
+  "englishSubtitle": {
+    "meta": {
+      "title": "İngilizce Altyazı Çevirmeni - Ücretsiz AI Destekli İngilizce SRT Çevirisi",
+      "description": "50'den fazla dilden İngilizceye altyazı çevirisi yapın. AI teknolojisi ile profesyonel İngilizce altyazı çevirisi. Videolar, filmler ve içerikler için hızlı, doğru İngilizce SRT çevirisi.",
+      "keywords": "ingilizce altyazı, ingilizce srt, altyazıdan ingilizceye, altyazıyı ingilizceye çevir, ingilizce altyazı çevirmeni, srt'den ingilizceye, ingilizce video altyazıları"
+    },
+    "hero": {
+      "title": "İngilizce Altyazı Çevirmeni - Profesyonel SRT Çevirisi İngilizceye",
+      "subtitle": "Herhangi bir dili AI destekli SRT çeviri teknolojisi ile doğru İngilizce altyazılara dönüştürün"
+    },
+    "useCases": {
+      "title": "İngilizce Altyazı Çevirisinden Kimler Faydalanır?",
+      "subtitle": "İçerik oluşturucular, eğitimciler ve küresel iletişimciler için temel bir araç",
+      "contentCreators": {
+        "title": "İçerik Üreticileri & YouTuber'lar",
+        "description": "Video içeriğinizi İngilizce altyazılara çevirerek dünya genelindeki İngilizce konuşan izleyicilere ulaşın. Uluslararası izleyici kitlenizi genişletmek ve kanalınızı profesyonel İngilizce SRT dosyalarıyla büyütmek için mükemmel."
+      },
+      "educators": {
+        "title": "Eğitmenler & E-Öğrenme",
+        "description": "Eğitim içeriğini dünya genelindeki İngilizce konuşan öğrencilere erişilebilir hale getirin. Dersleri, eğitimleri ve kursları öğrenme anlayışını ve katılımı artıran doğru İngilizce altyazılara çevirin."
+      },
+      "businesses": {
+        "title": "İşletmeler & Pazarlama",
+        "description": "Pazarlama videolarını, ürün tanıtımlarını ve kurumsal eğitim materyallerini İngilizce altyazılara çevirerek pazar erişiminizi genişletin. Dünya genelinde İngilizce konuşan pazarlara yönelik şirketler için gereklidir."
+      },
+      "filmmakers": {
+        "title": "Film Yapımcıları & Medya",
+        "description": "Filmlerinizi, belgesellerinizi ve medya içeriğinizi uluslararası festivaller ve İngilizce konuşan dağıtımcılar için hazırlayın. Profesyonel İngilizce altyazı çevirisi sanatsal nüansı ve kültürel bağlamı korur."
+      },
+      "researchers": {
+        "title": "Araştırmacılar & Akademisyenler",
+        "description": "Araştırma sunumlarınızı ve akademik içeriğinizi küresel İngilizce konuşan akademik toplulukla paylaşın. Konferans konuşmalarını ve eğitim materyallerini doğru İngilizce altyazılara çevirin."
+      },
+      "entertainment": {
+        "title": "Eğlence & Yayın",
+        "description": "Yabancı dildeki programları, filmleri ve eğlence içeriğini İngilizce konuşan izleyiciler için yerelleştirin. Diyalog nüansını ve kültürel referansları yakalayan profesyonel İngilizce SRT dosyaları oluşturun."
+      }
+    },
+    "linguisticExplanation": {
+      "title": "İngilizceye Çevirmenin Zorluğu",
+      "subtitle": "Dilsel karmaşıklıkları anlama ve AI'mızın bunları nasıl çözdüğü",
+      "intro": "İngilizce, dünyanın en yaygın konuşulan ikinci dili olduğu için İngilizce altyazılar küresel içerik için gereklidir. Ancak, farklı dillerden İngilizceye çeviri yapmak, karmaşık çözümler gerektiren benzersiz dilsel zorluklar sunmaktadır.",
+      "challenges": {
+        "title": "Yaygın Çeviri Zorlukları",
+        "wordOrder": {
+          "title": "Kelime Sırası & Sözdizimi",
+          "description": "Birçok dil (Japonca, Korece, Türkçe) Özne-Nesne-Fiil sırasını kullanırken, İngilizce Özne-Fiil-Nesne sırasını kullanır. Arapça gibi diller sağdan sola okunur. AI'ımız, anlamı korurken cümleleri doğal bir şekilde yeniden yapılandırır ve İngilizce altyazıların akıcı olmasını sağlar."
+        },
+        "idioms": {
+          "title": "Deyimler & Kültürel İfadeler",
+          "description": "Deyimlerin doğrudan çevirisi genellikle başarısız olur. Çince '马马虎虎' (ortalama), İspanyolca 'estar en la luna' (hayal kurmak) veya Fransızca 'avoir le cafard' (moral bozukluğu) kültürel uyarlama gerektirir. İngilizce altyazı çevirmenimiz deyimleri tanır ve doğal İngilizce karşılıklar sunar."
+        },
+        "formality": {
+          "title": "Resmi Olma & Nezaket Düzeyleri",
+          "description": "Japonca, Korece ve Tayca gibi diller, İngilizce ile doğrudan eşleşmeyen karmaşık onur sistemlerine sahiptir. AI'ımız, bağlamı yorumlayarak doğal İngilizce altyazılar için uygun İngilizce kayıtları (resmi, gündelik, profesyonel) seçer."
+        },
+        "tense": {
+          "title": "Zaman & Aspet Sistemleri",
+          "description": "Mandarin Çince'sinde dilbilgisel zaman yoktur, Arapça ise sadece geçmiş ve şimdiki zaman içerir. Slav dilleri karmaşık aspekt farklılıklarına sahiptir. İngilizce SRT çevirmenimiz, diyalog bağlamından doğru İngilizce zamanları seçmek için zamansal bağlamı çıkarır."
+        },
+        "timing": {
+          "title": "Metin Uzunluğu & Zamanlama",
+          "description": "Almanca bileşik kelimeleri ve Fince aglütinasyonu uzun kelimeler oluşturur. Asya dilleri, kavramları daha az karakterle ifade eder. İngilizce altyazı çevirmenimiz, doğruluğu okunabilirlik ile dengeleyerek İngilizce SRT zamanlamasının video temposuyla uyumlu olmasını sağlar."
+        },
+        "contextual": {
+          "title": "Bağlama Bağlı Anlam",
+          "description": "Birçok dil, bağlama büyük ölçüde dayanır - Japonca özne atlar, Arapça kökler birden fazla anlam taşır. AI'ımız, doğru İngilizce altyazı çevirisi için kesin anlamları belirlemek amacıyla çevreleyen diyalogu analiz eder."
+        }
+      },
+      "advantages": {
+        "title": "İngilizce Altyazı Çevirmenimizin Avantajları",
+        "subtitle": "İngilizce altyazı çevirisi için özel olarak optimize edilmiş gelişmiş AI teknolojisi",
+        "contextAware": {
+          "title": "Bağlam Duyarlı Çeviri",
+          "description": "Temel çevirmenlerin aksine, AI'mız tüm altyazı dizilerini, izole satırları değil, analiz eder. Bu, videonuz boyunca anlatı akışını ve karakter sesi tutarlılığını koruyan tutarlı İngilizce altyazılar üretir."
+        },
+        "culturalAdaptation": {
+          "title": "Kültürel Yerelleştirme",
+          "description": "Kültürel referansları, ölçüleri ve ifadeleri İngilizce konuşan izleyicilere otomatik olarak uyarlayarak. Deyimleri, atasözlerini ve kültürel kavramları izleyicilerle uyumlu doğal İngilizce eşdeğerlerine dönüştürür."
+        },
+        "naturalFlow": {
+          "title": "Doğal İngilizce Akışı",
+          "description": "İngilizce SRT üreticimiz kelime kelime çeviriler üretmez. Yerel konuşurlara otantik gelen doğal, okunabilir İngilizce altyazılar oluşturur, makine çevirisinde yaygın olan garip ifadelerden kaçınır."
+        },
+        "technicalAccuracy": {
+          "title": "Teknik ve Alan Hassasiyeti",
+          "description": "Tıbbi terminolojiden oyun argosuna kadar çeşitli içerik türleri üzerinde eğitim aldı. Teknik belgeleri veya gündelik vlogları çevirirken, İngilizce altyazı çevirmenimiz alanına uygun kelime dağarcığını ve terminolojiyi korur."
+        },
+        "timing": {
+          "title": "Optimize Edilmiş Altyazı Süresi",
+          "description": "Okunabilirliği artırmak için İngilizce altyazı uzunluğunu otomatik olarak ayarlar ve senkronizasyonu korur. Sistemimiz, İngilizce SRT dosyalarının, izleyici deneyimini bozmadan rahatça okunabilecek kadar uzun süre görüntülenmesini sağlar."
+        },
+        "quality": {
+          "title": "Tutarlı Kalite",
+          "description": "50'den fazla kaynak dilde sürekli olarak profesyonel kalitede İngilizce altyazı çevirisi sunar. Japonca, İspanyolca veya Arapça'dan çeviri yaparken, her seferinde aynı yüksek kaliteli İngilizce altyazıları bekleyin."
+        }
+      }
+    }
   }
 }

@@ -193,5 +193,104 @@
     "version": "1.0.0",
     "language": "de",
     "translatedBy": "manuell"
+  },
+  "englishSubtitle": {
+    "meta": {
+      "title": "Englischer Untertitel-Übersetzer - Kostenlose KI-gestützte englische SRT-Übersetzung",
+      "description": "Übersetzen Sie Untertitel ins Englische aus über 50 Sprachen. Professionelle englische Untertitelübersetzung mit KI-Technologie. Schnelle, genaue englische SRT-Übersetzung für Videos, Filme und Inhalte.",
+      "keywords": "englischer untertitel, englische srt, untertitel ins englische, untertitel englisch übersetzen, englischer untertitel-übersetzer, srt ins englische, englische videountertitel"
+    },
+    "hero": {
+      "title": "Englischer Untertitelübersetzer - Professionelle SRT-Übersetzung ins Englische",
+      "subtitle": "Verwandeln Sie jede Sprache in präzise englische Untertitel mit KI-gestützter SRT-Übungstechnologie"
+    },
+    "useCases": {
+      "title": "Wer profitiert von der Übersetzung englischer Untertitel?",
+      "subtitle": "Wichtiges Werkzeug für Content-Ersteller, Pädagogen und globale Kommunikatoren",
+      "contentCreators": {
+        "title": "Content-Ersteller & YouTuber",
+        "description": "Erreichen Sie englischsprachige Zuschauer weltweit, indem Sie Ihre Videoinhalte in englische Untertitel übersetzen. Perfekt, um Ihre internationale Zuschauerzahl zu erweitern und Ihren Kanal mit professionellen englischen SRT-Dateien zu vergrößern."
+      },
+      "educators": {
+        "title": "Pädagogen & E-Learning",
+        "description": "Machen Sie Bildungsinhalte für englischsprachige Studenten weltweit zugänglich. Übersetzen Sie Vorlesungen, Tutorials und Kurse in präzise englische Untertitel, die das Lernverständnis und das Engagement verbessern."
+      },
+      "businesses": {
+        "title": "Unternehmen & Marketing",
+        "description": "Erweitern Sie Ihre Marktpräsenz, indem Sie Marketingvideos, Produktdemos und Unternehmensschulungsmaterialien in englische Untertitel umwandeln. Essentiell für Unternehmen, die englischsprachige Märkte weltweit anvisieren."
+      },
+      "filmmakers": {
+        "title": "Filmemacher & Medien",
+        "description": "Bereiten Sie Ihre Filme, Dokumentationen und Medieninhalte für internationale Festivals und englischsprachige Distributoren vor. Professionelle Übersetzungen englischer Untertitel bewahren künstlerische Nuancen und kulturellen Kontext."
+      },
+      "researchers": {
+        "title": "Forscher & Akademiker",
+        "description": "Teilen Sie Ihre Forschungsvorträge und akademischen Inhalte mit der globalen englischsprachigen Wissenschaftsgemeinschaft. Übersetzen Sie Konferenzvorträge und Lehrmaterialien in präzise englische Untertitel."
+      },
+      "entertainment": {
+        "title": "Unterhaltung & Streaming",
+        "description": "Lokalisieren Sie fremdsprachige Shows, Filme und Unterhaltungsinhalte für englischsprachige Zuschauer. Erstellen Sie professionelle englische SRT-Dateien, die Dialognuancen und kulturelle Referenzen erfassen."
+      }
+    },
+    "linguisticExplanation": {
+      "title": "Die Herausforderung, ins Englische zu übersetzen",
+      "subtitle": "Verstehen von sprachlichen Komplexitäten und wie unsere KI sie löst",
+      "intro": "Englisch ist die am weitesten verbreitete Zweitsprache der Welt, wodurch englische Untertitel für globale Inhalte unerlässlich sind. Die Übersetzung aus verschiedenen Sprachen ins Englische stellt jedoch einzigartige linguistische Herausforderungen dar, die anspruchsvolle Lösungen erfordern.",
+      "challenges": {
+        "title": "Häufige Übersetzungsherausforderungen",
+        "wordOrder": {
+          "title": "Wortstellung & Syntax",
+          "description": "Viele Sprachen (Japanisch, Koreanisch, Türkisch) verwenden die Reihenfolge Subjekt-Objekt-Verb, während Englisch Subjekt-Verb-Objekt nutzt. Sprachen wie Arabisch werden von rechts nach links gelesen. Unsere KI strukturiert Sätze natürlich um und bewahrt dabei die Bedeutung, sodass die englischen Untertitel flüssig sind."
+        },
+        "idioms": {
+          "title": "Redewendungen & Kulturelle Ausdrücke",
+          "description": "Die direkte Übersetzung von Redewendungen schlägt oft fehl. Chinesisch '马马虎虎' (so-so), Spanisch 'estar en la luna' (Tagträumen) oder Französisch 'avoir le cafard' (schlecht gelaunt sein) benötigen kulturelle Anpassung. Unser englischer Untertitelübersetzer erkennt Redewendungen und bietet natürliche englische Entsprechungen."
+        },
+        "formality": {
+          "title": "Formellitäts- & Höflichkeitsniveaus",
+          "description": "Sprachen wie Japanisch, Koreanisch und Thailändisch haben komplexe Ehrensysteme, die sich nicht direkt ins Englische übertragen lassen. Unsere KI interpretiert den Kontext, um geeignete englische Register (formell, lässig, professionell) für natürliche englische Untertitel auszuwählen."
+        },
+        "tense": {
+          "title": "Zeit- & Aspekt-Systeme",
+          "description": "Mandarin-Chinesisch hat keine grammatikalische Zeit, während Arabisch nur Vergangenheit und Gegenwart kennt. Slawische Sprachen haben komplexe aspektuelle Unterscheidungen. Unser englischer SRT-Übersetzer schließt aus dem Dialogkontext auf den zeitlichen Kontext, um genaue englische Zeiten auszuwählen."
+        },
+        "timing": {
+          "title": "Textlänge & Timing",
+          "description": "Deutsche Komposita und finnische Agglutination erzeugen lange Wörter. Asiatische Sprachen drücken Konzepte mit weniger Zeichen aus. Unser englischer Untertitelübersetzer balanciert Genauigkeit mit Lesbarkeit und sorgt dafür, dass das Timing der englischen SRT mit dem Tempo des Videos übereinstimmt."
+        },
+        "contextual": {
+          "title": "Kontextabhängige Bedeutung",
+          "description": "Viele Sprachen sind stark kontextabhängig - im Japanischen werden Subjekte weggelassen, arabische Wurzeln tragen mehrere Bedeutungen. Unsere KI analysiert den umgebenden Dialog, um präzise Bedeutungen für eine genaue Übersetzung der englischen Untertitel zu bestimmen."
+        }
+      },
+      "advantages": {
+        "title": "Unsere Vorteile des Übersetzers für englische Untertitel",
+        "subtitle": "Fortschrittliche KI-Technologie, die speziell für die Übersetzung von englischen Untertiteln optimiert ist",
+        "contextAware": {
+          "title": "Kontextbewusste Übersetzung",
+          "description": "Im Gegensatz zu einfachen Übersetzern analysiert unsere KI gesamte Untertitelsequenzen und nicht isolierte Zeilen. Dies erzeugt kohärente englische Untertitel, die den Erzählfluss und die Konsistenz der Charakterstimmen in Ihrem Video aufrechterhalten."
+        },
+        "culturalAdaptation": {
+          "title": "Kulturelle Lokalisierung",
+          "description": "Passt automatisch kulturelle Referenzen, Maße und Ausdrücke für englischsprachige Zuschauer an. Wandelt Redewendungen, Sprichwörter und kulturelle Konzepte in natürliche englische Entsprechungen um, die bei den Zuschauern Anklang finden."
+        },
+        "naturalFlow": {
+          "title": "Natürlicher englischer Fluss",
+          "description": "Unser englischer SRT-Generator produziert keine wörtlichen Übersetzungen. Er erstellt natürliche, lesbare englische Untertitel, die für Muttersprachler authentisch klingen und unangenehme Formulierungen vermeiden, die in maschinellen Übersetzungen häufig vorkommen."
+        },
+        "technicalAccuracy": {
+          "title": "Technische und fachliche Präzision",
+          "description": "Trainiert auf verschiedenen Inhaltsarten - von medizinischer Terminologie bis hin zu Gaming-Jargon. Egal, ob technische Dokumentationen oder lockere Vlogs übersetzt werden, unser Übersetzer für englische Untertitel hält das fachspezifische Vokabular und die Terminologie ein."
+        },
+        "timing": {
+          "title": "Optimierte Untertitel-Timing",
+          "description": "Passt automatisch die Länge der englischen Untertitel für optimale Lesbarkeit an und sorgt gleichzeitig für Synchronität. Unser System stellt sicher, dass englische SRT-Dateien lange genug angezeigt werden, um bequem gelesen zu werden, ohne das Zuschauererlebnis zu stören."
+        },
+        "quality": {
+          "title": "Konstante Qualität",
+          "description": "Bietet konsequent professionelle Übersetzungen von englischen Untertiteln über alle 50+ Quellsprachen hinweg. Egal, ob aus dem Japanischen, Spanischen oder Arabischen übersetzt wird, erwarten Sie jedes Mal die gleiche hochwertige englische Untertitel."
+        }
+      }
+    }
   }
 }
